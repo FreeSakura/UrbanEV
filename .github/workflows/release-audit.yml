@@ -29,10 +29,10 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           RELEASE_TAG: ${{ github.event_name == 'release' && github.event.release.tag_name || inputs.tag }}
         run: |
-          mkdir -p release-assets
-          gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --dir release-assets
+          mkdir -p downloaded-release-assets
+          gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --dir downloaded-release-assets
       - name: Strict schema, checksum, membership, and privacy audit
-        run: python scripts/audit_release.py --asset-root release-assets --output release-audit-report.json
+        run: python scripts/audit_release.py --asset-root downloaded-release-assets --output release-audit-report.json
       - name: Repository-only headline replay
         run: pytest tests/test_headline_replay.py tests/test_artifact_schema.py
       - uses: actions/upload-artifact@v4
