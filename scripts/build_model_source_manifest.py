@@ -22,9 +22,9 @@ def metadata(relative: Path) -> tuple[str, str, str]:
     if family == "timexer":
         return "Time-Series-Library executed local snapshot", "MIT", "executed local adaptation"
     if family == "caper":
-        return "local CAPER-family executed snapshot", "MIT", "upstream identity unknown/not claimed"
+        return "project-authored local CAPER-family snapshot", "MIT", "paper-to-code identity unknown/not claimed"
     if family == "paris":
-        return "UrbanEV project Paris development adapter", "MIT", "executed project source"
+        return "project-authored Paris development adapter", "MIT", "executed project source; provenance documented"
     return "UrbanEV project implementation", "MIT", "executed project source"
 
 

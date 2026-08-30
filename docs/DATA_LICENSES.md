@@ -7,6 +7,7 @@
 | Paris formal/protected roles | Same upstream data family plus the project's stricter procedural boundary | No raw data, targets, predictions, paths, ACLs, or recoverable objects are public. |
 | Time-Series-Library / TimeXer | MIT | Necessary executed source snapshots retain the upstream notice. |
 | Chronos forecasting | Apache-2.0 | No weights are included; the official revision and file hash are recorded. |
-| Paris preparation code derived from upstream tutorials | GPLv3 where applicable | Any included derivative file retains its GPL notice and is not relicensed as MIT. |
+| Upstream Paris preparation tutorials | GPLv3 where applicable | Not distributed in this repository. Any future derivative must retain its upstream notice and GPL terms. |
+| Project Paris development adapters | Project-authored local implementation; MIT | Provenance is recorded in `models/paris/PROVENANCE.md`; dataset terms remain separate. |
 
 Dataset terms are not absorbed into the repository's software license. Users are responsible for accepting and following the relevant upstream terms.
