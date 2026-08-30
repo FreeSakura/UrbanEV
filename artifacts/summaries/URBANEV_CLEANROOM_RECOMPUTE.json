@@ -1,0 +1,1443 @@
+{
+  "scope": "headline",
+  "headline": {
+    "urbanev_router_and_fixed_fusion": {
+      "caper": 0.07550667751389535,
+      "timexer": 0.07370892925327933,
+      "global_fixed": 0.07136675688300531,
+      "horizon_fixed": 0.07137177878413585,
+      "hard": 0.07275910775223293,
+      "soft": 0.07097924186836793,
+      "mlp": 0.07105030993273188,
+      "global_fixed_gain_vs_timexer_pct": 3.1775965191758897
+    },
+    "urbanev_chronos2": {
+      "macro_rmse": 0.07354229522535828
+    },
+    "urbanev_residual_distillation": {
+      "GT_only": 0.0755678057963872,
+      "aligned_KD": 0.07547793192241498,
+      "shuffled_teacher": 0.075673567486419,
+      "aligned_gain_vs_GT_only_pct": 0.11893143253937777,
+      "aligned_gain_vs_shuffled_pct": 0.2585256259249757
+    }
+  },
+  "packages": [
+    {
+      "package": "urbanev_0001.npz",
+      "source_label": "attempt_01__predictions__router_v1_f1_h12.npz",
+      "target_id": "urbanev_c2eeffd8989c961b",
+      "rmse": {
+        "caper": 0.08086461089338864,
+        "timexer": 0.08026403767596917,
+        "global_fixed": 0.07777291049863644,
+        "horizon_fixed": 0.07777217297406096,
+        "hard": 0.07988459753392083,
+        "soft": 0.0777700569692737,
+        "mlp": 0.07766811711681587
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": -0.7482469544380874,
+        "global_fixed_vs_timexer_pct": 3.1036654141292526,
+        "horizon_fixed_vs_timexer_pct": 3.104584287134942,
+        "hard_vs_timexer_pct": 0.4727399132101517,
+        "soft_vs_timexer_pct": 3.1072205920711657,
+        "mlp_vs_timexer_pct": 3.234226229227571
+      }
+    },
+    {
+      "package": "urbanev_0002.npz",
+      "source_label": "attempt_01__predictions__router_v1_f1_h3.npz",
+      "target_id": "urbanev_e1be22a4bfe25cb2",
+      "rmse": {
+        "caper": 0.06967817364356549,
+        "timexer": 0.06883463748838942,
+        "global_fixed": 0.0664458197878257,
+        "horizon_fixed": 0.06643536546919883,
+        "hard": 0.06768788176876227,
+        "soft": 0.06608443592915332,
+        "mlp": 0.06636884270901057
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": -1.2254530363704677,
+        "global_fixed_vs_timexer_pct": 3.4703715857683566,
+        "horizon_fixed_vs_timexer_pct": 3.4855591701129844,
+        "hard_vs_timexer_pct": 1.66595737476002,
+        "soft_vs_timexer_pct": 3.9953745085095886,
+        "mlp_vs_timexer_pct": 3.5822005742309035
+      }
+    },
+    {
+      "package": "urbanev_0003.npz",
+      "source_label": "attempt_01__predictions__router_v1_f1_h6.npz",
+      "target_id": "urbanev_dd3e812dbc254fae",
+      "rmse": {
+        "caper": 0.07654344801201426,
+        "timexer": 0.075663631618721,
+        "global_fixed": 0.07352803787228977,
+        "horizon_fixed": 0.07357037389710319,
+        "hard": 0.07546261157558998,
+        "soft": 0.07350635094260813,
+        "mlp": 0.07345564208946793
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": -1.1627995834600897,
+        "global_fixed_vs_timexer_pct": 2.8224838019839775,
+        "horizon_fixed_vs_timexer_pct": 2.766530864082773,
+        "hard_vs_timexer_pct": 0.26567591170351057,
+        "soft_vs_timexer_pct": 2.851146092198816,
+        "mlp_vs_timexer_pct": 2.918164885845574
+      }
+    },
+    {
+      "package": "urbanev_0004.npz",
+      "source_label": "attempt_01__predictions__router_v1_f1_h9.npz",
+      "target_id": "urbanev_287c8e4c6494eaa7",
+      "rmse": {
+        "caper": 0.08107360379101626,
+        "timexer": 0.07953685431874519,
+        "global_fixed": 0.07743118512839549,
+        "horizon_fixed": 0.077427920834679,
+        "hard": 0.07953371132644192,
+        "soft": 0.07737917494075147,
+        "mlp": 0.07731795154628263
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": -1.9321225178362296,
+        "global_fixed_vs_timexer_pct": 2.6474132128876966,
+        "horizon_fixed_vs_timexer_pct": 2.6515173401434753,
+        "hard_vs_timexer_pct": 0.0039516175616769915,
+        "soft_vs_timexer_pct": 2.712804518703721,
+        "mlp_vs_timexer_pct": 2.7897793940533195
+      }
+    },
+    {
+      "package": "urbanev_0005.npz",
+      "source_label": "attempt_01__predictions__router_v1_f2_h12.npz",
+      "target_id": "urbanev_88a04b9ef2eb2bce",
+      "rmse": {
+        "caper": 0.0979532772075322,
+        "timexer": 0.09837710482442924,
+        "global_fixed": 0.0927754278912813,
+        "horizon_fixed": 0.09273929739863339,
+        "hard": 0.09769013618375832,
+        "soft": 0.09344354812904458,
+        "mlp": 0.09276519630066124
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": 0.43081936356373557,
+        "global_fixed_vs_timexer_pct": 5.694085979807074,
+        "horizon_fixed_vs_timexer_pct": 5.730812505468099,
+        "hard_vs_timexer_pct": 0.698301339419297,
+        "soft_vs_timexer_pct": 5.014943979282002,
+        "mlp_vs_timexer_pct": 5.704486357657516
+      }
+    },
+    {
+      "package": "urbanev_0006.npz",
+      "source_label": "attempt_01__predictions__router_v1_f2_h3.npz",
+      "target_id": "urbanev_ad53808d299aa2a8",
+      "rmse": {
+        "caper": 0.08058742669724304,
+        "timexer": 0.0818429973996401,
+        "global_fixed": 0.07772178692193957,
+        "horizon_fixed": 0.07770535542407746,
+        "hard": 0.07981919678866459,
+        "soft": 0.07753399363847084,
+        "mlp": 0.07764600278921949
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": 1.534121112727692,
+        "global_fixed_vs_timexer_pct": 5.035507750988914,
+        "horizon_fixed_vs_timexer_pct": 5.055584603479878,
+        "hard_vs_timexer_pct": 2.4727840808337893,
+        "soft_vs_timexer_pct": 5.26496328101029,
+        "mlp_vs_timexer_pct": 5.128104717287723
+      }
+    },
+    {
+      "package": "urbanev_0007.npz",
+      "source_label": "attempt_01__predictions__router_v1_f2_h6.npz",
+      "target_id": "urbanev_c86a065f15846c8c",
+      "rmse": {
+        "caper": 0.08708584311599263,
+        "timexer": 0.09011473967730188,
+        "global_fixed": 0.08475170339665479,
+        "horizon_fixed": 0.08474557202138928,
+        "hard": 0.08815850576161827,
+        "soft": 0.08496258256766517,
+        "mlp": 0.08461751757095257
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": 3.3611555358819634,
+        "global_fixed_vs_timexer_pct": 5.951341922366929,
+        "horizon_fixed_vs_timexer_pct": 5.958145887275957,
+        "hard_vs_timexer_pct": 2.1708256858853807,
+        "soft_vs_timexer_pct": 5.7173300706259855,
+        "mlp_vs_timexer_pct": 6.100247446793608
+      }
+    },
+    {
+      "package": "urbanev_0008.npz",
+      "source_label": "attempt_01__predictions__router_v1_f2_h9.npz",
+      "target_id": "urbanev_17084de0a9fc4373",
+      "rmse": {
+        "caper": 0.0959821884562369,
+        "timexer": 0.09628052681923821,
+        "global_fixed": 0.09102202808036737,
+        "horizon_fixed": 0.09108558548575266,
+        "hard": 0.09572306677194929,
+        "soft": 0.0915635543745119,
+        "mlp": 0.0909804269349314
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": 0.30986365868294413,
+        "global_fixed_vs_timexer_pct": 5.461643088787211,
+        "horizon_fixed_vs_timexer_pct": 5.39563035756835,
+        "hard_vs_timexer_pct": 0.5789956346370242,
+        "soft_vs_timexer_pct": 4.899196754066569,
+        "mlp_vs_timexer_pct": 5.504851354061946
+      }
+    },
+    {
+      "package": "urbanev_0009.npz",
+      "source_label": "attempt_01__predictions__router_v1_f3_h12.npz",
+      "target_id": "urbanev_039b8b52d4e31af3",
+      "rmse": {
+        "caper": 0.08295893094817172,
+        "timexer": 0.08426501674339769,
+        "global_fixed": 0.08059490407685546,
+        "horizon_fixed": 0.08061099902825475,
+        "hard": 0.08324255990139977,
+        "soft": 0.08075594524940789,
+        "mlp": 0.08075505528946283
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": 1.5499739342641274,
+        "global_fixed_vs_timexer_pct": 4.355440499962622,
+        "horizon_fixed_vs_timexer_pct": 4.3363401045419465,
+        "hard_vs_timexer_pct": 1.2133823519094382,
+        "soft_vs_timexer_pct": 4.164327771601301,
+        "mlp_vs_timexer_pct": 4.165383915632896
+      }
+    },
+    {
+      "package": "urbanev_0010.npz",
+      "source_label": "attempt_01__predictions__router_v1_f3_h3.npz",
+      "target_id": "urbanev_07f3cda0dc49779f",
+      "rmse": {
+        "caper": 0.0663434394880266,
+        "timexer": 0.06734453048281955,
+        "global_fixed": 0.06491846447032405,
+        "horizon_fixed": 0.0649146959650714,
+        "hard": 0.06594992506059771,
+        "soft": 0.06478404935356966,
+        "mlp": 0.0649503512239542
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": 1.4865216040794043,
+        "global_fixed_vs_timexer_pct": 3.602469265287128,
+        "horizon_fixed_vs_timexer_pct": 3.6080651247067848,
+        "hard_vs_timexer_pct": 2.070851800767422,
+        "soft_vs_timexer_pct": 3.802062485093876,
+        "mlp_vs_timexer_pct": 3.55512057430726
+      }
+    },
+    {
+      "package": "urbanev_0011.npz",
+      "source_label": "attempt_01__predictions__router_v1_f3_h6.npz",
+      "target_id": "urbanev_8aea1a6a0e7a3f4c",
+      "rmse": {
+        "caper": 0.07501934511400148,
+        "timexer": 0.07555507441820002,
+        "global_fixed": 0.07303016407018419,
+        "horizon_fixed": 0.07304141532913809,
+        "hard": 0.0744735395033841,
+        "soft": 0.07290561646394052,
+        "mlp": 0.07305943287546267
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": 0.7090580061284294,
+        "global_fixed_vs_timexer_pct": 3.341814388323359,
+        "horizon_fixed_vs_timexer_pct": 3.3269229213497082,
+        "hard_vs_timexer_pct": 1.4314523850900847,
+        "soft_vs_timexer_pct": 3.5066578580740386,
+        "mlp_vs_timexer_pct": 3.3030760170043423
+      }
+    },
+    {
+      "package": "urbanev_0012.npz",
+      "source_label": "attempt_01__predictions__router_v1_f3_h9.npz",
+      "target_id": "urbanev_75585843873dfb07",
+      "rmse": {
+        "caper": 0.08064696107093602,
+        "timexer": 0.08071145384222952,
+        "global_fixed": 0.07813903649113754,
+        "horizon_fixed": 0.07813736991827051,
+        "hard": 0.08028179416872853,
+        "soft": 0.07815913175052285,
+        "mlp": 0.07819830543234749
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": 0.079905351995725,
+        "global_fixed_vs_timexer_pct": 3.187177567288538,
+        "horizon_fixed_vs_timexer_pct": 3.189242420277417,
+        "hard_vs_timexer_pct": 0.5323403966193769,
+        "soft_vs_timexer_pct": 3.162279912211498,
+        "mlp_vs_timexer_pct": 3.1137444442453077
+      }
+    },
+    {
+      "package": "urbanev_0013.npz",
+      "source_label": "attempt_01__predictions__router_v1_f4_h12.npz",
+      "target_id": "urbanev_8be357728d334eab",
+      "rmse": {
+        "caper": 0.07990044715010859,
+        "timexer": 0.07342126014147733,
+        "global_fixed": 0.07290959086076867,
+        "horizon_fixed": 0.07289360552483401,
+        "hard": 0.07361186224188944,
+        "soft": 0.07185418224699475,
+        "mlp": 0.07252023514459797
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": -8.824674210366787,
+        "global_fixed_vs_timexer_pct": 0.6968952585704852,
+        "horizon_fixed_vs_timexer_pct": 0.7186673391692961,
+        "hard_vs_timexer_pct": -0.25960069337523095,
+        "soft_vs_timexer_pct": 2.134365293462605,
+        "mlp_vs_timexer_pct": 1.227199036277978
+      }
+    },
+    {
+      "package": "urbanev_0014.npz",
+      "source_label": "attempt_01__predictions__router_v1_f4_h3.npz",
+      "target_id": "urbanev_2f427e29b8f05db4",
+      "rmse": {
+        "caper": 0.06271977015170074,
+        "timexer": 0.05867740811389069,
+        "global_fixed": 0.05848050878284885,
+        "horizon_fixed": 0.05854238330300523,
+        "hard": 0.059325455430835825,
+        "soft": 0.05804667574648068,
+        "mlp": 0.05850708469114647
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": -6.889128487004706,
+        "global_fixed_vs_timexer_pct": 0.33556242065032216,
+        "horizon_fixed_vs_timexer_pct": 0.2301137954549428,
+        "hard_vs_timexer_pct": -1.1044238963099726,
+        "soft_vs_timexer_pct": 1.0749151806190533,
+        "mlp_vs_timexer_pct": 0.29027086952039544
+      }
+    },
+    {
+      "package": "urbanev_0015.npz",
+      "source_label": "attempt_01__predictions__router_v1_f4_h6.npz",
+      "target_id": "urbanev_0769c192083540a6",
+      "rmse": {
+        "caper": 0.07178738387915357,
+        "timexer": 0.06676824622863556,
+        "global_fixed": 0.06600315120351054,
+        "horizon_fixed": 0.06618255755714046,
+        "hard": 0.06643224959639309,
+        "soft": 0.06515208742387833,
+        "mlp": 0.06591425033237534
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": -7.517252487553582,
+        "global_fixed_vs_timexer_pct": 1.1458965426545629,
+        "horizon_fixed_vs_timexer_pct": 0.8771964288076604,
+        "hard_vs_timexer_pct": 0.5032281828878854,
+        "soft_vs_timexer_pct": 2.4205500309578114,
+        "mlp_vs_timexer_pct": 1.2790449719704535
+      }
+    },
+    {
+      "package": "urbanev_0016.npz",
+      "source_label": "attempt_01__predictions__router_v1_f4_h9.npz",
+      "target_id": "urbanev_7f7c39ad1c6be9e7",
+      "rmse": {
+        "caper": 0.0778200388210132,
+        "timexer": 0.07176031822778509,
+        "global_fixed": 0.0710975752834961,
+        "horizon_fixed": 0.07090572942616072,
+        "hard": 0.07165771610081227,
+        "soft": 0.07010698671179695,
+        "mlp": 0.0707235360630073
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": -8.444389243081464,
+        "global_fixed_vs_timexer_pct": 0.9235507320149798,
+        "horizon_fixed_vs_timexer_pct": 1.1908932718381908,
+        "hard_vs_timexer_pct": 0.1429789185816175,
+        "soft_vs_timexer_pct": 2.30396346730243,
+        "mlp_vs_timexer_pct": 1.4447847924625756
+      }
+    },
+    {
+      "package": "urbanev_0017.npz",
+      "source_label": "attempt_01__predictions__router_v1_f5_h12.npz",
+      "target_id": "urbanev_e22e3adb099ae592",
+      "rmse": {
+        "caper": 0.07884119535162983,
+        "timexer": 0.07511150753835441,
+        "global_fixed": 0.072816680263386,
+        "horizon_fixed": 0.07280965550245404,
+        "hard": 0.07274867609770813,
+        "soft": 0.07183282922663292,
+        "mlp": 0.0716454325428822
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": -4.96553449066498,
+        "global_fixed_vs_timexer_pct": 3.055227288304118,
+        "horizon_fixed_vs_timexer_pct": 3.0645797313081107,
+        "hard_vs_timexer_pct": 3.1457649008572215,
+        "soft_vs_timexer_pct": 4.365081222803694,
+        "mlp_vs_timexer_pct": 4.6145725323144555
+      }
+    },
+    {
+      "package": "urbanev_0018.npz",
+      "source_label": "attempt_01__predictions__router_v1_f5_h3.npz",
+      "target_id": "urbanev_176ef98ce71e6eb0",
+      "rmse": {
+        "caper": 0.05880146388286788,
+        "timexer": 0.05514303352885245,
+        "global_fixed": 0.05430570022712756,
+        "horizon_fixed": 0.05434491341855496,
+        "hard": 0.053994231415725014,
+        "soft": 0.05358367284641303,
+        "mlp": 0.05366655625188296
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": -6.634437969578214,
+        "global_fixed_vs_timexer_pct": 1.51847522368673,
+        "horizon_fixed_vs_timexer_pct": 1.4473634459734357,
+        "hard_vs_timexer_pct": 2.0833132303581894,
+        "soft_vs_timexer_pct": 2.8278471144020703,
+        "mlp_vs_timexer_pct": 2.6775409013306275
+      }
+    },
+    {
+      "package": "urbanev_0019.npz",
+      "source_label": "attempt_01__predictions__router_v1_f5_h6.npz",
+      "target_id": "urbanev_66aec674811b0518",
+      "rmse": {
+        "caper": 0.07288561132161009,
+        "timexer": 0.06552019846912906,
+        "global_fixed": 0.06481992594952454,
+        "horizon_fixed": 0.06492732169729014,
+        "hard": 0.0642024768267313,
+        "soft": 0.06370973012015943,
+        "mlp": 0.06338144239573476
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": -11.241438555701828,
+        "global_fixed_vs_timexer_pct": 1.0687887643296123,
+        "horizon_fixed_vs_timexer_pct": 0.9048763369028288,
+        "hard_vs_timexer_pct": 2.0111685757768587,
+        "soft_vs_timexer_pct": 2.7632217106647796,
+        "mlp_vs_timexer_pct": 3.264269833373608
+      }
+    },
+    {
+      "package": "urbanev_0020.npz",
+      "source_label": "attempt_01__predictions__router_v1_f5_h9.npz",
+      "target_id": "urbanev_4229615099a203dd",
+      "rmse": {
+        "caper": 0.07838896336306907,
+        "timexer": 0.07206883381873817,
+        "global_fixed": 0.07031051515234778,
+        "horizon_fixed": 0.07023484890099232,
+        "hard": 0.07010463667924885,
+        "soft": 0.0690876887466267,
+        "mlp": 0.06899049916303143
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": -8.769573766417233,
+        "global_fixed_vs_timexer_pct": 2.4397767706534284,
+        "horizon_fixed_vs_timexer_pct": 2.544768411763873,
+        "hard_vs_timexer_pct": 2.7254459874146386,
+        "soft_vs_timexer_pct": 4.136524644771433,
+        "mlp_vs_timexer_pct": 4.271381251220361
+      }
+    },
+    {
+      "package": "urbanev_0021.npz",
+      "source_label": "attempt_01__predictions__router_v1_f6_h12.npz",
+      "target_id": "urbanev_9aee22dcc716bfb3",
+      "rmse": {
+        "caper": 0.07123982865833385,
+        "timexer": 0.07187249590927705,
+        "global_fixed": 0.06882715761274395,
+        "horizon_fixed": 0.06877505264828469,
+        "hard": 0.06882596453310577,
+        "soft": 0.06780177436280836,
+        "mlp": 0.0678502266512584
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": 0.8802633649202903,
+        "global_fixed_vs_timexer_pct": 4.237140032505837,
+        "horizon_fixed_vs_timexer_pct": 4.309636421840961,
+        "hard_vs_timexer_pct": 4.238800027227167,
+        "soft_vs_timexer_pct": 5.663809910827453,
+        "mlp_vs_timexer_pct": 5.596395682565237
+      }
+    },
+    {
+      "package": "urbanev_0022.npz",
+      "source_label": "attempt_01__predictions__router_v1_f6_h3.npz",
+      "target_id": "urbanev_6487a26b99f5bda1",
+      "rmse": {
+        "caper": 0.053437873662292364,
+        "timexer": 0.05163639230842545,
+        "global_fixed": 0.05052419150688384,
+        "horizon_fixed": 0.05052938703247376,
+        "hard": 0.0516748529159503,
+        "soft": 0.050333282079491025,
+        "mlp": 0.05075201128726893
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": -3.4887823748541975,
+        "global_fixed_vs_timexer_pct": 2.153908806987151,
+        "horizon_fixed_vs_timexer_pct": 2.143847055269695,
+        "hard_vs_timexer_pct": -0.07448352955242837,
+        "soft_vs_timexer_pct": 2.5236275631940233,
+        "mlp_vs_timexer_pct": 1.7127087730569708
+      }
+    },
+    {
+      "package": "urbanev_0023.npz",
+      "source_label": "attempt_01__predictions__router_v1_f6_h6.npz",
+      "target_id": "urbanev_0e4283c4bd3d0b32",
+      "rmse": {
+        "caper": 0.06285612433537792,
+        "timexer": 0.061521444773247544,
+        "global_fixed": 0.0596625030282545,
+        "horizon_fixed": 0.05967341935000117,
+        "hard": 0.06005262177934103,
+        "soft": 0.05889490122575825,
+        "mlp": 0.05904753298830793
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": -2.1694541912168446,
+        "global_fixed_vs_timexer_pct": 3.021615880193696,
+        "horizon_fixed_vs_timexer_pct": 3.0038719507607876,
+        "hard_vs_timexer_pct": 2.3874975617367626,
+        "soft_vs_timexer_pct": 4.2693138257238035,
+        "mlp_vs_timexer_pct": 4.021218607686844
+      }
+    },
+    {
+      "package": "urbanev_0024.npz",
+      "source_label": "attempt_01__predictions__router_v1_f6_h9.npz",
+      "target_id": "urbanev_ee2aeb87922a3ad5",
+      "rmse": {
+        "caper": 0.06874431131820624,
+        "timexer": 0.06672255771181029,
+        "global_fixed": 0.06491319663534324,
+        "horizon_fixed": 0.06491769271243925,
+        "hard": 0.06568031609103364,
+        "soft": 0.06424955379486985,
+        "mlp": 0.06442578899550284
+      },
+      "gains_pct": {
+        "caper_vs_timexer_pct": -3.0300900860670783,
+        "global_fixed_vs_timexer_pct": 2.7117681613497,
+        "horizon_fixed_vs_timexer_pct": 2.705029695004596,
+        "hard_vs_timexer_pct": 1.5620528596615364,
+        "soft_vs_timexer_pct": 3.706398558073719,
+        "mlp_vs_timexer_pct": 3.442267195792626
+      }
+    },
+    {
+      "package": "urbanev_0025.npz",
+      "source_label": "full__f1_h12__predictions.npz",
+      "target_id": "urbanev_4462eb5c0aad68d7",
+      "rmse": {
+        "raw_prediction": 0.08187954887839827,
+        "clipped_prediction": 0.0818786737759877
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0026.npz",
+      "source_label": "full__f1_h3__predictions.npz",
+      "target_id": "urbanev_5160f26efabbe491",
+      "rmse": {
+        "raw_prediction": 0.06710879423872464,
+        "clipped_prediction": 0.06709265964154665
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0027.npz",
+      "source_label": "full__f1_h6__predictions.npz",
+      "target_id": "urbanev_f3654c5679529cd2",
+      "rmse": {
+        "raw_prediction": 0.07497067125932876,
+        "clipped_prediction": 0.07495351314548206
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0028.npz",
+      "source_label": "full__f1_h9__predictions.npz",
+      "target_id": "urbanev_23490b208a58fe10",
+      "rmse": {
+        "raw_prediction": 0.07980152665138185,
+        "clipped_prediction": 0.07979621434940627
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0029.npz",
+      "source_label": "full__f2_h12__predictions.npz",
+      "target_id": "urbanev_7a7de38f63aa63ea",
+      "rmse": {
+        "raw_prediction": 0.0979742892156614,
+        "clipped_prediction": 0.09793292895561333
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0030.npz",
+      "source_label": "full__f2_h3__predictions.npz",
+      "target_id": "urbanev_10f46c0cc0d0af66",
+      "rmse": {
+        "raw_prediction": 0.08144557127105792,
+        "clipped_prediction": 0.08139921066649584
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0031.npz",
+      "source_label": "full__f2_h6__predictions.npz",
+      "target_id": "urbanev_b057c7a245edd3b5",
+      "rmse": {
+        "raw_prediction": 0.08877234410350657,
+        "clipped_prediction": 0.08871790281185353
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0032.npz",
+      "source_label": "full__f2_h9__predictions.npz",
+      "target_id": "urbanev_9e07f892b6691cdb",
+      "rmse": {
+        "raw_prediction": 0.0957830446510832,
+        "clipped_prediction": 0.09570870042500915
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0033.npz",
+      "source_label": "full__f3_h12__predictions.npz",
+      "target_id": "urbanev_520d070b7da4756e",
+      "rmse": {
+        "raw_prediction": 0.08736343444751328,
+        "clipped_prediction": 0.08736301678374209
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0034.npz",
+      "source_label": "full__f3_h3__predictions.npz",
+      "target_id": "urbanev_86a3bda77f777e18",
+      "rmse": {
+        "raw_prediction": 0.06753346070480483,
+        "clipped_prediction": 0.06751831256569052
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0035.npz",
+      "source_label": "full__f3_h6__predictions.npz",
+      "target_id": "urbanev_c24feb6ccfb920f0",
+      "rmse": {
+        "raw_prediction": 0.07744431606773776,
+        "clipped_prediction": 0.07743950016716035
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0036.npz",
+      "source_label": "full__f3_h9__predictions.npz",
+      "target_id": "urbanev_044c3664c80f25b2",
+      "rmse": {
+        "raw_prediction": 0.08357790422073486,
+        "clipped_prediction": 0.08357681584785619
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0037.npz",
+      "source_label": "full__f4_h12__predictions.npz",
+      "target_id": "urbanev_dc4f9fe5e0ad3b27",
+      "rmse": {
+        "raw_prediction": 0.07548593638305262,
+        "clipped_prediction": 0.07548538131983858
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0038.npz",
+      "source_label": "full__f4_h3__predictions.npz",
+      "target_id": "urbanev_715e6518e62abe53",
+      "rmse": {
+        "raw_prediction": 0.05958525011870357,
+        "clipped_prediction": 0.059576121718656005
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0039.npz",
+      "source_label": "full__f4_h6__predictions.npz",
+      "target_id": "urbanev_d99cf521b167d860",
+      "rmse": {
+        "raw_prediction": 0.06766881961863905,
+        "clipped_prediction": 0.06766188558783554
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0040.npz",
+      "source_label": "full__f4_h9__predictions.npz",
+      "target_id": "urbanev_7f22d933c7ca3a14",
+      "rmse": {
+        "raw_prediction": 0.07286606037311774,
+        "clipped_prediction": 0.07286489943010035
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0041.npz",
+      "source_label": "full__f5_h12__predictions.npz",
+      "target_id": "urbanev_9c644dca5823666d",
+      "rmse": {
+        "raw_prediction": 0.0688287536049926,
+        "clipped_prediction": 0.06881554227442971
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0042.npz",
+      "source_label": "full__f5_h3__predictions.npz",
+      "target_id": "urbanev_39f8d3e252895f70",
+      "rmse": {
+        "raw_prediction": 0.05282120733114775,
+        "clipped_prediction": 0.05280444071898769
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0043.npz",
+      "source_label": "full__f5_h6__predictions.npz",
+      "target_id": "urbanev_0a0c1a4adeddc7f1",
+      "rmse": {
+        "raw_prediction": 0.061877704172305176,
+        "clipped_prediction": 0.06185729497871289
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0044.npz",
+      "source_label": "full__f5_h9__predictions.npz",
+      "target_id": "urbanev_a47da1a296504274",
+      "rmse": {
+        "raw_prediction": 0.0667241700963728,
+        "clipped_prediction": 0.06672042618008879
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0045.npz",
+      "source_label": "full__f6_h12__predictions.npz",
+      "target_id": "urbanev_6428ba07883b635a",
+      "rmse": {
+        "raw_prediction": 0.07254931795437945,
+        "clipped_prediction": 0.07253149052541341
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0046.npz",
+      "source_label": "full__f6_h3__predictions.npz",
+      "target_id": "urbanev_d6784735ef25e51a",
+      "rmse": {
+        "raw_prediction": 0.05199407326037072,
+        "clipped_prediction": 0.05196662737446773
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0047.npz",
+      "source_label": "full__f6_h6__predictions.npz",
+      "target_id": "urbanev_ae78b879ebf3fe82",
+      "rmse": {
+        "raw_prediction": 0.06260144929363615,
+        "clipped_prediction": 0.06257400021430569
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0048.npz",
+      "source_label": "full__f6_h9__predictions.npz",
+      "target_id": "urbanev_4ad56e9206d87b6b",
+      "rmse": {
+        "raw_prediction": 0.06880157226676274,
+        "clipped_prediction": 0.06877952594991878
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0049.npz",
+      "source_label": "m7c_v1_GT_only_f1_h3_s42_b983751c9f6c__attempt_01__predictions.npz",
+      "target_id": "urbanev_52953cbb748dc48a",
+      "rmse": {
+        "prediction": 0.06926813545414895
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0050.npz",
+      "source_label": "m7c_v1_GT_only_f1_h6_s42_ebcbe915def4__attempt_01__predictions.npz",
+      "target_id": "urbanev_1b3eaef2fac2da79",
+      "rmse": {
+        "prediction": 0.07653673226093369
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0051.npz",
+      "source_label": "m7c_v1_GT_only_f1_h9_s42_88691104dd29__attempt_01__predictions.npz",
+      "target_id": "urbanev_dec1b6989a2b1069",
+      "rmse": {
+        "prediction": 0.08086217667327184
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0052.npz",
+      "source_label": "m7c_v1_GT_only_f1_h12_s42_cf08d46c5395__attempt_01__predictions.npz",
+      "target_id": "urbanev_9d7001a39cb32ef9",
+      "rmse": {
+        "prediction": 0.08107389719858103
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0053.npz",
+      "source_label": "m7c_v1_GT_only_f2_h3_s42_16855910d71d__attempt_01__predictions.npz",
+      "target_id": "urbanev_bda992fdbd97ca99",
+      "rmse": {
+        "prediction": 0.0816474321644025
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0054.npz",
+      "source_label": "m7c_v1_GT_only_f2_h6_s42_c0d76eb84bdf__attempt_01__predictions.npz",
+      "target_id": "urbanev_3bff673e132ae94a",
+      "rmse": {
+        "prediction": 0.0888217795582035
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0055.npz",
+      "source_label": "m7c_v1_GT_only_f2_h9_s42_46dc7631c416__attempt_01__predictions.npz",
+      "target_id": "urbanev_abdda7f07d7cbf91",
+      "rmse": {
+        "prediction": 0.09835277583217505
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0056.npz",
+      "source_label": "m7c_v1_GT_only_f2_h12_s42_023f19a0ee36__attempt_01__predictions.npz",
+      "target_id": "urbanev_44139f63edf74c4a",
+      "rmse": {
+        "prediction": 0.09881955639410035
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0057.npz",
+      "source_label": "m7c_v1_GT_only_f3_h3_s42_f0226d4ab720__attempt_01__predictions.npz",
+      "target_id": "urbanev_ec9c131a1cddb845",
+      "rmse": {
+        "prediction": 0.0672248994530605
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0058.npz",
+      "source_label": "m7c_v1_GT_only_f3_h6_s42_4889434e2aa8__attempt_01__predictions.npz",
+      "target_id": "urbanev_da3d8411acc47887",
+      "rmse": {
+        "prediction": 0.07664886470372965
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0059.npz",
+      "source_label": "m7c_v1_GT_only_f3_h9_s42_7b2deb763d53__attempt_01__predictions.npz",
+      "target_id": "urbanev_036e9c570168a399",
+      "rmse": {
+        "prediction": 0.08275475452487614
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0060.npz",
+      "source_label": "m7c_v1_GT_only_f3_h12_s42_a4f4ca7ed501__attempt_01__predictions.npz",
+      "target_id": "urbanev_045ee046a357faaa",
+      "rmse": {
+        "prediction": 0.08572248246097801
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0061.npz",
+      "source_label": "m7c_v1_GT_only_f4_h3_s42_47b4eb248b56__attempt_01__predictions.npz",
+      "target_id": "urbanev_cacf02db70ff9a1d",
+      "rmse": {
+        "prediction": 0.06230435107267396
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0062.npz",
+      "source_label": "m7c_v1_GT_only_f4_h6_s42_e1e1f86529bf__attempt_01__predictions.npz",
+      "target_id": "urbanev_31e6696585d4a5f8",
+      "rmse": {
+        "prediction": 0.07087952907793464
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0063.npz",
+      "source_label": "m7c_v1_GT_only_f4_h9_s42_eb673f1fb4c6__attempt_01__predictions.npz",
+      "target_id": "urbanev_d297193d739af4b1",
+      "rmse": {
+        "prediction": 0.0765963317458
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0064.npz",
+      "source_label": "m7c_v1_GT_only_f4_h12_s42_6ccf3d41a3ff__attempt_01__predictions.npz",
+      "target_id": "urbanev_edb35a40c5980c85",
+      "rmse": {
+        "prediction": 0.07798842252273722
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0065.npz",
+      "source_label": "m7c_v1_GT_only_f5_h3_s42_b3e4e198fcdc__attempt_01__predictions.npz",
+      "target_id": "urbanev_84c32729ffa9b42f",
+      "rmse": {
+        "prediction": 0.057338924712196294
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0066.npz",
+      "source_label": "m7c_v1_GT_only_f5_h6_s42_197548024179__attempt_01__predictions.npz",
+      "target_id": "urbanev_b298df5e9a26e0dd",
+      "rmse": {
+        "prediction": 0.06952842095375275
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0067.npz",
+      "source_label": "m7c_v1_GT_only_f5_h9_s42_f8e22b36a504__attempt_01__predictions.npz",
+      "target_id": "urbanev_7beadb196b160b55",
+      "rmse": {
+        "prediction": 0.07468493867984319
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0068.npz",
+      "source_label": "m7c_v1_GT_only_f5_h12_s42_4c0ce8f6d6b3__attempt_01__predictions.npz",
+      "target_id": "urbanev_62f224e2d1bc918b",
+      "rmse": {
+        "prediction": 0.07479596769962107
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0069.npz",
+      "source_label": "m7c_v1_GT_only_f6_h3_s42_1650c11962c1__attempt_01__predictions.npz",
+      "target_id": "urbanev_26c4441693e0bfff",
+      "rmse": {
+        "prediction": 0.05372900573386073
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0070.npz",
+      "source_label": "m7c_v1_GT_only_f6_h6_s42_03f97beb1c2c__attempt_01__predictions.npz",
+      "target_id": "urbanev_21b913fc80f7d49f",
+      "rmse": {
+        "prediction": 0.06342741762817163
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0071.npz",
+      "source_label": "m7c_v1_GT_only_f6_h9_s42_4e8375979176__attempt_01__predictions.npz",
+      "target_id": "urbanev_ce98400bb0d77cdc",
+      "rmse": {
+        "prediction": 0.0712925252810652
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0072.npz",
+      "source_label": "m7c_v1_GT_only_f6_h12_s42_7e95393904d1__attempt_01__predictions.npz",
+      "target_id": "urbanev_655a126624320a47",
+      "rmse": {
+        "prediction": 0.0733280173271747
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0073.npz",
+      "source_label": "m7c_v1_aligned_KD_f1_h3_s42_40b8402cd68d__attempt_01__predictions.npz",
+      "target_id": "urbanev_52953cbb748dc48a",
+      "rmse": {
+        "prediction": 0.06912620746076188
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0074.npz",
+      "source_label": "m7c_v1_aligned_KD_f1_h6_s42_023aa22b9c9c__attempt_01__predictions.npz",
+      "target_id": "urbanev_1b3eaef2fac2da79",
+      "rmse": {
+        "prediction": 0.07639119880842604
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0075.npz",
+      "source_label": "m7c_v1_aligned_KD_f1_h9_s42_381da5fc2edd__attempt_01__predictions.npz",
+      "target_id": "urbanev_dec1b6989a2b1069",
+      "rmse": {
+        "prediction": 0.08086349692432213
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0076.npz",
+      "source_label": "m7c_v1_aligned_KD_f1_h12_s42_06f26467d890__attempt_01__predictions.npz",
+      "target_id": "urbanev_9d7001a39cb32ef9",
+      "rmse": {
+        "prediction": 0.08107891165655128
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0077.npz",
+      "source_label": "m7c_v1_aligned_KD_f2_h3_s42_503bad3f6941__attempt_01__predictions.npz",
+      "target_id": "urbanev_bda992fdbd97ca99",
+      "rmse": {
+        "prediction": 0.08113429819476226
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0078.npz",
+      "source_label": "m7c_v1_aligned_KD_f2_h6_s42_796e2489790e__attempt_01__predictions.npz",
+      "target_id": "urbanev_3bff673e132ae94a",
+      "rmse": {
+        "prediction": 0.08852207572391933
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0079.npz",
+      "source_label": "m7c_v1_aligned_KD_f2_h9_s42_b35c2396ce82__attempt_01__predictions.npz",
+      "target_id": "urbanev_abdda7f07d7cbf91",
+      "rmse": {
+        "prediction": 0.09699079274249806
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0080.npz",
+      "source_label": "m7c_v1_aligned_KD_f2_h12_s42_05c6667def07__attempt_01__predictions.npz",
+      "target_id": "urbanev_44139f63edf74c4a",
+      "rmse": {
+        "prediction": 0.09822491653294387
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0081.npz",
+      "source_label": "m7c_v1_aligned_KD_f3_h3_s42_2cf8951305aa__attempt_02__predictions.npz",
+      "target_id": "urbanev_ec9c131a1cddb845",
+      "rmse": {
+        "prediction": 0.06682663769488384
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0082.npz",
+      "source_label": "m7c_v1_aligned_KD_f3_h6_s42_f3ddf74ee26e__attempt_01__predictions.npz",
+      "target_id": "urbanev_da3d8411acc47887",
+      "rmse": {
+        "prediction": 0.07549976920390539
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0083.npz",
+      "source_label": "m7c_v1_aligned_KD_f3_h9_s42_db41a84ae421__attempt_01__predictions.npz",
+      "target_id": "urbanev_036e9c570168a399",
+      "rmse": {
+        "prediction": 0.08146423230872989
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0084.npz",
+      "source_label": "m7c_v1_aligned_KD_f3_h12_s42_df7d84a95f53__attempt_01__predictions.npz",
+      "target_id": "urbanev_045ee046a357faaa",
+      "rmse": {
+        "prediction": 0.08384099779283818
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0085.npz",
+      "source_label": "m7c_v1_aligned_KD_f4_h3_s42_aaba420bbe91__attempt_01__predictions.npz",
+      "target_id": "urbanev_cacf02db70ff9a1d",
+      "rmse": {
+        "prediction": 0.06292475385461928
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0086.npz",
+      "source_label": "m7c_v1_aligned_KD_f4_h6_s42_4785c745e6b7__attempt_01__predictions.npz",
+      "target_id": "urbanev_31e6696585d4a5f8",
+      "rmse": {
+        "prediction": 0.07173685860169125
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0087.npz",
+      "source_label": "m7c_v1_aligned_KD_f4_h9_s42_a8138e9d6d02__attempt_01__predictions.npz",
+      "target_id": "urbanev_d297193d739af4b1",
+      "rmse": {
+        "prediction": 0.07742133888056217
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0088.npz",
+      "source_label": "m7c_v1_aligned_KD_f4_h12_s42_5e85c08ca457__attempt_01__predictions.npz",
+      "target_id": "urbanev_edb35a40c5980c85",
+      "rmse": {
+        "prediction": 0.07879238070662084
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0089.npz",
+      "source_label": "m7c_v1_aligned_KD_f5_h3_s42_f56c1c7f5fa8__attempt_01__predictions.npz",
+      "target_id": "urbanev_84c32729ffa9b42f",
+      "rmse": {
+        "prediction": 0.058703797704392595
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0090.npz",
+      "source_label": "m7c_v1_aligned_KD_f5_h6_s42_e564a69f5d22__attempt_01__predictions.npz",
+      "target_id": "urbanev_b298df5e9a26e0dd",
+      "rmse": {
+        "prediction": 0.07123973098687815
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0091.npz",
+      "source_label": "m7c_v1_aligned_KD_f5_h9_s42_3beed6f0e183__attempt_01__predictions.npz",
+      "target_id": "urbanev_7beadb196b160b55",
+      "rmse": {
+        "prediction": 0.07716344001487632
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0092.npz",
+      "source_label": "m7c_v1_aligned_KD_f5_h12_s42_9de06e1d05d6__attempt_01__predictions.npz",
+      "target_id": "urbanev_62f224e2d1bc918b",
+      "rmse": {
+        "prediction": 0.07689137184666076
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0093.npz",
+      "source_label": "m7c_v1_aligned_KD_f6_h3_s42_0b81ab8a8cd6__attempt_01__predictions.npz",
+      "target_id": "urbanev_26c4441693e0bfff",
+      "rmse": {
+        "prediction": 0.05363151010489332
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0094.npz",
+      "source_label": "m7c_v1_aligned_KD_f6_h6_s42_2cbd4a7c4e03__attempt_01__predictions.npz",
+      "target_id": "urbanev_21b913fc80f7d49f",
+      "rmse": {
+        "prediction": 0.06275767680935146
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0095.npz",
+      "source_label": "m7c_v1_aligned_KD_f6_h9_s42_93e406d128e8__attempt_01__predictions.npz",
+      "target_id": "urbanev_ce98400bb0d77cdc",
+      "rmse": {
+        "prediction": 0.06906461203520071
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0096.npz",
+      "source_label": "m7c_v1_aligned_KD_f6_h12_s42_4482fe48d2f5__attempt_01__predictions.npz",
+      "target_id": "urbanev_655a126624320a47",
+      "rmse": {
+        "prediction": 0.07117935954767032
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0097.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f1_h3_s42_7829a05618c5__attempt_01__predictions.npz",
+      "target_id": "urbanev_52953cbb748dc48a",
+      "rmse": {
+        "prediction": 0.07020520961798585
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0098.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f1_h6_s42_650780212911__attempt_01__predictions.npz",
+      "target_id": "urbanev_1b3eaef2fac2da79",
+      "rmse": {
+        "prediction": 0.07667031041591937
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0099.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f1_h9_s42_7b3b12b88784__attempt_01__predictions.npz",
+      "target_id": "urbanev_dec1b6989a2b1069",
+      "rmse": {
+        "prediction": 0.08119693956716885
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0100.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f1_h12_s42_7041aac0ed85__attempt_01__predictions.npz",
+      "target_id": "urbanev_9d7001a39cb32ef9",
+      "rmse": {
+        "prediction": 0.08148497625134794
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0101.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f2_h3_s42_098f9fd6cb2b__attempt_01__predictions.npz",
+      "target_id": "urbanev_bda992fdbd97ca99",
+      "rmse": {
+        "prediction": 0.08100556517704018
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0102.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f2_h6_s42_0ba61fc478a6__attempt_01__predictions.npz",
+      "target_id": "urbanev_3bff673e132ae94a",
+      "rmse": {
+        "prediction": 0.08820871053913054
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0103.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f2_h9_s42_75bc970e20d5__attempt_01__predictions.npz",
+      "target_id": "urbanev_abdda7f07d7cbf91",
+      "rmse": {
+        "prediction": 0.09666287790601762
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0104.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f2_h12_s42_c72053a30cfc__attempt_01__predictions.npz",
+      "target_id": "urbanev_44139f63edf74c4a",
+      "rmse": {
+        "prediction": 0.0980535083719173
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0105.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f3_h3_s42_05e9bfabd32f__attempt_01__predictions.npz",
+      "target_id": "urbanev_ec9c131a1cddb845",
+      "rmse": {
+        "prediction": 0.06688633875603471
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0106.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f3_h6_s42_759aaf8463af__attempt_01__predictions.npz",
+      "target_id": "urbanev_da3d8411acc47887",
+      "rmse": {
+        "prediction": 0.07554292278105078
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0107.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f3_h9_s42_ed7c0138427b__attempt_01__predictions.npz",
+      "target_id": "urbanev_036e9c570168a399",
+      "rmse": {
+        "prediction": 0.0814649110780198
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0108.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f3_h12_s42_e939c406669c__attempt_01__predictions.npz",
+      "target_id": "urbanev_045ee046a357faaa",
+      "rmse": {
+        "prediction": 0.08375686660999022
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0109.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f4_h3_s42_cbb097c2348c__attempt_01__predictions.npz",
+      "target_id": "urbanev_cacf02db70ff9a1d",
+      "rmse": {
+        "prediction": 0.06301352471348388
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0110.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f4_h6_s42_1228cba7928d__attempt_01__predictions.npz",
+      "target_id": "urbanev_31e6696585d4a5f8",
+      "rmse": {
+        "prediction": 0.07186923738436413
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0111.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f4_h9_s42_403f4910c6dc__attempt_01__predictions.npz",
+      "target_id": "urbanev_d297193d739af4b1",
+      "rmse": {
+        "prediction": 0.077323034079722
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0112.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f4_h12_s42_6a8714594af9__attempt_01__predictions.npz",
+      "target_id": "urbanev_edb35a40c5980c85",
+      "rmse": {
+        "prediction": 0.07927122305141564
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0113.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f5_h3_s42_72754092e72a__attempt_01__predictions.npz",
+      "target_id": "urbanev_84c32729ffa9b42f",
+      "rmse": {
+        "prediction": 0.058723580439877146
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0114.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f5_h6_s42_aa1b09599c23__attempt_01__predictions.npz",
+      "target_id": "urbanev_b298df5e9a26e0dd",
+      "rmse": {
+        "prediction": 0.07278232001623543
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0115.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f5_h9_s42_790854818ee3__attempt_01__predictions.npz",
+      "target_id": "urbanev_7beadb196b160b55",
+      "rmse": {
+        "prediction": 0.07671891417019774
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0116.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f5_h12_s42_2486c403fd2f__attempt_01__predictions.npz",
+      "target_id": "urbanev_62f224e2d1bc918b",
+      "rmse": {
+        "prediction": 0.0779718186256736
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0117.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f6_h3_s42_def31fc27627__attempt_01__predictions.npz",
+      "target_id": "urbanev_26c4441693e0bfff",
+      "rmse": {
+        "prediction": 0.05360083359498135
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0118.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f6_h6_s42_bba91db817f1__attempt_01__predictions.npz",
+      "target_id": "urbanev_21b913fc80f7d49f",
+      "rmse": {
+        "prediction": 0.06255459469629754
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0119.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f6_h9_s42_799a044590b1__attempt_01__predictions.npz",
+      "target_id": "urbanev_ce98400bb0d77cdc",
+      "rmse": {
+        "prediction": 0.06997369194831574
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "urbanev_0120.npz",
+      "source_label": "m7c_v1_shuffled_teacher_f6_h12_s42_f4979231b87c__attempt_01__predictions.npz",
+      "target_id": "urbanev_655a126624320a47",
+      "rmse": {
+        "prediction": 0.07122370988186877
+      },
+      "gains_pct": {}
+    }
+  ]
+}

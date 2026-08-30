@@ -1,0 +1,38 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=18mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{xurl}
+\usepackage{flafter}
+\usepackage[section]{placeins}
+\hypersetup{colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,urlcolor=MidnightBlue,pdftitle={Supplementary Material: From Configurations to Claims},pdfauthor={Hongwei Chi}}
+\setlist{nosep,leftmargin=*}
+\setlength{\emergencystretch}{2em}
+\makeatletter
+\def\input@path{{../main/}{../main/sections/}{../main/tables/}}
+\makeatother
+\title{Supplementary Material for\\From Configurations to Claims: An Evidence Audit of Urban EV Charging Forecasting}
+\input{../shared/author_metadata}
+\date{Preprint version 0.9.0}
+\begin{document}
+\maketitle
+\provisionalauthorshipnote
+\section{Full audit framework and claim grammar}
+\input{../main/tables/table6_audit_framework}
+\section{Model identities and local adaptations}
+\input{../main/tables/table7_model_identity}
+\section{Research-question to claim map}
+\input{../main/tables/table9_rq_map}
+\input{../main/sections/08_reproducibility_appendix}
+\nocite{*}
+\bibliographystyle{unsrtnat}
+\bibliography{../shared/references}
+\end{document}

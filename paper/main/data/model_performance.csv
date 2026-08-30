@@ -1,0 +1,9 @@
+method,cells,RMSE,MAE,role,source
+Oracle,24,0.061232970014694243,0.035023478095100584,target-dependent upper-bound diagnostic,experiments\03_fixed_fusions\outputs\FIXED_FUSION_SUMMARY.json
+Global Fixed,24,0.07136675688300531,0.04494941741082564,strict prequential fixed fusion,experiments\03_fixed_fusions\outputs\FIXED_FUSION_SUMMARY.json
+Horizon Fixed,24,0.07137177878413585,0.04495109760949473,horizon-specific fixed control,experiments\03_fixed_fusions\outputs\FIXED_FUSION_SUMMARY.json
+TimeXer,24,0.07370892925327933,0.04636686591893761,best evaluated single model,experiments\03_fixed_fusions\outputs\FIXED_FUSION_SUMMARY.json
+DLinear,24,0.07536193702799095,0.04804104806250811,lightweight baseline,experiments\02_lightweight_baselines\outputs\LIGHTWEIGHT_BASELINE_SUMMARY.json
+CAPER,24,0.07550667751389535,0.048479747276688745,expert,experiments\03_fixed_fusions\outputs\FIXED_FUSION_SUMMARY.json
+NLinear,24,0.0757111359298583,0.04789381037506515,lightweight baseline,experiments\02_lightweight_baselines\outputs\LIGHTWEIGHT_BASELINE_SUMMARY.json
+GBDT-Forecaster,24,0.07816504561205885,0.04938805530110112,lightweight baseline,experiments\02_lightweight_baselines\outputs\LIGHTWEIGHT_BASELINE_SUMMARY.json

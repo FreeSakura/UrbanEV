@@ -1,0 +1,42 @@
+{
+  "status": "locked",
+  "generated_at": "2026-08-28T22:04:56",
+  "repo_id": "amazon/chronos-2",
+  "requested_revision": "main",
+  "resolved_commit_sha": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+  "local_snapshot": "private-workspace://urbanev-forecast/experiments\\06_5_teacher_qualification\\model_snapshots\\amazon_chronos-2_29ec3766d36d",
+  "total_bytes": 477940831,
+  "files": [
+    {
+      "relative_path": ".gitattributes",
+      "bytes": 1519,
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+    },
+    {
+      "relative_path": "config.json",
+      "bytes": 1067,
+      "sha256": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031"
+    },
+    {
+      "relative_path": "model.safetensors",
+      "bytes": 477930472,
+      "sha256": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42"
+    },
+    {
+      "relative_path": "README.md",
+      "bytes": 7773,
+      "sha256": "c7b29bc88f5bc3ebc6e7213b6353be80090d671fefa4aa74ed20498838c16558"
+    }
+  ],
+  "environment": {
+    "python": "3.10.8",
+    "chronos_forecasting": "2.2.2",
+    "chronos_module": "2.2.2",
+    "transformers": "4.57.6",
+    "huggingface_hub": "0.36.2",
+    "torch": "2.5.1+cu121",
+    "cuda": "12.1"
+  },
+  "inference_started": false,
+  "scoring_started": false
+}

@@ -1,0 +1,26 @@
+\begin{table*}[htbp]
+\centering
+\caption{Portable author and reviewer checklist for auditable forecasting claims.}
+\label{tab:audit-checklist}
+\scriptsize
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.035\linewidth}>{\raggedright\arraybackslash}p{0.27\linewidth}>{\raggedright\arraybackslash}p{0.30\linewidth}>{\raggedright\arraybackslash}p{0.29\linewidth}}
+\toprule
+ID & Check & Author must expose & Reviewer test \\
+\midrule
+1 & Target and role semantics & numerator/denominator, spatial unit, mask, sampling clock, and development/formal/protected role & Could two datasets or target constructions be mistaken for the same RMSE scale? \\
+2 & Configuration identity & run ID, protocol version, fingerprint, source mapping, seed, fold/horizon, and execution state & Could a completed run still be underidentified or map to several disclosed cells? \\
+3 & Information timing & forecast origin, lookback, covariates, fill/scaler fit interval, and prequential weight/tuning source & Does any current/future target influence a parameter evaluated in the same fold? \\
+4 & Artifact closure & expected matrix cardinality, terminal attempts, prediction/target/order/time/spatial/mask identities & Are aggregates withheld until every required cell is closed and verified? \\
+5 & Metric lock & metric implementation identity, lock state, unlock conditions, authority, receipt, and access counter & Can any result be read or selected before the audit passes? \\
+6 & Comparator and endpoint & primary reference, macro/micro weighting, endpoint, sign convention, and secondary diagnostics & Was the reference or endpoint changed after seeing results? \\
+7 & Uncertainty and gate & resampling unit, partial-block rule, replicates/seed, minimum effect, consistency checks, stop rule & Is a positive interval against zero being substituted for a failed effect-size requirement? \\
+8 & Controls and repair & negative-control construction, invalidation scope, before/after hashes, and whether predictions changed & Were only visibly bad cells repaired, or was the formal control family rerun non-selectively? \\
+9 & Model identity & upstream/local source, checkpoint/revision, local adaptations, input contract, and every unknown field & Does a local adaptation masquerade as an official or exact upstream implementation? \\
+10 & Engineering measurement & device, software, precision, batch/request shape, synchronization, warm-up, repetitions, P50/P95, throughput & Is a hardware-specific measurement being promoted to portable efficiency? \\
+11 & Future/protected evidence & storage versus analytical access, allowed metadata, threat-model limit, logs, and unlock rule & Does the boundary prevent analysis, merely record storage, or claim stronger security than implemented? \\
+12 & Claim lineage & claim ID, authoritative artifact, SHA-256, evaluation type, allowed/prohibited wording, scope limit & Can every headline number be traced, and are diagnostics/subchecks kept at their original evidence type? \\
+13 & Negative result & terminal decision, disallowed same-interval actions, and requirements for a new version/evidence boundary & Was a failed hypothesis silently continued through tuning, threshold changes, or a new structure? \\
+14 & Missing validation & limitations must name absent multi-seed, multi-hardware, external-team, utility, or rater evidence & Is any absent analysis implied by rhetoric such as robust, validated, secure, or general? \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "urbanev-external-model-download/v1",
+  "repo_id": "amazon/chronos-2",
+  "official_repository": "https://github.com/amazon-science/chronos-forecasting",
+  "official_model_page": "https://huggingface.co/amazon/chronos-2",
+  "resolved_commit_sha": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+  "license": "Apache-2.0",
+  "weights_redistributed": false,
+  "files": [
+    {"relative_path": ".gitattributes", "bytes": 1519, "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"},
+    {"relative_path": "config.json", "bytes": 1067, "sha256": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031"},
+    {"relative_path": "model.safetensors", "bytes": 477930472, "sha256": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42"},
+    {"relative_path": "README.md", "bytes": 7773, "sha256": "c7b29bc88f5bc3ebc6e7213b6353be80090d671fefa4aa74ed20498838c16558"}
+  ]
+}

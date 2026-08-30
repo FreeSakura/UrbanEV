@@ -1,0 +1,39 @@
+\begin{table*}[htbp]
+\centering
+\caption{Portable fail-closed audit framework.  Each transition requires an inspectable artifact; a failed precondition routes to \emph{blocked} rather than to metric interpretation.}
+\label{tab:audit-framework}
+\scriptsize
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.08\linewidth}>{\raggedright\arraybackslash}p{0.14\linewidth}>{\raggedright\arraybackslash}p{0.23\linewidth}>{\raggedright\arraybackslash}p{0.21\linewidth}>{\raggedright\arraybackslash}p{0.17\linewidth}}
+\toprule
+Stage & Required state & Minimum portable record & Fail-closed transition & Claim token released \\
+\midrule
+1. Register & protocol fixed before aggregate evidence & data role, target, split, forecast origin, model/config ID, seed, endpoint, controls, gate, stop rule & missing or mutable field $\rightarrow$ \texttt{BLOCKED} & \texttt{registered} only \\
+2. Execute & registered configuration & run ID, configuration fingerprint, code/environment identity, attempt state, immutable output paths & failure $\rightarrow$ terminal failed run; non-run $\rightarrow$ non-complete & \texttt{executed} or \texttt{failed}; never \texttt{reproduced} by itself \\
+3. Close & all expected cells terminal & expected/observed cardinality; target, order, time, spatial and mask hashes; prediction hashes; provenance links & incomplete or mismatched family $\rightarrow$ repair required & closed-unverified \\
+4. Audit & closed matrix; metrics still locked & identity audit, boundary audit, control validity, repair parent/child hashes, prediction-change flag & any defect $\rightarrow$ invalidate affected formal family; non-selective rerun where selection could bias repair & \texttt{audit-pass} \\
+5. Unlock & every registered audit passes & unlock authority, conditions, receipt hash, access counters, exact audited matrix hash & absent receipt or premature access $\rightarrow$ \texttt{BLOCKED} & \texttt{metric-unlocked} for the named role only \\
+6. Decide & metric implementation and reference fixed & endpoint, reference, effect, uncertainty, consistency checks, conjunctive gate outcome & any required check fails $\rightarrow$ versioned hypothesis terminates & \texttt{gate-pass} or \texttt{gate-fail}; subchecks stay typed \\
+7. Write & decision and evidence chain retained & claim ID, authoritative artifact and hash, evaluation type, allowed wording, prohibited wording, scope limit & missing lineage $\rightarrow$ claim withheld & scoped manuscript statement \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[htbp]
+\centering
+\caption{Portable fail-closed audit framework (continued): typed claim grammar used to prevent diagnostic, proxy, engineering, or procedural evidence from being promoted to a stronger claim.}
+\label{tab:claim-grammar}
+\scriptsize
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.15\linewidth}>{\raggedright\arraybackslash}p{0.26\linewidth}>{\raggedright\arraybackslash}p{0.21\linewidth}>{\raggedright\arraybackslash}p{0.20\linewidth}}
+\toprule
+Evidence type & Required sentence grammar & Example permitted verb phrase & Promotion that remains prohibited \\
+\midrule
+Oracle diagnostic & [target-dependent role] + [dataset boundary] + [reference] + [opportunity bound] & ``indicates an infeasible upper bound'' & ``is deployable'' or ``can be recovered'' \\
+Proxy prediction & [proxy label] + [forecast-origin information set] + [discrimination/calibration] & ``predicts relative expert advantage'' & ``improves forecast RMSE'' or ``identifies a cause'' \\
+Real-GT development/internal & [data role] + [reference] + [endpoint] + [effect/interval] & ``improves internal rolling RMSE by $x\%$'' & ``generalizes'', ``blind test'', or ``state of the art'' \\
+Engineering measurement & [device + workload + precision + batch] + [endpoint] + [comparison] & ``measured P50 was $x$ ms on the frozen workload'' & ``is efficient'' without a portable serving study \\
+Conjunctive gate & [candidate] + [all required checks] + [pass/fail] + [authorized next action] & ``failed the 1\% point-effect requirement; stage stopped'' & replacing the frozen question with a positive subcheck \\
+Artifact-integrity event & [defect] + [pre-metric state] + [repair/audit] + [unlock outcome] & ``blocked interpretation until identity audit passed'' & ``repair improved accuracy'' \\
+Procedural data boundary & [asset role] + [storage state] + [analytical-use state] + [threat-model limit] & ``vault-materialized; analytical access after lock was zero'' & ``never materialized'' or ``cryptographically inaccessible'' \\
+\bottomrule
+\end{tabular}
+\end{table*}

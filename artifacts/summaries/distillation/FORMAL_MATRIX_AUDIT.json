@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-29T11:25:09",
+  "overall_verdict": "PASS",
+  "cells": 72,
+  "passed": 72,
+  "failed": 0,
+  "failures": [],
+  "queue_retried_jobs": 0,
+  "protected_target_accessed": false,
+  "metrics_unlocked": true
+}

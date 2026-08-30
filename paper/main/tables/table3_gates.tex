@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\caption{Stage-specific qualification outcomes. Gains use different frozen references and are not absolute cross-stage or cross-dataset comparisons. ``--'' for Chronos-2 means that its frozen screen did not register a paired interval, not zero uncertainty.}
+\label{tab:gates}
+\scriptsize
+\begin{tabular}{llllll}
+\toprule
+Stage & Frozen reference & Gain & Paired 95\% CI & Primary point gate & Decision \\
+\midrule
+Router MLP & Global Fixed & +0.443\% & [0.275, 0.634]\% & 1.0\% & FAIL \\
+Chronos-2 & Global Fixed & -3.048\% & -- & 1.0\% & FAIL \\
+Aligned KD & GT-only student & +0.119\% & [-0.064, 0.303]\% & 1.0\% & FAIL \\
+KD vs shuffled & shuffled teacher & +0.259\% & [0.151, 0.367]\% & positive control contrast & PASS SUBCHECK \\
+Paris teacher & Paris TimeXer & +0.847\% & [0.687, 1.009]\% & 1.0\% & FAIL \\
+\bottomrule
+\end{tabular}
+\end{table*}

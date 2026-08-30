@@ -1,0 +1,207 @@
+\appendix
+\section{Reproducibility and Claim-Control Appendix}
+\label{sec:reproducibility-appendix}
+
+This appendix exports the audit interface behind the case study.  It is deliberately documentary: it reuses frozen main-workspace artifacts, performs no model training or inference, recomputes no experiment metric, runs no new bootstrap or threshold sensitivity, and does not read Paris formal or protected target content.  The tables distinguish facts present in the artifacts from portable recommendations.  When a field cannot be established from a frozen artifact it is reported as \emph{unknown/not claimed}; it is not reconstructed by assumption.
+
+The appendix also does not supply evidence that the study did not collect.  In particular, no independent-coder classification exercise, inter-rater agreement statistic, alternative bootstrap block-length analysis, or new Global Fixed uncertainty interval is claimed.  The main text's 0.5/1/2\% threshold counterfactual is arithmetic context only; it does not recompute metrics or alter a decision.  The S1--S6 registry is a deterministic single-pipeline classification of one inventory.  Historical project records used a review label for what was actually a separately instantiated automated differential artifact audit, not a blinded external human replication or an inter-rater study.
+
+\subsection{Deterministic S1--S6 decision tree}
+\label{sec:appendix-status-tree}
+
+The classifier in \path{experiments/00_registry_reclassification/scripts/rebuild_status_registry.py} applies the following ordered rules to each frozen manifest row.  Order is part of the definition; a later numerical rule cannot overwrite an earlier execution fact.
+
+\begin{enumerate}[label=\textbf{D\arabic*.}]
+    \item If \texttt{execution\_status=failed}, assign S5 and require any future attempt to use a new versioned retry identifier.
+    \item Otherwise, if \texttt{execution\_status} is not \texttt{complete}, assign S6 and require any future execution to use a new versioned run identifier.
+    \item Otherwise, if the row maps to UrbanEV source Table 4, assign S4 because the source paper and repository do not identify the disclosed node uniquely.
+    \item Otherwise, if no source comparison cell can be mapped uniquely, assign S4.
+    \item Otherwise, collect the disclosed RMSE, MAPE, RAE, and MAE grades and take the worst valid grade.  The frozen bands are exact (relative error no greater than 2\%), near (2--5\%), and trend (greater than 5\%); an empty valid-grade set defaults to trend when a comparison record exists.
+    \item If comparison fold coverage is below six, assign S3.  Otherwise, if the worst grade is trend, assign S3.
+    \item Otherwise, if the track is \texttt{official} and the worst grade is exact, assign S1.  Every other completed, uniquely mapped, non-trend row is S2.
+\end{enumerate}
+
+Thus the executable priority is S5/S6 $\rightarrow$ S4 $\rightarrow$ S1/S2/S3.  A completion mark indicates process completion only; it is not used as a synonym for S1.  The following examples are the first row of each final status in the authoritative CSV.  The \texttt{classification\_reason} text is an English rendering of the Chinese source field so that the appendix compiles under the paper's Latin-font setup.
+
+\begin{table*}[htbp]
+\centering
+\caption{One frozen registry example per evidence status.  Full run identifiers and reasons are retained to make the classification path inspectable.}
+\label{tab:status-examples}
+\scriptsize
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.045\linewidth}>{\raggedright\arraybackslash}p{0.36\linewidth}>{\raggedright\arraybackslash}p{0.46\linewidth}}
+\toprule
+State & Example ID & Reason \\
+\midrule
+S1 & \path{official-compat-v1-t3-lo-occ-3-1-region-None-42-20-eae54b2d} & Official-compatible protocol is identifiable, all six folds are complete, and the relative error of each of four disclosed metrics is no greater than 2\%. \\
+S2 & \path{audited-t3-lo-occ-3-1-region-None-42-20-efa1ea0d} & Six folds and the main protocol align, but an audited correction is present or at least one metric lies in the 2--5\% approximation band. \\
+S3 & \path{audited-t3-ar-occ-3-1-region-None-42-20-3b0793b0} & At least one paper-disclosed metric has relative error above 5\%; only trend-level evidence is retained. \\
+S4 & \path{audited-t4-lo-occ-3-1-194-None-42-20-42da10db} & Neither the paper nor repository discloses the Table 4 node identity; node 194 is a predeclared reverse-identification candidate, not a unique truth. \\
+S5 & \path{audited-t3-lstm-occ-6-3-region-None-42-20-c735895e} & The frozen configuration was executed but failed; the failure artifact is retained and cannot contribute a paper number. \\
+S6 & \path{audited-t3-TimesNet-occ-3-3-region-None-42-1-1687eb9d} & The configuration is frozen in the manifest but was not executed or registered after accumulated failures in the same model batch. \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\FloatBarrier
+
+\subsection{Model identity is a claim field}
+\label{sec:appendix-model-identity}
+
+Names alone do not identify a scientific object.  The same family label may refer to an upstream release, a local source snapshot, an existing prediction artifact, a retrained adaptation, or a deterministic composition of other artifacts.  Table~\ref{tab:model-identity} therefore reports the identity that the frozen artifacts support and names fields that remain unknown.  This is especially important for Paris: \texttt{Paris\_CAPER\_phase\_only} and \texttt{TimeXer\_local\_audited\_compact\_L168} are development-only local adaptations, not exact transfers of the UrbanEV experts or claims about every upstream implementation.
+
+\subsection{Fail-closed state machine}
+\label{sec:appendix-state-machine}
+\label{app:fail-closed}
+
+The portable state sequence is:
+
+\begin{center}
+\texttt{REGISTERED} $\rightarrow$ \texttt{RUNNING} $\rightarrow$ \texttt{CLOSED\_UNVERIFIED} $\rightarrow$ \texttt{AUDIT\_PASS} $\rightarrow$ \texttt{METRIC\_UNLOCKED} $\rightarrow$ \texttt{GATE\_PASS} or \texttt{GATE\_FAIL}.
+\end{center}
+
+Three side transitions prevent a defective artifact from moving forward.  First, an incomplete matrix, target/order mismatch, invalid control, boundary violation, or provenance failure moves \texttt{CLOSED\_UNVERIFIED} to \texttt{BLOCKED} or \texttt{REPAIR\_REQUIRED}; aggregate metrics remain inaccessible.  Second, a permitted repair creates \texttt{REPAIRED\_UNVERIFIED}, records parent and child hashes and whether predictions changed, and returns to the full audit rather than directly to metric unlock.  When selective repair could use information about which controls failed, the formal control family is invalidated and rerun non-selectively.  Third, \texttt{GATE\_FAIL} is terminal for the current protocol version.  Continuing with a changed model, threshold, loss, or evidence role requires a new versioned protocol and a valid evidence boundary; a failed version is not rewritten as pending.
+
+The two observed incidents instantiate these transitions.  In M7-C, the first audit detected three identity permutations at 69/72 cells while \texttt{metrics\_unlocked=false}; all 24 shuffled controls were invalidated and rerun before the 72/72 audit passed.  In Paris, 32 prediction jobs closed without evaluation metrics, missing-target representation was repaired in 24 artifacts (10,236 entries) with predictions unchanged, and the development metrics were unlocked only after the 32/32 prediction audit passed.  These are integrity events, not accuracy improvements.
+
+\subsection{Portable lock schema and invariants}
+\label{sec:appendix-lock-schema}
+
+The project evolved several lock and receipt formats rather than one universal schema.  Table~\ref{tab:lock-schema} gives the normalized interface required to reproduce the paper's claim-control semantics.  It is a portable schema, not a statement that every historical artifact contains every field.  A missing field must be encoded as \texttt{unknown} or fail the relevant gate; it must never be silently inferred from a filename.
+
+\begin{table*}[htbp]
+\centering
+\caption{Normalized lock schema.  Existing exemplars use heterogeneous field names; the rightmost column states the invariant a portable implementation must enforce.}
+\label{tab:lock-schema}
+\scriptsize
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.12\linewidth}>{\raggedright\arraybackslash}p{0.21\linewidth}>{\raggedright\arraybackslash}p{0.23\linewidth}>{\raggedright\arraybackslash}p{0.26\linewidth}}
+\toprule
+Group & Required fields & Existing artifact exemplar & Invariant \\
+\midrule
+Protocol & \texttt{protocol\_id}, version, status, protocol SHA-256 & router, latency, distillation, and Paris teacher protocol files & Data role, endpoint, reference, gate, and stop rule are immutable before aggregate access. \\
+Configuration & \texttt{run\_id}, config fingerprint, model identity, seed, fold, horizon & status registry and run manifests & One identifier maps to one configuration; retries retain parentage rather than overwriting identity. \\
+Impl. & code/source hashes; dependency and bundle hashes & Chronos model lock; Paris implementation fingerprints & The implementation that emitted predictions equals the registered implementation or has an explicit non-training amendment receipt. \\
+Environment & Python and library versions; accelerator, runtime, precision; optional environment hash & latency hardware/software manifests; Chronos environment block & Scope is explicit.  If no unified environment hash exists, reproducibility is limited rather than implied. \\
+Data boundary & source/data hash, role, permitted metadata, fold dates & baseline protocol; Paris boundary lock and source manifest & Development, formal, and protected roles cannot be silently exchanged. \\
+Target identity & target-value, index/order, time, spatial-unit, and mask hashes; fold--horizon cell & expert diagnostics, run status, prediction audits & Candidate and reference use identical target positions and semantics for every compared cell. \\
+Prediction & prediction SHA-256, shape, finiteness/range, attempt path & per-run receipts and prediction audits & The audited bytes are the bytes aggregated; a repair changing predictions requires new scientific evidence. \\
+Metric & metric script/hash, endpoint definition, output hash & metric-lock scripts, aggregate summaries & The metric implementation and weighting rule are fixed; output cannot precede unlock. \\
+Unlock & lock time, conditions, authority, receipt SHA-256, matrix/state hash & Paris metrics-unlock receipt; M7-C formal audit & Every condition is conjunctive and machine-checkable; role-specific unlock does not unlock another role. \\
+Access & analytical-access counter, operation definition, log/receipt location & Paris protected guard and prediction audit & Counter semantics and time origin are stated; storage migration is recorded separately. \\
+Repair & parent hash, child hash, reason, prediction-changed flag, audit return state & shuffled-control amendment and masked-target repair ledger & Repair is traceable and returns to unverified state; non-selective scope is used where observation could bias repair. \\
+Decision & reference, point effect, interval, fold/cell/horizon checks, gate vector, authorized next action & router, Chronos, D1, and Paris teacher summaries/decisions & A failed required component yields terminal failure for that version even when another subcheck passes. \\
+Claim & claim ID, authoritative artifact/hash, evaluation type, allowed/prohibited wording, scope limit & Table~\ref{tab:claim-trace} & Manuscript wording cannot exceed the evidence type or data role. \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\FloatBarrier
+
+\subsection{Operational definition of analytical access}
+\label{sec:appendix-access-definition}
+
+The Paris guards distinguish three operations.
+
+\begin{description}
+    \item[Storage materialization.] Byte-preserving movement, copying, sharding, forensic preservation, and opaque byte hashing of target-bearing files.  It also includes creating or verifying a path/size/hash manifest.  These operations are recorded as storage events; they do not by themselves authorize or count as target analysis.
+    \item[Approved metadata handling.] Reading the registered non-target fields (date boundary, station identifier, latitude, longitude, postcode, and area), row counts, file sizes, and hashes needed to establish the split and storage receipt, without using state/target values.  This is boundary administration, not model evidence.
+    \item[Analytical access.] Any post-lock operation that deserializes, displays, summarizes, plots, filters by, learns from, scores against, or forms a scientific claim from formal/protected target or state values.  Manual viewing counts.  Feeding values to training, validation, model selection, metric computation, threshold selection, error analysis, or a paper table counts even if no file is modified.
+\end{description}
+
+Under this definition, the guard's \texttt{analytical\_access\_count=0} means no protected label was used after the boundary lock for those analytical operations.  It does not mean that target bytes were never materialized: one storage-migration event created vault shards and moved recoverable sources.  It also does not erase the separately logged display of two example source rows during pre-lock schema discovery.  The counter is a procedural project field supported by receipts and audits, not an operating-system reference monitor, append-only security log, encryption guarantee, or defense against a malicious authenticated user.
+
+The in-scope threat is accidental or adaptive analytical use by the project workflow: a script path that reaches a future role, a stale cache, recoverable Git objects in the main project, or a metric opened before the registered closure.  The current vault path, manifest, hashes, guards, and negative main-project scan reduce those risks.  OS compromise, deliberate bypass by an authorized account, cryptographic confidentiality, and immutable access logging are out of scope.  The allowed claim is therefore procedural source separation and zero recorded analytical use, not hardened security.
+
+\subsection{Paris fold-synchronous bootstrap, including the partial block}
+\label{sec:appendix-paris-bootstrap}
+
+The frozen implementation in \path{experiments/09_distill_v2/scripts/aggregate_paris_teacher.py} used 5,000 replicates and seed 42.  For each development fold it intersected target timestamps across all four horizons, sorted them, required a contiguous hourly sequence, and sliced the sequence at offsets 0, 24, 48, and so on.  The final slice was retained even when shorter than 24 hours.  Each replicate sampled exactly the fold's number of blocks uniformly with replacement, concatenated the selected timestamp arrays, and reused that same sampled timestamp sequence for every horizon in the fold.  Observed-target masks were then applied within each cell, cell RMSEs were macro-averaged, the better CAPER/TimeXer single-model reference was reselected inside the replicate, and teacher gain was computed against that reference.  The reported interval is the 2.5th and 97.5th percentiles.
+
+August and October each contain 732 common hourly timestamps, represented as 30 full 24-hour blocks plus one 12-hour block (31 selectable blocks).  September and November each contain 708 timestamps, represented as 29 full blocks plus one 12-hour block (30 selectable blocks).  The partial block has the same probability of being selected as any other block, but contributes only 12 timestamps whenever selected; consequently replicate timestamp counts can vary with how often the partial block is drawn.  No padding, wraparound, discarding, or extra weighting is applied.  This exact rule is the scope of the reported Paris interval.  No alternative block length or partial-block sensitivity analysis was run for this revision.
+
+\subsection{Claim lineage and research-question closure}
+\label{sec:appendix-claim-lineage}
+\label{app:claim-lineage}
+
+Table~\ref{tab:claim-trace} is the manuscript-facing join between a headline result and its machine-readable authority.  The hash is computed over the named artifact as stored in the main workspace.  A hash identifies bytes; it does not prove that the underlying method is correct.  The evaluation-type and wording columns provide the semantic constraint.  In particular, the Global Fixed row supports a scoped internal point comparison and a separate measured latency trade-off; it does not acquire an unreported bootstrap interval merely because later failed stages used one.
+
+\input{tables/table8_claim_trace}
+
+\FloatBarrier
+
+\subsection{Latency across the frozen batch grid}
+\label{sec:appendix-latency-grid}
+\label{app:latency-all}
+
+The main text uses batch-one end-to-end P50 as its primary engineering endpoint.  Table~\ref{tab:latency-all-batches} exposes the complete batch 1/8/32 grid already present in the frozen latency summary.  It is generated mechanically by \path{experiments/10_audit_paper/scripts/generate_revision_appendix.py}; the generator checks for all 18 method--batch rows and formats the existing values without launching the benchmark.  The hardware and software context remains the one reported in the original manifests: Windows 10 build 26200, 16 physical/32 logical AMD CPU cores, approximately 16.8 GB RAM, RTX 4060 Laptop GPU with driver 595.71, Python 3.10.8, Torch 2.5.1+cu121, CUDA 12.1, cuDNN 9.1, FP32, and single-threaded Torch/OMP/MKL host settings.  GPU clocks were observed per process, not pinned; model loading and checkpoint I/O were excluded.  Cold-start, quantized, compiled, parallel-expert, and serverless claims remain outside scope.
+
+\input{tables/tableA_latency_batches}
+
+\FloatBarrier
+
+\subsection{Protocol and environment artifact index}
+\label{sec:appendix-artifact-index}
+
+The following index identifies existing controls; it does not upgrade an incomplete field into a complete reproducibility package.  The latency and Chronos stages have explicit environment records.  Other stages retain protocol, source/configuration fingerprints, and run receipts but do not expose one uniform cross-stage environment hash, so exact environment equivalence is unknown/not claimed where absent.
+
+\begin{table*}[htbp]
+\centering
+\caption{Protocol and environment artifact index (part 1 of 2).}
+\label{tab:artifact-index}
+\scriptsize
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.40\linewidth}>{\raggedright\arraybackslash}p{0.28\linewidth}>{\raggedright\arraybackslash}p{0.23\linewidth}}
+\toprule
+Artifact & Function & Evidentiary limit \\
+\midrule
+\path{experiments/00_registry_reclassification/scripts/rebuild_status_registry.py} & Deterministic S1--S6 implementation and priority order & Single programmed classifier; no inter-rater validation \\
+\path{experiments/00_registry_reclassification/outputs/CONFIG_STATUS.csv} & Row-level run IDs, fingerprints, grades, reasons, and rerun policy & One frozen UrbanEV inventory \\
+\path{experiments/02_lightweight_baselines/configs/BASELINE_PROTOCOL.json} & UrbanEV target, folds, horizons, seed, and candidate protocol & Candidate-set internal evaluation only \\
+\path{refine-logs/ROUTER_PROTOCOL_V1_0.md} and \path{experiments/05_router_v1/configs/ROUTER_V1.json} & Router feature/training configuration and frozen Gate 4 & One seed; proxy and real-GT roles remain separate \\
+\path{experiments/06_static_latency/LATENCY_PROTOCOL_V1_0.md} & Request shape, synchronization, warm-up, repetitions, and primary endpoint & Warm synchronous serving, not cold start \\
+\path{experiments/06_static_latency/hardware_manifest.json} and \path{experiments/06_static_latency/software_manifest.json} & Device, driver, platform, runtime, libraries, precision, host threads & One laptop system; clocks observed rather than pinned \\
+\path{experiments/06_static_latency/LATENCY_SUMMARY_TABLE.csv} & Batch 1/8/32 model-only and end-to-end distributions, throughput, memory & Hardware/workload-specific \\
+\path{experiments/06_5_teacher_qualification/TEACHER_QUALIFICATION_PROTOCOL_V1_0.md} & Chronos-2 qualification endpoint and gate & Exact project protocol only \\
+\path{experiments/06_5_teacher_qualification/CHRONOS2_MODEL_LOCK.json} & Resolved model commit, file hashes, snapshot bytes, and environment & One revision and zero-shot profile \\
+\path{experiments/07_residual_distillation/DISTILL_PROTOCOL_V1_0.md} & Teacher, student, loss, controls, milestones, stop rules & Distill v1 only; later search prohibited after failure \\
+\path{experiments/07_residual_distillation/configs/FORMAL_STUDENT_CONFIG_V1.json} & 338-parameter student input/architecture/training identity & One architecture and seed \\
+\path{experiments/07_residual_distillation/SHUFFLE_CONTROL_SPEC.json} & 24-hour block-shuffle negative-control construction & Control test, not a second primary endpoint \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\FloatBarrier
+
+\begin{table*}[htbp]
+\centering
+\caption{Protocol and environment artifact index (part 2 of 2).}
+\label{tab:artifact-index-2}
+\scriptsize
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.40\linewidth}>{\raggedright\arraybackslash}p{0.28\linewidth}>{\raggedright\arraybackslash}p{0.23\linewidth}}
+\toprule
+Artifact & Function & Evidentiary limit \\
+\midrule
+\path{experiments/07_residual_distillation/outputs/FORMAL_MATRIX_AUDIT_V1_0_FAIL_IDENTITY_SHUFFLE.json} and \path{experiments/07_residual_distillation/outputs/FORMAL_MATRIX_AUDIT.json} & Pre-unlock failure and final 72/72 audit & Supports control integrity, not accuracy \\
+\path{experiments/07_residual_distillation/outputs/D1_SUMMARY.json} and \path{experiments/07_residual_distillation/outputs/D1_DECISION.md} & Primary/negative-control effects and terminal gate decision & No D2 latency, multi-seed, or protected evidence \\
+\path{experiments/08_paris_new_evidence/DATA_BOUNDARY_LOCK.json} and \path{experiments/08_paris_new_evidence/PROTECTED_ACCESS_GUARD.json} & Role dates, permitted metadata, storage state, access counter, unlock rule & Procedural guard; not hardened authorization \\
+\path{experiments/08_paris_new_evidence/PARIS_EVIDENCE_VAULT_REPORT.md} & Vault identities, hashes, negative main-project scan, threat limits & Metadata/hash audit only; no content-level protected audit \\
+\path{experiments/09_distill_v2/PARIS_TEACHER_QUALIFICATION_PROTOCOL_V1_0.md} & Development folds, target, missingness, time rule, teacher fit, gate & Paris development only \\
+\path{experiments/09_distill_v2/PARIS_TEACHER_MODEL_CONFIG.json} & Local CAPER/TimeXer profiles, training, queue, bootstrap & Local adaptations, not exact upstream implementations \\
+\path{experiments/09_distill_v2/TIMEXER_LOCAL_ADAPTATION_PROVENANCE.json} and \path{experiments/09_distill_v2/PARIS_CAPER_ADAPTATION_V1_0.md} & Source hash and explicit local adaptation differences & Upstream TimeXer commit undisclosed; Paris CAPER newly trained \\
+\path{experiments/09_distill_v2/PARIS_TEACHER_DEPLOY_APPROVAL_V1_1.md} & Automated differential audit closure after the earlier block & Automated artifact audit, not blinded human replication \\
+\path{experiments/09_distill_v2/outputs/teacher_qualification/PARIS_TEACHER_PREDICTION_AUDIT.json} and \path{experiments/09_distill_v2/outputs/teacher_qualification/PARIS_TEACHER_METRICS_UNLOCK_RECEIPT.json} & 32/32 closure, identities, role-specific metric unlock, access counts & Development-metric authorization only \\
+\path{experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_QUALIFICATION_SUMMARY.json} & Point effect, fold/cell results, synchronized bootstrap, gate vector & Current hypothesis failed; no student/formal/protected result \\
+\path{experiments/09_distill_v2/PARIS_TEACHER_RESULT_REVIEW.md} & Independent result-to-claim check and provenance warnings & Warnings limit stronger process claims; they do not reverse the gate \\
+\path{experiments/10_audit_paper/scripts/generate_revision_appendix.py} & Mechanical hash/latency table generation & No model, metric, resampling, or vault operation \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\FloatBarrier
+
+\subsection{Author and reviewer application checklist}
+\label{sec:appendix-checklist}
+
+Table~\ref{tab:audit-checklist} turns the case-study controls into a review interface.  The final row is important: missing validation must be stated as missing.  This paper therefore treats the 1\% rule as a frozen local convention without an economic utility model, the S1--S6 labels as deterministic without inter-rater evidence, and all model/latency conclusions as bounded to their recorded seeds, panels, adaptations, and serving graph.
+
+\input{tables/table10_checklist}
+
+\FloatBarrier

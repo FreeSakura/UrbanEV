@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Batch-1 end-to-end accuracy--latency trade-off on the frozen RTX 4060 Laptop GPU, FP32 single-device sequential workload.}
+\label{tab:latency}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Method & RMSE & P50 ms & P95 ms & Origins/s \\
+\midrule
+NLinear & 0.075711 & 0.674 & 1.056 & 1483.7 \\
+DLinear & 0.075362 & 1.166 & 1.763 & 857.9 \\
+GBDT-Forecaster & 0.078165 & 6.242 & 7.195 & 160.2 \\
+CAPER & 0.075507 & 7.934 & 10.798 & 126.0 \\
+TimeXer & 0.073709 & 14.067 & 15.952 & 71.1 \\
+Global Fixed CAPER+TimeXer & 0.071367 & 20.940 & 33.123 & 47.8 \\
+\bottomrule
+\end{tabular}
+\end{table}

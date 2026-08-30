@@ -1,0 +1,381 @@
+{
+  "schema_version": "urbanev-public-manifest/v1",
+  "tracked_files": [
+    {
+      "path": "configs/BASELINE_PROTOCOL.json",
+      "sha256": "a814bde65f7da5c57af85b9f6ed1575330d13d5a83f7f2137167c29701f0a725",
+      "bytes": 561
+    },
+    {
+      "path": "configs/CHRONOS2_MODEL_LOCK.json",
+      "sha256": "f7c2af83f4d636b9ce7a1a009d4c49d0d618c9d4abd582efd7650feac4dcab06",
+      "bytes": 1307
+    },
+    {
+      "path": "configs/CHRONOS_DOWNLOAD_MANIFEST.json",
+      "sha256": "84caa66613bee21d877b233ead91d12aa7d84bab38fa358a5bbc2bfbb46e0742",
+      "bytes": 927
+    },
+    {
+      "path": "configs/CPU_CLEANROOM_LOCK.json",
+      "sha256": "9312e93e634b95ddc0476b329cd8f68f867542c601fc5d3ddc103bd4e0bae149",
+      "bytes": 215
+    },
+    {
+      "path": "configs/DISTILL_CONFIG.json",
+      "sha256": "51ae1f6856d5460a3534ba4f968e2b00c493a06dacdcd135f0d6a6f16ef4d76f",
+      "bytes": 832
+    },
+    {
+      "path": "configs/FORMAL_STUDENT_CONFIG_V1.json",
+      "sha256": "19f9cac60048c0a5785f468db9294931cf7581d39f958dd4336747de67a5272a",
+      "bytes": 1712
+    },
+    {
+      "path": "configs/GPU_CUDA121_LOCK.json",
+      "sha256": "02dd706771416a20ede685283ffb77e35c07d83622ef3a12e9cee6562623eaa7",
+      "bytes": 306
+    },
+    {
+      "path": "configs/LATENCY_CONFIG.json",
+      "sha256": "ab08c5562847e05a13dd6cc1e72760bb2bb7ac0ec9bb33890305f6eadc374193",
+      "bytes": 402
+    },
+    {
+      "path": "configs/PARIS_DEV_BASELINE_PROTOCOL.json",
+      "sha256": "54593469b3c98918d3b577165d9bac614dfe9099e1b487b9e2a646df6acd96b4",
+      "bytes": 494
+    },
+    {
+      "path": "configs/PARIS_DEVELOPMENT_FOLDS.csv",
+      "sha256": "a4b4d1196919f93ce0a5e22f681d1a3d6dbac3f9badf3fffac1d9db0b48d5bb2",
+      "bytes": 16714
+    },
+    {
+      "path": "configs/PARIS_TEACHER_MODEL_CONFIG.json",
+      "sha256": "b301ee69d8c2d2a5f24413318cd89cf861b6508018bbdbfaeee201215959568b",
+      "bytes": 2832
+    },
+    {
+      "path": "configs/TEACHER_QUALIFICATION_CONFIG.json",
+      "sha256": "196c66cb68aace87d839ffb6ecc9454cb9dc6a98e5e699fd320d3089563951fe",
+      "bytes": 1116
+    },
+    {
+      "path": "artifacts/summaries/chronos2/CHRONOS2_QUALIFICATION_CELLS.csv",
+      "sha256": "18a2f96ccd789736d5116eb777b7daec2e8fea4ee3412513e6606908a20d396d",
+      "bytes": 6829
+    },
+    {
+      "path": "artifacts/summaries/chronos2/CHRONOS2_QUALIFICATION_FOLDS.csv",
+      "sha256": "0549b8d0b07d36cbf4971242b9458045955b9149f49031b393235893828986c0",
+      "bytes": 459
+    },
+    {
+      "path": "artifacts/summaries/chronos2/CHRONOS2_QUALIFICATION_HORIZONS.csv",
+      "sha256": "4e76bc5c8814756c44cb7723689880ee4d230cc948188fbf09c45e2ac0e2d55e",
+      "bytes": 432
+    },
+    {
+      "path": "artifacts/summaries/chronos2/CHRONOS2_QUALIFICATION_SUMMARY.json",
+      "sha256": "2f2297520cda964779284a8cf87174007288d684ab8d852dc5caae13a30eb0d5",
+      "bytes": 2894
+    },
+    {
+      "path": "artifacts/summaries/distillation/D1_CELLS.csv",
+      "sha256": "1e9cf647a193d82dc124ee73997c1e4d0368e022ada74ae2ac4f4d1b1d9ef635",
+      "bytes": 8310
+    },
+    {
+      "path": "artifacts/summaries/distillation/D1_FOLDS.csv",
+      "sha256": "e49f855d36f96fc95d5683a4d764483f04219593099fa6efe750b4f6c08ba5d0",
+      "bytes": 2070
+    },
+    {
+      "path": "artifacts/summaries/distillation/D1_HORIZONS.csv",
+      "sha256": "e859a6407dc214347eaae0607cfa111274328ed7dddacd4f29529f85fd0e17d7",
+      "bytes": 1402
+    },
+    {
+      "path": "artifacts/summaries/distillation/D1_SUMMARY.json",
+      "sha256": "fceb887a983398911d76240c2f53e64faf8328086654de4df92a1b4a88bb3dea",
+      "bytes": 1765
+    },
+    {
+      "path": "artifacts/summaries/distillation/FORMAL_MATRIX_AUDIT.json",
+      "sha256": "9db0d85a9aadff1f9802ad65fb95b6f89771effb0047479bda9fc0a0b742c6f6",
+      "bytes": 221
+    },
+    {
+      "path": "artifacts/summaries/fixed_fusion/FIXED_FUSION_SUMMARY.json",
+      "sha256": "c795e09ea8c380aef00c1dc8e4e3585edc1ef03300008539fade31102989df59",
+      "bytes": 1580
+    },
+    {
+      "path": "artifacts/summaries/fixed_fusion/FIXED_FUSION_WEIGHTS.csv",
+      "sha256": "2ea0f1b006b52571743ca6d6a2257a936763c1708f23db734bd22c58c1d5c961",
+      "bytes": 1935
+    },
+    {
+      "path": "artifacts/summaries/latency/ACCURACY_LATENCY_FRONTIER.csv",
+      "sha256": "e18cf9ed80d071bae5b5c1c62ff4ad47062417502d8023a9153adff2e8cea294",
+      "bytes": 2244
+    },
+    {
+      "path": "artifacts/summaries/latency/LATENCY_SUMMARY.json",
+      "sha256": "e0129fc5e59034672e36cf0bdb61f7b7c8171b205ca5d4e14ef791468ee78a2e",
+      "bytes": 572
+    },
+    {
+      "path": "artifacts/summaries/latency/LATENCY_SUMMARY_TABLE.csv",
+      "sha256": "c6dd5d7d2667465235f44f3e834f7595a1d6bb10ae4984199a0a88f749edfbe1",
+      "bytes": 4593
+    },
+    {
+      "path": "artifacts/summaries/paper_audits/CITATION_AUDIT.json",
+      "sha256": "33ba72b9749e987da3496baefebc8ee9ceb17e9f7d6a799ea275086bba1105c6",
+      "bytes": 23141
+    },
+    {
+      "path": "artifacts/summaries/paper_audits/PAPER_CLAIM_AUDIT.json",
+      "sha256": "fef999258831ad9b81feb9005b0fd0303acd58b7c6259aab58949c643bbb8378",
+      "bytes": 62706
+    },
+    {
+      "path": "artifacts/summaries/paris_development/PARIS_TEACHER_CELLS.csv",
+      "sha256": "93296491bd71150f4998ba3f4004bd8323136b6dc6ec0e385531a63a60410108",
+      "bytes": 7310
+    },
+    {
+      "path": "artifacts/summaries/paris_development/PARIS_TEACHER_FOLDS.csv",
+      "sha256": "65fe2e241cb2eeb199bf8bca6896e52210bc8a44b43e68e4988cb5710eee9bd5",
+      "bytes": 247
+    },
+    {
+      "path": "artifacts/summaries/paris_development/PARIS_TEACHER_HORIZONS.csv",
+      "sha256": "01a233aef1bbf46bd1f25a5a64d0c45dad134d9348c8826868bd8c6f5cc4a01e",
+      "bytes": 300
+    },
+    {
+      "path": "artifacts/summaries/paris_development/PARIS_TEACHER_MACRO.csv",
+      "sha256": "49528e0e15e350b3416003d205b3a907234a19de374021672443860557b30909",
+      "bytes": 444
+    },
+    {
+      "path": "artifacts/summaries/paris_development/PARIS_TEACHER_QUALIFICATION_SUMMARY.json",
+      "sha256": "1bba7c41d75fa33df0cab4cda26e183c39a3801ae2933d6d7aafe9b81e02bdf7",
+      "bytes": 1731
+    },
+    {
+      "path": "artifacts/summaries/paris_development/PARIS_TEACHER_WEIGHTS.csv",
+      "sha256": "d19a7de8a73fac4a2db917f9bbb69c10056c5a549b25463fbbdc683c1c388ecf",
+      "bytes": 383
+    },
+    {
+      "path": "artifacts/summaries/PARIS_DEVELOPMENT_CLEANROOM_RECOMPUTE.json",
+      "sha256": "add4d5176a7df451f34258f0639449e37cc5378dd36cc561df3e3504d8a10876",
+      "bytes": 12775
+    },
+    {
+      "path": "artifacts/summaries/PROTECTED_BOUNDARY_PUBLIC.json",
+      "sha256": "ab8790cb0aba3da07a701726c82175874c005862c4f758f435a0439b20973fbb",
+      "bytes": 720
+    },
+    {
+      "path": "artifacts/summaries/registry/CONFIG_STATUS.csv",
+      "sha256": "3e5d804073dafbd4366f9f6b18e330375ff165c7cb737a8849fed41d58c41a78",
+      "bytes": 600147
+    },
+    {
+      "path": "artifacts/summaries/registry/CONFIG_STATUS_SUMMARY.json",
+      "sha256": "48b19c4314d332083f06f6a1b1c80e487cd9bb8c6bc2cf991a6e9f9baa842353",
+      "bytes": 1162
+    },
+    {
+      "path": "artifacts/summaries/router/ROUTER_V1_FOLD.csv",
+      "sha256": "819c3fb0218fed1386ada47af703a17c06a6bf59a8e31056a5f6c3b41f601a9d",
+      "bytes": 271
+    },
+    {
+      "path": "artifacts/summaries/router/ROUTER_V1_SUMMARY.json",
+      "sha256": "6e7cefc86a47e353e08e8a46eeea1a153caedecdeb4a0105ee887f2b1a539253",
+      "bytes": 3387
+    },
+    {
+      "path": "artifacts/summaries/URBANEV_CLEANROOM_RECOMPUTE.json",
+      "sha256": "5ee69b86ae0b1a294da2645c29041e425fda89b56e9a8eefee2c95b721df0d38",
+      "bytes": 47832
+    },
+    {
+      "path": "models/caper/IDENTITY.md",
+      "sha256": "9eca1b19da938cfdbf85374fcc571718ed2d2c91b5352bea9d80a4d416feebab",
+      "bytes": 346
+    },
+    {
+      "path": "models/caper/innovation/__init__.py",
+      "sha256": "20dc6635c235300abd81a82a268b948c213ece3d64182fe3ee005525bfc52feb",
+      "bytes": 59
+    },
+    {
+      "path": "models/caper/innovation/canonical.py",
+      "sha256": "8a9224c31893afaaf432c82b4f452a06d692672e3a064bb6f70d6103fc798bd1",
+      "bytes": 5576
+    },
+    {
+      "path": "models/caper/innovation/data.py",
+      "sha256": "58b03bae8cf38b6390d41ae164d724b218aa638ea444fd5f99fb311a8397edb5",
+      "bytes": 2394
+    },
+    {
+      "path": "models/caper/innovation/deep_baselines.py",
+      "sha256": "97828c7bd52c124e31be841ded0948ff1c151c6b9dbc48a87d7be71c3345682d",
+      "bytes": 29833
+    },
+    {
+      "path": "models/caper/innovation/evaluate_phase_stability_test.py",
+      "sha256": "0f4fe99934af42ea323cddd36b7f557d8303d45793b69e1ecc0c01742fb72437",
+      "bytes": 7283
+    },
+    {
+      "path": "models/caper/innovation/hybrid_expert_experiment.py",
+      "sha256": "ee74495bc63a031391f0e0a9041c8873ba29e10152e29a1f49895c5b806c9fc5",
+      "bytes": 19364
+    },
+    {
+      "path": "models/caper/innovation/losses.py",
+      "sha256": "f55fa8778a4c34ec714b19b55ca2168ee1d8217756d493604c02a0fbf8cedad3",
+      "bytes": 5375
+    },
+    {
+      "path": "models/caper/innovation/multires_state.py",
+      "sha256": "edc4ec200ebe752998c4ad22ec94ab7dab54fe1b13b2457b9d504ecd0422af8e",
+      "bytes": 20579
+    },
+    {
+      "path": "models/caper/innovation/phase_mean_reversion_experiment.py",
+      "sha256": "3471e0fe08f27be31a70ab74e6ac024b5ee850bcbf5552481a31c896851b21e6",
+      "bytes": 12632
+    },
+    {
+      "path": "models/caper/innovation/physical_constraints.py",
+      "sha256": "2ee65f5521d0978e3972a2999c68449c7d724b8c3bba959f8efd4c10baf41948",
+      "bytes": 11970
+    },
+    {
+      "path": "models/caper/innovation/physical_multitask.py",
+      "sha256": "d51ca3f47e2d8897656b74e93c77f8ec8d616378c11ba88a874495919242d4c0",
+      "bytes": 61495
+    },
+    {
+      "path": "models/caper/innovation/state_ordered_gate_experiment.py",
+      "sha256": "1e7f4cdd8dfde1a10623244336dc30678e2ce304e388b4a5bd032bbafdc12c3e",
+      "bytes": 18908
+    },
+    {
+      "path": "models/caper/innovation/state_phase_relaxation_probe.py",
+      "sha256": "91d60eb3c923d179c0ad5dea453ef8643a419774a65c14733cae6d789aa37a67",
+      "bytes": 8192
+    },
+    {
+      "path": "models/caper/innovation/stock_flow_error_correction_experiment.py",
+      "sha256": "4c89a84216c9eebfe91d7180f8869d2f3d951635935c91fb3ff3d4263d1ed32d",
+      "bytes": 19007
+    },
+    {
+      "path": "models/caper/innovation/three_state_ctmc.py",
+      "sha256": "5e1e3367c6294a9618a5725b9c3017176051ffba7ce3aa64348cbee3e4391d85",
+      "bytes": 21180
+    },
+    {
+      "path": "models/caper/repro/__init__.py",
+      "sha256": "51b5c84b47b46bf43f826c2d610171464117a3d12218e150a6bb4e75db04af57",
+      "bytes": 34
+    },
+    {
+      "path": "models/caper/repro/metrics.py",
+      "sha256": "9678a0511a0fa7e8527c8c73d018452ea0b4af68912679659def258f2424d869",
+      "bytes": 1977
+    },
+    {
+      "path": "models/distillation/analyze_d1.py",
+      "sha256": "2027a0e69b76ec0830eae0d0ccdc3c232a3e4189f7cdb9a6affb7fb6e58a449d",
+      "bytes": 5985
+    },
+    {
+      "path": "models/distillation/run_formal_cell.py",
+      "sha256": "f3697686fa77fe908666c0eb0929ce04c8b652819c7be87a10f97e1b1cd41a13",
+      "bytes": 13938
+    },
+    {
+      "path": "models/MODEL_SOURCE_MANIFEST.csv",
+      "sha256": "7cf1936375d401ad24f782e982491767008f66711060194d7c2f257fb7fa8fab",
+      "bytes": 6144
+    },
+    {
+      "path": "models/paris/aggregate_paris_teacher.py",
+      "sha256": "a4d8e5090544f9e1950182a769799551d8e82690fec8979e132dfc52120717bd",
+      "bytes": 20684
+    },
+    {
+      "path": "models/paris/paris_teacher_common.py",
+      "sha256": "5a14545e6e21b259a514f74a6b6161a7d07dca31bf87f7763a9b00f2fee5fb9f",
+      "bytes": 14938
+    },
+    {
+      "path": "models/paris/PARIS_TEACHER_MODEL_CONFIG.json",
+      "sha256": "b301ee69d8c2d2a5f24413318cd89cf861b6508018bbdbfaeee201215959568b",
+      "bytes": 2832
+    },
+    {
+      "path": "models/paris/run_paris_teacher_cell.py",
+      "sha256": "e301b91182c5e70f7b78a08af65b734dac2375bd6a6f591e4943cdfcbf8781bc",
+      "bytes": 26106
+    },
+    {
+      "path": "models/README.md",
+      "sha256": "d854d83ec2b26b261c0fb253ad6615e30c61ebf79fce15e779d96aa9f737e2fa",
+      "bytes": 838
+    },
+    {
+      "path": "models/router/evaluate_fixed_fusions.py",
+      "sha256": "e57748d0edb8b0b237320945cb613c4d946b2bf2079b1ef45a6122e9e6f0cada",
+      "bytes": 13728
+    },
+    {
+      "path": "models/router/run_router_v1.py",
+      "sha256": "8788b9e430f2c98d975310ca55b603439b1b71ccf013cca1ce5567a664ec87e8",
+      "bytes": 34840
+    },
+    {
+      "path": "models/timexer/layers/__init__.py",
+      "sha256": "f6bc4ecdd10e2d104aaefe3dbb982ca8698b455129e27c48455be7af54fdff63",
+      "bytes": 67
+    },
+    {
+      "path": "models/timexer/layers/Embed.py",
+      "sha256": "17e7c3577324c41a0da427a199c955b782fde905aabb1f7cbc3c4e15ebd4ae35",
+      "bytes": 7012
+    },
+    {
+      "path": "models/timexer/layers/SelfAttention_Family.py",
+      "sha256": "6f6592aed0753e342fc04c01db70528c2eb191eeb067cd5fd4c8d348fddcb794",
+      "bytes": 12001
+    },
+    {
+      "path": "models/timexer/TimeXer.py",
+      "sha256": "563d4ce4304fedb0b4925f02ee302ac9933e71f3e94523d0ce887a3762076b02",
+      "bytes": 8801
+    },
+    {
+      "path": "models/timexer/utils/__init__.py",
+      "sha256": "18c0c1f2ecf7050f18f50f91f9bfc309e04a83f416bcbb2df3bccf43b8d4782a",
+      "bytes": 69
+    },
+    {
+      "path": "models/timexer/utils/masking.py",
+      "sha256": "02f453e52cfaec65e34132923add80e7132f188706680fa86d7bd884976e09ef",
+      "bytes": 832
+    }
+  ],
+  "release_assets": "See release-assets/SHA256SUMS and the GitHub v0.9.0-preprint release."
+}

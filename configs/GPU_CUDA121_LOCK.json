@@ -1,0 +1,9 @@
+{
+  "schema_version": "urbanev-environment-lock/v1",
+  "purpose": "model execution and frozen synchronous latency context",
+  "environment": "environment-gpu-cu121.yml",
+  "cuda": "12.1",
+  "paper_latency_device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "precision": "FP32",
+  "portability_claim": false
+}

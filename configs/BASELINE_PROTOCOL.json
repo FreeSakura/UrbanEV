@@ -1,0 +1,15 @@
+{
+  "protocol_id": "URBANEV_HOURLY_OCC_CANONICAL_L168_BASELINE_V1",
+  "dataset": "UrbanEV user-workspace audited release",
+  "target": "hourly zonal occupancy rate",
+  "zones": 275,
+  "history_length": 168,
+  "horizons": [3, 6, 9, 12],
+  "folds": [1, 2, 3, 4, 5, 6],
+  "seed": 42,
+  "split": "canonical expanding-month train/validation/internal-test",
+  "selection": "validation clipped RMSE",
+  "metrics": ["RMSE", "MAE", "WAPE", "sMAPE", "RAE"],
+  "protected_test": false,
+  "claim_boundary": "Internal baseline qualification only; not a blind final test."
+}

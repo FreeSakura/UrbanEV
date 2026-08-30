@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "generated_at": "2026-08-28T19:31:54",
+  "protocol": "latency_v1.0",
+  "jobs": 90,
+  "raw_measurements_per_method_batch": 5000,
+  "primary_batch": 1,
+  "timexer_end_to_end_p50_ms": 14.0672,
+  "global_fixed_end_to_end_p50_ms": 20.93975,
+  "global_fixed_latency_overhead_vs_timexer_percent": 48.85513819381256,
+  "frozen_interpretation": "accuracy_best_with_clear_efficiency_cost",
+  "global_fixed_RMSE_gain_vs_timexer_percent": 3.1775965191758897,
+  "training_performed": false,
+  "protected_target_accessed": false,
+  "router_reopened": false
+}

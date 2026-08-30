@@ -1,0 +1,12 @@
+lane,order,label,state
+M7-C control,1,72 planned; metrics locked,locked
+M7-C control,2,69/72 initial audit pass,warning
+M7-C control,3,3 identity mappings detected,fail
+M7-C control,4,all 24 shuffled controls rerun,repair
+M7-C control,5,72/72 final audit PASS,pass
+Paris teacher,1,automated artifact audit: BLOCK,fail
+Paris teacher,2,8 blockers repaired; DEPLOY PASS,repair
+Paris teacher,3,32/32 jobs closed,locked
+Paris teacher,4,"24 runs; 10,236 masked targets restored",repair
+Paris teacher,5,prediction audit PASS; metrics unlocked,pass
+Paris teacher,6,teacher gate FAIL; formal/protected analysis locked,stop

@@ -1,0 +1,9 @@
+order,stage,value,unit,status,source
+1,Oracle opportunity,16.925980834309883,% gain,diagnostic,experiments\01_expert_diagnostics\outputs\EXPERT_DIAGNOSTIC_SUMMARY.json
+2,State-feature gate,0.6150965591067048,AUC,pass,experiments\01_expert_diagnostics\outputs\STATE_FEATURE_DECISION.json
+3,Global Fixed,3.1775965191758897,% gain,supported,experiments\03_fixed_fusions\outputs\FIXED_FUSION_SUMMARY.json
+4,Router MLP,0.44340945854131064,% gain,stop,experiments\05_router_v1\outputs\ROUTER_V1_SUMMARY.json
+5,Latency cost,48.85513819381256,% P50 overhead,cost,experiments/06_static_latency/LATENCY_SUMMARY.json
+6,Chronos-2,-3.048391768620625,% gain,stop,experiments\06_5_teacher_qualification\outputs\CHRONOS2_QUALIFICATION_SUMMARY.json
+7,Aligned KD,0.11893143253939614,% gain,stop,experiments\07_residual_distillation\outputs\D1_SUMMARY.json
+8,Paris teacher,0.8468586786397444,% gain,stop,experiments\09_distill_v2\outputs\teacher_qualification\aggregate\PARIS_TEACHER_QUALIFICATION_SUMMARY.json

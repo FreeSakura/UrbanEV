@@ -1,0 +1,333 @@
+{
+  "scope": "headline",
+  "headline": {
+    "paris_development_teacher": {
+      "caper": 0.244600711215733,
+      "timexer": 0.2425417333170634,
+      "teacher": 0.2404877475991446,
+      "teacher_gain_vs_best_single_pct": 0.8468586786397444
+    }
+  },
+  "packages": [
+    {
+      "package": "paris-development_0001.npz",
+      "source_label": "paris_teacher_v1_1_Paris_CAPER_phase_only_2020-08_h12_s42_fbc32548abca__attempt_01__predictions.npz",
+      "target_id": "paris-development_288a3fd99fe58a9d",
+      "rmse": {
+        "raw_prediction": 0.2648353405318829,
+        "clipped_prediction": 0.2648353405318829
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0002.npz",
+      "source_label": "paris_teacher_v1_1_Paris_CAPER_phase_only_2020-08_h3_s42_fba59b3bbd59__attempt_01__predictions.npz",
+      "target_id": "paris-development_ba884a7a715d5463",
+      "rmse": {
+        "raw_prediction": 0.22881840554858465,
+        "clipped_prediction": 0.22881840554858465
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0003.npz",
+      "source_label": "paris_teacher_v1_1_Paris_CAPER_phase_only_2020-08_h6_s42_71e29791dc57__attempt_01__predictions.npz",
+      "target_id": "paris-development_f92c0f4de28acb33",
+      "rmse": {
+        "raw_prediction": 0.24584286342760323,
+        "clipped_prediction": 0.24584286342760323
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0004.npz",
+      "source_label": "paris_teacher_v1_1_Paris_CAPER_phase_only_2020-08_h9_s42_a186e9403bf7__attempt_01__predictions.npz",
+      "target_id": "paris-development_fdc17fb63a4e4d2a",
+      "rmse": {
+        "raw_prediction": 0.25712134352650534,
+        "clipped_prediction": 0.25712134352650534
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0005.npz",
+      "source_label": "paris_teacher_v1_1_Paris_CAPER_phase_only_2020-09_h12_s42_e85c9daad5cf__attempt_01__predictions.npz",
+      "target_id": "paris-development_8d48e6ad80c6371d",
+      "rmse": {
+        "raw_prediction": 0.26174856572568006,
+        "clipped_prediction": 0.26174856572568006
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0006.npz",
+      "source_label": "paris_teacher_v1_1_Paris_CAPER_phase_only_2020-09_h3_s42_594bb8d99dd9__attempt_01__predictions.npz",
+      "target_id": "paris-development_b7db416cfc864744",
+      "rmse": {
+        "raw_prediction": 0.22567866743758433,
+        "clipped_prediction": 0.22567866743758433
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0007.npz",
+      "source_label": "paris_teacher_v1_1_Paris_CAPER_phase_only_2020-09_h6_s42_d05df68b9938__attempt_01__predictions.npz",
+      "target_id": "paris-development_3b865bc9847a67a7",
+      "rmse": {
+        "raw_prediction": 0.24174687498190062,
+        "clipped_prediction": 0.24174687498190062
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0008.npz",
+      "source_label": "paris_teacher_v1_1_Paris_CAPER_phase_only_2020-09_h9_s42_7da46675c6c5__attempt_01__predictions.npz",
+      "target_id": "paris-development_7b325ed2603fdd91",
+      "rmse": {
+        "raw_prediction": 0.25137349423505234,
+        "clipped_prediction": 0.25137349423505234
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0009.npz",
+      "source_label": "paris_teacher_v1_1_Paris_CAPER_phase_only_2020-10_h12_s42_04cf33c983ee__attempt_01__predictions.npz",
+      "target_id": "paris-development_b347d96e89ab4f0e",
+      "rmse": {
+        "raw_prediction": 0.2580075829092895,
+        "clipped_prediction": 0.2580075829092895
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0010.npz",
+      "source_label": "paris_teacher_v1_1_Paris_CAPER_phase_only_2020-10_h3_s42_d85b69dbdee9__attempt_01__predictions.npz",
+      "target_id": "paris-development_240f3527c6d8beae",
+      "rmse": {
+        "raw_prediction": 0.22637733870612778,
+        "clipped_prediction": 0.22637733870612778
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0011.npz",
+      "source_label": "paris_teacher_v1_1_Paris_CAPER_phase_only_2020-10_h6_s42_2a5267b62de3__attempt_01__predictions.npz",
+      "target_id": "paris-development_71b34e9ad3a1a3ed",
+      "rmse": {
+        "raw_prediction": 0.24230687597750103,
+        "clipped_prediction": 0.24230687597750103
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0012.npz",
+      "source_label": "paris_teacher_v1_1_Paris_CAPER_phase_only_2020-10_h9_s42_32a3a739f399__attempt_01__predictions.npz",
+      "target_id": "paris-development_a65b63410a5ae682",
+      "rmse": {
+        "raw_prediction": 0.2516938181509123,
+        "clipped_prediction": 0.2516938181509123
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0013.npz",
+      "source_label": "paris_teacher_v1_1_Paris_CAPER_phase_only_2020-11_h12_s42_1befb15a7956__attempt_01__predictions.npz",
+      "target_id": "paris-development_7fff7e47e6a4b084",
+      "rmse": {
+        "raw_prediction": 0.2517404898088381,
+        "clipped_prediction": 0.2517404898088381
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0014.npz",
+      "source_label": "paris_teacher_v1_1_Paris_CAPER_phase_only_2020-11_h3_s42_b6779abc78cb__attempt_01__predictions.npz",
+      "target_id": "paris-development_43aed535e5cd0d27",
+      "rmse": {
+        "raw_prediction": 0.22275432708578508,
+        "clipped_prediction": 0.22275432708578508
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0015.npz",
+      "source_label": "paris_teacher_v1_1_Paris_CAPER_phase_only_2020-11_h6_s42_a503596a470b__attempt_01__predictions.npz",
+      "target_id": "paris-development_cca1ece89951e0f7",
+      "rmse": {
+        "raw_prediction": 0.23718157629887995,
+        "clipped_prediction": 0.23718157629887995
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0016.npz",
+      "source_label": "paris_teacher_v1_1_Paris_CAPER_phase_only_2020-11_h9_s42_5c8760e97056__attempt_01__predictions.npz",
+      "target_id": "paris-development_41abd00df5d14208",
+      "rmse": {
+        "raw_prediction": 0.24638381509960083,
+        "clipped_prediction": 0.24638381509960083
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0017.npz",
+      "source_label": "paris_teacher_v1_1_TimeXer_local_audited_compact_L168_2020-08_h12_s42_43d79b20edb1__attempt_01__predictions.npz",
+      "target_id": "paris-development_288a3fd99fe58a9d",
+      "rmse": {
+        "raw_prediction": 0.2562255552377526,
+        "clipped_prediction": 0.25620635849100665
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0018.npz",
+      "source_label": "paris_teacher_v1_1_TimeXer_local_audited_compact_L168_2020-08_h3_s42_fc96fae7dd26__attempt_01__predictions.npz",
+      "target_id": "paris-development_ba884a7a715d5463",
+      "rmse": {
+        "raw_prediction": 0.22479627161672952,
+        "clipped_prediction": 0.22471821333501824
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0019.npz",
+      "source_label": "paris_teacher_v1_1_TimeXer_local_audited_compact_L168_2020-08_h6_s42_8fcb7321e027__attempt_01__predictions.npz",
+      "target_id": "paris-development_f92c0f4de28acb33",
+      "rmse": {
+        "raw_prediction": 0.2415542970743031,
+        "clipped_prediction": 0.24152443352671343
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0020.npz",
+      "source_label": "paris_teacher_v1_1_TimeXer_local_audited_compact_L168_2020-08_h9_s42_799e552ca922__attempt_01__predictions.npz",
+      "target_id": "paris-development_fdc17fb63a4e4d2a",
+      "rmse": {
+        "raw_prediction": 0.2513062941258681,
+        "clipped_prediction": 0.25128405324702763
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0021.npz",
+      "source_label": "paris_teacher_v1_1_TimeXer_local_audited_compact_L168_2020-09_h12_s42_8bffbea8459a__attempt_01__predictions.npz",
+      "target_id": "paris-development_8d48e6ad80c6371d",
+      "rmse": {
+        "raw_prediction": 0.2564837053350776,
+        "clipped_prediction": 0.2564604054317247
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0022.npz",
+      "source_label": "paris_teacher_v1_1_TimeXer_local_audited_compact_L168_2020-09_h3_s42_248bcdf4c84d__attempt_01__predictions.npz",
+      "target_id": "paris-development_b7db416cfc864744",
+      "rmse": {
+        "raw_prediction": 0.22183519991586673,
+        "clipped_prediction": 0.22180888781659422
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0023.npz",
+      "source_label": "paris_teacher_v1_1_TimeXer_local_audited_compact_L168_2020-09_h6_s42_2c9645ff5740__attempt_01__predictions.npz",
+      "target_id": "paris-development_3b865bc9847a67a7",
+      "rmse": {
+        "raw_prediction": 0.23964531590038923,
+        "clipped_prediction": 0.2396202581790555
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0024.npz",
+      "source_label": "paris_teacher_v1_1_TimeXer_local_audited_compact_L168_2020-09_h9_s42_2f7b92ff80a7__attempt_01__predictions.npz",
+      "target_id": "paris-development_7b325ed2603fdd91",
+      "rmse": {
+        "raw_prediction": 0.2504313874562456,
+        "clipped_prediction": 0.25038043584688124
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0025.npz",
+      "source_label": "paris_teacher_v1_1_TimeXer_local_audited_compact_L168_2020-10_h12_s42_f96a89012ee6__attempt_01__predictions.npz",
+      "target_id": "paris-development_b347d96e89ab4f0e",
+      "rmse": {
+        "raw_prediction": 0.2566893319090156,
+        "clipped_prediction": 0.2566830223854075
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0026.npz",
+      "source_label": "paris_teacher_v1_1_TimeXer_local_audited_compact_L168_2020-10_h3_s42_f88828a907fc__attempt_01__predictions.npz",
+      "target_id": "paris-development_240f3527c6d8beae",
+      "rmse": {
+        "raw_prediction": 0.22529225493724672,
+        "clipped_prediction": 0.2252504996650789
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0027.npz",
+      "source_label": "paris_teacher_v1_1_TimeXer_local_audited_compact_L168_2020-10_h6_s42_5ffb777c166c__attempt_01__predictions.npz",
+      "target_id": "paris-development_71b34e9ad3a1a3ed",
+      "rmse": {
+        "raw_prediction": 0.24222987493309742,
+        "clipped_prediction": 0.242123294616447
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0028.npz",
+      "source_label": "paris_teacher_v1_1_TimeXer_local_audited_compact_L168_2020-10_h9_s42_33d2eaf5a3ca__attempt_01__predictions.npz",
+      "target_id": "paris-development_a65b63410a5ae682",
+      "rmse": {
+        "raw_prediction": 0.25121033695028955,
+        "clipped_prediction": 0.25119209881424726
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0029.npz",
+      "source_label": "paris_teacher_v1_1_TimeXer_local_audited_compact_L168_2020-11_h12_s42_405753b1366a__attempt_01__predictions.npz",
+      "target_id": "paris-development_7fff7e47e6a4b084",
+      "rmse": {
+        "raw_prediction": 0.25258413546409003,
+        "clipped_prediction": 0.25257725213500104
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0030.npz",
+      "source_label": "paris_teacher_v1_1_TimeXer_local_audited_compact_L168_2020-11_h3_s42_1c574a5d0431__attempt_01__predictions.npz",
+      "target_id": "paris-development_43aed535e5cd0d27",
+      "rmse": {
+        "raw_prediction": 0.22358150114178785,
+        "clipped_prediction": 0.22356860369823583
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0031.npz",
+      "source_label": "paris_teacher_v1_1_TimeXer_local_audited_compact_L168_2020-11_h6_s42_96ffab0a68fe__attempt_01__predictions.npz",
+      "target_id": "paris-development_cca1ece89951e0f7",
+      "rmse": {
+        "raw_prediction": 0.2400199624883332,
+        "clipped_prediction": 0.24001989582118818
+      },
+      "gains_pct": {}
+    },
+    {
+      "package": "paris-development_0032.npz",
+      "source_label": "paris_teacher_v1_1_TimeXer_local_audited_compact_L168_2020-11_h9_s42_8ed6916bc51e__attempt_01__predictions.npz",
+      "target_id": "paris-development_41abd00df5d14208",
+      "rmse": {
+        "raw_prediction": 0.24725002225864592,
+        "clipped_prediction": 0.24725002006338748
+      },
+      "gains_pct": {}
+    }
+  ]
+}

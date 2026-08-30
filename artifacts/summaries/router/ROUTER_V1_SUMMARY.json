@@ -1,0 +1,119 @@
+{
+  "status": "complete",
+  "generated_at": "2026-08-28T13:56:31",
+  "run_id": "router_v1_c4b20b77fc9d3",
+  "artifact_root": "private-workspace://urbanev-forecast/experiments\\05_router_v1\\outputs\\runs\\router_v1_c4b20b77fc9d3\\attempt_01",
+  "protocol": "router_v1",
+  "sanity": false,
+  "seed": 42,
+  "target_identity_verified": true,
+  "probability_calibration": "raw",
+  "best_fixed_method": "global_fixed",
+  "best_fixed_RMSE": 0.07136675688300531,
+  "direct_loss_mlp_RMSE": 0.07105030993273188,
+  "direct_loss_mlp_gain_vs_best_fixed_percent": 0.44340945854131064,
+  "fold_wins": 5,
+  "cell_wins": 18,
+  "max_horizon_deterioration_percent": -0.13577538534748507,
+  "oracle_gap_capture": 0.03122691984602273,
+  "bootstrap": {
+    "iterations": 1000,
+    "block_unit": "target_timestamp_all_275_zones_together",
+    "block_length_hours": 24,
+    "RMSE_difference_95_CI": [
+      0.00019427474600954182,
+      0.0004505637428735207
+    ],
+    "gain_percent_95_CI": [
+      0.2746645914659839,
+      0.6344953239237147
+    ],
+    "probability_gain_positive": 1.0
+  },
+  "gate4_criteria": {
+    "beats_TimeXer": true,
+    "beats_global_fixed": true,
+    "beats_horizon_fixed": true,
+    "macro_gain_ge_1_percent": false,
+    "fold_wins_ge_5_of_6": true,
+    "cell_wins_ge_18_of_24": true,
+    "paired_block_CI_lower_gt_0": true,
+    "max_horizon_deterioration_le_1_percent": true
+  },
+  "gate4_pass": false,
+  "methods": [
+    {
+      "method": "CAPER",
+      "cells": 24,
+      "RMSE": 0.07550667751389535,
+      "MAE": 0.048479747276688745,
+      "WAPE": 0.17899283766998578,
+      "sMAPE": 0.24278428786088727,
+      "RAE": 0.3628511299069523
+    },
+    {
+      "method": "TimeXer",
+      "cells": 24,
+      "RMSE": 0.07370892925327933,
+      "MAE": 0.04636686591893761,
+      "WAPE": 0.1707079114242909,
+      "sMAPE": 0.23731546934244588,
+      "RAE": 0.34639591325904046
+    },
+    {
+      "method": "global_fixed",
+      "cells": 24,
+      "RMSE": 0.07136675688300531,
+      "MAE": 0.04494941741082564,
+      "WAPE": 0.1658131251141385,
+      "sMAPE": 0.23158290961173714,
+      "RAE": 0.3362727840379143
+    },
+    {
+      "method": "horizon_fixed",
+      "cells": 24,
+      "RMSE": 0.07137177878413585,
+      "MAE": 0.04495109760949473,
+      "WAPE": 0.16582009367476438,
+      "sMAPE": 0.2315894278297513,
+      "RAE": 0.336286589097434
+    },
+    {
+      "method": "hard_router",
+      "cells": 24,
+      "RMSE": 0.07275910775223293,
+      "MAE": 0.04499490985157395,
+      "WAPE": 0.1656979186693354,
+      "sMAPE": 0.2321812626123556,
+      "RAE": 0.3362211679512919
+    },
+    {
+      "method": "soft_router",
+      "cells": 24,
+      "RMSE": 0.07097924186836793,
+      "MAE": 0.04430280905223025,
+      "WAPE": 0.16335438054855225,
+      "sMAPE": 0.2297973131019523,
+      "RAE": 0.33134515939794634
+    },
+    {
+      "method": "direct_loss_mlp",
+      "cells": 24,
+      "RMSE": 0.07105030993273188,
+      "MAE": 0.04445243815541442,
+      "WAPE": 0.16389377790161538,
+      "sMAPE": 0.23024452358218314,
+      "RAE": 0.3324471590893487
+    },
+    {
+      "method": "oracle",
+      "cells": 24,
+      "RMSE": 0.061232970014694243,
+      "MAE": 0.035023478095100584,
+      "WAPE": 0.12906793196629865,
+      "sMAPE": 0.18917100310246618,
+      "RAE": 0.2618582039530643
+    }
+  ],
+  "claim_boundary": "Internal rolling evidence only; protected test remains unopened."
+}

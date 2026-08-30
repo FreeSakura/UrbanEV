@@ -1,0 +1,60 @@
+{
+  "status": "FAIL",
+  "qualified_teacher": false,
+  "failure_policy_if_failed": "TERMINATE_DISTILL_V2_CURRENT_HYPOTHESIS",
+  "reference_best_single": "timexer",
+  "reference_macro_RMSE": 0.2425417333170634,
+  "teacher_macro_RMSE": 0.2404877475991446,
+  "teacher_gain_percent": 0.8468586786397444,
+  "fold_wins": 4,
+  "cell_wins": 16,
+  "paired_24h_block_CI_gain_percent": [
+    0.6867106435653986,
+    1.008822883745374
+  ],
+  "bootstrap_best_single_selection_counts": {
+    "caper": 0,
+    "timexer": 5000
+  },
+  "bootstrap_common_timestamp_rules": {
+    "2020-08": {
+      "common_timestamp_count": 732,
+      "blocks": 31,
+      "common_start_ns": 1596283200000000000,
+      "common_end_ns": 1598914800000000000
+    },
+    "2020-09": {
+      "common_timestamp_count": 708,
+      "blocks": 30,
+      "common_start_ns": 1598961600000000000,
+      "common_end_ns": 1601506800000000000
+    },
+    "2020-10": {
+      "common_timestamp_count": 732,
+      "blocks": 31,
+      "common_start_ns": 1601553600000000000,
+      "common_end_ns": 1604185200000000000
+    },
+    "2020-11": {
+      "common_timestamp_count": 708,
+      "blocks": 30,
+      "common_start_ns": 1604232000000000000,
+      "common_end_ns": 1606777200000000000
+    }
+  },
+  "max_horizon_deterioration_percent": -0.6891562549567587,
+  "gate": {
+    "macro_gain_pass": false,
+    "fold_wins_pass": true,
+    "cell_wins_pass": true,
+    "bootstrap_CI_pass": true,
+    "horizon_protection_pass": true,
+    "identity_pass": true
+  },
+  "cells": 16,
+  "model_jobs": 32,
+  "student_training_authorized": false,
+  "formal_target_access": false,
+  "protected_target_access": false,
+  "queue_state_sha256": "d97d3e2ece4de5f1e54acd6bbee1d855a01769183967070490916950ae716dd8"
+}

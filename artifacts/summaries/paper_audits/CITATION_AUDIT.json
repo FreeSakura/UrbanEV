@@ -1,0 +1,351 @@
+{
+  "audit_skill": "citation-audit",
+  "verdict": "PASS",
+  "generated_at": "2026-08-30T05:45:56.4205947Z",
+  "scope": {
+    "mode": "zero_context_citation_audit_incremental_terminal_validation",
+    "local_inputs": [
+      "main.tex",
+      "sections/*.tex",
+      "references.bib"
+    ],
+    "excluded_local_inputs": [
+      "old CITATION_AUDIT files",
+      "reviews",
+      "conversation history"
+    ],
+    "modified_manuscript_or_bibtex": false,
+    "incremental_check": "Only sections/03_methods.tex hash changed; cite-key set, citation call locations, and 58 expanded citation occurrences are unchanged."
+  },
+  "overall_verdict": "PASS",
+  "reason_code": "all_entries_keep",
+  "summary": "All 26 actually cited entries exist; formal metadata, DOI/arXiv/OpenReview/Zenodo/MLSys IDs, and citation contexts were verified against official or primary sources. No FIX, REPLACE, or REMOVE action remains.",
+  "input_sha256": {
+    "main.tex": "99f524ade3be4e46941e0b699bd802af4d5c341267a5dbad6d0030a666929001",
+    "sections/01_introduction.tex": "1015a13132d0f713f5cba9e14d0e484ec35eee86c65f87f1ee5937e9570da4d4",
+    "sections/02_related_work.tex": "69e19b8922d9d8cbdb44b37a5d1fd140246c2ab5db6827ccf6eef202f913c63c",
+    "sections/03_methods.tex": "848838c2604791d80bf43eb68d312a7ae04a89cfef2a801b7a96ebb64a42d2cb",
+    "sections/04_results.tex": "b95b4fd6c11d50008cff43b4ac561b8b06a8f9b9db68290a8e13b6aa3f155c3b",
+    "sections/05_discussion.tex": "3f79e503d9d0fa23c9549ee04db17a115300313bab3054802c1e4caf75d5403e",
+    "sections/06_limitations.tex": "88611048acb84fa72452182df3df15fc78db627de8398d768cc81de645076d77",
+    "sections/07_conclusion.tex": "e81f49516f967d6c6e687eba8a069246de9618ca5e6f786c416e5dedc0bf982f",
+    "sections/08_reproducibility_appendix.tex": "dbda47c2afefd0425172648cce34df0bc02425ce8e30c2d2a856a4a758532727",
+    "references.bib": "15539d76807c2cfdc2eecfcb5f58644a13b4f60ac01c2de3ee5810523e46412d"
+  },
+  "counts": {
+    "actually_cited_entries": 26,
+    "citation_occurrences": 58,
+    "KEEP": 26,
+    "FIX": 0,
+    "REPLACE": 0,
+    "REMOVE": 0
+  },
+  "residual_caveats": [
+    {
+      "key": "bouthillier2021variance",
+      "severity": "non_blocking",
+      "note": "Current BibTeX follows official MLSys exported BibTeX and official proceedings page for authors and pages 747--769. The official PDF title page includes an additional author, Dmitriy Serdyuk; this is an internal MLSys source discrepancy, not a required manuscript/BibTeX fix under the formal proceedings metadata."
+    },
+    {
+      "key": "amaraouali2024smarter",
+      "severity": "non_blocking",
+      "note": "Formal DMLR/JDMLR article and Zenodo metadata use the 12-author list in references.bib. The arXiv record exposes an author-list variant including Tiphaine Phe-Neau. Since the bibliography cites the journal/challenge article, the entry is kept."
+    },
+    {
+      "key": "makridakis2022m5",
+      "severity": "non_blocking",
+      "note": "The citation strongly supports forecasting competition findings, cross-validation discipline, and combinations. The clause that complex ML systems do not automatically dominate simpler references is broad but acceptable in context."
+    }
+  ],
+  "entries": [
+    {
+      "key": "li2025urbanev",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.1038/s41597-025-04874-4",
+      "formal_metadata": "Li et al., UrbanEV: An Open Benchmark Dataset for Urban Electric Vehicle Charging Demand Prediction, Scientific Data 12, article 523 (2025).",
+      "context_ids": ["C001", "C006", "C019"],
+      "urls": ["https://www.nature.com/articles/s41597-025-04874-4", "https://github.com/IntelligentSystemsLab/UrbanEV"]
+    },
+    {
+      "key": "guo2025charged",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.1038/s41597-025-05584-7",
+      "formal_metadata": "Guo et al., A City-scale and Harmonized Dataset for Global Electric Vehicle Charging Demand Analysis, Scientific Data 12, article 1254 (2025).",
+      "context_ids": ["C001", "C006"],
+      "urls": ["https://www.nature.com/articles/s41597-025-05584-7", "https://github.com/IntelligentSystemsLab/CHARGED"]
+    },
+    {
+      "key": "amaraouali2024smarter",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH_WITH_NON_BLOCKING_VERSION_CAVEAT",
+      "doi_or_id": "OpenReview:0wOwrH5fXQ; arXiv:2306.06142",
+      "formal_metadata": "Amara-Ouali et al., Forecasting Electric Vehicle Charging Station Occupancy: Smarter Mobility Data Challenge, Journal of Data-centric Machine Learning Research 1(16):1--27 (2024).",
+      "context_ids": ["C001", "C006", "C020", "C026"],
+      "urls": ["https://data.mlr.press/assets/pdf/v01-16.pdf", "https://openreview.net/forum?id=0wOwrH5fXQ", "https://arxiv.org/abs/2306.06142"]
+    },
+    {
+      "key": "amaraouali2023parisdataset",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.5281/zenodo.8280566",
+      "formal_metadata": "Amara-Ouali et al., Electric Vehicle Occupancy of Charging Points in the City of Paris, Zenodo (2023).",
+      "context_ids": ["C001", "C006", "C020", "C026"],
+      "urls": ["https://zenodo.org/records/8280566", "https://zenodo.org/api/records/8280566"]
+    },
+    {
+      "key": "lee2019acndata",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.1145/3307772.3328313",
+      "formal_metadata": "Lee, Li, and Low, ACN-Data: Analysis and Applications of an Open EV Charging Dataset, ACM e-Energy 2019, pp. 139--149.",
+      "context_ids": ["C001", "C006"],
+      "urls": ["https://dl.acm.org/doi/10.1145/3307772.3328313"]
+    },
+    {
+      "key": "qu2024pag",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.1109/TITS.2024.3401850",
+      "formal_metadata": "Qu et al., A Physics-Informed and Attention-Based Graph Learning Approach for Regional Electric Vehicle Charging Demand Prediction, IEEE Transactions on Intelligent Transportation Systems 25(10):14284--14297 (2024).",
+      "context_ids": ["C002", "C009"],
+      "urls": ["https://doi.org/10.1109/TITS.2024.3401850", "https://arxiv.org/abs/2408.16006"]
+    },
+    {
+      "key": "qu2024chatev",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.1016/j.trd.2024.104470",
+      "formal_metadata": "Qu et al., ChatEV: Predicting Electric Vehicle Charging Demand as Natural Language Processing, Transportation Research Part D 136:104470 (2024).",
+      "context_ids": ["C002", "C009"],
+      "urls": ["https://doi.org/10.1016/j.trd.2024.104470"]
+    },
+    {
+      "key": "wang2024timexer",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.52202/079017-0015; arXiv:2402.19072",
+      "formal_metadata": "Wang et al., TimeXer: Empowering Transformers for Time Series Forecasting with Exogenous Variables, Advances in Neural Information Processing Systems 37:469--498 (2024).",
+      "context_ids": ["C002", "C009"],
+      "urls": ["https://proceedings.neurips.cc/paper_files/paper/2024/hash/0113ef4642264adc2e6924a3cbbdf532-Abstract-Conference.html", "https://www.proceedings.com/079017-0015.html"]
+    },
+    {
+      "key": "zeng2023dlinear",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.1609/aaai.v37i9.26317; arXiv:2205.13504",
+      "formal_metadata": "Zeng et al., Are Transformers Effective for Time Series Forecasting?, Proceedings of the AAAI Conference on Artificial Intelligence 37(9):11121--11128 (2023).",
+      "context_ids": ["C002", "C009", "C023"],
+      "urls": ["https://ojs.aaai.org/index.php/AAAI/article/view/26317"]
+    },
+    {
+      "key": "ansari2024chronos",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "OpenReview:gerNCVqqtR; arXiv:2403.07815",
+      "formal_metadata": "Ansari et al., Chronos: Learning the Language of Time Series, Transactions on Machine Learning Research (2024).",
+      "context_ids": ["C002", "C017"],
+      "urls": ["https://openreview.net/forum?id=gerNCVqqtR", "https://arxiv.org/abs/2403.07815", "https://www.amazon.science/publications/chronos-learning-the-language-of-time-series"]
+    },
+    {
+      "key": "ansari2025chronos2",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "arXiv:2510.15821",
+      "formal_metadata": "Ansari et al., Chronos-2: From Univariate to Universal Forecasting, arXiv:2510.15821 (2025).",
+      "context_ids": ["C002", "C017", "C022"],
+      "urls": ["https://arxiv.org/abs/2510.15821", "https://huggingface.co/amazon/chronos-2"]
+    },
+    {
+      "key": "dawid1984prequential",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.2307/2981683",
+      "formal_metadata": "Dawid, Present Position and Potential Developments: Some Personal Views: Statistical Theory: The Prequential Approach, Journal of the Royal Statistical Society Series A 147(2):278--290 (1984).",
+      "context_ids": ["C003", "C010", "C021"],
+      "urls": ["https://doi.org/10.2307/2981683"]
+    },
+    {
+      "key": "tashman2000oos",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.1016/S0169-2070(00)00065-0",
+      "formal_metadata": "Tashman, Out-of-sample Tests of Forecasting Accuracy: An Analysis and Review, International Journal of Forecasting 16(4):437--450 (2000).",
+      "context_ids": ["C003", "C010", "C021"],
+      "urls": ["https://doi.org/10.1016/S0169-2070(00)00065-0"]
+    },
+    {
+      "key": "bergmeir2012cv",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.1016/j.ins.2011.12.028",
+      "formal_metadata": "Bergmeir and Benitez, On the Use of Cross-validation for Time Series Predictor Evaluation, Information Sciences 191:192--213 (2012).",
+      "context_ids": ["C010"],
+      "urls": ["https://doi.org/10.1016/j.ins.2011.12.028"]
+    },
+    {
+      "key": "cerqueira2020evaluation",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.1007/s10994-020-05910-7",
+      "formal_metadata": "Cerqueira, Torgo, and Mozetic, Evaluating Time Series Forecasting Models: An Empirical Study on Performance Estimation Methods, Machine Learning 109(11):1997--2028 (2020).",
+      "context_ids": ["C010"],
+      "urls": ["https://link.springer.com/article/10.1007/s10994-020-05910-7"]
+    },
+    {
+      "key": "hewamalage2023pitfalls",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.1007/s10618-022-00894-5",
+      "formal_metadata": "Hewamalage, Ackermann, and Bergmeir, Forecast Evaluation for Data Scientists: Common Pitfalls and Best Practices, Data Mining and Knowledge Discovery 37(2):788--832 (2023).",
+      "context_ids": ["C004", "C012"],
+      "urls": ["https://link.springer.com/article/10.1007/s10618-022-00894-5"]
+    },
+    {
+      "key": "hyndman2006measures",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.1016/j.ijforecast.2006.03.001",
+      "formal_metadata": "Hyndman and Koehler, Another Look at Measures of Forecast Accuracy, International Journal of Forecasting 22(4):679--688 (2006).",
+      "context_ids": ["C011"],
+      "urls": ["https://doi.org/10.1016/j.ijforecast.2006.03.001"]
+    },
+    {
+      "key": "makridakis2022m5",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.1016/j.ijforecast.2021.11.013",
+      "formal_metadata": "Makridakis, Spiliotis, and Assimakopoulos, M5 Accuracy Competition: Results, Findings, and Conclusions, International Journal of Forecasting 38(4):1346--1364 (2022).",
+      "context_ids": ["C013", "C016"],
+      "urls": ["https://doi.org/10.1016/j.ijforecast.2021.11.013"]
+    },
+    {
+      "key": "cawley2010selectionbias",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "JMLR:v11/cawley10a",
+      "formal_metadata": "Cawley and Talbot, On Over-fitting in Model Selection and Subsequent Selection Bias in Performance Evaluation, Journal of Machine Learning Research 11:2079--2107 (2010).",
+      "context_ids": ["C015", "C018", "C025"],
+      "urls": ["https://www.jmlr.org/papers/v11/cawley10a.html"]
+    },
+    {
+      "key": "dwork2015reusableholdout",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.1126/science.aaa9375",
+      "formal_metadata": "Dwork et al., The Reusable Holdout: Preserving Validity in Adaptive Data Analysis, Science 349(6248):636--638 (2015).",
+      "context_ids": ["C015", "C025"],
+      "urls": ["https://doi.org/10.1126/science.aaa9375"]
+    },
+    {
+      "key": "kapoor2023leakage",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.1016/j.patter.2023.100804",
+      "formal_metadata": "Kapoor and Narayanan, Leakage and the Reproducibility Crisis in Machine-learning-based Science, Patterns 4(9):100804 (2023).",
+      "context_ids": ["C004", "C014"],
+      "urls": ["https://doi.org/10.1016/j.patter.2023.100804"]
+    },
+    {
+      "key": "pineau2021reproducibility",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "JMLR:v22/20-303",
+      "formal_metadata": "Pineau et al., Improving Reproducibility in Machine Learning Research: A Report from the NeurIPS 2019 Reproducibility Program, Journal of Machine Learning Research 22(164):1--20 (2021).",
+      "context_ids": ["C005", "C014", "C024"],
+      "urls": ["https://jmlr.org/papers/v22/20-303.html"]
+    },
+    {
+      "key": "bouthillier2021variance",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH_OFFICIAL_MLSYS_BIBTEX_WITH_NON_BLOCKING_SOURCE_DISCREPANCY",
+      "doi_or_id": "MLSys:0184b0cd3cfb185989f858a1d9f5c1eb",
+      "formal_metadata": "Bouthillier et al., Accounting for Variance in Machine Learning Benchmarks, Proceedings of Machine Learning and Systems 3:747--769 (2021), matching official MLSys exported BibTeX.",
+      "context_ids": ["C014", "C018", "C024"],
+      "urls": ["https://proceedings.mlsys.org/paper_files/paper/2021/hash/0184b0cd3cfb185989f858a1d9f5c1eb-Abstract.html", "https://proceedings.mlsys.org/paper_files/paper/363-/bibtex", "https://proceedings.mlsys.org/paper_files/paper/2021/file/0184b0cd3cfb185989f858a1d9f5c1eb-Paper.pdf"]
+    },
+    {
+      "key": "amaraouali2021review",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.3390/en14082233",
+      "formal_metadata": "Amara-Ouali et al., A Review of Electric Vehicle Load Open Data and Models, Energies 14(8):2233 (2021).",
+      "context_ids": ["C007"],
+      "urls": ["https://doi.org/10.3390/en14082233"]
+    },
+    {
+      "key": "rashid2024survey",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.1109/OJVT.2024.3457499",
+      "formal_metadata": "Rashid, Elfouly, and Chen, A Comprehensive Survey of Electric Vehicle Charging Demand Forecasting Techniques, IEEE Open Journal of Vehicular Technology 5:1348--1373 (2024).",
+      "context_ids": ["C007"],
+      "urls": ["https://doi.org/10.1109/OJVT.2024.3457499"]
+    },
+    {
+      "key": "buzna2021hierarchical",
+      "action": "KEEP",
+      "existence": "YES",
+      "metadata": "MATCH",
+      "doi_or_id": "10.1016/j.apenergy.2020.116337",
+      "formal_metadata": "Buzna et al., An Ensemble Methodology for Hierarchical Probabilistic Electric Vehicle Load Forecasting at Regular Charging Stations, Applied Energy 283:116337 (2021).",
+      "context_ids": ["C008"],
+      "urls": ["https://doi.org/10.1016/j.apenergy.2020.116337"]
+    }
+  ],
+  "contexts": [
+    {"id": "C001", "file": "sections/01_introduction.tex", "line": 6, "keys": ["li2025urbanev", "amaraouali2024smarter", "amaraouali2023parisdataset", "lee2019acndata", "guo2025charged"], "verdict": "SUPPORTS", "note": "Open resources claim is supported for Shenzhen UrbanEV, Paris station occupancy records, ACN workplace sessions, and CHARGED multi-city harmonized measurements."},
+    {"id": "C002", "file": "sections/01_introduction.tex", "line": 6, "keys": ["qu2024pag", "qu2024chatev", "wang2024timexer", "zeng2023dlinear", "ansari2024chronos", "ansari2025chronos2"], "verdict": "SUPPORTS", "note": "Method-family claim is supported: PAG graph/physics, ChatEV NLP formulation, TimeXer exogenous-variable transformer, DLinear linear decomposition baseline, and Chronos/Chronos-2 pretrained forecasting."},
+    {"id": "C003", "file": "sections/01_introduction.tex", "line": 8, "keys": ["dawid1984prequential", "tashman2000oos"], "verdict": "SUPPORTS", "note": "Out-of-sample, prequential, and rolling-origin framing is supported."},
+    {"id": "C004", "file": "sections/01_introduction.tex", "line": 8, "keys": ["hewamalage2023pitfalls", "kapoor2023leakage"], "verdict": "SUPPORTS", "note": "Leakage, random split, benchmark, and metric-choice warnings are supported."},
+    {"id": "C005", "file": "sections/01_introduction.tex", "line": 8, "keys": ["pineau2021reproducibility"], "verdict": "SUPPORTS", "note": "Code/data/environment/reporting-artifact reproducibility framing is supported."},
+    {"id": "C006", "file": "sections/02_related_work.tex", "line": 5, "keys": ["lee2019acndata", "li2025urbanev", "guo2025charged", "amaraouali2024smarter", "amaraouali2023parisdataset"], "verdict": "SUPPORTS", "note": "Dataset-unit and prediction-target distinctions are supported for all cited datasets."},
+    {"id": "C007", "file": "sections/02_related_work.tex", "line": 7, "keys": ["amaraouali2021review", "rashid2024survey"], "verdict": "SUPPORTS", "note": "Review/survey claims about open EV load data, demand forecasting targets, infrastructure planning, grid operation, and model families are supported."},
+    {"id": "C008", "file": "sections/02_related_work.tex", "line": 7, "keys": ["buzna2021hierarchical"], "verdict": "SUPPORTS", "note": "Hierarchical probabilistic EV station-load forecasting with information across levels is supported."},
+    {"id": "C009", "file": "sections/02_related_work.tex", "line": 9, "keys": ["qu2024pag", "qu2024chatev", "wang2024timexer", "zeng2023dlinear"], "verdict": "SUPPORTS", "note": "Specific method descriptions are supported by formal paper abstracts/metadata."},
+    {"id": "C010", "file": "sections/02_related_work.tex", "line": 12, "keys": ["dawid1984prequential", "tashman2000oos", "bergmeir2012cv", "cerqueira2020evaluation"], "verdict": "SUPPORTS", "note": "Prequential, rolling-origin, time-series cross-validation caveats, and nonstationary out-of-sample estimator claims are supported."},
+    {"id": "C011", "file": "sections/02_related_work.tex", "line": 14, "keys": ["hyndman2006measures"], "verdict": "SUPPORTS", "note": "Metric-property and percentage-error limitations are supported."},
+    {"id": "C012", "file": "sections/02_related_work.tex", "line": 14, "keys": ["hewamalage2023pitfalls"], "verdict": "SUPPORTS", "note": "Baselines, leakage, horizon mismatch, and aggregation pitfalls are supported."},
+    {"id": "C013", "file": "sections/02_related_work.tex", "line": 14, "keys": ["makridakis2022m5"], "verdict": "WEAK_BUT_ACCEPTABLE", "note": "M5 supports competition findings, cross-validation discipline, and combinations; the broad 'complex ML does not automatically dominate simpler references' clause is acceptable but not the paper's narrowest finding."},
+    {"id": "C014", "file": "sections/02_related_work.tex", "line": 17, "keys": ["pineau2021reproducibility", "kapoor2023leakage", "bouthillier2021variance"], "verdict": "SUPPORTS", "note": "Reproducibility artifacts/checklists, leakage boundaries, and benchmark-variance claims are supported."},
+    {"id": "C015", "file": "sections/02_related_work.tex", "line": 19, "keys": ["cawley2010selectionbias", "dwork2015reusableholdout"], "verdict": "SUPPORTS", "note": "Model-selection overfit and adaptive holdout-query validity warnings are supported."},
+    {"id": "C016", "file": "sections/02_related_work.tex", "line": 22, "keys": ["makridakis2022m5"], "verdict": "SUPPORTS", "note": "Forecast-combination and M5 evidence claim is supported."},
+    {"id": "C017", "file": "sections/02_related_work.tex", "line": 24, "keys": ["ansari2024chronos", "ansari2025chronos2"], "verdict": "SUPPORTS", "note": "Chronos tokenized zero-shot probabilistic forecasting and Chronos-2 grouped multivariate/covariate capability claims are supported."},
+    {"id": "C018", "file": "sections/02_related_work.tex", "line": 26, "keys": ["cawley2010selectionbias", "bouthillier2021variance"], "verdict": "SUPPORTS", "note": "Selection-bias and benchmark-variance warnings are appropriate to the distillation-qualification discussion."},
+    {"id": "C019", "file": "sections/03_methods.tex", "line": 35, "keys": ["li2025urbanev"], "verdict": "SUPPORTS", "note": "UrbanEV dataset scope supports using hourly zonal occupancy as one audited task while not claiming every dataset quantity is targeted."},
+    {"id": "C020", "file": "sections/03_methods.tex", "line": 38, "keys": ["amaraouali2024smarter", "amaraouali2023parisdataset"], "verdict": "SUPPORTS", "note": "Paris Smarter Mobility dataset/Zenodo records support the Paris data boundary."},
+    {"id": "C021", "file": "sections/03_methods.tex", "line": 77, "keys": ["dawid1984prequential", "tashman2000oos"], "verdict": "SUPPORTS", "note": "Strict prequential fitting description is supported by the prequential and rolling-origin sources."},
+    {"id": "C022", "file": "sections/03_methods.tex", "line": 101, "keys": ["ansari2025chronos2"], "verdict": "SUPPORTS", "note": "Official amazon/chronos-2 model reference is supported by arXiv and HuggingFace official model page."},
+    {"id": "C023", "file": "sections/03_methods.tex", "line": 103, "keys": ["zeng2023dlinear"], "verdict": "SUPPORTS", "note": "DLinear residual branch reference is supported."},
+    {"id": "C024", "file": "sections/05_discussion.tex", "line": 8, "keys": ["pineau2021reproducibility", "bouthillier2021variance"], "verdict": "SUPPORTS", "note": "Layered reproducibility and variance framing is supported."},
+    {"id": "C025", "file": "sections/05_discussion.tex", "line": 26, "keys": ["cawley2010selectionbias", "dwork2015reusableholdout"], "verdict": "SUPPORTS", "note": "Stopping-rule discussion is supported by selection-bias and adaptive-analysis warnings."},
+    {"id": "C026", "file": "sections/06_limitations.tex", "line": 26, "keys": ["amaraouali2024smarter", "amaraouali2023parisdataset"], "verdict": "SUPPORTS", "note": "Paris license-difference statement is supported: challenge/repository materials expose ODbL while the Zenodo API exposes CC-BY-4.0; the manuscript correctly treats them as source-specific metadata."}
+  ],
+  "trace_path": ".aris/traces/citation-audit/2026-08-30_run03/"
+}

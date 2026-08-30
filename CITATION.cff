@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this audit framework or its public artifacts, please cite this preprint."
+title: "From Configurations to Claims: An Evidence Audit of Urban EV Charging Forecasting"
+version: 0.9.0
+type: article
+authors:
+  - family-names: Chi
+    given-names: Hongwei
+    orcid: "https://orcid.org/0009-0009-0393-999X"
+    affiliation: "School of Computer Science and Technology, Hangzhou Dianzi University"
+    email: chihongwei@hdu.edu.cn
+repository-code: "https://github.com/FreeSakura/UrbanEV"
+license: CC-BY-4.0
+abstract: "A target-free public artifact package for an audit of configuration identity, sequential evidence gates, latency, and protected-data boundaries in urban EV charging forecasting."
+keywords:
+  - electric-vehicle charging
+  - forecasting
+  - reproducibility
+  - experiment audit

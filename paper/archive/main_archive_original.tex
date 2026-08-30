@@ -1,0 +1,63 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=24mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{flafter}
+\usepackage[section]{placeins}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{xurl}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=MidnightBlue,
+  citecolor=MidnightBlue,
+  urlcolor=MidnightBlue,
+  pdftitle={From Configurations to Claims: An Evidence Audit of Urban EV Charging Forecasting},
+  pdfauthor={Anonymous Authors}
+}
+\setlist{nosep,leftmargin=*}
+\setlength{\emergencystretch}{2em}
+\newcommand{\urbanev}{UrbanEV}
+\newcommand{\rmse}{RMSE}
+
+\title{From Configurations to Claims:\\An Evidence Audit of Urban EV Charging Forecasting}
+\author{Anonymous Authors}
+\date{August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Execution completion is often treated as a proxy for reproducibility, while a statistically positive comparison is often treated as sufficient reason to continue model development.  We audit both assumptions in a case study of urban electric-vehicle charging forecasting and extract a reusable claim-control framework linking configuration identity, forecast validity, engineering qualification, and protected-data use.  In a frozen inventory of 1,224 UrbanEV configurations, 865 have completed artifacts but only 156 satisfy a joint exact-protocol-and-numerical criterion.  A sequential UrbanEV evaluation then shows why later evidence types must remain distinct: strict prequential fusion of a locally audited CAPER expert and compact TimeXer lowers internal macro RMSE by 3.178\% relative to the strongest evaluated single model, but increases batch-1 median synchronous latency by 48.86\% on the frozen device.  Subsequent routing, foundation-teacher, and residual-distillation candidates either deteriorate or remain below their internally time-stamped, project-specific progression gates.  On a separate Paris development-only panel, the strict teacher is consistently positive yet its 0.847\% point gain remains below the frozen 1\% rule.  Paris formal and protected target-bearing sources are confined to a procedurally isolated evidence vault and contribute no analytical result.  The resulting taxonomy, claim grammar, fail-closed state machine, and artifact ledger show how a forecasting project can preserve partial and negative evidence without promoting it to protected-test, deployment, or state-of-the-art claims.
+\end{abstract}
+
+\noindent\textbf{Keywords:} electric-vehicle charging; forecasting; reproducibility; prequential evaluation; experiment audit; latency; stopping rules
+
+\input{sections/01_introduction}
+\input{sections/02_related_work}
+\input{sections/03_methods}
+\input{sections/04_results}
+\input{sections/05_discussion}
+\input{sections/06_limitations}
+\input{sections/07_conclusion}
+\input{sections/08_reproducibility_appendix}
+
+\section*{Data and artifact availability}
+All numerical claims in this manuscript map to machine-readable summaries, canonical result tables, protocol locks, and audit receipts in the accompanying experiment directory.  Figure and table generation scripts read those artifacts directly.  Paris formal and protected target-bearing files are deliberately excluded from the paper artifact and retained only in a procedurally isolated evidence vault; their identities and boundaries are represented by hashes and metadata, not by target values.
+
+\section*{Ethics and scope statement}
+The study uses previously released charging datasets and contains no intervention on human participants.  Charging observations may nevertheless encode mobility patterns, so the paper reports only aggregate forecasting evidence and does not attempt individual inference.  No protected-test, deployment-readiness, or state-of-the-art claim is made.
+
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}

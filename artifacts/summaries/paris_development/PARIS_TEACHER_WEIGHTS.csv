@@ -1,0 +1,5 @@
+﻿fold,alpha_TimeXer,alpha_CAPER,fit_source,fit_cells
+2020-08,0.44991168882943927,0.5500883111705608,fold1_pre_evaluation_validation_all_horizons,4
+2020-09,0.6459883748147894,0.35401162518521057,strict_prior_fold_oof_1_to_1,4
+2020-10,0.6299974251103172,0.3700025748896828,strict_prior_fold_oof_1_to_2,8
+2020-11,0.6087879355536316,0.39121206444636836,strict_prior_fold_oof_1_to_3,12

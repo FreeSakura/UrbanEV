@@ -1,0 +1,110 @@
+\section{Methods}
+\label{sec:methods}
+
+\subsection{Audit design and evidence hierarchy}
+\label{sec:methods-audit-design}
+
+We designed the study as an artifact-grounded audit rather than a search for a new state-of-the-art model.  The unit of evidence was therefore not a headline score alone, but a linked record containing the protocol, configuration fingerprint, execution state, prediction and target identities, metric definition, and claim boundary.  When records conflicted, we applied a frozen precedence rule: final decision and summary artifacts with a separately instantiated automated artifact audit took precedence over canonical result tables, which in turn took precedence over protocol thresholds and historical progress logs.  Existing successful fingerprints were reused; failed or unexecuted configurations could only enter a later study under a new versioned identifier.  This rule preserved the execution history and prevented a later successful run from rewriting an earlier failure or non-execution.
+
+The audit separated four evidential questions.  \emph{Identifiability} asks whether the disclosed experiment determines a unique protocol and configuration.  \emph{Execution} asks whether that configuration reached a terminal run with an artifact.  \emph{Predictive evidence} asks whether predictions were evaluated against dataset targets under a time-respecting split.  \emph{Engineering qualification} asks whether the resulting effect passed a minimum-effect gate and its accompanying consistency checks.  Proxy classification outcomes used to predict which expert would win locally were labeled separately from real-ground-truth forecast metrics and were never treated as forecast-accuracy evidence.
+
+\input{tables/table_audit_framework_compact}
+
+Table~\ref{tab:audit-framework-compact} is the portable object extracted from the case: each claim must name its evidence object, identity checks, lock or gate, and the strongest wording it authorizes.  It is a proposed review instrument derived from one project, not an externally validated guarantee that other teams will reduce false discoveries by adopting it.  The complete claim ledger and lock schemas are therefore reported in the Supplementary Material rather than hidden in an executor narrative.
+
+\subsection{Six-level configuration taxonomy}
+\label{sec:methods-taxonomy}
+
+We reclassified a frozen inventory of 1,224 UrbanEV configurations into six mutually exclusive evidence states.  The priority order was execution fact (S5 or S6), non-identifiability (S4), and then numerical agreement (S1--S3).
+
+\begin{description}
+    \item[S1: protocol and numerical result identifiable and reproduced.] The run covered all six folds, followed the official-compatible protocol, and each of the four disclosed metrics differed by at most 2\% from its mapped reference.
+    \item[S2: protocol broadly consistent, with disclosure differences.] The run completed and remained above trend-only evidence, but used an audited correction or had a 2--5\% numerical discrepancy.
+    \item[S3: relative trend only.] At least one core metric differed by more than 5\%, or the disclosed comparison cell could not be covered completely.
+    \item[S4: original information insufficient for a unique configuration.] The paper omitted an identifying element, such as node identity, or an extended configuration could not be mapped uniquely to a disclosed paper cell.
+    \item[S5: configuration identified but execution failed.] The manifest fixed a configuration, but the registry recorded a failed terminal state.
+    \item[S6: runnable configuration not actually completed.] The manifest froze a runnable configuration that was skipped or never registered as a completed run.
+\end{description}
+
+S1--S4 can all possess completed artifacts; only S1 denotes exact protocol-and-numerical reproduction under these frozen rules.  Classification was a deterministic implementation, not an inter-rater coding study.  The necessary/sufficient tests, overlap priority, one configuration example per state, and exact reason fields are given in the Supplementary Material; no alternative tolerance was used to change the frozen counts.  Thus, the taxonomy measures the evidence available in this UrbanEV inventory and does not estimate a field-wide reproducibility rate.
+
+\subsection{Data boundaries}
+\label{sec:methods-data}
+
+\paragraph{UrbanEV internal rolling boundary.}
+In this paper's audited UrbanEV task, the target is hourly zonal occupancy rate rather than every quantity in the broader dataset \cite{li2025urbanev}.  Occupied-port counts were divided by the frozen zone capacity; the resulting $4{,}344\times275$ panel was finite and required no target imputation.  All same-protocol forecasting comparisons used a 168-hour history, horizons $\mathcal{H}=\{3,6,9,12\}$ hours, six canonical expanding-month folds, and seed 42.  Each model in a fold--horizon cell used the same target indices, timestamps, target values, and zone ordering.  Fold target ranges, counts, prediction hashes, and fit sources are indexed in the Supplementary Material.  This boundary is an internal rolling evaluation, not a blind protected test.
+
+\paragraph{Independent Paris boundary.}
+The second boundary used the Paris Smarter Mobility Data Challenge records \cite{amaraouali2024smarter,amaraouali2023parisdataset}.  For station $z$ and hour $t$, the development target was the \emph{non-available-port fraction},
+\begin{equation}
+    y_{t,z}=\frac{C_{t,z}+P_{t,z}+O_{t,z}}
+    {A_{t,z}+C_{t,z}+P_{t,z}+O_{t,z}},
+    \label{eq:paris-target}
+\end{equation}
+where $A,C,P,$ and $O$ denote Available, Charging, Passive, and Other counts.  Passive and Other were grouped with Charging because the operational target asks whether a port is unavailable for a new user; it is not an energy-demand, session-volume, or pure actively-charging target.  Fifty stations with a stable development denominator were locked, totaling 150 ports.  The development matrix spanned 3,624 hourly timestamps from 3 July through 30 November 2020; 180,073 of 181,200 station--hour cells were observed (99.378\%).
+
+We split the remaining timeline into a 50-day formal role (1 December 2020--19 January 2021) and a 50-day protected role (20 January--10 March 2021).  Formal- and protected-role target-bearing sources were storage-materialized only in a procedurally isolated vault outside the main project.  Their file identities, row boundaries, and hashes were audited as storage metadata, while analytical access remained zero.  Here, \emph{analytical access} means reading a formal/protected target for metric computation, model selection, feature construction, statistical summary, or claim formation; hashing, moving, and inventorying bytes are storage operations and do not increment that counter.  Two example rows were displayed during pre-lock schema discovery, before a model or selection rule existed, and are disclosed as a boundary limitation.  No formal or protected target was used after the lock for a metric, model decision, or paper result.  The separate storage migration is recorded as a storage event and is not described as absence of materialization.
+
+Paris development models shared the same station order, targets, observation mask, history length, and horizons.  Within each fold, missing inputs were filled causally: forward filling was limited to four hours, followed by a station-by-source-local-hour-of-week median fitted on the training interval, and then a training-station median.  The observation mask was not a model feature, and training loss and evaluation used observed targets only.  Because released timestamps did not encode UTC offsets, we used the unique source-naive ordinal-hour sequence; 24- and 168-hour lags therefore refer to ordinal data hours, not reconstructed UTC time.
+
+The exact executed model identities, local adaptations, upstream-status limits, and source hashes are provided in the Supplementary Material and in \path{models/MODEL_SOURCE_MANIFEST.csv}.
+
+\subsection{Forecast metrics and strict prequential estimation}
+\label{sec:methods-evaluation}
+
+Let $\mathcal{O}_{f,h}$ be the observed target positions for fold $f$ and horizon $h$, including all valid timestamps and spatial units.  For method $m$, cell RMSE was
+\begin{equation}
+    R_{f,h}^{(m)}=
+    \sqrt{\frac{1}{|\mathcal{O}_{f,h}|}
+    \sum_{(t,z)\in\mathcal{O}_{f,h}}
+    \left(\widehat y_{f,h,t,z}^{(m)}-y_{f,h,t,z}\right)^2}.
+    \label{eq:cell-rmse}
+\end{equation}
+The primary endpoint was the equal-weight mean of cell RMSEs,
+\begin{equation}
+    \overline R^{(m)}=\frac{1}{|\mathcal{F}||\mathcal{H}|}
+    \sum_{f\in\mathcal{F}}\sum_{h\in\mathcal{H}}R_{f,h}^{(m)}.
+    \label{eq:macro-rmse}
+\end{equation}
+This cell-macro endpoint prevents a fold or horizon with more observed entries from dominating the paper's principal comparison.  MAE, WAPE, sMAPE, and RAE were retained as secondary diagnostics.  For a candidate $c$ and frozen reference $r$, positive relative gain denotes lower RMSE:
+\begin{equation}
+    G(c;r)=100\frac{\overline R^{(r)}-\overline R^{(c)}}
+    {\overline R^{(r)}}.
+    \label{eq:relative-gain}
+\end{equation}
+Absolute UrbanEV and Paris RMSE values were not compared because the datasets differ in spatial unit, target construction, missingness, and fold definition.
+
+We used strict prequential fitting \cite{dawid1984prequential,tashman2000oos}: a parameter evaluated in fold $f$ could only use validation data that preceded that fold or out-of-fold predictions from earlier folds.  For the two UrbanEV experts, CAPER ($C$) and compact TimeXer ($T$), a fixed forecast was
+\begin{equation}
+    \widehat y_{f,h}^{\mathrm{fixed}}
+    =\alpha_{f,h}\widehat y_{f,h}^{T}
+    +(1-\alpha_{f,h})\widehat y_{f,h}^{C},
+    \qquad 0\leq\alpha_{f,h}\leq 1.
+    \label{eq:fixed-fusion}
+\end{equation}
+The Global Fixed variant shared one $\alpha_f$ across horizons, whereas the Horizon Fixed control used four $\alpha_{f,h}$.  Fold 1 used only pre-test validation predictions; folds 2--6 used only earlier-fold out-of-fold predictions.  The target-dependent oracle selected the expert with smaller pointwise error and served only as an infeasible opportunity bound.
+
+The expert-win classifier used 21 forecast-origin features whose timestamps did not exceed the forecast origin.  Six described the experts (CAPER prediction, TimeXer prediction, signed and absolute disagreement, expert mean, and normalized horizon).  Fifteen described the observed state: current occupancy, one-step change and its magnitude, daily and weekly deviations and their magnitudes, 24-hour mean, standard deviation and turnover, normalized capacity, and sine/cosine encodings of hour and weekday.  Its AUC and Brier score quantified local expert-advantage predictability, not forecast accuracy or a causal mechanism.  Learned routing was evaluated separately using real target RMSE.  We compared a hard gate, a raw-probability soft gate, and a direct-loss multilayer perceptron; the direct-loss MLP was named as the primary learned-router comparison in the locked router protocol before aggregate Gate~4 access, even though the later raw-soft point estimate was numerically lower.
+
+\subsection{Uncertainty estimates and conjunctive gates}
+\label{sec:methods-gates}
+
+Paired uncertainty estimates resampled target timestamps in contiguous 24-hour blocks while keeping all spatial units at a timestamp together.  The router used 1,000 bootstrap replicates.  Distillation and Paris teacher qualification used 5,000 replicates.  For Paris, the algorithm intersected timestamps across the four horizons within a fold, partitioned the ordered intersection into consecutive blocks, drew the original number of blocks independently with equal block probability, concatenated the selected timestamps, recomputed every cell RMSE, and then recomputed the equal-cell macro gain while reselecting the better single-model reference in that replicate.  Each monthly sequence ended with a 12-hour trailing partial block; retaining it produced variable replicate length but equal expected inclusion for each original timestamp.  We did not run post-hoc 48- or 168-hour alternatives after seeing the result.  Intervals are therefore descriptive, protocol-specific paired 95\% bootstrap intervals for relative gain; a positive interval did not override a failed minimum-effect gate.
+
+Every qualification decision was conjunctive.  The 1\% point rule was an internal progression convention intended to decide whether added search, cache construction, student expansion, or protected evaluation was worth authorizing; it was not derived from charger-operator utility and is not a universal significance threshold.  The relevant lock artifacts predate their respective metric unlocks and are identified by SHA-256 prefixes in the Supplementary Material; complete hashes are retained in the public machine-readable audit receipt.  The displayed prefixes are router protocol \texttt{0b1fc56d...e7f18d35}, distillation protocol \texttt{fcd07f18...dfe383bc}, and Paris gate specification \texttt{96babeb1...90e9561}.  The UrbanEV router had to beat TimeXer and both fixed controls, improve macro RMSE by at least 1\%, win at least five of six folds and 18 of 24 cells, have a paired interval lower bound above zero, and avoid more than 1\% deterioration at any horizon.  Chronos-2 teacher qualification used the same 1\%, fold, cell, and horizon criteria, together with target identity, causal input exposure, revision reproducibility, and cache feasibility.  Residual distillation compared an identical 338-parameter student trained with ground truth only, aligned teacher residuals, or a 24-hour-block shuffled teacher.  Passing required aligned KD to improve over GT-only by at least 1\%, win five of six folds and 18 of 24 cells, have a positive paired lower bound, preserve every horizon within 1\%, and beat the shuffled control in macro RMSE, at least five folds, and paired interval.
+
+Paris teacher qualification was development-only.  The strict prequential CAPER--TimeXer teacher had to improve over the replicate-wise best single model by at least 1\%, win at least three of four folds and 12 of 16 fold--horizon cells, have a paired lower bound above zero, avoid more than 1\% deterioration at any horizon, and pass target, station, mask, timestamp, and origin identity checks.  A reported value below 1.000\% failed the point-effect gate without rounding or threshold revision.
+
+\subsection{Teacher, distillation, and latency protocols}
+\label{sec:methods-downstream}
+
+We screened the official \texttt{amazon/chronos-2} model \cite{ansari2025chronos2} from a locked local snapshot at commit prefix \texttt{29ec3766}; the complete revision is retained in the model-lock artifact.  The screen used \texttt{chronos-forecasting 2.2.2}, zero-shot FP32 inference, a 168-hour multivariate context, no future covariates, and the native median (Q0.5) forecast.  Predictions were clipped to $[0,1]$ for the frozen primary UrbanEV RMSE, matching the existing occupancy-rate evaluation.
+
+The residual-distillation teacher was the audited Global Fixed fusion.  The student combined a CAPER anchor with a shared DLinear residual branch \cite{zeng2023dlinear}.  GT-only, aligned-KD, and shuffled-teacher branches shared architecture, initialization, optimizer, epochs, data, and seed; only the teacher-residual term differed.  This negative control tested whether any benefit required sample-aligned teacher information rather than merely an additional regularizer.
+
+Synchronous latency used one RTX 4060 Laptop GPU in FP32 and a single-device sequential execution graph.  One request represented a citywide refresh producing all four horizons for all 275 UrbanEV zones.  Each method--batch combination used 50 warm-up iterations and 1,000 timed iterations in each of five independent processes; batch sizes were 1, 8, and 32 origins.  Model-only time used CUDA events whose terminal event was synchronized.  End-to-end wall-clock timing synchronized the GPU before stopping and included input preparation, transfers, four-horizon inference, fusion, and output transfer, but excluded model loading and checkpoint I/O, corresponding to a warm resident service rather than cold start.  Batch-1 end-to-end median latency was the frozen primary engineering endpoint; the complete batch 1/8/32 table and software/hardware manifest are reported in the Supplementary Material.
+
+\subsection{Fail-closed artifact audit}
+\label{sec:methods-failclosed}
+
+The pipeline withheld evaluation metrics until each registered matrix closed and its predictions passed identity checks.  An invalid control mapping, target mismatch, boundary violation, incomplete provenance, or representation defect blocked metric unlock.  Corrections made under the lock were non-selective: a defective control family was rerun in full rather than only where an error was observed.  Repair receipts recorded before/after hashes and whether predictions changed.  Separately instantiated automated artifact audits were read-only checks against a frozen deployment contract; they could block execution or metric unlock but could not edit predictions or lower thresholds, and they were not external human replications.  Canonical decision files were retained alongside negative results.  The Supplementary Material formalizes the states, required lock fields, unlock conditions, and the weaker receipt-chain evidence that remains a limitation.  Finally, the Paris storage guard separated storage materialization from analytical use: formal and protected target-bearing bytes remained in vault-only procedural storage, the main project contained no matching target source, and analytical access count remained zero.

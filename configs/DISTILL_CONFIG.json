@@ -1,0 +1,24 @@
+{
+  "protocol_version": "distill_v1.0",
+  "status": "M7_A_TEACHER_CACHE_AUTHORIZED",
+  "control_teacher": "strict_prequential_global_fixed_CAPER_TimeXer",
+  "selected_primary_teacher": "strict_prequential_global_fixed_CAPER_TimeXer",
+  "candidate_teacher": "amazon_chronos2_zero_shot_Q2_failed",
+  "student": "CAPER_anchor_plus_DLinear_residual",
+  "lookback": 168,
+  "horizons": [3, 6, 9, 12],
+  "seed": 42,
+  "epsilon": 0.000001,
+  "lambda_kd": 0.5,
+  "student_training_authorized": false,
+  "protected_test_access": false,
+  "router_reopening": false,
+  "student_architecture_search": false,
+  "teacher_cache_construction_authorized": true,
+  "teacher_cache": {
+    "format": "npz_per_source_fold_horizon",
+    "expected_test_cells": 24,
+    "expected_initialization_cells": 4,
+    "manifest": "TEACHER_CACHE_MANIFEST.csv"
+  }
+}

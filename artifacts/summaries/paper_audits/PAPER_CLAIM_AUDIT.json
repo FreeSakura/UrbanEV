@@ -1,0 +1,1483 @@
+{
+  "run_id": "2026-08-30_run03",
+  "audit_type": "incremental final paper-to-evidence verification",
+  "overall_verdict": "WARN",
+  "body_numeric_mismatch_found": false,
+  "numeric_fail_policy": "body numeric mismatch => FAIL; missing external/qualitative evidence => WARN",
+  "scope": {
+    "paper_inputs_read": [
+      "main.tex",
+      "sections/*.tex",
+      "tables/*.tex",
+      "paper/data current generated files"
+    ],
+    "forbidden_prior_context_not_used": [
+      "prior PAPER_CLAIM_AUDIT",
+      "reviews directories",
+      "CLAIM_EVIDENCE_LEDGER",
+      "README files",
+      "conversation context"
+    ]
+  },
+  "counts": {
+    "claim_families": 30,
+    "PASS": 28,
+    "WARN": 2,
+    "FAIL": 0,
+    "match_types": {
+      "rounding": 16,
+      "exact": 12,
+      "ambiguous_missing_external": 2
+    },
+    "mismatch": 0,
+    "ambiguous_or_missing_external": 2
+  },
+  "claim_families": [
+    {
+      "id": "C01_registry_inventory_status",
+      "status": "PASS",
+      "match_type": "rounding",
+      "finding": "1,224/865/156/19/340 registry counts and 70.67%/12.75% shares reconcile to CONFIG_STATUS artifacts."
+    },
+    {
+      "id": "C02_registry_table_breakdown",
+      "status": "PASS",
+      "match_type": "exact",
+      "finding": "Table 3/4/5 S-code breakdowns reconcile to CONFIG_STATUS.csv."
+    },
+    {
+      "id": "C03_registry_classifier_policy",
+      "status": "PASS",
+      "match_type": "exact",
+      "finding": "S1-S6 decision priority and rerun policy match rebuild_status_registry.py."
+    },
+    {
+      "id": "C04_urbanev_protocol_boundary",
+      "status": "PASS",
+      "match_type": "exact",
+      "finding": "4,344 x 275, 168h, horizons 3/6/9/12, six folds, seed 42, 72 baseline cells are supported by protocol/code/summary artifacts."
+    },
+    {
+      "id": "C05_lightweight_baselines",
+      "status": "PASS",
+      "match_type": "rounding",
+      "finding": "GBDT, NLinear, DLinear, CAPER, TimeXer RMSE/MAE values in Table 2 round to baseline/fixed-fusion summaries."
+    },
+    {
+      "id": "C06_oracle_residual_diagnostics",
+      "status": "PASS",
+      "match_type": "rounding",
+      "finding": "Pearson 0.8422, Spearman 0.7638, oracle RMSE 0.061233, 16.926% gain match diagnostic/fixed-fusion evidence."
+    },
+    {
+      "id": "C07_state_feature_predictability",
+      "status": "PASS",
+      "match_type": "rounding",
+      "finding": "Expert-only and 21-feature AUC/Brier values match EXPERT_DIAGNOSTIC_SUMMARY and STATE_FEATURE_DECISION."
+    },
+    {
+      "id": "C08_fixed_fusion_result",
+      "status": "PASS",
+      "match_type": "rounding",
+      "finding": "Global Fixed RMSE 0.071367, 3.178% gain, 6/6 folds, 24/24 cells, 2.890%-3.645% horizon gains reconcile."
+    },
+    {
+      "id": "C09_router_gate",
+      "status": "PASS",
+      "match_type": "rounding",
+      "finding": "Hard/soft/MLP router RMSE, 0.443% locked gain, 5/6 folds, 18/24 cells, CI, oracle-gap capture and 1% FAIL reconcile."
+    },
+    {
+      "id": "C10_latency_primary",
+      "status": "PASS",
+      "match_type": "rounding",
+      "finding": "90 jobs, 90,000 rows, TimeXer/Global Fixed batch-1 P50/P95 and 48.86% overhead reconcile to latency artifacts."
+    },
+    {
+      "id": "C11_latency_appendix",
+      "status": "PASS",
+      "match_type": "rounding",
+      "finding": "Batch 1/8/32 latency appendix values round from LATENCY_SUMMARY_TABLE.csv."
+    },
+    {
+      "id": "C12_chronos_screen",
+      "status": "PASS",
+      "match_type": "rounding",
+      "finding": "Chronos identity, 24 cells, 5,960 origins, RMSE/MAE, -3.048%, 1/6 folds, 4/24 cells, horizon deterioration and FAIL reconcile."
+    },
+    {
+      "id": "C13_distill_matrix_audit",
+      "status": "PASS",
+      "match_type": "exact",
+      "finding": "338-parameter student, 72 cells, initial 69/72 with 3 identity failures, 24 reruns, final 72/72 PASS reconcile."
+    },
+    {
+      "id": "C14_distill_results",
+      "status": "PASS",
+      "match_type": "rounding",
+      "finding": "GT-only/aligned/shuffled RMSE, 0.119% gain, 4/6 folds, 14/24 cells, CI, KD-vs-shuffled subcheck and D1 FAIL reconcile."
+    },
+    {
+      "id": "C15_paris_data_boundary",
+      "status": "PASS",
+      "match_type": "rounding",
+      "finding": "50 stations, 150 ports, 3,624 timestamps, 180,073/181,200 observed, 99.378% coverage and split windows reconcile."
+    },
+    {
+      "id": "C16_paris_protocol_scope",
+      "status": "PASS",
+      "match_type": "exact",
+      "finding": "Paris target formula, development-only selection, no formal/protected analytic access and storage migration scope reconcile."
+    },
+    {
+      "id": "C17_paris_baselines",
+      "status": "PASS",
+      "match_type": "rounding",
+      "finding": "Last-observation/daily/weekly Paris baseline RMSE values reconcile to DEV_BASELINE_SUMMARY/MACRO."
+    },
+    {
+      "id": "C18_paris_teacher_identity_gate",
+      "status": "PASS",
+      "match_type": "exact",
+      "finding": "Paris TimeXer/CAPER adaptations, no UrbanEV weight reuse, 1%/fold/cell/CI/horizon gate grammar and no student/protected branch reconcile."
+    },
+    {
+      "id": "C19_paris_teacher_results",
+      "status": "PASS",
+      "match_type": "rounding",
+      "finding": "CAPER/TimeXer/teacher/oracle RMSE, 0.8469% gain, 4/4 folds, 16/16 cells, CI and 1% FAIL reconcile."
+    },
+    {
+      "id": "C20_paris_repair_unlock",
+      "status": "PASS",
+      "match_type": "exact",
+      "finding": "32 jobs, 24/32 repaired artifacts, 10,236 entries, predictions unchanged, 32/32 prediction audit and metrics unlock reconcile."
+    },
+    {
+      "id": "C21_vault_metadata",
+      "status": "PASS",
+      "match_type": "exact",
+      "finding": "Vault PASS, 48 files, 29 hidden Git files, manifest completeness, formal/protected sealing and zero protected analytic access reconcile."
+    },
+    {
+      "id": "C22_gate_hashes_thresholds",
+      "status": "PASS",
+      "match_type": "exact",
+      "finding": "1% rule, protocol hashes and fail-closed grammar match router/distill/Paris gate artifacts."
+    },
+    {
+      "id": "C23_model_identity_table",
+      "status": "PASS",
+      "match_type": "exact",
+      "finding": "CAPER, TimeXer, Global Fixed, router, Chronos, student and Paris adaptation identity/parameter claims reconcile."
+    },
+    {
+      "id": "C24_claim_trace_sha12",
+      "status": "PASS",
+      "match_type": "exact",
+      "finding": "Table 8 SHA12 prefixes C1-C14 match audited artifact hashes."
+    },
+    {
+      "id": "C25_generated_figures_captions",
+      "status": "PASS",
+      "match_type": "rounding",
+      "finding": "paper/data generated CSVs and captions use aggregate evidence and receipt says protected_or_formal_target_values_read=false."
+    },
+    {
+      "id": "C26_fail_closed_narrative",
+      "status": "PASS",
+      "match_type": "exact",
+      "finding": "M7-C and Paris locked-metrics/repair/audit/unlock/gate-fail narrative matches receipts."
+    },
+    {
+      "id": "C27_rq_conclusion_repeats",
+      "status": "PASS",
+      "match_type": "rounding",
+      "finding": "RQ map and conclusion repeat primary audited values without numeric drift."
+    },
+    {
+      "id": "C28_threshold_counterfactuals",
+      "status": "PASS",
+      "match_type": "rounding",
+      "finding": "0.5% and 2% discussion counterfactuals follow from fixed/router/Chronos/KD/Paris gains."
+    },
+    {
+      "id": "C29_external_background_facts",
+      "status": "WARN",
+      "match_type": "ambiguous_missing_external",
+      "finding": "External/citation facts such as CHARGED six-city scope, Paris 273 charging points/91 stations, and source-period background were not fully re-audited from raw external sources."
+    },
+    {
+      "id": "C30_review_process_language",
+      "status": "WARN",
+      "match_type": "ambiguous_missing_external",
+      "finding": "Reviewer independence/high-order review wording is supported by approval artifacts but the review process itself was not re-run here."
+    }
+  ],
+  "warnings": [
+    {
+      "id": "C29_external_background_facts",
+      "finding": "External/citation facts such as CHARGED six-city scope, Paris 273 charging points/91 stations, and source-period background were not fully re-audited from raw external sources."
+    },
+    {
+      "id": "C30_review_process_language",
+      "finding": "Reviewer independence/high-order review wording is supported by approval artifacts but the review process itself was not re-run here."
+    }
+  ],
+  "failures": [],
+  "audited_input_hashes": [
+    {
+      "path": "D:\\Codex\\2026-08-23\\restricted-evidence-store\\metadata\\VAULT_AUDIT.json",
+      "sha256": "33c96c4407b04f75fc839507e796aebe57274dc63102daf9559cdcf9d6b7ca93",
+      "bytes": 785
+    },
+    {
+      "path": "D:\\Codex\\2026-08-23\\restricted-evidence-store\\metadata\\VAULT_FILE_MANIFEST.csv",
+      "sha256": "29f027dc7badaa727b7fa49659f78afe283c4670fd4f4b4d49a11d492bab4e68",
+      "bytes": 7206
+    },
+    {
+      "path": "D:\\Codex\\2026-08-23\\restricted-evidence-store\\metadata\\VAULT_RECEIPT.json",
+      "sha256": "65a602ed5cd6a5e4385db57e63096b0b8c1374659efd80dcebcb2401b3cfb4fa",
+      "bytes": 2096
+    },
+    {
+      "path": "experiments/00_registry_reclassification/outputs/CONFIG_STATUS.csv",
+      "sha256": "4b61c2aea5101133fde7060078e0c9a89d0d842531b79c276c091de89e13a710",
+      "bytes": 612388
+    },
+    {
+      "path": "experiments/00_registry_reclassification/outputs/CONFIG_STATUS_20260828_114625.csv",
+      "sha256": "d13a82fbbde56c8a236d623aeb4ec9afebece5e040f58e4414dd6b54a6c8fa07",
+      "bytes": 607240
+    },
+    {
+      "path": "experiments/00_registry_reclassification/outputs/CONFIG_STATUS_20260828_115511.csv",
+      "sha256": "4b61c2aea5101133fde7060078e0c9a89d0d842531b79c276c091de89e13a710",
+      "bytes": 612388
+    },
+    {
+      "path": "experiments/00_registry_reclassification/outputs/CONFIG_STATUS_SUMMARY.json",
+      "sha256": "833352c136a4af4f745db61e5cab3250e4f3b1f7b98c9d5144f4f052ca72c8e9",
+      "bytes": 1217
+    },
+    {
+      "path": "experiments/00_registry_reclassification/outputs/CONFIG_STATUS_SUMMARY.md",
+      "sha256": "51d38c09b6cb437fc20be2b9c245bc5838aaaa177839556ca7411242cb892748",
+      "bytes": 1009
+    },
+    {
+      "path": "experiments/00_registry_reclassification/outputs/CONFIG_STATUS_SUMMARY_20260828_114625.json",
+      "sha256": "bff6b4dd67c327913e38508b8b0c80690b1e0dbb8afa01dc227ff373803ae50b",
+      "bytes": 1217
+    },
+    {
+      "path": "experiments/00_registry_reclassification/outputs/CONFIG_STATUS_SUMMARY_20260828_114625.md",
+      "sha256": "296279dbca93d8ba79adf429196c2e97f7b526c49e2e710927d3c17d86c244bf",
+      "bytes": 1009
+    },
+    {
+      "path": "experiments/00_registry_reclassification/outputs/CONFIG_STATUS_SUMMARY_20260828_115511.json",
+      "sha256": "833352c136a4af4f745db61e5cab3250e4f3b1f7b98c9d5144f4f052ca72c8e9",
+      "bytes": 1217
+    },
+    {
+      "path": "experiments/00_registry_reclassification/outputs/CONFIG_STATUS_SUMMARY_20260828_115511.md",
+      "sha256": "51d38c09b6cb437fc20be2b9c245bc5838aaaa177839556ca7411242cb892748",
+      "bytes": 1009
+    },
+    {
+      "path": "experiments/00_registry_reclassification/scripts/rebuild_status_registry.py",
+      "sha256": "163bd5d503ea4bb92a19162f67786438583b905447da1396e208dffeddd54b94",
+      "bytes": 13256
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/EXPERT_DIAGNOSTIC_CELLS.csv",
+      "sha256": "65c834e27d30f1454b267014117aec561f1f02117b840d0d7a6c7911ca4231fa",
+      "bytes": 4300
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/EXPERT_DIAGNOSTIC_CELLS_20260828_114644.csv",
+      "sha256": "65c834e27d30f1454b267014117aec561f1f02117b840d0d7a6c7911ca4231fa",
+      "bytes": 4300
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/EXPERT_DIAGNOSTIC_SUMMARY.json",
+      "sha256": "53fa7f22fca6f83c4a2adf176810e045a8b1a71a8b097e2a9b15e5f4191c12d5",
+      "bytes": 992
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/EXPERT_DIAGNOSTIC_SUMMARY.md",
+      "sha256": "79135d49a61adf1d8173a26f27802bd4ce94c7908b9c017b3765d9a50b3ecc65",
+      "bytes": 591
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/EXPERT_DIAGNOSTIC_SUMMARY_20260828_114644.json",
+      "sha256": "53fa7f22fca6f83c4a2adf176810e045a8b1a71a8b097e2a9b15e5f4191c12d5",
+      "bytes": 992
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/EXPERT_DIAGNOSTIC_SUMMARY_20260828_114644.md",
+      "sha256": "79135d49a61adf1d8173a26f27802bd4ce94c7908b9c017b3765d9a50b3ecc65",
+      "bytes": 591
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/EXPERT_WIN_PREDICTABILITY.csv",
+      "sha256": "fd8053641f20dbe2d155a90e5f849ff9f298aaa7653454312ca90af911364c02",
+      "bytes": 485
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/EXPERT_WIN_PREDICTABILITY_20260828_114644.csv",
+      "sha256": "fd8053641f20dbe2d155a90e5f849ff9f298aaa7653454312ca90af911364c02",
+      "bytes": 485
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/RESIDUAL_CORRELATION.csv",
+      "sha256": "381884b142ab0d0efad9307423928af04788c08a057aa3219720bf649760ed13",
+      "bytes": 1069
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/RESIDUAL_CORRELATION_20260828_114644.csv",
+      "sha256": "381884b142ab0d0efad9307423928af04788c08a057aa3219720bf649760ed13",
+      "bytes": 1069
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/STATE_FEATURE_DECISION.json",
+      "sha256": "9f84ac483e0221f07410694e4d763248c74b8034067c947e703a8d0fa13bee87",
+      "bytes": 1074
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/STATE_FEATURE_DECISION_20260828_115437.json",
+      "sha256": "3cd187db50699389e7fac0e97f6d1d2f536d2e50a50196aa3e927744b322d8b2",
+      "bytes": 973
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/STATE_FEATURE_DECISION_20260828_120636.json",
+      "sha256": "9f84ac483e0221f07410694e4d763248c74b8034067c947e703a8d0fa13bee87",
+      "bytes": 1074
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/STATE_FEATURE_PREDICTABILITY.csv",
+      "sha256": "d1724dd5520c12cccdc7c58afc430b5df37d0709cb08376044699ee50ed2e4f9",
+      "bytes": 889
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/STATE_FEATURE_PREDICTABILITY_20260828_115437.csv",
+      "sha256": "d1724dd5520c12cccdc7c58afc430b5df37d0709cb08376044699ee50ed2e4f9",
+      "bytes": 889
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/STATE_FEATURE_PREDICTABILITY_20260828_120636.csv",
+      "sha256": "d1724dd5520c12cccdc7c58afc430b5df37d0709cb08376044699ee50ed2e4f9",
+      "bytes": 889
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/STATE_FEATURE_PREDICTABILITY_AGGREGATE.csv",
+      "sha256": "70fcc7cb8f51b4c44981deac9705e260644ded0aea5e8f253c737797e2955d73",
+      "bytes": 218
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/STATE_FEATURE_PREDICTABILITY_AGGREGATE_20260828_115437.csv",
+      "sha256": "70fcc7cb8f51b4c44981deac9705e260644ded0aea5e8f253c737797e2955d73",
+      "bytes": 218
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/outputs/STATE_FEATURE_PREDICTABILITY_AGGREGATE_20260828_120636.csv",
+      "sha256": "70fcc7cb8f51b4c44981deac9705e260644ded0aea5e8f253c737797e2955d73",
+      "bytes": 218
+    },
+    {
+      "path": "experiments/01_expert_diagnostics/scripts/analyze_state_features.py",
+      "sha256": "e23625505e02b97934a0db1b7cfd1dd0514406274150f21ae28fc93d31459e00",
+      "bytes": 10587
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/configs/BASELINE_PROTOCOL.json",
+      "sha256": "2f3e516828ff814bd3533dbafd1ccc22cd9a6280324aa0e71d471134174aad5f",
+      "bytes": 562
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/configs/FULL_MANIFEST.csv",
+      "sha256": "d67534ca877d4a81431cba553d2f19646a6a462a7f80b82b8e11028b3381eec2",
+      "bytes": 42482
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/configs/FULL_MANIFEST_20260828_122457.csv",
+      "sha256": "9d0553ae1aaa273dd636acb2072c9e94ebc0d3a21e4b6a82e765a365478b8e67",
+      "bytes": 42482
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/configs/FULL_MANIFEST_20260828_122705.csv",
+      "sha256": "5d4c797840103bad8594e0b05fcef3a19665cc73fe3bf62d5220bef374013d76",
+      "bytes": 42482
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/configs/FULL_MANIFEST_20260828_122744.csv",
+      "sha256": "d67534ca877d4a81431cba553d2f19646a6a462a7f80b82b8e11028b3381eec2",
+      "bytes": 42482
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/outputs/LIGHTWEIGHT_BASELINE_CELLS.csv",
+      "sha256": "da20c5653a95c41299ebc3709e1ccafd7dd872635c4e83b466a08e2137615bec",
+      "bytes": 16716
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/outputs/LIGHTWEIGHT_BASELINE_CELLS_20260828_122518.csv",
+      "sha256": "f01a374e9c81e3db89b3a42940c4d6a5447684986a1296e42bf13f196eed6295",
+      "bytes": 5
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/outputs/LIGHTWEIGHT_BASELINE_CELLS_20260828_125609.csv",
+      "sha256": "da20c5653a95c41299ebc3709e1ccafd7dd872635c4e83b466a08e2137615bec",
+      "bytes": 16716
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/outputs/LIGHTWEIGHT_BASELINE_HORIZON.csv",
+      "sha256": "a13179fb6ee215851c1e16056dc386fe5dd8b7515ba97ef2c7acb7a9aa592e06",
+      "bytes": 1618
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/outputs/LIGHTWEIGHT_BASELINE_HORIZON_20260828_122518.csv",
+      "sha256": "f01a374e9c81e3db89b3a42940c4d6a5447684986a1296e42bf13f196eed6295",
+      "bytes": 5
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/outputs/LIGHTWEIGHT_BASELINE_HORIZON_20260828_125609.csv",
+      "sha256": "a13179fb6ee215851c1e16056dc386fe5dd8b7515ba97ef2c7acb7a9aa592e06",
+      "bytes": 1618
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/outputs/LIGHTWEIGHT_BASELINE_MACRO.csv",
+      "sha256": "51dd1cef25de23fe7a7ed208c77718ba684dddd4755a97209d109513b6b7f88e",
+      "bytes": 443
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/outputs/LIGHTWEIGHT_BASELINE_MACRO_20260828_122518.csv",
+      "sha256": "f01a374e9c81e3db89b3a42940c4d6a5447684986a1296e42bf13f196eed6295",
+      "bytes": 5
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/outputs/LIGHTWEIGHT_BASELINE_MACRO_20260828_125609.csv",
+      "sha256": "51dd1cef25de23fe7a7ed208c77718ba684dddd4755a97209d109513b6b7f88e",
+      "bytes": 443
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/outputs/LIGHTWEIGHT_BASELINE_STATUS.csv",
+      "sha256": "fca1d3b7ef7150b93b3ebf64624b1af8c61fde39180aa9ea470c83bf864f05c6",
+      "bytes": 5962
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/outputs/LIGHTWEIGHT_BASELINE_STATUS_20260828_122518.csv",
+      "sha256": "2509f5295c523e431fc5e0dec4a4959a555bfddf96e45dd4433d0f458852309e",
+      "bytes": 5890
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/outputs/LIGHTWEIGHT_BASELINE_STATUS_20260828_125609.csv",
+      "sha256": "fca1d3b7ef7150b93b3ebf64624b1af8c61fde39180aa9ea470c83bf864f05c6",
+      "bytes": 5962
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/outputs/LIGHTWEIGHT_BASELINE_SUMMARY.json",
+      "sha256": "0e259a0a91d7a1076872b260bebb0f3de195b77a06957f6b648d77ae46657460",
+      "bytes": 1153
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/outputs/LIGHTWEIGHT_BASELINE_SUMMARY_20260828_122518.json",
+      "sha256": "34debeb99e02e0dc8f7a6c4bb57a40b5b9b7ea5268ec8a62c47933a499828822",
+      "bytes": 4087
+    },
+    {
+      "path": "experiments/02_lightweight_baselines/outputs/LIGHTWEIGHT_BASELINE_SUMMARY_20260828_125609.json",
+      "sha256": "0e259a0a91d7a1076872b260bebb0f3de195b77a06957f6b648d77ae46657460",
+      "bytes": 1153
+    },
+    {
+      "path": "experiments/03_fixed_fusions/outputs/FIXED_FUSION_CELLS.csv",
+      "sha256": "4046c3eb96e005f2f0a8e84d5d0be436546e8642c3d3e7a56c44a60c54de27e1",
+      "bytes": 14215
+    },
+    {
+      "path": "experiments/03_fixed_fusions/outputs/FIXED_FUSION_CELLS_20260828_124835.csv",
+      "sha256": "4046c3eb96e005f2f0a8e84d5d0be436546e8642c3d3e7a56c44a60c54de27e1",
+      "bytes": 14215
+    },
+    {
+      "path": "experiments/03_fixed_fusions/outputs/FIXED_FUSION_HORIZON.csv",
+      "sha256": "6e3a238414037470a00900c021a64b78d9c17174eeea229cbbf2da11ec8190c8",
+      "bytes": 2322
+    },
+    {
+      "path": "experiments/03_fixed_fusions/outputs/FIXED_FUSION_HORIZON_20260828_124835.csv",
+      "sha256": "6e3a238414037470a00900c021a64b78d9c17174eeea229cbbf2da11ec8190c8",
+      "bytes": 2322
+    },
+    {
+      "path": "experiments/03_fixed_fusions/outputs/FIXED_FUSION_MACRO.csv",
+      "sha256": "83c6e1000bdc03c84b45ccf31edc50f438af4438e41b6177a856ace12f5d0744",
+      "bytes": 604
+    },
+    {
+      "path": "experiments/03_fixed_fusions/outputs/FIXED_FUSION_MACRO_20260828_124835.csv",
+      "sha256": "83c6e1000bdc03c84b45ccf31edc50f438af4438e41b6177a856ace12f5d0744",
+      "bytes": 604
+    },
+    {
+      "path": "experiments/03_fixed_fusions/outputs/FIXED_FUSION_SUMMARY.json",
+      "sha256": "0a0162204c83bc3e2a7cf7851a88a68040ba456bd6d8ccf768dafbf3aeed233a",
+      "bytes": 1637
+    },
+    {
+      "path": "experiments/03_fixed_fusions/outputs/FIXED_FUSION_SUMMARY_20260828_124835.json",
+      "sha256": "0a0162204c83bc3e2a7cf7851a88a68040ba456bd6d8ccf768dafbf3aeed233a",
+      "bytes": 1637
+    },
+    {
+      "path": "experiments/03_fixed_fusions/outputs/FIXED_FUSION_WEIGHTS.csv",
+      "sha256": "5139c5685a801d909bc735cc1a90b53e0fbcaca9d4b51c56de42d0f54cf55688",
+      "bytes": 1960
+    },
+    {
+      "path": "experiments/03_fixed_fusions/outputs/FIXED_FUSION_WEIGHTS_20260828_124835.csv",
+      "sha256": "5139c5685a801d909bc735cc1a90b53e0fbcaca9d4b51c56de42d0f54cf55688",
+      "bytes": 1960
+    },
+    {
+      "path": "experiments/05_router_v1/configs/ROUTER_V1.json",
+      "sha256": "630c1fa4aa891e0240ed20c70a607a9e7398634ef73408738c8ba87fef4d3600",
+      "bytes": 691
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_CELLS.csv",
+      "sha256": "1f19bc83fdc8ca390539481810c3b500340f33901ddf8f0c85d184f44362c7f6",
+      "bytes": 22719
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_CELLS_20260828_135009.csv",
+      "sha256": "0d0de507a66e836e710b7109fd13c04bd0e9ac3954e02ec73337cd6d9374a319",
+      "bytes": 22736
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_CELLS_20260828_135631.csv",
+      "sha256": "1f19bc83fdc8ca390539481810c3b500340f33901ddf8f0c85d184f44362c7f6",
+      "bytes": 22719
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_FOLD.csv",
+      "sha256": "af698af92dbbed609c9570fc70366ebe88f5130ebce62ad210b09654944296f8",
+      "bytes": 278
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_FOLD_20260828_135009.csv",
+      "sha256": "c68cba7a0a134c0ffe59b2f8cec6ee1c0a015a6d34790fb83bf31cd4fab1037f",
+      "bytes": 278
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_FOLD_20260828_135631.csv",
+      "sha256": "af698af92dbbed609c9570fc70366ebe88f5130ebce62ad210b09654944296f8",
+      "bytes": 278
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_HORIZON.csv",
+      "sha256": "1fdd9b32804f3f48eec4e665829366137393d37b37e27e17cd5b45e8d4b5f2d1",
+      "bytes": 3728
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_HORIZON_20260828_135009.csv",
+      "sha256": "c0c09dd81045cdfd00a06c25842f0b89e96fa3056d4b7bf32fc917f3ea03006a",
+      "bytes": 3732
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_HORIZON_20260828_135631.csv",
+      "sha256": "1fdd9b32804f3f48eec4e665829366137393d37b37e27e17cd5b45e8d4b5f2d1",
+      "bytes": 3728
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_MACRO.csv",
+      "sha256": "ecd4164076a17be3f39a63c6b3493ad125bc5eadd8ab56b6583324ba4fd9474f",
+      "bytes": 951
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_MACRO_20260828_135009.csv",
+      "sha256": "eb5668f88d8f08ef6ceddd41b5b457bc9a0945a50ddd176446e9b047334c61ed",
+      "bytes": 953
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_MACRO_20260828_135631.csv",
+      "sha256": "ecd4164076a17be3f39a63c6b3493ad125bc5eadd8ab56b6583324ba4fd9474f",
+      "bytes": 951
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_SUMMARY.json",
+      "sha256": "a9dfc2ebe4a6a54fc363979a080941d917ca51e29b4be97d9a1bffd0ae4e7c43",
+      "bytes": 3514
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_SUMMARY_20260828_135009.json",
+      "sha256": "63b9715a1ce81c8ce11f017a100666f9283c7050739195e3ee9dbec1a1eae2c2",
+      "bytes": 3515
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_SUMMARY_20260828_135631.json",
+      "sha256": "a9dfc2ebe4a6a54fc363979a080941d917ca51e29b4be97d9a1bffd0ae4e7c43",
+      "bytes": 3514
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_TRAINING_HISTORY.csv",
+      "sha256": "1fbb5e7a543fcf08ff6f7fdcd48f4713262806d484d14880ebbaaa2f7165c1bf",
+      "bytes": 2861
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_TRAINING_HISTORY_20260828_135009.csv",
+      "sha256": "c833fb16da2e5cf7e6830e68673741096d6b0baa4f368207a03b66236f7c5cc1",
+      "bytes": 3006
+    },
+    {
+      "path": "experiments/05_router_v1/outputs/ROUTER_V1_TRAINING_HISTORY_20260828_135631.csv",
+      "sha256": "1fbb5e7a543fcf08ff6f7fdcd48f4713262806d484d14880ebbaaa2f7165c1bf",
+      "bytes": 2861
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/CHRONOS2_MODEL_LOCK.json",
+      "sha256": "fd952b33dcd66b965a918cd35ac1db933d2327c84e1453ab8466709fefe25d9d",
+      "bytes": 1357
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/CHRONOS2_MODEL_LOCK_20260828_220456.json",
+      "sha256": "fd952b33dcd66b965a918cd35ac1db933d2327c84e1453ab8466709fefe25d9d",
+      "bytes": 1357
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/CHRONOS2_SCREEN_MANIFEST.csv",
+      "sha256": "e3077312c6f21d442b6f99c50b73bda07f0065373e5195df1dff3723232622dd",
+      "bytes": 17950
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/CHRONOS2_SCREEN_MANIFEST_20260828_221053.csv",
+      "sha256": "bc41f6e5525e57171c2bbe9be88ab9be6bcd9b7eef5d5656b9b14c055aa35766",
+      "bytes": 7735
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/CHRONOS2_SCREEN_MANIFEST_20260828_221922.csv",
+      "sha256": "e3077312c6f21d442b6f99c50b73bda07f0065373e5195df1dff3723232622dd",
+      "bytes": 17950
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/TEACHER_GATE_SPEC.json",
+      "sha256": "c0b8fad537d1dbce37db8bc89626175a948f7d8126bffc26e3d9223285832d74",
+      "bytes": 598
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/TEACHER_QUALIFICATION_CONFIG.json",
+      "sha256": "196c66cb68aace87d839ffb6ecc9454cb9dc6a98e5e699fd320d3089563951fe",
+      "bytes": 1116
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/TEACHER_QUALIFICATION_PROTOCOL_V1_0.md",
+      "sha256": "23e2b9d32a7e53ba83315c38af6dd50aa3ab95cb06d7a8ca66d36a778e2a3a7f",
+      "bytes": 3668
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/TEACHER_QUALIFICATION_REPORT.md",
+      "sha256": "4e76a188f1909388e2a617cebc72cb059e8d9a21ce88ecbe8790a34f83e82a77",
+      "bytes": 3098
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/outputs/CHRONOS2_QUALIFICATION_CELLS.csv",
+      "sha256": "6378f15ac51522572f990cd07e12c706336e2dc4e8ef9f9401129e63ed7bc767",
+      "bytes": 6854
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/outputs/CHRONOS2_QUALIFICATION_CELLS_20260828_233408.csv",
+      "sha256": "6378f15ac51522572f990cd07e12c706336e2dc4e8ef9f9401129e63ed7bc767",
+      "bytes": 6854
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/outputs/CHRONOS2_QUALIFICATION_CELLS_20260828_233442.csv",
+      "sha256": "6378f15ac51522572f990cd07e12c706336e2dc4e8ef9f9401129e63ed7bc767",
+      "bytes": 6854
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/outputs/CHRONOS2_QUALIFICATION_FOLDS.csv",
+      "sha256": "fd01bd2a094323387cdad1f98dc9e6c46cb06148f1892a16e2cf4b72e2d81526",
+      "bytes": 466
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/outputs/CHRONOS2_QUALIFICATION_FOLDS_20260828_233408.csv",
+      "sha256": "fd01bd2a094323387cdad1f98dc9e6c46cb06148f1892a16e2cf4b72e2d81526",
+      "bytes": 466
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/outputs/CHRONOS2_QUALIFICATION_FOLDS_20260828_233442.csv",
+      "sha256": "fd01bd2a094323387cdad1f98dc9e6c46cb06148f1892a16e2cf4b72e2d81526",
+      "bytes": 466
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/outputs/CHRONOS2_QUALIFICATION_HORIZONS.csv",
+      "sha256": "773b24b5db196df745dc1839a95462049d74516fe5777d99ba8c6122735eb9ec",
+      "bytes": 437
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/outputs/CHRONOS2_QUALIFICATION_HORIZONS_20260828_233408.csv",
+      "sha256": "773b24b5db196df745dc1839a95462049d74516fe5777d99ba8c6122735eb9ec",
+      "bytes": 437
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/outputs/CHRONOS2_QUALIFICATION_HORIZONS_20260828_233442.csv",
+      "sha256": "773b24b5db196df745dc1839a95462049d74516fe5777d99ba8c6122735eb9ec",
+      "bytes": 437
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/outputs/CHRONOS2_QUALIFICATION_SANITY.csv",
+      "sha256": "4644b01f3f0d65078d097b17b910ce0aabd76a05a1cd79822450840d11e09968",
+      "bytes": 107
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/outputs/CHRONOS2_QUALIFICATION_SANITY_20260828_233408.csv",
+      "sha256": "4644b01f3f0d65078d097b17b910ce0aabd76a05a1cd79822450840d11e09968",
+      "bytes": 107
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/outputs/CHRONOS2_QUALIFICATION_SANITY_20260828_233442.csv",
+      "sha256": "4644b01f3f0d65078d097b17b910ce0aabd76a05a1cd79822450840d11e09968",
+      "bytes": 107
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/outputs/CHRONOS2_QUALIFICATION_SUMMARY.json",
+      "sha256": "01e8084c16ae5475b21b553e65e77d13c162f3936043ea9de083a6578e41bf16",
+      "bytes": 2970
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/outputs/CHRONOS2_QUALIFICATION_SUMMARY_20260828_233408.json",
+      "sha256": "54b6f3e015a0db54b3c0ac1a385d299c57fa247fa9f5382abf8468f5a1d3c362",
+      "bytes": 2972
+    },
+    {
+      "path": "experiments/06_5_teacher_qualification/outputs/CHRONOS2_QUALIFICATION_SUMMARY_20260828_233442.json",
+      "sha256": "01e8084c16ae5475b21b553e65e77d13c162f3936043ea9de083a6578e41bf16",
+      "bytes": 2970
+    },
+    {
+      "path": "experiments/06_static_latency/ACCURACY_LATENCY_FRONTIER.csv",
+      "sha256": "2811a3f3923de65150f2a6bd9438f6d2e2c828badad1235b71b0052c21d7d99a",
+      "bytes": 2252
+    },
+    {
+      "path": "experiments/06_static_latency/ACCURACY_LATENCY_FRONTIER_20260828_193154.csv",
+      "sha256": "2811a3f3923de65150f2a6bd9438f6d2e2c828badad1235b71b0052c21d7d99a",
+      "bytes": 2252
+    },
+    {
+      "path": "experiments/06_static_latency/LATENCY_MANIFEST.csv",
+      "sha256": "6e28a709275e30d80661fffb06655f40068f242184683401124d38dc004924b6",
+      "bytes": 19114
+    },
+    {
+      "path": "experiments/06_static_latency/LATENCY_MANIFEST_20260828_145641.csv",
+      "sha256": "6e28a709275e30d80661fffb06655f40068f242184683401124d38dc004924b6",
+      "bytes": 19114
+    },
+    {
+      "path": "experiments/06_static_latency/LATENCY_PROFILE_REPORT.md",
+      "sha256": "c95f7a5553fbcfd4cb0a7a784a99b1a6756b331db9a3db9daa7daf9d770ee679",
+      "bytes": 4467
+    },
+    {
+      "path": "experiments/06_static_latency/LATENCY_PROFILE_REPORT_20260828_193500.md",
+      "sha256": "c95f7a5553fbcfd4cb0a7a784a99b1a6756b331db9a3db9daa7daf9d770ee679",
+      "bytes": 4467
+    },
+    {
+      "path": "experiments/06_static_latency/LATENCY_PROTOCOL_V1_0.md",
+      "sha256": "786a07cd8e69d42c0a512c472ea451e2d8123a997606d28ff339af71e53d3059",
+      "bytes": 1590
+    },
+    {
+      "path": "experiments/06_static_latency/LATENCY_REPORT.md",
+      "sha256": "9e2fc44f90f7ebce3cbf3eb6d53f9e3edfb7e14426ee78e177d994ab5259584b",
+      "bytes": 536
+    },
+    {
+      "path": "experiments/06_static_latency/LATENCY_REPORT_20260828_193154.md",
+      "sha256": "9e2fc44f90f7ebce3cbf3eb6d53f9e3edfb7e14426ee78e177d994ab5259584b",
+      "bytes": 536
+    },
+    {
+      "path": "experiments/06_static_latency/LATENCY_SUMMARY.json",
+      "sha256": "6a2a9be69c9aaedc5984b34e8ef07828f722e31eb531db7a5bf18e427bffb192",
+      "bytes": 587
+    },
+    {
+      "path": "experiments/06_static_latency/LATENCY_SUMMARY_20260828_193154.json",
+      "sha256": "6a2a9be69c9aaedc5984b34e8ef07828f722e31eb531db7a5bf18e427bffb192",
+      "bytes": 587
+    },
+    {
+      "path": "experiments/06_static_latency/LATENCY_SUMMARY_TABLE.csv",
+      "sha256": "f94d0a7a9e9574d0f4aac432af9c2457b17daa915278cedabd1536d539cdf7d7",
+      "bytes": 4612
+    },
+    {
+      "path": "experiments/06_static_latency/LATENCY_SUMMARY_TABLE_20260828_193154.csv",
+      "sha256": "f94d0a7a9e9574d0f4aac432af9c2457b17daa915278cedabd1536d539cdf7d7",
+      "bytes": 4612
+    },
+    {
+      "path": "experiments/06_static_latency/configs/LATENCY_CONFIG.json",
+      "sha256": "c5e191833fc391f673f2261bf36725020f3d6a9112040e33329c2a9d64c11806",
+      "bytes": 403
+    },
+    {
+      "path": "experiments/06_static_latency/hardware_manifest.json",
+      "sha256": "f07e4a3390e958db4293d1f0abc409cf3232a134baa20cba78e83281e08e5fc4",
+      "bytes": 461
+    },
+    {
+      "path": "experiments/06_static_latency/scripts/aggregate_latency.py",
+      "sha256": "ebc69783fdb98d2483c9782e4cc384cd0d7cc5453d23a58158dfde92f4e9bba2",
+      "bytes": 7887
+    },
+    {
+      "path": "experiments/06_static_latency/scripts/benchmark_latency.py",
+      "sha256": "80d7f039a75ed2ca3f946102d69b5f650700c76118cf0d7c83c018983882eecf",
+      "bytes": 23564
+    },
+    {
+      "path": "experiments/06_static_latency/software_manifest.json",
+      "sha256": "b1ca8ccd0b498258a8fb385a28501e094a8f5348a038fb96afdd0732d3f4660a",
+      "bytes": 342
+    },
+    {
+      "path": "experiments/07_residual_distillation/DISTILLATION_GATE_SPEC.json",
+      "sha256": "c77b15d8cb3d0efbfa7f362bdd78585d0a66003e73f3c2f66722e50082d4979f",
+      "bytes": 1045
+    },
+    {
+      "path": "experiments/07_residual_distillation/DISTILL_CONFIG.json",
+      "sha256": "51ae1f6856d5460a3534ba4f968e2b00c493a06dacdcd135f0d6a6f16ef4d76f",
+      "bytes": 832
+    },
+    {
+      "path": "experiments/07_residual_distillation/DISTILL_PROTOCOL_V1_0.md",
+      "sha256": "fcd07f185bd92ac0c4ba0d48ef14a9e08aaa09d644b5b8e67aa4a175dfe383bc",
+      "bytes": 3805
+    },
+    {
+      "path": "experiments/07_residual_distillation/FORMAL_MATRIX_MANIFEST.csv",
+      "sha256": "e19988bee4f59974dcf3d649f9c78072b34b2a9a1cf58e5ac4372a70db02a2e8",
+      "bytes": 83377
+    },
+    {
+      "path": "experiments/07_residual_distillation/FORMAL_MATRIX_MANIFEST_20260829_104850.csv",
+      "sha256": "90a4f2f86cedb06a7a17a3d11cc1d88be9e6125db6b15671f67ea82440af61e8",
+      "bytes": 61093
+    },
+    {
+      "path": "experiments/07_residual_distillation/FORMAL_MATRIX_MANIFEST_20260829_105723.csv",
+      "sha256": "fdb82dfad9b1beee97d525a39a8060498f4f311a2a0ca330b37076ad17242c12",
+      "bytes": 79878
+    },
+    {
+      "path": "experiments/07_residual_distillation/FORMAL_MATRIX_MANIFEST_20260829_111726.csv",
+      "sha256": "b4a2aed3e47097508e672e528285049aef20c313697ece5e27f44bea625f7aa7",
+      "bytes": 79878
+    },
+    {
+      "path": "experiments/07_residual_distillation/FORMAL_MATRIX_MANIFEST_20260829_113500.csv",
+      "sha256": "e19988bee4f59974dcf3d649f9c78072b34b2a9a1cf58e5ac4372a70db02a2e8",
+      "bytes": 83377
+    },
+    {
+      "path": "experiments/07_residual_distillation/FORMAL_MATRIX_MANIFEST_V1_0_INVALID_SHUFFLE.csv",
+      "sha256": "fdb82dfad9b1beee97d525a39a8060498f4f311a2a0ca330b37076ad17242c12",
+      "bytes": 79878
+    },
+    {
+      "path": "experiments/07_residual_distillation/M7C_AUTHORIZATION.md",
+      "sha256": "8655e8493667d9459270e683a1f0bdf5eb9a6ccb21968c504d870fa6ee095057",
+      "bytes": 1418
+    },
+    {
+      "path": "experiments/07_residual_distillation/M7C_EXPERIMENT_AUDIT.json",
+      "sha256": "af26a76728095db964a0d3d8aa939e7cc7166d442e405f00719db5e85c2cbdac",
+      "bytes": 930
+    },
+    {
+      "path": "experiments/07_residual_distillation/M7C_EXPERIMENT_AUDIT.md",
+      "sha256": "7295c33039ed4715b92103eb8661de4b028c603196738021e02c2931948f8d3f",
+      "bytes": 1592
+    },
+    {
+      "path": "experiments/07_residual_distillation/M7C_SHUFFLE_V1_1_AMENDMENT.md",
+      "sha256": "d78918cb671836990ea5ba39736c93be9189ac6401f5bc9aac231fc123731f51",
+      "bytes": 782
+    },
+    {
+      "path": "experiments/07_residual_distillation/M7C_STATUS.json",
+      "sha256": "97324ad878a3187714c593e9c1535fdfd19e76d0bbfaa948dd632af3bd1e5028",
+      "bytes": 426
+    },
+    {
+      "path": "experiments/07_residual_distillation/SHUFFLE_CONTROL_SPEC.json",
+      "sha256": "2be3886b7e09b524c138264aaab5dcb70ea9a67d2862561166f3b341a9dd1cb2",
+      "bytes": 741
+    },
+    {
+      "path": "experiments/07_residual_distillation/configs/FORMAL_STUDENT_CONFIG_V1.json",
+      "sha256": "19f9cac60048c0a5785f468db9294931cf7581d39f958dd4336747de67a5272a",
+      "bytes": 1712
+    },
+    {
+      "path": "experiments/07_residual_distillation/configs/STUDENT_ARCHITECTURE_V1.json",
+      "sha256": "01f471c843fcc75725a4bf50d635cde9f6113e807000cfd449c4734d11ffed5c",
+      "bytes": 482
+    },
+    {
+      "path": "experiments/07_residual_distillation/configs/STUDENT_SANITY_V1.json",
+      "sha256": "34469da9e4aa0c6a7606cdc0253765de7449bee2c50986e961d3fbd9ca60ec62",
+      "bytes": 595
+    },
+    {
+      "path": "experiments/07_residual_distillation/outputs/D1_CELLS.csv",
+      "sha256": "0e9e3434f633d46fa104055c646f6ef1f9c01633102390948c6b41f39422fe43",
+      "bytes": 8383
+    },
+    {
+      "path": "experiments/07_residual_distillation/outputs/D1_DECISION.md",
+      "sha256": "19d958a38e5c4ffe8fdee86692afbad9426459c45c7fd52db49e899f29a7bce6",
+      "bytes": 2036
+    },
+    {
+      "path": "experiments/07_residual_distillation/outputs/D1_FOLDS.csv",
+      "sha256": "8dc6377c2c59f4199cfb00c5332c9815f3b41229312bd1517d32976ef49e96ab",
+      "bytes": 2089
+    },
+    {
+      "path": "experiments/07_residual_distillation/outputs/D1_HORIZONS.csv",
+      "sha256": "ca938e7b142ad186f7fc41a64add8bdc8248ad65735e0713540ad50c1c368349",
+      "bytes": 1415
+    },
+    {
+      "path": "experiments/07_residual_distillation/outputs/D1_MACRO.csv",
+      "sha256": "46acfcd213728861fd2afac58eeb9e7d821df64e50b2e1d48c84fc97f48dce48",
+      "bytes": 369
+    },
+    {
+      "path": "experiments/07_residual_distillation/outputs/D1_POOLED.csv",
+      "sha256": "fe3bdc79ac6ab6b4fe878360abe3a50fa62da6e5ec3c4a7620fa5c39c8d82d74",
+      "bytes": 367
+    },
+    {
+      "path": "experiments/07_residual_distillation/outputs/D1_SUMMARY.json",
+      "sha256": "c38163157c899886c7c29ed9cbf8c476fc346e8e81a3e20d7d6e436984627b01",
+      "bytes": 1828
+    },
+    {
+      "path": "experiments/07_residual_distillation/outputs/FORMAL_MATRIX_AUDIT.json",
+      "sha256": "cf10aba0731c7cc3c8cfccecb8ba0786c98df821d6b1f1669ecb63632a242496",
+      "bytes": 231
+    },
+    {
+      "path": "experiments/07_residual_distillation/outputs/FORMAL_MATRIX_AUDIT.md",
+      "sha256": "743e820ca86b4a129ec39f351553ca9f9c788443f4c0cc54a3f741786396030d",
+      "bytes": 135
+    },
+    {
+      "path": "experiments/07_residual_distillation/outputs/FORMAL_MATRIX_AUDIT_CELLS.csv",
+      "sha256": "ed55799f46856b9bfaf5f22dea10ed1877c2bf237388fed8f5960acabd765c3c",
+      "bytes": 5065
+    },
+    {
+      "path": "experiments/07_residual_distillation/outputs/FORMAL_MATRIX_AUDIT_V1_0_FAIL_IDENTITY_SHUFFLE.json",
+      "sha256": "5843135343900dab0bae6954b6fff4f7ea69978ddb937ce3247919be3480ee77",
+      "bytes": 453
+    },
+    {
+      "path": "experiments/07_residual_distillation/outputs/FORMAL_MATRIX_AUDIT_V1_0_FAIL_IDENTITY_SHUFFLE.md",
+      "sha256": "b96b63a63c5ee5f4edcd4a75493fc72165834ceded6dc6c1ae6eda74ecc22758",
+      "bytes": 135
+    },
+    {
+      "path": "experiments/07_residual_distillation/outputs/STUDENT_SANITY_CELLS.csv",
+      "sha256": "07a436e9fdf0395a03157eb63e3244dda0684116fa14f2b919f58054d64f7a26",
+      "bytes": 919
+    },
+    {
+      "path": "experiments/07_residual_distillation/outputs/STUDENT_SANITY_SUMMARY.json",
+      "sha256": "a10646894c0c21b1a653200e743de34d250866dde8caf0efbf870417407a19a9",
+      "bytes": 363
+    },
+    {
+      "path": "experiments/08_paris_new_evidence/DATA_ACCESS_LOG.md",
+      "sha256": "f0a6578811a9dd87f1686613f44b93501d33c03d5cf03f3ad2212cb18e0c24c5",
+      "bytes": 1591
+    },
+    {
+      "path": "experiments/08_paris_new_evidence/DATA_ACQUISITION_PROTOCOL_V1_0.md",
+      "sha256": "8b9c1a4a40e0dd27294ab365f01684b6b00d107e07a8deb3ab433c729fa4be26",
+      "bytes": 1463
+    },
+    {
+      "path": "experiments/08_paris_new_evidence/DATA_ACQUISITION_REPORT.md",
+      "sha256": "816f35f1bfbd4ca069146e9fd21df401d2a2d6f02d790ecbf32300764ea45362",
+      "bytes": 2296
+    },
+    {
+      "path": "experiments/08_paris_new_evidence/DATA_BOUNDARY_LOCK.json",
+      "sha256": "4871189f99b1ffe7d1fe9f5c70d3824b120673d889abb942d1377e782d3be713",
+      "bytes": 684
+    },
+    {
+      "path": "experiments/08_paris_new_evidence/PROTECTED_ACCESS_GUARD.json",
+      "sha256": "a7780e39f4ef7da859c6602e8a01ed2735b90f4e5becf28a02596dc447e22269",
+      "bytes": 627
+    },
+    {
+      "path": "experiments/08_paris_new_evidence/SOURCE_MANIFEST.json",
+      "sha256": "5fdc1673a67d136562ab9cd3fb64e429eb8e76dc00eeb12b69f2e771ef63b111",
+      "bytes": 650
+    },
+    {
+      "path": "experiments/08_paris_new_evidence/prepared_v1/DATA_ARTIFACT_HASHES.json",
+      "sha256": "4d3c6ee34ded2d88edc20cab05f1bc730ce10b8a6abb3114391974ed1b899040",
+      "bytes": 744
+    },
+    {
+      "path": "experiments/08_paris_new_evidence/prepared_v1/LOCKED_STATIONS.json",
+      "sha256": "cfc571ac7968186011f1ddafede2bc289d57c8eabc99965ff29ecfb685cd7d7f",
+      "bytes": 1414
+    },
+    {
+      "path": "experiments/08_paris_new_evidence/prepared_v1/development/DEVELOPMENT_DATA_SUMMARY.json",
+      "sha256": "b500ef508ef80665083b5e95d3a1118c9614a2252ba6788735ccdb3b9d185bfc",
+      "bytes": 557
+    },
+    {
+      "path": "experiments/09_distill_v2/DEV_BASELINE_PROTOCOL.json",
+      "sha256": "54593469b3c98918d3b577165d9bac614dfe9099e1b487b9e2a646df6acd96b4",
+      "bytes": 494
+    },
+    {
+      "path": "experiments/09_distill_v2/PARIS_CAPER_ADAPTATION_V1_0.md",
+      "sha256": "980a3c6d0c61a29518568c3dae4b0429dd2e603595fc207ae6560230201d8bcf",
+      "bytes": 1876
+    },
+    {
+      "path": "experiments/09_distill_v2/PARIS_TEACHER_AGGREGATION_AMENDMENT_V1_1_1.json",
+      "sha256": "b01cee39b057f0cdfc8f6aef8e45c6ac418f0cddf85d7e43aea97cd14a0e48f6",
+      "bytes": 506
+    },
+    {
+      "path": "experiments/09_distill_v2/PARIS_TEACHER_DECISION.md",
+      "sha256": "4366e9127487026b3783a084dd33cf829bb6f0a5a3131e39e6409e95164620fe",
+      "bytes": 1060
+    },
+    {
+      "path": "experiments/09_distill_v2/PARIS_TEACHER_DEPLOY_APPROVAL_V1_1.json",
+      "sha256": "3982f2e54de1eb6173ed3f4c46aa8cf517c18a67b7db83f7e3cbdf29df8bbc24",
+      "bytes": 999
+    },
+    {
+      "path": "experiments/09_distill_v2/PARIS_TEACHER_DEPLOY_APPROVAL_V1_1.md",
+      "sha256": "401fda117aa749e23f169434dbfcff04577e1b649ca333b68d31445870d939cd",
+      "bytes": 1109
+    },
+    {
+      "path": "experiments/09_distill_v2/PARIS_TEACHER_GATE_SPEC.json",
+      "sha256": "96babeb12307f173c0e7590609f216b39dda1821affc74b4c61593f8290e9561",
+      "bytes": 506
+    },
+    {
+      "path": "experiments/09_distill_v2/PARIS_TEACHER_HIGH_ORDER_REVIEW.md",
+      "sha256": "e5b56fbd5b67ab6450463a52b156925251e82a1de3c9314f698986dd7d86ac94",
+      "bytes": 1953
+    },
+    {
+      "path": "experiments/09_distill_v2/PARIS_TEACHER_MODEL_CONFIG.json",
+      "sha256": "b301ee69d8c2d2a5f24413318cd89cf861b6508018bbdbfaeee201215959568b",
+      "bytes": 2832
+    },
+    {
+      "path": "experiments/09_distill_v2/PARIS_TEACHER_QUALIFICATION_PROTOCOL_V1_0.md",
+      "sha256": "d5621300c03706bd2d6ab6a1bcc798b85369027706cad7a05dcb530287ddce48",
+      "bytes": 3134
+    },
+    {
+      "path": "experiments/09_distill_v2/PARIS_TEACHER_RESULT_REVIEW.md",
+      "sha256": "bbe8266ae6c62ad87502a6b6480d739376765afac9ad3d37c227d424d6f80ef6",
+      "bytes": 1396
+    },
+    {
+      "path": "experiments/09_distill_v2/TIMEXER_LOCAL_ADAPTATION_PROVENANCE.json",
+      "sha256": "1a3ec43be8cb5580eddbd6a22ebf876c8963957a955649b6eae0872d2bf1c5c7",
+      "bytes": 1008
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/dev_baselines/DEV_BASELINE_CELLS.csv",
+      "sha256": "d87dc9a616b2e100d99e50d04be4b2a64412a650d091fafb3dbb10544ceebb54",
+      "bytes": 6296
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/dev_baselines/DEV_BASELINE_CELLS_20260829_125138.csv",
+      "sha256": "d87dc9a616b2e100d99e50d04be4b2a64412a650d091fafb3dbb10544ceebb54",
+      "bytes": 6296
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/dev_baselines/DEV_BASELINE_MACRO.csv",
+      "sha256": "29095b58437c9e66fed89483f29ada0aea2fe693647b0095a5aacafb20a6f60e",
+      "bytes": 367
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/dev_baselines/DEV_BASELINE_SUMMARY.json",
+      "sha256": "5f92e8928166d80efbbcafbe18d2e1cfa9f62ffb4f1a18ad2c63b707938f35e3",
+      "bytes": 1003
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/DEVELOPMENT_FOLD_MANIFEST.csv",
+      "sha256": "c72aa5d80cba0bc751ac5d635658bdc1e13664a05ace077e17bdba054215d48e",
+      "bytes": 16731
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/DEVELOPMENT_FOLD_MANIFEST_V1_0.csv",
+      "sha256": "6e98330f687918b3a274b05edd58c4efaead3c1d96dcd08bf57ba7fbb795c59e",
+      "bytes": 6503
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/DEVELOPMENT_FOLD_MANIFEST_V1_1_20260829_152315.csv",
+      "sha256": "c72aa5d80cba0bc751ac5d635658bdc1e13664a05ace077e17bdba054215d48e",
+      "bytes": 16731
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/MASKED_TARGET_ARTIFACT_REPAIR.json",
+      "sha256": "7fdaa92486a0b6563348ca51d00949fedecebe60a905acb96bab90103ec0ff6c",
+      "bytes": 11876
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/MASKED_TARGET_RECEIPT_REPAIR.csv",
+      "sha256": "5915abd8dfa993537ff7765df27a1fa37aa2a074115c99151dee213f3398714e",
+      "bytes": 6881
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/PARIS_TEACHER_MATRIX_CLOSE_RECEIPT.json",
+      "sha256": "cc7f5c5b1dd62e2ff5f14c13d2a528134ec2aa0b9d9d19c2182c9775acbf1ec9",
+      "bytes": 273
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/PARIS_TEACHER_METRICS_UNLOCK_RECEIPT.json",
+      "sha256": "ee882d8e907bf372135025c8afc0fd3921ef76d06c7ae68c306114c9bdefcc84",
+      "bytes": 515
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/PARIS_TEACHER_PREDICTION_AUDIT.json",
+      "sha256": "ee882d8e907bf372135025c8afc0fd3921ef76d06c7ae68c306114c9bdefcc84",
+      "bytes": 515
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/PARIS_TEACHER_RUN_MANIFEST.csv",
+      "sha256": "3476c6459478bd94789bf0c2874527706da047b6a5f258411820f110f33b2d8e",
+      "bytes": 98791
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/PARIS_TEACHER_RUN_MANIFEST_V1_0.csv",
+      "sha256": "ad1b29b7b1a1d872c158df4f1fbbe82cf4a995211e3ba21dfb7291b561dfa219",
+      "bytes": 24563
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/PARIS_TEACHER_RUN_MANIFEST_V1_1_20260829_152315.csv",
+      "sha256": "3476c6459478bd94789bf0c2874527706da047b6a5f258411820f110f33b2d8e",
+      "bytes": 98791
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/PARIS_TEACHER_RUN_MANIFEST_V1_1_FINAL.csv",
+      "sha256": "3476c6459478bd94789bf0c2874527706da047b6a5f258411820f110f33b2d8e",
+      "bytes": 98791
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/PROTOCOL_AUDIT.json",
+      "sha256": "6853ac28c5e39ba9e80cd5289e1f9bce9edc6f075512b1e2592cfa384e79dffd",
+      "bytes": 570
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_BOOTSTRAP_GAINS_20260829_155927.npy",
+      "sha256": "0534d0343934ffe5f9482074a0190679f1db56e7d4eaa822b8d9e8b919d58fa4",
+      "bytes": 40128
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_CELLS.csv",
+      "sha256": "3de69b9b5581e1312cc02446b6bfcf891a3ac8b0eb4b3058ae4261ebb0b2eeff",
+      "bytes": 7375
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_CELLS_20260829_155927.csv",
+      "sha256": "3de69b9b5581e1312cc02446b6bfcf891a3ac8b0eb4b3058ae4261ebb0b2eeff",
+      "bytes": 7375
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_FOLDS.csv",
+      "sha256": "6c221a31e7bc70299f5555d96428f962c8d7143d6d632162bcd1f67874eb620b",
+      "bytes": 252
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_FOLDS_20260829_155927.csv",
+      "sha256": "6c221a31e7bc70299f5555d96428f962c8d7143d6d632162bcd1f67874eb620b",
+      "bytes": 252
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_HORIZONS.csv",
+      "sha256": "139fd590795a96110ab819d87a705591d637725724f84191bd666fbb136dc8be",
+      "bytes": 305
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_HORIZONS_20260829_155927.csv",
+      "sha256": "139fd590795a96110ab819d87a705591d637725724f84191bd666fbb136dc8be",
+      "bytes": 305
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_MACRO.csv",
+      "sha256": "d5e23a0b068cf19e7f4ac46006dd284d0ffa027b081408e4e6e6a956c0dd32f1",
+      "bytes": 449
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_MACRO_20260829_155927.csv",
+      "sha256": "d5e23a0b068cf19e7f4ac46006dd284d0ffa027b081408e4e6e6a956c0dd32f1",
+      "bytes": 449
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_QUALIFICATION_REPORT.md",
+      "sha256": "2813d3f515f1ed0b0d93d03400f6005082b80c5799f7d92a02b27114798900d0",
+      "bytes": 384
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_QUALIFICATION_REPORT_20260829_155927.md",
+      "sha256": "2813d3f515f1ed0b0d93d03400f6005082b80c5799f7d92a02b27114798900d0",
+      "bytes": 384
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_QUALIFICATION_SUMMARY.json",
+      "sha256": "5b7c1ddc353c5d4502440387968eb6d0f30c6098943583b2afed2b0eccbc8ebb",
+      "bytes": 1790
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_QUALIFICATION_SUMMARY_20260829_155927.json",
+      "sha256": "5b7c1ddc353c5d4502440387968eb6d0f30c6098943583b2afed2b0eccbc8ebb",
+      "bytes": 1790
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_RESIDUAL_CORRELATION.csv",
+      "sha256": "25f653273f036fb2e333656cec99393c2986bc85a659cde5033d6dc327b8663e",
+      "bytes": 928
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_RESIDUAL_CORRELATION_20260829_155927.csv",
+      "sha256": "25f653273f036fb2e333656cec99393c2986bc85a659cde5033d6dc327b8663e",
+      "bytes": 928
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_WEIGHTS.csv",
+      "sha256": "c642f2f2d98c540c25fbf6bf6ec179900d75246dcc9cd09865122704b8cb9c3f",
+      "bytes": 388
+    },
+    {
+      "path": "experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_WEIGHTS_20260829_155927.csv",
+      "sha256": "c642f2f2d98c540c25fbf6bf6ec179900d75246dcc9cd09865122704b8cb9c3f",
+      "bytes": 388
+    },
+    {
+      "path": "experiments/09_distill_v2/scripts/aggregate_paris_teacher.py",
+      "sha256": "a4d8e5090544f9e1950182a769799551d8e82690fec8979e132dfc52120717bd",
+      "bytes": 20684
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/data/audit_timeline.csv",
+      "sha256": "84adb4b9fe3b98b6289279a54aa711f50b531bb1ab4a1370358ec65269adedcc",
+      "bytes": 620
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/data/evidence_build_receipt.json",
+      "sha256": "5d5c89ad8cfc3282b4ddb907f5da28a732f3e1f4a834226bb1306e434a1fa648",
+      "bytes": 1398
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/data/evidence_ladder.csv",
+      "sha256": "4362a0d8c9721c34e9a49df5a2f747af989d52bc78320efb244880c47516d390",
+      "bytes": 1001
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/data/gate_results.csv",
+      "sha256": "b2cf46edb05a01a275ebf2895b24f448071422bf9988f3027f96dc24ba053c66",
+      "bytes": 1274
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/data/latency_batch1.csv",
+      "sha256": "8d1f107654d223c1e600f2a2cba394dd03f4990b543c1e1f8d28217c67e8c975",
+      "bytes": 2228
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/data/model_performance.csv",
+      "sha256": "b4a9aad59f6e526ec784ee00f965e265cc61698cb5cf23628f22a9fa978c0aa0",
+      "bytes": 1222
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/data/status_by_table.csv",
+      "sha256": "47a985c0e74abc85dadb6f26ca31588397acb9da5edca339e5431dda1927f966",
+      "bytes": 1687
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/data/status_overall.csv",
+      "sha256": "0167da913e95387d82ae67a3389bbf43497020fb34b77b4ce16f41425a82fda3",
+      "bytes": 893
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/main.tex",
+      "sha256": "99f524ade3be4e46941e0b699bd802af4d5c341267a5dbad6d0030a666929001",
+      "bytes": 4017
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/sections/01_introduction.tex",
+      "sha256": "1015a13132d0f713f5cba9e14d0e484ec35eee86c65f87f1ee5937e9570da4d4",
+      "bytes": 9079
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/sections/02_related_work.tex",
+      "sha256": "69e19b8922d9d8cbdb44b37a5d1fd140246c2ab5db6827ccf6eef202f913c63c",
+      "bytes": 9330
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/sections/03_methods.tex",
+      "sha256": "848838c2604791d80bf43eb68d312a7ae04a89cfef2a801b7a96ebb64a42d2cb",
+      "bytes": 17559
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/sections/04_results.tex",
+      "sha256": "b95b4fd6c11d50008cff43b4ac561b8b06a8f9b9db68290a8e13b6aa3f155c3b",
+      "bytes": 11859
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/sections/05_discussion.tex",
+      "sha256": "3f79e503d9d0fa23c9549ee04db17a115300313bab3054802c1e4caf75d5403e",
+      "bytes": 10009
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/sections/06_limitations.tex",
+      "sha256": "88611048acb84fa72452182df3df15fc78db627de8398d768cc81de645076d77",
+      "bytes": 7027
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/sections/07_conclusion.tex",
+      "sha256": "e81f49516f967d6c6e687eba8a069246de9618ca5e6f786c416e5dedc0bf982f",
+      "bytes": 2458
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/sections/08_reproducibility_appendix.tex",
+      "sha256": "dbda47c2afefd0425172648cce34df0bc02425ce8e30c2d2a856a4a758532727",
+      "bytes": 24732
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/tables/table10_checklist.tex",
+      "sha256": "3e86b8cb3bb0014fc9351b75045f797e0d268baffe93fe46021785ba1cbc9244",
+      "bytes": 3487
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/tables/table1_status.tex",
+      "sha256": "31ff79cee06e7233d45dcef0cdf7b0d0e51de4b6dd4b93dc1ffd719c234c35ca",
+      "bytes": 808
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/tables/table2_accuracy.tex",
+      "sha256": "c3e5e1a5460e6e0c58b088d4dbde24e620bbb5851c5761d78e013da4a511beb3",
+      "bytes": 947
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/tables/table3_gates.tex",
+      "sha256": "9c68b88a46c1de09f94ee72560ff9807a8b24dd8c578e14f753a675a72b84b3b",
+      "bytes": 899
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/tables/table4_latency.tex",
+      "sha256": "648976e23fe8d60d32988362fe09254ca21250f7ec98a85643d593ba2b22bccd",
+      "bytes": 636
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/tables/table5_audit.tex",
+      "sha256": "53cf907b8f1ebb96b6e4e1be56ecf76cd8252159cc5737a72d676d95e3083d1e",
+      "bytes": 1138
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/tables/table6_audit_framework.tex",
+      "sha256": "46a88c276b10bfd493011920da4ac0720998e5493c2b685b33ed1d95d8aa5323",
+      "bytes": 4579
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/tables/table7_model_identity.tex",
+      "sha256": "bec95a65d4982f0c140d6a89ee9f6337ebe8cb3754ad7e6fa9d19badd3e88f74",
+      "bytes": 5213
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/tables/table8_claim_trace.tex",
+      "sha256": "b30997094ce232062b282ac93c10721def18c2d25d343eed4a402fa2b3dce16d",
+      "bytes": 6609
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/tables/table9_rq_map.tex",
+      "sha256": "294b957765a5559cdcfe4f9da7b05fc1e9dbb1c5ab471ed6874d64e2b90f9579",
+      "bytes": 2584
+    },
+    {
+      "path": "experiments/10_audit_paper/paper/tables/tableA_latency_batches.tex",
+      "sha256": "64601ba844112ceec619979e1692408b52d6ad6237f5e0fb9f0c4db872ee94bf",
+      "bytes": 1948
+    }
+  ],
+  "previous_audit_run_id": "2026-08-30_run02",
+  "generated_at": "2026-08-30T05:46:25Z",
+  "verdict": "WARN",
+  "reason_code": "warnings_only_external_qualitative_no_numeric_mismatch",
+  "trace_path": ".aris/traces/paper-claim-audit/2026-08-30_run03/",
+  "incremental_verification": {
+    "baseline_run_id": "2026-08-30_run02",
+    "baseline_trace": "private-workspace://urbanev-forecast/experiments\\10_audit_paper\\paper\\.aris\\traces\\paper-claim-audit\\2026-08-30_run02\\audited_input_hashes.json",
+    "baseline_input_count": 240,
+    "current_input_count": 240,
+    "unchanged_input_count": 239,
+    "changed_inputs": [
+      {
+        "path": "experiments/10_audit_paper/paper/sections/03_methods.tex",
+        "old_sha256": "b59eb2dcde586489f05a05eff368843589ff1469123a4fd3c50c08ef52211f42",
+        "new_sha256": "848838c2604791d80bf43eb68d312a7ae04a89cfef2a801b7a96ebb64a42d2cb",
+        "old_bytes": 17460,
+        "new_bytes": 17559
+      }
+    ],
+    "missing_inputs": [],
+    "only_expected_input_changed": true,
+    "paper_sources_read": [
+      "main.tex",
+      "sections/01_introduction.tex",
+      "sections/02_related_work.tex",
+      "sections/03_methods.tex",
+      "sections/04_results.tex",
+      "sections/05_discussion.tex",
+      "sections/06_limitations.tex",
+      "sections/07_conclusion.tex",
+      "sections/08_reproducibility_appendix.tex",
+      "tables/table10_checklist.tex",
+      "tables/table1_status.tex",
+      "tables/table2_accuracy.tex",
+      "tables/table3_gates.tex",
+      "tables/table4_latency.tex",
+      "tables/table5_audit.tex",
+      "tables/table6_audit_framework.tex",
+      "tables/table7_model_identity.tex",
+      "tables/table8_claim_trace.tex",
+      "tables/table9_rq_map.tex",
+      "tables/tableA_latency_batches.tex"
+    ],
+    "changed_sentence_location": "sections/03_methods.tex:94",
+    "current_sentence": "Every qualification decision was conjunctive.  The 1\\% point rule was an internal progression convention intended to decide whether added search, cache construction, student expansion, or protected evaluation was worth authorizing; it was not derived from charger-operator utility and is not a universal significance threshold.  The relevant lock artifacts predate their respective metric unlocks and are identified by SHA-256 prefixes in Appendix~\\ref{app:claim-lineage}; complete hashes are retained in the machine-readable audit receipt.  The displayed prefixes are router protocol \\texttt{0b1fc56d...e7f18d35}, distillation protocol \\texttt{fcd07f18...dfe383bc}, and Paris gate specification \\texttt{96babeb1...90e9561}.  The UrbanEV router had to beat TimeXer and both fixed controls, improve macro RMSE by at least 1\\%, win at least five of six folds and 18 of 24 cells, have a paired interval lower bound above zero, and avoid more than 1\\% deterioration at any horizon.  Chronos-2 teacher qualification used the same 1\\%, fold, cell, and horizon criteria, together with target identity, causal input exposure, revision reproducibility, and cache feasibility.  Residual distillation compared an identical 338-parameter student trained with ground truth only, aligned teacher residuals, or a 24-hour-block shuffled teacher.  Passing required aligned KD to improve over GT-only by at least 1\\%, win five of six folds and 18 of 24 cells, have a positive paired lower bound, preserve every horizon within 1\\%, and beat the shuffled control in macro RMSE, at least five folds, and paired interval.",
+    "old_complete_sha256_wording_absent": true,
+    "new_prefix_receipt_wording_present": true,
+    "sentence_accurate": true,
+    "numeric_or_experiment_inputs_changed": false,
+    "body_numeric_mismatch_found": false,
+    "conclusion": "Exactly one audited input changed: sections/03_methods.tex. The new wording correctly states that Appendix displays SHA-256 prefixes while complete hashes are retained in the machine-readable audit receipt. All other paper/data/evidence/vault input hashes are unchanged, so the run02 numeric reconciliation remains current."
+  }
+}

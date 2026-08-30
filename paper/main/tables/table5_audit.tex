@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\caption{Fail-closed interventions performed before scientific interpretation. Repairs did not change model predictions or optimize observed metrics.}
+\label{tab:audit}
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.14\linewidth}>{\raggedright\arraybackslash}p{0.23\linewidth}>{\raggedright\arraybackslash}p{0.27\linewidth}>{\raggedright\arraybackslash}p{0.24\linewidth}}
+\toprule
+Event & Detection & Required action & Final state \\
+\midrule
+M7-C control & 3 identity mappings detected (69/72 initial audit pass) & all 24 shuffled controls rerun & 72/72 final audit PASS \\
+Paris predeployment review & automated artifact audit: BLOCK & 8 blockers repaired; DEPLOY PASS & pre-run authorization only; metrics locked \\
+Paris target repair & 24 runs; 10,236 masked targets restored & restore missing representation; predictions unchanged & metrics still locked \\
+Paris metric unlock & 32/32 jobs closed & prediction identity audit & prediction audit PASS; metrics unlocked; teacher gate FAIL; formal/protected analysis locked; analytical access 0 \\
+\bottomrule
+\end{tabular}
+\end{table*}

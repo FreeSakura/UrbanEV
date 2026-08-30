@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\caption{Same-protocol UrbanEV accuracy results over six rolling folds and four horizons (24 equal-weight cells, seed 42). The oracle uses target-dependent expert choice and is not deployable.}
+\label{tab:accuracy}
+\small
+\begin{tabular}{lrrrl}
+\toprule
+Method & Cells & Macro RMSE & Macro MAE & Evidence role \\
+\midrule
+GBDT-Forecaster & 24 & 0.078165 & 0.049388 & lightweight baseline \\
+NLinear & 24 & 0.075711 & 0.047894 & lightweight baseline \\
+CAPER & 24 & 0.075507 & 0.048480 & expert \\
+DLinear & 24 & 0.075362 & 0.048041 & lightweight baseline \\
+TimeXer & 24 & 0.073709 & 0.046367 & best evaluated single model \\
+Global Fixed & 24 & 0.071367 & 0.044949 & strict prequential fixed fusion \\
+Horizon Fixed & 24 & 0.071372 & 0.044951 & horizon-specific fixed control \\
+Oracle & 24 & 0.061233 & 0.035023 & target-dependent upper-bound diagnostic \\
+\bottomrule
+\end{tabular}
+\end{table*}

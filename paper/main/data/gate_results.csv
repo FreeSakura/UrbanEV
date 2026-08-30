@@ -1,0 +1,7 @@
+stage,dataset,reference,gain_percent,ci_lower,ci_upper,threshold_percent,decision,role,source
+Global Fixed,UrbanEV internal rolling,TimeXer,3.1775965191758897,,,1.0,SUPPORTED,accuracy result,experiments\03_fixed_fusions\outputs\FIXED_FUSION_SUMMARY.json
+Router MLP,UrbanEV internal rolling,Global Fixed,0.44340945854131064,0.2746645914659839,0.6344953239237147,1.0,FAIL,candidate gate,experiments\05_router_v1\outputs\ROUTER_V1_SUMMARY.json
+Chronos-2,UrbanEV internal rolling,Global Fixed,-3.048391768620625,,,1.0,FAIL,teacher screen,experiments\06_5_teacher_qualification\outputs\CHRONOS2_QUALIFICATION_SUMMARY.json
+Aligned KD,UrbanEV internal rolling,GT-only student,0.11893143253939614,-0.06350715143186739,0.3027638170805251,1.0,FAIL,distillation gate,experiments\07_residual_distillation\outputs\D1_SUMMARY.json
+KD vs shuffled,UrbanEV internal rolling,shuffled teacher,0.258525625924994,0.15064955847695988,0.3666231629458804,0.0,PASS SUBCHECK,negative-control subcheck,experiments\07_residual_distillation\outputs\D1_SUMMARY.json
+Paris teacher,Paris development,Paris TimeXer,0.8468586786397444,0.6867106435653986,1.008822883745374,1.0,FAIL,teacher gate,experiments\09_distill_v2\outputs\teacher_qualification\aggregate\PARIS_TEACHER_QUALIFICATION_SUMMARY.json

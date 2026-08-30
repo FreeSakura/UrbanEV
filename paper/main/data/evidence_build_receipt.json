@@ -1,0 +1,20 @@
+{
+  "generated_from": [
+    "experiments\\00_registry_reclassification\\outputs\\CONFIG_STATUS_SUMMARY.json",
+    "experiments\\00_registry_reclassification\\outputs\\CONFIG_STATUS.csv",
+    "experiments\\02_lightweight_baselines\\outputs\\LIGHTWEIGHT_BASELINE_SUMMARY.json",
+    "experiments\\03_fixed_fusions\\outputs\\FIXED_FUSION_SUMMARY.json",
+    "experiments\\01_expert_diagnostics\\outputs\\EXPERT_DIAGNOSTIC_SUMMARY.json",
+    "experiments\\01_expert_diagnostics\\outputs\\STATE_FEATURE_DECISION.json",
+    "experiments\\05_router_v1\\outputs\\ROUTER_V1_SUMMARY.json",
+    "experiments\\06_5_teacher_qualification\\outputs\\CHRONOS2_QUALIFICATION_SUMMARY.json",
+    "experiments\\07_residual_distillation\\outputs\\D1_SUMMARY.json",
+    "experiments\\09_distill_v2\\outputs\\teacher_qualification\\aggregate\\PARIS_TEACHER_QUALIFICATION_SUMMARY.json",
+    "experiments\\06_static_latency\\ACCURACY_LATENCY_FRONTIER.csv",
+    "experiments\\07_residual_distillation\\outputs\\FORMAL_MATRIX_AUDIT_V1_0_FAIL_IDENTITY_SHUFFLE.json",
+    "experiments\\07_residual_distillation\\outputs\\FORMAL_MATRIX_AUDIT.json",
+    "experiments\\09_distill_v2\\outputs\\teacher_qualification\\MASKED_TARGET_ARTIFACT_REPAIR.json",
+    "experiments\\09_distill_v2\\outputs\\teacher_qualification\\PARIS_TEACHER_PREDICTION_AUDIT.json"
+  ],
+  "protected_or_formal_target_values_read": false
+}

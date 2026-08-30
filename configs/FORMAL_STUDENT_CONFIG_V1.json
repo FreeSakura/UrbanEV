@@ -1,0 +1,46 @@
+{
+  "protocol_version": "distill_v1.0_m7c_formal",
+  "branches": ["GT_only", "aligned_KD", "shuffled_teacher"],
+  "folds": [1, 2, 3, 4, 5, 6],
+  "horizons": [3, 6, 9, 12],
+  "seed": 42,
+  "input": {"lookback": 168, "channels": 275, "layout": "batch_time_zone", "features": "occupancy_rate_only"},
+  "student": {
+    "type": "shared_channel_independent_DLinear_residual",
+    "moving_average_kernel": 25,
+    "edge_padding": "replicate",
+    "seasonal_projection": "Linear_168_to_1_shared_across_zones",
+    "trend_projection": "Linear_168_to_1_shared_across_zones",
+    "residual_output": "one_value_per_zone",
+    "trainable_parameter_formula": "2*(168 weights + 1 bias)=338",
+    "trainable_parameters": 338,
+    "initialization": "PyTorch_Linear_default_kaiming_uniform_weight_uniform_bias",
+    "channel_mixing": false
+  },
+  "anchor": {"source": "audited_CAPER_prediction_from_teacher_cache", "epsilon": 0.000001},
+  "output": "sigmoid(logit(clip(CAPER,epsilon,1-epsilon))+DLinear_residual)",
+  "training": {
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "batch_size_origins": 32,
+    "epochs": 50,
+    "gradient_clipping": false,
+    "scheduler": "none",
+    "loss_reduction": "mean",
+    "save_policy": "final_epoch_only",
+    "outer_evaluation_early_stopping": false
+  },
+  "loss": {
+    "GT": "Huber_delta_1_on_bounded_prediction",
+    "KD": "Huber_delta_1_on_logit_space_teacher_residual",
+    "lambda_KD": 0.5,
+    "lambda_shared_across_horizons": true
+  },
+  "formal_matrix_cells": 72,
+  "technical_retry_max": 1,
+  "protected_test_access": false,
+  "full_student_matrix_authorized": true,
+  "student_latency_authorized": false,
+  "multi_seed_authorized": false
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": "urbanev-environment-lock/v1",
+  "purpose": "public stored-prediction replay",
+  "platform": "Ubuntu latest / CPython 3.10",
+  "requirements": "requirements-cpu.txt",
+  "gpu_required": false
+}

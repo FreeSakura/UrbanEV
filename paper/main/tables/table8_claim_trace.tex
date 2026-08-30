@@ -1,0 +1,39 @@
+\begin{table*}[htbp]
+\centering
+\caption{Claim-to-artifact trace and wording guardrails (part 1 of 2). Hashes are the first 12 hexadecimal characters of SHA-256 over the named frozen artifact.}
+\label{tab:claim-trace}
+\scriptsize
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.04\linewidth}>{\raggedright\arraybackslash}p{0.17\linewidth}>{\raggedright\arraybackslash}p{0.22\linewidth}>{\raggedright\arraybackslash}p{0.11\linewidth}>{\raggedright\arraybackslash}p{0.25\linewidth}}
+\toprule
+ID & Headline result & Authoritative artifact / SHA-256$_{12}$ & Evaluation type & Allowed wording; prohibited wording \\
+\midrule
+C1 & Frozen registry: 1,224 configurations; 865 complete artifacts; S1=156. & \path{experiments/00_registry_reclassification/outputs/CONFIG_STATUS_SUMMARY.json}\newline \texttt{833352c136a4} & registry audit & \textit{Allowed:} In this inventory, completion and exact reproduction differ. \newline \textit{Prohibited:} A field-wide reproducibility rate or a model-quality ranking. \\
+C2 & Source-table status distributions are uneven under the frozen mapping. & \path{experiments/00_registry_reclassification/outputs/CONFIG_STATUS.csv}\newline \texttt{4b61c2aea510} & registry audit & \textit{Allowed:} Report S1--S6 counts by UrbanEV source table. \newline \textit{Prohibited:} Call an S4 model invalid or intrinsically weak. \\
+C3 & Target-dependent CAPER--TimeXer oracle gain is 16.926\%. & \path{experiments/01_expert_diagnostics/outputs/EXPERT_DIAGNOSTIC_SUMMARY.json}\newline \texttt{53fa7f22fca6} & real-GT oracle diagnostic & \textit{Allowed:} An infeasible upper bound indicates local complementarity. \newline \textit{Prohibited:} The oracle is deployable or its gain is recoverable. \\
+C4 & State-feature expert-win AUC is 0.6151. & \path{experiments/01_expert_diagnostics/outputs/STATE_FEATURE_DECISION.json}\newline \texttt{9f84ac483e02} & self-supervised proxy & \textit{Allowed:} Relative expert advantage is moderately predictable. \newline \textit{Prohibited:} AUC proves lower forecast RMSE or causal demand knowledge. \\
+C5 & Strict Global Fixed RMSE is 0.071367, a 3.178\% internal gain. & \path{experiments/03_fixed_fusions/outputs/FIXED_FUSION_SUMMARY.json}\newline \texttt{0a0162204c83} & internal rolling real GT & \textit{Allowed:} Improves on TimeXer under the audited UrbanEV protocol. \newline \textit{Prohibited:} Blind-test, cross-city, efficient, or deployment-ready. \\
+C6 & Direct-loss router gains 0.443\% and fails the frozen 1\% gate. & \path{experiments/05_router_v1/outputs/ROUTER_V1_SUMMARY.json}\newline \texttt{a9dfc2ebe4a6} & internal real GT; gated & \textit{Allowed:} A positive sub-threshold internal signal; current stage stopped. \newline \textit{Prohibited:} Router qualification, robustness, or post-hoc gate revision. \\
+C7 & Global Fixed batch-1 P50 is 48.86\% above TimeXer. & \path{experiments/06_static_latency/LATENCY_SUMMARY_TABLE.csv}\newline \texttt{f94d0a7a9e95} & hardware-specific latency & \textit{Allowed:} Measured on the frozen RTX 4060 FP32 sequential workload. \newline \textit{Prohibited:} Portable latency, low cost, or universal serving efficiency. \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[htbp]
+\centering
+\caption{Claim-to-artifact trace and wording guardrails (part 2 of 2). Hashes are the first 12 hexadecimal characters of SHA-256 over the named frozen artifact.}
+\label{tab:claim-trace-2}
+\scriptsize
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.04\linewidth}>{\raggedright\arraybackslash}p{0.17\linewidth}>{\raggedright\arraybackslash}p{0.22\linewidth}>{\raggedright\arraybackslash}p{0.11\linewidth}>{\raggedright\arraybackslash}p{0.25\linewidth}}
+\toprule
+ID & Headline result & Authoritative artifact / SHA-256$_{12}$ & Evaluation type & Allowed wording; prohibited wording \\
+\midrule
+C8 & Chronos-2 gains -3.048\% versus Global Fixed and fails qualification. & \path{experiments/06_5_teacher_qualification/outputs/CHRONOS2_QUALIFICATION_SUMMARY.json}\newline \texttt{01e8084c16ae} & zero-shot internal screen & \textit{Allowed:} This locked revision does not qualify for this protocol. \newline \textit{Prohibited:} Foundation models are generally inferior for EV data. \\
+C9 & Aligned KD gains 0.119\% versus identical GT-only; CI crosses zero. & \path{experiments/07_residual_distillation/outputs/D1_SUMMARY.json}\newline \texttt{c38163157c89} & internal real GT; gated & \textit{Allowed:} The primary distillation comparison fails; distill\_v1 stops. \newline \textit{Prohibited:} Distillation improves the student or merits D2 latency. \\
+C10 & Aligned KD gains 0.259\% versus shuffled teacher. & \path{experiments/07_residual_distillation/outputs/D1_SUMMARY.json}\newline \texttt{c38163157c89} & negative control & \textit{Allowed:} Evidence of a small sample-aligned teacher signal. \newline \textit{Prohibited:} Engineering value or a passed primary KD claim. \\
+C11 & Paris teacher gains 0.847\%, wins 4/4 folds and 16/16 cells, but fails 1\%. & \path{experiments/09_distill_v2/outputs/teacher_qualification/aggregate/PARIS_TEACHER_QUALIFICATION_SUMMARY.json}\newline \texttt{5b7c1ddc353c} & development real GT & \textit{Allowed:} Consistent development gain below the frozen qualification effect. \newline \textit{Prohibited:} Round to 1\%, imply formal/protected performance, or call it official TimeXer. \\
+C12 & Three identity shuffles were blocked at 69/72 before metric unlock. & \path{experiments/07_residual_distillation/outputs/FORMAL_MATRIX_AUDIT_V1_0_FAIL_IDENTITY_SHUFFLE.json}\newline \texttt{584313534390} & artifact integrity & \textit{Allowed:} The lock forced a non-selective rerun of all 24 controls. \newline \textit{Prohibited:} Use the invalid controls as performance evidence. \\
+C13 & Paris prediction audit passed 32/32 before development-metric unlock. & \path{experiments/09_distill_v2/outputs/teacher_qualification/PARIS_TEACHER_PREDICTION_AUDIT.json}\newline \texttt{ee882d8e907b} & artifact integrity & \textit{Allowed:} Identity checks authorized development-metric aggregation. \newline \textit{Prohibited:} The audit proves model correctness or improved RMSE. \\
+C14 & Protected analytical-access counter is 0; vault materialization is true. & \path{experiments/08_paris_new_evidence/PROTECTED_ACCESS_GUARD.json}\newline \texttt{a7780e39f4ef} & procedural data boundary & \textit{Allowed:} No protected label was used analytically after the boundary lock. \newline \textit{Prohibited:} Targets never existed, were never materialized, or are cryptographically inaccessible. \\
+\bottomrule
+\end{tabular}
+\end{table*}

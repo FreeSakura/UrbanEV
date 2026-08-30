@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "generated_at": "2026-08-28T12:48:35",
+  "paired_cells": 24,
+  "target_identity_verified": true,
+  "weight_exposure": "fold1 pre-test validation; folds2-6 strict prior-fold OOF test only",
+  "best_fixed_method": "global_fixed",
+  "best_fixed_macro_RMSE": 0.07136675688300531,
+  "best_fixed_gain_vs_timexer_percent": 3.1775965191758897,
+  "methods": [
+    {
+      "method": "CAPER",
+      "cells": 24,
+      "RMSE": 0.07550667751389535,
+      "MAE": 0.048479747276688745,
+      "WAPE": 0.17899283766998578,
+      "sMAPE": 0.24278428786088727,
+      "RAE": 0.3628511299069523
+    },
+    {
+      "method": "TimeXer",
+      "cells": 24,
+      "RMSE": 0.07370892925327933,
+      "MAE": 0.04636686591893761,
+      "WAPE": 0.1707079114242909,
+      "sMAPE": 0.23731546934244588,
+      "RAE": 0.34639591325904046
+    },
+    {
+      "method": "global_fixed",
+      "cells": 24,
+      "RMSE": 0.07136675688300531,
+      "MAE": 0.04494941741082564,
+      "WAPE": 0.1658131251141385,
+      "sMAPE": 0.23158290961173714,
+      "RAE": 0.3362727840379143
+    },
+    {
+      "method": "horizon_fixed",
+      "cells": 24,
+      "RMSE": 0.07137177878413585,
+      "MAE": 0.04495109760949473,
+      "WAPE": 0.16582009367476438,
+      "sMAPE": 0.2315894278297513,
+      "RAE": 0.336286589097434
+    },
+    {
+      "method": "oracle",
+      "cells": 24,
+      "RMSE": 0.061232970014694243,
+      "MAE": 0.035023478095100584,
+      "WAPE": 0.12906793196629865,
+      "sMAPE": 0.18917100310246618,
+      "RAE": 0.2618582039530643
+    }
+  ],
+  "gate4_reference_frozen": true
+}

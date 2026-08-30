@@ -1,0 +1,11 @@
+{
+  "version": "paris_dev_baseline_v1",
+  "data_role": "development_only",
+  "fold_test_months": ["2020-08", "2020-09", "2020-10", "2020-11"],
+  "horizons": [3, 6, 9, 12],
+  "baselines": ["last_observation", "daily_lag", "weekly_lag"],
+  "input_imputation": "causal_ffill_limit4_then_training_only_station_hour_of_week_median_then_training_station_median",
+  "target_evaluation": "observed_cells_only_no_target_imputation",
+  "formal_target_access": false,
+  "protected_target_access": false
+}

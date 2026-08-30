@@ -1,0 +1,22 @@
+{
+  "schema_version": "urbanev-protected-boundary-public/v1",
+  "status": "SEALED",
+  "receipt_created_at": "2026-08-30T11:16:15.416051",
+  "formal": {
+    "start": "2020-12-01 00:00:00",
+    "end": "2021-01-19 23:45:00",
+    "rows": 366713,
+    "sha256": "9a5d5e7dd741f0ddbaecaf2ec8dc230e1d6547198af053da93e4f32d367f4567",
+    "analytical_access_count": 0
+  },
+  "protected": {
+    "start": "2021-01-20 00:00:00",
+    "end": "2021-03-10 23:45:00",
+    "rows": 398725,
+    "sha256": "c8f3ac2a48e12e1e876dc8389d4f540d69bdc9a6e8fe78c7a78c86554cf8b2ff",
+    "analytical_access_count": 0
+  },
+  "main_project_target_sources_removed": true,
+  "public_predictions_generated": false,
+  "private_paths_or_acl_included": false
+}

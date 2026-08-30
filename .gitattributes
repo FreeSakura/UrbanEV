@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.jpg binary
+*.zip binary
+*.npz binary
+*.npy binary
+models/** whitespace=-trailing-space,-blank-at-eof
+licenses/** whitespace=-blank-at-eof

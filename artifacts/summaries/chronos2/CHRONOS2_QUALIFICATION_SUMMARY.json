@@ -1,0 +1,77 @@
+{
+  "status": "complete",
+  "generated_at": "2026-08-28T23:34:42",
+  "candidate": "amazon/chronos-2",
+  "control": "strict_global_fixed_CAPER_TimeXer",
+  "protected_test_access": false,
+  "cells": 24,
+  "origins": 5960,
+  "macro_aggregation": "equal_mean_of_24_cell_metrics",
+  "model_lock_sha256": "fd952b33dcd66b965a918cd35ac1db933d2327c84e1453ab8466709fefe25d9d",
+  "screen_manifest_sha256": "e3077312c6f21d442b6f99c50b73bda07f0065373e5195df1dff3723232622dd",
+  "Chronos2_clipped_macro": {
+    "RMSE": 0.07354229522535828,
+    "MAE": 0.042250022202845204,
+    "WAPE": 0.1556945319973693,
+    "sMAPE": 0.22369536744171922,
+    "RAE": 0.3159531239652563
+  },
+  "GlobalFixed_macro_RMSE": 0.07136675688300526,
+  "macro_RMSE_gain_percent": -3.048391768620625,
+  "fold_wins": 1,
+  "cell_wins": 4,
+  "sanity_repeat_audit": {
+    "cells": 1,
+    "sentinel": "fold1_horizon12_one_origin_repeated",
+    "all_present": true,
+    "all_pass": true,
+    "max_repeat_abs_difference": 0.0
+  },
+  "cache_feasibility": {
+    "cache_construction_authorized": false,
+    "cache_construction_performed": false,
+    "projected_cache_artifacts": 28,
+    "projected_test_cache_artifacts": 24,
+    "projected_initialization_cache_artifacts": 4,
+    "projected_total_rows": 6092,
+    "projected_total_zone_values": 1675300,
+    "projected_uncompressed_bytes": 26999744,
+    "free_disk_bytes": 417289588736,
+    "measured_qualification_seconds": 4237.559827099999,
+    "projected_cache_runtime_seconds": 4331.41182327067,
+    "max_cuda_peak_reserved_bytes": 803209216,
+    "cuda_total_memory_bytes": 8585216000,
+    "cuda_telemetry_cells": 7,
+    "cuda_telemetry_missing_legacy_success_cells": 17,
+    "cuda_telemetry_max_cell_rows": 290,
+    "projected_initialization_rows_by_horizon": {
+      "3": 35,
+      "6": 34,
+      "9": 32,
+      "12": 31
+    },
+    "max_observed_qualification_cell_rows": 432,
+    "max_projected_cache_cell_rows": 432,
+    "expected_cache_artifacts_match_distill_protocol": true,
+    "bounded_by_observed_heaviest_qualification_cell": true,
+    "same_zero_shot_inference_surface_as_qualification": true,
+    "all_qualification_cells_succeeded_on_cuda_fp32": true,
+    "complete_OOF_cache_feasible": true
+  },
+  "control_artifact_hashes": {
+    "cells": "4046c3eb96e005f2f0a8e84d5d0be436546e8642c3d3e7a56c44a60c54de27e1",
+    "summary": "0a0162204c83bc3e2a7cf7851a88a68040ba456bd6d8ccf768dafbf3aeed233a"
+  },
+  "gate_checks": {
+    "all_target_identity_pass": true,
+    "all_inputs_not_after_forecast_origin": true,
+    "macro_RMSE_gain_at_least_1_percent": false,
+    "fold_wins_at_least_5_of_6": false,
+    "cell_wins_at_least_18_of_24": false,
+    "no_horizon_deteriorates_over_1_percent": false,
+    "reproducible_revision_and_prediction_process": true,
+    "complete_OOF_cache_feasible": true
+  },
+  "Q2_pass": false,
+  "teacher_decision": "GlobalFixed_primary_Chronos2_not_qualified"
+}

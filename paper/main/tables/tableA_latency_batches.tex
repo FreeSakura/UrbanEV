@@ -1,0 +1,38 @@
+\begin{table*}[htbp]
+\centering
+\caption{Frozen end-to-end synchronous latency at batch sizes 1, 8, and 32. P50 and P95 are milliseconds per request; throughput is forecast origins per second at P50. Every value is formatted directly from \texttt{LATENCY\_SUMMARY\_TABLE.csv}; no benchmark was rerun.}
+\label{tab:latency-all-batches}
+\footnotesize
+\begin{tabular}{lrrrr}
+\toprule
+Method & Batch origins & E2E P50 (ms) & E2E P95 (ms) & Origins s$^{-1}$ (P50) \\
+\midrule
+DLinear & 1 & 1.166 & 1.763 & 857.9 \\
+DLinear & 8 & 2.118 & 2.874 & 3776.9 \\
+DLinear & 32 & 5.382 & 7.728 & 5945.7 \\
+\addlinespace[2pt]
+NLinear & 1 & 0.674 & 1.056 & 1483.7 \\
+NLinear & 8 & 1.554 & 2.101 & 5148.0 \\
+NLinear & 32 & 3.896 & 5.373 & 8213.7 \\
+\addlinespace[2pt]
+GBDT-Forecaster & 1 & 6.242 & 7.195 & 160.2 \\
+GBDT-Forecaster & 8 & 40.188 & 50.261 & 199.1 \\
+GBDT-Forecaster & 32 & 157.087 & 186.205 & 203.7 \\
+\addlinespace[2pt]
+CAPER & 1 & 7.934 & 10.798 & 126.0 \\
+CAPER & 8 & 10.740 & 14.253 & 744.9 \\
+CAPER & 32 & 19.753 & 24.266 & 1620.0 \\
+\addlinespace[2pt]
+TimeXer & 1 & 14.067 & 15.952 & 71.1 \\
+TimeXer & 8 & 105.780 & 113.816 & 75.6 \\
+TimeXer & 32 & 482.165 & 519.827 & 66.4 \\
+\addlinespace[2pt]
+Global Fixed CAPER+TimeXer & 1 & 20.940 & 33.123 & 47.8 \\
+Global Fixed CAPER+TimeXer & 8 & 125.350 & 136.947 & 63.8 \\
+Global Fixed CAPER+TimeXer & 32 & 479.634 & 510.574 & 66.7 \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{0.94\linewidth}\vspace{3pt}\footnotesize
+Workload: one request produces all four horizons for 275 UrbanEV zones. Measurements used FP32, one RTX 4060 Laptop GPU, sequential expert execution, five processes, 50 warm-ups, and 1,000 timed iterations per process and method--batch cell. Throughput is not monotone across model families because the frozen serving graphs batch differently; these values are workload-specific rather than portable deployment guarantees.
+\end{minipage}
+\end{table*}

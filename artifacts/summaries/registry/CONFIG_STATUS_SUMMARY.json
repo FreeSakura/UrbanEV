@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-08-28T11:55:11",
+  "manifest_total": 1224,
+  "source_state_dir": "private-workspace://UrbanEV-reproduction/state",
+  "source_comparison_csv": "D:\\Codex\\2026-08-23\\gen\\outputs\\UrbanEV-reproduction\\paper_vs_official_vs_audited.csv",
+  "execution_status_counts": {
+    "complete": 865,
+    "not_executed": 340,
+    "failed": 19
+  },
+  "evidence_status_counts": {
+    "S1": {
+      "label": "协议和数值均可识别且复现",
+      "count": 156
+    },
+    "S2": {
+      "label": "协议基本一致但有披露差异",
+      "count": 216
+    },
+    "S3": {
+      "label": "只恢复相对趋势",
+      "count": 122
+    },
+    "S4": {
+      "label": "原论文信息不足不能唯一确定",
+      "count": 371
+    },
+    "S5": {
+      "label": "配置确定但运行失败",
+      "count": 19
+    },
+    "S6": {
+      "label": "可运行但未实际完成",
+      "count": 340
+    }
+  },
+  "completed_marked_confirmed": 865,
+  "duplicate_run_ids": 0,
+  "duplicate_config_fingerprints": 0,
+  "rerun_rule": "Never overwrite a frozen run_id; complete rows are reused and failed/not-executed rows require a new versioned run_id."
+}

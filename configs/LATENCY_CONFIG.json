@@ -1,0 +1,21 @@
+{
+  "protocol_version": "latency_v1.0",
+  "methods": [
+    "dlinear",
+    "nlinear",
+    "gbdt_forecaster",
+    "caper",
+    "timexer",
+    "global_fixed"
+  ],
+  "batches": [1, 8, 32],
+  "repeats": 5,
+  "warmup": 50,
+  "iterations": 1000,
+  "precision": "fp32",
+  "device": "cuda:0",
+  "cpu_threads": 1,
+  "training_authorized": false,
+  "protected_target_access": false,
+  "router_reopening": false
+}

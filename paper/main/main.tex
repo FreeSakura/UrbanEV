@@ -1,0 +1,50 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=20mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{xurl}
+\usepackage{flafter}
+\usepackage[section]{placeins}
+\hypersetup{colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,urlcolor=MidnightBlue,pdftitle={From Configurations to Claims: An Evidence Audit of Urban EV Charging Forecasting},pdfauthor={Hongwei Chi}}
+\setlist{nosep,leftmargin=*}
+\setlength{\emergencystretch}{2em}
+\newcommand{\urbanev}{UrbanEV}
+\newcommand{\rmse}{RMSE}
+\title{From Configurations to Claims:\\An Evidence Audit of Urban EV Charging Forecasting}
+\input{../shared/author_metadata}
+\date{Preprint version 0.9.0}
+\begin{document}
+\maketitle
+\provisionalauthorshipnote
+\begin{abstract}
+Execution completion is often treated as a proxy for reproducibility, while a statistically positive comparison is often treated as sufficient reason to continue model development. We audit both assumptions in a case study of urban electric-vehicle charging forecasting and extract a reusable claim-control framework linking configuration identity, forecast validity, engineering qualification, and protected-data use. In a frozen inventory of 1,224 UrbanEV configurations, 865 have completed artifacts but only 156 satisfy a joint exact-protocol-and-numerical criterion. A sequential UrbanEV evaluation shows why later evidence types must remain distinct: strict prequential fusion of a locally audited CAPER expert and compact TimeXer lowers internal macro RMSE by 3.178\% relative to the strongest evaluated single model, but increases batch-1 median synchronous latency by 48.86\% on the frozen device. Subsequent routing, foundation-teacher, and residual-distillation candidates either deteriorate or remain below their internally time-stamped, project-specific progression gates. On a separate Paris development-only panel, the strict teacher is consistently positive yet its 0.847\% point gain remains below the frozen 1\% rule. Paris formal and protected target-bearing sources are confined to a procedurally isolated evidence vault and contribute no analytical result. The resulting taxonomy, claim grammar, fail-closed state machine, and artifact ledger show how a forecasting project can preserve partial and negative evidence without promoting it to protected-test, deployment, or state-of-the-art claims.
+\end{abstract}
+\noindent\textbf{Keywords:} electric-vehicle charging; forecasting; reproducibility; prequential evaluation; experiment audit; latency; stopping rules
+\input{sections/01_introduction}
+\input{sections/02_related_work}
+\input{sections/03_methods}
+\input{sections/04_results}
+\input{sections/05_discussion}
+\input{sections/06_limitations}
+\input{sections/07_conclusion}
+\section*{Data and artifact availability}
+The public repository contains versioned source snapshots, protocol/configuration locks, target-free prediction artifacts, machine-readable result summaries, and scripts that reconstruct the headline metrics after the user obtains the licensed source datasets. Paris formal and protected targets, raw reference files, recoverable Git objects, and private vault metadata are not distributed. Their public boundary receipt contains only role dates, hashes, row counts, and the zero analytical-access statement.
+\section*{Funding}
+This research received no external funding.
+\section*{Competing interests}
+The author declares no competing interests.
+\section*{Ethics and scope statement}
+The study uses previously released charging datasets and contains no intervention on human participants. Charging observations may nevertheless encode mobility patterns, so the paper reports only aggregate forecasting evidence and does not attempt individual inference. No protected-test, deployment-readiness, or state-of-the-art claim is made.
+\section*{AI assistance disclosure}
+Generative AI tools, including OpenAI Codex and ChatGPT, assisted with literature search, experiment-script development, artifact-consistency checks, separately instantiated automated artifact audits, figure preparation, and language editing. All reported numerical results were computed from stored predictions and licensed source targets by deterministic scripts. AI tools did not generate ground-truth targets, alter frozen thresholds, authorize formal or protected data access, or determine the final scientific claims. The confirmed first author reviewed the manuscript and accepts responsibility for its content.
+\bibliographystyle{unsrtnat}
+\bibliography{../shared/references}
+\end{document}

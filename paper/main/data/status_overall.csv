@@ -1,0 +1,7 @@
+code,label,count,percent,is_completed_artifact,source
+S1,协议和数值均可识别且复现,156,12.745098039215685,True,experiments\00_registry_reclassification\outputs\CONFIG_STATUS_SUMMARY.json
+S2,协议基本一致但有披露差异,216,17.647058823529413,True,experiments\00_registry_reclassification\outputs\CONFIG_STATUS_SUMMARY.json
+S3,只恢复相对趋势,122,9.967320261437909,True,experiments\00_registry_reclassification\outputs\CONFIG_STATUS_SUMMARY.json
+S4,原论文信息不足不能唯一确定,371,30.31045751633987,True,experiments\00_registry_reclassification\outputs\CONFIG_STATUS_SUMMARY.json
+S5,配置确定但运行失败,19,1.5522875816993464,False,experiments\00_registry_reclassification\outputs\CONFIG_STATUS_SUMMARY.json
+S6,可运行但未实际完成,340,27.77777777777778,False,experiments\00_registry_reclassification\outputs\CONFIG_STATUS_SUMMARY.json

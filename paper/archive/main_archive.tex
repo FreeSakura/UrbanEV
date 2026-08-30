@@ -1,0 +1,43 @@
+% Rebuildable source for the frozen anonymous archival layout.
+% The exact delivered PDF is UrbanEV_Evidence_Audit_Archive.pdf.
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=24mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{xurl}
+\usepackage{flafter}
+\usepackage[section]{placeins}
+\graphicspath{{../main/}}
+\makeatletter
+\def\input@path{{../main/}{../main/sections/}{../main/tables/}}
+\makeatother
+\setlist{nosep,leftmargin=*}
+\setlength{\emergencystretch}{2em}
+\title{From Configurations to Claims:\\An Evidence Audit of Urban EV Charging Forecasting}
+\author{Anonymous Authors}
+\date{August 2026}
+\begin{document}
+\maketitle
+\input{../main/sections/01_introduction}
+\input{../main/sections/02_related_work}
+\input{../main/sections/03_methods}
+\input{../main/sections/04_results}
+\input{../main/sections/05_discussion}
+\input{../main/sections/06_limitations}
+\input{../main/sections/07_conclusion}
+\section*{Archive-only full framework tables}
+\input{../main/tables/table6_audit_framework}
+\input{../main/tables/table7_model_identity}
+\input{../main/tables/table9_rq_map}
+\input{../main/sections/08_reproducibility_appendix}
+\bibliographystyle{unsrtnat}
+\bibliography{../shared/references}
+\end{document}
