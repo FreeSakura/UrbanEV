@@ -1515,8 +1515,8 @@
     },
     {
       "path": "scripts/build_model_source_manifest.py",
-      "sha256": "4dcea0cd65d7ef818682e51ec543ac0c2da4e89473777618554ab2eb659debdb",
-      "bytes": 2109,
+      "sha256": "c78de5c251b6e5a46e230db7292d403274380f33b73c31020b5c4575261c3cfd",
+      "bytes": 2130,
       "role": "scripts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -1596,8 +1596,8 @@
     },
     {
       "path": "scripts/sanitize_public_text.py",
-      "sha256": "3824cbd8820875a46980c0365c318b9b630187477ec5c07cd58676fc01c852ad",
-      "bytes": 3263,
+      "sha256": "f4076e1dc6a8698c8ffd67aed4dacff17f7fe73f591f993653f6b3ef97acb85d",
+      "bytes": 3284,
       "role": "scripts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",

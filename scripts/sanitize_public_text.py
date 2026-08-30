@@ -72,7 +72,7 @@ def main() -> None:
             item["public_sha256"] = public_digest(public_path)
     with output.open("w", newline="", encoding="utf-8") as handle:
         fields = ("public_path", "private_original_sha256", "public_sha256", "rewrite")
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(sorted(mappings, key=lambda item: item["public_path"]))
     print(f"sanitized {len(mappings)} file(s); wrote {output}")

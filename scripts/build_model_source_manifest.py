@@ -49,7 +49,7 @@ def main() -> None:
         )
     output = MODELS / "MODEL_SOURCE_MANIFEST.csv"
     with output.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=rows[0].keys())
+        writer = csv.DictWriter(handle, fieldnames=rows[0].keys(), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
     print(output)
