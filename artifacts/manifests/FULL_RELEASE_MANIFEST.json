@@ -128,6 +128,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/manifests/REPRODUCTION_RECEIPT.json",
+      "sha256": "1459ead096a1d26874d8fb6b3965967d0d684ebeb3b94f4f6b77e4944111d2ae",
+      "bytes": 1419,
+      "role": "artifacts",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/chronos2/CHRONOS2_QUALIFICATION_CELLS.csv",
       "sha256": "18a2f96ccd789736d5116eb777b7daec2e8fea4ee3412513e6606908a20d396d",
       "bytes": 6829,

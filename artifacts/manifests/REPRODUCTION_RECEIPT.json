@@ -1,0 +1,43 @@
+{
+  "schema_version": "urbanev-reproduction-receipt/v1",
+  "status": "PASS",
+  "release_candidate": "v0.9.1-preprint",
+  "clean_clone_verified_source_commit": "f4f3b9906bf1b04a23ef6e1db1908b23a994ec72",
+  "repository_only_replay": {
+    "pytest": "27 passed",
+    "current_tree_privacy_findings": 0,
+    "git_history_unresolved_findings": 0,
+    "documented_immutable_historical_exceptions": 9,
+    "model_source_manifest_regeneration": "byte-stable",
+    "evidence_and_full_manifest_regeneration": "byte-stable",
+    "paper_rebuild": "PASS",
+    "paper_pdf_raw_byte_diff": 0,
+    "paper_pdf_normalized_text_diff": 0,
+    "paper_fonts_embedded": true
+  },
+  "paper": {
+    "main_pages": 23,
+    "supplement_pages": 13,
+    "historical_archive_original_pages": 42,
+    "historical_archive_wrapper_pages": 43,
+    "undefined_citations": 0,
+    "undefined_references": 0,
+    "overfull_boxes": 0
+  },
+  "release_assets": {
+    "audit_status": "PASS",
+    "packages": 152,
+    "target_values_included": false,
+    "unknown_keys_accepted": false,
+    "object_arrays_accepted": false,
+    "zip_manifest_bidirectional_check": "PASS",
+    "prediction_arrays_changed_from_v0.9.0": false,
+    "headline_metrics_changed": false
+  },
+  "research_boundary": {
+    "paris_formal_analytical_access": 0,
+    "paris_protected_analytical_access": 0,
+    "additional_model_search": "NOT_PERFORMED",
+    "frozen_gate_changed": false
+  }
+}
