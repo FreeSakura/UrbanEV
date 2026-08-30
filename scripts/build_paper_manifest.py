@@ -7,6 +7,7 @@ import hashlib
 import json
 import shutil
 import subprocess
+import unicodedata
 from pathlib import Path
 
 from pypdf import PdfReader
@@ -24,6 +25,12 @@ SOURCE_SUFFIXES = {".tex", ".bib", ".py", ".csv", ".json"}
 
 def sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
+
+
+def canonical_pdf_text(reader: PdfReader) -> str:
+    text = "\n".join(page.extract_text() or "" for page in reader.pages)
+    text = unicodedata.normalize("NFKC", text).casefold()
+    return "".join(character for character in text if character.isalnum())
 
 
 def _pypdf_fonts_embedded(reader: PdfReader) -> bool:
@@ -59,7 +66,7 @@ def main() -> None:
         if not path.is_file():
             raise FileNotFoundError(path)
         reader = PdfReader(str(path))
-        text = "\n\f\n".join((page.extract_text() or "").replace("\r\n", "\n") for page in reader.pages)
+        text = canonical_pdf_text(reader)
         metadata = {str(key): str(value) for key, value in (reader.metadata or {}).items()}
         pdf_records.append(
             {

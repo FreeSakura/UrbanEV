@@ -8,7 +8,7 @@
       "sha256": "2e3fadad8995b504fc0f0967069e0411d432ede74f9b1c1748bd3d35c9d703e9",
       "bytes": 725296,
       "pages": 23,
-      "normalized_text_sha256": "753390b5200ea87b535e046eca506ecceef40e0e81a201a5ffe18770ecb34a90",
+      "normalized_text_sha256": "ca1c282b59313c9987b7a5ce38d8977368a2f702387cc7504b432fd5781efa96",
       "fonts_embedded": true,
       "metadata": {
         "/Producer": "MiKTeX pdfTeX-1.40.28",
@@ -25,7 +25,7 @@
       "sha256": "ee0b8c7681a4fd6537867cd4c31f9e3e98418651b062ad10b4505a2e1146fc37",
       "bytes": 560240,
       "pages": 13,
-      "normalized_text_sha256": "273f452ef5841e0b3074aa087e06100215f5c4d5e4af92a8e6796d0b70af3db9",
+      "normalized_text_sha256": "f4fb7cf0fdfe17c271806b81258a56a1d57a45726dd922b82d294fbf711ada44",
       "fonts_embedded": true,
       "metadata": {
         "/Producer": "MiKTeX pdfTeX-1.40.28",
@@ -42,7 +42,7 @@
       "sha256": "9055497bd362da937424b4a93651c95c38c4e5fd83bf7593dc73b2568dfd822c",
       "bytes": 461831,
       "pages": 42,
-      "normalized_text_sha256": "6ad7f3816069b5503b8aaae143b1deb104cf33dd03bc3e63d8d41fedd4e93911",
+      "normalized_text_sha256": "5760021a3ba851a53e8151ad0f8bd8dfd39cb64c2bd713ecd7a2f9af63b2583b",
       "fonts_embedded": true,
       "metadata": {
         "/Creator": "LaTeX with hyperref",
@@ -57,7 +57,7 @@
       "sha256": "33bbb485e57cd6e06126f9c6c7f2813d1bafadc7b61c39185af917f983280b2c",
       "bytes": 869046,
       "pages": 37,
-      "normalized_text_sha256": "d507770cad8c2e41d8fee14ca7182a33a8d53ff6ad5ef429d8b6115ca3f76e46",
+      "normalized_text_sha256": "deebe6c4c0aa5eee17bec962bd462187ec5069813fdb736067c2959459712f20",
       "fonts_embedded": true,
       "metadata": {
         "/Producer": "MiKTeX pdfTeX-1.40.28",
@@ -74,7 +74,7 @@
       "sha256": "ef9739e9ead1599588a737e91b7d3b1609723335ec16aa0c0b76ff6f1b805ec8",
       "bytes": 572789,
       "pages": 43,
-      "normalized_text_sha256": "66bb0afc78e1ece7d47c329a056fcc654537835bba31071e1ffb9195abc7f04f",
+      "normalized_text_sha256": "62797ec6a970939d71399e13c83d2fed0635dd6def1b3aac492b263eac679ff7",
       "fonts_embedded": true,
       "metadata": {
         "/Producer": "pypdf",

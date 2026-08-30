@@ -7,6 +7,7 @@ import hashlib
 import json
 import shutil
 import subprocess
+import unicodedata
 from pathlib import Path
 
 from pypdf import PdfReader
@@ -16,7 +17,9 @@ MANIFEST = ROOT / "artifacts/manifests/PAPER_BUILD_MANIFEST.json"
 
 
 def normalized_text_hash(reader: PdfReader) -> str:
-    text = "\n\f\n".join((page.extract_text() or "").replace("\r\n", "\n") for page in reader.pages)
+    text = "\n".join(page.extract_text() or "" for page in reader.pages)
+    text = unicodedata.normalize("NFKC", text).casefold()
+    text = "".join(character for character in text if character.isalnum())
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
