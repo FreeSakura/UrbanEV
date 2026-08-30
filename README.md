@@ -2,8 +2,6 @@
 
 This repository is the public, target-free companion to **From Configurations to Claims: An Evidence Audit of Urban EV Charging Forecasting**. It preserves the paper sources, frozen protocol and result summaries, executed model-source snapshots, and deterministic checks needed to inspect the reported evidence chain without publishing licensed targets or protected material.
 
-Hongwei Chi is the confirmed first author. The remaining author list and corresponding author are provisional and will be finalized before journal submission.
-
 ## Evidence boundary
 
 The public repository contains only allowlisted source, configuration, summary, hash, and target-free prediction artifacts. It does **not** contain UrbanEV or Paris raw data, Paris formal/protected data or predictions, private evidence-vault metadata, model checkpoints, access tokens, local paths, or recoverable private Git objects. The public Paris boundary receipt records only non-sensitive role metadata and the analytical-access count of zero.
