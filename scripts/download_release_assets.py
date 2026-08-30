@@ -13,12 +13,12 @@ from pathlib import Path
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--tag", default="v0.9.0-preprint")
+    parser.add_argument("--tag", default="v0.9.1-preprint")
     parser.add_argument("--repository", default="FreeSakura/UrbanEV")
     parser.add_argument("--output", type=Path, default=Path("release-assets"))
     args = parser.parse_args()
     api = f"https://api.github.com/repos/{args.repository}/releases/tags/{args.tag}"
-    request = urllib.request.Request(api, headers={"Accept": "application/vnd.github+json", "User-Agent": "urbanev-audit/0.9.0"})
+    request = urllib.request.Request(api, headers={"Accept": "application/vnd.github+json", "User-Agent": "urbanev-audit/0.9.1"})
     with urllib.request.urlopen(request) as response:
         release = json.load(response)
     args.output.mkdir(parents=True, exist_ok=True)

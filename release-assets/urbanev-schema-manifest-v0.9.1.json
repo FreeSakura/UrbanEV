@@ -1,11 +1,12 @@
 {
-  "schema_version": "urbanev-public-release/v1",
+  "schema_version": "urbanev-public-release/v2",
   "dataset": "urbanev",
   "target_values_included": false,
   "formal_or_protected_included": false,
   "packages": [
     {
       "file": "urbanev_0001.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f1_h12.npz",
       "target_id": "urbanev_c2eeffd8989c961b",
@@ -16,10 +17,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "09f6f7642caf3aa27e8833a72cffc0dadc5e38bf03c02826c8109a3a83c9397f",
+      "sha256": "ad33bcb0a2a2582e514cfab1b4b941f90cc7ce83d964aa77ea2a9b77d469ee2c",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -42,6 +44,7 @@
     },
     {
       "file": "urbanev_0002.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f1_h3.npz",
       "target_id": "urbanev_e1be22a4bfe25cb2",
@@ -52,10 +55,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "c0416e62bfbbdef675ab3e8be01a56a8d436fcd199358f05ce584fb9b996e710",
+      "sha256": "7a28c51dadfd18468e3a28504c6c6ef6c697d3a0adf248235f93d8dfff8122a8",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -78,6 +82,7 @@
     },
     {
       "file": "urbanev_0003.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f1_h6.npz",
       "target_id": "urbanev_dd3e812dbc254fae",
@@ -88,10 +93,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "ac67a782bcbc837b09d6badf60c885a266772989898099241acd38af27a828d3",
+      "sha256": "03b5b0a0b8f382cf06e0058f0172f163aa48a4270d8feccba0a668d825ff5686",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -114,6 +120,7 @@
     },
     {
       "file": "urbanev_0004.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f1_h9.npz",
       "target_id": "urbanev_287c8e4c6494eaa7",
@@ -124,10 +131,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "8b5d606594d4f8998e6dca6d0d20f3026be93cf1e438d14d3cc69c959599ee26",
+      "sha256": "8d5ffbeb81fdcc398f57a36f72d075d859608b3aff8d1a7d06bc8f26695df2da",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -150,6 +158,7 @@
     },
     {
       "file": "urbanev_0005.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f2_h12.npz",
       "target_id": "urbanev_88a04b9ef2eb2bce",
@@ -160,10 +169,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "8e361a3c7acdf212d6dffd2c9ca11455dcd93a55c84ad671ad23168b59577b74",
+      "sha256": "e4bd003dbc40780f34d164e71e12d107512e6f492bb3fba7635dc335f302c143",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -186,6 +196,7 @@
     },
     {
       "file": "urbanev_0006.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f2_h3.npz",
       "target_id": "urbanev_ad53808d299aa2a8",
@@ -196,10 +207,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "e120a7e4b1ad0ffa244f3262f66eefaab86162c6840691f476d1c15478091202",
+      "sha256": "954fff35f890f95d233de0453f097144536c721611fcbdbcd9dc61780f279fdb",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -222,6 +234,7 @@
     },
     {
       "file": "urbanev_0007.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f2_h6.npz",
       "target_id": "urbanev_c86a065f15846c8c",
@@ -232,10 +245,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "ec35189e97a966558940c03dc61ef69903dcc5f0d5c6c7e71adde28f9bbcb4b4",
+      "sha256": "beb354a9ee540be5c6339231f24c592afccdeeb520996aff98137be27fe5b2e6",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -258,6 +272,7 @@
     },
     {
       "file": "urbanev_0008.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f2_h9.npz",
       "target_id": "urbanev_17084de0a9fc4373",
@@ -268,10 +283,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "c74cf6099cd06a83059b889e106283aafebcd1b2d79176209fe0447deca2c32d",
+      "sha256": "7b88cebfe400e878822eaa8456131f4d9e0351e328c9813d15c715ba91971266",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -294,6 +310,7 @@
     },
     {
       "file": "urbanev_0009.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f3_h12.npz",
       "target_id": "urbanev_039b8b52d4e31af3",
@@ -304,10 +321,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "ac49a1b8bf0324ce92e532d2b48aaaf0626e40f298fe6e3d4d658e35e8ed3ff6",
+      "sha256": "69f5e73f8d536b9eb081cea01eb646f82391de77dcd968d405c56f4550ad5dce",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -330,6 +348,7 @@
     },
     {
       "file": "urbanev_0010.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f3_h3.npz",
       "target_id": "urbanev_07f3cda0dc49779f",
@@ -340,10 +359,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "7efd1feb10abfa617d40eeac0a95efe3404559463cf2b9e2c850aa9e5cad3e03",
+      "sha256": "5bd047355e625b3a7c8ac3df5f6beb7efbd6fd7ffe6a14341910d725b65aa7c0",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -366,6 +386,7 @@
     },
     {
       "file": "urbanev_0011.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f3_h6.npz",
       "target_id": "urbanev_8aea1a6a0e7a3f4c",
@@ -376,10 +397,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "1c73f677f88c63c59cc3037e958814824931cb885eb003ec3aec8e4cac12ef65",
+      "sha256": "375ec79f317af86ade762c03455a037aee5b514812f238dd3a616f63db29028b",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -402,6 +424,7 @@
     },
     {
       "file": "urbanev_0012.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f3_h9.npz",
       "target_id": "urbanev_75585843873dfb07",
@@ -412,10 +435,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "7362725745275c17ccea669bcbc34f43ebc638b60b7610092b9b1e817aeea7b7",
+      "sha256": "835702c39e1bb8d3f4cdd0132d7adad353b13fa6f3910d66a53fcdf5d076f68c",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -438,6 +462,7 @@
     },
     {
       "file": "urbanev_0013.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f4_h12.npz",
       "target_id": "urbanev_8be357728d334eab",
@@ -448,10 +473,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "bd2f17dc015b084cab573621469717f1927ebfdc879e92e6798a5e8c74c3ed4c",
+      "sha256": "ea72169ceeff3aac4f30dcfec2ad7a7647a68351b1fb73dadfc0d31aed6182c1",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -474,6 +500,7 @@
     },
     {
       "file": "urbanev_0014.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f4_h3.npz",
       "target_id": "urbanev_2f427e29b8f05db4",
@@ -484,10 +511,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "fe47a5a198018a08ee0c4750b306fef98a2b2953836bc81afe178d4ff7e19544",
+      "sha256": "78164b24d1178a4a24c73a03608b2503d63a0a1abb23d49b21ad38daf4a8a4b6",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -510,6 +538,7 @@
     },
     {
       "file": "urbanev_0015.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f4_h6.npz",
       "target_id": "urbanev_0769c192083540a6",
@@ -520,10 +549,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "ac4c48260474af80d79efa6caecf0f659913b42385ff78b35567c7a225fd4988",
+      "sha256": "a6f8d694e2c6587a93a8182570fa5d15a585c0adb44c63ee65ea62b878eb3cbe",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -546,6 +576,7 @@
     },
     {
       "file": "urbanev_0016.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f4_h9.npz",
       "target_id": "urbanev_7f7c39ad1c6be9e7",
@@ -556,10 +587,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "f513905ff288760aea7aa8f5fd1f9c60b851e28c3766f28a673c681f2874bfaf",
+      "sha256": "8f8f185faad8950af10b1c0173051d31ea2e905c470e771ae7fb78d86565a9b0",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -582,6 +614,7 @@
     },
     {
       "file": "urbanev_0017.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f5_h12.npz",
       "target_id": "urbanev_e22e3adb099ae592",
@@ -592,10 +625,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "f7dffe3d1b38a77010841f66c2739823eb6b189ace12090be050058a473d3edf",
+      "sha256": "180f9563035cc22b8149e26ff3c88a0fae9743e1ac21e6e8b6cc67e85a28e977",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -618,6 +652,7 @@
     },
     {
       "file": "urbanev_0018.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f5_h3.npz",
       "target_id": "urbanev_176ef98ce71e6eb0",
@@ -628,10 +663,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "63091b1c401366cb23cb752baa54772df6cf7acbdaccfabf26d56a77a9c06d5d",
+      "sha256": "8233584123fe69ba62575102f586063db91cc92810037ad688769bd1f6f920e3",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -654,6 +690,7 @@
     },
     {
       "file": "urbanev_0019.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f5_h6.npz",
       "target_id": "urbanev_66aec674811b0518",
@@ -664,10 +701,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "938b15c0b87d8defbbda6c0e55b3c048591a01d4e7c80728037c6d256e0cf502",
+      "sha256": "97517a55181f00771ccbff438fe7bbcd76ad0e89c6bb786bc19f267fa979fca7",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -690,6 +728,7 @@
     },
     {
       "file": "urbanev_0020.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f5_h9.npz",
       "target_id": "urbanev_4229615099a203dd",
@@ -700,10 +739,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "8d0e2f644369e9b4478e08265d4019ec6b03d557d08f91873b414dfe81c30765",
+      "sha256": "3721df15a2ed403356e9b951a1a841470d94c7fb578f2fc58709a38025436b08",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -726,6 +766,7 @@
     },
     {
       "file": "urbanev_0021.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f6_h12.npz",
       "target_id": "urbanev_9aee22dcc716bfb3",
@@ -736,10 +777,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "2d6477dac2da64bd85cf4f5a50e9a01fba26e258b560b143c47892d35c2bb8ac",
+      "sha256": "d9ce9aa630fab3ede164ee50736da7a1ab64dcd2be2c17aeecc4c76a1e9ab090",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -762,6 +804,7 @@
     },
     {
       "file": "urbanev_0022.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f6_h3.npz",
       "target_id": "urbanev_6487a26b99f5bda1",
@@ -772,10 +815,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "6762ba89eb31518fd1b6646e6095be6d0f841eff4b17383863ced7da69c9fae5",
+      "sha256": "1a8afdacd7a4e515d6d824302cb71ca9e47cb281a799a4e51e4c196c6d90dbe4",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -798,6 +842,7 @@
     },
     {
       "file": "urbanev_0023.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f6_h6.npz",
       "target_id": "urbanev_0e4283c4bd3d0b32",
@@ -808,10 +853,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "1d7e61f6fc089f200565c4c82f535c32702afb7a28fa4d41b52415019cd7d6a3",
+      "sha256": "e3e568d13053cb65f68814a478dcc1e66f90673da7081aad3f848a74e5c9ad98",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -834,6 +880,7 @@
     },
     {
       "file": "urbanev_0024.npz",
+      "family": "router",
       "dataset": "urbanev",
       "source_label": "attempt_01__predictions__router_v1_f6_h9.npz",
       "target_id": "urbanev_ee2aeb87922a3ad5",
@@ -844,10 +891,11 @@
         275
       ],
       "target_construction": "occupancy_float32_then_storage_dtype",
-      "sha256": "bd458c1ba7e989ec7b7142a9b9cd12d7a7073adba2e4f1217626cf3408e56b97",
+      "sha256": "337289ddaee6e948af08d4c9f75d112a9c602e460314d4f3775fe501c4038919",
       "keys": [
         "caper",
         "dataset",
+        "family",
         "gates_hard",
         "gates_mlp",
         "gates_soft",
@@ -870,6 +918,7 @@
     },
     {
       "file": "urbanev_0025.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f1_h12__predictions.npz",
       "target_id": "urbanev_4462eb5c0aad68d7",
@@ -880,10 +929,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "e28cafdee1df48fce949cd0201b2f5f3058a85e49e075a016d0e5b24492b60df",
+      "sha256": "f5235d8c97dcb1c0db4c51e50299454b6a76479eff4bf39a6644e54cf192a775",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -902,6 +952,7 @@
     },
     {
       "file": "urbanev_0026.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f1_h3__predictions.npz",
       "target_id": "urbanev_5160f26efabbe491",
@@ -912,10 +963,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "ba76d2c36abef5b58122141bda03a6040b88e3650d2d6702d4a73770f1a3e7c4",
+      "sha256": "29ac971e65edf11512c49196fd4ea8defb6021d60207542aabffee86a4e29e3b",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -934,6 +986,7 @@
     },
     {
       "file": "urbanev_0027.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f1_h6__predictions.npz",
       "target_id": "urbanev_f3654c5679529cd2",
@@ -944,10 +997,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "62f425235592cc08b50c73840826b3931a35dcc339e5c5c37d848867af430d0f",
+      "sha256": "10e97db2bf506915a66fe974ddedac43c09d23f6cd5355e85310b0af965dbe9b",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -966,6 +1020,7 @@
     },
     {
       "file": "urbanev_0028.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f1_h9__predictions.npz",
       "target_id": "urbanev_23490b208a58fe10",
@@ -976,10 +1031,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "478f0cfa5c4feea55a68dbf0ac35fbc22386f8ed5e3c2475ac4d4cae269bb5bd",
+      "sha256": "29740f471b7ea72ec9f0dfc9a74d0dbc25962bf552a75857e83ef9f4ccd453ca",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -998,6 +1054,7 @@
     },
     {
       "file": "urbanev_0029.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f2_h12__predictions.npz",
       "target_id": "urbanev_7a7de38f63aa63ea",
@@ -1008,10 +1065,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "e6663db1f5e780113813ccdfd8dd6d5379014630a85e8f6c9c2bd12a03f3d375",
+      "sha256": "5f4e2351e36825cf19952eea2cbfd97a71f7375d1f11fa02f927a6e8eb0c723d",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1030,6 +1088,7 @@
     },
     {
       "file": "urbanev_0030.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f2_h3__predictions.npz",
       "target_id": "urbanev_10f46c0cc0d0af66",
@@ -1040,10 +1099,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "6c56cfa340e2d3addefdfea3be7bbf7a2d4fce84d247e04e8e1cba613fb6d041",
+      "sha256": "d9b4ac3dd761457723bad49dfbe52d988117b2646573b698fb66c6b8086e6e0c",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1062,6 +1122,7 @@
     },
     {
       "file": "urbanev_0031.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f2_h6__predictions.npz",
       "target_id": "urbanev_b057c7a245edd3b5",
@@ -1072,10 +1133,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "fc2be76b22ac2a559504271fdd1232c312358a8d3ec2d18de7db4da53d1d3a9e",
+      "sha256": "a0f9cb4b7d06c29b192ca7ed0619a1f1d9be090207cef4f145e998dc02ddbeb9",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1094,6 +1156,7 @@
     },
     {
       "file": "urbanev_0032.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f2_h9__predictions.npz",
       "target_id": "urbanev_9e07f892b6691cdb",
@@ -1104,10 +1167,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "d4fbed227abc26ae513d70a747239ba723d446311a6e23ea79b24bca65ed30a7",
+      "sha256": "b792f49d759949bb56d9e416bcb0a01d0273b30d6bdc7e01e040fb2c0c8d2add",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1126,6 +1190,7 @@
     },
     {
       "file": "urbanev_0033.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f3_h12__predictions.npz",
       "target_id": "urbanev_520d070b7da4756e",
@@ -1136,10 +1201,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "e50d960978efe9dbde427c88ce11d37ba78b3b0997e8b82b43079eb734c62018",
+      "sha256": "876f319cbe975c47f466c9dc98ff552307c65f530fa97bbfafcf844da115d9c5",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1158,6 +1224,7 @@
     },
     {
       "file": "urbanev_0034.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f3_h3__predictions.npz",
       "target_id": "urbanev_86a3bda77f777e18",
@@ -1168,10 +1235,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "802b448f67925f27638bd03d7f78b152ca1cc5f0f39225ac6a3595f68bfbb085",
+      "sha256": "976243d4d7d2f02c7ac6e3717e7216a1a803db8e6a0096899d8387469abc05aa",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1190,6 +1258,7 @@
     },
     {
       "file": "urbanev_0035.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f3_h6__predictions.npz",
       "target_id": "urbanev_c24feb6ccfb920f0",
@@ -1200,10 +1269,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "097e9550f6a1b792d481396fe2f6a703f87e9ef12f2b2e7f3128b25aafd69bfe",
+      "sha256": "67af0c157003ec3d74727d7d954559e901c9410414b3846dae5d83ae94ecb45a",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1222,6 +1292,7 @@
     },
     {
       "file": "urbanev_0036.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f3_h9__predictions.npz",
       "target_id": "urbanev_044c3664c80f25b2",
@@ -1232,10 +1303,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "bc034d4ff2b23edd3acd18f813babe0d2202ec69158d47ddd1bc87fdc556e1a9",
+      "sha256": "2885cb7cb4fb9d970d95317c79a1dc0d8f3f743709defa7d7bb1c4e87b2d6408",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1254,6 +1326,7 @@
     },
     {
       "file": "urbanev_0037.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f4_h12__predictions.npz",
       "target_id": "urbanev_dc4f9fe5e0ad3b27",
@@ -1264,10 +1337,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "219b65af08aa199ac002871a241914f245ed07cb9d6e33d85606d41cd023ea40",
+      "sha256": "c99507086a35ce6ca1088f326a42dc21679613a8757cb1563c8feae24c3a1943",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1286,6 +1360,7 @@
     },
     {
       "file": "urbanev_0038.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f4_h3__predictions.npz",
       "target_id": "urbanev_715e6518e62abe53",
@@ -1296,10 +1371,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "c787bb227c8c5225f9c55e94cca5717d9b8aeef7d3302c25d25a0952598a5da2",
+      "sha256": "d60d8dab9648d050df5ea5102701e73481862fe846c0e5af5725c7085eb98ec6",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1318,6 +1394,7 @@
     },
     {
       "file": "urbanev_0039.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f4_h6__predictions.npz",
       "target_id": "urbanev_d99cf521b167d860",
@@ -1328,10 +1405,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "57aa3de8e57bc13eef5fd923f484d395ef57efe8c896bbdb55d8bf005f321b49",
+      "sha256": "d3135a2c89505100b632d22a44c978f74614241aaa2b8ef9609575dbfdf591c5",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1350,6 +1428,7 @@
     },
     {
       "file": "urbanev_0040.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f4_h9__predictions.npz",
       "target_id": "urbanev_7f22d933c7ca3a14",
@@ -1360,10 +1439,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "1a482d91f8317c5c304adb767854d2764d2c78e2e58ceaf3989bb79f53c04254",
+      "sha256": "f19b7852cb3d1b86015b812e0efdb5e610c6149ed10e05061af0025a231f3b78",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1382,6 +1462,7 @@
     },
     {
       "file": "urbanev_0041.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f5_h12__predictions.npz",
       "target_id": "urbanev_9c644dca5823666d",
@@ -1392,10 +1473,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "8e4bf19f64abe554264ec33161b85f0bdf8c7dcd65741fd73d16a1f51b95692f",
+      "sha256": "45c52b91f0ffd17142e22daf50fbdbcb7c07eb3a8ff9cfa3487f8eb89b098296",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1414,6 +1496,7 @@
     },
     {
       "file": "urbanev_0042.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f5_h3__predictions.npz",
       "target_id": "urbanev_39f8d3e252895f70",
@@ -1424,10 +1507,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "253516c40eb75e50fcd07aab110d651b896148a2f7b0acdcd401007905f98338",
+      "sha256": "2b1a5efe8a0a84c6f40e6b5a1b1c1542836c505ac1589d2608e0e288ac8e6c2d",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1446,6 +1530,7 @@
     },
     {
       "file": "urbanev_0043.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f5_h6__predictions.npz",
       "target_id": "urbanev_0a0c1a4adeddc7f1",
@@ -1456,10 +1541,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "0f3818875e06dc724837e8553a701f62ce85d26c4a6f8f252e9b15264d41b83b",
+      "sha256": "335c2f4412f160275cab33651cd455f9de259c963d49ee16d566a2c3ea0003f2",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1478,6 +1564,7 @@
     },
     {
       "file": "urbanev_0044.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f5_h9__predictions.npz",
       "target_id": "urbanev_a47da1a296504274",
@@ -1488,10 +1575,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "b4eb57ceba06b2c36b37fc6f971039cf93d0dd6ab9f010688ea0f7ae38cfb18e",
+      "sha256": "540ceb4e00d694962a9f26eec49dd75cd9f5c844ab767172af92063f7c9ad219",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1510,6 +1598,7 @@
     },
     {
       "file": "urbanev_0045.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f6_h12__predictions.npz",
       "target_id": "urbanev_6428ba07883b635a",
@@ -1520,10 +1609,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "50ab28078217055875b57de665d36ebb3671e50fcb1ccebffff204c6924052ed",
+      "sha256": "256f8c8c1fcf19fa530cbe94fee027703ce406b13052dea8c65a8016cd258076",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1542,6 +1632,7 @@
     },
     {
       "file": "urbanev_0046.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f6_h3__predictions.npz",
       "target_id": "urbanev_d6784735ef25e51a",
@@ -1552,10 +1643,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "1ce7911d7197128e11e6c137a19000a31d6857b35e181dcc6ebcf33b2234ac3b",
+      "sha256": "0090ed0e3088bfd332023503de619f64b0d5bb65c86bf8630504bf668f2333f5",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1574,6 +1666,7 @@
     },
     {
       "file": "urbanev_0047.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f6_h6__predictions.npz",
       "target_id": "urbanev_ae78b879ebf3fe82",
@@ -1584,10 +1677,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "2d0cafd42fcdf4bc3aca3dd69d8294870da94107b9b6be0e6c6ee42a714baac8",
+      "sha256": "17b2e105c8cf5a9d4f75f170252b4d497f0d89ab484fcdcf77523d5226822e72",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1606,6 +1700,7 @@
     },
     {
       "file": "urbanev_0048.npz",
+      "family": "chronos",
       "dataset": "urbanev",
       "source_label": "full__f6_h9__predictions.npz",
       "target_id": "urbanev_4ad56e9206d87b6b",
@@ -1616,10 +1711,11 @@
         275
       ],
       "target_construction": "occupancy_float64",
-      "sha256": "bb9672f012302e0139a9da05b194d26c22df671378e55a5c332321893bf9d833",
+      "sha256": "626fe74ceb94a2a53bbeea46d1e406536bf6d89274cd3ef49981641242e3e155",
       "keys": [
         "clipped_prediction",
         "dataset",
+        "family",
         "first_history_index",
         "forecast_origin",
         "last_history_index",
@@ -1638,6 +1734,7 @@
     },
     {
       "file": "urbanev_0049.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f1_h3_s42_b983751c9f6c__attempt_01__predictions.npz",
       "target_id": "urbanev_52953cbb748dc48a",
@@ -1648,9 +1745,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "87875c199896d9de080ccd430bf741333082b20f48407bc9ca0b5c2b95159463",
+      "sha256": "1a98e2d5d3a8bd69e162d9cfe467ac69a686d446302c9b2bd58e44088a3399fc",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -1665,6 +1763,7 @@
     },
     {
       "file": "urbanev_0050.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f1_h6_s42_ebcbe915def4__attempt_01__predictions.npz",
       "target_id": "urbanev_1b3eaef2fac2da79",
@@ -1675,9 +1774,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "3def226fb051bce68dfbf15ba5404ba08303606f5286c9861cad79121a7a7948",
+      "sha256": "9cb23590aef3bfbe35ff44cf6b1ec70a25a26b153a8f7c728533f219d1a70ec2",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -1692,6 +1792,7 @@
     },
     {
       "file": "urbanev_0051.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f1_h9_s42_88691104dd29__attempt_01__predictions.npz",
       "target_id": "urbanev_dec1b6989a2b1069",
@@ -1702,9 +1803,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "3bad9f6dac31bf6d2775e6c6ef8ee56e4d75f532cc0f6cfa92a796d3f10e62f4",
+      "sha256": "5d9f4eb1d295b6c6beeb931c8497d4bf47611773541d49c5c107de6c971fe231",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -1719,6 +1821,7 @@
     },
     {
       "file": "urbanev_0052.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f1_h12_s42_cf08d46c5395__attempt_01__predictions.npz",
       "target_id": "urbanev_9d7001a39cb32ef9",
@@ -1729,9 +1832,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "e66d93d5e1cb04b10e88d8d957762b19fe410ccd86cf43e3f4052eff409d8223",
+      "sha256": "9ecc543a20cb73db6e52c843b99c5c5fd2000928b5940213552d62ef730fe35c",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -1746,6 +1850,7 @@
     },
     {
       "file": "urbanev_0053.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f2_h3_s42_16855910d71d__attempt_01__predictions.npz",
       "target_id": "urbanev_bda992fdbd97ca99",
@@ -1756,9 +1861,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "2de25433f4f8b5ab1137d0020e77102cb43a519eb558c292f0e5a96d897cc193",
+      "sha256": "fb95a8c2c475b75b2c3ff9126e49ea8a6c781fcf0c153d1377aff438bbcbb210",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -1773,6 +1879,7 @@
     },
     {
       "file": "urbanev_0054.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f2_h6_s42_c0d76eb84bdf__attempt_01__predictions.npz",
       "target_id": "urbanev_3bff673e132ae94a",
@@ -1783,9 +1890,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "93fa7a265c6016c12a5fe6346b5129d3238ba2b6e7fb8a3b13b8900f5415fcca",
+      "sha256": "d71462a0fe77232b4148030c2ccdf4bdaf24f1fcb14b58ec33b2df1a7ba5c8c2",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -1800,6 +1908,7 @@
     },
     {
       "file": "urbanev_0055.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f2_h9_s42_46dc7631c416__attempt_01__predictions.npz",
       "target_id": "urbanev_abdda7f07d7cbf91",
@@ -1810,9 +1919,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "12f3d1abae506fa9754118fea4f7f5e6bbaab1c9ea13b2b5fbf7593df1ef1283",
+      "sha256": "d631d2463392a2683d821af695d49b8e6093b6f72b3bd8c3861d582fc024c0b4",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -1827,6 +1937,7 @@
     },
     {
       "file": "urbanev_0056.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f2_h12_s42_023f19a0ee36__attempt_01__predictions.npz",
       "target_id": "urbanev_44139f63edf74c4a",
@@ -1837,9 +1948,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "49105c4db46ef7b9464bfa7f7f2a6dff53379ca35e846f4246d47eec0d62923d",
+      "sha256": "31588e79524266434eb69d6f27cdcc4314b3858a81ac60a5958564d633f98a05",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -1854,6 +1966,7 @@
     },
     {
       "file": "urbanev_0057.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f3_h3_s42_f0226d4ab720__attempt_01__predictions.npz",
       "target_id": "urbanev_ec9c131a1cddb845",
@@ -1864,9 +1977,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "ddd5017d09676bcc77756dc7871bb6e842ecab8248869d498184cd0ca519cd28",
+      "sha256": "4c6c391b31d6744d54c16c835cb30ff6edaa4f809dd2e5b598ab296b319c19db",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -1881,6 +1995,7 @@
     },
     {
       "file": "urbanev_0058.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f3_h6_s42_4889434e2aa8__attempt_01__predictions.npz",
       "target_id": "urbanev_da3d8411acc47887",
@@ -1891,9 +2006,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "80c3b251fa8b5e79945b3267d21a37183ebf571f4e0e9200f87ae2730beaadae",
+      "sha256": "1b83c3bdabc403426b043fc2d0c18ff13a3e7403e6c2fa4cecf1ba44f81f9c57",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -1908,6 +2024,7 @@
     },
     {
       "file": "urbanev_0059.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f3_h9_s42_7b2deb763d53__attempt_01__predictions.npz",
       "target_id": "urbanev_036e9c570168a399",
@@ -1918,9 +2035,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "fb3b11de2d0dccca80352837bc9062badc0a8706d2239d22535e6d64b03e07e4",
+      "sha256": "3c34900e024b4428bb5cdc2ec2874e25819ef3560ff7ce1936f716f6cbe09a99",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -1935,6 +2053,7 @@
     },
     {
       "file": "urbanev_0060.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f3_h12_s42_a4f4ca7ed501__attempt_01__predictions.npz",
       "target_id": "urbanev_045ee046a357faaa",
@@ -1945,9 +2064,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "98984f7c4323f51a567b4f60f3c26bba473cd411ce55148743d35658afba2063",
+      "sha256": "45d7e32e8f4167179833653ca552e4d50bb0cf2d480a0df7f901987c798e767c",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -1962,6 +2082,7 @@
     },
     {
       "file": "urbanev_0061.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f4_h3_s42_47b4eb248b56__attempt_01__predictions.npz",
       "target_id": "urbanev_cacf02db70ff9a1d",
@@ -1972,9 +2093,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "f78c8f17b9ca18dd4a0ba8af3168c1f084032ba313848fc73b68695c1318c7f2",
+      "sha256": "60773729b559bf371a28ffe08d21cb7401e3cb67cd188979382514b4092a2a86",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -1989,6 +2111,7 @@
     },
     {
       "file": "urbanev_0062.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f4_h6_s42_e1e1f86529bf__attempt_01__predictions.npz",
       "target_id": "urbanev_31e6696585d4a5f8",
@@ -1999,9 +2122,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "a1746134202849d484073191097c84e381abbe70ef5b67467a411192b63892ba",
+      "sha256": "a9b2fb6f1ea9424df4d67ef89000f7ad035fb011167f0d5e5fb7aa3d4e0e8f33",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2016,6 +2140,7 @@
     },
     {
       "file": "urbanev_0063.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f4_h9_s42_eb673f1fb4c6__attempt_01__predictions.npz",
       "target_id": "urbanev_d297193d739af4b1",
@@ -2026,9 +2151,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "41d0ec9d45e8e3889eb6f19cc0b8e98f867cd950fd904fcd790f971816d22f0d",
+      "sha256": "d29be23ba6febae0db5d810dfe3115dba2fc4b0fb7bc1106c62e86a652d28362",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2043,6 +2169,7 @@
     },
     {
       "file": "urbanev_0064.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f4_h12_s42_6ccf3d41a3ff__attempt_01__predictions.npz",
       "target_id": "urbanev_edb35a40c5980c85",
@@ -2053,9 +2180,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "b8bc3e593b03d3b413fbe5caa286b7b009d4e27371850c11b5ff81620714a6d9",
+      "sha256": "221b3971cb5e406bce50bd34ffcc253ec740f59837ba04ee2270ce0b699cb9a9",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2070,6 +2198,7 @@
     },
     {
       "file": "urbanev_0065.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f5_h3_s42_b3e4e198fcdc__attempt_01__predictions.npz",
       "target_id": "urbanev_84c32729ffa9b42f",
@@ -2080,9 +2209,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "afbcfeeac36a70a41e7a3e59b385240a2bf85f845e1a84ec8f85de229481d7b6",
+      "sha256": "a0aa3c88af95f999cb3a46b4416dc985f51b0bfdb5f4443102e5694c7736360b",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2097,6 +2227,7 @@
     },
     {
       "file": "urbanev_0066.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f5_h6_s42_197548024179__attempt_01__predictions.npz",
       "target_id": "urbanev_b298df5e9a26e0dd",
@@ -2107,9 +2238,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "74a041bb92f4e7f08fa9a9b95b6101ed5f307eb9237a08117e4bd4d841993c63",
+      "sha256": "fcc047d2135f01045b6356ec5b613e674666020836f25396970d96913529dff2",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2124,6 +2256,7 @@
     },
     {
       "file": "urbanev_0067.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f5_h9_s42_f8e22b36a504__attempt_01__predictions.npz",
       "target_id": "urbanev_7beadb196b160b55",
@@ -2134,9 +2267,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "7bb521267cde71c7d9774a9263368f40c4397108f46488d77420be317264d19e",
+      "sha256": "c927e2673f25a732ca5f1203a554f16cd6e80711e31ef98684a4924d2577ab87",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2151,6 +2285,7 @@
     },
     {
       "file": "urbanev_0068.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f5_h12_s42_4c0ce8f6d6b3__attempt_01__predictions.npz",
       "target_id": "urbanev_62f224e2d1bc918b",
@@ -2161,9 +2296,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "97e2fbcdcfacc78340e8637a092d7ea3ad5bfbfc97466e43a618253a8b97e253",
+      "sha256": "a4e0015b5f43d94ba9ebe06115289639d63d938f225b4c3a94128ac9ed04e360",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2178,6 +2314,7 @@
     },
     {
       "file": "urbanev_0069.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f6_h3_s42_1650c11962c1__attempt_01__predictions.npz",
       "target_id": "urbanev_26c4441693e0bfff",
@@ -2188,9 +2325,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "d8cb0d510e0e4eec98d61b64bd3109d718f73cf43d9236ddb035d161dbb54a9f",
+      "sha256": "16e9cb9ae3a8b1d84164681e365cc254127b79b4328e29a5521ad7172b94c888",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2205,6 +2343,7 @@
     },
     {
       "file": "urbanev_0070.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f6_h6_s42_03f97beb1c2c__attempt_01__predictions.npz",
       "target_id": "urbanev_21b913fc80f7d49f",
@@ -2215,9 +2354,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "c59259d1fdd8a1786a92aa61d25ef56c2b93f93ded29a247d76bb35a1b0a006c",
+      "sha256": "64eb1909110c61de2704a7cfc1b0d8987c93adbdd0eead550b629ac2aaf4f93a",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2232,6 +2372,7 @@
     },
     {
       "file": "urbanev_0071.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f6_h9_s42_4e8375979176__attempt_01__predictions.npz",
       "target_id": "urbanev_ce98400bb0d77cdc",
@@ -2242,9 +2383,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "3f0664d005a3afa6049f953ed585119142c1b1df01d2e0a701bc6647484220af",
+      "sha256": "6ebf23087f6bfde2c5582109dfd1700c3d2d064d9560f7c41126753bb6c19f28",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2259,6 +2401,7 @@
     },
     {
       "file": "urbanev_0072.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_GT_only_f6_h12_s42_7e95393904d1__attempt_01__predictions.npz",
       "target_id": "urbanev_655a126624320a47",
@@ -2269,9 +2412,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "2541dc0d449d4a03fc636b342291c11adbd531fe71d17d43ce6a032a88f1cecc",
+      "sha256": "bdd6a55712efa748a32d809df4fe036762335f68b3d6f17c99cd6137197e6b98",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2286,6 +2430,7 @@
     },
     {
       "file": "urbanev_0073.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f1_h3_s42_40b8402cd68d__attempt_01__predictions.npz",
       "target_id": "urbanev_52953cbb748dc48a",
@@ -2296,9 +2441,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "a11d32125e174e8cd3f847dd8e7cb7d7f404c2f653ec12c3f688c0751b331fa0",
+      "sha256": "e6849e827fa30e4e65b72d4682b405d0f127813f73ace574bf0b2984cf9d7a5f",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2313,6 +2459,7 @@
     },
     {
       "file": "urbanev_0074.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f1_h6_s42_023aa22b9c9c__attempt_01__predictions.npz",
       "target_id": "urbanev_1b3eaef2fac2da79",
@@ -2323,9 +2470,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "be32931cdd886a08bd4d632868f58efb1d142618822b4b850a8191aef5dd36c2",
+      "sha256": "96f55c1ab9b8f3efaa2210c77c46bac28c1c2c8f0902aad3fee58d2477dd4820",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2340,6 +2488,7 @@
     },
     {
       "file": "urbanev_0075.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f1_h9_s42_381da5fc2edd__attempt_01__predictions.npz",
       "target_id": "urbanev_dec1b6989a2b1069",
@@ -2350,9 +2499,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "de0330d5ca52a625d774a7bf43e88345e652211d4fe46b8efc73abce8f68f3ed",
+      "sha256": "ff634dfcd20b267b18f66491db26e14cc0c0b7a972774ea8f6064b513a16be7d",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2367,6 +2517,7 @@
     },
     {
       "file": "urbanev_0076.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f1_h12_s42_06f26467d890__attempt_01__predictions.npz",
       "target_id": "urbanev_9d7001a39cb32ef9",
@@ -2377,9 +2528,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "976a8460dc8465bc2c92c9d50d124a5c94def30ef52e3dfa39368b88cd7b2eb2",
+      "sha256": "4e57b56cb95d9d3112588e9b1dcd0fff197a0d4d5aaba501ad41f7be40545ee6",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2394,6 +2546,7 @@
     },
     {
       "file": "urbanev_0077.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f2_h3_s42_503bad3f6941__attempt_01__predictions.npz",
       "target_id": "urbanev_bda992fdbd97ca99",
@@ -2404,9 +2557,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "2b1e8058ad27858783e8116bfa714b588b257db80e3f8cb057f878c7037c2150",
+      "sha256": "3a3549149eb14b41b3301ff2335cc21888d06b86880131ed376098a05f909959",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2421,6 +2575,7 @@
     },
     {
       "file": "urbanev_0078.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f2_h6_s42_796e2489790e__attempt_01__predictions.npz",
       "target_id": "urbanev_3bff673e132ae94a",
@@ -2431,9 +2586,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "3383986104e2a51434a9185358a6b7dfbb3a6f33a2254d19f6be2e961147e155",
+      "sha256": "f0c6b33063e65e0b510e39344f3142b55836dd028eda2fd77cb6f35b9d2d5696",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2448,6 +2604,7 @@
     },
     {
       "file": "urbanev_0079.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f2_h9_s42_b35c2396ce82__attempt_01__predictions.npz",
       "target_id": "urbanev_abdda7f07d7cbf91",
@@ -2458,9 +2615,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "1b1d6395065b97d559051056da6442a4544a47a66dcf563aa41cfe56a6e14ff2",
+      "sha256": "95f6480032d4953f5311ce84eeef7261e0d2f3f93a0517958114f67fbeee8627",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2475,6 +2633,7 @@
     },
     {
       "file": "urbanev_0080.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f2_h12_s42_05c6667def07__attempt_01__predictions.npz",
       "target_id": "urbanev_44139f63edf74c4a",
@@ -2485,9 +2644,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "80f2acb42a051fc7878cc786fa85510558623c2e3e50cdccca331886eeb71e18",
+      "sha256": "0b2f46d9ccdaec74c5df4174ce01ff7cf5a1772292954f258326e9b793466b37",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2502,6 +2662,7 @@
     },
     {
       "file": "urbanev_0081.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f3_h3_s42_2cf8951305aa__attempt_02__predictions.npz",
       "target_id": "urbanev_ec9c131a1cddb845",
@@ -2512,9 +2673,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "c0ae5ce57ba21bcfb8c119d2b13aa01e8b747d652f17189cee22664b684d8c99",
+      "sha256": "412f6d68aa37dd1386386324ac81040c8e0adc304d8f062f1d04f50c8b736e2f",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2529,6 +2691,7 @@
     },
     {
       "file": "urbanev_0082.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f3_h6_s42_f3ddf74ee26e__attempt_01__predictions.npz",
       "target_id": "urbanev_da3d8411acc47887",
@@ -2539,9 +2702,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "ed87954a8fd8fc77dd22084e70825228a505d19722af15781fe2af4fb7098e60",
+      "sha256": "0ebf03629561911f601a6fc13f63c38be9fa0c691df242c7168e48ee5a2b86d4",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2556,6 +2720,7 @@
     },
     {
       "file": "urbanev_0083.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f3_h9_s42_db41a84ae421__attempt_01__predictions.npz",
       "target_id": "urbanev_036e9c570168a399",
@@ -2566,9 +2731,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "3c7b314b890f4f535dc916b6dd39eb736a82149c8092bfcf1845693cadf51ead",
+      "sha256": "61ace8c604c73795c0b92a30542bddae159f3f03e4984ff4be3b15f885a98f6b",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2583,6 +2749,7 @@
     },
     {
       "file": "urbanev_0084.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f3_h12_s42_df7d84a95f53__attempt_01__predictions.npz",
       "target_id": "urbanev_045ee046a357faaa",
@@ -2593,9 +2760,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "525bbee259e1ef494e5f3e4bced5670453a309bb264511d15c7c390fe53f5041",
+      "sha256": "2a069034fa35f348eff9e0c5c3824d5778073e22e9c22e95cbff6cdaa540c87d",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2610,6 +2778,7 @@
     },
     {
       "file": "urbanev_0085.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f4_h3_s42_aaba420bbe91__attempt_01__predictions.npz",
       "target_id": "urbanev_cacf02db70ff9a1d",
@@ -2620,9 +2789,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "b922b05ddef590e34f325ee5adc8e28ae121ae5dc0b594de51b1e7243d0c855b",
+      "sha256": "120f1f56528343ff99ba558f0a63ed081addea161a884f426885203983cf852c",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2637,6 +2807,7 @@
     },
     {
       "file": "urbanev_0086.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f4_h6_s42_4785c745e6b7__attempt_01__predictions.npz",
       "target_id": "urbanev_31e6696585d4a5f8",
@@ -2647,9 +2818,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "32beb5b759f34843d07021089013de1ef649bb05f478aa445b6276d4ae0603f9",
+      "sha256": "b30ab45dfbbf0bb182b138b74fc9ed8c025de57698b78f15b33eb0cee2bdfb67",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2664,6 +2836,7 @@
     },
     {
       "file": "urbanev_0087.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f4_h9_s42_a8138e9d6d02__attempt_01__predictions.npz",
       "target_id": "urbanev_d297193d739af4b1",
@@ -2674,9 +2847,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "8f583ec156827c6b7e46d780ca4623eee74eac508564f2e8913fce4b61b44753",
+      "sha256": "3f3233a0764851926c9bcd247e9f7537109bb51fc69cbdd85d0b836c69c52f70",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2691,6 +2865,7 @@
     },
     {
       "file": "urbanev_0088.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f4_h12_s42_5e85c08ca457__attempt_01__predictions.npz",
       "target_id": "urbanev_edb35a40c5980c85",
@@ -2701,9 +2876,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "667688f73871170c036449b5caf40245f0c24c7293c07d07c6bdd4e8693c24b1",
+      "sha256": "9f3c8a803c5f2174f52b9dd25427cbe5c7fab0d26ad228e9b3e194d5b9f2a3b5",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2718,6 +2894,7 @@
     },
     {
       "file": "urbanev_0089.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f5_h3_s42_f56c1c7f5fa8__attempt_01__predictions.npz",
       "target_id": "urbanev_84c32729ffa9b42f",
@@ -2728,9 +2905,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "dd99d2aedda3f1daa708019f4a8967ca81ed297d866f854b34258f7055e68740",
+      "sha256": "5d80e464a02e6511e838aa22326e80f8992befedca100fda2a3f49aedae89b8d",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2745,6 +2923,7 @@
     },
     {
       "file": "urbanev_0090.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f5_h6_s42_e564a69f5d22__attempt_01__predictions.npz",
       "target_id": "urbanev_b298df5e9a26e0dd",
@@ -2755,9 +2934,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "b0d8b0b4a5f866e61005e4d921623b733440d6df2f1a9013298608ea0417d366",
+      "sha256": "6118303b1615cca594788e3691c0dfeb35b38f940d2485d7b1d4467d37059272",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2772,6 +2952,7 @@
     },
     {
       "file": "urbanev_0091.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f5_h9_s42_3beed6f0e183__attempt_01__predictions.npz",
       "target_id": "urbanev_7beadb196b160b55",
@@ -2782,9 +2963,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "8c5d8e0b5004c3add4ed7d4baab88e8dac3a9b6b7e7de31929814aaa18968302",
+      "sha256": "aad4f3cc56799d77abc4a29cb157c045a543773ea7d2e2a930a8f9047d1a6e64",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2799,6 +2981,7 @@
     },
     {
       "file": "urbanev_0092.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f5_h12_s42_9de06e1d05d6__attempt_01__predictions.npz",
       "target_id": "urbanev_62f224e2d1bc918b",
@@ -2809,9 +2992,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "10db354ea22e1814be36235b1215ed1d06403f0142e2d7b564ee61c2b567c727",
+      "sha256": "2113916094d394e288b44c96701d453355a013c366b7b1f24380eca74ce535a4",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2826,6 +3010,7 @@
     },
     {
       "file": "urbanev_0093.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f6_h3_s42_0b81ab8a8cd6__attempt_01__predictions.npz",
       "target_id": "urbanev_26c4441693e0bfff",
@@ -2836,9 +3021,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "c788f2b7cbf336c8a1a9fa444249db88092e2873045a3161275be782266fc9a1",
+      "sha256": "5162ee505096ae1aa0b045984c11bdb8a2fddde6e1059e3dc545d12ac4b4c964",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2853,6 +3039,7 @@
     },
     {
       "file": "urbanev_0094.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f6_h6_s42_2cbd4a7c4e03__attempt_01__predictions.npz",
       "target_id": "urbanev_21b913fc80f7d49f",
@@ -2863,9 +3050,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "a95370ca5059ba2f3215e41c1c5cb42462231e1e749c490758e2d3181a11a433",
+      "sha256": "e6f0251a89fe52a10976db16e27a984ea8d7cdbf97be9d3e961b3c340bf70f8d",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2880,6 +3068,7 @@
     },
     {
       "file": "urbanev_0095.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f6_h9_s42_93e406d128e8__attempt_01__predictions.npz",
       "target_id": "urbanev_ce98400bb0d77cdc",
@@ -2890,9 +3079,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "03d8ca2a6d5bb87bacbca15c07f85e69877944fc6fa80106533b7b3549e1c465",
+      "sha256": "0b3f1bb80cb689689f216f802a5ec8b283dd28bcc70e2ca610e59edf4a29965b",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2907,6 +3097,7 @@
     },
     {
       "file": "urbanev_0096.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_aligned_KD_f6_h12_s42_4482fe48d2f5__attempt_01__predictions.npz",
       "target_id": "urbanev_655a126624320a47",
@@ -2917,9 +3108,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "943d438976c58084c4b4563b35773aac3cc4e37a290e42a3feef2f06c83a2bb9",
+      "sha256": "9623b2388fbd3237bf1eef2c3e5c2500a953c6e8eec2e94edae1429c793b833e",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2934,6 +3126,7 @@
     },
     {
       "file": "urbanev_0097.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f1_h3_s42_7829a05618c5__attempt_01__predictions.npz",
       "target_id": "urbanev_52953cbb748dc48a",
@@ -2944,9 +3137,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "eaa5930ba4786552669a947a49ab802b4e2a06160481b624147f123c55a9a271",
+      "sha256": "c98ea421effaeed5f5e74e14fb8dd81ee8d6198d4bc3bc87833931d033eb556e",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2961,6 +3155,7 @@
     },
     {
       "file": "urbanev_0098.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f1_h6_s42_650780212911__attempt_01__predictions.npz",
       "target_id": "urbanev_1b3eaef2fac2da79",
@@ -2971,9 +3166,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "a3ac7a00b0b5e3f72171764c795e25d4f1a2217cf68ec6b356645d4395c186fc",
+      "sha256": "f2aca0817efc4ced4de747f5c3ceec07a774f2c83e4abecd20d4d8a0438dc33e",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -2988,6 +3184,7 @@
     },
     {
       "file": "urbanev_0099.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f1_h9_s42_7b3b12b88784__attempt_01__predictions.npz",
       "target_id": "urbanev_dec1b6989a2b1069",
@@ -2998,9 +3195,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "ca5beead8ab632e5b3694ccc03a7b546f80939b04925da66523dbd0633fce431",
+      "sha256": "9c121ad4b676692387ab7365151a6072d3bcb27926b2e0dcdc4995efb30ca322",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3015,6 +3213,7 @@
     },
     {
       "file": "urbanev_0100.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f1_h12_s42_7041aac0ed85__attempt_01__predictions.npz",
       "target_id": "urbanev_9d7001a39cb32ef9",
@@ -3025,9 +3224,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "cb8cf180a99c79b021df3ab2f85a334242ae5aa294dedc28d48224d2d9390168",
+      "sha256": "8179ed067910e4b9f5b323751de15ee4eddd014d558ed7ed0a5389698cc58b63",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3042,6 +3242,7 @@
     },
     {
       "file": "urbanev_0101.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f2_h3_s42_098f9fd6cb2b__attempt_01__predictions.npz",
       "target_id": "urbanev_bda992fdbd97ca99",
@@ -3052,9 +3253,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "11678e028a67eddde3a74f6963163b0f8a7de2e8a541cae1f69912ff4f01d7a1",
+      "sha256": "c29664928dfdde3e62596d53b0a2abc069ffec4c7a3d39f650e2cabeb1463df3",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3069,6 +3271,7 @@
     },
     {
       "file": "urbanev_0102.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f2_h6_s42_0ba61fc478a6__attempt_01__predictions.npz",
       "target_id": "urbanev_3bff673e132ae94a",
@@ -3079,9 +3282,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "dc790675281b34a46b00b5ec9855707a1126b5d96e604ee61b76c87e70bbd9b3",
+      "sha256": "dafe438c117f91655b1aa6084d0c487d16776312bc0a2e0efc8618c623b38318",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3096,6 +3300,7 @@
     },
     {
       "file": "urbanev_0103.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f2_h9_s42_75bc970e20d5__attempt_01__predictions.npz",
       "target_id": "urbanev_abdda7f07d7cbf91",
@@ -3106,9 +3311,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "f25354e8e7f197de1f27684560b9cd661fcd5dfaa94e723afe2d98cd34634d80",
+      "sha256": "911457a3031835c2382fa98f4238f276afea1cbe273b359c6a526473b2d1ef6c",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3123,6 +3329,7 @@
     },
     {
       "file": "urbanev_0104.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f2_h12_s42_c72053a30cfc__attempt_01__predictions.npz",
       "target_id": "urbanev_44139f63edf74c4a",
@@ -3133,9 +3340,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "e538a79a9a14ed46c856ff44b0024a8cd6e691f435198e18b918b16a9d7e3ebf",
+      "sha256": "3a140d03ebfdff3f2bdd96fcad0aaf42b8430a4dae63b201fdcd475adc6b6338",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3150,6 +3358,7 @@
     },
     {
       "file": "urbanev_0105.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f3_h3_s42_05e9bfabd32f__attempt_01__predictions.npz",
       "target_id": "urbanev_ec9c131a1cddb845",
@@ -3160,9 +3369,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "5ff1c6fb56e3faebfc4a04a3e235489ec27afab9d3b6bd4594f23b9b82a1bfa6",
+      "sha256": "c3dd6c5244e4aa80ed8bb7b16198fa3fddb481c6f7dfa4d04b7519e430a527c3",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3177,6 +3387,7 @@
     },
     {
       "file": "urbanev_0106.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f3_h6_s42_759aaf8463af__attempt_01__predictions.npz",
       "target_id": "urbanev_da3d8411acc47887",
@@ -3187,9 +3398,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "8851c81e61f754c3fbfd27243402da4b5615a212ab749bcd7eacaef58f377d53",
+      "sha256": "f64b3cecad3954e02b43036894e78a4a4efb2d88a1e2bed5b58f0d6b9b7f2631",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3204,6 +3416,7 @@
     },
     {
       "file": "urbanev_0107.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f3_h9_s42_ed7c0138427b__attempt_01__predictions.npz",
       "target_id": "urbanev_036e9c570168a399",
@@ -3214,9 +3427,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "607ea07ecb4f1e4152b322b05bb380459b7e91be00ee59c3b822724a2067113d",
+      "sha256": "4b4f11b8d801151b6a5f01f1c31d89209dd0f5aa60d3953655fbb230640d5ba8",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3231,6 +3445,7 @@
     },
     {
       "file": "urbanev_0108.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f3_h12_s42_e939c406669c__attempt_01__predictions.npz",
       "target_id": "urbanev_045ee046a357faaa",
@@ -3241,9 +3456,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "37ef8b09a8384521f59b1cecb5caf9ba179efa9aa1e5094ddaaac54cfca05c6e",
+      "sha256": "8faecad23c8e8bb213f11847da0015410b4c13a19e1bba84e59de993ea5e42f1",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3258,6 +3474,7 @@
     },
     {
       "file": "urbanev_0109.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f4_h3_s42_cbb097c2348c__attempt_01__predictions.npz",
       "target_id": "urbanev_cacf02db70ff9a1d",
@@ -3268,9 +3485,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "533e537cb72a484017d9247168dcecd23e7cec9046660f2ae3160160e12e491b",
+      "sha256": "2106792627707b9a222c2df7671f936e3b4692259e3ef769d179dee947b97041",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3285,6 +3503,7 @@
     },
     {
       "file": "urbanev_0110.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f4_h6_s42_1228cba7928d__attempt_01__predictions.npz",
       "target_id": "urbanev_31e6696585d4a5f8",
@@ -3295,9 +3514,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "b6efa1d87bde9116b2536debf554620b57ef003f34ccbe54bd151389b0b9e652",
+      "sha256": "9cac5b95b2ae144a267e281348a094d5cb307f1fd340472ccb4441dce7560a69",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3312,6 +3532,7 @@
     },
     {
       "file": "urbanev_0111.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f4_h9_s42_403f4910c6dc__attempt_01__predictions.npz",
       "target_id": "urbanev_d297193d739af4b1",
@@ -3322,9 +3543,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "78a939278ec8747f0319a293e3bc7792ee4a45e1283b1c78b2d29b6f2c06aa92",
+      "sha256": "b23da694fa7496c5ba912fc4203c619c9c51078049c20f38d7aa298d1283b701",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3339,6 +3561,7 @@
     },
     {
       "file": "urbanev_0112.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f4_h12_s42_6a8714594af9__attempt_01__predictions.npz",
       "target_id": "urbanev_edb35a40c5980c85",
@@ -3349,9 +3572,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "81f01e0cc0ed7a908a4bf24f929d7efe22e956eb5c4ef360392c6a04a6ab125f",
+      "sha256": "42dab900e9a829bd3ec411ffeb81e1850c1f529b475cc8661ce81c4235374603",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3366,6 +3590,7 @@
     },
     {
       "file": "urbanev_0113.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f5_h3_s42_72754092e72a__attempt_01__predictions.npz",
       "target_id": "urbanev_84c32729ffa9b42f",
@@ -3376,9 +3601,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "eee660447bcc1f18b5651371bdd1fed5b61f3c25f6b06727bd4540042d10caa7",
+      "sha256": "2a8be8ab2a7215a733da42f52a4714049cf178e762d00fc6e8388f8d96d63644",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3393,6 +3619,7 @@
     },
     {
       "file": "urbanev_0114.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f5_h6_s42_aa1b09599c23__attempt_01__predictions.npz",
       "target_id": "urbanev_b298df5e9a26e0dd",
@@ -3403,9 +3630,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "8f76f4967a6b7b2912830256c20af52ec190b31c423a2918d042f77cff12f456",
+      "sha256": "336ff64ffd3065ebbc951da50c84807f251c92303501eb5b25c8e2ddef4e8c07",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3420,6 +3648,7 @@
     },
     {
       "file": "urbanev_0115.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f5_h9_s42_790854818ee3__attempt_01__predictions.npz",
       "target_id": "urbanev_7beadb196b160b55",
@@ -3430,9 +3659,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "602268aa27bc78e817661d7478fbf79ef0c9e77811c4205a3d9e6004a6d43a0c",
+      "sha256": "d522dfcc84b29fcaa0175923e2340ec6bc30cfb4d532613bcf02cff1b4606cb0",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3447,6 +3677,7 @@
     },
     {
       "file": "urbanev_0116.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f5_h12_s42_2486c403fd2f__attempt_01__predictions.npz",
       "target_id": "urbanev_62f224e2d1bc918b",
@@ -3457,9 +3688,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "6f50ea2c11c0242fb3a090e44a446ad826753ea1fc2d311f9e6d4f723652f9b2",
+      "sha256": "ab1f6f39af303e24559739afe4d6f325f442d5f09c588207c8adcd77f4fa143d",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3474,6 +3706,7 @@
     },
     {
       "file": "urbanev_0117.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f6_h3_s42_def31fc27627__attempt_01__predictions.npz",
       "target_id": "urbanev_26c4441693e0bfff",
@@ -3484,9 +3717,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "c0e8c9dc7a69da458b19eff2a240470e9bef37ecd33d7954c8a730ef222a97ff",
+      "sha256": "f0972db8b4c3948aadeba45850e34bac518e685da9bb09dc389dfb2e87d1ccbc",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3501,6 +3735,7 @@
     },
     {
       "file": "urbanev_0118.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f6_h6_s42_bba91db817f1__attempt_01__predictions.npz",
       "target_id": "urbanev_21b913fc80f7d49f",
@@ -3511,9 +3746,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "59309ae8d677bad040b6b78da364455a65826b65ad74ef35afd5b149f5584a8b",
+      "sha256": "4398ce5b827b8b9417dffcec4222bed851f2108747f20a88b6aef4c010a6184c",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3528,6 +3764,7 @@
     },
     {
       "file": "urbanev_0119.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f6_h9_s42_799a044590b1__attempt_01__predictions.npz",
       "target_id": "urbanev_ce98400bb0d77cdc",
@@ -3538,9 +3775,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "a7cce2da387dd41768fa00e8fa26ec917392ac47f2b40d4facbdc32cbae1df34",
+      "sha256": "598b99fa95df4e275aaa5036ced149c9886baa495c4ca843a8913ccf461b514b",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",
@@ -3555,6 +3793,7 @@
     },
     {
       "file": "urbanev_0120.npz",
+      "family": "distillation",
       "dataset": "urbanev",
       "source_label": "m7c_v1_shuffled_teacher_f6_h12_s42_f4979231b87c__attempt_01__predictions.npz",
       "target_id": "urbanev_655a126624320a47",
@@ -3565,9 +3804,10 @@
         275
       ],
       "target_construction": "occupancy_float32",
-      "sha256": "55aa440585aa885780f2aed9ab0b06dd8ae2724201f64613dbff41a86a66a0fc",
+      "sha256": "976dee2213b6aefb32c6f059cb8735257f9824d980dfe4679196133c6bd6353e",
       "keys": [
         "dataset",
+        "family",
         "prediction",
         "schema_version",
         "source_label",

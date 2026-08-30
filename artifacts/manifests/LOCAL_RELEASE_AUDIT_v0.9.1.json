@@ -1,0 +1,23 @@
+{
+  "schema_version": "urbanev-release-audit-report/v1",
+  "status": "PASS",
+  "checksums": 4,
+  "release_zips": [
+    {
+      "asset": "paris-development-public-predictions-v0.9.1.zip",
+      "dataset": "paris-development",
+      "packages": 32,
+      "members": 33,
+      "manifest_sha256": "1dccfaa949ef0628184ff3e358d1ec5062cd9647e110d9b6e4e5d39f9203ea56"
+    },
+    {
+      "asset": "urbanev-public-predictions-v0.9.1.zip",
+      "dataset": "urbanev",
+      "packages": 120,
+      "members": 121,
+      "manifest_sha256": "f7a3eed118dc41beca76c0e25239c71e2d18a96e1d09644bd19222bdc951ebbd"
+    }
+  ],
+  "privacy_findings": 0,
+  "target_values_included": false
+}

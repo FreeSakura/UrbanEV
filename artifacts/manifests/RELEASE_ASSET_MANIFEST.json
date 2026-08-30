@@ -1,0 +1,31 @@
+{
+  "schema_version": "urbanev-release-asset-manifest/v1",
+  "release": "v0.9.1-preprint",
+  "target_values_included": false,
+  "assets": [
+    {
+      "name": "paris-development-public-predictions-v0.9.1.zip",
+      "sha256": "8858e915ba43463e04c63c2924894b92cd92d9a729d4788f0b1977ce46a39149",
+      "bytes": 10205077,
+      "public": true
+    },
+    {
+      "name": "paris-development-schema-manifest-v0.9.1.json",
+      "sha256": "1dccfaa949ef0628184ff3e358d1ec5062cd9647e110d9b6e4e5d39f9203ea56",
+      "bytes": 47070,
+      "public": true
+    },
+    {
+      "name": "urbanev-public-predictions-v0.9.1.zip",
+      "sha256": "9274bb7def6033ba46cd38c6a13530a42789cdf19902c3dd941ebbd4fee671e7",
+      "bytes": 134668290,
+      "public": true
+    },
+    {
+      "name": "urbanev-schema-manifest-v0.9.1.json",
+      "sha256": "f7a3eed118dc41beca76c0e25239c71e2d18a96e1d09644bd19222bdc951ebbd",
+      "bytes": 111038,
+      "public": true
+    }
+  ]
+}

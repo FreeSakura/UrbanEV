@@ -1,0 +1,22 @@
+{
+  "schema_version": "urbanev-release-payload-comparison/v1",
+  "status": "PASS",
+  "packages_compared": 152,
+  "prediction_arrays_changed": false,
+  "target_values_present": false,
+  "headline_metrics_changed": false,
+  "comparisons": [
+    {
+      "old_asset": "urbanev-public-predictions-v0.9.0.zip",
+      "new_asset": "urbanev-public-predictions-v0.9.1.zip",
+      "packages": 120,
+      "non_packaging_array_hashes_equal": true
+    },
+    {
+      "old_asset": "paris-development-public-predictions-v0.9.0.zip",
+      "new_asset": "paris-development-public-predictions-v0.9.1.zip",
+      "packages": 32,
+      "non_packaging_array_hashes_equal": true
+    }
+  ]
+}

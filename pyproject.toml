@@ -4,16 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "urbanev-audit"
-version = "0.9.0"
+version = "0.9.1"
 description = "Target-free verification and recomputation tools for the UrbanEV evidence audit"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [{name = "Hongwei Chi", email = "chihongwei@hdu.edu.cn"}]
-dependencies = ["numpy>=1.24,<3", "pandas>=2.0,<3"]
+dependencies = ["numpy>=1.24,<3", "pandas>=2.0,<3", "PyYAML>=6,<7", "tomli>=2,<3"]
 
 [project.optional-dependencies]
-test = ["pytest>=8", "pypdf>=4"]
+test = ["pytest>=8", "pypdf>=4", "reportlab>=4"]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
