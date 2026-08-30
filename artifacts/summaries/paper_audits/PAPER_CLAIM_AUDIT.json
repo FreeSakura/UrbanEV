@@ -211,7 +211,7 @@
       "id": "C30_review_process_language",
       "status": "WARN",
       "match_type": "ambiguous_missing_external",
-      "finding": "Reviewer independence/high-order review wording is supported by approval artifacts but the review process itself was not re-run here."
+      "finding": "Separately instantiated automated-audit wording is supported by approval artifacts, but no external human replication was performed."
     }
   ],
   "warnings": [
@@ -221,23 +221,26 @@
     },
     {
       "id": "C30_review_process_language",
-      "finding": "Reviewer independence/high-order review wording is supported by approval artifacts but the review process itself was not re-run here."
+      "finding": "Separately instantiated automated-audit wording is supported by approval artifacts, but no external human replication was performed."
     }
   ],
   "failures": [],
   "audited_input_hashes": [
     {
-      "path": "D:\\Codex\\2026-08-23\\restricted-evidence-store\\metadata\\VAULT_AUDIT.json",
+      "role": "private_vault_audit",
+      "public_alias": "private-evidence://metadata/VAULT_AUDIT.json",
       "sha256": "33c96c4407b04f75fc839507e796aebe57274dc63102daf9559cdcf9d6b7ca93",
       "bytes": 785
     },
     {
-      "path": "D:\\Codex\\2026-08-23\\restricted-evidence-store\\metadata\\VAULT_FILE_MANIFEST.csv",
+      "role": "private_vault_file_manifest",
+      "public_alias": "private-evidence://metadata/VAULT_FILE_MANIFEST.csv",
       "sha256": "29f027dc7badaa727b7fa49659f78afe283c4670fd4f4b4d49a11d492bab4e68",
       "bytes": 7206
     },
     {
-      "path": "D:\\Codex\\2026-08-23\\restricted-evidence-store\\metadata\\VAULT_RECEIPT.json",
+      "role": "private_vault_receipt",
+      "public_alias": "private-evidence://metadata/VAULT_RECEIPT.json",
       "sha256": "65a602ed5cd6a5e4385db57e63096b0b8c1374659efd80dcebcb2401b3cfb4fa",
       "bytes": 2096
     },
@@ -1434,7 +1437,7 @@
   "trace_path": ".aris/traces/paper-claim-audit/2026-08-30_run03/",
   "incremental_verification": {
     "baseline_run_id": "2026-08-30_run02",
-    "baseline_trace": "private-workspace://urbanev-forecast/experiments\\10_audit_paper\\paper\\.aris\\traces\\paper-claim-audit\\2026-08-30_run02\\audited_input_hashes.json",
+    "baseline_trace": "private-evidence://urbanev-forecast/experiments\\10_audit_paper\\paper\\.aris\\traces\\paper-claim-audit\\2026-08-30_run02\\audited_input_hashes.json",
     "baseline_input_count": 240,
     "current_input_count": 240,
     "unchanged_input_count": 239,

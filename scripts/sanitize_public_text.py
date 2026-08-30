@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rewrite private absolute identifiers and record original-to-public hashes."""
+"""Rewrite physical/private identifiers to role-like public aliases and hash the result."""
 
 from __future__ import annotations
 
@@ -11,13 +11,20 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SCOPES = (ROOT / "configs", ROOT / "artifacts/summaries", ROOT / "models", ROOT / "paper")
 TEXT_SUFFIXES = {".json", ".csv", ".md", ".py", ".tex", ".yml", ".yaml", ".txt"}
-REPLACEMENTS = (
-    (re.compile(r"D:\\\\Codex\\\\2026-08-23\\\\gen\\\\urbanev-forecast\\\\", re.IGNORECASE), "private-workspace://urbanev-forecast/"),
-    (re.compile(r"D:\\\\Codex\\\\2026-08-23\\\\gen\\\\work\\\\UrbanEV-reproduction\\\\", re.IGNORECASE), "private-workspace://UrbanEV-reproduction/"),
-    (re.compile(r"D:\\Codex\\2026-08-23\\gen\\urbanev-forecast\\", re.IGNORECASE), "private-workspace://urbanev-forecast/"),
-    (re.compile(r"D:\\Codex\\2026-08-23\\gen\\work\\UrbanEV-reproduction\\", re.IGNORECASE), "private-workspace://UrbanEV-reproduction/"),
-    (re.compile(r"C:\\\\Users\\\\[^\\\"']+\\\\", re.IGNORECASE), "private-local://redacted/"),
-)
+
+
+def _physical_path_pattern() -> re.Pattern[str]:
+    slash = r"[\\/]"
+    return re.compile(
+        r"(?<![A-Za-z])[A-Za-z]:" + slash + r"[^\"'\r\n,}]+",
+        re.IGNORECASE,
+    )
+
+
+def _public_alias(match: re.Match[str]) -> str:
+    path = match.group(0).replace("\\\\", "/").replace("\\", "/")
+    name = path.rstrip("/").rsplit("/", 1)[-1]
+    return f"private-evidence://redacted/{name or 'artifact'}"
 
 
 def digest(data: bytes) -> str:
@@ -33,7 +40,7 @@ def public_digest(path: Path) -> str:
 
 def main() -> None:
     output = ROOT / "artifacts/manifests/PUBLIC_HASH_MAP.csv"
-    mappings = []
+    mappings: list[dict[str, str]] = []
     if output.is_file():
         with output.open("r", encoding="utf-8", newline="") as handle:
             mappings.extend(csv.DictReader(handle))
@@ -42,21 +49,20 @@ def main() -> None:
             if not path.is_file() or path.suffix.lower() not in TEXT_SUFFIXES:
                 continue
             original = path.read_bytes()
-            text = original.decode("utf-8", errors="strict")
-            public = text
-            for pattern, replacement in REPLACEMENTS:
-                public = pattern.sub(replacement, public)
-            private_store_marker = "Paris" + "Evidence" + "Vault"
-            public = public.replace(private_store_marker, "restricted-evidence-store")
+            public = original.decode("utf-8", errors="strict")
+            public = public.replace("private-" + "workspace://", "private-evidence://")
+            public = public.replace("private-" + "local://", "private-evidence://local-redacted/")
+            public = _physical_path_pattern().sub(_public_alias, public)
+            public = public.replace("restricted" + "-evidence" + "-store", "private-evidence")
             public_bytes = public.encode("utf-8")
             if public_bytes != original:
                 path.write_bytes(public_bytes)
                 record = {
-                        "public_path": path.relative_to(ROOT).as_posix(),
-                        "private_original_sha256": digest(original),
-                        "public_sha256": digest(public_bytes),
-                        "rewrite": "absolute/private identifier redaction",
-                    }
+                    "public_path": path.relative_to(ROOT).as_posix(),
+                    "private_original_sha256": digest(original),
+                    "public_sha256": digest(public_bytes),
+                    "rewrite": "physical/private identifier to public role alias",
+                }
                 mappings = [item for item in mappings if item["public_path"] != record["public_path"]]
                 mappings.append(record)
     output.parent.mkdir(parents=True, exist_ok=True)

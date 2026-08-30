@@ -19,6 +19,8 @@ paper/**/*.toc
 paper/**/main.pdf
 paper/**/supplement.pdf
 paper/**/main_archive.pdf
+paper/editable/
+scripts/build_editable_papers.py
 tmp/
 release-assets/*.zip
 release-assets/*.npz

@@ -155,7 +155,7 @@ def run(root: Path, source_root: Path, queue_id: str, confirmation: str, device:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=Path.cwd())
-    parser.add_argument("--source-root", type=Path, default=Path(r"D:\UrbanEV\UrbanEV-main"))
+    parser.add_argument("--source-root", type=Path, default=Path("data/UrbanEV"))
     parser.add_argument("--queue-id", default="strict_causal_phase_stability_v1")
     parser.add_argument("--confirm-frozen-matrix", required=True)
     parser.add_argument("--device", default="cuda")

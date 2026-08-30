@@ -4,7 +4,7 @@
   "repo_id": "amazon/chronos-2",
   "requested_revision": "main",
   "resolved_commit_sha": "29ec3766d36d6f73f0696f85560a422f50e8498c",
-  "local_snapshot": "private-workspace://urbanev-forecast/experiments\\06_5_teacher_qualification\\model_snapshots\\amazon_chronos-2_29ec3766d36d",
+  "local_snapshot": "private-evidence://urbanev-forecast/experiments\\06_5_teacher_qualification\\model_snapshots\\amazon_chronos-2_29ec3766d36d",
   "total_bytes": 477940831,
   "files": [
     {

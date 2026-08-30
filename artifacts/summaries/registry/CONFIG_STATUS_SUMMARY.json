@@ -1,8 +1,8 @@
 {
   "generated_at": "2026-08-28T11:55:11",
   "manifest_total": 1224,
-  "source_state_dir": "private-workspace://UrbanEV-reproduction/state",
-  "source_comparison_csv": "D:\\Codex\\2026-08-23\\gen\\outputs\\UrbanEV-reproduction\\paper_vs_official_vs_audited.csv",
+  "source_state_dir": "private-evidence://UrbanEV-reproduction/state",
+  "source_comparison_csv": "private-evidence://redacted/paper_vs_official_vs_audited.csv",
   "execution_status_counts": {
     "complete": 865,
     "not_executed": 340,

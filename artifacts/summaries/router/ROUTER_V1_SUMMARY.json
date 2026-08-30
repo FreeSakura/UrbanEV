@@ -2,7 +2,7 @@
   "status": "complete",
   "generated_at": "2026-08-28T13:56:31",
   "run_id": "router_v1_c4b20b77fc9d3",
-  "artifact_root": "private-workspace://urbanev-forecast/experiments\\05_router_v1\\outputs\\runs\\router_v1_c4b20b77fc9d3\\attempt_01",
+  "artifact_root": "private-evidence://urbanev-forecast/experiments\\05_router_v1\\outputs\\runs\\router_v1_c4b20b77fc9d3\\attempt_01",
   "protocol": "router_v1",
   "sanity": false,
   "seed": 42,

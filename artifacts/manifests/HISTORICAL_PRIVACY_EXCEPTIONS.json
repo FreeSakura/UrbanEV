@@ -1,0 +1,89 @@
+{
+  "schema_version": "urbanev-historical-privacy-exceptions/v1",
+  "exceptions": [
+    {
+      "git_blob": "e9c40585da9a0edef4fa48f9087535306e4c720d",
+      "release": "v0.9.0-preprint",
+      "scope": "superseded paper-claim audit metadata",
+      "finding_classes": [
+        "local absolute path metadata",
+        "deprecated private role alias"
+      ],
+      "contains_target_values": false,
+      "contains_credentials": false,
+      "resolution": "The immutable historical tag is retained; the current tree and v0.9.1-preprint replace physical paths with role aliases."
+    },
+    {
+      "git_blob": "50dbf0a7c7916bc7216471f62e6239b0ea6b5bfd",
+      "release": "v0.9.0-preprint",
+      "scope": "superseded registry summary metadata",
+      "finding_classes": ["local absolute path metadata"],
+      "contains_target_values": false,
+      "contains_credentials": false,
+      "resolution": "Current summary bytes use public role aliases; the immutable historical tag is retained."
+    },
+    {
+      "git_blob": "7235c07c668555876220df9e7a2db9390107916c",
+      "release": "v0.9.0-preprint",
+      "scope": "superseded sanitization implementation",
+      "finding_classes": ["literal rewrite patterns for local paths"],
+      "contains_target_values": false,
+      "contains_credentials": false,
+      "resolution": "The current sanitizer constructs generic patterns without retaining physical path literals."
+    },
+    {
+      "git_blob": "045a61954521ce0f1058fec7bcdd8f90b6b7044f",
+      "release": "v0.9.0-preprint",
+      "scope": "superseded CAPER source default",
+      "finding_classes": ["local absolute default path"],
+      "contains_target_values": false,
+      "contains_credentials": false,
+      "resolution": "The current source uses a repository-relative data default."
+    },
+    {
+      "git_blob": "f2bad79a187a9e4cbb3d7b56a937e9e1d3c3c9cb",
+      "release": "v0.9.0-preprint",
+      "scope": "superseded CAPER source default",
+      "finding_classes": ["local absolute default path"],
+      "contains_target_values": false,
+      "contains_credentials": false,
+      "resolution": "The current source uses a repository-relative data default."
+    },
+    {
+      "git_blob": "fa8c10d83f09767a9e4d8ffb168fccae41e40011",
+      "release": "v0.9.0-preprint",
+      "scope": "superseded CAPER source default",
+      "finding_classes": ["local absolute default path"],
+      "contains_target_values": false,
+      "contains_credentials": false,
+      "resolution": "The current source uses a repository-relative data default."
+    },
+    {
+      "git_blob": "a7dafa588a49b284656961e5e9fd590002a84bf3",
+      "release": "v0.9.0-preprint",
+      "scope": "superseded CAPER source default",
+      "finding_classes": ["local absolute default path"],
+      "contains_target_values": false,
+      "contains_credentials": false,
+      "resolution": "The current source uses a repository-relative data default."
+    },
+    {
+      "git_blob": "d1ad370a68cc1d7d18bb70d854b4782f67b4cece",
+      "release": "v0.9.0-preprint",
+      "scope": "superseded CAPER source default",
+      "finding_classes": ["local absolute default path"],
+      "contains_target_values": false,
+      "contains_credentials": false,
+      "resolution": "The current source uses a repository-relative data default."
+    },
+    {
+      "git_blob": "bbc926ae28f5943f2aa7ae74d2e0a204a2fb0337",
+      "release": "v0.9.0-preprint",
+      "scope": "superseded CAPER source default",
+      "finding_classes": ["local absolute default path"],
+      "contains_target_values": false,
+      "contains_credentials": false,
+      "resolution": "The current source uses a repository-relative data default."
+    }
+  ]
+}

@@ -465,7 +465,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=Path.cwd())
     parser.add_argument(
-        "--source-root", type=Path, default=Path(r"D:\UrbanEV\UrbanEV-main")
+        "--source-root", type=Path, default=Path("data/UrbanEV")
     )
     parser.add_argument("--fold", type=int, required=True)
     parser.add_argument("--horizon", type=int, required=True)
