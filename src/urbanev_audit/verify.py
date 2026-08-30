@@ -24,7 +24,11 @@ def sha256_file(path: Path, normalize_repository_text: bool = False) -> str:
 
 def verify(manifest_path: Path, data_root: Path | None = None) -> list[str]:
     manifest = load_manifest(manifest_path)
-    repo_root = manifest_path.resolve().parents[1]
+    repo_root = manifest_path.resolve().parent
+    while repo_root.parent != repo_root and not (repo_root / "pyproject.toml").is_file():
+        repo_root = repo_root.parent
+    if not (repo_root / "pyproject.toml").is_file():
+        raise ValueError("could not locate repository root from manifest path")
     messages: list[str] = []
     for item in manifest.get("tracked_files", []):
         path = repo_root / item["path"]
@@ -53,7 +57,7 @@ def verify(manifest_path: Path, data_root: Path | None = None) -> list[str]:
     if data_root is not None:
         registrations = list(data_root.glob(".urbanev_*_registration.json"))
         if not registrations:
-            raise ValueError("no local dataset registration; run urbanev_audit.fetch first")
+            raise ValueError("no local dataset registration; run urbanev_audit register-data first")
         messages.append(f"found {len(registrations)} local dataset registration(s)")
     return messages
 

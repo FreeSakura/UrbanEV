@@ -61,28 +61,51 @@ def reconstruct_urbanev(package: np.lib.npyio.NpzFile, data_root: Path) -> np.nd
     return np.asarray(rates[indices], dtype=_requested_dtype(package))
 
 
-@lru_cache(maxsize=4)
-def _find_paris_source(data_root_name: str) -> Path:
-    data_root = Path(data_root_name)
-    candidates = [data_root / "train.csv", data_root / "development_state_shard.csv"]
-    for path in candidates:
-        if path.is_file():
-            return path
-    matches = sorted(data_root.glob("*.csv"))
-    for path in matches:
-        columns = set(pd.read_csv(path, nrows=0).columns)
-        if {"date", "Station", "Available", "Charging", "Passive", "Other"} <= columns:
-            return path
-    raise FileNotFoundError("Paris reconstruction requires an upstream CSV with date, Station, Available, Charging, Passive, and Other")
+PARIS_DEVELOPMENT_END = pd.Timestamp("2020-11-30 23:59:59")
+
+
+def _find_paris_source(
+    data_root: Path,
+    development_shard: Path | None,
+    allow_full_source: bool,
+) -> tuple[Path, bool]:
+    if development_shard is not None:
+        source = development_shard.expanduser().resolve()
+        if not source.is_file():
+            raise FileNotFoundError(source)
+        return source, False
+    source = (data_root / "development_state_shard.csv").resolve()
+    if source.is_file():
+        return source, False
+    full_source = (data_root / "train.csv").resolve()
+    if full_source.is_file() and allow_full_source:
+        return full_source, True
+    if full_source.is_file():
+        raise PermissionError(
+            "Paris replay found train.csv but will not read it without --allow-full-source; "
+            "provide --development-shard instead"
+        )
+    raise FileNotFoundError(
+        "Paris reconstruction requires an explicit development shard; full train.csv is read only with --allow-full-source"
+    )
 
 
 @lru_cache(maxsize=4)
-def _load_paris_matrix(source_name: str) -> pd.DataFrame:
+def _load_paris_matrix(source_name: str, full_source: bool) -> pd.DataFrame:
     source = Path(source_name)
     columns = ["date", "Station", "Available", "Charging", "Passive", "Other"]
-    frame = pd.read_csv(source, usecols=columns)
-    frame["date"] = pd.to_datetime(frame["date"])
-    frame = frame.loc[frame["date"] <= pd.Timestamp("2020-11-30 23:59:59")].copy()
+    if full_source:
+        chunks = []
+        for chunk in pd.read_csv(source, usecols=columns, chunksize=250_000, dtype={"Station": "string"}):
+            chunk["date"] = pd.to_datetime(chunk["date"], errors="raise")
+            chunks.append(chunk.loc[chunk["date"] <= PARIS_DEVELOPMENT_END])
+        frame = pd.concat(chunks, ignore_index=True) if chunks else pd.DataFrame(columns=columns)
+    else:
+        frame = pd.read_csv(source, usecols=columns, dtype={"Station": "string"})
+        frame["date"] = pd.to_datetime(frame["date"], errors="raise")
+        if (frame["date"] > PARIS_DEVELOPMENT_END).any():
+            raise ValueError("development shard contains a formal/protected timestamp")
+    frame["Station"] = frame["Station"].astype(str)
     frame = frame.loc[frame["date"].dt.minute.eq(0)]
     if frame.duplicated(["date", "Station"]).any():
         raise ValueError("duplicate Paris station/timestamp observations")
@@ -94,11 +117,18 @@ def _load_paris_matrix(source_name: str) -> pd.DataFrame:
     return frame.pivot(index="date", columns="Station", values="target")
 
 
-def reconstruct_paris(package: np.lib.npyio.NpzFile, data_root: Path) -> np.ndarray:
-    source = _find_paris_source(str(data_root.resolve()))
-    matrix = _load_paris_matrix(str(source.resolve()))
+def reconstruct_paris(
+    package: np.lib.npyio.NpzFile,
+    data_root: Path,
+    development_shard: Path | None = None,
+    allow_full_source: bool = False,
+) -> np.ndarray:
+    source, full_source = _find_paris_source(data_root.resolve(), development_shard, allow_full_source)
+    matrix = _load_paris_matrix(str(source.resolve()), full_source)
     station_ids = [str(item) for item in np.asarray(package["station_ids"]).reshape(-1)]
     target_time = pd.to_datetime(np.asarray(package["target_time_ns"], dtype=np.int64))
+    if len(target_time) and target_time.max() > PARIS_DEVELOPMENT_END:
+        raise ValueError("public package requests a formal/protected Paris timestamp")
     target = matrix.reindex(index=target_time, columns=station_ids).to_numpy(_requested_dtype(package))
     expected_shape = tuple(np.asarray(package["target_shape"], dtype=np.int64))
     if target.shape != expected_shape:
@@ -106,14 +136,19 @@ def reconstruct_paris(package: np.lib.npyio.NpzFile, data_root: Path) -> np.ndar
     return target
 
 
-def reconstruct_target(package: np.lib.npyio.NpzFile, data_root: Path) -> np.ndarray:
+def reconstruct_target(
+    package: np.lib.npyio.NpzFile,
+    data_root: Path,
+    development_shard: Path | None = None,
+    allow_full_source: bool = False,
+) -> np.ndarray:
     if "dataset" not in package or "target_index" not in package:
         raise ValueError("public package lacks dataset/target_index metadata")
     dataset = _text_scalar(package["dataset"])
     if dataset == "urbanev":
         target = reconstruct_urbanev(package, data_root)
     elif dataset == "paris-development":
-        target = reconstruct_paris(package, data_root)
+        target = reconstruct_paris(package, data_root, development_shard, allow_full_source)
     else:
         raise ValueError(f"unsupported dataset: {dataset}")
     expected_shape = tuple(np.asarray(package["target_shape"], dtype=np.int64))

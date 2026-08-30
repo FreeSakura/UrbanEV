@@ -20,14 +20,19 @@ def _decode_scalar(value: np.ndarray) -> str:
     return scalar.decode("utf-8") if isinstance(scalar, bytes) else str(scalar)
 
 
-def recompute_package(package_path: Path, target_root: Path) -> dict[str, object]:
+def recompute_package(
+    package_path: Path,
+    target_root: Path,
+    development_shard: Path | None = None,
+    allow_full_source: bool = False,
+) -> dict[str, object]:
     validate_npz(package_path)
     with np.load(package_path, allow_pickle=False) as package:
         if "target_id" not in package or "target_sha256" not in package:
             raise ValueError(f"missing target identity metadata: {package_path}")
         target_id = _decode_scalar(package["target_id"])
         expected_hash = _decode_scalar(package["target_sha256"])
-        target = reconstruct_target(package, target_root)
+        target = reconstruct_target(package, target_root, development_shard, allow_full_source)
         actual_hash = sha256_array(target)
         if actual_hash != expected_hash:
             raise ValueError(f"target hash mismatch for {target_id}")
@@ -50,7 +55,12 @@ def _macro(results: list[dict[str, object]], needle: str, key: str) -> float | N
     return float(np.mean(values)) if values else None
 
 
-def _paris_teacher(paths: list[Path], data_root: Path) -> dict[str, float] | None:
+def _paris_teacher(
+    paths: list[Path],
+    data_root: Path,
+    development_shard: Path | None,
+    allow_full_source: bool,
+) -> dict[str, float] | None:
     groups: dict[tuple[str, int], dict[str, Path]] = {}
     pattern = re.compile(r"_(2020-(?:08|09|10|11))_h(3|6|9|12)_")
     for path in paths:
@@ -73,7 +83,7 @@ def _paris_teacher(paths: list[Path], data_root: Path) -> dict[str, float] | Non
     scores = {"caper": [], "timexer": [], "teacher": []}
     for (fold, _horizon), pair in sorted(groups.items()):
         with np.load(pair["caper"], allow_pickle=False) as caper, np.load(pair["timexer"], allow_pickle=False) as timexer:
-            target = reconstruct_target(caper, data_root)
+            target = reconstruct_target(caper, data_root, development_shard, allow_full_source)
             if _decode_scalar(caper["target_sha256"]) != _decode_scalar(timexer["target_sha256"]):
                 raise ValueError(f"Paris pair target identity mismatch: {fold}/{_horizon}")
             if not np.array_equal(caper["mask"], timexer["mask"]):
@@ -91,7 +101,13 @@ def _paris_teacher(paths: list[Path], data_root: Path) -> dict[str, float] | Non
     return macro
 
 
-def headline_summary(paths: list[Path], results: list[dict[str, object]], data_root: Path) -> dict[str, object]:
+def headline_summary(
+    paths: list[Path],
+    results: list[dict[str, object]],
+    data_root: Path,
+    development_shard: Path | None = None,
+    allow_full_source: bool = False,
+) -> dict[str, object]:
     router = {key: _macro(results, "router_v1_", key) for key in ("caper", "timexer", "global_fixed", "horizon_fixed", "hard", "soft", "mlp")}
     router = {key: value for key, value in router.items() if value is not None}
     if "timexer" in router and "global_fixed" in router:
@@ -113,7 +129,7 @@ def headline_summary(paths: list[Path], results: list[dict[str, object]], data_r
         headline["urbanev_chronos2"] = {"macro_rmse": chronos}
     if kd:
         headline["urbanev_residual_distillation"] = kd
-    paris = _paris_teacher(paths, data_root)
+    paris = _paris_teacher(paths, data_root, development_shard, allow_full_source)
     if paris is not None:
         headline["paris_development_teacher"] = paris
     return headline
@@ -125,10 +141,17 @@ def main() -> None:
     parser.add_argument("--data-root", type=Path, required=True)
     parser.add_argument("--asset-root", type=Path, default=Path("release-assets"))
     parser.add_argument("--output", type=Path, default=Path("artifacts/recomputed_headline.json"))
+    parser.add_argument("--development-shard", type=Path)
+    parser.add_argument("--allow-full-source", action="store_true")
     args = parser.parse_args()
     paths = sorted(args.asset_root.rglob("*.npz"))
-    results = [recompute_package(path, args.data_root) for path in paths]
-    headline = headline_summary(paths, results, args.data_root)
+    results = [
+        recompute_package(path, args.data_root, args.development_shard, args.allow_full_source)
+        for path in paths
+    ]
+    headline = headline_summary(
+        paths, results, args.data_root, args.development_shard, args.allow_full_source
+    )
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps({"scope": args.scope, "headline": headline, "packages": results}, indent=2) + "\n", encoding="utf-8")
     print(f"wrote {args.output} from {len(results)} package(s)")
