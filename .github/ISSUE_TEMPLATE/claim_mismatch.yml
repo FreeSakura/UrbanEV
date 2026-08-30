@@ -1,0 +1,23 @@
+name: Claim-to-artifact mismatch
+description: Report a possible discrepancy between manuscript wording and a public artifact.
+title: "[claim] "
+labels: ["claim-audit"]
+body:
+  - type: input
+    id: claim
+    attributes:
+      label: Claim ID, table, or section
+    validations:
+      required: true
+  - type: input
+    id: artifact
+    attributes:
+      label: Public artifact path and hash
+    validations:
+      required: true
+  - type: textarea
+    id: discrepancy
+    attributes:
+      label: Observed discrepancy
+    validations:
+      required: true

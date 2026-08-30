@@ -1,0 +1,26 @@
+name: Public artifact bug
+description: Report a schema, checksum, build, or reproduction defect without private data.
+title: "[artifact] "
+labels: ["artifact"]
+body:
+  - type: markdown
+    attributes:
+      value: Do not attach targets, credentials, physical private paths, or formal/protected Paris material.
+  - type: input
+    id: version
+    attributes:
+      label: Release or commit
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command and sanitized output
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true

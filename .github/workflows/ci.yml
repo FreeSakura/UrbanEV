@@ -18,9 +18,10 @@ jobs:
       - name: Unit, schema, citation, and privacy tests
         run: |
           pytest
-          python scripts/privacy_audit.py --root .
+          python scripts/privacy_audit.py --root . --git-history
+          python scripts/build_model_source_manifest.py
           python scripts/build_manifest.py
-          git diff --exit-code artifacts/manifest.json
+          git diff --exit-code artifacts/manifest.json artifacts/manifests models/MODEL_SOURCE_MANIFEST.csv
       - name: Install LaTeX and PDF checks
         run: |
           sudo apt-get update
@@ -30,12 +31,16 @@ jobs:
           python scripts/build_paper.py --variant main
           python scripts/build_paper.py --variant supplement
           python scripts/build_paper.py --variant archive
+          python scripts/build_historical_archive.py
       - name: PDF gates
         run: |
           test "$(pdfinfo paper/main/UrbanEV_Evidence_Audit_Main.pdf | awk '/^Pages:/{print $2}')" -ge 22
           test "$(pdfinfo paper/main/UrbanEV_Evidence_Audit_Main.pdf | awk '/^Pages:/{print $2}')" -le 24
           test "$(pdfinfo paper/archive/UrbanEV_Evidence_Audit_Archive.pdf | awk '/^Pages:/{print $2}')" -eq 42
+          test "$(pdfinfo paper/archive/UrbanEV_Evidence_Audit_Historical_Archive_v0.9.0.pdf | awk '/^Pages:/{print $2}')" -eq 43
           pdffonts paper/main/UrbanEV_Evidence_Audit_Main.pdf | tail -n +3 | awk '$6 != "yes" {bad=1} END {exit bad}'
           pdffonts paper/supplement/UrbanEV_Evidence_Audit_Supplement.pdf | tail -n +3 | awk '$6 != "yes" {bad=1} END {exit bad}'
           pdffonts paper/archive/UrbanEV_Evidence_Audit_Archive.pdf | tail -n +3 | awk '$6 != "yes" {bad=1} END {exit bad}'
           pdffonts paper/archive/UrbanEV_Evidence_Audit_Archive_Rebuilt.pdf | tail -n +3 | awk '$6 != "yes" {bad=1} END {exit bad}'
+          pdffonts paper/archive/UrbanEV_Evidence_Audit_Historical_Archive_v0.9.0.pdf | tail -n +3 | awk '$6 != "yes" {bad=1} END {exit bad}'
+          python scripts/verify_paper_manifest.py
