@@ -58,6 +58,10 @@ def _eligible(path: Path) -> bool:
             for part in path.relative_to(ROOT).parts
         )
         and relative not in EXCLUDED_FILES
+        and not (
+            relative.startswith("release-assets/")
+            and path.suffix.lower() in {".zip", ".npz", ".part"}
+        )
         and path.suffix.lower() not in BUILD_SUFFIXES
         and path.name not in {"build_report.json", "compile.log"}
     )

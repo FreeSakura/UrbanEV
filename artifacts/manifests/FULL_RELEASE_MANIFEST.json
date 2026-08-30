@@ -1451,15 +1451,6 @@
       "public_or_external": "public"
     },
     {
-      "path": "release-assets/paris-development-public-predictions-v0.9.1.zip",
-      "sha256": "8858e915ba43463e04c63c2924894b92cd92d9a729d4788f0b1977ce46a39149",
-      "bytes": 10205077,
-      "role": "release-assets",
-      "origin": "UrbanEV evidence-audit project",
-      "license": "MIT",
-      "public_or_external": "public"
-    },
-    {
       "path": "release-assets/paris-development-schema-manifest-v0.9.1.json",
       "sha256": "1dccfaa949ef0628184ff3e358d1ec5062cd9647e110d9b6e4e5d39f9203ea56",
       "bytes": 47070,
@@ -1472,15 +1463,6 @@
       "path": "release-assets/SHA256SUMS",
       "sha256": "d48a4ead72bfd0743a2c913b460ebe93b23b662c7ecfc9eaf5ce186c4be8c85c",
       "bytes": 432,
-      "role": "release-assets",
-      "origin": "UrbanEV evidence-audit project",
-      "license": "MIT",
-      "public_or_external": "public"
-    },
-    {
-      "path": "release-assets/urbanev-public-predictions-v0.9.1.zip",
-      "sha256": "9274bb7def6033ba46cd38c6a13530a42789cdf19902c3dd941ebbd4fee671e7",
-      "bytes": 134668290,
       "role": "release-assets",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -1524,8 +1506,8 @@
     },
     {
       "path": "scripts/build_manifest.py",
-      "sha256": "8cd86b882499f1928000f46a2df7b2444ca9ac4f85897592d2510d2d58f72355",
-      "bytes": 4562,
+      "sha256": "ae1d0121d5cc8ea3c6a9d053eb667a32b0b35f1e55113bd9cbf0579315a4925b",
+      "bytes": 4706,
       "role": "scripts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
