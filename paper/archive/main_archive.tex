@@ -15,6 +15,10 @@
 \usepackage{xurl}
 \usepackage{flafter}
 \usepackage[section]{placeins}
+\ifdefined\pdfinfoomitdate\pdfinfoomitdate=1\fi
+\ifdefined\pdftrailerid\pdftrailerid{}\fi
+\ifdefined\pdfsuppressptexinfo\pdfsuppressptexinfo=15\fi
+\hypersetup{colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,urlcolor=MidnightBlue,pdftitle={Historical Rebuild: From Configurations to Claims},pdfauthor={Anonymous Authors},pdfsubject={Historical non-normative rebuild of the UrbanEV evidence audit},pdfkeywords={UrbanEV, evidence audit, historical archive}}
 \graphicspath{{../main/}}
 \makeatletter
 \def\input@path{{../main/}{../main/sections/}{../main/tables/}}
@@ -25,6 +29,10 @@
 \author{Anonymous Authors}
 \date{August 2026}
 \begin{document}
+\begin{center}
+\fbox{\parbox{0.92\linewidth}{\centering\bfseries HISTORICAL REBUILD --- NOT THE CURRENT SUBMISSION VERSION\\[2pt]
+The current normative preprint consists of Main v0.9.1 and Supplement v0.9.1.}}
+\end{center}
 \maketitle
 \input{../main/sections/01_introduction}
 \input{../main/sections/02_related_work}

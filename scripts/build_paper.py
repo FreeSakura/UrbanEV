@@ -11,6 +11,7 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+os.environ.setdefault("SOURCE_DATE_EPOCH", "1788048000")
 VARIANTS = {
     "main": (ROOT / "paper/main", "main.tex", "UrbanEV_Evidence_Audit_Main.pdf"),
     "supplement": (ROOT / "paper/supplement", "supplement.tex", "UrbanEV_Evidence_Audit_Supplement.pdf"),
@@ -28,6 +29,10 @@ def build(variant: str) -> Path:
     pdflatex = shutil.which("pdflatex")
     bibtex = shutil.which("bibtex")
     stem = Path(source).stem
+    for suffix in ("aux", "bbl", "blg", "fdb_latexmk", "fls", "log", "out", "toc", "pdf"):
+        candidate = directory / f"{stem}.{suffix}"
+        if candidate.is_file():
+            candidate.unlink()
     prefer_direct = platform.system() == "Windows" or os.environ.get("URBANEV_DIRECT_LATEX") == "1"
     if latexmk and not prefer_direct:
         run([latexmk, "-pdf", "-interaction=nonstopmode", "-halt-on-error", source], directory)
