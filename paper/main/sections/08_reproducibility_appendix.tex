@@ -1,10 +1,10 @@
 \appendix
-\section{Reproducibility and Claim-Control Appendix}
+\section{Reproducibility and Audit Appendix}
 \label{sec:reproducibility-appendix}
 
-This appendix exports the audit interface behind the case study.  It is deliberately documentary: it reuses frozen main-workspace artifacts, performs no model training or inference, recomputes no experiment metric, runs no new bootstrap or threshold sensitivity, and does not read Paris formal or protected target content.  The tables distinguish facts present in the artifacts from portable recommendations.  When a field cannot be established from a frozen artifact it is reported as \emph{unknown/not claimed}; it is not reconstructed by assumption.
+This appendix documents the audit checks used in the case study.  It reuses frozen main-workspace artifacts and performs no model training or inference.  It does not recompute any experiment metric, run a new bootstrap or threshold sensitivity, or read Paris formal or protected target content.  The tables separate facts stored in the artifacts from suggestions that may be useful elsewhere.  When a field cannot be established from a frozen artifact, it is reported as \emph{unknown/not claimed} rather than filled in by assumption.
 
-The appendix also does not supply evidence that the study did not collect.  In particular, no independent-coder classification exercise, inter-rater agreement statistic, alternative bootstrap block-length analysis, or new Global Fixed uncertainty interval is claimed.  The main text's 0.5/1/2\% threshold counterfactual is arithmetic context only; it does not recompute metrics or alter a decision.  The S1--S6 registry is a deterministic single-pipeline classification of one inventory.  Historical project records used a review label for what was actually a separately instantiated automated differential artifact audit, not a blinded external human replication or an inter-rater study.
+The appendix does not add analyses that were not run.  There was no independent-coder classification exercise, inter-rater agreement statistic, alternative bootstrap block-length analysis, or new Global Fixed uncertainty interval.  The 0.5/1/2\% comparison is arithmetic context only; it does not recompute metrics or change a decision.  The S1--S6 registry is a deterministic single-pipeline classification of one inventory.  Historical project records used a review label for what was actually a separately instantiated automated differential artifact audit, not a blinded external human replication or an inter-rater study.
 
 \subsection{Deterministic S1--S6 decision tree}
 \label{sec:appendix-status-tree}
@@ -21,7 +21,7 @@ The classifier in \path{experiments/00_registry_reclassification/scripts/rebuild
     \item Otherwise, if the track is \texttt{official} and the worst grade is exact, assign S1.  Every other completed, uniquely mapped, non-trend row is S2.
 \end{enumerate}
 
-Thus the executable priority is S5/S6 $\rightarrow$ S4 $\rightarrow$ S1/S2/S3.  A completion mark indicates process completion only; it is not used as a synonym for S1.  The following examples are the first row of each final status in the authoritative CSV.  The \texttt{classification\_reason} text is an English rendering of the Chinese source field so that the appendix compiles under the paper's Latin-font setup.
+The rules therefore apply in this order: S5/S6 $\rightarrow$ S4 $\rightarrow$ S1/S2/S3.  A completion mark indicates process completion only; it is not a synonym for S1.  The following examples are the first row of each final status in the authoritative CSV.  The \texttt{classification\_reason} text is an English rendering of the Chinese source field so that the appendix compiles under the paper's Latin-font setup.
 
 \begin{table*}[htbp]
 \centering
@@ -47,30 +47,30 @@ S6 & \path{audited-t3-TimesNet-occ-3-3-region-None-42-1-1687eb9d} & The configur
 \subsection{Model identity is a claim field}
 \label{sec:appendix-model-identity}
 
-Names alone do not identify a scientific object.  The same family label may refer to an upstream release, a local source snapshot, an existing prediction artifact, a retrained adaptation, or a deterministic composition of other artifacts.  Table~\ref{tab:model-identity} therefore reports the identity that the frozen artifacts support and names fields that remain unknown.  This is especially important for Paris: \texttt{Paris\_CAPER\_phase\_only} and \texttt{TimeXer\_local\_audited\_compact\_L168} are development-only local adaptations, not exact transfers of the UrbanEV experts or claims about every upstream implementation.
+A model name alone does not identify the exact implementation.  The same family label may refer to an upstream release, a local source snapshot, an existing prediction artifact, a retrained adaptation, or a fixed combination of other artifacts.  Table~\ref{tab:model-identity} reports the identity recorded in the frozen artifacts and lists fields that remain unknown.  This is especially important for Paris: \texttt{Paris\_CAPER\_phase\_only} and \texttt{TimeXer\_local\_audited\_compact\_L168} are development-only local adaptations, not exact transfers of the UrbanEV experts or claims about every upstream implementation.
 
 \subsection{Fail-closed state machine}
 \label{sec:appendix-state-machine}
 \label{app:fail-closed}
 
-The portable state sequence is:
+The audit states are:
 
 \begin{center}
 \texttt{REGISTERED} $\rightarrow$ \texttt{RUNNING} $\rightarrow$ \texttt{CLOSED\_UNVERIFIED} $\rightarrow$ \texttt{AUDIT\_PASS} $\rightarrow$ \texttt{METRIC\_UNLOCKED} $\rightarrow$ \texttt{GATE\_PASS} or \texttt{GATE\_FAIL}.
 \end{center}
 
-Three side transitions prevent a defective artifact from moving forward.  First, an incomplete matrix, target/order mismatch, invalid control, boundary violation, or provenance failure moves \texttt{CLOSED\_UNVERIFIED} to \texttt{BLOCKED} or \texttt{REPAIR\_REQUIRED}; aggregate metrics remain inaccessible.  Second, a permitted repair creates \texttt{REPAIRED\_UNVERIFIED}, records parent and child hashes and whether predictions changed, and returns to the full audit rather than directly to metric unlock.  When selective repair could use information about which controls failed, the formal control family is invalidated and rerun non-selectively.  Third, \texttt{GATE\_FAIL} is terminal for the current protocol version.  Continuing with a changed model, threshold, loss, or evidence role requires a new versioned protocol and a valid evidence boundary; a failed version is not rewritten as pending.
+Three rules prevent a defective artifact from moving forward.  First, an incomplete matrix, target/order mismatch, invalid control, boundary violation, or provenance failure moves \texttt{CLOSED\_UNVERIFIED} to \texttt{BLOCKED} or \texttt{REPAIR\_REQUIRED}; aggregate metrics remain inaccessible.  Second, a permitted repair creates \texttt{REPAIRED\_UNVERIFIED}, records parent and child hashes and whether predictions changed, and returns to the full audit.  It does not move directly to metric unlock.  If selective repair could use information about which controls failed, the full control family is invalidated and rerun.  Third, \texttt{GATE\_FAIL} is terminal for the current protocol version.  Continuing with a changed model, threshold, loss, or evidence role requires a new version and a still-valid data boundary.
 
-The two observed incidents instantiate these transitions.  In M7-C, the first audit detected three identity permutations at 69/72 cells while \texttt{metrics\_unlocked=false}; all 24 shuffled controls were invalidated and rerun before the 72/72 audit passed.  In Paris, 32 prediction jobs closed without evaluation metrics, missing-target representation was repaired in 24 artifacts (10,236 entries) with predictions unchanged, and the development metrics were unlocked only after the 32/32 prediction audit passed.  These are integrity events, not accuracy improvements.
+Two incidents show how these transitions worked.  In M7-C, the first audit detected three identity permutations at 69/72 cells while \texttt{metrics\_unlocked=false}.  All 24 shuffled controls were invalidated and rerun before the 72/72 audit passed.  In Paris, 32 prediction jobs closed without evaluation metrics.  Missing-target representation was repaired in 24 artifacts (10,236 entries) without changing predictions, and development metrics were unlocked only after the 32/32 prediction audit passed.  These are integrity events, not accuracy improvements.
 
-\subsection{Portable lock schema and invariants}
+\subsection{Common lock schema and invariants}
 \label{sec:appendix-lock-schema}
 
-The project evolved several lock and receipt formats rather than one universal schema.  Table~\ref{tab:lock-schema} gives the normalized interface required to reproduce the paper's claim-control semantics.  It is a portable schema, not a statement that every historical artifact contains every field.  A missing field must be encoded as \texttt{unknown} or fail the relevant gate; it must never be silently inferred from a filename.
+The project used several lock and receipt formats rather than one universal schema.  Table~\ref{tab:lock-schema} gives a common interface for the rules that connect each claim to its evidence.  It does not imply that every historical artifact contains every field.  A missing field must be recorded as \texttt{unknown} or fail the relevant gate; it must not be inferred from a filename.
 
 \begin{table*}[htbp]
 \centering
-\caption{Normalized lock schema.  Existing exemplars use heterogeneous field names; the rightmost column states the invariant a portable implementation must enforce.}
+\caption{Normalized lock schema.  Existing examples use different field names; the rightmost column states the rule an implementation must enforce.}
 \label{tab:lock-schema}
 \scriptsize
 \begin{tabular}{>{\raggedright\arraybackslash}p{0.12\linewidth}>{\raggedright\arraybackslash}p{0.21\linewidth}>{\raggedright\arraybackslash}p{0.23\linewidth}>{\raggedright\arraybackslash}p{0.26\linewidth}}
@@ -102,27 +102,29 @@ Claim & claim ID, authoritative artifact/hash, evaluation type, allowed/prohibit
 The Paris guards distinguish three operations.
 
 \begin{description}
-    \item[Storage materialization.] Byte-preserving movement, copying, sharding, forensic preservation, and opaque byte hashing of target-bearing files.  It also includes creating or verifying a path/size/hash manifest.  These operations are recorded as storage events; they do not by themselves authorize or count as target analysis.
-    \item[Approved metadata handling.] Reading the registered non-target fields (date boundary, station identifier, latitude, longitude, postcode, and area), row counts, file sizes, and hashes needed to establish the split and storage receipt, without using state/target values.  This is boundary administration, not model evidence.
-    \item[Analytical access.] Any post-lock operation that deserializes, displays, summarizes, plots, filters by, learns from, scores against, or forms a scientific claim from formal/protected target or state values.  Manual viewing counts.  Feeding values to training, validation, model selection, metric computation, threshold selection, error analysis, or a paper table counts even if no file is modified.
+    \item[Storage materialization.] Copying, moving, splitting, preserving, or hashing target-bearing files without using their values.  Creating or checking a path/size/hash manifest also belongs to this category.  These operations are recorded as storage events and do not count as target analysis.
+    \item[Approved metadata handling.] Reading only the registered non-target fields (date boundary, station identifier, latitude, longitude, postcode, and area), row counts, file sizes, and hashes needed to establish the split and storage receipt.  State and target values are not used.
+    \item[Analytical access.] Any post-lock use of formal or protected target values.  This includes displaying, summarizing, plotting, filtering by, learning from, scoring against, or making a scientific claim from those values.  Manual viewing also counts.  Use in training, validation, model selection, metrics, threshold selection, error analysis, or a paper table counts even when no file is modified.
 \end{description}
 
-Under this definition, the guard's \texttt{analytical\_access\_count=0} means no protected label was used after the boundary lock for those analytical operations.  It does not mean that target bytes were never materialized: one storage-migration event created vault shards and moved recoverable sources.  It also does not erase the separately logged display of two example source rows during pre-lock schema discovery.  The counter is a procedural project field supported by receipts and audits, not an operating-system reference monitor, append-only security log, encryption guarantee, or defense against a malicious authenticated user.
+Under this definition, \texttt{analytical\_access\_count=0} means that no protected label was used after the boundary lock for the listed analytical operations.  It does not mean that target bytes were never materialized: one storage migration created vault shards and moved recoverable sources.  It also does not erase the logged display of two example rows during pre-lock schema discovery.  The counter is supported by project receipts and audits.  It is not enforced by the operating system, does not provide encryption, and cannot prevent deliberate bypass by an authorized user.
 
-The in-scope threat is accidental or adaptive analytical use by the project workflow: a script path that reaches a future role, a stale cache, recoverable Git objects in the main project, or a metric opened before the registered closure.  The current vault path, manifest, hashes, guards, and negative main-project scan reduce those risks.  OS compromise, deliberate bypass by an authorized account, cryptographic confidentiality, and immutable access logging are out of scope.  The allowed claim is therefore procedural source separation and zero recorded analytical use, not hardened security.
+These controls are intended to prevent accidental use, or use chosen after earlier results were seen, within the project workflow.  Examples include a script path that reaches a future role, a stale cache, recoverable Git objects, or a metric opened before the registered closure.  The vault path, manifest, hashes, guards, and negative main-project scan reduce these risks.  Operating-system compromise, deliberate bypass, encryption, and immutable access logging are outside scope.  The supported claim is source separation and zero recorded analytical use, not hardened security.
 
 \subsection{Paris fold-synchronous bootstrap, including the partial block}
 \label{sec:appendix-paris-bootstrap}
 
-The frozen implementation in \path{experiments/09_distill_v2/scripts/aggregate_paris_teacher.py} used 5,000 replicates and seed 42.  For each development fold it intersected target timestamps across all four horizons, sorted them, required a contiguous hourly sequence, and sliced the sequence at offsets 0, 24, 48, and so on.  The final slice was retained even when shorter than 24 hours.  Each replicate sampled exactly the fold's number of blocks uniformly with replacement, concatenated the selected timestamp arrays, and reused that same sampled timestamp sequence for every horizon in the fold.  Observed-target masks were then applied within each cell, cell RMSEs were macro-averaged, the better CAPER/TimeXer single-model reference was reselected inside the replicate, and teacher gain was computed against that reference.  The reported interval is the 2.5th and 97.5th percentiles.
+The frozen implementation in \path{experiments/09_distill_v2/scripts/aggregate_paris_teacher.py} used 5,000 replicates and seed 42.  For each development fold, it found target timestamps shared by all four horizons and sorted them.  It required one contiguous hourly sequence and divided that sequence at offsets 0, 24, 48, and so on.  The final slice was kept even when it contained fewer than 24 hours.
 
-August and October each contain 732 common hourly timestamps, represented as 30 full 24-hour blocks plus one 12-hour block (31 selectable blocks).  September and November each contain 708 timestamps, represented as 29 full blocks plus one 12-hour block (30 selectable blocks).  The partial block has the same probability of being selected as any other block, but contributes only 12 timestamps whenever selected; consequently replicate timestamp counts can vary with how often the partial block is drawn.  No padding, wraparound, discarding, or extra weighting is applied.  This exact rule is the scope of the reported Paris interval.  No alternative block length or partial-block sensitivity analysis was run for this revision.
+Each replicate sampled the fold's original number of blocks with replacement.  The same sampled timestamp sequence was used for every horizon in that fold.  Observed-target masks were then applied within each cell, and cell RMSEs were macro-averaged.  The better CAPER/TimeXer reference was selected again inside the replicate, and teacher gain was computed against that reference.  The reported interval uses the 2.5th and 97.5th percentiles.
 
-\subsection{Claim lineage and research-question closure}
+August and October each contain 732 common hourly timestamps: 30 full 24-hour blocks and one 12-hour block (31 selectable blocks).  September and November each contain 708 timestamps: 29 full blocks and one 12-hour block (30 selectable blocks).  Every block, including the 12-hour partial block, had the same probability of selection.  Because the partial block contained fewer timestamps, replicate length varied with the number of times it was drawn.  No padding, wraparound, discarding, or extra weighting was applied.  The reported Paris interval applies to this exact rule.  No alternative block length or partial-block sensitivity analysis was run.
+
+\subsection{Claim-to-artifact links}
 \label{sec:appendix-claim-lineage}
 \label{app:claim-lineage}
 
-Table~\ref{tab:claim-trace} is the manuscript-facing join between a headline result and its machine-readable authority.  The hash is computed over the named artifact as stored in the main workspace.  A hash identifies bytes; it does not prove that the underlying method is correct.  The evaluation-type and wording columns provide the semantic constraint.  In particular, the Global Fixed row supports a scoped internal point comparison and a separate measured latency trade-off; it does not acquire an unreported bootstrap interval merely because later failed stages used one.
+Table~\ref{tab:claim-trace} links each headline result to the machine-readable artifact that supports it.  The hash is computed over the named artifact in the main workspace.  A hash identifies file bytes; it does not prove that the method is correct.  The evaluation-type and wording columns state the claim limit.  For example, the Global Fixed row supports an internal point comparison and a separate measured latency result.  It does not gain an unreported bootstrap interval merely because later stages used one.
 
 \input{tables/table8_claim_trace}
 
@@ -132,7 +134,9 @@ Table~\ref{tab:claim-trace} is the manuscript-facing join between a headline res
 \label{sec:appendix-latency-grid}
 \label{app:latency-all}
 
-The main text uses batch-one end-to-end P50 as its primary engineering endpoint.  Table~\ref{tab:latency-all-batches} exposes the complete batch 1/8/32 grid already present in the frozen latency summary.  It is generated mechanically by \path{experiments/10_audit_paper/scripts/generate_revision_appendix.py}; the generator checks for all 18 method--batch rows and formats the existing values without launching the benchmark.  The hardware and software context remains the one reported in the original manifests: Windows 10 build 26200, 16 physical/32 logical AMD CPU cores, approximately 16.8 GB RAM, RTX 4060 Laptop GPU with driver 595.71, Python 3.10.8, Torch 2.5.1+cu121, CUDA 12.1, cuDNN 9.1, FP32, and single-threaded Torch/OMP/MKL host settings.  GPU clocks were observed per process, not pinned; model loading and checkpoint I/O were excluded.  Cold-start, quantized, compiled, parallel-expert, and serverless claims remain outside scope.
+The main text uses batch-one end-to-end P50 as its primary engineering endpoint.  Table~\ref{tab:latency-all-batches} lists the complete batch 1/8/32 grid from the frozen latency summary.  The script \path{experiments/10_audit_paper/scripts/generate_revision_appendix.py} checks all 18 method--batch rows and formats the stored values without rerunning the benchmark.
+
+The hardware and software settings were Windows 10 build 26200, 16 physical/32 logical AMD CPU cores, approximately 16.8 GB RAM, an RTX 4060 Laptop GPU with driver 595.71, Python 3.10.8, Torch 2.5.1+cu121, CUDA 12.1, cuDNN 9.1, FP32, and single-threaded Torch/OMP/MKL host settings.  GPU clocks were observed per process rather than pinned.  Model loading and checkpoint I/O were excluded.  Cold-start, quantized, compiled, parallel-expert, and serverless settings were not tested.
 
 \input{tables/tableA_latency_batches}
 
@@ -141,7 +145,7 @@ The main text uses batch-one end-to-end P50 as its primary engineering endpoint.
 \subsection{Protocol and environment artifact index}
 \label{sec:appendix-artifact-index}
 
-The following index identifies existing controls; it does not upgrade an incomplete field into a complete reproducibility package.  The latency and Chronos stages have explicit environment records.  Other stages retain protocol, source/configuration fingerprints, and run receipts but do not expose one uniform cross-stage environment hash, so exact environment equivalence is unknown/not claimed where absent.
+The following index lists existing controls.  Listing a file does not make missing environment information complete.  The latency and Chronos stages have explicit environment records.  Other stages retain protocols, source/configuration fingerprints, and run receipts but do not provide one cross-stage environment hash.  Exact environment equivalence is therefore unknown/not claimed where that record is absent.
 
 \begin{table*}[htbp]
 \centering
@@ -150,7 +154,7 @@ The following index identifies existing controls; it does not upgrade an incompl
 \scriptsize
 \begin{tabular}{>{\raggedright\arraybackslash}p{0.40\linewidth}>{\raggedright\arraybackslash}p{0.28\linewidth}>{\raggedright\arraybackslash}p{0.23\linewidth}}
 \toprule
-Artifact & Function & Evidentiary limit \\
+Artifact & Function & Scope limit \\
 \midrule
 \path{experiments/00_registry_reclassification/scripts/rebuild_status_registry.py} & Deterministic S1--S6 implementation and priority order & Single programmed classifier; no inter-rater validation \\
 \path{experiments/00_registry_reclassification/outputs/CONFIG_STATUS.csv} & Row-level run IDs, fingerprints, grades, reasons, and rerun policy & One frozen UrbanEV inventory \\
@@ -177,7 +181,7 @@ Artifact & Function & Evidentiary limit \\
 \scriptsize
 \begin{tabular}{>{\raggedright\arraybackslash}p{0.40\linewidth}>{\raggedright\arraybackslash}p{0.28\linewidth}>{\raggedright\arraybackslash}p{0.23\linewidth}}
 \toprule
-Artifact & Function & Evidentiary limit \\
+Artifact & Function & Scope limit \\
 \midrule
 \path{experiments/07_residual_distillation/outputs/FORMAL_MATRIX_AUDIT_V1_0_FAIL_IDENTITY_SHUFFLE.json} and \path{experiments/07_residual_distillation/outputs/FORMAL_MATRIX_AUDIT.json} & Pre-unlock failure and final 72/72 audit & Supports control integrity, not accuracy \\
 \path{experiments/07_residual_distillation/outputs/D1_SUMMARY.json} and \path{experiments/07_residual_distillation/outputs/D1_DECISION.md} & Primary/negative-control effects and terminal gate decision & No D2 latency, multi-seed, or protected evidence \\
@@ -200,7 +204,7 @@ Artifact & Function & Evidentiary limit \\
 \subsection{Author and reviewer application checklist}
 \label{sec:appendix-checklist}
 
-Table~\ref{tab:audit-checklist} turns the case-study controls into a review interface.  The final row is important: missing validation must be stated as missing.  This paper therefore treats the 1\% rule as a frozen local convention without an economic utility model, the S1--S6 labels as deterministic without inter-rater evidence, and all model/latency conclusions as bounded to their recorded seeds, panels, adaptations, and serving graph.
+Table~\ref{tab:audit-checklist} summarizes checks that authors and reviewers can apply.  Missing validation must be stated as missing.  The 1\% rule is a local convention without an economic utility model.  The S1--S6 labels come from one deterministic classifier and have no inter-rater evidence.  The model and latency conclusions are limited to their recorded seeds, panels, adaptations, and serving setup.
 
 \input{tables/table10_checklist}
 

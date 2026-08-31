@@ -1,20 +1,20 @@
 {
   "schema_version": "urbanev-paper-build-manifest/v1",
-  "source_date_epoch": 1788048000,
-  "paper_version": "0.9.1-preprint",
+  "source_date_epoch": 1788134400,
+  "paper_version": "post-v0.9.1-language-draft",
   "pdfs": [
     {
       "path": "paper/main/UrbanEV_Evidence_Audit_Main.pdf",
-      "sha256": "2e3fadad8995b504fc0f0967069e0411d432ede74f9b1c1748bd3d35c9d703e9",
-      "bytes": 725296,
-      "pages": 23,
-      "normalized_text_sha256": "ca1c282b59313c9987b7a5ce38d8977368a2f702387cc7504b432fd5781efa96",
+      "sha256": "b310879ec33a9e84fb951df2217c933096e0f9e6de1af8091e6b0723ef2e2380",
+      "bytes": 722187,
+      "pages": 22,
+      "normalized_text_sha256": "28b99b8d13c9799580c4b78bc9c67ba8c12bc09ae2bfd7be6a5f87cdd1bdc846",
       "fonts_embedded": true,
       "metadata": {
         "/Producer": "MiKTeX pdfTeX-1.40.28",
         "/Author": "Hongwei Chi",
         "/Title": "From Configurations to Claims: An Evidence Audit of Urban EV Charging Forecasting",
-        "/Subject": "Artifact-grounded audit of urban EV charging forecast evidence",
+        "/Subject": "Audit of experimental evidence in urban EV charging forecasting",
         "/Creator": "LaTeX with hyperref",
         "/Keywords": "electric vehicle charging, forecasting, reproducibility, experiment audit, latency, stopping rules",
         "/Trapped": "/False"
@@ -22,10 +22,10 @@
     },
     {
       "path": "paper/supplement/UrbanEV_Evidence_Audit_Supplement.pdf",
-      "sha256": "ee0b8c7681a4fd6537867cd4c31f9e3e98418651b062ad10b4505a2e1146fc37",
-      "bytes": 560240,
+      "sha256": "c975541cee25d0918acfd9706d07a3b25ea62a7322fe981f31bdaec4b6541f29",
+      "bytes": 559948,
       "pages": 13,
-      "normalized_text_sha256": "f4fb7cf0fdfe17c271806b81258a56a1d57a45726dd922b82d294fbf711ada44",
+      "normalized_text_sha256": "c15e70095b8c73a96d18ebc39dd74788d3a0804cc56036dfc5a20c2f48f8efb3",
       "fonts_embedded": true,
       "metadata": {
         "/Producer": "MiKTeX pdfTeX-1.40.28",
@@ -42,7 +42,7 @@
       "sha256": "9055497bd362da937424b4a93651c95c38c4e5fd83bf7593dc73b2568dfd822c",
       "bytes": 461831,
       "pages": 42,
-      "normalized_text_sha256": "5760021a3ba851a53e8151ad0f8bd8dfd39cb64c2bd713ecd7a2f9af63b2583b",
+      "normalized_text_sha256": "9e6cf114ebbcc8036c13596e5d5661607f42ead83c9c4eeafd42dc022bf4f87a",
       "fonts_embedded": true,
       "metadata": {
         "/Creator": "LaTeX with hyperref",
@@ -54,10 +54,10 @@
     },
     {
       "path": "paper/archive/UrbanEV_Evidence_Audit_Archive_Rebuilt.pdf",
-      "sha256": "33bbb485e57cd6e06126f9c6c7f2813d1bafadc7b61c39185af917f983280b2c",
-      "bytes": 869046,
+      "sha256": "84c16513e9542a22f78e22548e277e21d0e08e5ba17ed939c92f04f3f2cc1a84",
+      "bytes": 863827,
       "pages": 37,
-      "normalized_text_sha256": "deebe6c4c0aa5eee17bec962bd462187ec5069813fdb736067c2959459712f20",
+      "normalized_text_sha256": "440c81001099de82f2e807978e08a2d3d55e2bf02191eedc02c535f617997515",
       "fonts_embedded": true,
       "metadata": {
         "/Producer": "MiKTeX pdfTeX-1.40.28",
@@ -74,7 +74,7 @@
       "sha256": "ef9739e9ead1599588a737e91b7d3b1609723335ec16aa0c0b76ff6f1b805ec8",
       "bytes": 572789,
       "pages": 43,
-      "normalized_text_sha256": "62797ec6a970939d71399e13c83d2fed0635dd6def1b3aac492b263eac679ff7",
+      "normalized_text_sha256": "5a8cd449b3f86403b3e1d30e94c9668ba7eaa72f4c39126725ded0dbc630767f",
       "fonts_embedded": true,
       "metadata": {
         "/Producer": "pypdf",
@@ -88,8 +88,8 @@
   "sources": [
     {
       "path": "paper/archive/main_archive.tex",
-      "sha256": "36e29f2ece76f4e9c24f5adbb1f8130431bd5fea48f1c5418e23934e0d7c36e1",
-      "bytes": 2139
+      "sha256": "9330614fa29a2fc91abc8c70813623c4d6c2fd40e024e773b6b7e8b03fac7552",
+      "bytes": 2213
     },
     {
       "path": "paper/archive/main_archive_original.tex",
@@ -168,53 +168,53 @@
     },
     {
       "path": "paper/main/main.tex",
-      "sha256": "b0ec64860b951820ca5111c3c7a812d7cc49ca08af7d32608553ef43af95041f",
-      "bytes": 5099
+      "sha256": "45b3761056df8720e837ba1bffdb3804e1bcebeb0b3798064d7fbe51eb059641",
+      "bytes": 5009
     },
     {
       "path": "paper/main/sections/01_introduction.tex",
-      "sha256": "5a682175e236c8181d41761c0cbeda3fb2f4a74d46814fa3f03b4bdc283ef054",
-      "bytes": 9111
+      "sha256": "55519aa70fd3307cbfa0e9f06936e36bfe4b64cd5202c6355b4c835cd5364de4",
+      "bytes": 7811
     },
     {
       "path": "paper/main/sections/02_related_work.tex",
-      "sha256": "6c22af50b560069fcced442b8b66c738f9046fad26ef9d14c9e7eb3f89ad4e60",
-      "bytes": 9324
+      "sha256": "d951f8e886832327b11d6d8158581e33e60ff0c444ddf2b1c23fd31a3aa90b24",
+      "bytes": 7786
     },
     {
       "path": "paper/main/sections/03_methods.tex",
-      "sha256": "4e4be3b1540f7838a62ea1f295a049b39bea818d6a76420260c499d9b08805f9",
-      "bytes": 17943
+      "sha256": "9932fe3fa170863adf833c4f1fcf624d1dda237b52f744a5b5f50b504f639cce",
+      "bytes": 17245
     },
     {
       "path": "paper/main/sections/04_results.tex",
-      "sha256": "4789ef3c4ef2d13d1622113753391c8c2c6bf073ecdabe5ba768938e7533119b",
-      "bytes": 12178
+      "sha256": "ec0f5ef0625cbd6a38cfc26dd3bed867a7e117ef214d1db48682d9c313e41b11",
+      "bytes": 11801
     },
     {
       "path": "paper/main/sections/05_discussion.tex",
-      "sha256": "62bac7d66bc56b3723a73519f3242af1f762ed9ecc0a692ad640baf3995a28f8",
-      "bytes": 10024
+      "sha256": "3f5281d337b2901afa7d80f6a78679a219da9cc56a7acf7b153a011dc85dddd7",
+      "bytes": 8311
     },
     {
       "path": "paper/main/sections/06_limitations.tex",
-      "sha256": "01805974d56332aa8dcb6eadaf29f8f090a588a2c6ba11b92e3b845652b68081",
+      "sha256": "4de6c54ab93e95a0a0d5ee41618c47d0b56ca682753902e2be7ec106e0cb6be5",
       "bytes": 7099
     },
     {
       "path": "paper/main/sections/07_conclusion.tex",
-      "sha256": "e81f49516f967d6c6e687eba8a069246de9618ca5e6f786c416e5dedc0bf982f",
-      "bytes": 2458
+      "sha256": "3d7d364677b7f75d1890030fb3c0ae7e5ef63f12dac64e51c3e1542e8ddd8f74",
+      "bytes": 2238
     },
     {
       "path": "paper/main/sections/08_reproducibility_appendix.tex",
-      "sha256": "b47d0d349acb79d6ee4cb61d337d2ced9d89af9d1dd3d75238e7c96a9abcd855",
-      "bytes": 24767
+      "sha256": "fb1e3760e9e0456d547415d3d3227f3df4d522a04c98f5e2bbcc7c382d5d60b6",
+      "bytes": 24031
     },
     {
       "path": "paper/main/tables/table10_checklist.tex",
-      "sha256": "4416405d62f7b1b61d4276f10560f0d509eae9b2fb2439c57a71498bbabd7c03",
-      "bytes": 3490
+      "sha256": "af3512cc7e44897932ec977542540042d1aead0b50df82b85bd84a58003ace06",
+      "bytes": 3471
     },
     {
       "path": "paper/main/tables/table1_status.tex",
@@ -243,8 +243,8 @@
     },
     {
       "path": "paper/main/tables/table6_audit_framework.tex",
-      "sha256": "f581f596a6cff570fc58b5bb14b3627bab04671fc13f7616fc2faaced90c4e9d",
-      "bytes": 4585
+      "sha256": "7cec21dfd29a8423f5a4bb88848a5b7ffa2da6a207ffad1ff7375f5a86a82efd",
+      "bytes": 4509
     },
     {
       "path": "paper/main/tables/table7_model_identity.tex",
@@ -258,18 +258,18 @@
     },
     {
       "path": "paper/main/tables/table9_rq_map.tex",
-      "sha256": "b072c6ed629a04085a85f68491670a36fae6fe93036ae4a7beff71bef5583c30",
-      "bytes": 2587
+      "sha256": "2cb58015b563b3d5c3f618a33f8c2140bd0634727452b8207a716064d8c0fa7c",
+      "bytes": 2556
     },
     {
       "path": "paper/main/tables/table_audit_framework_compact.tex",
-      "sha256": "bc40ef82edc6fe1200afaa0859c6077b3e87e0be87ccece22b99b1b54e01ebfc",
-      "bytes": 1255
+      "sha256": "26a102052df8e2720934c6358c72fd85ab3f3e6ae1c37eaf7cabc0c6563d43b9",
+      "bytes": 1263
     },
     {
       "path": "paper/main/tables/tableA_latency_batches.tex",
-      "sha256": "595f11a42f310f75f9bb5fcc62ba89d4ab0d6a003de85031335caa9fa69fd077",
-      "bytes": 1914
+      "sha256": "22ff156a037a0eacf78d71969e9ae0a649d8ec3a0312ce4bd98a42f73b500967",
+      "bytes": 1908
     },
     {
       "path": "paper/shared/author_metadata.tex",
@@ -283,8 +283,8 @@
     },
     {
       "path": "paper/supplement/supplement.tex",
-      "sha256": "971dbcf6435b58a11c09216a5cc3ed70873ac7f429fe25179974844b7a57a3cd",
-      "bytes": 1805
+      "sha256": "a043ceaed3fe3a790c2fc7f3627b787333880a0cef403526d6541ebc0addeaef",
+      "bytes": 1841
     }
   ]
 }

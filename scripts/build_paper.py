@@ -11,7 +11,7 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-os.environ.setdefault("SOURCE_DATE_EPOCH", "1788048000")
+os.environ.setdefault("SOURCE_DATE_EPOCH", "1788134400")
 VARIANTS = {
     "main": (ROOT / "paper/main", "main.tex", "UrbanEV_Evidence_Audit_Main.pdf"),
     "supplement": (ROOT / "paper/supplement", "supplement.tex", "UrbanEV_Evidence_Audit_Supplement.pdf"),

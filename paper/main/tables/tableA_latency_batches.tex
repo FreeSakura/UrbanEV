@@ -33,6 +33,6 @@ Global Fixed CAPER+TimeXer & 32 & 479.634 & 510.574 & 66.7 \\
 \bottomrule
 \end{tabular}
 \begin{minipage}{0.94\linewidth}\vspace{3pt}\footnotesize
-Workload: one request produces all four horizons for 275 UrbanEV zones. Measurements used FP32, one RTX 4060 Laptop GPU, sequential expert execution, five processes, 50 warm-ups, and 1,000 timed iterations per process and method--batch cell. Throughput is not monotone across model families because the frozen serving graphs batch differently; these values are workload-specific rather than portable deployment guarantees.
+Workload: one request produces all four horizons for 275 UrbanEV zones. Measurements used FP32, one RTX 4060 Laptop GPU, sequential expert execution, five processes, 50 warm-ups, and 1,000 timed iterations per process and method--batch cell. Throughput is not monotone across model families because the frozen serving graphs batch differently; these values should not be assumed to hold in other deployment settings.
 \end{minipage}
 \end{table*}

@@ -99,8 +99,8 @@ def main() -> None:
     ]
     payload = {
         "schema_version": "urbanev-paper-build-manifest/v1",
-        "source_date_epoch": 1788048000,
-        "paper_version": "0.9.1-preprint",
+        "source_date_epoch": 1788134400,
+        "paper_version": "post-v0.9.1-language-draft",
         "pdfs": pdf_records,
         "sources": sources,
     }
