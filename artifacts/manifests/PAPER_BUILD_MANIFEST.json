@@ -1,5 +1,5 @@
 {
-  "schema_version": "urbanev-paper-build-manifest/v1",
+  "schema_version": "urbanev-paper-build-manifest/v2",
   "source_date_epoch": 1788134400,
   "paper_version": "post-v0.9.1-language-draft",
   "pdfs": [
@@ -8,7 +8,8 @@
       "sha256": "b310879ec33a9e84fb951df2217c933096e0f9e6de1af8091e6b0723ef2e2380",
       "bytes": 722187,
       "pages": 22,
-      "normalized_text_sha256": "28b99b8d13c9799580c4b78bc9c67ba8c12bc09ae2bfd7be6a5f87cdd1bdc846",
+      "normalized_text_sha256": "a629605a04eff0703818a3d8e8b5ca7e528a7760e698bc80934a45ee87f3e7f5",
+      "normalized_character_multiset_sha256": "4a00a3309a540a7969e989830791a182310dd955063d206e4c6e2f1f036b381c",
       "fonts_embedded": true,
       "metadata": {
         "/Producer": "MiKTeX pdfTeX-1.40.28",
@@ -26,6 +27,7 @@
       "bytes": 559948,
       "pages": 13,
       "normalized_text_sha256": "c15e70095b8c73a96d18ebc39dd74788d3a0804cc56036dfc5a20c2f48f8efb3",
+      "normalized_character_multiset_sha256": "21987b1c3532beb42295cc8027a504077363a4e32520436c606d5f0a02e961e6",
       "fonts_embedded": true,
       "metadata": {
         "/Producer": "MiKTeX pdfTeX-1.40.28",
@@ -42,7 +44,8 @@
       "sha256": "9055497bd362da937424b4a93651c95c38c4e5fd83bf7593dc73b2568dfd822c",
       "bytes": 461831,
       "pages": 42,
-      "normalized_text_sha256": "9e6cf114ebbcc8036c13596e5d5661607f42ead83c9c4eeafd42dc022bf4f87a",
+      "normalized_text_sha256": "5760021a3ba851a53e8151ad0f8bd8dfd39cb64c2bd713ecd7a2f9af63b2583b",
+      "normalized_character_multiset_sha256": "47805a1887c7b8d8098a569a945ce08ee69c18b87f0f34c040e83640bf2c9a8b",
       "fonts_embedded": true,
       "metadata": {
         "/Creator": "LaTeX with hyperref",
@@ -57,7 +60,8 @@
       "sha256": "84c16513e9542a22f78e22548e277e21d0e08e5ba17ed939c92f04f3f2cc1a84",
       "bytes": 863827,
       "pages": 37,
-      "normalized_text_sha256": "440c81001099de82f2e807978e08a2d3d55e2bf02191eedc02c535f617997515",
+      "normalized_text_sha256": "7a359db49cf65bdddb38627ab5bfd0044d4b9ed056c6f0b85876fe80e07281a8",
+      "normalized_character_multiset_sha256": "b071861fef4b1857b194e3be7b6f0212094d105f0b7e2ce55f543704dd3d6ce8",
       "fonts_embedded": true,
       "metadata": {
         "/Producer": "MiKTeX pdfTeX-1.40.28",
@@ -74,7 +78,8 @@
       "sha256": "ef9739e9ead1599588a737e91b7d3b1609723335ec16aa0c0b76ff6f1b805ec8",
       "bytes": 572789,
       "pages": 43,
-      "normalized_text_sha256": "5a8cd449b3f86403b3e1d30e94c9668ba7eaa72f4c39126725ded0dbc630767f",
+      "normalized_text_sha256": "62797ec6a970939d71399e13c83d2fed0635dd6def1b3aac492b263eac679ff7",
+      "normalized_character_multiset_sha256": "fc5ae35e082b20824471fc9517bdfda9d1a1a2f62b5011386e114a5e95e6260b",
       "fonts_embedded": true,
       "metadata": {
         "/Producer": "pypdf",

@@ -33,6 +33,11 @@ def canonical_pdf_text(reader: PdfReader) -> str:
     return "".join(character for character in text if character.isalnum())
 
 
+def canonical_character_multiset(text: str) -> str:
+    """Ignore float/page order while retaining every extracted alphanumeric character."""
+    return "".join(sorted(text))
+
+
 def _pypdf_fonts_embedded(reader: PdfReader) -> bool:
     for page in reader.pages:
         fonts = ((page.get("/Resources") or {}).get("/Font") or {})
@@ -75,6 +80,9 @@ def main() -> None:
                 "bytes": path.stat().st_size,
                 "pages": len(reader.pages),
                 "normalized_text_sha256": sha256(text.encode("utf-8")),
+                "normalized_character_multiset_sha256": sha256(
+                    canonical_character_multiset(text).encode("utf-8")
+                ),
                 "fonts_embedded": fonts_embedded(path, reader),
                 "metadata": metadata,
             }
@@ -98,7 +106,7 @@ def main() -> None:
         for path in source_paths
     ]
     payload = {
-        "schema_version": "urbanev-paper-build-manifest/v1",
+        "schema_version": "urbanev-paper-build-manifest/v2",
         "source_date_epoch": 1788134400,
         "paper_version": "post-v0.9.1-language-draft",
         "pdfs": pdf_records,

@@ -93,8 +93,8 @@
     },
     {
       "path": "artifacts/manifests/PAPER_BUILD_MANIFEST.json",
-      "sha256": "7902aec22889642cb0a5215b170e737a93f572bf305c14c940f658aabbfe42a8",
-      "bytes": 10787,
+      "sha256": "6ee06fb0eed9fe5b780865d8dab8fae72b5755807c4d0a38c16ca51de0c148e8",
+      "bytes": 11357,
       "role": "artifacts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -1551,8 +1551,8 @@
     },
     {
       "path": "scripts/build_paper_manifest.py",
-      "sha256": "a6b702248068989e8129bf02e30502cca90d4d3d62e85f7902c68961963e6b72",
-      "bytes": 4143,
+      "sha256": "8838b6b42986de8f8caf852bc1405f28c3af7cd197aa13b1b877255aa9a093c7",
+      "bytes": 4474,
       "role": "scripts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -1623,8 +1623,8 @@
     },
     {
       "path": "scripts/verify_paper_manifest.py",
-      "sha256": "fa683637888dca2f6faa10e806595141cd0012cb077f904470fca03c627face8",
-      "bytes": 2863,
+      "sha256": "64eef74e64623ff3b7430bb750fd497484728945737d2fb4d55f7654473a578f",
+      "bytes": 3659,
       "role": "scripts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",

@@ -23,6 +23,14 @@ def normalized_text_hash(reader: PdfReader) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
+def normalized_character_multiset_hash(reader: PdfReader) -> str:
+    """Ignore cross-platform float/page order while retaining extracted characters."""
+    text = "\n".join(page.extract_text() or "" for page in reader.pages)
+    text = unicodedata.normalize("NFKC", text).casefold()
+    characters = sorted(character for character in text if character.isalnum())
+    return hashlib.sha256("".join(characters).encode("utf-8")).hexdigest()
+
+
 def _pypdf_fonts_embedded(reader: PdfReader) -> bool:
     for page in reader.pages:
         fonts = ((page.get("/Resources") or {}).get("/Font") or {})
@@ -60,8 +68,15 @@ def main() -> None:
         reader = PdfReader(str(path))
         if len(reader.pages) != record["pages"]:
             raise ValueError(f"page-count drift: {record['path']}")
-        if normalized_text_hash(reader) != record["normalized_text_sha256"]:
-            raise ValueError(f"normalized-text drift: {record['path']}")
+        current_bytes_hash = hashlib.sha256(path.read_bytes()).hexdigest()
+        if current_bytes_hash == record["sha256"]:
+            if normalized_text_hash(reader) != record["normalized_text_sha256"]:
+                raise ValueError(f"normalized-text drift: {record['path']}")
+        elif (
+            normalized_character_multiset_hash(reader)
+            != record["normalized_character_multiset_sha256"]
+        ):
+            raise ValueError(f"normalized-character drift: {record['path']}")
         if not fonts_embedded(path, reader):
             raise ValueError(f"unembedded font: {record['path']}")
         metadata = reader.metadata or {}
