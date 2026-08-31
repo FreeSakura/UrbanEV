@@ -1,11 +1,11 @@
 \begin{table*}[htbp]
 \centering
-\caption{Portable fail-closed audit framework.  Each transition requires an inspectable artifact; a failed precondition routes to \emph{blocked} rather than to metric interpretation.}
+\caption{Fail-closed audit steps used in this study.  Each transition requires a checkable artifact; a failed condition moves to \emph{blocked} rather than metric interpretation.}
 \label{tab:audit-framework}
 \scriptsize
 \begin{tabular}{>{\raggedright\arraybackslash}p{0.08\linewidth}>{\raggedright\arraybackslash}p{0.14\linewidth}>{\raggedright\arraybackslash}p{0.23\linewidth}>{\raggedright\arraybackslash}p{0.21\linewidth}>{\raggedright\arraybackslash}p{0.17\linewidth}}
 \toprule
-Stage & Required state & Minimum portable record & Fail-closed transition & Claim token released \\
+Stage & Required state & Minimum record & Fail-closed transition & Supported statement \\
 \midrule
 1. Register & protocol fixed before aggregate evidence & data role, target, split, forecast origin, model/config ID, seed, endpoint, controls, gate, stop rule & missing or mutable field $\rightarrow$ \texttt{BLOCKED} & \texttt{registered} only \\
 2. Execute & registered configuration & run ID, configuration fingerprint, code/environment identity, attempt state, immutable output paths & failure $\rightarrow$ terminal failed run; non-run $\rightarrow$ non-complete & \texttt{executed} or \texttt{failed}; never \texttt{reproduced} by itself \\
@@ -20,17 +20,17 @@ Stage & Required state & Minimum portable record & Fail-closed transition & Clai
 
 \begin{table*}[htbp]
 \centering
-\caption{Portable fail-closed audit framework (continued): typed claim grammar used to prevent diagnostic, proxy, engineering, or procedural evidence from being promoted to a stronger claim.}
+\caption{Fail-closed audit steps (continued): wording rules that keep diagnostic, proxy, engineering, and procedural results separate from stronger claims.}
 \label{tab:claim-grammar}
 \scriptsize
 \begin{tabular}{>{\raggedright\arraybackslash}p{0.15\linewidth}>{\raggedright\arraybackslash}p{0.26\linewidth}>{\raggedright\arraybackslash}p{0.21\linewidth}>{\raggedright\arraybackslash}p{0.20\linewidth}}
 \toprule
-Evidence type & Required sentence grammar & Example permitted verb phrase & Promotion that remains prohibited \\
+Evidence type & Required wording & Example permitted wording & Unsupported wording \\
 \midrule
 Oracle diagnostic & [target-dependent role] + [dataset boundary] + [reference] + [opportunity bound] & ``indicates an infeasible upper bound'' & ``is deployable'' or ``can be recovered'' \\
 Proxy prediction & [proxy label] + [forecast-origin information set] + [discrimination/calibration] & ``predicts relative expert advantage'' & ``improves forecast RMSE'' or ``identifies a cause'' \\
 Real-GT development/internal & [data role] + [reference] + [endpoint] + [effect/interval] & ``improves internal rolling RMSE by $x\%$'' & ``generalizes'', ``blind test'', or ``state of the art'' \\
-Engineering measurement & [device + workload + precision + batch] + [endpoint] + [comparison] & ``measured P50 was $x$ ms on the frozen workload'' & ``is efficient'' without a portable serving study \\
+Engineering measurement & [device + workload + precision + batch] + [endpoint] + [comparison] & ``measured P50 was $x$ ms on the frozen workload'' & ``is efficient'' without a matching serving study \\
 Conjunctive gate & [candidate] + [all required checks] + [pass/fail] + [authorized next action] & ``failed the 1\% point-effect requirement; stage stopped'' & replacing the frozen question with a positive subcheck \\
 Artifact-integrity event & [defect] + [pre-metric state] + [repair/audit] + [unlock outcome] & ``blocked interpretation until identity audit passed'' & ``repair improved accuracy'' \\
 Procedural data boundary & [asset role] + [storage state] + [analytical-use state] + [threat-model limit] & ``vault-materialized; analytical access after lock was zero'' & ``never materialized'' or ``cryptographically inaccessible'' \\

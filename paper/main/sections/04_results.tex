@@ -1,7 +1,7 @@
 \section{Results}
 \label{sec:results}
 
-\subsection{Completed execution was much broader than exact reproduction}
+\subsection{Many configurations completed, but only 156 met S1}
 \label{sec:results-status}
 
 The frozen registry contained 1,224 unique configurations with no duplicate run identifier or configuration fingerprint.  Of these, 865 (70.67\%) had completed artifacts, 19 had failed terminal states, and 340 had not been executed.  Completion did not imply exact reproduction: only 156 configurations (12.75\%) satisfied S1, while 216 (17.65\%) were S2, 122 (9.97\%) were trend-only S3, and 371 (30.31\%) were non-identifiable S4.  Thus, the S1 count was less than one fifth of the completed-artifact count.
@@ -17,28 +17,30 @@ The distribution also depended on the original UrbanEV source table.  UrbanEV so
     \label{fig:configuration-status}
 \end{figure}
 
-\subsection{Strong complementarity contracted under feasible fusion}
+\subsection{Fixed fusion recovered part of the oracle gain}
 \label{sec:results-accuracy}
 
-The lightweight qualification matrix completed all 72 registered runs (three models, six folds, and four horizons).  Among the evaluated single models, compact TimeXer had the lowest macro RMSE at 0.073709.  DLinear reached 0.075362, NLinear 0.075711, and GBDT-Forecaster 0.078165; CAPER's existing same-target result was 0.075507.  These comparisons qualify TimeXer only within the evaluated UrbanEV protocol, not as a universal strongest model.
+The baseline experiment completed all 72 registered runs (three models, six folds, and four horizons).  Among the evaluated single models, compact TimeXer had the lowest macro RMSE at 0.073709.  DLinear reached 0.075362, NLinear 0.075711, and GBDT-Forecaster 0.078165; CAPER's existing same-target result was 0.075507.  TimeXer was best only among the models tested under this UrbanEV protocol.
 
 \input{tables/table2_accuracy}
 
-CAPER and TimeXer nevertheless exhibited substantial local complementarity.  Their mean residual Pearson and Spearman correlations were 0.8422 and 0.7638, respectively, and a target-dependent oracle reduced macro RMSE to 0.061233.  This was a 16.926\% improvement over TimeXer, but it was an infeasible upper bound because it used the realized target to choose the expert.  The strict Global Fixed fusion recovered a smaller observed share of this opportunity: macro RMSE was 0.071367, 3.178\% below TimeXer.  It improved all six fold means and all 24 fold--horizon cells; horizon-level gains ranged from 2.890\% to 3.645\%.  A paired block interval was not part of this earlier frozen accuracy-result protocol, so we do not present the result as having passed the later router/teacher gate.  The Horizon Fixed control was nearly identical at 0.071372, confirming that post-hoc horizon-specific weights were not needed to obtain the fixed-fusion point result.
+CAPER and TimeXer still made different local errors, leaving a sizeable oracle gap.  Their mean residual Pearson and Spearman correlations were 0.8422 and 0.7638, respectively.  A target-dependent oracle reduced macro RMSE to 0.061233, a 16.926\% improvement over TimeXer.  This was only an upper bound because it used the realized target to choose the expert.
 
-Predicting which expert would win was harder than the oracle gap suggested.  A rolling classifier using expert outputs and disagreement alone had mean AUC 0.5370 (range 0.5227--0.5701).  Adding 21 forecast-origin features increased LightGBM mean AUC to 0.6151, with minimum and maximum fold AUC of 0.5660 and 0.6682; mean Brier score was 0.2388.  These proxy diagnostics justified a minimal router evaluation, but did not themselves establish a forecast improvement.
+Global Fixed recovered part of this oracle improvement.  Its macro RMSE was 0.071367, 3.178\% below TimeXer.  It improved all six fold means and all 24 fold--horizon cells, with horizon-level gains from 2.890\% to 3.645\%.  A paired block interval was not part of this earlier frozen accuracy protocol, so the result was not treated as passing the later router or teacher gate.  The Horizon Fixed control was nearly identical at 0.071372.  Post-hoc horizon-specific weights were therefore not needed for the fixed-fusion point result.
+
+Predicting which expert would win was harder than the oracle gap suggested.  A rolling classifier using expert outputs and disagreement alone had mean AUC 0.5370 (range 0.5227--0.5701).  Adding 21 forecast-origin features increased LightGBM mean AUC to 0.6151.  The minimum and maximum fold AUC were 0.5660 and 0.6682, and the mean Brier score was 0.2388.  These proxy results supported running one small router experiment.  They were not evidence of better forecasts.
 
 \subsection{The learned router produced a positive but sub-threshold gain}
 \label{sec:results-router}
 
-The hard router underperformed Global Fixed, with macro RMSE 0.072759.  Raw-probability soft routing obtained the lowest observed router RMSE, 0.070979, corresponding to a 0.543\% gain over Global Fixed.  The locked primary direct-loss MLP obtained RMSE 0.071050, a 0.443\% gain; the better observed secondary point estimate did not replace that primary comparison.  The MLP won five of six folds and 18 of 24 cells, improved every horizon, and had a paired 24-hour-block gain interval of [0.275\%, 0.634\%].  Its oracle-gap capture was only 3.123\%.
+The hard router underperformed Global Fixed, with macro RMSE 0.072759.  Raw-probability soft routing obtained the lowest observed router RMSE, 0.070979, corresponding to a 0.543\% gain over Global Fixed.  The locked primary direct-loss MLP obtained RMSE 0.071050, a 0.443\% gain.  The better secondary point estimate did not replace that primary comparison.  The MLP won five of six folds and 18 of 24 cells, improved every horizon, and had a paired 24-hour-block gain interval of [0.275\%, 0.634\%].  It captured only 3.123\% of the oracle gap.
 
-All consistency checks therefore passed, but the 0.443\% point gain did not meet the frozen 1\% minimum effect.  Gate 4 failed and router development stopped.  The conclusion is not that routing lacked any signal; it is that the observed internal gain did not justify the added routing complexity under the registered rule.
+Although the consistency checks passed, the 0.443\% gain remained below the frozen 1\% threshold.  Gate 4 therefore failed, and router development stopped.  The result does not show that routing had no signal.  It shows that the measured gain was too small to continue under the registered rule.
 
-\subsection{The best UrbanEV accuracy carried a clear latency cost}
+\subsection{Global Fixed improved RMSE but increased latency}
 \label{sec:results-latency}
 
-The synchronous benchmark completed 90 of 90 process jobs and retained 90,000 raw timing rows.  At batch one, TimeXer required 14.067~ms median and 15.952~ms P95 end-to-end latency.  Global Fixed required 20.940~ms median and 33.123~ms P95.  Thus, the 3.178\% internal RMSE improvement came with 48.86\% higher P50 latency and substantially heavier tail latency.  NLinear and DLinear were much faster (0.674 and 1.166~ms P50) but had higher RMSE.  Under this single-GPU sequential citywide-refresh workload, Global Fixed was the accuracy leader, not a low-cost ensemble.  Batch 8/32, model-only, throughput, environment, and portability details appear in the Supplementary Material.
+The synchronous benchmark completed 90 of 90 process jobs and retained 90,000 raw timing rows.  At batch one, TimeXer required 14.067~ms median and 15.952~ms P95 end-to-end latency.  Global Fixed required 20.940~ms median and 33.123~ms P95.  Thus, the 3.178\% internal RMSE improvement came with 48.86\% higher P50 latency.  P95 latency was also higher.  NLinear and DLinear were much faster (0.674 and 1.166~ms P50) but had higher RMSE.  In this single-GPU sequential workload, Global Fixed had the lowest RMSE, but its latency was substantially higher.  Batch 8/32, model-only, throughput, environment, and portability details appear in the Supplementary Material.
 
 \input{tables/table4_latency}
 
@@ -52,21 +54,23 @@ The synchronous benchmark completed 90 of 90 process jobs and retained 90,000 ra
 \subsection{Chronos-2 did not qualify as the UrbanEV teacher}
 \label{sec:results-chronos}
 
-The locked Chronos-2 screen completed all 24 fold--horizon cells and 5,960 forecast origins under the zero-shot, no-future-covariate, median point-forecast setting.  Target, index, timestamp, and zone identities passed, all inputs ended no later than the forecast origin, and a repeated sentinel prediction had maximum absolute difference zero.  Chronos-2 macro RMSE was 0.073542, compared with 0.071367 for Global Fixed, a relative gain of $-3.048\%$.  It beat the control in one of six folds and four of 24 cells; its RMSE deteriorated by 2.138\%--3.932\% across the four horizons.  Although Chronos-2 had lower secondary MAE (0.042250 versus 0.044949), the pre-specified decision hierarchy used RMSE as the primary teacher endpoint and MAE as a secondary diagnostic.  Chronos-2 therefore failed this exact teacher screen, and Global Fixed remained the audited teacher; this is not a general comparison of foundation forecasters with local models.
+The locked Chronos-2 screen completed all 24 fold--horizon cells and 5,960 forecast origins under the zero-shot, no-future-covariate, median point-forecast setting.  Target, index, timestamp, and zone identities passed.  All inputs ended no later than the forecast origin, and a repeated sentinel prediction had maximum absolute difference zero.
 
-\subsection{Aligned residual distillation exposed a weak teacher signal, not a stable gain}
+Chronos-2 macro RMSE was 0.073542, compared with 0.071367 for Global Fixed, a relative gain of $-3.048\%$.  It beat the control in one of six folds and four of 24 cells.  Its RMSE deteriorated by 2.138\%--3.932\% across the four horizons.  Chronos-2 had lower secondary MAE (0.042250 versus 0.044949), but the registered decision rule used RMSE as the primary endpoint and MAE only as a secondary diagnostic.  Chronos-2 therefore failed this teacher screen, and Global Fixed remained the teacher for this project.  This result is not a general comparison between foundation forecasters and local models.
+
+\subsection{Aligned distillation did not improve consistently over GT-only}
 \label{sec:results-distillation}
 
 The final distillation matrix contained 72 audited cells: GT-only, aligned-KD, and shuffled-teacher branches across six folds and four horizons.  Macro RMSE was 0.075568 for GT-only, 0.075478 for aligned KD, and 0.075674 for the shuffled control.  Relative to GT-only, aligned KD improved RMSE by 0.119\%, won four of six folds and 14 of 24 cells, and had a paired interval of [$-0.064\%$, 0.303\%].  It failed the frozen gain, fold, cell, and positive-lower-bound criteria, while horizon protection passed.
 
-Aligned KD did outperform shuffled-teacher training by 0.259\%, with five of six fold wins and a paired interval of [0.151\%, 0.367\%].  This contrast supports a small sample-aligned teacher signal, but not stable improvement over the identical GT-only student.  The D1 gate failed, \texttt{distill\_v1} terminated, and neither student latency nor multi-seed or protected evaluation was run.
+Aligned KD did outperform shuffled-teacher training by 0.259\%, with five of six fold wins and a paired interval of [0.151\%, 0.367\%].  This result is consistent with some sample-aligned teacher information, but it did not produce a stable improvement over the identical GT-only student.  The D1 gate failed, \texttt{distill\_v1} terminated, and neither student latency nor multi-seed or protected evaluation was run.
 
-\subsection{Paris development repeated the distinction between consistency and qualification}
+\subsection{Paris gains were consistent but remained below the 1\% rule}
 \label{sec:results-paris}
 
-Paris non-available-port-fraction results are reported only within the development boundary and are not compared numerically with UrbanEV.  They are not energy-demand or session-volume forecasts.  Among simple development baselines, last observation had macro RMSE 0.302630, daily lag 0.331654, and weekly lag 0.381137.  In the 16-cell teacher qualification, the locally audited Paris CAPER adaptation obtained RMSE 0.244601 and the locally audited TimeXer adaptation 0.242542.  The strict prequential fixed teacher reduced RMSE to 0.240488; the target-dependent oracle diagnostic was 0.217661.
+Paris non-available-port-fraction results are reported only within the development boundary and are not compared numerically with UrbanEV.  They are not energy-demand or session-volume forecasts.  Among simple development baselines, last observation had macro RMSE 0.302630, daily lag 0.331654, and weekly lag 0.381137.  Across the 16 fold--horizon cells, the locally audited Paris CAPER adaptation obtained RMSE 0.244601 and the locally audited TimeXer adaptation 0.242542.  The strict prequential fixed teacher reduced RMSE to 0.240488; the target-dependent oracle diagnostic was 0.217661.
 
-The teacher improved over TimeXer by 0.8469\%, won all four folds and all 16 cells, and had a paired interval of [0.6867\%, 1.0088\%].  Every bootstrap replicate selected TimeXer as the best single reference, and no horizon deteriorated.  This is a consistent, near-threshold development result, but the point estimate remained below the frozen 1\% progression rule.  The conjunctive teacher gate therefore failed and the current Paris distillation hypothesis terminated before student training; it was not rounded into a pass and did not authorize formal/protected access.
+The teacher improved over TimeXer by 0.8469\%, won all four folds and all 16 cells, and had a paired interval of [0.6867\%, 1.0088\%].  Every bootstrap replicate selected TimeXer as the best single reference, and no horizon deteriorated.  The result was consistent, but the point estimate remained below the frozen 1\% progression rule.  Because every condition was required, the teacher gate failed.  Student training stopped, the value was not rounded into a pass, and no formal or protected access was authorized.
 
 Formal- and protected-role target-bearing sources existed only in the procedurally isolated evidence vault.  The storage boundary was materialized and hash-audited, but analytical access count remained zero; no post-lock target value or metric from either role contributed to the Paris result or this paper.
 
@@ -79,18 +83,18 @@ Formal- and protected-role target-bearing sources existed only in the procedural
     \label{fig:stage-gains}
 \end{figure}
 
-\FloatBarrier
-
-\subsection{Fail-closed audits changed the admissible evidence before interpretation}
+\subsection{Artifact checks blocked metric access until errors were corrected}
 \label{sec:results-audit-events}
 
-The first M7-C matrix audit passed 69 of 72 cells and detected three shuffled-control mappings that were identities.  Metrics remained locked.  The pipeline invalidated and reran all 24 shuffled controls rather than selecting only the three detected cells; the final audit passed all 72 cells before D1 metrics were computed.
+The first M7-C matrix audit passed 69 of 72 cells and found that three shuffled-control mappings left the data unchanged.  Metrics remained locked.  The pipeline invalidated and reran all 24 shuffled controls instead of rerunning only the three detected cells.  The final audit passed all 72 cells before D1 metrics were computed.
 
 \input{tables/table5_audit}
 
-The Paris pipeline was similarly fail-closed.  An initial separately instantiated automated artifact audit blocked deployment with eight implementation and evidence-boundary requirements.  After the development-only shard, fingerprints, metric lock, synchronized bootstrap, provenance, and recovery rules were repaired, a final automated differential audit issued \texttt{DEPLOY\_PASS}.  All 32 model jobs then closed before metric access.  A representation audit found fill values at masked target positions in 24 of 32 artifacts, covering 10,236 entries.  The repair restored missing-value representation without retraining and left every prediction unchanged; metrics had not been accessed.  A subsequent prediction audit passed 32 of 32 artifacts and then unlocked the development metrics.  These automated audits were not external human replications.
+The Paris pipeline used the same fail-closed rule.  The first automated artifact audit blocked the 32 development runs because eight implementation or boundary requirements were unresolved.  After those issues were corrected, a final automated differential audit issued the internal status \texttt{DEPLOY\_PASS}.  This status authorized the development runs only; it did not indicate deployment readiness.  All 32 model jobs then closed before metric access.
 
-These interventions support the integrity of the final negative decisions; they do not constitute evidence that auditing improved forecast accuracy.  Throughout the Paris stage, formal/protected sources remained in vault-only procedural storage and analytical access count stayed at zero.
+A representation audit later found fill values at masked target positions in 24 of 32 artifacts, covering 10,236 entries.  The repair restored missing-value representation without retraining and left every prediction unchanged.  Metrics had still not been accessed.  A subsequent prediction audit passed 32 of 32 artifacts and then unlocked the development metrics.  These automated audits were not external human replications.
+
+The reported negative decisions were computed only after the registered artifact checks passed.  These checks do not show that auditing improved forecast accuracy.  Throughout the Paris stage, formal and protected sources remained in vault-only storage and the analytical-access count stayed at zero.
 
 \begin{figure}[t]
     \centering
@@ -99,4 +103,4 @@ These interventions support the integrity of the final negative decisions; they 
     \label{fig:audit-timeline}
 \end{figure}
 
-The four research questions are resolved by the linked configuration taxonomy, progression gates, accuracy--latency result, and fail-closed boundary evidence above; the complete claim-to-artifact map is provided in the Supplementary Material.
+The Supplementary Material links each research question to its result and supporting artifact.
