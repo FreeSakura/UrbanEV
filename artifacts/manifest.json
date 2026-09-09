@@ -128,6 +128,24 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/paired_audit_v3/protocol_receipt.json",
+      "sha256": "c96cb5f3497331bd2ade8cd08f94d527eda75b2a258ccdfdc1b2bccaf09b79a1",
+      "bytes": 676,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/paired_audit_v3/summary.json",
+      "sha256": "17281b013a490086c42a7361d2e4f209476005f9b8d75317e2067d2c46e51c4d",
+      "bytes": 1452,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/paper_audits/CITATION_AUDIT.json",
       "sha256": "33ba72b9749e987da3496baefebc8ee9ceb17e9f7d6a799ea275086bba1105c6",
       "bytes": 23141,

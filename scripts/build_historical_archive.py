@@ -30,7 +30,7 @@ def main() -> None:
     page = canvas.Canvas(str(TEMP), pagesize=A4, invariant=1)
     width, height = A4
     page.setTitle("Historical archive notice")
-    page.setAuthor("Hongwei Chi")
+    page.setAuthor("FreeSakura")
     page.setFont("ArchiveSansBold", 20)
     page.drawCentredString(width / 2, height - 170, "HISTORICAL ARCHIVE")
     page.setFont("ArchiveSansBold", 14)
@@ -62,7 +62,7 @@ def main() -> None:
     writer.add_metadata(
         {
             "/Title": "UrbanEV Evidence Audit - Historical Archive v0.9.0",
-            "/Author": "Hongwei Chi",
+            "/Author": "FreeSakura",
             "/Subject": "Historical, non-normative archive",
             "/Keywords": "UrbanEV, evidence audit, historical archive",
         }

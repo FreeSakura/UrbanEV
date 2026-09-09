@@ -1,0 +1,40 @@
+{
+  "protocol_id": "PARIS_NATURAL_MISSING_PAIRED_AUDIT_V3_20260909",
+  "scope": "real_observation_mask_development_finite_panel",
+  "source_shape": [
+    3624,
+    50
+  ],
+  "source_missing_snapshots": 1127,
+  "evaluation_snapshots": 109200,
+  "evaluation_missing_snapshots": 1077,
+  "evaluation_windows": 109050,
+  "certain_positive_events": 9116,
+  "possible_positive_events": 10254,
+  "ambiguous_windows": 1138,
+  "independent_mean_difference_bounds": [
+    0.042888311576402834,
+    0.043453634580576606
+  ],
+  "joint_mean_difference_bounds": [
+    0.04289391867193743,
+    0.04344268468664476
+  ],
+  "independent_width": 0.0005653230041737714,
+  "joint_width": 0.0005487660147073261,
+  "width_reduction_percent": 2.9287662706462214,
+  "stations_with_strict_tightening": 6,
+  "identified_only_mean_difference": 0.04377977645411096,
+  "identified_only_is_not_full_panel_risk": true,
+  "best_single_snapshot_guaranteed_width_reduction": 1.0876807893449719e-05,
+  "single_snapshot_queries_with_positive_guarantee": 7,
+  "query_truths_obtained": 0,
+  "query_result_is_hypothetical_planning_only": true,
+  "finite_panel_context_dominates_global": true,
+  "full_panel_true_Brier_known": false,
+  "prediction_sha256": "dbe4ad5d6f45dbbbc3fdcb6bd56d513dc822b46209508621285b1adb861e6e50",
+  "new_independent_test": false,
+  "statistical_significance_claim": false,
+  "model_superiority_generalization_claim": false,
+  "elapsed_seconds": 1.3341729000003397
+}

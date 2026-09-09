@@ -1,0 +1,296 @@
+\documentclass[UTF8,11pt,a4paper,fontset=windows]{ctexart}
+\usepackage{amsmath,amssymb,mathtools,booktabs,longtable,array,enumitem,xcolor,hyperref,fancyhdr,textcomp}
+\usepackage[margin=24mm,headheight=15pt]{geometry}
+\hypersetup{unicode=true,colorlinks=true,urlcolor=blue,linkcolor=blue,pdftitle={UrbanEV Theory and Experiment Feedback V3},pdfauthor={FreeSakura}}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{0.3em}
+\allowdisplaybreaks
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{UrbanEV 理论与实验反馈 V3}\fancyfoot[C]{\thepage}
+\begin{document}
+\begin{titlepage}\centering\vspace*{30mm}
+{\Huge UrbanEV 理论深化\par}\vspace{8mm}
+{\LARGE 与实验反馈 V3\par}\vspace{20mm}
+{\Large 共享缺失观测下的配对风险界\par}\vspace{7mm}
+{\large 精确识别、单点核验与真实缺失验证\par}
+\vfill FreeSakura\par 2026年9月9日\par
+\vspace{10mm}{\small 研究工作报告：数学结论与开发证据分开陈述}
+\end{titlepage}
+\tableofcontents\clearpage
+2026-09-09 · FreeSakura · 研究工作报告
+
+
+\href{https://github.com/FreeSakura/UrbanEV/blob/main/paper/research/UrbanEV_Theory_Feedback_V3.pdf}{阅读PDF}。可使用 \allowbreak{}\texttt{python scripts/\allowbreak{}research/\allowbreak{}build\_\allowbreak{}report.py}\allowbreak{} 重新排版；需要XeLaTeX与ctex。
+
+
+\section{摘要}
+
+本报告把研究重心推进到真实缺失观测下的模型比较识别。V2已证明同标签配对 Brier 差的逐窗界，但当相邻滑动窗口共享未知快照，逐窗极端标签未必能同时实现。V3给出一个严格反例，利用有限状态动态规划计算整个序列的精确联合界，并通过前后向递推计算任一缺失位的条件界及单次核验最坏收益。数学结论针对固定预测、固定有限面板和明确的相容集合，不依赖随机缺失假设，也不是总体置信区间。
+
+
+在既有 Paris 小时开发面板的原始观测 mask 上，109,050个评价窗口中1,138个标签模糊。联合界宽度较逐窗松弛界缩小2.9288\%，50个站点中6个出现严格缩窄。全局常数与上下文基线的平均 Brier 差始终为正；在所有相容标签补全下，上下文基线在这批有限样本上更好。该比较并未使用强预测模型，不能推导预测 SOTA、独立跨域有效性或运营价值。没有取得真实缺失值，核验收益仅为条件规划。
+
+
+\section{从既有证据导出的研究问题}
+
+前一阶段的路径模型相对独立边际模型改善约3.98\%，但相对直接树模型的 Brier 恶化约35.61\%，因此没有进入确认阶段。路径的总体可表达性并不保证当前参数化模型或训练过程优于强直接模型。该负结果保留，后续理论不能把它重新解释为预测成功。
+
+
+V2的人为标签遮蔽试验显示定向核验可以缩小比较区间，但它缺少自然缺失数据资格，而且其整窗核验假定与共享底层快照不同。V3解决两个具体问题：使用真实观测 mask；在底层未知位必须一致的约束下求解配对风险。V1、V2全文保存在同目录的历史研究报告中，原始数值不因V3而改变。
+
+
+\section{对象、符号与定理}
+
+令 $z_t\in\{0,1\}$ 表示时刻 $t$ 的高不可用状态，未知值允许两种取值，已观察值固定。窗口事件 $E_s$ 是长度 $K$ 的窗口内出现至少 $L$ 个连续高状态快照。两条冻结预测为 $a_s,b_s$，正的配对差表示第二条预测更好：
+
+
+\begin{equation}
+D_s(E_s)=(E_s-a_s)^2-(E_s-b_s)^2=a_s^2-b_s^2+2(b_s-a_s)E_s.\tag{R1}
+\end{equation}
+
+记相容完整序列集合为 $\mathcal Z$，评价窗口总数为 $N$。需要计算的是
+
+
+\begin{equation}
+[\underline\Delta,\overline\Delta]=\left[\min_{z\in\mathcal Z}\frac1N\sum_sD_s(E_s(z)),\;\max_{z\in\mathcal Z}\frac1N\sum_sD_s(E_s(z))\right].\tag{R2}
+\end{equation}
+
+这个区间包含且达到所有相容补全中的最小、最大风险差；可行风险值的集合本身可能离散，并不保证区间内每一点都能实现。完整推导、边界条件、反例和逐项证明见 \href{https://github.com/FreeSakura/UrbanEV/blob/main/docs/research/DERIVATION_V3.md}{DERIVATION\_V3.md}。
+
+
+四项结论构成完整链条。W1用保存最近 $K-1$ 位的状态计算精确联合极值；W2证明该区间包含于逐窗独立松弛区间；W3以前后向表得到任何一个未知位的两分支条件极值；W4取两分支中较大的剩余宽度，得到单次核验的保证收益。只求界时复杂度为 $O(T2^K)$ 时间及 $O(2^{K-1})$ 内存，规划所有单点核验需 $O(T2^{K-1})$ 存储。当前 $K=4$，仅8个状态。一般 $K$ 下仍为指数算法。
+
+
+所有结论都要求预测固定后再优化标签补全，且没有额外跨站耦合或动力学约束。在这些条件下，多站点极值可以同时实现，分别求和再除以同一 $N$ 保持精确性。若改变相容集合，必须重新证明算法；若核验后重训预测，也必须重新定义比较对象。
+
+
+\section{固定实验设计与可复现性}
+
+本次使用既有3624小时、50站点的开发前缀，覆盖2020-07-03至2020-11-30。保留原始缺失 mask；没有把插值值、预测值或人为遮挡后的值当成真实缺失真值。训练窗口完全结束于2020-09-01之前，评价窗口从9月1日开始。数据已有开发用途，因此这是回顾性方法验证，不是新的独立确认集。
+
+
+事件固定为 $K=4,L=2$、高状态阈值0.8。两个连续小时快照首末跨度为1小时，事件不保证两次观测之间持续不可用，更不能称为连续2小时故障。
+
+
+为隔离评价算法的作用，固定两条简单预测规则。训练事件的下、上界均由已知/未知快照推得。全局规则取两端点经验均值的中点；上下文规则按站点、预测原点状态（低、高、未知）和4小时时间段分组，用20个伪样本收缩到全局端点，再取中点。共有900个预定义组。具体为
+
+
+\begin{equation}
+\widehat p_{g,\pm}=\frac{\sum_{s\in g}E_s^\pm+20\bar E^\pm}{n_g+20},\qquad a_s=\frac{\bar E^-+\bar E^+}{2},\quad b_s=\frac{\widehat p_{g(s),-}+\widehat p_{g(s),+}}2.\tag{R3}
+\end{equation}
+
+这些有限样本端点估计没有被赋予条件概率覆盖保证。原点未知状态独立编码，输入仅含该原点及其历史；训练期与评价期之间没有跨界训练窗口。两条预测规则、窗口参数及收缩强度本轮固定，没有依据结果搜索模型对。
+
+
+公开入口为 \href{https://github.com/FreeSakura/UrbanEV/blob/main/scripts/research/run_paris_event_audit.py}{运行脚本}、\href{https://github.com/FreeSakura/UrbanEV/blob/main/src/urbanev_audit/paired_events.py}{计算核心} 和 \href{https://github.com/FreeSakura/UrbanEV/blob/main/tests/test_paired_events.py}{穷举检验}。安装仓库测试依赖后，使用自行取得授权的既定开发分片执行：
+
+
+\allowbreak{}\texttt{python scripts/\allowbreak{}research/\allowbreak{}run\_\allowbreak{}paris\_\allowbreak{}event\_\allowbreak{}audit.py -\allowbreak{}-\allowbreak{}development-\allowbreak{}dir local-\allowbreak{}data/\allowbreak{}paris-\allowbreak{}development -\allowbreak{}-\allowbreak{}output-\allowbreak{}dir local-\allowbreak{}data/\allowbreak{}v3-\allowbreak{}run}\allowbreak{}
+
+
+输入目录应包含 \allowbreak{}\texttt{non\_\allowbreak{}available\_\allowbreak{}port\_\allowbreak{}rate\_\allowbreak{}observed.csv}\allowbreak{} 和 \allowbreak{}\texttt{observation\_\allowbreak{}mask.csv}\allowbreak{}，时间索引与50个站点列应一致。程序只读取固定时间前缀，校验维度、日期、观测值域和缺失一致性；输出前缀及代码哈希。公开回执仅含汇总和哈希，不包含原始序列、mask、逐站预测或单点核验候选。无授权数据的读者可运行穷举测试验证理论实现，但不能仅凭汇总文件重新产生自然数据结果。
+
+
+\section{实测结果}
+
+\par\medskip\noindent\begin{minipage}{\linewidth}\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.3\linewidth}>{\raggedright\arraybackslash}p{0.65\linewidth}@{}}
+\toprule
+\textbf{指标} & \textbf{数值} \\
+\midrule
+全部开发前缀缺失快照 & 1,127 \\
+评价区域缺失快照 / 总快照 & 1,077 / 109,200 \\
+评价窗口数 & 109,050 \\
+确定正事件 / 可能正事件 & 9,116 / 10,254 \\
+模糊事件窗口 & 1,138 \\
+逐窗独立平均差下界 & 0.0428883115764 \\
+逐窗独立平均差上界 & 0.0434536345806 \\
+精确联合平均差下界 & 0.0428939186719 \\
+精确联合平均差上界 & 0.0434426846866 \\
+逐窗区间宽度 & 0.0005653230042 \\
+联合区间宽度 & 0.0005487660147 \\
+宽度缩减 & 2.9287663\% \\
+严格缩窄的站点 & 6 / 50 \\
+\bottomrule\end{tabular}\end{minipage}\par\medskip
+
+两种界的下界都大于0，说明现有信息已经足以在固定有限面板上确认上下文基线优于全局规则；额外核验不是判断这个模型对方向的必要条件。只在已识别窗口计算的差为0.0437797764541，它不是完整面板的风险差，甚至大于联合上界，直观显示评价子集与目标面板不能混用。此现象不单独证明缺失机制或总体选择偏差的大小。
+
+
+单点核验中，7个候选具有超过数值阈值的正保证收益。最大保证的平均区间宽度减少为 $1.0876807893\times10^{-5}$。这是在取得真实缺失位后、无论该位为0还是1均至少可以减少的宽度。真实核验次数为0；这不是已实现收益，也不是预测误差降低。该量约为当前联合宽度的1.982\%，不能与V2核验125个整窗标签的44.94\%直接比较。
+
+
+结果与完整精度回执见 \href{https://github.com/FreeSakura/UrbanEV/blob/main/artifacts/summaries/paired_audit_v3/summary.json}{summary.json} 和 \href{https://github.com/FreeSakura/UrbanEV/blob/main/artifacts/summaries/paired_audit_v3/protocol_receipt.json}{protocol\_receipt.json}。总运行时间约1.33秒，仅描述此CPU环境下一次数据读取与评价运行，不是跨机器性能基准。
+
+
+\section{审查与创新边界}
+
+独立自动证明审查对W1--W4未发现重大缺口，并提出终态、空状态、后向递推和归一化表述的细化建议；正文已落实，第二轮闭环复核及公开实现审查均为PASS；第6节R4另经限范围复核通过。穷举测试覆盖重叠反例、$K=1$、正负系数、完全观测、相同预测以及单点条件分支。自动审查和有限穷举不是外部人工同行评议，也不是形式化证明。
+
+
+有限状态动态规划及前后向计算是既有方法；\href{https://authors.library.caltech.edu/records/sw1pm-bwj40}{Aji与McEliece（2000）}以广义分配律统一讨论包括Viterbi、BCJR等在内的消息传递算法。部分识别也是既有研究框架。本轮可交付贡献是将共享缺失快照、一致事件标签和同标签模型风险差组合为可计算的有限面板评价对象，并给出经验证的实现。尚未完成系统查新，不能声称全球首创。
+
+
+\href{https://link.springer.com/book/10.1007/b97478}{Manski的专著}讨论缺失结果下的部分识别。本报告借用这种“先明确可识别集合”的思想，但这里直接优化固定样本上的风险差，没有建立总体推断。\href{https://www.jmlr.org/beta/papers/v24/19-1030.html}{Kvamme与Borgan（2023）}研究行政删失下Brier评价及IPCW的局限；其删失机制和估计目标与这里的二元快照相容集不同，不能把其方法适用性直接移植过来。
+
+
+\section{成果如何反哺下一轮实验}
+
+第一优先级是把联合界接入\textbf{已有冻结强模型对}的评价。使用同一事件定义、同一面板及同一观测约束；在开发数据上完成接线和负例测试后，再为独立来源或新时间段预先冻结确认协议。主要判据是界是否跨0、区间宽度及计算成本，而非只报告“缩小百分比”。既有Paris formal/protected边界不因本报告自动开放。
+
+
+第二优先级是核验可行性调查。先确认原始日志、发布记录或可靠备份能否提供真实缺失位及其获取成本。对于本次模型对，方向已被识别，应优先考虑真正跨0、影响结论的比较任务。只有取得真值后才报告实际宽度变化；没有来源则停止收益兑现主张。
+
+
+第三优先级是有成本的多步核验。记当前相容集为 $S$、剩余预算为 $b$、单点成本为 $c_t>0$、区间宽度为 $W(S)$，精确自适应决策满足以下有限决策树递推：
+
+
+\begin{equation}
+V(S,b)=\min\left\{W(S),\;\min_{t:c_t\le b}\max_{v:S_{t,v}\ne\varnothing}V(S_{t,v},b-c_t)\right\}.\tag{R4}
+\end{equation}
+
+其中 $S_{t,v}=\{z\in S:z_t=v\}$，只考虑尚未核验的位置；无可行动作时 $V=W$。证明由第一步动作分解及预算/剩余动作数归纳得到：真实结果选择最坏可行分支，后续使用该分支上的最优策略；停止动作允许不耗费无益预算。它是精确规划定义，状态数一般指数增长，尚无可扩展性或经验收益保证。下一轮应先在可穷举的小型合成任务上比较此递推、单步贪心和随机策略，验证后再考虑真实日志，不能直接把W4排序宣称为多步最优。
+
+
+第四优先级是预测路线恢复。保留直接HGB等强基线，事件任务对齐训练使用判别式事件参数解释；若没有额外可识别条件，不将其命名为真实物理hazard。必须在新协议中预先明确预测收益、计算代价及拒绝门槛，不能依靠已失败开发区内反复调参改变既有结论。
+
+
+本轮的研究决策是推进“共享缺失约束下的可靠比较”，预测架构优势仍待建立。2.93\%的实际缩窄支持算法能带来增量信息，也限定了当前场景下的收益规模。
+
+
+\clearpage\setcounter{subsection}{0}\renewcommand{\thesubsection}{A.\arabic{subsection}}\section*{附录A. 完整证明}\addcontentsline{toc}{section}{附录A. 完整证明}
+
+日期：2026-09-09。目标是深化V2的配对Brier界，使其覆盖相邻滑动窗口共享底层缺失快照的情形。统一对象仍是冻结模型对在同一有限评价面板上的平均风险差；不声称总体统计显著性或缺失真值可被恢复。
+
+
+\section{为什么V2的逐窗sharp界还不够}
+
+对每个窗口$s$，两个冻结概率预测为$a_s,b_s$，事件标签$E_s$由该窗口的二元快照决定。配对差为
+
+
+\begin{equation}
+D_s(E_s)=A_s+c_sE_s,\quad A_s=a_s^2-b_s^2,\quad c_s=2(b_s-a_s).\tag{P1}
+\end{equation}
+
+当不同窗口共享未知快照，分别选取每个$E_s$的极端值可能相互矛盾。V2的逐窗界仍有效，但其和未必可同时达到。
+
+
+\textbf{严格反例。} 取三个快照$(0,?,0)$，窗口长度2、事件为出现至少一个1。两个窗口事件都等于同一个未知位$z$。第一窗口用$(a,b)=(0.25,0.75)$，第二窗口用$(a,b)=(0.75,0.25)$，则$D_1=-0.5+z$、$D_2=0.5-z$，联合总差恒为0。逐窗求界后相加却得到$[-1,1]$。
+
+
+\section{W1：用有限状态DP计算联合sharp界}
+
+观测序列长$T\ge1$，每个$z_t$的相容集合为$\mathcal A_t\in\{\{0\},\{1\},\{0,1\}\}$。窗口长$1\le K\le T$，事件为K位中至少连续$1\le L\le K$个1。对每个$s=0,\ldots,T-K$有已固定系数$c_s$。定义
+
+
+\begin{equation}
+F(z)=\sum_{s=0}^{T-K}c_s\phi(z_s,\ldots,z_{s+K-1}),\quad C_0=\sum_sA_s.\tag{P2}
+\end{equation}
+
+假设只有这些已知位约束，没有额外跨站点、动力学或补全约束。则最小/最大配对总差为$C_0+\min F$及$C_0+\max F$。
+
+
+状态$r\in\{0,\ldots,2^{K-1}-1\}$保存前$K-1$位，初始状态取0；前$K-1$步尚无完整窗口，故初始填充不产生得分。追加位$v\in\mathcal A_t$后，完整模式为$w=2r+v$，新状态$r'=w\bmod2^{K-1}$。边代价为
+
+
+\begin{equation}
+g_t(r,v)=\begin{cases}0,&t<K-1,\\c_{t-K+1}\phi(w),&t\ge K-1.\end{cases}\tag{P3}
+\end{equation}
+
+令$M_t(r)$为处理前$t$位后的最小代价，初值$M_0(0)=0$、其余为$+\infty$。递推
+
+
+\begin{equation}
+M_{t+1}(r')=\min_{r,v: \,v\in\mathcal A_t,\ r'=(2r+v)\bmod2^{K-1}}\{M_t(r)+g_t(r,v)\}.\tag{P4}
+\end{equation}
+
+最大值递推把min与$+\infty$替换为max与$-\infty$。最终值为$C_0+\min_r M_T^-(r)$与$C_0+\max_r M_T^+(r)$。当$K=1$时，状态为编码0的空后缀，模1后仍为0；每一步立即完成一个窗口，因此不需要另设特例。
+
+
+\textbf{证明。} 对$t$归纳，每个相容长度$t+1$前缀唯一地分解为相容前缀加一个允许位。新完成的得分只依赖所保存的$K-1$位和新位，因此此前同状态中保留最优代价不丢弃全局最优补全。归纳得到每个终态的最优前缀代价；对所有终态再取极值覆盖全部相容完整序列。可行补全集非空且有限，极值实际达到，故界sharp。证毕。
+
+
+只求极值时需要$O(T2^K)$时间和$O(2^{K-1})$滚动内存；$K$可变时这是指数复杂度，不称为对窗口长度的多项式算法。当前实验固定K=4，只有8个状态。
+
+
+\section{W2：联合界必不宽于逐窗独立界}
+
+令$[L_{\rm ind},U_{\rm ind}]$为V2逐窗界之和，$[L_{\rm joint},U_{\rm joint}]$为W1结果，则
+
+
+\begin{equation}
+L_{\rm ind}\le L_{\rm joint}\le U_{\rm joint}\le U_{\rm ind}.\tag{P5}
+\end{equation}
+
+\textbf{证明。} 任一共享快照的相容补全都会诱导每个窗口的相容事件标签，但逐窗独立选择允许更多、不一定可同时实现的标签组合。因此联合优化的可行集合嵌入独立组合集合；极小值只能增大，极大值只能减小。证毕。
+
+
+可能出现完全相等，例如窗口互不重叠、所有标签已识别、两模型预测相同，或某一共享补全恰能同时达到全部独立极值。因此没有“真实数据必定显著缩窄”的保证。
+
+
+\section{W3：前后向DP给出任一缺失快照的条件界}
+
+保存前向最小/最大代价$M_t^-,M_t^+$；再从末端反推$B_t^-(r),B_t^+(r)$，表示从处理前$t$位的状态$r$开始的最小/最大剩余代价，终值$B_T^-=B_T^+=0$。
+
+
+\begin{equation}
+B_t^-(r)=\min_{v\in\mathcal A_t}\{g_t(r,v)+B_{t+1}^-((2r+v)\bmod 2^{K-1})\}.\tag{P6a}
+\end{equation}
+
+上界表将min替换为max；不可达前向状态保留相应正负无穷。
+
+
+对于未知位置$t$，若核验结果为$v\in\{0,1\}$，其条件最小值为
+
+
+\begin{equation}
+F_{t,v}^-=\min_r\{M_t^-(r)+g_t(r,v)+B_{t+1}^-(r')\},\quad r'=(2r+v)\bmod2^{K-1},\tag{P6}
+\end{equation}
+
+最大值使用相应max与上界表。
+
+
+\textbf{证明。} 在给定中间状态$r$和核验位$v$后，前缀与后缀只通过该状态相连。它们的极值可各自取得并拼接成相容完整序列，因此先将两部分极值相加，再遍历$r$，得到准确条件极值。证毕。
+
+
+一遍前后向表需$O(T2^K)$时间、$O(T2^{K-1})$存储；随后全部$m$个缺失位置的两分支条件界额外需$O(m2^K)$时间，不必逐个完整重跑DP。
+
+
+\section{W4：没有核验真值时，只能规划最坏宽度收益}
+
+设当前平均配对界宽度为$W$，核验某个缺失位的两种可能结果分别留下宽度$W_{t,0},W_{t,1}$。则该\textbf{单次核验}的保证宽度减少为
+
+
+\begin{equation}
+G_t=W-\max\{W_{t,0},W_{t,1}\}\ge0.\tag{P7}
+\end{equation}
+
+\textbf{证明。} 固定一个允许位将可行补全集缩小，条件区间包含于原区间，因此各条件宽度不超过$W$。在未知真实结果下取两分支中较差的宽度，得到最坏保证。证毕。
+
+
+排序$G_t$可用于固定信息下的一步minimax规划，但不保证多步预算最优；下一次核验的收益会受前次结果和共享约束影响。V2针对互不耦合、整窗标签、等成本的模数型排序结论不能直接搬到这里。
+
+
+所有宽度使用同一归一化：单站可取总差尺度，多站面板则统一除以全体评价窗口数$N$。无跨站约束时各站极值可同时达到，故各站上下界分别相加后除以$N$仍然sharp。单站核验的总宽度减少除以同一$N$即为整体平均风险差的宽度收益。本稿乘积约束下未知位的0/1两分支都可行；若后续增加约束，应只在可行分支上取最坏值。
+
+
+更重要的是：如果真实缺失值没有可核验来源，$G_t$只是“假设能够获得真值”的规划值。不能用模型预测、任意插值或选择更有利的分支冒充真实核验。
+
+
+\section{与真实缺失数据的连接}
+
+本次固定使用Paris已存在的小时开发面板，K=4、L=2、阈值0.8。两个连续小时快照首末跨度1h，不声称连续2h不可用。缺失位允许0或1，已观察的高/低状态固定。
+
+
+为形成可计算的模型对，使用两条冻结的简单预测规则：训练期事件下/上界的全局中点；按站点、原点最后可见状态和时间段收缩后的端点中点。未知原点状态单独编码。所有训练标签窗口在9月1日前完整结束，评价只用9--11月开发区，不用保护段。有限样本估计的端点不被当作有覆盖保证的条件概率区间。
+
+
+主研究对象是有限面板的模型比较识别，不是预测SOTA。只报告整体上下界、缺失/模糊数量和可计算性；不发布原始状态、mask、单站单时刻核验候选或私有路径。
+
+
+\section{理论定位与可否定结论}
+
+有限记忆动态规划、min-plus前后向计算都是既有算法思想；此处的推导将它们应用于共享缺失观测诱导的配对模型风险。不是对这些一般算法的首创声明。
+
+
+若真实数据中独立界与联合界相同，或缺失真值不可核验，则保留这一限制，不人为制造缩窄或核验收益。若未来增加跨站点一致性、有限转移速度或成本约束，需要重新定义可行集及算法，不能继续使用本稿sharp性声明。
+
+\end{document}

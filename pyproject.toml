@@ -9,7 +9,7 @@ description = "Target-free verification and recomputation tools for the UrbanEV 
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
-authors = [{name = "Hongwei Chi", email = "chihongwei@hdu.edu.cn"}]
+authors = [{name = "FreeSakura"}]
 dependencies = ["numpy>=1.24,<3", "pandas>=2.0,<3", "PyYAML>=6,<7", "tomli>=2,<3"]
 
 [project.optional-dependencies]
