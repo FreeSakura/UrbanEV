@@ -588,8 +588,8 @@
     },
     {
       "path": "models/MODEL_SOURCE_MANIFEST.csv",
-      "sha256": "ccaa4ce280946ab817fa0da9523b5c6e8707f3c163581d177bf1bb08535247cd",
-      "bytes": 7879,
+      "sha256": "b41f8705248c16f6568f25c5d27751b13de9db2fa0903ecb1895feb443845546",
+      "bytes": 6665,
       "role": "models",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",

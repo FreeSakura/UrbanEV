@@ -57,7 +57,7 @@
     },
     {
       "path": "artifacts/manifest.json",
-      "sha256": "4dae57667f86e30fddcb898cf4562d56f3f2909c0d99b6be7ef6ebd9e4d296aa",
+      "sha256": "e7f5d4b59f5da27c200d59393908584d77f3f0a8832b98d90d70043fdc8545c3",
       "bytes": 26421,
       "role": "artifacts",
       "origin": "UrbanEV evidence-audit project",
@@ -66,7 +66,7 @@
     },
     {
       "path": "artifacts/manifests/EVIDENCE_ARTIFACT_MANIFEST.json",
-      "sha256": "4dae57667f86e30fddcb898cf4562d56f3f2909c0d99b6be7ef6ebd9e4d296aa",
+      "sha256": "e7f5d4b59f5da27c200d59393908584d77f3f0a8832b98d90d70043fdc8545c3",
       "bytes": 26421,
       "role": "artifacts",
       "origin": "UrbanEV evidence-audit project",
@@ -1020,8 +1020,8 @@
     },
     {
       "path": "models/MODEL_SOURCE_MANIFEST.csv",
-      "sha256": "ccaa4ce280946ab817fa0da9523b5c6e8707f3c163581d177bf1bb08535247cd",
-      "bytes": 7879,
+      "sha256": "b41f8705248c16f6568f25c5d27751b13de9db2fa0903ecb1895feb443845546",
+      "bytes": 6665,
       "role": "models",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -1722,8 +1722,8 @@
     },
     {
       "path": "scripts/build_model_source_manifest.py",
-      "sha256": "c78de5c251b6e5a46e230db7292d403274380f33b73c31020b5c4575261c3cfd",
-      "bytes": 2130,
+      "sha256": "8cad53961443e7c8535e8183f8e25ed6240d3949bfc8cdb8253090bd800fcc0c",
+      "bytes": 2264,
       "role": "scripts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -2048,6 +2048,15 @@
       "path": "tests/test_metrics.py",
       "sha256": "419cb4c452ff3d07b22f89af5f02c3095482d22c4167fe6714222dcddfc59a17",
       "bytes": 514,
+      "role": "tests",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "tests/test_model_manifest_cache.py",
+      "sha256": "614cd24611ac5373e6e74bcfa9083babbbf3f4c551df3852f26779932eac08db",
+      "bytes": 1147,
       "role": "tests",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",

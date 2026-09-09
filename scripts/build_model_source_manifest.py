@@ -32,7 +32,12 @@ def main() -> None:
     rows = []
     paths = sorted(MODELS.rglob("*"), key=lambda path: path.relative_to(MODELS).as_posix().casefold())
     for path in paths:
-        if not path.is_file() or path.name == "MODEL_SOURCE_MANIFEST.csv":
+        if (
+            not path.is_file()
+            or path.name == "MODEL_SOURCE_MANIFEST.csv"
+            or "__pycache__" in path.parts
+            or path.suffix.lower() in {".pyc", ".pyo"}
+        ):
             continue
         relative = path.relative_to(MODELS)
         origin, license_name, state = metadata(relative)
