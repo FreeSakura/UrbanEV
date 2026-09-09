@@ -5,14 +5,14 @@
   "pdfs": [
     {
       "path": "paper/main/UrbanEV_Evidence_Audit_Main.pdf",
-      "sha256": "2e3fadad8995b504fc0f0967069e0411d432ede74f9b1c1748bd3d35c9d703e9",
-      "bytes": 725296,
+      "sha256": "0458627bf6a6db196bcecb13e9a39acf8303e598643966e5a08c84b4ab25a3ef",
+      "bytes": 722954,
       "pages": 23,
-      "normalized_text_sha256": "ca1c282b59313c9987b7a5ce38d8977368a2f702387cc7504b432fd5781efa96",
+      "normalized_text_sha256": "d0cae69fdcefd00ecafe402b2ce81e9f20d618990f90b3a09a0fe0370d231335",
       "fonts_embedded": true,
       "metadata": {
         "/Producer": "MiKTeX pdfTeX-1.40.28",
-        "/Author": "Hongwei Chi",
+        "/Author": "FreeSakura",
         "/Title": "From Configurations to Claims: An Evidence Audit of Urban EV Charging Forecasting",
         "/Subject": "Artifact-grounded audit of urban EV charging forecast evidence",
         "/Creator": "LaTeX with hyperref",
@@ -22,14 +22,14 @@
     },
     {
       "path": "paper/supplement/UrbanEV_Evidence_Audit_Supplement.pdf",
-      "sha256": "ee0b8c7681a4fd6537867cd4c31f9e3e98418651b062ad10b4505a2e1146fc37",
-      "bytes": 560240,
+      "sha256": "c4ef55cfd5845dbd39c13e154aface8e87bb2b253ed8f5b0a78798360d051d09",
+      "bytes": 527752,
       "pages": 13,
-      "normalized_text_sha256": "f4fb7cf0fdfe17c271806b81258a56a1d57a45726dd922b82d294fbf711ada44",
+      "normalized_text_sha256": "e99f08a67149d92a466db919dfc19008c09125e9225bffb2923ea3e2aa1cb10e",
       "fonts_embedded": true,
       "metadata": {
         "/Producer": "MiKTeX pdfTeX-1.40.28",
-        "/Author": "Hongwei Chi",
+        "/Author": "FreeSakura",
         "/Title": "Supplementary Material: From Configurations to Claims",
         "/Subject": "Supplementary locks, lineage, and reproduction material for the UrbanEV evidence audit",
         "/Creator": "LaTeX with hyperref",
@@ -71,15 +71,15 @@
     },
     {
       "path": "paper/archive/UrbanEV_Evidence_Audit_Historical_Archive_v0.9.0.pdf",
-      "sha256": "ef9739e9ead1599588a737e91b7d3b1609723335ec16aa0c0b76ff6f1b805ec8",
-      "bytes": 572789,
+      "sha256": "8d2dc0c2c9bcbb0289648be6c21e9064804af2ae51bbdc5aa2e076ac5903a6da",
+      "bytes": 572788,
       "pages": 43,
       "normalized_text_sha256": "62797ec6a970939d71399e13c83d2fed0635dd6def1b3aac492b263eac679ff7",
       "fonts_embedded": true,
       "metadata": {
         "/Producer": "pypdf",
         "/Title": "UrbanEV Evidence Audit - Historical Archive v0.9.0",
-        "/Author": "Hongwei Chi",
+        "/Author": "FreeSakura",
         "/Subject": "Historical, non-normative archive",
         "/Keywords": "UrbanEV, evidence audit, historical archive"
       }
@@ -168,8 +168,8 @@
     },
     {
       "path": "paper/main/main.tex",
-      "sha256": "b0ec64860b951820ca5111c3c7a812d7cc49ca08af7d32608553ef43af95041f",
-      "bytes": 5099
+      "sha256": "4445d6092dbdcb1d0267613130fd69fd2ed92ea383aa9624ab885b69ba643125",
+      "bytes": 5098
     },
     {
       "path": "paper/main/sections/01_introduction.tex",
@@ -272,9 +272,14 @@
       "bytes": 1914
     },
     {
+      "path": "paper/research/UrbanEV_Theory_Feedback_V3.tex",
+      "sha256": "091f1741193aa541ae23ffe7edc719dc305ca5534e8494b30ad11cfb131a3739",
+      "bytes": 21868
+    },
+    {
       "path": "paper/shared/author_metadata.tex",
-      "sha256": "52cdbf6f5a3af397834c26bb0c7ae5afe9dc58cb66fe4ece18082c08224eb277",
-      "bytes": 555
+      "sha256": "7a1abcba27e490f2207598e9b94d76d47f39e14e099465408372162b7bbabd26",
+      "bytes": 228
     },
     {
       "path": "paper/shared/references.bib",
@@ -283,8 +288,8 @@
     },
     {
       "path": "paper/supplement/supplement.tex",
-      "sha256": "971dbcf6435b58a11c09216a5cc3ed70873ac7f429fe25179974844b7a57a3cd",
-      "bytes": 1805
+      "sha256": "3bd98471515ac1c041df8d8ed0e9e7b766721e73db3d653f5018fe48c20be1a2",
+      "bytes": 1804
     }
   ]
 }

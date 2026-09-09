@@ -112,7 +112,16 @@ def audit_pdf_bytes(data: bytes, location: str) -> list[str]:
         text = "\n".join(page.extract_text() or "" for page in reader.pages)
     except Exception as exc:  # malformed public PDFs must fail closed
         return [f"{location}: pdf_parse_error:{type(exc).__name__}"]
-    return _scan_text(text, location)
+    findings = _scan_text(text, location)
+    findings.extend(_scan_value(dict(reader.metadata or {}), f"{location}:metadata"))
+    for page_index, page in enumerate(reader.pages):
+        for reference in page.get("/Annots", []):
+            annotation = reference.get_object()
+            # Only inspect scalar payloads/actions; avoid following /P page cycles.
+            for key in ("/Contents", "/T", "/Subj", "/A", "/Dest"):
+                if key in annotation:
+                    findings.extend(_scan_text(str(annotation[key]), f"{location}:annotation:{page_index}:{key}"))
+    return sorted(set(findings))
 
 
 def audit_npz_bytes(data: bytes, location: str) -> list[str]:

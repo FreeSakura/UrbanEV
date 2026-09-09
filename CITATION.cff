@@ -4,11 +4,7 @@ title: "From Configurations to Claims: An Evidence Audit of Urban EV Charging Fo
 version: 0.9.1
 type: article
 authors:
-  - family-names: Chi
-    given-names: Hongwei
-    orcid: "https://orcid.org/0009-0009-0393-999X"
-    affiliation: "School of Computer Science and Technology, Hangzhou Dianzi University"
-    email: chihongwei@hdu.edu.cn
+  - name: FreeSakura
 repository-code: "https://github.com/FreeSakura/UrbanEV"
 license: CC-BY-4.0
 abstract: "A target-free public artifact package for an audit of configuration identity, sequential evidence gates, latency, and protected-data boundaries in urban EV charging forecasting."

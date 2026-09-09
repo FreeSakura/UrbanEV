@@ -1,0 +1,15 @@
+{
+  "id": "PARIS_NATURAL_MISSING_PAIRED_AUDIT_V3_20260909",
+  "evidence": "retrospective_development_only",
+  "window": 4,
+  "run_length": 2,
+  "threshold": 0.8,
+  "train_stop": "2020-09-01",
+  "evaluation_stop_exclusive": "2020-12-01",
+  "smoothing_pseudocount": 20.0,
+  "rate_prefix_sha256": "d28a332e5f52bcfa951eca0299d3e347338f1a87d887fa64d460dd582c57544c",
+  "mask_prefix_sha256": "5e10e7cdaff7f325c8e3b23fca220c37e97ed573e5bdae7e85ec221a7ff37d44",
+  "source_code_sha256": "817aa4cd9e7d9ab523cc9771bb3a0ed1371814e101a5022fb6b7dd81e785d110",
+  "core_code_sha256": "91758fe759df140ac280b811d502edb7cf471443896a3d78e7ee058df73f4fd8",
+  "formal_or_protected_access": false
+}

@@ -14,9 +14,16 @@ This is the public, target-free companion to **From Configurations to Claims: An
 - [Supplementary Material](paper/supplement/UrbanEV_Evidence_Audit_Supplement.pdf)
 - [Current preprint release](https://github.com/FreeSakura/UrbanEV/releases/tag/v0.9.1-preprint)
 
+## Research update — September 2026
+
+- [V3 report PDF](paper/research/UrbanEV_Theory_Feedback_V3.pdf) (9 pages), [Chinese theory and experiment report V3](docs/research/PAIRED_AUDIT_V3_REPORT.md): exact paired Brier bounds with shared missing observations; natural-mask development validation over 109,050 windows, with 2.93% interval tightening.
+- [Complete derivation](docs/research/DERIVATION_V3.md), [V1 theory](docs/research/THEORY_REPORT_V1.md), [V2 theory and experiment feedback](docs/research/THEORY_REPORT_V2.md).
+- [Runnable evaluation script](scripts/research/run_paris_event_audit.py) and [aggregate receipt](artifacts/summaries/paired_audit_v3/summary.json). No raw observations or missingness masks are published.
+- [Public attribution and privacy scope](docs/PUBLIC_ATTRIBUTION.md). Historical commits and tags retain earlier attribution; use the current tree for the revised manuscripts.
+
 ## Evidence boundary
 
-The current public tree and current Release contain only allowlisted source, configuration, summary, hash, and target-free prediction artifacts. They do **not** contain UrbanEV or Paris raw data, Paris formal/protected data or predictions, target values, model checkpoints, access tokens, physical local paths, or recoverable private Git objects. The public Paris receipt records only non-sensitive role metadata and an analytical-access count of zero.
+The current public tree and current Release contain only allowlisted source, configuration, summary, hash, and target-free prediction artifacts. They do **not** contain UrbanEV or Paris raw data, Paris formal/protected data or predictions, target values, model checkpoints, access tokens, physical local paths, or recoverable private Git objects. The historical protected-data receipt records non-sensitive role metadata and zero analytical access. The V3 update separately evaluates an existing Paris development panel and publishes only aggregate bounds and hashes; it does not change the formal/protected-data boundary.
 
 The immutable `v0.9.0-preprint` tag is retained as a superseded historical record. Its known non-secret path-metadata defect is documented without reproducing those paths in `artifacts/manifests/HISTORICAL_PRIVACY_EXCEPTIONS.json`; the defect is removed from the current tree and `v0.9.1-preprint` assets.
 
