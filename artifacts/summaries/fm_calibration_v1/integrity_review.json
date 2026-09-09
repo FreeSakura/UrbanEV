@@ -1,0 +1,22 @@
+{
+  "auditor": "independent Codex reviewer, gpt-5.5 xhigh",
+  "overall_verdict": "WARN",
+  "checks": {
+    "ground_truth_provenance": "PASS",
+    "score_normalization": "PASS",
+    "result_existence_and_claims": "PASS",
+    "metric_call_chain": "PASS",
+    "scope_and_independent_confirmation": "WARN",
+    "evaluation_type": "real_gt"
+  },
+  "candidate_outcome": {
+    "chronos2": "NO_GO",
+    "timesfm3": "NO_GO"
+  },
+  "scope": "fold1 training/validation; H3 and H12; no test/protected data or SOTA claim",
+  "completed_runs_used_resume": false,
+  "current_resume_hardening_test": "PASS; completed-prefix content hashes are required for future resumes",
+  "legacy_progress_note": "Completed original caches have no prefix seals; full file hashes were independently verified. These progress files must not be resumed.",
+  "public_export_semantic_identity": "verified",
+  "human_peer_review": false
+}

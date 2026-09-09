@@ -7,6 +7,10 @@
 
 这不是UrbanEV数据集官方仓库。原始数据与官方方法见 [IntelligentSystemsLab/UrbanEV](https://github.com/IntelligentSystemsLab/UrbanEV)。本项目从证据审计转向预测方法研究：新模型、强基线、实验和结果是主线，既有审计工具承担验证工作。
 
+## 最新执行结果
+
+[基础模型校准开发报告](docs/research/sota/FM_CALIBRATION_REPORT.md)：Chronos-2与TimesFM-3均完成275区域联合推理及H3/H12训练/验证实验。单纯形头在两个骨干上均为**NO_GO**；相对原始Q0.5的RMSE改善约2.18%/2.37%，但没有建立相对同信息ridge的实质优势，MAE也上升。停止扩建该候选，保留校准与ridge为强对照。完整测试与SOTA仍未建立。
+
 ## 当前研究主线
 
 - [研究目标与路线](docs/research/sota/RESEARCH_ROADMAP.md)：标准预测任务、现代强基线和可否定的机制研究。
@@ -15,9 +19,9 @@
 - [基线清单与结果状态](docs/research/sota/BASELINES.md)：区分文献结果、历史工件、尚未运行的候选，避免跨协议混排。
 - [理论积累](docs/research/PAIRED_AUDIT_V3_REPORT.md)：V1–V3关于风险、事件与缺失评价的研究；这部分不是标准预测SOTA成绩。
 
-当前优先检验[有界分位点预测适配](docs/research/sota/QUANTILE_MEAN_THEORY.md)：用一个受约束共享头适配冻结基础模型的RMSE目标，数值核心已实现，真实收益尚未验证。
+[有界分位点预测适配](docs/research/sota/QUANTILE_MEAN_THEORY.md)的数值核心与开发实验已完成；[理论反馈](docs/research/sota/FM_CALIBRATION_THEORY_FEEDBACK.md)解释稳健中点和RMSE–MAE权衡的边界。本候选没有通过原定推进门。
 
-首轮实现提供季节线性、季节MLP、创新注意力和原始水平注意力探针，以及现有TimeXer源代码适配。探针用于验证机制，尚未确立方法优势或新颖性。Chronos-2和TimesFM-3进入强基线计划，其新协议适配与评估还未完成。
+首轮实现提供季节线性、季节MLP、创新注意力和原始水平注意力探针，以及现有TimeXer源代码适配。探针用于验证机制，尚未确立方法优势或新颖性。Chronos-2和TimesFM-3已接通本地冻结推理与分位缓存；首折开发对照完成，六折完整基线与测试比较尚未完成。
 
 ## 开始研究
 

@@ -101,6 +101,141 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/fm_calibration_v1/chronos2_cache_receipt.json",
+      "sha256": "bd781762fad204ffa17ecb1ad93cbe2c7c920ed74020ded584324c4e32af6377",
+      "bytes": 1620,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/fm_calibration_v1/chronos2_cache_summary.json",
+      "sha256": "a5b9333c2ba8137ccc2e879e71126da4880ba959c727afff445b37dd697c9da1",
+      "bytes": 1534,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/fm_calibration_v1/chronos2_evaluation.json",
+      "sha256": "837c2ae345b1125692343a08d838f77a6b05b11ea19ca2dafe17cb3c3199090e",
+      "bytes": 15412,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/fm_calibration_v1/chronos2_profile.json",
+      "sha256": "97715e12d77cfb5bfbf1ff475847a3c7e68f602c65cf72a9e7a0117453685255",
+      "bytes": 2314,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/fm_calibration_v1/environment_locks.json",
+      "sha256": "60e233d58be96e8e16bbdaae1fc427c68d8e1a5cc4ff432c90f761045ea7679c",
+      "bytes": 709,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/fm_calibration_v1/integrity_review.json",
+      "sha256": "0458b60119ac4fe71a32e7377c3e034f87a2f9345001eb76554eb2cd57aca3b8",
+      "bytes": 902,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/fm_calibration_v1/joint_input_verification.json",
+      "sha256": "24502d1cbd2ba276db6a3f0966908afbbb3b8687e97845137410edf4812ade85",
+      "bytes": 277,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/fm_calibration_v1/public_export_map.json",
+      "sha256": "cb92c95ee1f736b4fa4fdc0bbc6898862bc22b372a2e904aa5f361e2d8be20ea",
+      "bytes": 4579,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/fm_calibration_v1/study_summary.json",
+      "sha256": "2e15b826f1547cbf484ff36a93b0840954a51c533e02f9016058ee87571500ea",
+      "bytes": 2835,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/fm_calibration_v1/target_provenance.json",
+      "sha256": "ff066c361f50c63914eda85452a6fe1a4e5e9c53f919da19821dbb6720718430",
+      "bytes": 758,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/fm_calibration_v1/timesfm3_cache_receipt.json",
+      "sha256": "a8d18761876077b05d69de0a9dd2bd2bc00bb0921d9312838073f3bc69d05c3f",
+      "bytes": 1664,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/fm_calibration_v1/timesfm3_cache_summary.json",
+      "sha256": "ec68cf8c389c4cc4367ad353cfeb4c3c91f7839a9a74f298d57ae286d57a2a23",
+      "bytes": 1533,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/fm_calibration_v1/timesfm3_evaluation.json",
+      "sha256": "595b62c0540efd8169ea53adffa2f5a3336c2257a9c3e6b2fb93ba2803f6a4a2",
+      "bytes": 15469,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/fm_calibration_v1/timesfm3_profile.json",
+      "sha256": "30d0c5af2f50278b2d09859803e431182757aacabbd3a662d7749af904e15f2f",
+      "bytes": 2326,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/fm_calibration_v1/timesfm_weight_lock.json",
+      "sha256": "a5d8be49423bdce00d363704675889bee7694e511b9a51e9213b9740ff35cc46",
+      "bytes": 974,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/latency/ACCURACY_LATENCY_FRONTIER.csv",
       "sha256": "e18cf9ed80d071bae5b5c1c62ff4ad47062417502d8023a9153adff2e8cea294",
       "bytes": 2244,
@@ -383,6 +518,15 @@
       "path": "configs/PARIS_TEACHER_MODEL_CONFIG.json",
       "sha256": "b301ee69d8c2d2a5f24413318cd89cf861b6508018bbdbfaeee201215959568b",
       "bytes": 2832,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "configs/research/FM_CALIBRATION_FOLD1_V1.json",
+      "sha256": "ae27de96837bd070e83af80319439bd81f6798548cd95b0150d51eb8dfc5cceb",
+      "bytes": 1498,
       "role": "configs",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",

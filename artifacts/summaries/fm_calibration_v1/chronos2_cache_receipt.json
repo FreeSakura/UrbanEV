@@ -1,0 +1,45 @@
+{
+  "protocol_id": "FM_CALIBRATION_FOLD1_V1_20260909",
+  "protocol_sha256": "ae27de96837bd070e83af80319439bd81f6798548cd95b0150d51eb8dfc5cceb",
+  "backend": {
+    "backend": "chronos2",
+    "package_version": "2.2.2",
+    "api_source_sha256": "4ea9776692c24fda7946755aced31187d09ba45cca0dd10227fca01e509e42e9",
+    "weight_sha256": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42",
+    "config_sha256": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031",
+    "torch_version": "2.5.1+cu121",
+    "numpy_version": "2.2.6",
+    "cuda_version": "12.1",
+    "dtype": "float32",
+    "device": "cuda",
+    "quantile_levels": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "cross_origin_learning": false,
+    "variate_chunking": false,
+    "native_point": "raw Q0.5 before sort or clip",
+    "timesfm_class": null
+  },
+  "source": {
+    "prefix_sha256": "9e56948b3129b3b9c730aa6b67721e6baed1f8af569684465b6a57fe050cfc97",
+    "rows": 648,
+    "channels": 275,
+    "column_order_sha256": "3924066ec0c48a6636ee1738baa902c2a11ce93992c3fb4f98c24df785dcc649"
+  },
+  "training_end": 576,
+  "validation_end": 648,
+  "test_accessed": false,
+  "layout": "origin,H_step,zone,quantile",
+  "profile_sha256": "8c948d75a6f2f172c978c2488f5df7369bbc9d139863064124efcbf75a282699",
+  "runner_sha256": "9087018814e7dcbc3b474629ce9be7fd11d334d3a2e6c0e3949746cbe68958dc",
+  "adapter_sha256": "afa95a76d118d399ceeb7717902a5f9047966fdf0c633e8145f2d9e13afe900b",
+  "data_code_sha256": "211672b5be9d69be106569828d8105e45620d718f1929d995d0eff227ff8f80d"
+}

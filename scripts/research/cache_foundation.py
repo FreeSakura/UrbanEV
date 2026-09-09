@@ -20,6 +20,10 @@ def write_json(path, value):
     temporary.replace(path)
 
 
+def prefix_hash(values, count):
+    return hashlib.sha256(np.ascontiguousarray(values[:count]).tobytes()).hexdigest()
+
+
 def fill_cache(backend, values, origins, horizon, directory, resume=False):
     """No label array is ever passed to the backend; flush before advancing progress."""
     directory.mkdir(exist_ok=True)
@@ -32,9 +36,15 @@ def fill_cache(backend, values, origins, horizon, directory, resume=False):
             raise ValueError("Resume origin identity changed")
         q=np.lib.format.open_memmap(directory/"quantiles.npy",mode="r+")
         p=np.lib.format.open_memmap(directory/"native.npy",mode="r+")
-        if q.shape!=q_shape or p.shape!=p_shape:raise ValueError("Resume cache shape changed")
+        if q.shape!=q_shape or p.shape!=p_shape or q.dtype!=np.float32 or p.dtype!=np.float32:
+            raise ValueError("Resume cache shape or dtype changed")
         completed=progress["completed"]
         if not 0<=completed<=len(origins):raise ValueError("Invalid resume progress")
+        if not np.array_equal(np.load(directory/"origins.npy",allow_pickle=False),origins):
+            raise ValueError("Stored origin array changed")
+        if (progress.get("completed_quantiles_sha256")!=prefix_hash(q,completed)
+            or progress.get("completed_native_sha256")!=prefix_hash(p,completed)):
+            raise ValueError("Completed-prefix integrity check failed; legacy unsealed progress cannot resume")
     else:
         if progress_path.exists() or (directory/"quantiles.npy").exists():
             raise FileExistsError("Explicit resume is required for an existing cache")
@@ -52,7 +62,9 @@ def fill_cache(backend, values, origins, horizon, directory, resume=False):
         if (index+1)%20==0 or index+1==len(origins):
             q.flush();p.flush()
             write_json(progress_path,{"completed":index+1,"total":len(origins),
-                "origins_sha256":hashlib.sha256(origins.tobytes()).hexdigest()})
+                "origins_sha256":hashlib.sha256(origins.tobytes()).hexdigest(),
+                "completed_quantiles_sha256":prefix_hash(q,index+1),
+                "completed_native_sha256":prefix_hash(p,index+1)})
             print(json.dumps({"horizon":horizon,"completed":index+1,"total":len(origins),
                               "seconds_this_session":round(time.perf_counter()-started,2)}),flush=True)
     if not np.isfinite(q).all() or not np.isfinite(p).all():raise ValueError("Incomplete prediction cache")

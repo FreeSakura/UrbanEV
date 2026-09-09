@@ -1,18 +1,18 @@
 # 强基线清单与结果状态
 
-更新日期：2026-09-09。该清单用于规划公平对比，尚不是SOTA排行榜。统一新协议结果为空，不以文献数字补空位。
+更新日期：2026-09-09。首折H3/H12开发结果已发布，完整测试成绩仍为空；这里不是SOTA排行榜。详见[基础模型开发报告](FM_CALIBRATION_REPORT.md)，不以文献数字补空位。
 
 | 系统 | 来源与角色 | 新协议实现状态 | 新协议结果 |
 |---|---|---|---|
 | TimeXer | 已有上游快照；训练模型强基线 | 新训练入口已接通，合成前向/反向和训练通过 | 未运行 |
 | Seasonal Linear / MLP | 季节锚与容量控制 | 已实现 | 未运行 |
 | Innovation / Level Attention | 等参数输入表示探针 | 已实现，非成熟创新 | 未运行 |
-| Chronos-2 native median | 原生多变量基础模型 | 历史版本已筛查；新版本适配待做 | 未运行 |
-| TimesFM-3 native median | 2026年8月发布的原生多变量基础模型 | 源码、输出语义和权重许可已核查；推理适配待做 | 未运行 |
-| Bounded quantile midpoint | 基础模型有限分位的有界均值近似 | NumPy核心已实现 | 未运行 |
-| Bias / affine calibration | 排除普通校准即可解释增益 | 设计已明确，基础模型预测缓存待做 | 未运行 |
-| Full-quantile ridge | 与约束头同分位信息的公平控制 | 设计已明确，实现与真实比较待做 | 未运行 |
-| Simplex MSE quantile head | 一个受约束共享头的候选路线 | NumPy优化及合成测试入口已实现 | 未运行 |
+| Chronos-2 native median | 原生多变量基础模型 | 2.2.2冻结环境已接通 | 首折开发完成，测试未运行 |
+| TimesFM-3 native median | 2026年8月发布的原生多变量基础模型 | 3.0.1 full-275底层接口已接通 | 首折开发完成，测试未运行 |
+| Bounded quantile midpoint | 基础模型有限分位的有界均值近似 | NumPy核心与首折开发评价完成 | 劣于原始Q0.5 |
+| Bias / affine calibration | 排除普通校准即可解释增益 | 训练区拟合与开发评价完成 | 见执行报告 |
+| Full-quantile ridge | 与约束头同分位信息的公平控制 | 同分位信息ridge已运行 | 两骨干最强校准控制 |
+| Simplex MSE quantile head | 一个受约束共享头的候选路线 | 真实开发评价完成 | 两骨干均NO_GO |
 
 ## 历史结果仅作研究起点
 

@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "scope": "single training origin, no target labels loaded",
+  "origin_index": 168,
+  "source": {
+    "prefix_sha256": "bfa2544cc74f3110f4a444c470a9af568be0b8b61d6505c5b65d3c37f57668a7",
+    "rows": 168,
+    "channels": 275,
+    "column_order_sha256": "3924066ec0c48a6636ee1738baa902c2a11ce93992c3fb4f98c24df785dcc649"
+  },
+  "backend": {
+    "backend": "chronos2",
+    "package_version": "2.2.2",
+    "api_source_sha256": "4ea9776692c24fda7946755aced31187d09ba45cca0dd10227fca01e509e42e9",
+    "weight_sha256": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42",
+    "config_sha256": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031",
+    "torch_version": "2.5.1+cu121",
+    "numpy_version": "2.2.6",
+    "cuda_version": "12.1",
+    "dtype": "float32",
+    "device": "cuda",
+    "quantile_levels": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "cross_origin_learning": false,
+    "variate_chunking": false,
+    "native_point": "raw Q0.5 before sort or clip",
+    "timesfm_class": null
+  },
+  "model_load_seconds": 10.389391300002899,
+  "measurements": [
+    {
+      "horizon": 3,
+      "seconds": 0.7734519000005093,
+      "shape": [
+        3,
+        275,
+        9
+      ],
+      "peak_allocated_bytes": 738029568,
+      "peak_reserved_bytes": 778043392,
+      "prediction_sha256": "bc060f86cbb133dcd9241f29515fb07e24ae4d8ff5e2020e7a13141f7b2c0c79"
+    },
+    {
+      "horizon": 12,
+      "seconds": 0.31192709999959334,
+      "shape": [
+        12,
+        275,
+        9
+      ],
+      "peak_allocated_bytes": 738029568,
+      "peak_reserved_bytes": 778043392,
+      "prediction_sha256": "19f92358ed9b95508a23637d7deca14de53853ef030ebd0a02173b8c529c101f"
+    }
+  ],
+  "forward_input_shapes": [
+    {
+      "context": [
+        275,
+        168
+      ],
+      "group_ids": [
+        275
+      ],
+      "future_covariates": [
+        275,
+        16
+      ],
+      "unique_group_ids": 1
+    },
+    {
+      "context": [
+        275,
+        168
+      ],
+      "group_ids": [
+        275
+      ],
+      "future_covariates": [
+        275,
+        16
+      ],
+      "unique_group_ids": 1
+    }
+  ],
+  "test_accessed": false,
+  "cache_authorized_by_feasibility": true,
+  "sota_claim": false
+}

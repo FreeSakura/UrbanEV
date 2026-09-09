@@ -1,0 +1,21 @@
+{
+  "dataset": "UrbanEV existing audited local data snapshot",
+  "source_files": [
+    "occupancy.csv",
+    "inf.csv"
+  ],
+  "occupancy_prefix_rows": 648,
+  "occupancy_prefix_sha256": "6d54e7e7a97b13f74ead4aefb860733d10dab7dcf7138a19258ce9fd93be1632",
+  "capacity_file_sha256": "03c9830965e9e99b29adfb8cceed0eba98d37631f514273cb3fe61f80d63de7c",
+  "prepared_csv_sha256": "9e56948b3129b3b9c730aa6b67721e6baed1f8af569684465b6a57fe050cfc97",
+  "construction": "float32 hourly occupancy / float32 capacity grouped by TAZID charge_count",
+  "exact_array_equal": true,
+  "shape": [
+    648,
+    275
+  ],
+  "first_timestamp": "2022-09-01 00:00:00",
+  "last_timestamp": "2022-09-27 23:00:00",
+  "normalization_uses_model_outputs": false,
+  "test_rows_read": false
+}

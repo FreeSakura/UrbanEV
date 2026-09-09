@@ -1,0 +1,15 @@
+{
+  "checks": [
+    {
+      "backend": "chronos2",
+      "observed_calls": 2,
+      "full_275_variables_in_one_group": true
+    },
+    {
+      "backend": "timesfm3",
+      "observed_calls": 2,
+      "full_275_variables_in_one_group": true
+    }
+  ],
+  "test_accessed": false
+}

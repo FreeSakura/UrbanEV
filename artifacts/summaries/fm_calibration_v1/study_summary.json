@@ -1,0 +1,93 @@
+{
+  "protocol_id": "FM_CALIBRATION_FOLD1_V1_20260909",
+  "scope": "one dataset, fold1 train/validation, H3 and H12, frozen deterministic backbones",
+  "candidate_status": "STOPPED_NO_GO_ON_BOTH_BACKBONES",
+  "project_status": "RESEARCH_IN_PROGRESS_NOT_SOTA",
+  "test_accessed": false,
+  "sota_claim": false,
+  "backbones": {
+    "chronos2": {
+      "decision": "NO_GO",
+      "macro": {
+        "native_q50": {
+          "rmse": 0.07069935776834498,
+          "mae": 0.04099574874965238
+        },
+        "postprocessed_q50": {
+          "rmse": 0.0706995912019722,
+          "mae": 0.04099563916149726
+        },
+        "bounded_midpoint": {
+          "rmse": 0.07459661692103409,
+          "mae": 0.05099519745374864
+        },
+        "native_bias": {
+          "rmse": 0.07073598536899006,
+          "mae": 0.04115574064496085
+        },
+        "native_affine": {
+          "rmse": 0.07057723702811844,
+          "mae": 0.041670797680004645
+        },
+        "midpoint_affine": {
+          "rmse": 0.06948170975151732,
+          "mae": 0.041597362901086066
+        },
+        "quantile_ridge": {
+          "rmse": 0.06915413612079262,
+          "mae": 0.04164489140755706
+        },
+        "simplex_head": {
+          "rmse": 0.06915680203811381,
+          "mae": 0.04165984030637361
+        }
+      },
+      "best_control": "quantile_ridge",
+      "head_rmse_gain_vs_native_percent": 2.1818525357550467,
+      "head_mae_change_vs_native_percent": 1.6199034704223125,
+      "head_rmse_gain_vs_best_control_percent": -0.003855036691557956
+    },
+    "timesfm3": {
+      "decision": "NO_GO",
+      "macro": {
+        "native_q50": {
+          "rmse": 0.06937623256353052,
+          "mae": 0.040077322883692715
+        },
+        "postprocessed_q50": {
+          "rmse": 0.06937493206181818,
+          "mae": 0.040074576014145644
+        },
+        "bounded_midpoint": {
+          "rmse": 0.07341713582479037,
+          "mae": 0.05082746150871921
+        },
+        "native_bias": {
+          "rmse": 0.06950467532725116,
+          "mae": 0.04048323506515829
+        },
+        "native_affine": {
+          "rmse": 0.06928360547793,
+          "mae": 0.04071991701856818
+        },
+        "midpoint_affine": {
+          "rmse": 0.06787386679997622,
+          "mae": 0.040964403247489886
+        },
+        "quantile_ridge": {
+          "rmse": 0.06773226122274358,
+          "mae": 0.04109546275471561
+        },
+        "simplex_head": {
+          "rmse": 0.0677302226700931,
+          "mae": 0.041099120148882284
+        }
+      },
+      "best_control": "quantile_ridge",
+      "head_rmse_gain_vs_native_percent": 2.3725847204662087,
+      "head_mae_change_vs_native_percent": 2.5495646706615194,
+      "head_rmse_gain_vs_best_control_percent": 0.003009721827784695
+    }
+  },
+  "cache_and_evaluation_code_commit": "ffeb4a9"
+}

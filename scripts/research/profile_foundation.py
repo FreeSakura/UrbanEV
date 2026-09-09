@@ -49,11 +49,16 @@ def main():
                 "peak_reserved_bytes":torch.cuda.max_memory_reserved() if args.device=="cuda" else None,
                 "prediction_sha256":hashlib.sha256(q.tobytes()).hexdigest()})
         handle.remove()
+        if args.backend=="chronos2":
+            joint_verified=bool(seen) and all(s.get("context")==[275,168] and s.get("unique_group_ids")==1 for s in seen)
+        else:
+            joint_verified=bool(seen) and all(s.get("arg_0",[])[:2]==[1,275] for s in seen)
+        if not joint_verified:raise ValueError("Observed backend calls did not verify one complete 275-variable group")
         report={"status":"PASS","scope":"single training origin, no target labels loaded", "origin_index":168,
             "source":source,"backend":backend.metadata,"model_load_seconds":load_seconds,
             "measurements":measurements,"forward_input_shapes":seen,
             "observed_module":"transformer_stack" if args.backend=="timesfm3" else "model_forward",
-            "model_training":False,"test_accessed":False,
+            "model_training":False,"joint_group_verified":True,"test_accessed":False,
             "cache_authorized_by_feasibility":True,"sota_claim":False}
     except Exception as exc:
         report={"status":"FAIL","backend":args.backend,"error_type":type(exc).__name__,

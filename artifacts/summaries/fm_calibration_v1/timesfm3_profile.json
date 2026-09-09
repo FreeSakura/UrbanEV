@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "scope": "single training origin, no target labels loaded",
+  "origin_index": 168,
+  "source": {
+    "prefix_sha256": "bfa2544cc74f3110f4a444c470a9af568be0b8b61d6505c5b65d3c37f57668a7",
+    "rows": 168,
+    "channels": 275,
+    "column_order_sha256": "3924066ec0c48a6636ee1738baa902c2a11ce93992c3fb4f98c24df785dcc649"
+  },
+  "backend": {
+    "backend": "timesfm3",
+    "package_version": "3.0.1",
+    "api_source_sha256": "33870c9676be6aab4e62c45a0a89bc1d6c49ca3149ddc46a19c6d9e2c23e0037",
+    "weight_sha256": "a7592b0a8432baee54483254e5647856911ce69e09d09a9bb65904b2d98f17da",
+    "config_sha256": "ff17bbc07b792c5a904cca265b8468579d736a4fe84981da25eb871b0a125bc6",
+    "torch_version": "2.5.1+cu121",
+    "numpy_version": "2.2.6",
+    "cuda_version": "12.1",
+    "dtype": "float32",
+    "device": "cuda",
+    "quantile_levels": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "cross_origin_learning": false,
+    "variate_chunking": false,
+    "native_point": "raw Q0.5 before sort or clip",
+    "timesfm_class": "TimesFM3Forecaster, not the chunking evaluator"
+  },
+  "model_load_seconds": 3.6097750999979326,
+  "measurements": [
+    {
+      "horizon": 3,
+      "seconds": 0.9532913999973971,
+      "shape": [
+        3,
+        275,
+        9
+      ],
+      "peak_allocated_bytes": 1459303424,
+      "peak_reserved_bytes": 1585446912,
+      "prediction_sha256": "eb8ff7206796029e2ac3719e94216486bf240c79aa388952ae7c72c7ce8aac46"
+    },
+    {
+      "horizon": 12,
+      "seconds": 0.6796179999982996,
+      "shape": [
+        12,
+        275,
+        9
+      ],
+      "peak_allocated_bytes": 1459303424,
+      "peak_reserved_bytes": 1598029824,
+      "prediction_sha256": "23bb75e2e94f49a59a5d65b8a4bd8b036fb31c51e86d985a311156a90077614e"
+    }
+  ],
+  "forward_input_shapes": [
+    {
+      "arg_0": [
+        1,
+        275,
+        8,
+        1280
+      ],
+      "arg_1": [
+        1,
+        275,
+        8
+      ]
+    },
+    {
+      "arg_0": [
+        1,
+        275,
+        8,
+        1280
+      ],
+      "arg_1": [
+        1,
+        275,
+        8
+      ]
+    }
+  ],
+  "observed_module": "transformer_stack",
+  "model_training": false,
+  "test_accessed": false,
+  "cache_authorized_by_feasibility": true,
+  "sota_claim": false
+}

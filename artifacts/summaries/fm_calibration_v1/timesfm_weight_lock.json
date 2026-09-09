@@ -1,0 +1,30 @@
+{
+  "repo_id": "google/timesfm-3.0-pytorch",
+  "weight_revision": "43046b85ec22d584a13f8098c2ed39c889e129c2",
+  "files": [
+    {
+      "file": "config.json",
+      "bytes": 1273,
+      "sha256": "ff17bbc07b792c5a904cca265b8468579d736a4fe84981da25eb871b0a125bc6"
+    },
+    {
+      "file": "model.safetensors",
+      "bytes": 1322898824,
+      "sha256": "a7592b0a8432baee54483254e5647856911ce69e09d09a9bb65904b2d98f17da"
+    },
+    {
+      "file": "README.md",
+      "bytes": 1436,
+      "sha256": "eb66e35dd67cc44dc711b18bc2b833d8f0fcd48892b7341042a5b4a36fc37228"
+    },
+    {
+      "file": "LICENSE",
+      "bytes": 7270,
+      "sha256": "3e36db7240d23adb6ac6d7d931892dcc5706a14a7d31581f08c35d2f25736dfd"
+    }
+  ],
+  "download_seconds": 523.6103650999976,
+  "license": "timesfm-non-commercial-license-v1.0",
+  "usage": "local noncommercial research; no weight or derivative-parameter redistribution",
+  "transport": "verified byte ranges from official Hugging Face URL"
+}

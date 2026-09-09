@@ -30,3 +30,8 @@ def test_cache_passes_only_each_origins_history(tmp_path):
     calls.clear()
     resumed=module.fill_cache(Backend(),values,origins,3,tmp_path/"cache",resume=True)
     assert not calls and resumed["new_windows_this_session"]==0
+    corrupted=np.load(tmp_path/"cache/quantiles.npy",mmap_mode="r+")
+    corrupted[0,0,0,0]+=1;corrupted.flush()
+    with pytest.raises(ValueError,match="Completed-prefix integrity"):
+        module.fill_cache(Backend(),values,origins,3,tmp_path/"cache",resume=True)
+    assert not calls

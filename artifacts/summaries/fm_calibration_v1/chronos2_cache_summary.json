@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETE",
+  "protocol_id": "FM_CALIBRATION_FOLD1_V1_20260909",
+  "backend": "chronos2",
+  "source": {
+    "prefix_sha256": "9e56948b3129b3b9c730aa6b67721e6baed1f8af569684465b6a57fe050cfc97",
+    "rows": 648,
+    "channels": 275,
+    "column_order_sha256": "3924066ec0c48a6636ee1738baa902c2a11ce93992c3fb4f98c24df785dcc649"
+  },
+  "horizons": [
+    {
+      "horizon": 3,
+      "windows": 476,
+      "shape": [
+        476,
+        3,
+        275,
+        9
+      ],
+      "new_windows_this_session": 476,
+      "seconds_this_session": 140.66503389999707,
+      "quantiles_sha256": "1e630f74c4c53011206678340f2025b06ccb44d5f01fe60a042e80db5ded1a03",
+      "native_sha256": "dcd70a06be8d5f9424c1f15a4d4306ff3d66386e0e7a030bf8390971f21b3cfe",
+      "origins_sha256": "d4c35e78befb84b133be2fc7c8cc62f54bc48519dcd5998d184f083383fc3ca9",
+      "training_windows": 406,
+      "validation_windows": 70
+    },
+    {
+      "horizon": 12,
+      "windows": 458,
+      "shape": [
+        458,
+        12,
+        275,
+        9
+      ],
+      "new_windows_this_session": 458,
+      "seconds_this_session": 139.93141970000215,
+      "quantiles_sha256": "5b1f947953334ab1dffae777f3c6819c9058cfcfdaaa9fc29d08b498a96c5c88",
+      "native_sha256": "712250609eedd5216ece98fd404ab107f5d2cffe1826b69a75da123ac30aae3b",
+      "origins_sha256": "f23aa688e306f827f2d5bfe9936c0141e7896dd7c69bbf34449eea740b8b3b60",
+      "training_windows": 397,
+      "validation_windows": 61
+    }
+  ],
+  "test_accessed": false,
+  "contains_targets": false
+}

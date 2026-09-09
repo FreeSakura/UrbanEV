@@ -1,0 +1,45 @@
+{
+  "protocol_id": "FM_CALIBRATION_FOLD1_V1_20260909",
+  "protocol_sha256": "ae27de96837bd070e83af80319439bd81f6798548cd95b0150d51eb8dfc5cceb",
+  "backend": {
+    "backend": "timesfm3",
+    "package_version": "3.0.1",
+    "api_source_sha256": "33870c9676be6aab4e62c45a0a89bc1d6c49ca3149ddc46a19c6d9e2c23e0037",
+    "weight_sha256": "a7592b0a8432baee54483254e5647856911ce69e09d09a9bb65904b2d98f17da",
+    "config_sha256": "ff17bbc07b792c5a904cca265b8468579d736a4fe84981da25eb871b0a125bc6",
+    "torch_version": "2.5.1+cu121",
+    "numpy_version": "2.2.6",
+    "cuda_version": "12.1",
+    "dtype": "float32",
+    "device": "cuda",
+    "quantile_levels": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "cross_origin_learning": false,
+    "variate_chunking": false,
+    "native_point": "raw Q0.5 before sort or clip",
+    "timesfm_class": "TimesFM3Forecaster, not the chunking evaluator"
+  },
+  "source": {
+    "prefix_sha256": "9e56948b3129b3b9c730aa6b67721e6baed1f8af569684465b6a57fe050cfc97",
+    "rows": 648,
+    "channels": 275,
+    "column_order_sha256": "3924066ec0c48a6636ee1738baa902c2a11ce93992c3fb4f98c24df785dcc649"
+  },
+  "training_end": 576,
+  "validation_end": 648,
+  "test_accessed": false,
+  "layout": "origin,H_step,zone,quantile",
+  "profile_sha256": "0b8adf3d80a294054c8c7fe652d1bd2cfb891ab10436dd33e5655590d80f0253",
+  "runner_sha256": "9087018814e7dcbc3b474629ce9be7fd11d334d3a2e6c0e3949746cbe68958dc",
+  "adapter_sha256": "afa95a76d118d399ceeb7717902a5f9047966fdf0c633e8145f2d9e13afe900b",
+  "data_code_sha256": "211672b5be9d69be106569828d8105e45620d718f1929d995d0eff227ff8f80d"
+}

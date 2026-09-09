@@ -1,0 +1,83 @@
+{
+  "format": "public-export-map/v1",
+  "note": "Execution hashes identify raw run files. Public JSON uses normalized serialization/newlines; semantic identity is checked separately.",
+  "files": [
+    {
+      "public_file": "chronos2_evaluation.json",
+      "execution_file_sha256": "cad5cf0ccb5d03387b362ec4a945c2a70174a6ee4ec6b239663e633f5662431d",
+      "public_file_sha256": "837c2ae345b1125692343a08d838f77a6b05b11ea19ca2dafe17cb3c3199090e",
+      "canonical_json_sha256": "45a881d73a63fbe8153609f1aa274548f45e94052df59d2676b224029e8ce3f8",
+      "semantic_identity_verified": true
+    },
+    {
+      "public_file": "chronos2_profile.json",
+      "execution_file_sha256": "8c948d75a6f2f172c978c2488f5df7369bbc9d139863064124efcbf75a282699",
+      "public_file_sha256": "97715e12d77cfb5bfbf1ff475847a3c7e68f602c65cf72a9e7a0117453685255",
+      "canonical_json_sha256": "6654bbd3afc3864903b22de6527a3431b30fc317be88513ea5ded8cae2dab433",
+      "semantic_identity_verified": true
+    },
+    {
+      "public_file": "chronos2_cache_summary.json",
+      "execution_file_sha256": "e62fa4c1d41c96b1a13b612d79771a9de735f52100e00f45b10c344bd73a085f",
+      "public_file_sha256": "a5b9333c2ba8137ccc2e879e71126da4880ba959c727afff445b37dd697c9da1",
+      "canonical_json_sha256": "2154059dd93c449bf72f16ed3b2e59e53d751f1a50f680b57fd9635ca637e90e",
+      "semantic_identity_verified": true
+    },
+    {
+      "public_file": "chronos2_cache_receipt.json",
+      "execution_file_sha256": "36434afe4a044d1de238a7a7a8453066191da1c832155f3eefc9ab05903c8bc8",
+      "public_file_sha256": "bd781762fad204ffa17ecb1ad93cbe2c7c920ed74020ded584324c4e32af6377",
+      "canonical_json_sha256": "149556e4199f28b322d2a39d2dc3d52f3b11e69cb27692f819ba5b37bb6a3e03",
+      "semantic_identity_verified": true
+    },
+    {
+      "public_file": "timesfm3_evaluation.json",
+      "execution_file_sha256": "9033fefb487164d3b994ea6f2df06f491939ecc686028ebb857e27902f37e672",
+      "public_file_sha256": "595b62c0540efd8169ea53adffa2f5a3336c2257a9c3e6b2fb93ba2803f6a4a2",
+      "canonical_json_sha256": "da75a395b2981af808459c854aa2447aa44f93d9d059adfd75fb0e0294f83e50",
+      "semantic_identity_verified": true
+    },
+    {
+      "public_file": "timesfm3_profile.json",
+      "execution_file_sha256": "0b8adf3d80a294054c8c7fe652d1bd2cfb891ab10436dd33e5655590d80f0253",
+      "public_file_sha256": "30d0c5af2f50278b2d09859803e431182757aacabbd3a662d7749af904e15f2f",
+      "canonical_json_sha256": "d27c303845c1d4be778e8a088b731cc9ddf5d89c6688e918afd61b3822ced752",
+      "semantic_identity_verified": true
+    },
+    {
+      "public_file": "timesfm3_cache_summary.json",
+      "execution_file_sha256": "100b010cc8b54086ae762deb807fc6e45b50f2537fe7fe8a9b0c5394c9df6ec4",
+      "public_file_sha256": "ec68cf8c389c4cc4367ad353cfeb4c3c91f7839a9a74f298d57ae286d57a2a23",
+      "canonical_json_sha256": "8ce1cc88410fcfd4bc33defc5f10eed34fd640e5aa1c40c5ead6f6e5b68b77f1",
+      "semantic_identity_verified": true
+    },
+    {
+      "public_file": "timesfm3_cache_receipt.json",
+      "execution_file_sha256": "3934a7c108766bd4c3d0b922d9532582f043cf0369d17dd2ef35a2574ebef723",
+      "public_file_sha256": "a8d18761876077b05d69de0a9dd2bd2bc00bb0921d9312838073f3bc69d05c3f",
+      "canonical_json_sha256": "84308b0b99a21b2540b274a89659a10e61ee4cceabbdc76c8b15c0fc506f183d",
+      "semantic_identity_verified": true
+    },
+    {
+      "public_file": "target_provenance.json",
+      "execution_file_sha256": "cef03e607b279e63c47f148d3f001d9eae7b045a18d8c9c15ef391c945490df2",
+      "public_file_sha256": "ff066c361f50c63914eda85452a6fe1a4e5e9c53f919da19821dbb6720718430",
+      "canonical_json_sha256": "aa3d4d90abe09598601c55480e71beb7f481408d37b63a42ec8650e4c7015436",
+      "semantic_identity_verified": true
+    },
+    {
+      "public_file": "joint_input_verification.json",
+      "execution_file_sha256": "be61f57e39c6ac0615813d0e75e9e0cabd7154d316bdccd3b18b0039851eaeda",
+      "public_file_sha256": "24502d1cbd2ba276db6a3f0966908afbbb3b8687e97845137410edf4812ade85",
+      "canonical_json_sha256": "85d3fe2e33edd1103800a321cfa92a4984c34a7e9bee346cf150115d280489c3",
+      "semantic_identity_verified": true
+    },
+    {
+      "public_file": "timesfm_weight_lock.json",
+      "execution_file_sha256": "932d89e1aa3fd42ade8d41411f81b9684e42764ccdd5ccf8b3856da2cdd7d2cf",
+      "public_file_sha256": "a5d8be49423bdce00d363704675889bee7694e511b9a51e9213b9740ff35cc46",
+      "canonical_json_sha256": "856692086e8f524fc814f00bcbc70efa548b75de4641b9cf6d3d54fe05b2847a",
+      "semantic_identity_verified": true
+    }
+  ]
+}
