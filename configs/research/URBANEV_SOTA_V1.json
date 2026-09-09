@@ -1,0 +1,53 @@
+{
+  "protocol_id": "URBANEV_FORECAST_RESEARCH_V1_20260909",
+  "status": "development_protocol_sota_comparability_pending",
+  "target": "hourly_zonal_occupancy_count_divided_by_capacity_float32",
+  "channels": 275,
+  "history": 168,
+  "horizons": [
+    3,
+    6,
+    9,
+    12
+  ],
+  "target_scope": "all_H_future_steps_all_zones",
+  "folds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "fold_prefix_months": "2022-09 through 2023-02",
+  "train_end": "floor(0.8 * fold_hours)",
+  "validation_end": "fold_hours - floor(0.1 * fold_hours)",
+  "split_rule": "all target timestamps contained in one split; preceding history allowed",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "primary_metric": "RMSE_clipped_0_1",
+  "secondary_metrics": [
+    "MAE_clipped_0_1",
+    "RMSE_raw",
+    "MAE_raw"
+  ],
+  "cell_metric": "micro over all origins, H steps and zones",
+  "macro_metric": "equal mean of 24 fold-horizon cell metrics per seed; report seed mean and SD",
+  "selection": "validation clipped RMSE; patience 5, maximum 30 epochs in screening",
+  "screening_limit": "one H3 smoke; route gate uses fold1 H3 and H12, regularization grid 0.001/0.01/0.1; deterministic convex heads are not seed replicates",
+  "screening_gate": {
+    "relative_rmse_improvement_percent": 1.0,
+    "mae_must_not_degrade": true,
+    "max_single_cell_rmse_degradation_percent": 1.0
+  },
+  "screening_gate_is_sota_definition": false,
+  "known_future_inputs": [],
+  "foundation_model_point_policy": "Identify native mean and median semantics before evaluation; no unlabelled sparse-quantile average",
+  "checkpoint_freeze": "configuration, code hash and training-validation prefix hash",
+  "independent_confirmation_established": false,
+  "new_benchmark_results_available": false,
+  "protected_paris_access": false
+}

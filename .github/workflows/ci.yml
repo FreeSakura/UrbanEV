@@ -5,6 +5,21 @@ on:
   pull_request:
 
 jobs:
+  forecasting-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Install CPU forecasting environment
+        run: |
+          python -m pip install 'torch>=2.4,<3' --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install -e .[test,research]
+      - name: Forecasting contracts, models and training
+        run: |
+          pytest tests/test_forecast_contract.py tests/test_forecast_models.py
+          python -m urbanev_forecast smoke --model innovation_attention --epochs 2 --output local-data/ci-smoke
   test-and-build:
     runs-on: ubuntu-latest
     steps:

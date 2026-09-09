@@ -1,92 +1,70 @@
-# UrbanEV evidence audit
+# UrbanEV Forecast
 
 [![CI](https://github.com/FreeSakura/UrbanEV/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/FreeSakura/UrbanEV/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/FreeSakura/UrbanEV?include_prereleases)](https://github.com/FreeSakura/UrbanEV/releases)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
-[![Paper: CC BY 4.0](https://img.shields.io/badge/paper-CC%20BY%204.0-green.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-> **Unofficial research artifact.**
-> This repository is not the official UrbanEV dataset repository and is not maintained by the UrbanEV dataset authors.
+**面向 UrbanEV 标准多变量预测的研究项目，目标是突破可复现强基线与 SOTA。** 主任务是275个区域的小时占用率预测，视野为3、6、9、12小时，以RMSE为主指标、MAE共同报告。当前尚未取得SOTA结果。
 
-This is the public, target-free companion to **From Configurations to Claims: An Evidence Audit of Urban EV Charging Forecasting**. It preserves the paper sources, frozen protocol and result summaries, executed model-source snapshots, and deterministic checks needed to inspect the reported evidence chain without publishing licensed targets or protected material.
+这不是UrbanEV数据集官方仓库。原始数据与官方方法见 [IntelligentSystemsLab/UrbanEV](https://github.com/IntelligentSystemsLab/UrbanEV)。本项目从证据审计转向预测方法研究：新模型、强基线、实验和结果是主线，既有审计工具承担验证工作。
 
-- [Main manuscript](paper/main/UrbanEV_Evidence_Audit_Main.pdf)
-- [Supplementary Material](paper/supplement/UrbanEV_Evidence_Audit_Supplement.pdf)
-- [Current preprint release](https://github.com/FreeSakura/UrbanEV/releases/tag/v0.9.1-preprint)
+## 当前研究主线
 
-## Research update — September 2026
+- [研究目标与路线](docs/research/sota/RESEARCH_ROADMAP.md)：标准预测任务、现代强基线和可否定的机制研究。
+- [当前完整方案与评审](docs/research/sota/FINAL_PROPOSAL.md)：五轮自动评审后转入实验，尚未达到成熟SOTA方法阈值。
+- [实验协议](configs/research/URBANEV_SOTA_V1.json)：任务与划分口径、种子和推进门槛。
+- [基线清单与结果状态](docs/research/sota/BASELINES.md)：区分文献结果、历史工件、尚未运行的候选，避免跨协议混排。
+- [理论积累](docs/research/PAIRED_AUDIT_V3_REPORT.md)：V1–V3关于风险、事件与缺失评价的研究；这部分不是标准预测SOTA成绩。
 
-- [V3 report PDF](paper/research/UrbanEV_Theory_Feedback_V3.pdf) (9 pages), [Chinese theory and experiment report V3](docs/research/PAIRED_AUDIT_V3_REPORT.md): exact paired Brier bounds with shared missing observations; natural-mask development validation over 109,050 windows, with 2.93% interval tightening.
-- [Complete derivation](docs/research/DERIVATION_V3.md), [V1 theory](docs/research/THEORY_REPORT_V1.md), [V2 theory and experiment feedback](docs/research/THEORY_REPORT_V2.md).
-- [Runnable evaluation script](scripts/research/run_paris_event_audit.py) and [aggregate receipt](artifacts/summaries/paired_audit_v3/summary.json). No raw observations or missingness masks are published.
-- [Public attribution and privacy scope](docs/PUBLIC_ATTRIBUTION.md). Historical commits and tags retain earlier attribution; use the current tree for the revised manuscripts.
+当前优先检验[有界分位点预测适配](docs/research/sota/QUANTILE_MEAN_THEORY.md)：用一个受约束共享头适配冻结基础模型的RMSE目标，数值核心已实现，真实收益尚未验证。
 
-## Evidence boundary
+首轮实现提供季节线性、季节MLP、创新注意力和原始水平注意力探针，以及现有TimeXer源代码适配。探针用于验证机制，尚未确立方法优势或新颖性。Chronos-2和TimesFM-3进入强基线计划，其新协议适配与评估还未完成。
 
-The current public tree and current Release contain only allowlisted source, configuration, summary, hash, and target-free prediction artifacts. They do **not** contain UrbanEV or Paris raw data, Paris formal/protected data or predictions, target values, model checkpoints, access tokens, physical local paths, or recoverable private Git objects. The historical protected-data receipt records non-sensitive role metadata and zero analytical access. The V3 update separately evaluates an existing Paris development panel and publishes only aggregate bounds and hashes; it does not change the formal/protected-data boundary.
+## 开始研究
 
-The immutable `v0.9.0-preprint` tag is retained as a superseded historical record. Its known non-secret path-metadata defect is documented without reproducing those paths in `artifacts/manifests/HISTORICAL_PRIVACY_EXCEPTIONS.json`; the defect is removed from the current tree and `v0.9.1-preprint` assets.
-
-The paper is an audit/evaluation study. It does not claim state-of-the-art performance, protected-test performance, production readiness, or cross-dataset superiority.
-
-## What can be reproduced?
-
-| Level | Raw targets required? | Scope |
-|---|---:|---|
-| Repository-only replay | No | Schemas, summaries, citations, manifests, paper build, privacy gates |
-| Licensed-data recomputation | Yes, obtained by the user | Target hashes and headline metrics from target-free predictions |
-| Optional model re-execution | Yes; GPU environment for relevant models | Frozen source/configuration identity, not required for stored-prediction claims |
-
-## Clean-room route
-
-Python 3.10 is the reference CPU environment. CUDA 12.1 is documented separately for optional model execution.
+在仓库根目录，使用Python 3.10或更高版本：
 
 ```bash
-git clone https://github.com/FreeSakura/UrbanEV.git
-cd UrbanEV
-python -m venv .venv
-python -m pip install -e .[test]
-python -m urbanev_audit register-data --dataset urbanev --data-root /path/to/urbanev
-python -m urbanev_audit register-data --dataset paris --accept-license --data-root /path/to/paris
-python scripts/download_release_assets.py --tag v0.9.1-preprint
-python scripts/audit_release.py --asset-root release-assets
-python -m urbanev_audit.verify --manifest artifacts/manifests/FULL_RELEASE_MANIFEST.json
-python -m urbanev_audit.recompute --scope headline --data-root /path/to/data --development-shard /path/to/paris/development_state_shard.csv
-python scripts/build_paper.py --variant main
-python scripts/build_paper.py --variant supplement
+python -m pip install -e .[test,research]
+python -m urbanev_forecast smoke --model innovation_attention --epochs 2 --output local-data/smoke
+pytest
 ```
 
-`register-data` records data already obtained by the user under upstream terms; it does not download or redistribute data. The deprecated `fetch` command remains as a compatibility alias. UrbanEV reconstruction reads `occupancy.csv` and `inf.csv`. Paris reconstruction defaults to an explicit development shard and reads a complete `train.csv` only with `--allow-full-source`; requested timestamps after the frozen development end fail closed.
+`smoke`生成合成周期序列并执行训练/验证，用于检查代码，不产生真实UrbanEV成绩。无需下载数据或大模型。
 
-## Repository map
-
-- `paper/`: current Main and Supplement, historical archive, shared bibliography, figures, and PDFs.
-- `src/urbanev_audit/`: metrics, strict schemas, verification, recomputation, and privacy checks.
-- `models/`: executed source snapshots and file-level provenance/licensing manifest.
-- `configs/`: frozen model, fold, gate, and environment specifications.
-- `artifacts/summaries/`: public result tables and decision receipts.
-- `artifacts/manifests/`: evidence, full-tree, model, paper-build, Release, and privacy records.
-- `scripts/`: paper build, asset export/audit, manifest, and privacy utilities.
-- `tests/`: clean-room metric, schema, citation, release, and privacy checks.
-- `docs/`: licenses, identity limits, disclosure, and reproduction notes.
-
-## Stable commands
+取得数据授权后，先准备第一折训练/验证前缀：
 
 ```bash
-python -m urbanev_audit register-data --help
-python -m urbanev_audit verify --help
-python -m urbanev_audit recompute --help
-python scripts/build_paper.py --variant main  # or: supplement, archive
-python scripts/privacy_audit.py --root . --git-history
-python scripts/audit_release.py --asset-root release-assets
+python -m urbanev_forecast.prepare --data-root local-data/UrbanEV --hours 648 --output local-data/urbanev-rates.csv
+python -m urbanev_forecast train --csv local-data/urbanev-rates.csv --model seasonal_linear --fold 1 --horizon 3 --epochs 30 --output local-data/seasonal-f1-h3-s42
+python -m urbanev_forecast train --csv local-data/urbanev-rates.csv --model timexer --fold 1 --horizon 3 --epochs 30 --output local-data/timexer-f1-h3-s42
 ```
 
-## Releases and licenses
+`prepare`将占用数量除以对应区域容量；输入应为上游`occupancy.csv`和`inf.csv`。`train`只读取选定折的训练/验证前缀，保存最佳验证checkpoint、配置、数据与代码哈希。输出目录必须为空，目标与checkpoint仅留在本地。可用`--device cuda`启用现有GPU。
 
-Large target-free prediction packages are attached to GitHub Releases rather than committed to Git. Verify each asset against `SHA256SUMS`, then run the strict Release audit.
+在方法和协议冻结后，单独使用`test`评价完整测试前缀：
 
-Original code is MIT licensed. Paper and original documentation are CC BY 4.0. Third-party snapshots retain their upstream licenses. Dataset licenses remain separate; see `docs/DATA_LICENSES.md` and `THIRD_PARTY_NOTICES.md`.
+```bash
+python -m urbanev_forecast test --csv local-data/urbanev-rates-complete.csv --checkpoint local-data/seasonal-f1-h3-s42/checkpoint.pt --output local-data/seasonal-f1-h3-s42-test
+```
 
-## Citation
+该步骤要求CSV覆盖所选折的完整时间范围，并核对训练/验证前缀及当前代码与checkpoint一致。测试输出不用于选模型。详见[路线与运行顺序](docs/research/sota/RESEARCH_ROADMAP.md)。
 
-Use `CITATION.cff`. This remains a preprint artifact until the remaining submission metadata and archival record are locked.
+## 代码与研究资产
+
+| 位置 | 用途 |
+|---|---|
+| `src/urbanev_forecast/` | 预测模型、数据窗口、训练/测试入口 |
+| `configs/research/` | 新研究协议 |
+| `docs/research/sota/` | 研究路线、基线清单、实验与评审 |
+| `models/timexer/` | 保留原许可证和溯源的TimeXer实现 |
+| `artifacts/summaries/` | 公开汇总结果及历史证据 |
+| `src/urbanev_audit/` | 数据身份、指标、隐私和工件验证工具 |
+| `paper/` | 理论报告及历史审计论文 |
+
+## 历史成果与公开边界
+
+[原审计项目入口](docs/history/AUDIT_PROJECT_README.md)、[历史论文](paper/main/UrbanEV_Evidence_Audit_Main.pdf)及其[引用信息](docs/history/AUDIT_CITATION.cff)完整保留。历史负结果不会因项目转型被改判。旧`python -m urbanev_audit`命令继续可用。
+
+仓库公开代码、协议、汇总与理论，不上传原始目标、缺失mask、私有路径或模型checkpoint。当前署名使用FreeSakura；旧提交和标签仍可能包含历史署名，详见[公开署名与隐私范围](docs/PUBLIC_ATTRIBUTION.md)。Paris formal/protected材料不属于本轮标准UrbanEV预测研究的输入。
+
+原创代码采用MIT许可证；论文和原创文档采用CC BY 4.0；第三方源码与数据遵循各自许可证。运行环境依赖不会自动下载基础模型权重。引用本研究软件请使用[CITATION.cff](CITATION.cff)。

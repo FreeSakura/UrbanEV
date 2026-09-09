@@ -27,6 +27,8 @@ release-assets/*.npz
 release-assets/*.part
 local-data/
 private/
+/work/
+/refine-logs/
 *.safetensors
 *.ckpt
 *.pth

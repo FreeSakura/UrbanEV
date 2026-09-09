@@ -1,0 +1,57 @@
+{
+  "purpose": "one_epoch_training_pipeline_profile_not_converged_baseline",
+  "protocol": "development_validation_only",
+  "source_result_sha256": "9790ae43fd219e6eb5928c170dab485f8a9fb26192a4742c5bfe10f1c7a0b3bf",
+  "result": {
+    "stage": "development_validation",
+    "best_epoch": 1,
+    "training_log": [
+      {
+        "epoch": 1,
+        "validation_rmse": 0.08346839411496851
+      }
+    ],
+    "training_recipe": {
+      "optimizer": "AdamW",
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "epochs_cap": 1,
+      "patience": 5,
+      "batch_size": 32
+    },
+    "config": {
+      "model": "timexer",
+      "history": 168,
+      "horizon": 3,
+      "channels": 275,
+      "width": 64,
+      "seed": 42,
+      "fold": 1
+    },
+    "source": {
+      "prefix_sha256": "9e56948b3129b3b9c730aa6b67721e6baed1f8af569684465b6a57fe050cfc97",
+      "rows": 648,
+      "channels": 275,
+      "column_order_sha256": "3924066ec0c48a6636ee1738baa902c2a11ce93992c3fb4f98c24df785dcc649",
+      "source_kind": "urbanev_prepared_rate"
+    },
+    "raw": {
+      "rmse": 0.08373939835718978,
+      "mae": 0.05710116121385779
+    },
+    "clipped": {
+      "rmse": 0.08346839411496851,
+      "mae": 0.05696922901601761
+    },
+    "score_scope": "all forecast timesteps, origins and channels",
+    "windows": 70,
+    "parameters": 132675,
+    "elapsed_seconds": 6.225008800000069,
+    "code_sha256": "321535891179c9adeb1bd6b38b31a51662506631ebbbc6b042c22315303a3c38",
+    "torch_version": "2.5.1+cu121",
+    "numpy_version": "2.2.6",
+    "device": "cuda",
+    "sota_claim": false,
+    "real_test_executed": false
+  }
+}

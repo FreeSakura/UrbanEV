@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this audit framework or its public artifacts, please cite this preprint."
+title: "From Configurations to Claims: An Evidence Audit of Urban EV Charging Forecasting"
+version: 0.9.1
+type: article
+authors:
+  - name: FreeSakura
+repository-code: "https://github.com/FreeSakura/UrbanEV"
+license: CC-BY-4.0
+abstract: "A target-free public artifact package for an audit of configuration identity, sequential evidence gates, latency, and protected-data boundaries in urban EV charging forecasting."
+keywords:
+  - electric-vehicle charging
+  - forecasting
+  - reproducibility
+  - experiment audit
