@@ -1,0 +1,50 @@
+{
+  "id": "SIGNAL_REPLICATION_V1_20260910",
+  "status": "frozen before fold-two preparation and scoring",
+  "fold": 2,
+  "train_end": 1171,
+  "validation_end": 1318,
+  "fold_end": 1464,
+  "history": 168,
+  "horizons": [3, 12],
+  "channels": 275,
+  "data_identity": "existing audited hourly zonal count snapshot divided by matching filtered capacity; not arbitrary upstream percentage files",
+  "exposure": "new to these candidates, not certified globally unexposed; previous fold test timestamps enter expanding training; no fold-two test scoring or loading",
+  "region": {
+    "candidate": "raw_correlation32",
+    "affinity": "absolute zero-lag Pearson on last 288 training hours; original greedy balanced partition",
+    "controls": ["full275", "random32_s42", "random32_s43", "random32_s44"],
+    "model": "existing pinned Chronos-2 float32",
+    "selection_or_swaps": false
+  },
+  "duration": {
+    "systems": ["raw_correlation32", "duplicate_occupancy", "lagged_duration", "permuted_duration"],
+    "groups": "same occupancy-derived K32 partition; augmented tasks have up to 64 channels, occupancy first",
+    "duration_last_input_index": "origin-2",
+    "duration_permutation": "fixed global derangement of zone columns from seed 44; no target-based selection",
+    "physical_identification_claim": false,
+    "live_availability_established": false
+  },
+  "ridge": {
+    "systems": ["occupancy", "duplicate_occupancy", "lagged_duration", "permuted_duration"],
+    "regularization": 0.01,
+    "training_stride": 3,
+    "anchor": "last occupancy",
+    "features": "168 centered occupancy history plus optional 168 lagged raw duration or duplicate centered occupancy; train-only standardization",
+    "tuning": false
+  },
+  "metric": "clipped RMSE primary and MAE co-primary safeguard; raw metrics retained; equal mean of H3 and H12 cell scores",
+  "gate": {
+    "rmse_improvement_percent": 1.0,
+    "mae_must_not_degrade": true,
+    "maximum_cell_rmse_degradation_percent": 1.0,
+    "region_reference": "best macro-RMSE among full and each random seed; report all",
+    "duration_reference": "best macro-RMSE among occupancy and duplicate-occupancy within each backbone",
+    "negative_control": "duration must also beat fixed permuted-duration in macro RMSE and not worsen MAE",
+    "joint_duration_replicates": "both ridge and frozen Chronos gates pass; otherwise classify backbone-specific or NO_GO"
+  },
+  "uncertainty": "paired circular moving-block bootstrap over origins, block24, 2000 repeats, seed20260910; all zones and steps retained together; within-window descriptive intervals only",
+  "privacy": "publish summaries and hashes, not targets, input arrays, model weights or zone partitions",
+  "final_test_claim": false,
+  "sota_claim": false
+}

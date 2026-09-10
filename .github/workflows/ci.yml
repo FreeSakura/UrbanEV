@@ -20,6 +20,7 @@ jobs:
         run: |
           pytest tests/test_forecast_contract.py tests/test_forecast_models.py
           pytest tests/test_dual_region_pilot.py tests/test_dual_observation_pilot.py
+          pytest tests/test_signal_replication.py
           python -m urbanev_forecast smoke --model innovation_attention --epochs 2 --output local-data/ci-smoke
   test-and-build:
     runs-on: ubuntu-latest
