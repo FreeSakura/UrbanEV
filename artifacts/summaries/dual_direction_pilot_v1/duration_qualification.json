@@ -1,0 +1,12 @@
+{
+  "rows": 648,
+  "channels": 275,
+  "finite_fraction": 1.0,
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "outside_0_1_count": 0,
+  "source_prefix_sha256": "f51cb343b8f51749ee8a06e4d86ba51949b8bdcf7af2f863508340bed38fd437",
+  "unit_interpretation": "declared pile-hours/capacity/1h; numerical check only",
+  "interval_endpoint_convention_confirmed": false,
+  "real_time_release_availability_confirmed": false
+}

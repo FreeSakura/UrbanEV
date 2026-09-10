@@ -83,6 +83,96 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/dual_direction_pilot_v1/duration_qualification.json",
+      "sha256": "7ce60c65828d1221749ba7f26e818083ee5c3cd3045f1b9ea54e543183861ea2",
+      "bytes": 405,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/dual_direction_pilot_v1/group_structure_receipt.json",
+      "sha256": "86f38dbbd55d5d8171e7cefb4e4142ffe0ebf9ccfcf5ec21e1ec1bd836993d42",
+      "bytes": 431,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/dual_direction_pilot_v1/implementation_notes.json",
+      "sha256": "0b077d7a82a1afd0620e6bc437c6c24e46931fa5c4d2107553d890dcd0cac21d",
+      "bytes": 1300,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/dual_direction_pilot_v1/integrity_review.json",
+      "sha256": "76a1cea8c65f8d6b62c3876f4be34acb4bae26b159c30f9559bae21c1338d128",
+      "bytes": 1323,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/dual_direction_pilot_v1/public_export_map.json",
+      "sha256": "319621ed861ead1bab3113150239b54f0104834c5840161026b0a9cc03c6df5a",
+      "bytes": 2625,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/dual_direction_pilot_v1/route_a.json",
+      "sha256": "f587f108340c7482b5644728705bd218fddec4483c956b8b7ca71434a33da710",
+      "bytes": 17832,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/dual_direction_pilot_v1/route_b_optimization_followup.json",
+      "sha256": "83f2737727d768ef3244a49c5dc3d969b20c3c72c9f5d65c76b6ee8f06a257c2",
+      "bytes": 435923,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/dual_direction_pilot_v1/route_b_ridge_diagnostic.json",
+      "sha256": "ec89236e062dbf0d98f0932a5aa2fe0520c56d1bf7706dba2052138161729fc9",
+      "bytes": 2161,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/dual_direction_pilot_v1/route_b_v1.json",
+      "sha256": "7d2d0e4737aa08a1c80d1b74dfea28058832a00911314650404baa3bd719f84b",
+      "bytes": 120687,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/dual_direction_pilot_v1/study_summary.json",
+      "sha256": "dd0246b63de3f1bb2c08251449a51683fe893f2b136e08a053fab8990ee21579",
+      "bytes": 2213,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/fixed_fusion/FIXED_FUSION_SUMMARY.json",
       "sha256": "c795e09ea8c380aef00c1dc8e4e3585edc1ef03300008539fade31102989df59",
       "bytes": 1580,
@@ -554,6 +644,15 @@
       "path": "configs/PARIS_TEACHER_MODEL_CONFIG.json",
       "sha256": "b301ee69d8c2d2a5f24413318cd89cf861b6508018bbdbfaeee201215959568b",
       "bytes": 2832,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "configs/research/DUAL_DIRECTION_PILOT_V1.json",
+      "sha256": "5b702847f20348dad92cab38851ea5d260d963dc6078139d8434fb48add10dbe",
+      "bytes": 3281,
       "role": "configs",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",

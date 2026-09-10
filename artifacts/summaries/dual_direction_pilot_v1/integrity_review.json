@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-10",
+  "review_type": "independent Codex agent, local artifact and metric verification",
+  "verdict": "WARN",
+  "integrity_fail_found": false,
+  "private_review_sha256": "bc3126f2f536e6c702648cdfcdb2b95a7be2316d6b814b2fcf05cf4bec2c8758",
+  "checks": {
+    "A_provenance": "PASS",
+    "B_metrics": "PASS",
+    "C_files_and_gates": "PASS",
+    "D_metric_recomputation": "PASS",
+    "E_evidence_scope": "WARN",
+    "F_ground_truth_vs_physical_proxy": "WARN"
+  },
+  "original_route_A_gate": "NO_GO",
+  "original_route_B_information_gate": "GO_PILOT_ONLY",
+  "original_route_B_mechanism_gates": "NO_GO for both alignments",
+  "warnings": [
+    "Previously exposed fold-one development window; no independent confirmation or SOTA claim.",
+    "Ridge and additional GPU optimization are post-hoc diagnostics; original gates remain unchanged.",
+    "Occupancy targets are observed, but physical latent interpretation lacks validated units, endpoints, coverage and live availability.",
+    "Public partition evidence is hash-only; private partitions and predictions were checked locally."
+  ],
+  "final_public_narrative_review": "PASS, no required claim corrections",
+  "original_implementation_commit": "83e7eda",
+  "posthoc_implementation_commit": "b3abe9b",
+  "test_accessed": false,
+  "sota_claim": false
+}

@@ -1,0 +1,35 @@
+{
+  "route_a": {
+    "group_sizes": [
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      19
+    ],
+    "tail_group_frozen_in_both_searches": true,
+    "raw_and_residual_affinity_rows": [
+      288,
+      576
+    ],
+    "affinity": "absolute zero-lag Pearson correlation; residuals are own-history/calendar rolling OOF, not causal effects or horizon-specific conditional MI",
+    "geographic_baseline": "longitude-primary latitude-secondary sort, then disjoint blocks",
+    "explicit_grouping": true,
+    "base_adapter_metadata_note": "variate_chunking=false describes automatic backend chunking; the new outer wrapper explicitly supplies nine independent K32 groups"
+  },
+  "route_b": {
+    "first_training_origin": 169,
+    "training_stride": 3,
+    "last_training_target_index_for_both_horizons": 573,
+    "input_duration_max_index": "origin-2",
+    "left_auxiliary_targets": "origin-1 through origin+horizon-2",
+    "right_auxiliary_targets": "origin through origin+horizon-1",
+    "smoothness": "same weight on flattened O and A paths in all neural systems",
+    "followup": "all 36 combinations, common GPU vectorized minibatches, optimizer reset, new shuffle seeds, no architecture/loss/data change"
+  },
+  "no_post_hoc_results_replace_original_gate": true
+}

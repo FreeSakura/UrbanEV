@@ -1,0 +1,80 @@
+{
+  "status": "POST_HOC_OPTIMIZATION_DIAGNOSTIC",
+  "not_registered_gate_result": true,
+  "source": {
+    "prefix_sha256": "9e56948b3129b3b9c730aa6b67721e6baed1f8af569684465b6a57fe050cfc97",
+    "rows": 648,
+    "channels": 275,
+    "column_order_sha256": "3924066ec0c48a6636ee1738baa902c2a11ce93992c3fb4f98c24df785dcc649"
+  },
+  "fixed_ridge": 0.01,
+  "training_stride": 3,
+  "rows": [
+    {
+      "horizon": 3,
+      "last_value": {
+        "rmse": 0.09204638389103886,
+        "mae": 0.045982907134088084
+      },
+      "daily_naive": {
+        "rmse": 0.11912602851435612,
+        "mae": 0.0737522222595491
+      },
+      "ridge_occupancy": {
+        "raw": {
+          "rmse": 0.06784001430276188,
+          "mae": 0.041332435659690955
+        },
+        "clipped": {
+          "rmse": 0.06776831461988637,
+          "mae": 0.04127194935232427
+        }
+      },
+      "ridge_with_duration": {
+        "raw": {
+          "rmse": 0.06517229342636753,
+          "mae": 0.039327562446580394
+        },
+        "clipped": {
+          "rmse": 0.06511939183415115,
+          "mae": 0.03927242189498197
+        }
+      }
+    },
+    {
+      "horizon": 12,
+      "last_value": {
+        "rmse": 0.14608936952920912,
+        "mae": 0.08882340979191923
+      },
+      "daily_naive": {
+        "rmse": 0.12220722868076529,
+        "mae": 0.0753938793588265
+      },
+      "ridge_occupancy": {
+        "raw": {
+          "rmse": 0.07969454273373834,
+          "mae": 0.052249044724129674
+        },
+        "clipped": {
+          "rmse": 0.07963699327070282,
+          "mae": 0.05219969154397799
+        }
+      },
+      "ridge_with_duration": {
+        "raw": {
+          "rmse": 0.07743259719381199,
+          "mae": 0.05022375164420056
+        },
+        "clipped": {
+          "rmse": 0.07740359576958643,
+          "mae": 0.05019524928539152
+        }
+      }
+    }
+  ],
+  "test_accessed": false,
+  "sota_claim": false,
+  "purpose": "Check whether original neural controls are credible against elementary baselines; do not replace the frozen neural pilot with these results",
+  "script_sha256": "75b91e376026c6bafd08c059c97c683554330b48a9f51c64d764560d2c1b5a9f"
+}

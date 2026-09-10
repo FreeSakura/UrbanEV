@@ -1,0 +1,25 @@
+{
+  "mode": "explicit K32 partition",
+  "base_adapter_chunking_flag": "automatic chunking disabled; outer script explicitly supplies 9 groups",
+  "records": [
+    {
+      "context_shape": [
+        275,
+        168
+      ],
+      "group_count": 9,
+      "group_sizes": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        19
+      ]
+    }
+  ],
+  "future_labels_scored": false
+}

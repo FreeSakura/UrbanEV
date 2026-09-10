@@ -1,0 +1,59 @@
+{
+  "id": "DUAL_DIRECTION_PILOT_V1_20260910",
+  "original_code_commit": "83e7eda",
+  "post_hoc_diagnostic_code_commit": "b3abe9b",
+  "test_accessed": false,
+  "sota_claim": false,
+  "route_a": {
+    "candidate_decision": "NO_GO",
+    "candidate_gain_vs_best_matched_percent": -1.7300101113988609,
+    "raw_correlation_gain_vs_full_percent": 1.3152651511986524,
+    "raw_correlation_mae_improvement_vs_full_percent": 0.7627498575588421,
+    "failure_stage": "selection/mechanism gain",
+    "observed_problems": [
+      "Residual grouping is weaker than raw-correlation grouping",
+      "Training-guided swaps do not beat matched random-swap search in macro RMSE",
+      "Only four training probe origins, one backbone and K32; 19-node tail fixed"
+    ],
+    "causal_failure_explanation_established": false
+  },
+  "route_b": {
+    "original_information_gate": {
+      "rmse_gain_percent": 2.5587903467303996,
+      "mae_non_degradation": true,
+      "decision": "GO_PILOT_ONLY"
+    },
+    "original_mechanism_gates": {
+      "left": {
+        "best_same_input_control": "duration_concat",
+        "rmse_gain_percent": 0.44098729170477524,
+        "mae_non_degradation": true,
+        "decision": "NO_GO"
+      },
+      "right": {
+        "best_same_input_control": "duration_concat",
+        "rmse_gain_percent": 0.2471443164147713,
+        "mae_non_degradation": true,
+        "decision": "NO_GO"
+      }
+    },
+    "v1_runs": 36,
+    "v1_best_at_epoch_cap": 36,
+    "followup_additional_cap_hits": 29,
+    "followup_best_at_additional_cap": 7,
+    "followup_information_rmse_gain_percent": 2.858848429373295,
+    "followup_information_mae_improvement_percent": 3.5386337824205194,
+    "followup_mechanism_gain_vs_concat_percent": {
+      "operator_left": -0.016988354116365123,
+      "operator_right": -0.019455608028340343
+    },
+    "physical_claim_status": "NOT_QUALIFIED: endpoint and live publication semantics unresolved",
+    "failure_stages": [
+      "v1 optimization budget insufficient",
+      "no supported operator-specific gain",
+      "physical timestamp/release semantics unresolved"
+    ],
+    "original_gates_reclassified": false,
+    "post_hoc_followup_is_independent_confirmation": false
+  }
+}
