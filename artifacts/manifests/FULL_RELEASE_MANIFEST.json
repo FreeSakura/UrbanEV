@@ -1227,8 +1227,8 @@
     },
     {
       "path": "docs/research/sota/RESIDUAL_INFORMATION_REPORT.md",
-      "sha256": "47736c4cf94ac862a50ecf6f7938af23a275d324df7d1e6c07933840a9f1e261",
-      "bytes": 5609,
+      "sha256": "2b636409cb0f7d6fce2dcf169e8cb082512c865d54b4e90efbb2f4c15f0122e3",
+      "bytes": 5868,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
