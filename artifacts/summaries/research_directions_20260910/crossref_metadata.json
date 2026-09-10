@@ -1,0 +1,376 @@
+[
+  {
+    "doi": "10.1016/j.epsr.2026.112765",
+    "title": [
+      "Spatio-temporal graph fusion framework for accurate city-wide EV charging forecasting"
+    ],
+    "authors": [
+      {
+        "given": "Xufeng",
+        "family": "Wu"
+      },
+      {
+        "given": "Zuowei",
+        "family": "Chen"
+      },
+      {
+        "given": "Hefang",
+        "family": "Jiang"
+      },
+      {
+        "given": "Shoukang",
+        "family": "Luo"
+      },
+      {
+        "given": "Honghao",
+        "family": "Liang"
+      },
+      {
+        "given": "Siming",
+        "family": "Li"
+      },
+      {
+        "given": "Chenyang",
+        "family": "Xu"
+      },
+      {
+        "given": "Bojin",
+        "family": "Wang"
+      },
+      {
+        "given": "Wensai",
+        "family": "Xuan"
+      },
+      {
+        "given": "Yi",
+        "family": "Zhao"
+      },
+      {
+        "given": "Lin",
+        "family": "Lin"
+      },
+      {
+        "given": "Hao",
+        "family": "Wang"
+      }
+    ],
+    "venue": [
+      "Electric Power Systems Research"
+    ],
+    "published_online": null,
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          30
+        ]
+      ],
+      "date-time": "2026-01-30T12:15:15Z",
+      "timestamp": 1769775315000
+    },
+    "primary": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0378779626000581"
+      }
+    },
+    "status": "crossref_metadata_verified"
+  },
+  {
+    "doi": "10.1016/j.scs.2026.107865",
+    "title": [
+      "MTML-EV: Multi-target meta-learning for cross-zone urban electric vehicle charging infrastructure management"
+    ],
+    "authors": [
+      {
+        "given": "Muhammad",
+        "family": "Waqar"
+      },
+      {
+        "given": "Yong-Woon",
+        "family": "Kim"
+      },
+      {
+        "given": "Yung-Cheol",
+        "family": "Byun"
+      }
+    ],
+    "venue": [
+      "Sustainable Cities and Society"
+    ],
+    "published_online": null,
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          10
+        ]
+      ]
+    },
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          2
+        ]
+      ],
+      "date-time": "2026-09-02T23:10:24Z",
+      "timestamp": 1788390624000
+    },
+    "primary": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2210670726007493"
+      }
+    },
+    "status": "crossref_metadata_verified"
+  },
+  {
+    "doi": "10.1016/j.ins.2026.123681",
+    "title": [
+      "CUP-EV: Hybrid DLinear-based cost and uncertainty-aware probabilistic multi-horizon electric vehicle charging forecasting"
+    ],
+    "authors": [
+      {
+        "given": "Muhammad",
+        "family": "Waqar"
+      },
+      {
+        "given": "Yong-Woon",
+        "family": "Kim"
+      },
+      {
+        "given": "Yung-Cheol",
+        "family": "Byun"
+      }
+    ],
+    "venue": [
+      "Information Sciences"
+    ],
+    "published_online": null,
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          10
+        ]
+      ]
+    },
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          25
+        ]
+      ],
+      "date-time": "2026-05-25T05:59:05Z",
+      "timestamp": 1779688745000
+    },
+    "primary": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0020025526006122"
+      }
+    },
+    "status": "crossref_metadata_verified"
+  },
+  {
+    "doi": "10.3390/electronics15153297",
+    "status": "lookup_failed",
+    "error": "HTTPError"
+  },
+  {
+    "doi": "10.3390/wevj17060288",
+    "title": [
+      "Regional EV Charging Load Forecasting Based on SCLD and FCW"
+    ],
+    "authors": [
+      {
+        "given": "Taoyong",
+        "family": "Li"
+      },
+      {
+        "given": "Huiming",
+        "family": "Zhang"
+      },
+      {
+        "given": "Jincheng",
+        "family": "Liu"
+      },
+      {
+        "given": "Bin",
+        "family": "Li"
+      },
+      {
+        "given": "Xiaoxuan",
+        "family": "Tang"
+      },
+      {
+        "given": "Wenting",
+        "family": "Zha"
+      }
+    ],
+    "venue": [
+      "World Electric Vehicle Journal"
+    ],
+    "published_online": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          29
+        ]
+      ]
+    },
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          29
+        ]
+      ]
+    },
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          29
+        ]
+      ],
+      "date-time": "2026-05-29T17:36:18Z",
+      "timestamp": 1780076178000
+    },
+    "primary": {
+      "primary": {
+        "URL": "https://www.mdpi.com/2032-6653/17/6/288"
+      }
+    },
+    "status": "crossref_metadata_verified"
+  },
+  {
+    "doi": "10.1038/s41597-025-04874-4",
+    "title": [
+      "UrbanEV: An Open Benchmark Dataset for Urban Electric Vehicle Charging Demand Prediction"
+    ],
+    "authors": [
+      {
+        "given": "Han",
+        "family": "Li"
+      },
+      {
+        "given": "Haohao",
+        "family": "Qu"
+      },
+      {
+        "given": "Xiaojun",
+        "family": "Tan"
+      },
+      {
+        "given": "Linlin",
+        "family": "You"
+      },
+      {
+        "given": "Rui",
+        "family": "Zhu"
+      },
+      {
+        "given": "Wenqi",
+        "family": "Fan"
+      }
+    ],
+    "venue": [
+      "Scientific Data"
+    ],
+    "published_online": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          28
+        ]
+      ]
+    },
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          28
+        ]
+      ]
+    },
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          29
+        ]
+      ],
+      "date-time": "2025-03-29T08:21:43Z",
+      "timestamp": 1743236503000
+    },
+    "primary": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41597-025-04874-4"
+      }
+    },
+    "status": "crossref_metadata_verified"
+  },
+  {
+    "doi": "10.2139/ssrn.6876569",
+    "title": [
+      "ID-Free STFormer: An Identity-Free Spatio-Temporal Transformer for Day-Ahead EV Charging Demand Forecasting"
+    ],
+    "authors": [
+      {
+        "given": "Xueyan",
+        "family": "Wu"
+      },
+      {
+        "given": "Yusen",
+        "family": "Huang"
+      },
+      {
+        "given": "Dongfang",
+        "family": "Zhao"
+      }
+    ],
+    "venue": [],
+    "published_online": null,
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          4
+        ]
+      ],
+      "date-time": "2026-06-04T04:39:14Z",
+      "timestamp": 1780547954000
+    },
+    "primary": {
+      "primary": {
+        "URL": "https://www.ssrn.com/abstract=6876569"
+      }
+    },
+    "status": "crossref_metadata_verified"
+  }
+]

@@ -1,0 +1,109 @@
+{
+  "date": "2026-09-10",
+  "contributing_sources": [
+    "local research artifacts",
+    "web search and primary pages",
+    "direct Crossref metadata lookup"
+  ],
+  "canonical_verification_helper": "unavailable",
+  "canonical_arxiv_fetch_helper": "unavailable",
+  "papers": [
+    {
+      "doi": "10.1016/j.epsr.2026.112765",
+      "title": "Spatio-temporal graph fusion framework for accurate city-wide EV charging forecasting",
+      "status": "unverified",
+      "pipeline_reason": "verify_papers.py helper unavailable",
+      "independent_metadata_status": "crossref_metadata_verified"
+    },
+    {
+      "doi": "10.1016/j.scs.2026.107865",
+      "title": "MTML-EV: Multi-target meta-learning for cross-zone urban electric vehicle charging infrastructure management",
+      "status": "unverified",
+      "pipeline_reason": "verify_papers.py helper unavailable",
+      "independent_metadata_status": "crossref_metadata_verified"
+    },
+    {
+      "doi": "10.1016/j.ins.2026.123681",
+      "title": "CUP-EV: Hybrid DLinear-based cost and uncertainty-aware probabilistic multi-horizon electric vehicle charging forecasting",
+      "status": "unverified",
+      "pipeline_reason": "verify_papers.py helper unavailable",
+      "independent_metadata_status": "crossref_metadata_verified"
+    },
+    {
+      "doi": "10.3390/electronics15153297",
+      "title": "Urban-CSTPNet: Time-Conditioned Multi-Relational Spatio-Temporal Probabilistic Forecasting for Smart Urban Electric Vehicle Charging Networks",
+      "status": "unverified",
+      "pipeline_reason": "verify_papers.py helper unavailable",
+      "independent_metadata_status": "lookup_failed"
+    },
+    {
+      "doi": "10.3390/wevj17060288",
+      "title": "Regional EV Charging Load Forecasting Based on SCLD and FCW",
+      "status": "unverified",
+      "pipeline_reason": "verify_papers.py helper unavailable",
+      "independent_metadata_status": "crossref_metadata_verified"
+    },
+    {
+      "doi": "10.1038/s41597-025-04874-4",
+      "title": "UrbanEV: An Open Benchmark Dataset for Urban Electric Vehicle Charging Demand Prediction",
+      "status": "unverified",
+      "pipeline_reason": "verify_papers.py helper unavailable",
+      "independent_metadata_status": "crossref_metadata_verified"
+    },
+    {
+      "doi": "10.2139/ssrn.6876569",
+      "title": "ID-Free STFormer: An Identity-Free Spatio-Temporal Transformer for Day-Ahead EV Charging Demand Forecasting",
+      "status": "unverified",
+      "pipeline_reason": "verify_papers.py helper unavailable",
+      "independent_metadata_status": "crossref_metadata_verified"
+    },
+    {
+      "arxiv_id": "2508.14782",
+      "title": "TransLLM: A Unified Multi-Task Foundation Framework for Urban Transportation via Learnable Prompting",
+      "status": "unverified",
+      "pipeline_reason": "verify_papers.py helper unavailable",
+      "independent_metadata_status": "official arXiv page inspected"
+    },
+    {
+      "arxiv_id": "2602.00297",
+      "title": "From Observations to States: Latent Time Series Forecasting",
+      "status": "unverified",
+      "pipeline_reason": "verify_papers.py helper unavailable",
+      "independent_metadata_status": "official arXiv page inspected"
+    },
+    {
+      "arxiv_id": "2605.27286",
+      "title": "Falcon-X: A Time Series Foundation Model for Heterogeneous Multivariate Modeling",
+      "status": "unverified",
+      "pipeline_reason": "verify_papers.py helper unavailable",
+      "independent_metadata_status": "official arXiv page inspected"
+    },
+    {
+      "arxiv_id": "2510.15821",
+      "title": "Chronos-2: From Univariate to Universal Forecasting",
+      "status": "unverified",
+      "pipeline_reason": "verify_papers.py helper unavailable",
+      "independent_metadata_status": "official arXiv page inspected"
+    }
+  ],
+  "excluded_homonym": "MATSim UrbanEV simulation extension is not the Shenzhen UrbanEV dataset",
+  "full_text_review_complete": false,
+  "global_novelty_verified": false,
+  "directions": [
+    {
+      "rank": 1,
+      "name": "Budgeted regional context selection for frozen foundation models",
+      "status": "proposal; forecast gain untested"
+    },
+    {
+      "rank": 2,
+      "name": "Heterogeneous-observation forecasting with causal duration history",
+      "status": "conditional; existing local theory and negative linear pilot retained"
+    },
+    {
+      "rank": 3,
+      "name": "Spatially isolated cold-start evaluation",
+      "status": "supporting extension; generic meta-learning already has direct prior work"
+    }
+  ]
+}

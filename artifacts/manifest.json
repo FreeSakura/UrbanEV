@@ -389,6 +389,42 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/research_directions_20260910/crossref_metadata.json",
+      "sha256": "e35a89aec9f1bc90bbf5acfd31bb3ad6bd10df309947accb5c812c628cc8e35d",
+      "bytes": 7005,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/research_directions_20260910/input_order_chronos2.json",
+      "sha256": "fe335c46a52825c051ad5d932df8b168d6a002115ef79277a938d97bf837683e",
+      "bytes": 3654,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/research_directions_20260910/input_order_timesfm3.json",
+      "sha256": "c3cb5b00ea920d89aec7bbdb6070e6fb3768e62fbbb0a2b48de824203aed0812",
+      "bytes": 3682,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/research_directions_20260910/research_sources_and_status.json",
+      "sha256": "41dd5d8eb9649d4d35d585a94cdc21639d26f7604e28d4f3038e13a2ef9aae03",
+      "bytes": 4547,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/research_transition/timexer_one_epoch_profile.json",
       "sha256": "7ee5dc769581540f11523c772b82361aa878ef5c82717d59c9411bf3bbc9b710",
       "bytes": 1615,

@@ -11,6 +11,10 @@
 
 [基础模型校准开发报告](docs/research/sota/FM_CALIBRATION_REPORT.md)：Chronos-2与TimesFM-3均完成275区域联合推理及H3/H12训练/验证实验。单纯形头在两个骨干上均为**NO_GO**；相对原始Q0.5的RMSE改善约2.18%/2.37%，但没有建立相对同信息ridge的实质优势，MAE也上升。停止扩建该候选，保留校准与ridge为强对照。完整测试与SOTA仍未建立。
 
+## 最新选题判断（2026-09-10）
+
+[文献与研究方向报告](docs/research/sota/RESEARCH_DIRECTIONS_20260910.md)：优先验证冻结基础模型的区域上下文选择；异质观测建模为有条件备选。新方向尚无预测提升结果，已有单纯形头NO_GO保持不变。
+
 ## 当前研究主线
 
 - [研究目标与路线](docs/research/sota/RESEARCH_ROADMAP.md)：标准预测任务、现代强基线和可否定的机制研究。

@@ -1,0 +1,114 @@
+{
+  "scope": "training-history-only input-order diagnostic",
+  "not_forecast_accuracy": true,
+  "history": 168,
+  "channels": 275,
+  "horizon": 12,
+  "origins": [
+    168,
+    336,
+    480
+  ],
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "backend": {
+    "backend": "chronos2",
+    "package_version": "2.2.2",
+    "api_source_sha256": "4ea9776692c24fda7946755aced31187d09ba45cca0dd10227fca01e509e42e9",
+    "weight_sha256": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42",
+    "config_sha256": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031",
+    "torch_version": "2.5.1+cu121",
+    "numpy_version": "2.2.6",
+    "cuda_version": "12.1",
+    "dtype": "float32",
+    "device": "cuda",
+    "quantile_levels": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "cross_origin_learning": false,
+    "variate_chunking": false,
+    "native_point": "raw Q0.5 before sort or clip",
+    "timesfm_class": null
+  },
+  "source": {
+    "prefix_sha256": "7a383b1ffa529a90a323fa049fede29d674f05c04418197b753768eefbfbbc75",
+    "rows": 480,
+    "channels": 275,
+    "column_order_sha256": "3924066ec0c48a6636ee1738baa902c2a11ce93992c3fb4f98c24df785dcc649"
+  },
+  "rows": [
+    {
+      "origin": 168,
+      "seed": 11,
+      "prediction_change_rms": 2.4269118981220243e-08,
+      "prediction_change_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "origin": 168,
+      "seed": 22,
+      "prediction_change_rms": 2.515423735275063e-08,
+      "prediction_change_max_abs": 1.7881393432617188e-07
+    },
+    {
+      "origin": 168,
+      "seed": 33,
+      "prediction_change_rms": 2.468790118490327e-08,
+      "prediction_change_max_abs": 2.384185791015625e-07
+    },
+    {
+      "origin": 336,
+      "seed": 11,
+      "prediction_change_rms": 2.1791645658018247e-08,
+      "prediction_change_max_abs": 1.7881393432617188e-07
+    },
+    {
+      "origin": 336,
+      "seed": 22,
+      "prediction_change_rms": 2.288243387286754e-08,
+      "prediction_change_max_abs": 1.7881393432617188e-07
+    },
+    {
+      "origin": 336,
+      "seed": 33,
+      "prediction_change_rms": 2.227857436094687e-08,
+      "prediction_change_max_abs": 1.7881393432617188e-07
+    },
+    {
+      "origin": 480,
+      "seed": 11,
+      "prediction_change_rms": 2.4024731182733666e-08,
+      "prediction_change_max_abs": 1.7881393432617188e-07
+    },
+    {
+      "origin": 480,
+      "seed": 22,
+      "prediction_change_rms": 2.4747449122826836e-08,
+      "prediction_change_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "origin": 480,
+      "seed": 33,
+      "prediction_change_rms": 2.3785744955908246e-08,
+      "prediction_change_max_abs": 1.1920928955078125e-07
+    }
+  ],
+  "script_sha256": "48111f6573399cc8c44443cc5f034f58adfa2ba468bb57da5e0dc6109e1db9bc",
+  "script_hash_note": "script_sha256 identifies raw executed source; executed_script_canonical_sha256 normalizes that source; published_script_canonical_sha256 includes the metadata-wording clarification, with unchanged inference and diagnostic calculations.",
+  "future_label_array_constructed": false,
+  "future_labels_used_for_metrics": false,
+  "history_rows_loaded": 480,
+  "executed_script_canonical_sha256": "bdbce074b509b9d1627bb2aa6348bb4b201813141985c398d7efe529d3f411fc",
+  "published_script_canonical_sha256": "335ddc99a9d6ff657b7ab9eb14772698f97fb90beb26f05d9b941e49b7672f2f",
+  "metadata_note": "The original ambiguous future_ground_truth_read flag is replaced: 480 training rows support three history windows; no future label array or truth-based metric is constructed. Publication changes metadata wording only."
+}

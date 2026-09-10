@@ -1,0 +1,114 @@
+{
+  "scope": "training-history-only input-order diagnostic",
+  "not_forecast_accuracy": true,
+  "history": 168,
+  "channels": 275,
+  "horizon": 12,
+  "origins": [
+    168,
+    336,
+    480
+  ],
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "backend": {
+    "backend": "timesfm3",
+    "package_version": "3.0.1",
+    "api_source_sha256": "33870c9676be6aab4e62c45a0a89bc1d6c49ca3149ddc46a19c6d9e2c23e0037",
+    "weight_sha256": "a7592b0a8432baee54483254e5647856911ce69e09d09a9bb65904b2d98f17da",
+    "config_sha256": "ff17bbc07b792c5a904cca265b8468579d736a4fe84981da25eb871b0a125bc6",
+    "torch_version": "2.5.1+cu121",
+    "numpy_version": "2.2.6",
+    "cuda_version": "12.1",
+    "dtype": "float32",
+    "device": "cuda",
+    "quantile_levels": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "cross_origin_learning": false,
+    "variate_chunking": false,
+    "native_point": "raw Q0.5 before sort or clip",
+    "timesfm_class": "TimesFM3Forecaster, not the chunking evaluator"
+  },
+  "source": {
+    "prefix_sha256": "7a383b1ffa529a90a323fa049fede29d674f05c04418197b753768eefbfbbc75",
+    "rows": 480,
+    "channels": 275,
+    "column_order_sha256": "3924066ec0c48a6636ee1738baa902c2a11ce93992c3fb4f98c24df785dcc649"
+  },
+  "rows": [
+    {
+      "origin": 168,
+      "seed": 11,
+      "prediction_change_rms": 7.491454434422824e-08,
+      "prediction_change_max_abs": 8.344650268554688e-07
+    },
+    {
+      "origin": 168,
+      "seed": 22,
+      "prediction_change_rms": 7.549170597545073e-08,
+      "prediction_change_max_abs": 7.450580596923828e-07
+    },
+    {
+      "origin": 168,
+      "seed": 33,
+      "prediction_change_rms": 7.145949367956811e-08,
+      "prediction_change_max_abs": 7.152557373046875e-07
+    },
+    {
+      "origin": 336,
+      "seed": 11,
+      "prediction_change_rms": 6.306123211759343e-08,
+      "prediction_change_max_abs": 4.76837158203125e-07
+    },
+    {
+      "origin": 336,
+      "seed": 22,
+      "prediction_change_rms": 6.49422714004875e-08,
+      "prediction_change_max_abs": 5.364418029785156e-07
+    },
+    {
+      "origin": 336,
+      "seed": 33,
+      "prediction_change_rms": 6.499506640885441e-08,
+      "prediction_change_max_abs": 5.960464477539062e-07
+    },
+    {
+      "origin": 480,
+      "seed": 11,
+      "prediction_change_rms": 7.593009782752784e-08,
+      "prediction_change_max_abs": 5.662441253662109e-07
+    },
+    {
+      "origin": 480,
+      "seed": 22,
+      "prediction_change_rms": 7.748758496957303e-08,
+      "prediction_change_max_abs": 7.152557373046875e-07
+    },
+    {
+      "origin": 480,
+      "seed": 33,
+      "prediction_change_rms": 7.48818731830739e-08,
+      "prediction_change_max_abs": 5.662441253662109e-07
+    }
+  ],
+  "script_sha256": "48111f6573399cc8c44443cc5f034f58adfa2ba468bb57da5e0dc6109e1db9bc",
+  "script_hash_note": "script_sha256 identifies raw executed source; executed_script_canonical_sha256 normalizes that source; published_script_canonical_sha256 includes the metadata-wording clarification, with unchanged inference and diagnostic calculations.",
+  "future_label_array_constructed": false,
+  "future_labels_used_for_metrics": false,
+  "history_rows_loaded": 480,
+  "executed_script_canonical_sha256": "bdbce074b509b9d1627bb2aa6348bb4b201813141985c398d7efe529d3f411fc",
+  "published_script_canonical_sha256": "335ddc99a9d6ff657b7ab9eb14772698f97fb90beb26f05d9b941e49b7672f2f",
+  "metadata_note": "The original ambiguous future_ground_truth_read flag is replaced: 480 training rows support three history windows; no future label array or truth-based metric is constructed. Publication changes metadata wording only."
+}
