@@ -7,15 +7,19 @@
 
 这不是UrbanEV数据集官方仓库。原始数据与官方方法见 [IntelligentSystemsLab/UrbanEV](https://github.com/IntelligentSystemsLab/UrbanEV)。本项目从证据审计转向预测方法研究：新模型、强基线、实验和结果是主线，既有审计工具承担验证工作。
 
-## 最新执行结果
+## 阶段性收尾（2026-09-10）
+
+**当前阶段已结束，自动跟进已暂停。** [阶段总结](docs/research/sota/PHASE_CLOSEOUT_20260910.md)集中记录各方向成果、失败原因、最终数值与恢复条件。当前不启动新实验，完整SOTA比较尚未建立。
+
+## 已完成的执行结果
 
 [连续步长V2两视野校准](docs/research/sota/CONTINUOUS_V2_CALIBRATION_2H_REPORT.md)已按限定授权实际执行一次：正交时长α≈0.09796，宏RMSE改善0.3896%，MAE不高于native，但低于1%信息门；结构门也未通过。全部计算有效，阶段为**CALIBRATION_2H_INFORMATION_NO_GO**。没有补H6/H9或打开尾部、第三折验证/测试。
 
-[连续步长V2阶段注册](docs/research/sota/CONTINUOUS_STEP_V2_REGISTRATION.md)已固定时间划分、七系统、主候选和推进门，并完成缓存与索引核验。当前等待求解器审查，尚未运行连续搜索、尾部评分或新增基础推理；原V1失败结论不变。
+[连续步长V2阶段注册](docs/research/sota/CONTINUOUS_STEP_V2_REGISTRATION.md)已固定时间划分、七系统、主候选和推进门，并完成缓存与索引核验。求解器已通过代码验收并完成一次限定H3/H12连续校准；尾部评分和新增基础推理未执行，原V1失败结论不变。
 
-[残差信息筛选报告](docs/research/sota/RESIDUAL_INFORMATION_REPORT.md)：更深的[理论推导](docs/research/sota/RESIDUAL_DERIVATION_PACKAGE.md)已转为实验，完成三个训练内滚动窗口。正交时长修正在α=0.5时RMSE改善1.48%，但MAE恶化1.28%；全部系统在注册网格下回退α=0，信息门与结构门均未通过。第三折验证段未打开。后验导数揭示更小步长可能有局部MAE改善，连续步长方案尚未运行，不改判旧门。
+[残差信息筛选报告](docs/research/sota/RESIDUAL_INFORMATION_REPORT.md)：更深的[理论推导](docs/research/sota/RESIDUAL_DERIVATION_PACKAGE.md)已转为实验，完成三个训练内滚动窗口。正交时长修正在α=0.5时RMSE改善1.48%，但MAE恶化1.28%；全部系统在注册网格下回退α=0，信息门与结构门均未通过。第三折验证段未打开。后验导数揭示更小步长可能有局部MAE改善，该线索随后进入上述V2连续校准，仍未通过门，不改判旧门。
 
-[第二折信息线索复核](docs/research/sota/SIGNAL_REPLICATION_REPORT.md)：简单相关分组未复现首折增益，RMSE比全区域Chronos差0.42%。滞后时长在ridge中改善1.86%，但直接添加至Chronos仅改善0.082%，未过1%门；两类预测器联合复现未成立。下一研究问题转向时长对基础模型残差的可预测性，尚未运行新候选。
+[第二折信息线索复核](docs/research/sota/SIGNAL_REPLICATION_REPORT.md)：简单相关分组未复现首折增益，RMSE比全区域Chronos差0.42%。滞后时长在ridge中改善1.86%，但直接添加至Chronos仅改善0.082%，未过1%门；两类预测器联合复现未成立。随后完成上述残差信息V1与连续步长V2实验。
 
 [双方向试验报告](docs/research/sota/DUAL_DIRECTION_PILOT_REPORT.md)：区域残差引导交换未通过，RMSE比最佳相关分组对照差1.73%；观测算子的额外优势也未成立。追加优化后，直接加入滞后时长相对占用输入的RMSE/MAE下降2.86%/3.54%，仅保留为开发线索。原始门、后验诊断和失败原因分别保留，尚无独立确认或SOTA结果。
 

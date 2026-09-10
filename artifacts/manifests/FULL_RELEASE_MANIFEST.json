@@ -1560,8 +1560,8 @@
     },
     {
       "path": "docs/research/sota/CONTINUOUS_V2_CALIBRATION_2H_REPORT.md",
-      "sha256": "d6df067c28a5b5c500efe77f62d2a1bd1ed2c388c87643bb520d2bffbd4a47dd",
-      "bytes": 4639,
+      "sha256": "d6033a89f0727f1b971e2a0a04c5c637b421008ca819d6b0a373eeeea5eca8ab",
+      "bytes": 4774,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
@@ -1631,6 +1631,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "docs/research/sota/PHASE_CLOSEOUT_20260910.md",
+      "sha256": "2f411c0fdb8b6b1170a6531467847ee6d0f48f555b9f2dd7e1881e1a930f6f86",
+      "bytes": 6510,
+      "role": "paper_or_documentation",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "docs/research/sota/POINT_FORECAST_CONTRACT.md",
       "sha256": "813a56d8391ddbfc90c94104c4dd3209d112955bca5f716426314cf4f6240c6a",
       "bytes": 2218,
@@ -1668,8 +1677,8 @@
     },
     {
       "path": "docs/research/sota/RESEARCH_ROADMAP.md",
-      "sha256": "202a69d081e94cc6d2334f633678c188975a9e16e15e505687065834d069684c",
-      "bytes": 6469,
+      "sha256": "4323b87c0c377b288926387e5e59393b08fa112bc18434869628d24282c56072",
+      "bytes": 5245,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
@@ -2640,8 +2649,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "f94d8ca4ec99d99bb1f5632c88a4980b050ca96e0bed18f01f68c575c5f0334c",
-      "bytes": 7988,
+      "sha256": "cccd814308d083b72a9767b25993cb47f5ae7242b1d8be674c91bd6ed8b9b347",
+      "bytes": 8297,
       "role": "README.md",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
