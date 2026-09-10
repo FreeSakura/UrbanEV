@@ -6,7 +6,7 @@ from urbanev_forecast.continuous_boundaries import Boundary,quadratic_roots,comp
 from urbanev_forecast.continuous_step import solve_continuous_alpha
 
 ROOT=Path(__file__).resolve().parents[1]
-CFG=json.loads((ROOT/'configs/research/RESIDUAL_CONTINUOUS_STEP_V2_SOLVER_REPAIR.json').read_text())
+CFG=json.loads((ROOT/'configs/research/RESIDUAL_CONTINUOUS_STEP_V2_CANDIDATE_REPAIR_ROUNDING.json').read_text())
 
 
 def test_quadratic_singleton_and_exact_perturbations():
@@ -56,7 +56,7 @@ def test_ulp_away_preserves_narrow_feasible_component():
     # the prescribed quarter-width repair can round back to the same float.
     assert result['status'] in ('OK','NUMERICAL_BLOCKED'),result
     if result['status']=='NUMERICAL_BLOCKED':
-        assert result['reason']=='NO_REPRESENTABLE_SINGLE_REPAIR_INSIDE_COMPONENT'
+        assert result['reason']=='NO_REPRESENTABLE_BOUNDED_SINGLE_REPAIR'
     else:
         assert result['alpha']>0
     lo,hi=result['exact_feasible_components'][-1]

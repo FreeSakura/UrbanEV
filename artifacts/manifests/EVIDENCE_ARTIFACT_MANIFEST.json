@@ -38,6 +38,114 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/continuous_v2_candidate_reduction/candidate_reduction_verification.json",
+      "sha256": "f70ca3e7fc323c5a2ee42ddc19aa1c361ee344930409a6b6a32483711ceb0d28",
+      "bytes": 8309,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_candidate_reduction/dense_tie_verification.json",
+      "sha256": "9138df51c94f37cbab057f8b0d641976e6833b3d8b1179e44877a4eebdde7f8a",
+      "bytes": 9464,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_candidate_reduction/implementation_receipt.json",
+      "sha256": "a7303dc413eb6f54c3906d55f0b39ab52571ad08dc00136f8f094ecca250f0b0",
+      "bytes": 6333,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_candidate_reduction/max_objective_error_case.json",
+      "sha256": "e67dde744c1a08f9c717a8f920b02d3b68e9bb3c4b15076ea75994484cc44b4e",
+      "bytes": 2827,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_candidate_reduction/prior_max_objective_error_case.json",
+      "sha256": "0352dcd2ba5fc0365d00ba5bc1c4cc63be16956d56c6dbf31016e2a43f560bc5",
+      "bytes": 1860,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_candidate_reduction/public_export_map.json",
+      "sha256": "b65ceca24f4ec2065aef632d96c6b226943e3db5ebd2bfbaf9a02e0c1fbf1eab",
+      "bytes": 2870,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_candidate_reduction/scale_four_horizon.json",
+      "sha256": "197e5d3be1166ebb2fa29838418e9821570d0433ba7dd4767e425a7ccd19c07f",
+      "bytes": 6322,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_candidate_reduction/scale_two_horizon.json",
+      "sha256": "ec3796be973519707e96b72c89b2b24afe88051c0265528a28a5c2f0f603484f",
+      "bytes": 6503,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_candidate_reduction/scale_verification.json",
+      "sha256": "0eba334942a9269c1537cad1f71b864fa14a9a6be93334419d3181cb9b195e65",
+      "bytes": 14601,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_candidate_reduction/solver_verification.json",
+      "sha256": "3a4827531571b186cbd84b87bb8b94d91c0e8422279dd67eda8979bfc5adfffd",
+      "bytes": 1311299,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_candidate_reduction/test_log.txt",
+      "sha256": "87d93e5fa76b94eac76458d3e49924fe3c28cfefef5f2b15042f703b427ee65b",
+      "bytes": 181,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_candidate_reduction/unchanged_scope_verification.json",
+      "sha256": "1260340cb912ec3ce197f6c181a11f8e9aeececfc9b396ff0dcddb4b69e3e0e1",
+      "bytes": 2077,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/continuous_v2_registration/public_export.json",
       "sha256": "0eb54ad570aacd5b8125f8ed1e3cd04f863b4db841f1e41ad515565f169ff57c",
       "bytes": 223,
@@ -950,6 +1058,24 @@
       "path": "configs/research/FM_CALIBRATION_FOLD1_V1.json",
       "sha256": "ae27de96837bd070e83af80319439bd81f6798548cd95b0150d51eb8dfc5cceb",
       "bytes": 1498,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "configs/research/RESIDUAL_CONTINUOUS_STEP_V2_CANDIDATE_REPAIR.json",
+      "sha256": "fc2fb79aba11677df414f70a5df83126073677defde1ee8807b16e00e309731d",
+      "bytes": 2098,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "configs/research/RESIDUAL_CONTINUOUS_STEP_V2_CANDIDATE_REPAIR_ROUNDING.json",
+      "sha256": "6c905dc4c4f7a98376d13277f6dba4ca13da027ffe9de31e7ff8f774345cf9ca",
+      "bytes": 2420,
       "role": "configs",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",

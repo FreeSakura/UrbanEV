@@ -1,0 +1,77 @@
+{
+  "parent_commit": "65496d767215415afcb2327049c657f26897a7c0",
+  "critical_components": [
+    {
+      "file": "src/urbanev_forecast/continuous_exact.py",
+      "symbol": "Sweep",
+      "AST_unchanged": true
+    },
+    {
+      "file": "src/urbanev_forecast/continuous_exact.py",
+      "symbol": "_representation",
+      "AST_unchanged": true
+    },
+    {
+      "file": "src/urbanev_forecast/continuous_exact.py",
+      "symbol": "_contribution",
+      "AST_unchanged": true
+    },
+    {
+      "file": "src/urbanev_forecast/continuous_exact.py",
+      "symbol": "_feasible",
+      "AST_unchanged": true
+    },
+    {
+      "file": "src/urbanev_forecast/continuous_exact.py",
+      "symbol": "_norm_bounds",
+      "AST_unchanged": true
+    },
+    {
+      "file": "src/urbanev_forecast/continuous_exact.py",
+      "symbol": "_derivative_sign",
+      "AST_unchanged": true
+    },
+    {
+      "file": "src/urbanev_forecast/continuous_exact.py",
+      "symbol": "_stop_search",
+      "AST_unchanged": true
+    },
+    {
+      "file": "src/urbanev_forecast/continuous_exact.py",
+      "symbol": "_minimum",
+      "AST_unchanged": true
+    },
+    {
+      "file": "src/urbanev_forecast/continuous_exact.py",
+      "symbol": "_merge_component",
+      "AST_unchanged": true
+    },
+    {
+      "file": "src/urbanev_forecast/continuous_exact.py",
+      "symbol": "_within",
+      "AST_unchanged": true
+    },
+    {
+      "file": "src/urbanev_forecast/continuous_exact.py",
+      "symbol": "_direct_feasible",
+      "AST_unchanged": true
+    },
+    {
+      "file": "src/urbanev_forecast/continuous_step.py",
+      "symbol": "score_fixed_alpha",
+      "AST_unchanged": true
+    },
+    {
+      "file": "src/urbanev_forecast/continuous_step.py",
+      "symbol": "evaluate_registered_gates",
+      "AST_unchanged": true
+    },
+    {
+      "file": "src/urbanev_forecast/continuous_step.py",
+      "symbol": "authorize_real_calibration",
+      "AST_unchanged": true
+    }
+  ],
+  "exact_boundary_module_byte_unchanged": true,
+  "scope": "code-only comparison; no array scoring or model inference"
+}

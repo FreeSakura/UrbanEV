@@ -16,7 +16,7 @@ from urbanev_forecast.continuous_boundaries import (Boundary,BoundaryUnresolved,
 def main():
     p=argparse.ArgumentParser();p.add_argument('--output-dir',type=Path,required=True);a=p.parse_args()
     if a.output_dir.exists():raise FileExistsError('Fresh verification directory required')
-    cfg=json.loads((ROOT/'configs/research/RESIDUAL_CONTINUOUS_STEP_V2_SOLVER_REPAIR.json').read_text())
+    cfg=json.loads((ROOT/'configs/research/RESIDUAL_CONTINUOUS_STEP_V2_CANDIDATE_REPAIR_ROUNDING.json').read_text())
     counts={k:0 for k in ('builtin_open','path_open','numpy_load','model_init','gate_from_solver')}
     results={};inputs={}
     for name,d in [('original',-.125),('ulp_toward_zero',np.nextafter(-.125,0)),('ulp_away',np.nextafter(-.125,-np.inf))]:

@@ -51,13 +51,14 @@ def peak_rss():
 def main():
     p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--phase',choices=['random','scale2','scale4'],default='random');a=p.parse_args()
     if a.output.exists():raise FileExistsError('Use fresh output')
-    config_path=ROOT/'configs/research/RESIDUAL_CONTINUOUS_STEP_V2_SOLVER_REPAIR.json'
+    config_path=ROOT/'configs/research/RESIDUAL_CONTINUOUS_STEP_V2_CANDIDATE_REPAIR_ROUNDING.json'
     config=json.loads(config_path.read_text());rng=np.random.default_rng(20260910)
     monitoring={name:0 for name in ('builtin_open','path_open','numpy_load','model_init','gate_from_solver')}
     report={'phase':a.phase,'seed':20260910,'scope':'synthetic arrays only','config_sha256':hashlib.sha256(config_path.read_bytes()).hexdigest(),
             'production_sha256':hashlib.sha256((ROOT/'src/urbanev_forecast/continuous_step.py').read_bytes()).hexdigest(),
             'exact_engine_sha256':hashlib.sha256((ROOT/'src/urbanev_forecast/continuous_exact.py').read_bytes()).hexdigest(),
             'boundary_module_sha256':hashlib.sha256((ROOT/'src/urbanev_forecast/continuous_boundaries.py').read_bytes()).hexdigest(),
+            'candidate_reducer_sha256':hashlib.sha256((ROOT/'src/urbanev_forecast/continuous_candidates.py').read_bytes()).hexdigest(),
             'reference_sha256':hashlib.sha256((ROOT/'tests/continuous_step_reference.py').read_bytes()).hexdigest(),
             'monitor_scope':'all production solve invocations; imports and report writes outside guarded region',
             'observed_forbidden_call_counts':monitoring,'real_calibration_run':False,'tail_scoring':False,'new_foundation_inference':False,
@@ -114,6 +115,7 @@ def main():
                       scan_counter_definition='full_array_direct_checks counts direct scorer calls; exact event replays update only affected samples; integer bit cost reported separately',
                       verification_status='FAILED_STOPPED' if failed else 'PASS')
     report['elapsed_seconds']=time.perf_counter()-start
+    report['elapsed_scope']='timed workload after module imports, configuration reading and report metadata initialization; includes subsequent synthetic input construction and solver calls'
     a.output.parent.mkdir(parents=True,exist_ok=True);a.output.write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({k:v for k,v in report.items() if k in ('phase','verification_status','random_cases_executed','elapsed_seconds','sample_count','process_peak_rss_bytes','observed_forbidden_call_counts')}))
     if failed:raise SystemExit(2)

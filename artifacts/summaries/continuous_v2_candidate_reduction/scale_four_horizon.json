@@ -1,0 +1,186 @@
+{
+  "phase": "scale4",
+  "seed": 20260910,
+  "scope": "synthetic arrays only",
+  "config_sha256": "6c905dc4c4f7a98376d13277f6dba4ca13da027ffe9de31e7ff8f774345cf9ca",
+  "production_sha256": "47a45fe6272c3e73be695b142dec91cdfba9e8d95afa6281837690010c75bf36",
+  "exact_engine_sha256": "bedc6258ba416a6b9dc5363653628cf54209958aae65beebd9aa5b826d4a2da3",
+  "boundary_module_sha256": "74af9454b1de88e40b51dcb49372d746028e0bb4a3f29ea4048c3603579800ea",
+  "candidate_reducer_sha256": "5b0a8998ed1a9a0d0ae3a1c04d69d04ea1052bf6314c1854e2187c4dea14e934",
+  "reference_sha256": "0f45a31c758acb91b8d5109d92786c26c2a5eb1a9d525fb994cb77fe08da1aa9",
+  "monitor_scope": "all production solve invocations; imports and report writes outside guarded region",
+  "observed_forbidden_call_counts": {
+    "builtin_open": 0,
+    "path_open": 0,
+    "numpy_load": 0,
+    "model_init": 0,
+    "gate_from_solver": 0
+  },
+  "real_calibration_run": false,
+  "tail_scoring": false,
+  "new_foundation_inference": false,
+  "third_fold_validation_opened": false,
+  "third_fold_test_opened": false,
+  "solver_code_review": "pending",
+  "environment": {
+    "python": "3.10.8",
+    "numpy": "2.2.6",
+    "platform": "Windows"
+  },
+  "sample_count": 346500,
+  "cell_count": 12,
+  "result": {
+    "status": "OPTIMAL_ALPHA_ZERO",
+    "alpha": 0.0,
+    "original_selected_alpha": 0.0,
+    "selected_exact_point": {
+      "kind": "rational",
+      "numerator": "0",
+      "denominator": "1"
+    },
+    "positive_feasible_exists": true,
+    "feasible_components": [
+      [
+        0.0,
+        0.0022354773457652867
+      ]
+    ],
+    "exact_feasible_components": [
+      [
+        {
+          "kind": "rational",
+          "numerator": "0",
+          "denominator": "1"
+        },
+        {
+          "kind": "rational",
+          "numerator": "14016138788232920",
+          "denominator": "6269863935227971541"
+        }
+      ]
+    ],
+    "score": {
+      "status": "OK",
+      "alpha": 0.0,
+      "macro": {
+        "rmse": 0.36937792686720844,
+        "mae": 0.3030285170376462
+      },
+      "aggregation": "equal cells"
+    },
+    "scan_direct_max_difference": 5.551115123125783e-17,
+    "stats": {
+      "segments_total": 294036,
+      "segments_classified": 294036,
+      "certified_empty_segments": 293620,
+      "feasible_intervals": 416,
+      "feasible_singletons": 0,
+      "unresolved_segments": 0,
+      "boundary_nodes_checked": 588905,
+      "boundary_comparisons_unresolved": 0,
+      "event_continuity_failures": 0,
+      "event_groups_processed": 294035,
+      "max_root_refinement_bits": 64,
+      "max_objective_refinement_bits": 64,
+      "max_exact_integer_bits": 274,
+      "full_array_direct_checks": 2,
+      "boundary_repairs": 0,
+      "interior_minimizations": 0,
+      "bisection_iterations": 0,
+      "replay_segments": 1,
+      "events": 294035,
+      "exact_initialization_passes": 1,
+      "max_candidate_objective_refinement_bits": 64,
+      "candidate_classification_visits": 1248,
+      "candidate_minimum_bound_visits": 1248,
+      "candidate_count": 1248,
+      "segments": 294036
+    },
+    "candidate_reduction": {
+      "rounds": [
+        {
+          "precision_bits": 64,
+          "candidate_count": 1248,
+          "min_lower": {
+            "numerator": "13627640166793596533",
+            "denominator": "36893488147419103232"
+          },
+          "min_upper": {
+            "numerator": "13627640166793596535",
+            "denominator": "36893488147419103232"
+          },
+          "in_count": 2,
+          "out_count": 1246,
+          "unresolved_count": 0,
+          "possible_minimizer_count": 2,
+          "refined_candidate_count": 0,
+          "refined_segment_count": 0
+        }
+      ],
+      "classification_visits": 1248,
+      "minimum_bound_visits": 1248,
+      "candidate_count": 1248,
+      "unresolved_indices": [],
+      "candidate_positions_changed": false,
+      "finite_candidate_minimum_bounds": {
+        "lower": {
+          "numerator": "13627640166793596533",
+          "denominator": "36893488147419103232"
+        },
+        "upper": {
+          "numerator": "13627640166793596535",
+          "denominator": "36893488147419103232"
+        }
+      },
+      "selected_index": 0,
+      "selected_objective_bounds": {
+        "lower": {
+          "numerator": "13627640166793596533",
+          "denominator": "36893488147419103232"
+        },
+        "upper": {
+          "numerator": "13627640166793596535",
+          "denominator": "36893488147419103232"
+        }
+      },
+      "selected_exact_point": {
+        "kind": "rational",
+        "numerator": "0",
+        "denominator": "1"
+      }
+    },
+    "selected_objective_bounds": {
+      "lower": {
+        "numerator": "13627640166793596533",
+        "denominator": "36893488147419103232"
+      },
+      "upper": {
+        "numerator": "13627640166793596535",
+        "denominator": "36893488147419103232"
+      }
+    },
+    "finite_candidate_minimum_bounds": {
+      "lower": {
+        "numerator": "13627640166793596533",
+        "denominator": "36893488147419103232"
+      },
+      "upper": {
+        "numerator": "13627640166793596535",
+        "denominator": "36893488147419103232"
+      }
+    },
+    "pre_repair_objective": 0.36937792686720844,
+    "post_repair_objective": 0.36937792686720844,
+    "repair_diagnostics": null,
+    "segment_ledger_sha256": "259ff26f0aaf0f4e30a35ec07499db54087a9c58467de404a6acfc1b0a688f45",
+    "segment_trace_truncated": true,
+    "claim": "complete registered-domain exact feasibility classification and enclosed numerical candidate optimization; not an exact objective optimum certificate",
+    "trace_storage": "detailed original trace retained locally; ledger/completeness retained here"
+  },
+  "process_peak_rss_bytes": 305291264,
+  "memory_scope": "fresh runner process peak resident/working-set memory including imports and synthetic input creation",
+  "scan_counter_definition": "full_array_direct_checks counts direct scorer calls; exact event replays update only affected samples; integer bit cost reported separately",
+  "verification_status": "PASS",
+  "elapsed_seconds": 72.63491179999255,
+  "elapsed_scope": "timed workload after module imports, configuration reading and report metadata initialization; includes subsequent synthetic input construction and solver calls"
+}

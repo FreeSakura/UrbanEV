@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "file": "candidate_reduction_verification.json",
+      "execution_sha256": "cf801717dfb8c4227abccc0390a97df35723572457f418d17b223e849a521883",
+      "public_sha256": "f70ca3e7fc323c5a2ee42ddc19aa1c361ee344930409a6b6a32483711ceb0d28",
+      "transformation": "JSON equal with LF normalization"
+    },
+    {
+      "file": "dense_tie_verification.json",
+      "execution_sha256": "c63c646ac53c4576890e0882cf93a20355afb8e7692956d6961385cfb586a747",
+      "public_sha256": "9138df51c94f37cbab057f8b0d641976e6833b3d8b1179e44877a4eebdde7f8a",
+      "transformation": "JSON equal with LF normalization"
+    },
+    {
+      "file": "solver_verification.json",
+      "execution_sha256": "0aaea6f1e9f430a4e77508feaa1fb458dec871e8e8861f0b7f0184165ab16370",
+      "public_sha256": "3a4827531571b186cbd84b87bb8b94d91c0e8422279dd67eda8979bfc5adfffd",
+      "transformation": "curated JSON, detailed trace stays local"
+    },
+    {
+      "file": "max_objective_error_case.json",
+      "execution_sha256": "8f2a38e780363cdc1657e3e36b2fb695a5eabcfde623ddc629a19481d6ec3cdf",
+      "public_sha256": "e67dde744c1a08f9c717a8f920b02d3b68e9bb3c4b15076ea75994484cc44b4e",
+      "transformation": "JSON equal with LF normalization"
+    },
+    {
+      "file": "prior_max_objective_error_case.json",
+      "execution_sha256": "7e22c358ffa14bc3b46ae9d47fe0c815eb7ea8820d33115d15836f24d2c3ca8b",
+      "public_sha256": "0352dcd2ba5fc0365d00ba5bc1c4cc63be16956d56c6dbf31016e2a43f560bc5",
+      "transformation": "JSON equal with LF normalization"
+    },
+    {
+      "file": "test_log.txt",
+      "execution_sha256": "d2f57d2561dcc332beac228eca26cd04d798b5ce302fd4239c504015053aa9fe",
+      "public_sha256": "87d93e5fa76b94eac76458d3e49924fe3c28cfefef5f2b15042f703b427ee65b",
+      "transformation": "LF and trailing whitespace normalized, original log retained"
+    },
+    {
+      "file": "unchanged_scope_verification.json",
+      "execution_sha256": "ba570b4abe6c852924c610d05742fbb8dc8cf949e868bbdeb56418088da80b63",
+      "public_sha256": "1260340cb912ec3ce197f6c181a11f8e9aeececfc9b396ff0dcddb4b69e3e0e1",
+      "transformation": "JSON equal with LF normalization"
+    },
+    {
+      "file": "scale_two_horizon.json",
+      "execution_sha256": "e5bbc2a45cd34b63ff2bdaff15852e24a05285628137bc76159ce852a3759927",
+      "public_sha256": "ec3796be973519707e96b72c89b2b24afe88051c0265528a28a5c2f0f603484f",
+      "transformation": "curated JSON, detailed trace stays local"
+    },
+    {
+      "file": "scale_four_horizon.json",
+      "execution_sha256": "c3e99f5ee5c7450ac31633e45d4ef2679a9868b1f14478bb44d0109c4422ef26",
+      "public_sha256": "197e5d3be1166ebb2fa29838418e9821570d0433ba7dd4767e425a7ccd19c07f",
+      "transformation": "curated JSON, detailed trace stays local"
+    }
+  ],
+  "note": "Per-file transformations explicit; no raw research arrays published"
+}

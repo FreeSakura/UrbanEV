@@ -1,0 +1,126 @@
+{
+  "spec": "CONTINUOUS_STEP_V2_CANDIDATE_REDUCTION_REPAIR_20260910",
+  "additional_repair_semantics": "exact final float displacement cap with at most one toward-origin nextafter",
+  "local_verification": "PASS",
+  "research_code_review": "pending",
+  "stable_main": "4b87f513faa99fb1b3ae13121f03eb18b7a0305f",
+  "merge_to_main_authorized": false,
+  "source_and_config_hashes": {
+    "src/urbanev_forecast/continuous_step.py": {
+      "execution_sha256": "47a45fe6272c3e73be695b142dec91cdfba9e8d95afa6281837690010c75bf36",
+      "repository_LF_sha256": "47a45fe6272c3e73be695b142dec91cdfba9e8d95afa6281837690010c75bf36"
+    },
+    "src/urbanev_forecast/continuous_exact.py": {
+      "execution_sha256": "bedc6258ba416a6b9dc5363653628cf54209958aae65beebd9aa5b826d4a2da3",
+      "repository_LF_sha256": "bedc6258ba416a6b9dc5363653628cf54209958aae65beebd9aa5b826d4a2da3"
+    },
+    "src/urbanev_forecast/continuous_candidates.py": {
+      "execution_sha256": "5b0a8998ed1a9a0d0ae3a1c04d69d04ea1052bf6314c1854e2187c4dea14e934",
+      "repository_LF_sha256": "5b0a8998ed1a9a0d0ae3a1c04d69d04ea1052bf6314c1854e2187c4dea14e934"
+    },
+    "src/urbanev_forecast/continuous_boundaries.py": {
+      "execution_sha256": "74af9454b1de88e40b51dcb49372d746028e0bb4a3f29ea4048c3603579800ea",
+      "repository_LF_sha256": "74af9454b1de88e40b51dcb49372d746028e0bb4a3f29ea4048c3603579800ea"
+    },
+    "tests/continuous_step_reference.py": {
+      "execution_sha256": "0f45a31c758acb91b8d5109d92786c26c2a5eb1a9d525fb994cb77fe08da1aa9",
+      "repository_LF_sha256": "0f45a31c758acb91b8d5109d92786c26c2a5eb1a9d525fb994cb77fe08da1aa9"
+    },
+    "scripts/research/verify_continuous_step_synthetic.py": {
+      "execution_sha256": "e5b67c70b7f6565ace46dae8cfbee7691aa56aa3e8295d5833c31fa709d70af2",
+      "repository_LF_sha256": "e5b67c70b7f6565ace46dae8cfbee7691aa56aa3e8295d5833c31fa709d70af2"
+    },
+    "scripts/research/verify_continuous_candidates.py": {
+      "execution_sha256": "f36521237dd45b148101ad328c0119bcfa7c03f9b479ef25f46c9f0a65a6e56a",
+      "repository_LF_sha256": "f36521237dd45b148101ad328c0119bcfa7c03f9b479ef25f46c9f0a65a6e56a"
+    },
+    "scripts/research/record_continuous_objective_error.py": {
+      "execution_sha256": "97da7d99a808a8761bf220b0b7bf252f34d5fb8785dfd331e60d14b92491c57d",
+      "repository_LF_sha256": "97da7d99a808a8761bf220b0b7bf252f34d5fb8785dfd331e60d14b92491c57d"
+    },
+    "configs/research/RESIDUAL_CONTINUOUS_STEP_V2_REGISTRATION.json": {
+      "execution_sha256": "8dd48925ddc3da0716cb03df320c982c3e18af3c984557d7e28aa0ace836cace",
+      "repository_LF_sha256": "8dd48925ddc3da0716cb03df320c982c3e18af3c984557d7e28aa0ace836cace"
+    },
+    "configs/research/RESIDUAL_CONTINUOUS_STEP_V2_SOLVER_REPAIR.json": {
+      "execution_sha256": "4cd0df3dd70a683c1747dcff4ecf2ffc9c0018d78f8327e27de3e2a86d656bdb",
+      "repository_LF_sha256": "d315b74af81c7039fe71aa2545502ddaddb41199227e1440ad8685afbd36aba8"
+    },
+    "configs/research/RESIDUAL_CONTINUOUS_STEP_V2_CANDIDATE_REPAIR.json": {
+      "execution_sha256": "fc2fb79aba11677df414f70a5df83126073677defde1ee8807b16e00e309731d",
+      "repository_LF_sha256": "fc2fb79aba11677df414f70a5df83126073677defde1ee8807b16e00e309731d"
+    },
+    "configs/research/RESIDUAL_CONTINUOUS_STEP_V2_CANDIDATE_REPAIR_ROUNDING.json": {
+      "execution_sha256": "6c905dc4c4f7a98376d13277f6dba4ca13da027ffe9de31e7ff8f774345cf9ca",
+      "repository_LF_sha256": "6c905dc4c4f7a98376d13277f6dba4ca13da027ffe9de31e7ff8f774345cf9ca"
+    }
+  },
+  "environment": {
+    "python": "3.10.8",
+    "numpy": "2.2.6",
+    "os": "Windows"
+  },
+  "commands": [
+    {
+      "command": "python -c \"import sys;sys.path.insert(0,'src');import pytest;raise SystemExit(pytest.main([]))\"",
+      "result": "117 passed in16.73s"
+    },
+    {
+      "command": "python scripts/research/verify_continuous_candidates.py --output-dir ../work/continuous-v2-candidate-reduction-20260910/rounding_final/candidate_checks",
+      "result": "PASS"
+    },
+    {
+      "command": "python scripts/research/verify_continuous_step_synthetic.py --phase random --output ../work/continuous-v2-candidate-reduction-20260910/rounding_final/solver_verification_random.json",
+      "result": "200/200 PASS from original case0 and seed"
+    },
+    {
+      "command": "python scripts/research/verify_continuous_step_synthetic.py --phase scale2 --output ../work/continuous-v2-candidate-reduction-20260910/rounding_final/scale_two_horizon.json",
+      "result": "PASS"
+    },
+    {
+      "command": "python scripts/research/verify_continuous_step_synthetic.py --phase scale4 --output ../work/continuous-v2-candidate-reduction-20260910/rounding_final/scale_four_horizon.json",
+      "result": "PASS"
+    },
+    {
+      "command": "python scripts/research/record_continuous_objective_error.py --verification ../work/continuous-v2-candidate-reduction-20260910/rounding_final/solver_verification_random.json --output ../work/continuous-v2-candidate-reduction-20260910/rounding_final/max_objective_error_case.json",
+      "result": "PASS, exact actual alpha cap and separated objective budgets"
+    }
+  ],
+  "runtime_monitor": {
+    "scope": "all production solve invocations; imports and report writes outside guarded region",
+    "random_observed_counts": {
+      "builtin_open": 0,
+      "path_open": 0,
+      "numpy_load": 0,
+      "model_init": 0,
+      "gate_from_solver": 0
+    },
+    "scale_observed_counts": [
+      {
+        "builtin_open": 0,
+        "path_open": 0,
+        "numpy_load": 0,
+        "model_init": 0,
+        "gate_from_solver": 0
+      },
+      {
+        "builtin_open": 0,
+        "path_open": 0,
+        "numpy_load": 0,
+        "model_init": 0,
+        "gate_from_solver": 0
+      }
+    ],
+    "input_origin": "only literal or registered-seed synthetic arrays"
+  },
+  "real_calibration_run": false,
+  "tail_scoring": false,
+  "new_foundation_inference": false,
+  "third_fold_validation_opened": false,
+  "third_fold_test_opened": false,
+  "solver_code_review": "pending",
+  "remote_ci": "not submitted at original local receipt snapshot; returned separately by exact commit",
+  "time_scope": "timed workload starts after imports/configuration/initial metadata; not full process wall-clock",
+  "memory_scope": "fresh process peak working set may include imports",
+  "quota_reset_used": false
+}

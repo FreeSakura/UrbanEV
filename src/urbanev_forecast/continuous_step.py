@@ -95,6 +95,10 @@ def solve_continuous_alpha(cells,solver_config):
             raise InputBlocked('Numerical contract changed')
         if solver_config.get('repair_spec_id')!='CONTINUOUS_STEP_V2_NUMERICAL_REPAIR_20260910' or solver_config.get('root_refinement_bits')!=[64,128,256,512]:
             raise InputBlocked('Reviewed exact numerical repair configuration required')
+        if solver_config.get('candidate_reduction_spec_id')!='CONTINUOUS_STEP_V2_CANDIDATE_REDUCTION_REPAIR_20260910':
+            raise InputBlocked('Reviewed candidate reduction repair configuration required')
+        if solver_config.get('single_repair_rounding_spec')!='EXACT_TARGET_TOWARD_ORIGINAL_20260910':
+            raise InputBlocked('Reviewed bounded output rounding configuration required')
         prepared=_prepare(cells)
         if any(isinstance(c['id'],dict) and c['id'].get('stage')=='tail' for c in prepared):
             raise InputBlocked('Tail selection prohibited')

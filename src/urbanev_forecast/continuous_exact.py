@@ -9,6 +9,7 @@ import numpy as np
 from .continuous_boundaries import (BITS,Boundary,BoundaryUnresolved,compare,sign,
     intersect_polynomial,sqrt_bounds,polynomial_bounds,divide_interval,add_interval,
     midpoint_inside,note_bits)
+from .continuous_candidates import Candidate,reduce_candidates,encode_fraction
 
 ZERO=F(0);ONE=F(1)
 
@@ -140,6 +141,7 @@ def _norm_bounds(poly,point,bits,stats):
 
 
 def _objective_bounds(segment,point,bits,stats):
+    stats['max_objective_refinement_bits']=max(stats.get('max_objective_refinement_bits',0),bits)
     intervals=[_norm_bounds(segment.mse(j),point,bits,stats) for j in range(len(segment.sizes))]
     return sum((a for a,b in intervals),ZERO)/len(intervals),sum((b for a,b in intervals),ZERO)/len(intervals)
 
@@ -209,13 +211,39 @@ def _direct_feasible(score,native):
     return score['macro']['mae']<=native['macro']['mae'] and all(a['rmse']<=1.01*b['rmse'] for a,b in zip(score['cells'],native['cells']))
 
 
+class SingleRepairBlocked(BoundaryUnresolved):
+    def __init__(self,reason,diagnostics):
+        super().__init__(reason);self.repair_diagnostics=diagnostics
+
+
+def _bounded_single_repair(original_alpha,distance,direction):
+    """One repair's deterministic output quantization, not a candidate retry."""
+    if not math.isfinite(original_alpha) or not math.isfinite(distance) or distance<=0 or direction not in (-1,1):
+        raise BoundaryUnresolved('INVALID_SINGLE_REPAIR_INPUT')
+    direction=int(direction);origin=F.from_float(original_alpha)
+    allowed=min(F.from_float(distance),F(1,10**10))
+    target=origin+direction*allowed
+    nearest=float(target);repaired=nearest;inward=False
+    if direction*(F.from_float(repaired)-target)>0:
+        repaired=math.nextafter(repaired,original_alpha);inward=True
+    actual=direction*(F.from_float(repaired)-origin)
+    diagnostics={'original_alpha':original_alpha,'nominal_distance':distance,'direction':direction,
+        'allowed_step_exact':encode_fraction(allowed),'exact_target':encode_fraction(target),
+        'nearest_rounded_alpha':nearest,'inward_rounding_used':inward,'nextafter_count':int(inward),
+        'returned_alpha':repaired,'actual_step_exact':encode_fraction(actual),
+        'actual_step_within_exact_cap':0<actual<=allowed<=F(1,10**10)}
+    if not 0<actual<=allowed:
+        raise SingleRepairBlocked('NO_REPRESENTABLE_BOUNDED_SINGLE_REPAIR',diagnostics)
+    return repaired,diagnostics
+
+
 def solve_exact(prepared,config,score_callback):
     stats={name:0 for name in ('segments_total','segments_classified','certified_empty_segments','feasible_intervals',
         'feasible_singletons','unresolved_segments','boundary_nodes_checked','boundary_comparisons_unresolved',
         'event_continuity_failures','event_groups_processed','max_root_refinement_bits','max_objective_refinement_bits',
         'max_exact_integer_bits','full_array_direct_checks','boundary_repairs','interior_minimizations','bisection_iterations',
         'replay_segments','events','exact_initialization_passes')}
-    components=[];trace=[];ledger=hashlib.sha256();candidates=[];direct_cache={}
+    components=[];trace=[];ledger=hashlib.sha256();candidates=[];direct_cache={};repair_diagnostics=None
     def direct(alpha):
         if alpha not in direct_cache:
             if stats['full_array_direct_checks']>=8:raise BoundaryUnresolved('FULL_ARRAY_CHECK_BUDGET_EXCEEDED')
@@ -258,29 +286,27 @@ def solve_exact(prepared,config,score_callback):
             raise BoundaryUnresolved('NATIVE_ZERO_NOT_IN_EXACT_FEASIBLE_SET')
         if stats['segments_classified']!=stats['segments_total'] or stats['unresolved_segments']:
             raise BoundaryUnresolved('SEGMENT_COMPLETENESS_UNRESOLVED')
-        # Decide the fixed finite-candidate tie set only after every segment.
-        tolerance=F(str(config['objective_tie_atol']));eligible=None
-        for bits in BITS:
-            min_lower=min(c['objective'][0] for c in candidates);min_upper=min(c['objective'][1] for c in candidates)
-            definite=[i for i,c in enumerate(candidates) if c['objective'][1]<=min_lower+tolerance]
-            ambiguous=[i for i,c in enumerate(candidates) if c['objective'][0]<=min_upper+tolerance and i not in definite]
-            if not ambiguous:
-                eligible=definite;break
-            if bits==512:break
-            next_bits=BITS[BITS.index(bits)+1];needed={candidates[i]['segment'] for i in ambiguous}
-            # Refinement replays exact event updates, not full-array rescoring.
+        # All candidate positions are fixed before any global tie classification.
+        frozen=tuple(Candidate(c['point'],c['objective'],c['segment']) for c in candidates)
+        def refine_bounds(indices,bits):
             groups={}
-            for i,c in enumerate(candidates):
-                if c['segment'] in needed:groups.setdefault(c['segment'],[]).append(i)
+            for i in indices:
+                groups.setdefault(candidates[i]['segment'],[]).append(i)
+            updated={}
             for segment in sweep.segments():
                 stats['replay_segments']+=1
                 if segment.index in groups:
-                    for i in groups[segment.index]:candidates[i]['objective']=_objective_bounds(segment,candidates[i]['point'],next_bits,stats)
-        if not eligible:raise BoundaryUnresolved('FINITE_CANDIDATE_TIE_COMPARISON_UNRESOLVED')
-        chosen=eligible[0]
-        for i in eligible[1:]:
-            if compare(candidates[i]['point'],candidates[chosen]['point'],stats)<0:chosen=i
-        candidate=candidates[chosen];point=candidate['point'];interval=candidate['interval']
+                    for i in groups[segment.index]:
+                        updated[i]=_objective_bounds(segment,candidates[i]['point'],bits,stats)
+            return {'bounds':updated,'refined_segment_count':len(groups)}
+        reduction=reduce_candidates(frozen,refine_bounds,F(str(config['objective_tie_atol'])),stats)
+        selection_diagnostics=reduction['diagnostics']
+        stats['candidate_classification_visits']=selection_diagnostics['classification_visits']
+        stats['candidate_minimum_bound_visits']=selection_diagnostics['minimum_bound_visits']
+        stats['candidate_count']=len(candidates)
+        chosen=reduction['selected_index']
+        candidate=candidates[chosen].copy();candidate['objective']=reduction['bounds'][chosen]
+        point=candidate['point'];interval=candidate['interval']
         singleton=compare(interval[0],interval[1],stats)==0
         alpha=point.approximate();represented=Boundary.of(F.from_float(alpha))
         if singleton and compare(point,represented,stats)!=0:
@@ -300,11 +326,12 @@ def solve_exact(prepared,config,score_callback):
                 raise BoundaryUnresolved('PRE_REPAIR_SCORE_DISCREPANCY')
             low,high=interval[0].approximate(),interval[1].approximate();middle=low+(high-low)/2
             distance=min(config['boundary_repair_max_alpha_change'],(high-low)/4,abs(middle-alpha))
-            repaired=alpha+math.copysign(distance,middle-alpha)
+            if distance<=0:raise BoundaryUnresolved('NO_REPRESENTABLE_BOUNDED_SINGLE_REPAIR')
+            stats['boundary_repairs']=1
+            repaired,repair_diagnostics=_bounded_single_repair(alpha,distance,1 if middle>alpha else -1)
             rpoint=Boundary.of(F.from_float(repaired))
             if distance<=0 or repaired==alpha or not _within(rpoint,interval,stats) or compare(rpoint,interval[0],stats)==0 or compare(rpoint,interval[1],stats)==0:
                 raise BoundaryUnresolved('NO_REPRESENTABLE_SINGLE_REPAIR_INSIDE_COMPONENT')
-            stats['boundary_repairs']=1
             fixed=direct(repaired)
             if not _check_point(selected_segment,rpoint,stats)[0] or not _direct_feasible(fixed,native) or fixed['macro']['rmse']-original_score['macro']['rmse']>config['boundary_repair_max_objective_increase']:
                 raise BoundaryUnresolved('REGISTERED_SINGLE_REPAIR_FAILED')
@@ -325,11 +352,18 @@ def solve_exact(prepared,config,score_callback):
             'positive_feasible_exists':positive,'feasible_components':[[lo.approximate(),hi.approximate()] for lo,hi in components],
             'exact_feasible_components':[[lo.encode(),hi.encode()] for lo,hi in components],
             'score':score,'scan_direct_max_difference':discrepancy,'stats':stats,
+            'candidate_reduction':selection_diagnostics,
+            'selected_objective_bounds':selection_diagnostics['selected_objective_bounds'],
+            'finite_candidate_minimum_bounds':selection_diagnostics['finite_candidate_minimum_bounds'],
+            'pre_repair_objective':original_score['macro']['rmse'],'post_repair_objective':score['macro']['rmse'],
+            'repair_diagnostics':repair_diagnostics,
             'segment_trace_prefix':trace,'segment_ledger_sha256':ledger.hexdigest(),
             'segment_trace_truncated':stats['segments_total']>len(trace),
             'claim':'complete registered-domain exact feasibility classification and enclosed numerical candidate optimization; not an exact objective optimum certificate'}
     except (BoundaryUnresolved,ArithmeticError,OverflowError,FloatingPointError) as e:
         return {'status':'NUMERICAL_BLOCKED','reason':str(e),'stats':stats,
+            'candidate_reduction':getattr(e,'diagnostics',locals().get('selection_diagnostics')),
+            'repair_diagnostics':getattr(e,'repair_diagnostics',repair_diagnostics),
             'exact_feasible_components':[[lo.encode(),hi.encode()] for lo,hi in components],
             'segment_trace_prefix':trace,'segment_ledger_sha256':ledger.hexdigest(),
             'selected_exact_point':point.encode() if 'point' in locals() else None}

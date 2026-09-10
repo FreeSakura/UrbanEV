@@ -8,7 +8,7 @@ import pytest
 from urbanev_forecast import continuous_step as m
 
 ROOT=Path(__file__).resolve().parents[1]
-CFG=json.loads((ROOT/'configs/research/RESIDUAL_CONTINUOUS_STEP_V2_SOLVER_REPAIR.json').read_text())
+CFG=json.loads((ROOT/'configs/research/RESIDUAL_CONTINUOUS_STEP_V2_CANDIDATE_REPAIR_ROUNDING.json').read_text())
 
 def cell(p,d,y,name='synthetic'):
     return {'id':name,'p':np.asarray(p,dtype=float),'delta':np.asarray(d,dtype=float),'y':np.asarray(y,dtype=float)}

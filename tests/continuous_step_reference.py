@@ -138,6 +138,7 @@ def reference_solve(cells):
         alpha=min(a for a,r in candidates if r<=smallest+Decimal('1e-12'))
         objective,mae=actual(alpha)
         return {'alpha':float(alpha),'objective':float(objective),'mae':float(mae),
+                'objective_decimal80':str(objective),'finite_minimum_decimal80':str(smallest),
                 'components':[[float(a.decimal()),float(b.decimal())] for a,b in exact_components],
                 'exact_components':[[a.encode(),b.encode()] for a,b in exact_components],
                 'precision':80,'boundary_semantics':'independent exact rational and enclosing root comparison'}

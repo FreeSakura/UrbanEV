@@ -5,7 +5,7 @@ from urbanev_forecast import continuous_step as m
 
 ROOT=Path(__file__).resolve().parents[1]
 REG=json.loads((ROOT/'configs/research/RESIDUAL_CONTINUOUS_STEP_V2_REGISTRATION.json').read_text())
-CFG=json.loads((ROOT/'configs/research/RESIDUAL_CONTINUOUS_STEP_V2_SOLVER_REPAIR.json').read_text())
+CFG=json.loads((ROOT/'configs/research/RESIDUAL_CONTINUOUS_STEP_V2_CANDIDATE_REPAIR_ROUNDING.json').read_text())
 
 def scores():
     alphas={s:(0 if s=='native' else 1) for s in REG['systems']};out={}
