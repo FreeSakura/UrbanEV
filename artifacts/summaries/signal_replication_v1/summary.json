@@ -1,0 +1,14 @@
+{
+  "protocol": "SIGNAL_REPLICATION_V1_20260910",
+  "code_freeze_commit": "821dd96",
+  "region_gate": "NO_GO",
+  "duration_ridge_gate": "GO_DEVELOPMENT_ONLY",
+  "duration_foundation_gate": "NO_GO",
+  "joint_duration_replicates": false,
+  "failed_startup": "First default-interpreter launch lacked chronos; no predictions produced; same frozen code rerun in prior verified environment",
+  "post_result_tuning": false,
+  "independent_confirmation": false,
+  "sota_claim": false,
+  "fold_two_test_loaded": false,
+  "previous_fold_test_enters_training": true
+}

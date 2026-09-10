@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "purpose": "actual forward check of 550 channels and 9 independent task group ids",
+  "records": [
+    {
+      "context_shape": [
+        550,
+        168
+      ],
+      "group_sizes": [
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        38
+      ]
+    }
+  ],
+  "labels_scored": false,
+  "input_prefix_hours": 192
+}

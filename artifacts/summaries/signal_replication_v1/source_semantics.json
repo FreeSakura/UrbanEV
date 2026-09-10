@@ -1,0 +1,19 @@
+{
+  "access_date": "2026-09-10",
+  "primary_sources": [
+    "https://github.com/IntelligentSystemsLab/UrbanEV",
+    "https://datadryad.org/dataset/doi:10.5061/dryad.np5hqc04z"
+  ],
+  "supported": [
+    "Duration is accumulated charging hours per interval.",
+    "Occupancy includes unavailable or busy piles; duration concerns actively supplying electricity.",
+    "Processed zonal data and filtered station capacity metadata exist."
+  ],
+  "not_established_for_local_snapshot": [
+    "Exact left/right timestamp endpoint convention.",
+    "Per-observation publication time and online delay.",
+    "End-to-end causal raw-to-hourly preprocessing."
+  ],
+  "identity_caveat": "Upstream descriptions call occupancy a percentage; this project uses the previously audited local count snapshot divided by matching filtered capacity. It must not be silently replaced by another version.",
+  "scope": "offline candidate replication, not identified physical latent states or deployment validation"
+}

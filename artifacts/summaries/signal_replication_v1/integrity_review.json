@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-10",
+  "review_type": "independent Codex agent, local artifact and metric recomputation",
+  "verdict": "WARN",
+  "integrity_failure_found": false,
+  "private_ridge_review_sha256": "a6f783b39bb9ec179f4ca4416de42a061e15f6828ec316d5ca0d0446f95b4910",
+  "private_final_review_sha256": "676364bfdb4abc4469ad3317139242fe45b2773f5355361c4d1a1252969587d9",
+  "checks": {
+    "ground_truth_provenance": "PASS",
+    "score_normalization": "PASS",
+    "files_values_prediction_hashes": "PASS",
+    "metric_execution": "PASS",
+    "scope": "WARN",
+    "physical_proxy_and_online_availability": "WARN",
+    "paired_bootstrap_and_gate_recomputation": "PASS",
+    "frozen_model_identity": "PASS, matches prior verified Chronos receipt",
+    "public_export_and_narrative": "PASS",
+    "theory_section_six_scope": "PASS"
+  },
+  "decisions": {
+    "region": "NO_GO",
+    "duration_ridge": "GO_DEVELOPMENT_ONLY",
+    "duration_chronos": "NO_GO",
+    "joint_duration_replicates": false
+  },
+  "limits": [
+    "Development evidence, not final-test results, independent confirmation or SOTA.",
+    "Earlier fold test timestamps enter expanding training; fold-two test prefix is not loaded.",
+    "MAE change intervals cross zero; point-estimate improvement is not stable non-inferiority.",
+    "Duration endpoints, live publication delay and physical-state interpretation remain unverified.",
+    "Residual correction theory is a future experiment constraint, not an executed candidate."
+  ]
+}

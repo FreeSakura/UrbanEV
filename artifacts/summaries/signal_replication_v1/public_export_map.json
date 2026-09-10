@@ -1,0 +1,29 @@
+{
+  "note": "Raw execution newline hashes and normalized public hashes; parsed contents identical",
+  "files": [
+    {
+      "public_file": "ridge.json",
+      "execution_sha256": "f6deffc92281198cf8b1d49fde95fc8bbc3ad42e974b3dc32b6912bc14e5fb2a",
+      "public_sha256": "eaa4621b5c37d8afed943fefedaecf80f553e655151b14f97d521180fd79b0b1",
+      "canonical_json_sha256": "fd93a687c593bc6c59046be09cef35d07c0bf5324b5fc42c50373ac895590d50"
+    },
+    {
+      "public_file": "foundation.json",
+      "execution_sha256": "be9dac9e3f866f766ae68defa967f10dd4ff35808bb0a1a5b5c016655e709af0",
+      "public_sha256": "ea64b8ff52d6c5452b2fa15c97aa6a03b5cda4676e2d2987b2bd7ccb103a9511",
+      "canonical_json_sha256": "61b23bbe9bade0514b45d0630ed3e1e2652bcc1ddec48eef82f46503651cfc2e"
+    },
+    {
+      "public_file": "source_semantics.json",
+      "execution_sha256": "5db247638d93be02af3ef84298ad0269cdc940c3f3edb7e5a0968401ff0e9081",
+      "public_sha256": "5db247638d93be02af3ef84298ad0269cdc940c3f3edb7e5a0968401ff0e9081",
+      "canonical_json_sha256": "719949d81ef70a9010b1862b567ccc79e9c7926fa1917cca3343e455d020f069"
+    },
+    {
+      "public_file": "augmented_structure_receipt.json",
+      "execution_sha256": "45cfaf3d2932de6dc03c0a912b90ebafb71d5bf1b8bfb7a22ce6a0df389b6b48",
+      "public_sha256": "fcda8750be6d0d3148da21f799d6635ecdb66656a10c9c705e76b2328461b537",
+      "canonical_json_sha256": "e36ea18c0d0723b8f7b4792ca35055d00b0e310084b96cf6949f68e3c237d5e3"
+    }
+  ]
+}

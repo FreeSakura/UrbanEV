@@ -542,6 +542,69 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/signal_replication_v1/augmented_structure_receipt.json",
+      "sha256": "fcda8750be6d0d3148da21f799d6635ecdb66656a10c9c705e76b2328461b537",
+      "bytes": 393,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/signal_replication_v1/foundation.json",
+      "sha256": "ea64b8ff52d6c5452b2fa15c97aa6a03b5cda4676e2d2987b2bd7ccb103a9511",
+      "bytes": 15957,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/signal_replication_v1/integrity_review.json",
+      "sha256": "1cb9331b7004b47478abce5818e837910d8d21a7255cbdeec846af561f324209",
+      "bytes": 1493,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/signal_replication_v1/public_export_map.json",
+      "sha256": "ddfe1af2e828933c6585cfc5d2f5355a5c83f3cd229d33587546a1d0ce933a23",
+      "bytes": 1480,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/signal_replication_v1/ridge.json",
+      "sha256": "eaa4621b5c37d8afed943fefedaecf80f553e655151b14f97d521180fd79b0b1",
+      "bytes": 9014,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/signal_replication_v1/source_semantics.json",
+      "sha256": "5db247638d93be02af3ef84298ad0269cdc940c3f3edb7e5a0968401ff0e9081",
+      "bytes": 990,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/signal_replication_v1/summary.json",
+      "sha256": "abafb6e5656c0642f64bc1010e765c3d56a833486110e1ef6c4874530980d08b",
+      "bytes": 557,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/URBANEV_CLEANROOM_RECOMPUTE.json",
       "sha256": "5ee69b86ae0b1a294da2645c29041e425fda89b56e9a8eefee2c95b721df0d38",
       "bytes": 47832,
@@ -662,6 +725,15 @@
       "path": "configs/research/FM_CALIBRATION_FOLD1_V1.json",
       "sha256": "ae27de96837bd070e83af80319439bd81f6798548cd95b0150d51eb8dfc5cceb",
       "bytes": 1498,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "configs/research/SIGNAL_REPLICATION_V1.json",
+      "sha256": "3eb967056ad1a8ab50562e8788f4e9fed27b940f1eee142cf4941a0a515a8787",
+      "bytes": 2762,
       "role": "configs",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
