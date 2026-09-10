@@ -6,7 +6,7 @@ ________________ test_extreme_precision_case_blocks_explicitly ________________
         c=cell([0],[1e-320],[.5])
 >       assert m.solve_continuous_alpha([c],CFG)['status']=='NUMERICAL_BLOCKED'
 E       AssertionError: assert 'OPTIMAL_ALPHA_ZERO' == 'NUMERICAL_BLOCKED'
-E         
+E
 E         - NUMERICAL_BLOCKED
 E         + OPTIMAL_ALPHA_ZERO
 

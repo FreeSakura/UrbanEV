@@ -7,7 +7,7 @@ ______________ test_ulp_away_preserves_narrow_feasible_component ______________
 >       assert result['status']=='OK',result
 E       AssertionError: {'status': 'NUMERICAL_BLOCKED', 'reason': 'NO_REPRESENTABLE_SINGLE_REPAIR_INSIDE_COMPONENT', 'stats': {'segments_total...03599627370496', 'denominator': '4503599627370497'}, {'kind': 'rational', 'numerator': '1', 'denominator': '1'}]], ...}
 E       assert 'NUMERICAL_BLOCKED' == 'OK'
-E         
+E
 E         - OK
 E         + NUMERICAL_BLOCKED
 
