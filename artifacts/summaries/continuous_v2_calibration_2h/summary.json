@@ -1,0 +1,33 @@
+{
+  "status": "CALIBRATION_2H_INFORMATION_NO_GO",
+  "accepted_solver_commit": "e7deb7754efea619e540dccdc810b5c3ebdd7e38",
+  "execution_commit": "9a965f3d9c87a630f71f55ffe35df3b15a02ddb5",
+  "information_gate": false,
+  "structure_gate": false,
+  "Cstar": "native",
+  "primary_gain_percent_vs_Cstar": 0.3895926759119428,
+  "primary_gain_percent_vs_raw_duration": 0.06368226334294569,
+  "structure_mae_difference": 3.0732361100405114e-14,
+  "failed_information_criteria": [
+    "macro_rmse_gain_at_least_1pct_vs_Cstar"
+  ],
+  "selected_alphas": {
+    "native": 0.0,
+    "bias": 0.0,
+    "occupancy": 0.0,
+    "duplicate": 0.0,
+    "raw_duration": 0.08182509217273147,
+    "orthogonal_duration": 0.09796374117705361,
+    "permuted_orthogonal": 0.0
+  },
+  "all_computations_valid": true,
+  "new_foundation_inference": 0,
+  "semantic_row_stop": 1560,
+  "automatic_stage_advance": false,
+  "h6_h9_run": false,
+  "tail_scoring": false,
+  "third_fold_validation_opened": false,
+  "third_fold_test_opened": false,
+  "peak_process_memory": "NOT_CAPTURED, no rerun for resource logging",
+  "research_confirmation": "pending supervisor result acceptance; not blind evaluation or SOTA"
+}

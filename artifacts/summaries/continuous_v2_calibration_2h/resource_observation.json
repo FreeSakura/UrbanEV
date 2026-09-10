@@ -1,0 +1,8 @@
+{
+  "peak_process_memory_bytes": null,
+  "peak_memory_status": "NOT_CAPTURED",
+  "reason": "External sampling attempted after process had already exited; run not repeated",
+  "private_array_file_count": 90,
+  "private_array_file_bytes": 18722520,
+  "array_file_bytes_are_not_peak_resident_memory": true
+}

@@ -38,6 +38,87 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/continuous_v2_calibration_2h/calibration_2h.json",
+      "sha256": "b655e84aed1885c7822715a033835f2b41624e752070d435e0debc1d02fbf504",
+      "bytes": 71925,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_calibration_2h/calibration_cells.csv",
+      "sha256": "2501d29960c6d65a2752a3c232d6bb335a2af46ed3192d12253f94aab2b2e608",
+      "bytes": 5420,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_calibration_2h/execution_receipt.json",
+      "sha256": "cc89e8640b59b036c17206e96842d0e1a6a6933951ce1e3123246781be31878a",
+      "bytes": 31695,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_calibration_2h/gate_decision.json",
+      "sha256": "d88da99338ea3eda6052f06f488848846b75efbf2f77dd1142b112901f99276a",
+      "bytes": 4692,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_calibration_2h/preflight_tests.txt",
+      "sha256": "8564200963c2e31755c8493041c0b7394c5be2a0f5a8ec4cd1da868d440a862d",
+      "bytes": 181,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_calibration_2h/public_export_map.json",
+      "sha256": "188cabd012b543655e0c32403abb3b3ed04c31880054cfd52a1b9886367b5559",
+      "bytes": 2296,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_calibration_2h/resource_observation.json",
+      "sha256": "949e397099b66c12eb7d8054591372fa7d2aa5e6f74c8af158dd51c0e227e161",
+      "bytes": 305,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_calibration_2h/result_verification.json",
+      "sha256": "42029cf6e9216e476250d6a3ee257eba028aed54208265d91e39685a34e57cf0",
+      "bytes": 19241,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_calibration_2h/summary.json",
+      "sha256": "8d6884655d1c60f0c310b719c9bd5d9cc257ce2927556a5791ca1a486acbf1fa",
+      "bytes": 1175,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/continuous_v2_candidate_reduction/candidate_reduction_verification.json",
       "sha256": "f70ca3e7fc323c5a2ee42ddc19aa1c361ee344930409a6b6a32483711ceb0d28",
       "bytes": 8309,
@@ -1040,6 +1121,24 @@
       "path": "configs/PARIS_TEACHER_MODEL_CONFIG.json",
       "sha256": "b301ee69d8c2d2a5f24413318cd89cf861b6508018bbdbfaeee201215959568b",
       "bytes": 2832,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "configs/research/CONTINUOUS_V2_CALIBRATION_2H_AUTHORIZATION.json",
+      "sha256": "3212983a471731f13edb6be47710db8b038a14199496ca55ca58aa38516081de",
+      "bytes": 2000,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "configs/research/CONTINUOUS_V2_CALIBRATION_2H_RUN.json",
+      "sha256": "30f189367c0f80ffe1d8a67417b24e96336549ec328b6367476063cced301d2c",
+      "bytes": 19112,
       "role": "configs",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",

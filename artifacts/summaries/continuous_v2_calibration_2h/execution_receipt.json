@@ -1,0 +1,1302 @@
+{
+  "authorization": {
+    "status": "AUTHORIZED",
+    "stage": "calibrate_h3_h12",
+    "accepted_solver_commit": "e7deb7754efea619e540dccdc810b5c3ebdd7e38",
+    "maximum_semantic_row_stop": 1560,
+    "new_foundation_inference": 0,
+    "automatic_stage_advance": false,
+    "scientific_information_gate": "NOT_RUN",
+    "max_executions": 1
+  },
+  "accepted_solver_commit": "e7deb7754efea619e540dccdc810b5c3ebdd7e38",
+  "execution_commit": "9a965f3d9c87a630f71f55ffe35df3b15a02ddb5",
+  "authorization_sha256": "3212983a471731f13edb6be47710db8b038a14199496ca55ca58aa38516081de",
+  "manifest_sha256": "30f189367c0f80ffe1d8a67417b24e96336549ec328b6367476063cced301d2c",
+  "solver_config_sha256": "6c905dc4c4f7a98376d13277f6dba4ca13da027ffe9de31e7ff8f774345cf9ca",
+  "observed_code_identity": {
+    "accepted_solver_commit": "e7deb7754efea619e540dccdc810b5c3ebdd7e38",
+    "solver_config_sha256": "6c905dc4c4f7a98376d13277f6dba4ca13da027ffe9de31e7ff8f774345cf9ca",
+    "code_identity": {
+      "src/urbanev_forecast/continuous_exact.py": "bedc6258ba416a6b9dc5363653628cf54209958aae65beebd9aa5b826d4a2da3",
+      "src/urbanev_forecast/continuous_boundaries.py": "74af9454b1de88e40b51dcb49372d746028e0bb4a3f29ea4048c3603579800ea",
+      "src/urbanev_forecast/continuous_candidates.py": "5b0a8998ed1a9a0d0ae3a1c04d69d04ea1052bf6314c1854e2187c4dea14e934",
+      "src/urbanev_forecast/data.py": "211672b5be9d69be106569828d8105e45620d718f1929d995d0eff227ff8f80d",
+      "src/urbanev_forecast/foundation.py": "afa95a76d118d399ceeb7717902a5f9047966fdf0c633e8145f2d9e13afe900b",
+      "scripts/research/residual_information.py": "fd3f37c0997ab6aed814f8f49cb86c011664422ee6eaaa0d2cf1156ead08c2bf",
+      "scripts/research/replicate_signals.py": "e051d645d6c06f15152b9cf987d07acdb36008f6d6e28b84760b283aaefe130f",
+      "continuous_step_except_authorizer_AST": "da3bc3856e8ce2f2c0906d7c23e5d05997f44303ce5bc87016628af4d63978b7"
+    }
+  },
+  "read_ledger": [
+    {
+      "role": "V1 result",
+      "kind": "metadata",
+      "sha256": "ad19e2d866b3400465990b697395357282e924d125124c0fa68ad7d48dce6644"
+    },
+    {
+      "role": "private_origins_h3.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 1168,
+      "sha256": "f1be0ea4a4056377a211dc78cd3637a72720e59b60c3cc7ab1dae3b5cdaed03f"
+    },
+    {
+      "role": "private_base_h3.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 429128,
+      "sha256": "72ab0b5329dad6a3f7e0ddda31db6575c148e54536b67cf9022ba82bbcc0b965"
+    },
+    {
+      "role": "private_origins_h3.npy",
+      "kind": "origin_index_metadata",
+      "entries": 130,
+      "prediction_values_read": false,
+      "target_labels_read": false
+    },
+    {
+      "role": "private_origins_h12.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 1160,
+      "sha256": "9c3dead0695ee360ef4d9310785e9abc511cd1d94e124b5286c9cb2e4f0144a8"
+    },
+    {
+      "role": "private_base_h12.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 1702928,
+      "sha256": "dfde6a41633ff8f70cd4cb6d91b344602b80ebc349c68103079810467f955b82"
+    },
+    {
+      "role": "private_origins_h12.npy",
+      "kind": "origin_index_metadata",
+      "entries": 129,
+      "prediction_values_read": false,
+      "target_labels_read": false
+    },
+    {
+      "role": "private_720_h3_native_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "bcbd6d5ca7c100e22c3ce2d65970268ca81b0902f25a3aa55f4b16f28b3b81de"
+    },
+    {
+      "role": "private_720_h3_bias_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 46328,
+      "sha256": "5ec6201cdcaa47fc393565a5e039b03368f1e65907295e5731fe41ef86d5bf71"
+    },
+    {
+      "role": "private_720_h3_occupancy_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "75754e59dca296e40c0e44f9a04d49f750772d23bf045f3cf7f119170732b63c"
+    },
+    {
+      "role": "private_720_h3_duplicate_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "9c94a899a7a38a0bd48c01df0463ab23a62621f170bf5bc3aaaa5dce53aed043"
+    },
+    {
+      "role": "private_720_h3_raw_duration_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "da976654312e5b47f8acd2de641f7bc344fadfaaa0668d539ca46a33f3b4f8ad"
+    },
+    {
+      "role": "private_720_h3_orthogonal_duration_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "3eb9a996b2ff0785ebad4d69e50d50b5bd644f30938cdc23c67cf909a490ea26"
+    },
+    {
+      "role": "private_720_h3_permuted_orthogonal_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "1c233a08eed42a26351eee995400382933dc04e8c4b48a1e0472ff2fca03c006"
+    },
+    {
+      "role": "private_1056_h3_native_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "86a2230dac3d4b1170809afeb397dfe48b7bd916c9fded1b1ea1b4fdd894eed8"
+    },
+    {
+      "role": "private_1056_h3_bias_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 46328,
+      "sha256": "f23144584978d5c072de0044da269b8db9ac54297d3177acf9a84e20e019a6fc"
+    },
+    {
+      "role": "private_1056_h3_occupancy_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "21cb37ddaff1c3549be08336aa40e95cb8bef4dbea7855dcf0ecf1d2dbb4f6d6"
+    },
+    {
+      "role": "private_1056_h3_duplicate_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "7b8f582fe2f97baf5cac10474fa8a51a65c85c47e71fce3c2c52d763054c4e43"
+    },
+    {
+      "role": "private_1056_h3_raw_duration_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "2866058ad9b8a6732ef9f3f2e0f597923a718d0ab3fbad3e118a07af1a6ace05"
+    },
+    {
+      "role": "private_1056_h3_orthogonal_duration_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "5e24c2b5996f02d0774f82eed40f94d94939ff702e5d5f5eb4adce3e8cda88bf"
+    },
+    {
+      "role": "private_1056_h3_permuted_orthogonal_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "abea8264b5fb83467baa4b96ae7447f868ebcffb1c40ef51c6c19d832ed707f6"
+    },
+    {
+      "role": "private_1392_h3_native_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "a8870d582828961b80b010a679b8a03ecd0009b1075839ffd9fc64566c16ebf3"
+    },
+    {
+      "role": "private_1392_h3_bias_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 46328,
+      "sha256": "852cbef475085fbc0b57e2ef9b15d3c22f8c112abb5c9ffa76450907fe059763"
+    },
+    {
+      "role": "private_1392_h3_occupancy_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "609c38f8e2b247e96acf0b215a038aad03d13d304a08e9d7b08fed5c9f22b7d2"
+    },
+    {
+      "role": "private_1392_h3_duplicate_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "0d6aabf6d0c2835c00ab4ffc064d8b362fd9e9d05ca553cf534fc22a08203e57"
+    },
+    {
+      "role": "private_1392_h3_raw_duration_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "83f5cf3946ef6ea31b9cc3a0e15818c410bb184ece3dbb2e4c8df98ef79f04dd"
+    },
+    {
+      "role": "private_1392_h3_orthogonal_duration_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "055190023440c3ee509f8c9dba32ccc4ec5681c6b10f9fdd1bf64ef6333106ac"
+    },
+    {
+      "role": "private_1392_h3_permuted_orthogonal_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 92528,
+      "sha256": "24a3ba4ea5868498d32f83926eaee6858a1a3e68321db28c6ced6715322663d3"
+    },
+    {
+      "role": "private_720_h12_native_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "0581a023b31506a497d6cb1ebc1f7b6219c925d860a7430c1287ddc520c6be0d"
+    },
+    {
+      "role": "private_720_h12_bias_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 184928,
+      "sha256": "6fae108135f7d43666f7574ab0ebfe693b01279d6074e451e2ab86c7ba8371fd"
+    },
+    {
+      "role": "private_720_h12_occupancy_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "54ea454237abd260238a7600eb12b144c19f2441870c513ffa2c23a8ad94e476"
+    },
+    {
+      "role": "private_720_h12_duplicate_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "650d3959e7b6af18d9e644691b05f01de9621977ce920725f37059c9e3086072"
+    },
+    {
+      "role": "private_720_h12_raw_duration_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "ab3d24fa90353914426505007f0201ab4fcd2f327ad94af0bd73f6ee9162fb0b"
+    },
+    {
+      "role": "private_720_h12_orthogonal_duration_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "7e5bc6d08f0d14e242096f60ac20897d8fc527accfa2ad63df05bfb2fba094d9"
+    },
+    {
+      "role": "private_720_h12_permuted_orthogonal_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "c6ed97899c85f7d2171f79e62c737cc57df988502d91af74345788628c7bd1be"
+    },
+    {
+      "role": "private_1056_h12_native_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "b3c8b26025da3f5f8c5a03adc278eca58be5d10687be9703bf72f3bd7659eb67"
+    },
+    {
+      "role": "private_1056_h12_bias_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 184928,
+      "sha256": "343c1c37f9056cc31e4fc31a296da2a1ab1d9c4d09de031de762cc1bf8dac35d"
+    },
+    {
+      "role": "private_1056_h12_occupancy_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "c201c045503394e1bef6cfa239f752723939225dd3b76a26b7f4017417b47a06"
+    },
+    {
+      "role": "private_1056_h12_duplicate_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "1f42fcbef4e3e5caac13c79f0f466f0b727cd0379e6d3c9f1e17577d6d0a1742"
+    },
+    {
+      "role": "private_1056_h12_raw_duration_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "b147b1c2d7f436158baf14cccd3e7feced77ee4f4bea908744a583ee1af2e23d"
+    },
+    {
+      "role": "private_1056_h12_orthogonal_duration_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "b54a4cd8d4813da1d1e1c824ea4adbd2311ef100d4991fddaf7ff4f175beaead"
+    },
+    {
+      "role": "private_1056_h12_permuted_orthogonal_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "60c58627c0b989efd1d81809803969f247fe0a7c0e70f400ea23464418e67a10"
+    },
+    {
+      "role": "private_1392_h12_native_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "e01540b22a04d814f798f6a65370bdf9db69b13d5a4494d81a58e24b06455796"
+    },
+    {
+      "role": "private_1392_h12_bias_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 184928,
+      "sha256": "292cbe4d8b054ce716c993379ff6e72cc981985f6e46d6878943a485e2c5b5bc"
+    },
+    {
+      "role": "private_1392_h12_occupancy_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "4516299d2b82ec8027f7adb7406fdfb2db7e097c534773edc0779df53040f81e"
+    },
+    {
+      "role": "private_1392_h12_duplicate_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "613a68e299eb07ed5ca9d26bf76d6f0ebe7202158b3c3559a685a15f71951171"
+    },
+    {
+      "role": "private_1392_h12_raw_duration_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "5454066d9836602a7f55a8b51a05bb9d4cc3893f7ee15a10b7955dcc18db2bb2"
+    },
+    {
+      "role": "private_1392_h12_orthogonal_duration_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "4cfc4350b740a0df8cf76cb98bc08e207e064d920a5512cbd753decb67a3c63e"
+    },
+    {
+      "role": "private_1392_h12_permuted_orthogonal_a1.npy",
+      "kind": "opaque_byte_hash",
+      "bytes": 369728,
+      "sha256": "1b7439d5a96c2c377ed98978e85a346e286525fb802da7eb6bee99b2c2bd24ff"
+    },
+    {
+      "role": "occupancy",
+      "kind": "opaque_prefix_hash",
+      "row_range": [
+        0,
+        1560
+      ],
+      "bytes": 4196871,
+      "sha256": "6aedb6cd676c9e2ed26f5c1d66fbef3d43694aa5f8bdb9d0164863a545b056ba"
+    },
+    {
+      "role": "duration",
+      "kind": "opaque_prefix_hash",
+      "row_range": [
+        0,
+        1560
+      ],
+      "bytes": 6459642,
+      "sha256": "8b43bafb7a4638941bd3409d3477db790e1a14b6316f2fd76358151bea067af7"
+    },
+    {
+      "role": "info",
+      "kind": "opaque_static_file_hash",
+      "bytes": 74446,
+      "sha256": "03c9830965e9e99b29adfb8cceed0eba98d37631f514273cb3fe61f80d63de7c"
+    },
+    {
+      "role": "occupancy",
+      "kind": "semantic_numeric_prefix",
+      "row_range": [
+        0,
+        1560
+      ],
+      "dtype": "float32",
+      "shape": [
+        1560,
+        275
+      ]
+    },
+    {
+      "role": "duration",
+      "kind": "semantic_numeric_prefix",
+      "row_range": [
+        0,
+        1560
+      ],
+      "dtype": "float64",
+      "shape": [
+        1560,
+        275
+      ]
+    },
+    {
+      "role": "info",
+      "kind": "static_capacity_parse",
+      "sha256": "03c9830965e9e99b29adfb8cceed0eba98d37631f514273cb3fe61f80d63de7c"
+    },
+    {
+      "role": "occupancy header",
+      "kind": "metadata_only",
+      "data_rows": 0
+    },
+    {
+      "role": "private_base_h3.npy",
+      "kind": "numeric_selected_cache_rows",
+      "origins": [
+        192,
+        204,
+        216,
+        228,
+        240,
+        252,
+        264,
+        276,
+        288,
+        300,
+        312,
+        324,
+        336,
+        348,
+        360,
+        372,
+        384,
+        396,
+        408,
+        420,
+        432,
+        444,
+        456,
+        468,
+        480,
+        492,
+        504,
+        516,
+        528,
+        540,
+        552,
+        564,
+        576,
+        588,
+        600,
+        612,
+        624,
+        636,
+        648,
+        660,
+        672,
+        684,
+        696,
+        708,
+        720,
+        732,
+        744,
+        756,
+        768,
+        780,
+        792,
+        804,
+        816,
+        828,
+        840,
+        852,
+        864,
+        876,
+        888,
+        900,
+        912,
+        924,
+        936,
+        948,
+        960,
+        972,
+        984,
+        996,
+        1008,
+        1020,
+        1032,
+        1044,
+        1056,
+        1068,
+        1080,
+        1092,
+        1104,
+        1116,
+        1128,
+        1140,
+        1152,
+        1164,
+        1176,
+        1188,
+        1200,
+        1212,
+        1224,
+        1236,
+        1248,
+        1260,
+        1272,
+        1284,
+        1296,
+        1308,
+        1320,
+        1332,
+        1344,
+        1356,
+        1368,
+        1380,
+        1392,
+        1404,
+        1416,
+        1428,
+        1440,
+        1452,
+        1464,
+        1476,
+        1488,
+        1500,
+        1512,
+        1524,
+        1536,
+        1548
+      ],
+      "last_target": 1550,
+      "shape": [
+        114,
+        3,
+        275
+      ],
+      "tail_numeric_rows_read": 0
+    },
+    {
+      "role": "private_base_h12.npy",
+      "kind": "numeric_selected_cache_rows",
+      "origins": [
+        192,
+        204,
+        216,
+        228,
+        240,
+        252,
+        264,
+        276,
+        288,
+        300,
+        312,
+        324,
+        336,
+        348,
+        360,
+        372,
+        384,
+        396,
+        408,
+        420,
+        432,
+        444,
+        456,
+        468,
+        480,
+        492,
+        504,
+        516,
+        528,
+        540,
+        552,
+        564,
+        576,
+        588,
+        600,
+        612,
+        624,
+        636,
+        648,
+        660,
+        672,
+        684,
+        696,
+        708,
+        720,
+        732,
+        744,
+        756,
+        768,
+        780,
+        792,
+        804,
+        816,
+        828,
+        840,
+        852,
+        864,
+        876,
+        888,
+        900,
+        912,
+        924,
+        936,
+        948,
+        960,
+        972,
+        984,
+        996,
+        1008,
+        1020,
+        1032,
+        1044,
+        1056,
+        1068,
+        1080,
+        1092,
+        1104,
+        1116,
+        1128,
+        1140,
+        1152,
+        1164,
+        1176,
+        1188,
+        1200,
+        1212,
+        1224,
+        1236,
+        1248,
+        1260,
+        1272,
+        1284,
+        1296,
+        1308,
+        1320,
+        1332,
+        1344,
+        1356,
+        1368,
+        1380,
+        1392,
+        1404,
+        1416,
+        1428,
+        1440,
+        1452,
+        1464,
+        1476,
+        1488,
+        1500,
+        1512,
+        1524,
+        1536,
+        1548
+      ],
+      "last_target": 1559,
+      "shape": [
+        114,
+        12,
+        275
+      ],
+      "tail_numeric_rows_read": 0
+    },
+    {
+      "role": "private_720_h3_native_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        720,
+        876
+      ],
+      "last_target": 878
+    },
+    {
+      "role": "private_720_h3_bias_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        720,
+        876
+      ],
+      "last_target": 878
+    },
+    {
+      "role": "private_720_h3_occupancy_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        720,
+        876
+      ],
+      "last_target": 878
+    },
+    {
+      "role": "private_720_h3_duplicate_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        720,
+        876
+      ],
+      "last_target": 878
+    },
+    {
+      "role": "private_720_h3_raw_duration_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        720,
+        876
+      ],
+      "last_target": 878
+    },
+    {
+      "role": "private_720_h3_orthogonal_duration_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        720,
+        876
+      ],
+      "last_target": 878
+    },
+    {
+      "role": "private_720_h3_permuted_orthogonal_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        720,
+        876
+      ],
+      "last_target": 878
+    },
+    {
+      "role": "private_1056_h3_native_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1056,
+        1212
+      ],
+      "last_target": 1214
+    },
+    {
+      "role": "private_1056_h3_bias_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1056,
+        1212
+      ],
+      "last_target": 1214
+    },
+    {
+      "role": "private_1056_h3_occupancy_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1056,
+        1212
+      ],
+      "last_target": 1214
+    },
+    {
+      "role": "private_1056_h3_duplicate_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1056,
+        1212
+      ],
+      "last_target": 1214
+    },
+    {
+      "role": "private_1056_h3_raw_duration_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1056,
+        1212
+      ],
+      "last_target": 1214
+    },
+    {
+      "role": "private_1056_h3_orthogonal_duration_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1056,
+        1212
+      ],
+      "last_target": 1214
+    },
+    {
+      "role": "private_1056_h3_permuted_orthogonal_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1056,
+        1212
+      ],
+      "last_target": 1214
+    },
+    {
+      "role": "private_1392_h3_native_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1392,
+        1548
+      ],
+      "last_target": 1550
+    },
+    {
+      "role": "private_1392_h3_bias_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1392,
+        1548
+      ],
+      "last_target": 1550
+    },
+    {
+      "role": "private_1392_h3_occupancy_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1392,
+        1548
+      ],
+      "last_target": 1550
+    },
+    {
+      "role": "private_1392_h3_duplicate_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1392,
+        1548
+      ],
+      "last_target": 1550
+    },
+    {
+      "role": "private_1392_h3_raw_duration_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1392,
+        1548
+      ],
+      "last_target": 1550
+    },
+    {
+      "role": "private_1392_h3_orthogonal_duration_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1392,
+        1548
+      ],
+      "last_target": 1550
+    },
+    {
+      "role": "private_1392_h3_permuted_orthogonal_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1392,
+        1548
+      ],
+      "last_target": 1550
+    },
+    {
+      "role": "private_720_h12_native_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        720,
+        876
+      ],
+      "last_target": 887
+    },
+    {
+      "role": "private_720_h12_bias_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        720,
+        876
+      ],
+      "last_target": 887
+    },
+    {
+      "role": "private_720_h12_occupancy_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        720,
+        876
+      ],
+      "last_target": 887
+    },
+    {
+      "role": "private_720_h12_duplicate_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        720,
+        876
+      ],
+      "last_target": 887
+    },
+    {
+      "role": "private_720_h12_raw_duration_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        720,
+        876
+      ],
+      "last_target": 887
+    },
+    {
+      "role": "private_720_h12_orthogonal_duration_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        720,
+        876
+      ],
+      "last_target": 887
+    },
+    {
+      "role": "private_720_h12_permuted_orthogonal_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        720,
+        876
+      ],
+      "last_target": 887
+    },
+    {
+      "role": "private_1056_h12_native_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1056,
+        1212
+      ],
+      "last_target": 1223
+    },
+    {
+      "role": "private_1056_h12_bias_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1056,
+        1212
+      ],
+      "last_target": 1223
+    },
+    {
+      "role": "private_1056_h12_occupancy_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1056,
+        1212
+      ],
+      "last_target": 1223
+    },
+    {
+      "role": "private_1056_h12_duplicate_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1056,
+        1212
+      ],
+      "last_target": 1223
+    },
+    {
+      "role": "private_1056_h12_raw_duration_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1056,
+        1212
+      ],
+      "last_target": 1223
+    },
+    {
+      "role": "private_1056_h12_orthogonal_duration_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1056,
+        1212
+      ],
+      "last_target": 1223
+    },
+    {
+      "role": "private_1056_h12_permuted_orthogonal_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1056,
+        1212
+      ],
+      "last_target": 1223
+    },
+    {
+      "role": "private_1392_h12_native_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1392,
+        1548
+      ],
+      "last_target": 1559
+    },
+    {
+      "role": "private_1392_h12_bias_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1392,
+        1548
+      ],
+      "last_target": 1559
+    },
+    {
+      "role": "private_1392_h12_occupancy_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1392,
+        1548
+      ],
+      "last_target": 1559
+    },
+    {
+      "role": "private_1392_h12_duplicate_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1392,
+        1548
+      ],
+      "last_target": 1559
+    },
+    {
+      "role": "private_1392_h12_raw_duration_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1392,
+        1548
+      ],
+      "last_target": 1559
+    },
+    {
+      "role": "private_1392_h12_orthogonal_duration_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1392,
+        1548
+      ],
+      "last_target": 1559
+    },
+    {
+      "role": "private_1392_h12_permuted_orthogonal_a1.npy",
+      "kind": "numeric_calibration_prediction_lineage",
+      "origin_range": [
+        1392,
+        1548
+      ],
+      "last_target": 1559
+    }
+  ],
+  "model_call_monitor": {
+    "foundation_constructor": 0,
+    "foundation_predict": 0
+  },
+  "automatic_stage_advance": false,
+  "new_foundation_inference": 0,
+  "semantic_row_stop": 1560,
+  "h6_h9_run": false,
+  "tail_scoring": false,
+  "third_fold_validation_opened": false,
+  "third_fold_test_opened": false,
+  "quota_reset_used": false,
+  "source": {
+    "prefix_sha256": "6aedb6cd676c9e2ed26f5c1d66fbef3d43694aa5f8bdb9d0164863a545b056ba",
+    "rows": 1560,
+    "channels": 275,
+    "column_order_sha256": "3924066ec0c48a6636ee1738baa902c2a11ce93992c3fb4f98c24df785dcc649"
+  },
+  "duration_source": {
+    "prefix_sha256": "8b43bafb7a4638941bd3409d3477db790e1a14b6316f2fd76358151bea067af7",
+    "rows": 1560,
+    "info_sha256": "03c9830965e9e99b29adfb8cceed0eba98d37631f514273cb3fe61f80d63de7c",
+    "endpoint_and_release_verified": false
+  },
+  "direction_lineage": [
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "native",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "bias",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "occupancy",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "duplicate",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "raw_duration",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "orthogonal_duration",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "permuted_orthogonal",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "native",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "bias",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "occupancy",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "duplicate",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "raw_duration",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "orthogonal_duration",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "permuted_orthogonal",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "native",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "bias",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "occupancy",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "duplicate",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "raw_duration",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "orthogonal_duration",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "permuted_orthogonal",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "native",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "bias",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "occupancy",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "duplicate",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "raw_duration",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "orthogonal_duration",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "permuted_orthogonal",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "native",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "bias",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "occupancy",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "duplicate",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "raw_duration",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "orthogonal_duration",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "permuted_orthogonal",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "native",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "bias",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "occupancy",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "duplicate",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "raw_duration",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "orthogonal_duration",
+      "v1_alpha1_exact_numeric_equal": true
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "permuted_orthogonal",
+      "v1_alpha1_exact_numeric_equal": true
+    }
+  ],
+  "status": "CALIBRATION_2H_INFORMATION_NO_GO",
+  "elapsed_seconds": 79.4277080000029
+}

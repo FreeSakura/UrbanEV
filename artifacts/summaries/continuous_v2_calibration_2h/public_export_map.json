@@ -1,0 +1,47 @@
+{
+  "files": [
+    {
+      "file": "calibration_2h.json",
+      "execution_sha256": "f562791b8a12103eaf722196faff89c2bd28e1bb61166bf73c6e68d3767ec6ab",
+      "public_sha256": "b655e84aed1885c7822715a033835f2b41624e752070d435e0debc1d02fbf504",
+      "transformation": "per-event trace removed; detailed real arrays/traces remain private"
+    },
+    {
+      "file": "gate_decision.json",
+      "execution_sha256": "fbb2be668743abcdaa06142f010674c4771f6256282a46c7acc8a68780304c56",
+      "public_sha256": "d88da99338ea3eda6052f06f488848846b75efbf2f77dd1142b112901f99276a",
+      "transformation": "content preserved with LF/trailing-space normalization"
+    },
+    {
+      "file": "execution_receipt.json",
+      "execution_sha256": "989683b381af7886cf065191a35e112cf03c6321d9136e4660d5fccc61705946",
+      "public_sha256": "cc89e8640b59b036c17206e96842d0e1a6a6933951ce1e3123246781be31878a",
+      "transformation": "content preserved with LF/trailing-space normalization"
+    },
+    {
+      "file": "calibration_cells.csv",
+      "execution_sha256": "eef1a653475926a76bb87b476b49b8d1bc547041e5efe141a00b3527dc0dc1fe",
+      "public_sha256": "2501d29960c6d65a2752a3c232d6bb335a2af46ed3192d12253f94aab2b2e608",
+      "transformation": "content preserved with LF/trailing-space normalization"
+    },
+    {
+      "file": "result_verification.json",
+      "execution_sha256": "f0c50d5e7bd94055de72b2dee5c993cb0b1dbf829885d64540025835c5ec4f78",
+      "public_sha256": "42029cf6e9216e476250d6a3ee257eba028aed54208265d91e39685a34e57cf0",
+      "transformation": "content preserved with LF/trailing-space normalization"
+    },
+    {
+      "file": "resource_observation.json",
+      "execution_sha256": "820bd241d1f56a1688449319f271d9e2f493593ca5b756e62ba4ad27e35a252a",
+      "public_sha256": "949e397099b66c12eb7d8054591372fa7d2aa5e6f74c8af158dd51c0e227e161",
+      "transformation": "content preserved with LF/trailing-space normalization"
+    },
+    {
+      "file": "preflight_tests.txt",
+      "execution_sha256": "51cd98966668d9dcd9d41b0333f189cca96e409e2e498c36aec645cf2c9d73b4",
+      "public_sha256": "8564200963c2e31755c8493041c0b7394c5be2a0f5a8ec4cd1da868d440a862d",
+      "transformation": "content preserved with LF/trailing-space normalization"
+    }
+  ],
+  "private_arrays_uploaded": false
+}

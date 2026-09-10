@@ -9,6 +9,8 @@
 
 ## 最新执行结果
 
+[连续步长V2两视野校准](docs/research/sota/CONTINUOUS_V2_CALIBRATION_2H_REPORT.md)已按限定授权实际执行一次：正交时长α≈0.09796，宏RMSE改善0.3896%，MAE不高于native，但低于1%信息门；结构门也未通过。全部计算有效，阶段为**CALIBRATION_2H_INFORMATION_NO_GO**。没有补H6/H9或打开尾部、第三折验证/测试。
+
 [连续步长V2阶段注册](docs/research/sota/CONTINUOUS_STEP_V2_REGISTRATION.md)已固定时间划分、七系统、主候选和推进门，并完成缓存与索引核验。当前等待求解器审查，尚未运行连续搜索、尾部评分或新增基础推理；原V1失败结论不变。
 
 [残差信息筛选报告](docs/research/sota/RESIDUAL_INFORMATION_REPORT.md)：更深的[理论推导](docs/research/sota/RESIDUAL_DERIVATION_PACKAGE.md)已转为实验，完成三个训练内滚动窗口。正交时长修正在α=0.5时RMSE改善1.48%，但MAE恶化1.28%；全部系统在注册网格下回退α=0，信息门与结构门均未通过。第三折验证段未打开。后验导数揭示更小步长可能有局部MAE改善，连续步长方案尚未运行，不改判旧门。
