@@ -1,13 +1,14 @@
 import copy
 import json
 import math
+from fractions import Fraction
 from pathlib import Path
 import numpy as np
 import pytest
 from urbanev_forecast import continuous_step as m
 
 ROOT=Path(__file__).resolve().parents[1]
-CFG=json.loads((ROOT/'configs/research/RESIDUAL_CONTINUOUS_STEP_V2_SOLVER.json').read_text())
+CFG=json.loads((ROOT/'configs/research/RESIDUAL_CONTINUOUS_STEP_V2_SOLVER_REPAIR.json').read_text())
 
 def cell(p,d,y,name='synthetic'):
     return {'id':name,'p':np.asarray(p,dtype=float),'delta':np.asarray(d,dtype=float),'y':np.asarray(y,dtype=float)}
@@ -73,9 +74,17 @@ def test_close_representable_events_are_not_merged():
     assert r['status'] in ('OK','NUMERICAL_BLOCKED')
     if r['status']=='OK':assert r['stats']['segments']==3
 
-def test_extreme_precision_case_blocks_explicitly():
+def test_subnormal_nonzero_direction_is_preserved_under_registered_tie_rule():
+    """Research adjudication: exact arithmetic resolves the old underflow limitation."""
     c=cell([0],[1e-320],[.5])
-    assert m.solve_continuous_alpha([c],CFG)['status']=='NUMERICAL_BLOCKED'
+    exact_delta=Fraction.from_float(float(c['delta'][0]))
+    exact_R0=Fraction(1,2);exact_R1=exact_R0-exact_delta
+    assert 0<exact_R0-exact_R1<Fraction(str(CFG['objective_tie_atol']))
+    r=m.solve_continuous_alpha([c],CFG)
+    assert r['status']=='OPTIMAL_ALPHA_ZERO' and r['alpha']==0
+    assert r['positive_feasible_exists']
+    assert r['exact_feasible_components']==[[{'kind':'rational','numerator':'0','denominator':'1'},{'kind':'rational','numerator':'1','denominator':'1'}]]
+    assert r['stats']['unresolved_segments']==r['stats']['boundary_comparisons_unresolved']==0
 
 def test_native_damage_constraint_and_tiny_mae_budget():
     cells=[cell([.5],[1],[.5],'zero_native'),cell([0],[1],[1],'other')]

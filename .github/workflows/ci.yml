@@ -36,6 +36,7 @@ jobs:
       - name: Unit, schema, citation, and privacy tests
         run: |
           pytest
+          python scripts/research/verify_continuous_step_synthetic.py --phase random --output local-data/ci-continuous-synthetic.json
           python scripts/privacy_audit.py --root . --git-history
           python scripts/build_model_source_manifest.py
           python scripts/build_manifest.py

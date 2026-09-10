@@ -1,0 +1,17 @@
+F
+================================== FAILURES ===================================
+________________ test_extreme_precision_case_blocks_explicitly ________________
+
+    def test_extreme_precision_case_blocks_explicitly():
+        c=cell([0],[1e-320],[.5])
+>       assert m.solve_continuous_alpha([c],CFG)['status']=='NUMERICAL_BLOCKED'
+E       AssertionError: assert 'OPTIMAL_ALPHA_ZERO' == 'NUMERICAL_BLOCKED'
+E         
+E         - NUMERICAL_BLOCKED
+E         + OPTIMAL_ALPHA_ZERO
+
+tests\test_continuous_step.py:78: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_continuous_step.py::test_extreme_precision_case_blocks_explicitly
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!
+1 failed in 0.87s

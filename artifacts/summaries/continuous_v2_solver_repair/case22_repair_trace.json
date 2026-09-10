@@ -1,0 +1,833 @@
+{
+  "status": "EXPECTED_FIXED_AND_REPRESENTATION_CASES_VERIFIED",
+  "results": {
+    "original": {
+      "status": "OK",
+      "alpha": 1.0,
+      "original_selected_alpha": 1.0,
+      "selected_exact_point": {
+        "kind": "rational",
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "positive_feasible_exists": true,
+      "feasible_components": [
+        [
+          0.0,
+          0.5
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "exact_feasible_components": [
+        [
+          {
+            "kind": "rational",
+            "numerator": "0",
+            "denominator": "1"
+          },
+          {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "2"
+          }
+        ],
+        [
+          {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "1"
+          },
+          {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "1"
+          }
+        ]
+      ],
+      "score": {
+        "status": "OK",
+        "alpha": 1.0,
+        "cells": [
+          {
+            "id": "original",
+            "n": 4,
+            "rmse": 0.3423265984407288,
+            "mae": 0.3125,
+            "data_fingerprint": "77062d803ab581f6d3bec50eb66100b0b0a2069906833ee68a154c541cbb4db4",
+            "mse": 0.1171875,
+            "raw_rmse": 0.7756046028744286,
+            "raw_mae": 0.75
+          }
+        ],
+        "macro": {
+          "rmse": 0.3423265984407288,
+          "mae": 0.3125
+        },
+        "aggregation": "equal cells"
+      },
+      "scan_direct_max_difference": 0.0,
+      "stats": {
+        "segments_total": 4,
+        "segments_classified": 4,
+        "certified_empty_segments": 0,
+        "feasible_intervals": 3,
+        "feasible_singletons": 1,
+        "unresolved_segments": 0,
+        "boundary_nodes_checked": 17,
+        "boundary_comparisons_unresolved": 0,
+        "event_continuity_failures": 0,
+        "event_groups_processed": 6,
+        "max_root_refinement_bits": 64,
+        "max_objective_refinement_bits": 64,
+        "max_exact_integer_bits": 34,
+        "full_array_direct_checks": 2,
+        "boundary_repairs": 0,
+        "interior_minimizations": 2,
+        "bisection_iterations": 76,
+        "replay_segments": 4,
+        "events": 3,
+        "exact_initialization_passes": 1,
+        "segments": 4
+      },
+      "segment_trace_prefix": [
+        {
+          "segment": 0,
+          "left": {
+            "kind": "rational",
+            "numerator": "0",
+            "denominator": "1"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "5"
+          },
+          "classification": "CERTIFIED_FEASIBLE_INTERVAL",
+          "left_feasible": true,
+          "right_feasible": true,
+          "empty_constraint_index": null,
+          "feasible": [
+            {
+              "kind": "rational",
+              "numerator": "0",
+              "denominator": "1"
+            },
+            {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "5"
+            }
+          ]
+        },
+        {
+          "segment": 1,
+          "left": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "5"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "2",
+            "denominator": "7"
+          },
+          "classification": "CERTIFIED_FEASIBLE_INTERVAL",
+          "left_feasible": true,
+          "right_feasible": true,
+          "empty_constraint_index": null,
+          "feasible": [
+            {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "5"
+            },
+            {
+              "kind": "rational",
+              "numerator": "2",
+              "denominator": "7"
+            }
+          ]
+        },
+        {
+          "segment": 2,
+          "left": {
+            "kind": "rational",
+            "numerator": "2",
+            "denominator": "7"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "4",
+            "denominator": "7"
+          },
+          "classification": "CERTIFIED_FEASIBLE_INTERVAL",
+          "left_feasible": true,
+          "right_feasible": false,
+          "empty_constraint_index": null,
+          "feasible": [
+            {
+              "kind": "rational",
+              "numerator": "2",
+              "denominator": "7"
+            },
+            {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "2"
+            }
+          ]
+        },
+        {
+          "segment": 3,
+          "left": {
+            "kind": "rational",
+            "numerator": "4",
+            "denominator": "7"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "classification": "CERTIFIED_FEASIBLE_SINGLETON",
+          "left_feasible": false,
+          "right_feasible": true,
+          "empty_constraint_index": null,
+          "feasible": [
+            {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "1"
+            },
+            {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "1"
+            }
+          ]
+        }
+      ],
+      "segment_ledger_sha256": "6d83c41c6f34c0aa8074954cf42a8fa161461195732ff183b9350f7840df2e4d",
+      "segment_trace_truncated": false,
+      "claim": "complete registered-domain exact feasibility classification and enclosed numerical candidate optimization; not an exact objective optimum certificate"
+    },
+    "ulp_toward_zero": {
+      "status": "OK",
+      "alpha": 0.38000000000049894,
+      "original_selected_alpha": 0.38000000000049894,
+      "selected_exact_point": {
+        "kind": "rational",
+        "numerator": "1234845189188788129698456535",
+        "denominator": "3249592603124123281739743232"
+      },
+      "positive_feasible_exists": true,
+      "feasible_components": [
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "exact_feasible_components": [
+        [
+          {
+            "kind": "rational",
+            "numerator": "0",
+            "denominator": "1"
+          },
+          {
+            "kind": "rational",
+            "numerator": "27021597764222976",
+            "denominator": "54043195528445953"
+          }
+        ]
+      ],
+      "score": {
+        "status": "OK",
+        "alpha": 0.38000000000049894,
+        "cells": [
+          {
+            "id": "ulp_toward_zero",
+            "n": 4,
+            "rmse": 0.35233595473638507,
+            "mae": 0.2900000000000935,
+            "data_fingerprint": "77062d803ab581f6d3bec50eb66100b0b0a2069906833ee68a154c541cbb4db4",
+            "mse": 0.12414062499999999,
+            "raw_rmse": 0.4436425926353058,
+            "raw_mae": 0.40125000000028066
+          }
+        ],
+        "macro": {
+          "rmse": 0.35233595473638507,
+          "mae": 0.2900000000000935
+        },
+        "aggregation": "equal cells"
+      },
+      "scan_direct_max_difference": 5.551115123125783e-17,
+      "stats": {
+        "segments_total": 4,
+        "segments_classified": 4,
+        "certified_empty_segments": 1,
+        "feasible_intervals": 3,
+        "feasible_singletons": 0,
+        "unresolved_segments": 0,
+        "boundary_nodes_checked": 15,
+        "boundary_comparisons_unresolved": 0,
+        "event_continuity_failures": 0,
+        "event_groups_processed": 5,
+        "max_root_refinement_bits": 64,
+        "max_objective_refinement_bits": 64,
+        "max_exact_integer_bits": 240,
+        "full_array_direct_checks": 3,
+        "boundary_repairs": 0,
+        "interior_minimizations": 2,
+        "bisection_iterations": 76,
+        "replay_segments": 3,
+        "events": 3,
+        "exact_initialization_passes": 1,
+        "segments": 4
+      },
+      "segment_trace_prefix": [
+        {
+          "segment": 0,
+          "left": {
+            "kind": "rational",
+            "numerator": "0",
+            "denominator": "1"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "5"
+          },
+          "classification": "CERTIFIED_FEASIBLE_INTERVAL",
+          "left_feasible": true,
+          "right_feasible": true,
+          "empty_constraint_index": null,
+          "feasible": [
+            {
+              "kind": "rational",
+              "numerator": "0",
+              "denominator": "1"
+            },
+            {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "5"
+            }
+          ]
+        },
+        {
+          "segment": 1,
+          "left": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "5"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "2",
+            "denominator": "7"
+          },
+          "classification": "CERTIFIED_FEASIBLE_INTERVAL",
+          "left_feasible": true,
+          "right_feasible": true,
+          "empty_constraint_index": null,
+          "feasible": [
+            {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "5"
+            },
+            {
+              "kind": "rational",
+              "numerator": "2",
+              "denominator": "7"
+            }
+          ]
+        },
+        {
+          "segment": 2,
+          "left": {
+            "kind": "rational",
+            "numerator": "2",
+            "denominator": "7"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "4",
+            "denominator": "7"
+          },
+          "classification": "CERTIFIED_FEASIBLE_INTERVAL",
+          "left_feasible": true,
+          "right_feasible": false,
+          "empty_constraint_index": null,
+          "feasible": [
+            {
+              "kind": "rational",
+              "numerator": "2",
+              "denominator": "7"
+            },
+            {
+              "kind": "rational",
+              "numerator": "27021597764222976",
+              "denominator": "54043195528445953"
+            }
+          ]
+        },
+        {
+          "segment": 3,
+          "left": {
+            "kind": "rational",
+            "numerator": "4",
+            "denominator": "7"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "classification": "CERTIFIED_EMPTY",
+          "left_feasible": false,
+          "right_feasible": false,
+          "empty_constraint_index": 0,
+          "feasible": null
+        }
+      ],
+      "segment_ledger_sha256": "1f1df738f336259d9acc670c2005d89d1d11b4fd7648897741ed0ab45c15bcb5",
+      "segment_trace_truncated": false,
+      "claim": "complete registered-domain exact feasibility classification and enclosed numerical candidate optimization; not an exact objective optimum certificate"
+    },
+    "ulp_away": {
+      "status": "NUMERICAL_BLOCKED",
+      "reason": "NO_REPRESENTABLE_SINGLE_REPAIR_INSIDE_COMPONENT",
+      "stats": {
+        "segments_total": 4,
+        "segments_classified": 4,
+        "certified_empty_segments": 0,
+        "feasible_intervals": 4,
+        "feasible_singletons": 0,
+        "unresolved_segments": 0,
+        "boundary_nodes_checked": 16,
+        "boundary_comparisons_unresolved": 0,
+        "event_continuity_failures": 0,
+        "event_groups_processed": 6,
+        "max_root_refinement_bits": 64,
+        "max_objective_refinement_bits": 64,
+        "max_exact_integer_bits": 236,
+        "full_array_direct_checks": 3,
+        "boundary_repairs": 0,
+        "interior_minimizations": 2,
+        "bisection_iterations": 76,
+        "replay_segments": 4,
+        "events": 3,
+        "exact_initialization_passes": 1,
+        "segments": 4
+      },
+      "exact_feasible_components": [
+        [
+          {
+            "kind": "rational",
+            "numerator": "0",
+            "denominator": "1"
+          },
+          {
+            "kind": "rational",
+            "numerator": "13510798882111488",
+            "denominator": "27021597764222975"
+          }
+        ],
+        [
+          {
+            "kind": "rational",
+            "numerator": "4503599627370496",
+            "denominator": "4503599627370497"
+          },
+          {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "1"
+          }
+        ]
+      ],
+      "segment_trace_prefix": [
+        {
+          "segment": 0,
+          "left": {
+            "kind": "rational",
+            "numerator": "0",
+            "denominator": "1"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "5"
+          },
+          "classification": "CERTIFIED_FEASIBLE_INTERVAL",
+          "left_feasible": true,
+          "right_feasible": true,
+          "empty_constraint_index": null,
+          "feasible": [
+            {
+              "kind": "rational",
+              "numerator": "0",
+              "denominator": "1"
+            },
+            {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "5"
+            }
+          ]
+        },
+        {
+          "segment": 1,
+          "left": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "5"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "2",
+            "denominator": "7"
+          },
+          "classification": "CERTIFIED_FEASIBLE_INTERVAL",
+          "left_feasible": true,
+          "right_feasible": true,
+          "empty_constraint_index": null,
+          "feasible": [
+            {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "5"
+            },
+            {
+              "kind": "rational",
+              "numerator": "2",
+              "denominator": "7"
+            }
+          ]
+        },
+        {
+          "segment": 2,
+          "left": {
+            "kind": "rational",
+            "numerator": "2",
+            "denominator": "7"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "4",
+            "denominator": "7"
+          },
+          "classification": "CERTIFIED_FEASIBLE_INTERVAL",
+          "left_feasible": true,
+          "right_feasible": false,
+          "empty_constraint_index": null,
+          "feasible": [
+            {
+              "kind": "rational",
+              "numerator": "2",
+              "denominator": "7"
+            },
+            {
+              "kind": "rational",
+              "numerator": "13510798882111488",
+              "denominator": "27021597764222975"
+            }
+          ]
+        },
+        {
+          "segment": 3,
+          "left": {
+            "kind": "rational",
+            "numerator": "4",
+            "denominator": "7"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "classification": "CERTIFIED_FEASIBLE_INTERVAL",
+          "left_feasible": false,
+          "right_feasible": true,
+          "empty_constraint_index": null,
+          "feasible": [
+            {
+              "kind": "rational",
+              "numerator": "4503599627370496",
+              "denominator": "4503599627370497"
+            },
+            {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "1"
+            }
+          ]
+        }
+      ],
+      "segment_ledger_sha256": "bb19cba9d040e71de201d2545a2b63142d0003c06355c0ec5cb1237646caff69",
+      "selected_exact_point": {
+        "kind": "rational",
+        "numerator": "4503599627370496",
+        "denominator": "4503599627370497"
+      }
+    },
+    "B_scaled": {
+      "status": "NUMERICAL_BLOCKED",
+      "reason": "UNREPRESENTABLE_SELECTED_SINGLETON",
+      "stats": {
+        "segments_total": 3,
+        "segments_classified": 3,
+        "certified_empty_segments": 0,
+        "feasible_intervals": 0,
+        "feasible_singletons": 3,
+        "unresolved_segments": 0,
+        "boundary_nodes_checked": 12,
+        "boundary_comparisons_unresolved": 0,
+        "event_continuity_failures": 0,
+        "event_groups_processed": 2,
+        "max_root_refinement_bits": 64,
+        "max_objective_refinement_bits": 0,
+        "max_exact_integer_bits": 31,
+        "full_array_direct_checks": 2,
+        "boundary_repairs": 0,
+        "interior_minimizations": 0,
+        "bisection_iterations": 0,
+        "replay_segments": 0,
+        "events": 3,
+        "exact_initialization_passes": 1,
+        "segments": 3
+      },
+      "exact_feasible_components": [
+        [
+          {
+            "kind": "rational",
+            "numerator": "0",
+            "denominator": "1"
+          },
+          {
+            "kind": "rational",
+            "numerator": "0",
+            "denominator": "1"
+          }
+        ],
+        [
+          {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "3"
+          },
+          {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "3"
+          }
+        ]
+      ],
+      "segment_trace_prefix": [
+        {
+          "segment": 0,
+          "left": {
+            "kind": "rational",
+            "numerator": "0",
+            "denominator": "1"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "12"
+          },
+          "classification": "CERTIFIED_FEASIBLE_SINGLETON",
+          "left_feasible": true,
+          "right_feasible": false,
+          "empty_constraint_index": null,
+          "feasible": [
+            {
+              "kind": "rational",
+              "numerator": "0",
+              "denominator": "1"
+            },
+            {
+              "kind": "rational",
+              "numerator": "0",
+              "denominator": "1"
+            }
+          ]
+        },
+        {
+          "segment": 1,
+          "left": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "12"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "3"
+          },
+          "classification": "CERTIFIED_FEASIBLE_SINGLETON",
+          "left_feasible": false,
+          "right_feasible": true,
+          "empty_constraint_index": null,
+          "feasible": [
+            {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "3"
+            },
+            {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "3"
+            }
+          ]
+        },
+        {
+          "segment": 2,
+          "left": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "3"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "classification": "CERTIFIED_FEASIBLE_SINGLETON",
+          "left_feasible": true,
+          "right_feasible": false,
+          "empty_constraint_index": null,
+          "feasible": [
+            {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "3"
+            },
+            {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "3"
+            }
+          ]
+        }
+      ],
+      "segment_ledger_sha256": "0088890a09b39e82a8dd280e885a72fdca42ccf55475df314924567572cbf6de",
+      "selected_exact_point": {
+        "kind": "rational",
+        "numerator": "1",
+        "denominator": "3"
+      }
+    }
+  },
+  "exact_mae_gaps_at_alpha1": {
+    "original": "0",
+    "ulp_toward_zero": "1/288230376151711744",
+    "ulp_away": "-1/144115188075855872"
+  },
+  "case22_global_trace": [
+    {
+      "left": {
+        "kind": "rational",
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "right": {
+        "kind": "rational",
+        "numerator": "1",
+        "denominator": "5"
+      },
+      "global_mse_coefficients": [
+        "75/256",
+        "-9/128",
+        "17/128"
+      ],
+      "global_mae_coefficients": [
+        "-3/32",
+        "5/16"
+      ],
+      "native_mae": "5/16"
+    },
+    {
+      "left": {
+        "kind": "rational",
+        "numerator": "1",
+        "denominator": "5"
+      },
+      "right": {
+        "kind": "rational",
+        "numerator": "2",
+        "denominator": "7"
+      },
+      "global_mse_coefficients": [
+        "25/128",
+        "-19/128",
+        "39/256"
+      ],
+      "global_mae_coefficients": [
+        "-1/4",
+        "11/32"
+      ],
+      "native_mae": "5/16"
+    },
+    {
+      "left": {
+        "kind": "rational",
+        "numerator": "2",
+        "denominator": "7"
+      },
+      "right": {
+        "kind": "rational",
+        "numerator": "4",
+        "denominator": "7"
+      },
+      "global_mse_coefficients": [
+        "25/128",
+        "-19/128",
+        "39/256"
+      ],
+      "global_mae_coefficients": [
+        "3/16",
+        "7/32"
+      ],
+      "native_mae": "5/16"
+    },
+    {
+      "left": {
+        "kind": "rational",
+        "numerator": "4",
+        "denominator": "7"
+      },
+      "right": {
+        "kind": "rational",
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "global_mse_coefficients": [
+        "1/256",
+        "-5/128",
+        "39/256"
+      ],
+      "global_mae_coefficients": [
+        "-1/32",
+        "11/32"
+      ],
+      "native_mae": "5/16"
+    }
+  ],
+  "narrow_interval_note": "Exact component retained; registered quarter-width float repair may be unrepresentable, returning explicit NUMERICAL_BLOCKED instead of choosing another alpha",
+  "observed_forbidden_call_counts": {
+    "builtin_open": 0,
+    "path_open": 0,
+    "numpy_load": 0,
+    "model_init": 0,
+    "gate_from_solver": 0
+  },
+  "real_data": false
+}

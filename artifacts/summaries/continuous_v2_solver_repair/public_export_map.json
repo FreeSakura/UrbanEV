@@ -1,0 +1,45 @@
+{
+  "files": [
+    {
+      "file": "solver_verification.json",
+      "execution_sha256": "882b478e3b73a88145e07317aa696c4d4282bd6755874c84762a700255a2965c",
+      "public_sha256": "46b9a01cf8ac4b22d39b67f7f72d3c48334f2af757ca465b189775a925fa6b9c"
+    },
+    {
+      "file": "boundary_predicate_verification.json",
+      "execution_sha256": "5837e73cb1a003a5a282db841440186efbbc178823b4c7ac39c7ceab184ca519",
+      "public_sha256": "490974413e4ddcd5767bf8447504ceddc8469274c9fad10af04f8d43b88d13eb"
+    },
+    {
+      "file": "case22_repair_trace.json",
+      "execution_sha256": "85f3d22bef4bba14c160a620a56c624fd80a837cfe08f659af599aec822adf64",
+      "public_sha256": "bf6ccd61a418ec478abb2f546f3c3d865b88b78727a33a7f1f0860a2d284a639"
+    },
+    {
+      "file": "test_log.txt",
+      "execution_sha256": "01458d1dd0dfd0238cbb523b075f149d9fe692a779519db6c9d0e7f25a4489d3",
+      "public_sha256": "7ee3e01d8452632b82ab9bbff207f324c8285ef58377358d6867dd6fdcb360c2"
+    },
+    {
+      "file": "old_assertion_failure.txt",
+      "execution_sha256": "1b93ee5d68edb743a9c782bbebdf4d7aac32d2e306b08be3cb22a90193fc0787",
+      "public_sha256": "a45150154914f1c1fa1cfb228071cc2dd46d66a2a4e19864099d57ebe480441b"
+    },
+    {
+      "file": "initial_narrow_interval_assertion_failure.txt",
+      "execution_sha256": "4244a17576772ee69e8c5a5e598350ddadca6495d28858ac6be10c2476ab90ec",
+      "public_sha256": "6e2ac53385224739c7ed5ea947fcb8d35e79285419ec068101d474242211343b"
+    },
+    {
+      "file": "scale_two_horizon.json",
+      "execution_sha256": "0d8c6ced88d7d7d6bf4c835cd11ddb564031d17c05a86199bcecdd2b68f10db6",
+      "public_sha256": "0933943494aac530d746b41905dd725976f9b09b92567e67619d94f65c0fa737"
+    },
+    {
+      "file": "scale_four_horizon.json",
+      "execution_sha256": "9d9403bda5d05ae453708920821418cc3bb6125322fe4653eb8b73422f8ad0b7",
+      "public_sha256": "093fa1f5fc5bb056e75a08206f6845a1aec4cb0e54a3155b64fed4f11aebec73"
+    }
+  ],
+  "note": "Same JSON content with LF-normalized public copies; synthetic records only"
+}

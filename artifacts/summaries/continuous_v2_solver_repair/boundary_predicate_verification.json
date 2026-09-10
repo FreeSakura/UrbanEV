@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "scope": "synthetic exact-boundary verification, not research performance",
+  "predicate_cases": {
+    "tangent": [
+      {
+        "kind": "rational",
+        "numerator": "1",
+        "denominator": "2"
+      },
+      {
+        "kind": "rational",
+        "numerator": "1",
+        "denominator": "2"
+      }
+    ],
+    "positive_perturbation": "CERTIFIED_EMPTY",
+    "negative_perturbation": [
+      {
+        "kind": "rational",
+        "numerator": "5357543035931336604742125245300009052807024058527668037218751941851755255624680612465991894078479290637973364587765734125935726428461570217992288787349287401967283887412115492710537302531185570938977091076523237491790970633699383779582771973038531457285598238843271083830214915826312193418602834034687",
+        "denominator": "10715086071862673209484250490600018105614048117055336074437503883703510511249361224931983788156958581275946729175531468251871452856923140435984577574698574803934567774824230985421074605062371141877954182153046474983581941267398767559165543946077062914571196477686542167660429831652624386837205668069376"
+      },
+      {
+        "kind": "rational",
+        "numerator": "5357543035931336604742125245300009052807024058527668037218751941851755255624680612465991894078479290637973364587765734125935726428461570217992288787349287401967283887412115492710537302531185570938977091076523237491790970633699383779582771973038531457285598238843271083830214915826312193418602834034689",
+        "denominator": "10715086071862673209484250490600018105614048117055336074437503883703510511249361224931983788156958581275946729175531468251871452856923140435984577574698574803934567774824230985421074605062371141877954182153046474983581941267398767559165543946077062914571196477686542167660429831652624386837205668069376"
+      }
+    ],
+    "same_root": "EQUAL",
+    "polynomial_at_own_root": "ZERO",
+    "different_close_roots": "UNRESOLVED_WITHIN_REGISTERED_BUDGET",
+    "refinement": {
+      "max_root_refinement_bits": 512,
+      "boundary_comparisons_unresolved": 1
+    }
+  },
+  "propagation_injection": {
+    "status": "NUMERICAL_BLOCKED",
+    "reason": "INJECTED_UNRESOLVED_BOUNDARY",
+    "stats": {
+      "segments_total": 1,
+      "segments_classified": 0,
+      "certified_empty_segments": 0,
+      "feasible_intervals": 0,
+      "feasible_singletons": 0,
+      "unresolved_segments": 1,
+      "boundary_nodes_checked": 2,
+      "boundary_comparisons_unresolved": 0,
+      "event_continuity_failures": 0,
+      "event_groups_processed": 0,
+      "max_root_refinement_bits": 0,
+      "max_objective_refinement_bits": 0,
+      "max_exact_integer_bits": 7,
+      "full_array_direct_checks": 2,
+      "boundary_repairs": 0,
+      "interior_minimizations": 0,
+      "bisection_iterations": 0,
+      "replay_segments": 0,
+      "events": 3,
+      "exact_initialization_passes": 1,
+      "segments": 1
+    },
+    "exact_feasible_components": [],
+    "segment_trace_prefix": [],
+    "segment_ledger_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "selected_exact_point": null
+  },
+  "observed_forbidden_call_counts": {
+    "builtin_open": 0,
+    "path_open": 0,
+    "numpy_load": 0,
+    "model_init": 0,
+    "gate_from_solver": 0
+  },
+  "real_calibration_run": false,
+  "tail_scoring": false,
+  "new_foundation_inference": false,
+  "third_fold_validation_opened": false,
+  "third_fold_test_opened": false,
+  "solver_code_review": "pending"
+}

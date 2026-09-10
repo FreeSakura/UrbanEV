@@ -1,0 +1,114 @@
+{
+  "repair_spec": "CONTINUOUS_STEP_V2_NUMERICAL_REPAIR_20260910",
+  "local_synthetic_verification": "PASS",
+  "research_code_review": "pending",
+  "publication_policy": "research branch only; stable main remains V2 registration until research acceptance",
+  "registration_sha256": "8dd48925ddc3da0716cb03df320c982c3e18af3c984557d7e28aa0ace836cace",
+  "solver_repair_config_sha256": "4cd0df3dd70a683c1747dcff4ecf2ffc9c0018d78f8327e27de3e2a86d656bdb",
+  "code_hashes": {
+    "src/urbanev_forecast/continuous_step.py": "daca95769ac9fbe7bb265f76220a84545989ede923df32b17c7893fc1ad6295c",
+    "src/urbanev_forecast/continuous_exact.py": "b994cc2af89d1bc5b34a9f6d276b84a2c0eb7ff683547ab7f6104f36e01fef1a",
+    "src/urbanev_forecast/continuous_boundaries.py": "74af9454b1de88e40b51dcb49372d746028e0bb4a3f29ea4048c3603579800ea",
+    "tests/continuous_step_reference.py": "8bfada979d862cdf3cc3c238452878056e8f2238164e6c66427e557344155cad",
+    "scripts/research/verify_continuous_step_synthetic.py": "7d711bf3a544837ce5e029b0a27373ecef4c289b016fd40b2f2d63a5c28e03e5",
+    "scripts/research/verify_continuous_exact_cases.py": "e4aac4f093867a0234a9ec009b134fc5430db989b3d0876a6a5119603dba131f"
+  },
+  "environment": {
+    "python": "3.10.8",
+    "numpy": "2.2.6",
+    "os": "Windows"
+  },
+  "commands": [
+    {
+      "command": "python -c \"import sys;sys.path.insert(0,'src');import pytest;raise SystemExit(pytest.main([]))\"",
+      "result": "94 passed in21.65s; preserved test_log.txt"
+    },
+    {
+      "command": "python scripts/research/verify_continuous_step_synthetic.py --phase random --output ../work/continuous-v2-solver-repair-20260910/solver_verification_random.json",
+      "result": "200/200 PASS from original seed and case0"
+    },
+    {
+      "command": "python scripts/research/verify_continuous_step_synthetic.py --phase scale2 --output ../work/continuous-v2-solver-repair-20260910/scale_two_horizon.json",
+      "result": "PASS"
+    },
+    {
+      "command": "python scripts/research/verify_continuous_step_synthetic.py --phase scale4 --output ../work/continuous-v2-solver-repair-20260910/scale_four_horizon.json",
+      "result": "PASS"
+    },
+    {
+      "command": "python scripts/research/verify_continuous_exact_cases.py --output-dir ../work/continuous-v2-solver-repair-20260910/boundary_checks",
+      "result": "PASS, including required explicit blockers"
+    }
+  ],
+  "runtime_monitor": {
+    "scope": "all production solve invocations; imports and report writes outside guarded region",
+    "random_observed_counts": {
+      "builtin_open": 0,
+      "path_open": 0,
+      "numpy_load": 0,
+      "model_init": 0,
+      "gate_from_solver": 0
+    },
+    "scale_observed_counts": [
+      {
+        "builtin_open": 0,
+        "path_open": 0,
+        "numpy_load": 0,
+        "model_init": 0,
+        "gate_from_solver": 0
+      },
+      {
+        "builtin_open": 0,
+        "path_open": 0,
+        "numpy_load": 0,
+        "model_init": 0,
+        "gate_from_solver": 0
+      }
+    ],
+    "synthetic_input_provenance": "literal analytic cases or default_rng(20260910) arrays created in the runner"
+  },
+  "test_semantics": {
+    "tiny_nonzero": "research adjudication authorizes OPTIMAL_ALPHA_ZERO; exact direction and tie bound verified; old failing log retained",
+    "ulp_away": "exact narrow component must be retained; prescribed single repair can be unrepresentable, producing explicit NUMERICAL_BLOCKED in this dedicated case; no random-case allowlist"
+  },
+  "integer_bit_telemetry_scope": "maximum explicitly observed input/contribution/global-coefficient/root-discriminant numerator or denominator size, not all Python Fraction internal temporary products",
+  "real_calibration_run": false,
+  "tail_scoring": false,
+  "new_foundation_inference": false,
+  "third_fold_validation_opened": false,
+  "third_fold_test_opened": false,
+  "solver_code_review": "pending",
+  "remote_ci": "not submitted at receipt creation; final status returned separately",
+  "quota_reset_used": false,
+  "execution_and_repository_text_hashes": {
+    "src/urbanev_forecast/continuous_step.py": {
+      "execution_sha256": "daca95769ac9fbe7bb265f76220a84545989ede923df32b17c7893fc1ad6295c",
+      "repository_LF_sha256": "daca95769ac9fbe7bb265f76220a84545989ede923df32b17c7893fc1ad6295c"
+    },
+    "src/urbanev_forecast/continuous_exact.py": {
+      "execution_sha256": "b994cc2af89d1bc5b34a9f6d276b84a2c0eb7ff683547ab7f6104f36e01fef1a",
+      "repository_LF_sha256": "b994cc2af89d1bc5b34a9f6d276b84a2c0eb7ff683547ab7f6104f36e01fef1a"
+    },
+    "src/urbanev_forecast/continuous_boundaries.py": {
+      "execution_sha256": "74af9454b1de88e40b51dcb49372d746028e0bb4a3f29ea4048c3603579800ea",
+      "repository_LF_sha256": "74af9454b1de88e40b51dcb49372d746028e0bb4a3f29ea4048c3603579800ea"
+    },
+    "tests/continuous_step_reference.py": {
+      "execution_sha256": "8bfada979d862cdf3cc3c238452878056e8f2238164e6c66427e557344155cad",
+      "repository_LF_sha256": "8bfada979d862cdf3cc3c238452878056e8f2238164e6c66427e557344155cad"
+    },
+    "scripts/research/verify_continuous_step_synthetic.py": {
+      "execution_sha256": "7d711bf3a544837ce5e029b0a27373ecef4c289b016fd40b2f2d63a5c28e03e5",
+      "repository_LF_sha256": "7d711bf3a544837ce5e029b0a27373ecef4c289b016fd40b2f2d63a5c28e03e5"
+    },
+    "scripts/research/verify_continuous_exact_cases.py": {
+      "execution_sha256": "e4aac4f093867a0234a9ec009b134fc5430db989b3d0876a6a5119603dba131f",
+      "repository_LF_sha256": "e4aac4f093867a0234a9ec009b134fc5430db989b3d0876a6a5119603dba131f"
+    },
+    "configs/research/RESIDUAL_CONTINUOUS_STEP_V2_SOLVER_REPAIR.json": {
+      "execution_sha256": "4cd0df3dd70a683c1747dcff4ecf2ffc9c0018d78f8327e27de3e2a86d656bdb",
+      "repository_LF_sha256": "d315b74af81c7039fe71aa2545502ddaddb41199227e1440ad8685afbd36aba8"
+    }
+  },
+  "text_hash_note": "Execution hashes retain original newline bytes; repository hashes follow git LF normalization. No numerical or parsed-config changes."
+}

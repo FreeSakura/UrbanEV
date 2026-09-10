@@ -1,0 +1,46 @@
+{
+  "spec_id": "CONTINUOUS_STEP_V2_SOLVER_SPEC_20260910",
+  "registration_file_sha256": "8dd48925ddc3da0716cb03df320c982c3e18af3c984557d7e28aa0ace836cace",
+  "registration_canonical_sha256": "05da76dfc3c91fb2e9e4804960ab62d29adc0f7bbd4acf724ac654b1efb860e9",
+  "overrides_to_registration_allowed": false,
+  "dtype": "float64",
+  "alpha_domain": [
+    0.0,
+    1.0
+  ],
+  "alpha_xtol": 1e-12,
+  "objective_search_atol": 1e-12,
+  "objective_tie_atol": 1e-12,
+  "max_bisection_iterations": 80,
+  "score_verification_atol": 1e-10,
+  "boundary_repair_max_alpha_change": 1e-10,
+  "boundary_repair_max_objective_increase": 1e-10,
+  "max_boundary_repairs": 1,
+  "native_cell_rmse_multiplier": 1.01,
+  "mae_scientific_degradation_budget": 0.0,
+  "selection_constraints": [
+    "alpha in[0,1]",
+    "macro MAE <= native",
+    "every cell RMSE <=1.01*native"
+  ],
+  "selection_objective": "equal-cell macro clipped RMSE",
+  "tie_rule": "global finite-candidate minimum then smallest alpha within1e-12 objective",
+  "real_calibration_run": false,
+  "tail_scoring": false,
+  "new_foundation_inference": false,
+  "third_fold_validation_opened": false,
+  "third_fold_test_opened": false,
+  "solver_code_review": "pending",
+  "scope": "implementation and synthetic verification only",
+  "repair_spec_id": "CONTINUOUS_STEP_V2_NUMERICAL_REPAIR_20260910",
+  "parent_solver_config_sha256": "c696421c537203cd185555c443339acf0bb9ecc83a51eed8dd03379977c9408c",
+  "root_refinement_bits": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "constraint_semantics": "exact binary-rational input, exact global coefficients and certified rational/quadratic boundaries",
+  "max_full_array_direct_checks": 8,
+  "integer_bit_cost": "measured separately from arithmetic operation counts"
+}

@@ -51,11 +51,13 @@ def peak_rss():
 def main():
     p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--phase',choices=['random','scale2','scale4'],default='random');a=p.parse_args()
     if a.output.exists():raise FileExistsError('Use fresh output')
-    config_path=ROOT/'configs/research/RESIDUAL_CONTINUOUS_STEP_V2_SOLVER.json'
+    config_path=ROOT/'configs/research/RESIDUAL_CONTINUOUS_STEP_V2_SOLVER_REPAIR.json'
     config=json.loads(config_path.read_text());rng=np.random.default_rng(20260910)
     monitoring={name:0 for name in ('builtin_open','path_open','numpy_load','model_init','gate_from_solver')}
     report={'phase':a.phase,'seed':20260910,'scope':'synthetic arrays only','config_sha256':hashlib.sha256(config_path.read_bytes()).hexdigest(),
             'production_sha256':hashlib.sha256((ROOT/'src/urbanev_forecast/continuous_step.py').read_bytes()).hexdigest(),
+            'exact_engine_sha256':hashlib.sha256((ROOT/'src/urbanev_forecast/continuous_exact.py').read_bytes()).hexdigest(),
+            'boundary_module_sha256':hashlib.sha256((ROOT/'src/urbanev_forecast/continuous_boundaries.py').read_bytes()).hexdigest(),
             'reference_sha256':hashlib.sha256((ROOT/'tests/continuous_step_reference.py').read_bytes()).hexdigest(),
             'monitor_scope':'all production solve invocations; imports and report writes outside guarded region',
             'observed_forbidden_call_counts':monitoring,'real_calibration_run':False,'tail_scoring':False,'new_foundation_inference':False,
@@ -82,12 +84,13 @@ def main():
                     row.update(passed=False,reason='Required ordinary randomized case blocked; needs research/code review')
                 else:
                     component_count=len(actual['feasible_components'])==len(ref['components'])
+                    exact_components_equal=actual['exact_feasible_components']==ref['exact_components']
                     endpoint_error=max((abs(x-y) for pair,rpair in zip(actual['feasible_components'],ref['components']) for x,y in zip(pair,rpair)),default=0.) if component_count else None
                     objective_error=abs(actual['score']['macro']['rmse']-ref['objective'])
                     native=production.score_fixed_alpha(cells,0)
                     violation=max([actual['score']['macro']['mae']-native['macro']['mae']]+[c['rmse']-1.01*n['rmse'] for c,n in zip(actual['score']['cells'],native['cells'])])
-                    passed=component_count and endpoint_error<=1e-10 and objective_error<=1e-10 and violation<=0
-                    row.update(passed=bool(passed),component_count_equal=component_count,endpoint_max_abs_error=endpoint_error,objective_abs_error=objective_error,final_direct_constraint_violation=violation)
+                    passed=component_count and exact_components_equal and endpoint_error<=1e-10 and objective_error<=1e-10 and violation<=0
+                    row.update(passed=bool(passed),component_count_equal=component_count,exact_components_equal=exact_components_equal,endpoint_max_abs_error=endpoint_error,objective_abs_error=objective_error,final_direct_constraint_violation=violation)
                 rows.append(row)
                 if not row['passed']:
                     row['reproducible_synthetic_inputs']=[{k:(v.tolist() if isinstance(v,np.ndarray) else v) for k,v in c.items()} for c in cells]
@@ -108,7 +111,7 @@ def main():
         failed=result['status'] in ('INPUT_BLOCKED','NUMERICAL_BLOCKED')
         report.update(sample_count=sum(c['p'].size for c in cells),cell_count=len(cells),result=result,
                       process_peak_rss_bytes=peak_rss(),memory_scope='fresh runner process peak resident/working-set memory including imports and synthetic input creation',
-                      scan_counter_definition='logical initialization/event/scoring phases, not individual NumPy ufunc traversals; event replay has no per-event full sample scoring',
+                      scan_counter_definition='full_array_direct_checks counts direct scorer calls; exact event replays update only affected samples; integer bit cost reported separately',
                       verification_status='FAILED_STOPPED' if failed else 'PASS')
     report['elapsed_seconds']=time.perf_counter()-start
     a.output.parent.mkdir(parents=True,exist_ok=True);a.output.write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
