@@ -1,0 +1,63 @@
+{
+  "status": "POST_HOC_DERIVATIVE_DIAGNOSTIC",
+  "rows": [
+    {
+      "cut": 720,
+      "horizon": 3,
+      "clipped_mae_right_derivative": 0.00027420918019823294,
+      "finite_difference_epsilon": 1e-07,
+      "finite_difference": 0.0002742091970153737,
+      "derivative_absolute_difference": 1.6817140778904727e-11,
+      "raw_prediction_outside_unit_fraction": 0.0030303030303030303
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "clipped_mae_right_derivative": -8.518016849229941e-05,
+      "finite_difference_epsilon": 1e-07,
+      "finite_difference": -8.51801962298282e-05,
+      "derivative_absolute_difference": 2.7737528785864822e-11,
+      "raw_prediction_outside_unit_fraction": 0.0021645021645021645
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "clipped_mae_right_derivative": 7.3013980064607375e-06,
+      "finite_difference_epsilon": 1e-07,
+      "finite_difference": 7.301451110386381e-06,
+      "derivative_absolute_difference": 5.310392564357067e-11,
+      "raw_prediction_outside_unit_fraction": 0.015324675324675324
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "clipped_mae_right_derivative": -0.0008846707234903263,
+      "finite_difference_epsilon": 1e-07,
+      "finite_difference": -0.000884670600664883,
+      "derivative_absolute_difference": 1.2282544328400674e-10,
+      "raw_prediction_outside_unit_fraction": 0.0014935064935064936
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "clipped_mae_right_derivative": -0.0013906054202811287,
+      "finite_difference_epsilon": 1e-07,
+      "finite_difference": -0.0013906054086021413,
+      "derivative_absolute_difference": 1.1678987421256948e-11,
+      "raw_prediction_outside_unit_fraction": 0.0010606060606060607
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "clipped_mae_right_derivative": -0.0005036334712972927,
+      "finite_difference_epsilon": 1e-07,
+      "finite_difference": -0.0005036334543850884,
+      "derivative_absolute_difference": 1.691220427590956e-11,
+      "raw_prediction_outside_unit_fraction": 0.010822510822510822
+    }
+  ],
+  "macro_clipped_mae_right_derivative": -0.0004304298675593922,
+  "no_new_alpha_selection": true,
+  "registered_gate_unchanged": true,
+  "script_sha256": "e1ed454ad2238c5caac2a89e610270ea0bce0f046ecf89021957b58b25bdcdb7"
+}

@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "public_file": "screen.json",
+      "execution_sha256": "ad19e2d866b3400465990b697395357282e924d125124c0fa68ad7d48dce6644",
+      "public_sha256": "a4a63f194577df5d233ca2b4e8cf684bee935774aa7378b3ea5651eb78c0c5d9",
+      "canonical_json_sha256": "9b8778762e1510ba2e084e36366b2d9657be11cf81fcd9d01ee2471935d91a3d"
+    },
+    {
+      "public_file": "geometry.json",
+      "execution_sha256": "b54fcb9fa6106427179b6b0cdba4f18f6616dacb47e6bb33a5f3dfcb75342643",
+      "public_sha256": "fcdbef3eb1bd152b4a446e5cbe21d677443a74d3e8bfcde92535574949727ca5",
+      "canonical_json_sha256": "2bb0f1154b9cfa3282b71f212387514bee42e70357ee4c06536c47fb35b10983"
+    },
+    {
+      "public_file": "clipping_geometry.json",
+      "execution_sha256": "c4bad938aed92be1e8bfa306569267414438b5c26a97b0dddf9b23ad5dadeef9",
+      "public_sha256": "c368865099def3f0efa60c237173d8a1ed3c9df9e06846cfd2993fb3a7e4ce6f",
+      "canonical_json_sha256": "336c5eb122646a4e05ce9dbac007f5cf3b4831fdf8d93efdf13d3451f89a88d1"
+    },
+    {
+      "public_file": "test_log.txt",
+      "execution_sha256": "71865a17de9469e144f64caaadfab6a32f1d0082c397d357d099b3cd525b648b",
+      "public_sha256": "7d0d297d0cee4829b59e5098f3bfc2a02eaf728d784ee2ef3d4eecf90aefac99"
+    }
+  ],
+  "note": "Normalized public JSON, identical parsed content; execution hashes preserve original newlines"
+}

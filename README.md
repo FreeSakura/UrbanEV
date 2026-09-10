@@ -9,6 +9,8 @@
 
 ## 最新执行结果
 
+[残差信息筛选报告](docs/research/sota/RESIDUAL_INFORMATION_REPORT.md)：更深的[理论推导](docs/research/sota/RESIDUAL_DERIVATION_PACKAGE.md)已转为实验，完成三个训练内滚动窗口。正交时长修正在α=0.5时RMSE改善1.48%，但MAE恶化1.28%；全部系统在注册网格下回退α=0，信息门与结构门均未通过。第三折验证段未打开。后验导数揭示更小步长可能有局部MAE改善，连续步长方案尚未运行，不改判旧门。
+
 [第二折信息线索复核](docs/research/sota/SIGNAL_REPLICATION_REPORT.md)：简单相关分组未复现首折增益，RMSE比全区域Chronos差0.42%。滞后时长在ridge中改善1.86%，但直接添加至Chronos仅改善0.082%，未过1%门；两类预测器联合复现未成立。下一研究问题转向时长对基础模型残差的可预测性，尚未运行新候选。
 
 [双方向试验报告](docs/research/sota/DUAL_DIRECTION_PILOT_REPORT.md)：区域残差引导交换未通过，RMSE比最佳相关分组对照差1.73%；观测算子的额外优势也未成立。追加优化后，直接加入滞后时长相对占用输入的RMSE/MAE下降2.86%/3.54%，仅保留为开发线索。原始门、后验诊断和失败原因分别保留，尚无独立确认或SOTA结果。
@@ -17,7 +19,7 @@
 
 ## 最新选题判断（2026-09-10）
 
-[文献与研究方向报告](docs/research/sota/RESEARCH_DIRECTIONS_20260910.md)提出的两个方向均已完成首折试验及第二折信息复核。当前只保留ridge中的滞后时长开发线索；简单相关分组和直接增广Chronos未建立稳定优势。已有失败门保持不变。
+[文献与研究方向报告](docs/research/sota/RESEARCH_DIRECTIONS_20260910.md)提出的两个方向已完成首折试验、第二折信息复核及残差修正训练内筛选。当前难点是把RMSE收益转化为满足MAE约束的可外推改进；已有失败门保持不变。
 
 ## 当前研究主线
 

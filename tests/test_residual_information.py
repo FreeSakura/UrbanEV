@@ -2,6 +2,7 @@ import importlib.util
 import sys
 from pathlib import Path
 import numpy as np
+import pytest
 
 
 def module():
@@ -43,3 +44,16 @@ def test_risk_identity_and_ridge_perturbation_are_exact():
     gain=lambda v:np.mean(e**2)-np.mean((e-z@v)**2)
     np.testing.assert_allclose(gain(w),2*w@c-w@sigma@w,atol=1e-14)
     np.testing.assert_allclose(gain(w+u),gain(w)+2*lam*u@w-u@sigma@u,atol=1e-14)
+
+
+def test_failed_gate_blocks_confirmation_before_reading_data(tmp_path,monkeypatch):
+    m=module();screen=tmp_path/'screen';screen.mkdir()
+    (screen/'result.json').write_text('{"information_gate": false}')
+    args=['residual_information.py','--stage','confirm','--screen',str(screen)]
+    for name in ('csv','duration','info','model-dir'):
+        args += ['--'+name,str(tmp_path/'nonexistent')]
+    args += ['--output',str(tmp_path/'out')]
+    monkeypatch.setattr(sys,'argv',args)
+    with pytest.raises(ValueError,match='Confirmation not admitted'):
+        m.main()
+    assert not (tmp_path/'out').exists()

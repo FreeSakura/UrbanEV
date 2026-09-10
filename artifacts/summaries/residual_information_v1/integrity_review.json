@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-10",
+  "review_type": "independent Codex theory and experiment review with prediction recomputation",
+  "integrity_verdict": "PASS",
+  "closure_verdict": "PASS",
+  "scientific_decision": "NO_GO",
+  "final_review_sha256": "4fea8f135f7c2f58fd166ec4d2648a7d1232df08ba42134942d0885e9af97706",
+  "closure_review_sha256": "36bc82e9da87a0bde419f16d2ccc926e64ae6b4c64ed1ca6813e8ef4d756ed19",
+  "test_execution_log_sha256": "71865a17de9469e144f64caaadfab6a32f1d0082c397d357d099b3cd525b648b",
+  "tests_passed": 63,
+  "checks": {
+    "real_ground_truth_and_prefix": "PASS",
+    "prediction_existence_and_hashes": "PASS",
+    "metrics_and_alpha_selection": "PASS within floating-point precision",
+    "information_and_mechanism_gates": "both false",
+    "theory_assumptions_and_identities": "coherent under stated assumptions",
+    "OLS_vs_conditional_innovation_and_DML": "distinction preserved",
+    "posthoc_derivative_and_continuous_step_scope": "PASS, not an executed candidate",
+    "confirmation_read_guard": "PASS, blocks before validation file read",
+    "public_claim_and_test_log_closure": "PASS"
+  },
+  "recomputed_record_metric_max_absolute_difference": 1.71e-10,
+  "recomputed_selection_metric_max_absolute_difference": 9.53e-11,
+  "stage_two_admitted": false,
+  "third_fold_validation_loaded": false,
+  "third_fold_test_loaded": false,
+  "earlier_fold_test_enters_training": true,
+  "sota_claim": false
+}
