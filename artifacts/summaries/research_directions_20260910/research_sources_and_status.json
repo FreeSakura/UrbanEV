@@ -84,6 +84,27 @@
       "status": "unverified",
       "pipeline_reason": "verify_papers.py helper unavailable",
       "independent_metadata_status": "official arXiv page inspected"
+    },
+    {
+      "arxiv_id": "2404.01340",
+      "title": "From Similarity to Superiority: Channel Clustering for Time Series Forecasting",
+      "status": "unverified",
+      "pipeline_reason": "verify_papers.py helper unavailable",
+      "independent_metadata_status": "official arXiv content inspected; CCM venue also confirmed by NeurIPS source"
+    },
+    {
+      "arxiv_id": "2412.10859",
+      "title": "DUET: Dual Clustering Enhanced Multivariate Time Series Forecasting",
+      "status": "unverified",
+      "pipeline_reason": "verify_papers.py helper unavailable",
+      "independent_metadata_status": "official arXiv content inspected; CCM venue also confirmed by NeurIPS source"
+    },
+    {
+      "arxiv_id": "2501.13041",
+      "title": "TimeFilter: Patch-Specific Spatial-Temporal Graph Filtration for Time Series Forecasting",
+      "status": "unverified",
+      "pipeline_reason": "verify_papers.py helper unavailable",
+      "independent_metadata_status": "official arXiv content inspected; CCM venue also confirmed by NeurIPS source"
     }
   ],
   "excluded_homonym": "MATSim UrbanEV simulation extension is not the Shenzhen UrbanEV dataset",
@@ -93,7 +114,8 @@
     {
       "rank": 1,
       "name": "Budgeted regional context selection for frozen foundation models",
-      "status": "proposal; forecast gain untested"
+      "status": "proposal; forecast gain untested",
+      "novelty_risk": "medium-high: CCM, DUET and TimeFilter are direct conceptual prior work; grouping alone is not novel"
     },
     {
       "rank": 2,

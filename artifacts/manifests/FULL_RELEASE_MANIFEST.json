@@ -57,7 +57,7 @@
     },
     {
       "path": "artifacts/manifest.json",
-      "sha256": "b099dac57032c9311942cc77e314466a6199b7ce745741ed89eaf623d51de139",
+      "sha256": "d7db9232976a6546951baf4dbc8a7d615921e5090b53967cc8e146ad152f3f33",
       "bytes": 33661,
       "role": "artifacts",
       "origin": "UrbanEV evidence-audit project",
@@ -66,7 +66,7 @@
     },
     {
       "path": "artifacts/manifests/EVIDENCE_ARTIFACT_MANIFEST.json",
-      "sha256": "b099dac57032c9311942cc77e314466a6199b7ce745741ed89eaf623d51de139",
+      "sha256": "d7db9232976a6546951baf4dbc8a7d615921e5090b53967cc8e146ad152f3f33",
       "bytes": 33661,
       "role": "artifacts",
       "origin": "UrbanEV evidence-audit project",
@@ -552,8 +552,8 @@
     },
     {
       "path": "artifacts/summaries/research_directions_20260910/research_sources_and_status.json",
-      "sha256": "41dd5d8eb9649d4d35d585a94cdc21639d26f7604e28d4f3038e13a2ef9aae03",
-      "bytes": 4547,
+      "sha256": "ef07640e498fd77aabb3ad4a4c0aee6856fc3bea6623d6edb9ff963827164899",
+      "bytes": 5727,
       "role": "evidence_summary",
       "origin": "frozen project artifact; publicly sanitized",
       "license": "CC-BY-4.0",
@@ -939,8 +939,8 @@
     },
     {
       "path": "docs/research/sota/RESEARCH_DIRECTIONS_20260910.md",
-      "sha256": "0106f5bd816ca0683b9905e78505897481aaa5b1bd928a8daec04613e383037c",
-      "bytes": 13160,
+      "sha256": "7e741a2f0dfbdda751f80fc9e6515ec3a486b17370fad830bd39295939a04e2b",
+      "bytes": 14370,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",

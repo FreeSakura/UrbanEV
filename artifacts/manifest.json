@@ -417,8 +417,8 @@
     },
     {
       "path": "artifacts/summaries/research_directions_20260910/research_sources_and_status.json",
-      "sha256": "41dd5d8eb9649d4d35d585a94cdc21639d26f7604e28d4f3038e13a2ef9aae03",
-      "bytes": 4547,
+      "sha256": "ef07640e498fd77aabb3ad4a4c0aee6856fc3bea6623d6edb9ff963827164899",
+      "bytes": 5727,
       "role": "evidence_summary",
       "origin": "frozen project artifact; publicly sanitized",
       "license": "CC-BY-4.0",
