@@ -117,10 +117,11 @@ def validate_solver_registration(registration,solver_config):
     return actual==REGISTRATION_SHA==solver_config.get('registration_canonical_sha256')
 
 
-def authorize_real_calibration(registration,solver_config):
-    """Read-only admission check; no runtime path to private data is implemented."""
+def authorize_real_calibration(registration,solver_config,*,authorization=None,stage=None,run_manifest=None,observed_identity=None,prior_statuses=None):
+    """Explicit accepted-code and stage-bound admission; absent evidence stays closed."""
     if not validate_solver_registration(registration,solver_config):return {'status':'INPUT_BLOCKED','reason':'Registration changed'}
-    return {'status':'NOT_AUTHORIZED','reason':'Synthetic implementation only; explicit research code acceptance pending'}
+    from .continuous_calibration_2h import authorize_stage
+    return authorize_stage(registration,solver_config,authorization,stage,run_manifest,observed_identity,prior_statuses)
 
 
 def evaluate_registered_gates(system_scores,selected_alphas,registration):

@@ -1,0 +1,52 @@
+{
+  "authorization_id": "CONTINUOUS_V2_CALIBRATION_2H_AUTH_20260910",
+  "solver_code_review": "ACCEPTED",
+  "accepted_solver_commit": "e7deb7754efea619e540dccdc810b5c3ebdd7e38",
+  "solver_config_path": "configs/research/RESIDUAL_CONTINUOUS_STEP_V2_CANDIDATE_REPAIR_ROUNDING.json",
+  "solver_config_sha256": "6c905dc4c4f7a98376d13277f6dba4ca13da027ffe9de31e7ff8f774345cf9ca",
+  "solver_config_canonical_sha256": "d840dca653ed26806604508a88e7ebb1d76f60b008cdd083676ecf57b46047b9",
+  "authorized_stage": "calibrate_h3_h12",
+  "horizons": [
+    3,
+    12
+  ],
+  "maximum_semantic_row_stop": 1560,
+  "authorized_new_foundation_inference": 0,
+  "automatic_stage_advance": false,
+  "max_executions": 1,
+  "accepted_code_identity": {
+    "src/urbanev_forecast/continuous_exact.py": "bedc6258ba416a6b9dc5363653628cf54209958aae65beebd9aa5b826d4a2da3",
+    "src/urbanev_forecast/continuous_boundaries.py": "74af9454b1de88e40b51dcb49372d746028e0bb4a3f29ea4048c3603579800ea",
+    "src/urbanev_forecast/continuous_candidates.py": "5b0a8998ed1a9a0d0ae3a1c04d69d04ea1052bf6314c1854e2187c4dea14e934",
+    "src/urbanev_forecast/data.py": "211672b5be9d69be106569828d8105e45620d718f1929d995d0eff227ff8f80d",
+    "src/urbanev_forecast/foundation.py": "afa95a76d118d399ceeb7717902a5f9047966fdf0c633e8145f2d9e13afe900b",
+    "scripts/research/residual_information.py": "fd3f37c0997ab6aed814f8f49cb86c011664422ee6eaaa0d2cf1156ead08c2bf",
+    "scripts/research/replicate_signals.py": "e051d645d6c06f15152b9cf987d07acdb36008f6d6e28b84760b283aaefe130f",
+    "continuous_step_except_authorizer_AST": "da3bc3856e8ce2f2c0906d7c23e5d05997f44303ce5bc87016628af4d63978b7"
+  },
+  "required_systems": [
+    "native",
+    "bias",
+    "occupancy",
+    "duplicate",
+    "raw_duration",
+    "orthogonal_duration",
+    "permuted_orthogonal"
+  ],
+  "closed_ranges": [
+    [
+      1560,
+      1747
+    ],
+    [
+      1747,
+      1966
+    ],
+    [
+      1966,
+      2184
+    ]
+  ],
+  "paris_access": false,
+  "quota_reset_authorized": false
+}
