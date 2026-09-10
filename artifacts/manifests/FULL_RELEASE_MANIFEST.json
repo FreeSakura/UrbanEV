@@ -939,8 +939,8 @@
     },
     {
       "path": "docs/research/sota/RESEARCH_DIRECTIONS_20260910.md",
-      "sha256": "7e741a2f0dfbdda751f80fc9e6515ec3a486b17370fad830bd39295939a04e2b",
-      "bytes": 14370,
+      "sha256": "73cc2c0d45fb714285a7c1ed48beba743181908a9b55c2fa7dd2693f099bbd16",
+      "bytes": 15317,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
