@@ -1,0 +1,1990 @@
+{
+  "phase": "random",
+  "seed": 20260910,
+  "scope": "synthetic arrays only",
+  "config_sha256": "c696421c537203cd185555c443339acf0bb9ecc83a51eed8dd03379977c9408c",
+  "production_sha256": "2afa6ac05adf54c5dfe8455a26c1182517921d09550cd226b76483aa93d76cbd",
+  "reference_sha256": "d1818e40e054baafd451d513d42de2e9a21834fdf75f098d4f3be2693b102361",
+  "monitor_scope": "all production solve invocations; imports and report writes outside guarded region",
+  "observed_forbidden_call_counts": {
+    "builtin_open": 0,
+    "path_open": 0,
+    "numpy_load": 0,
+    "model_init": 0,
+    "gate_from_solver": 0
+  },
+  "real_calibration_run": false,
+  "tail_scoring": false,
+  "new_foundation_inference": false,
+  "third_fold_validation_opened": false,
+  "third_fold_test_opened": false,
+  "solver_code_review": "pending",
+  "environment": {
+    "python": "3.10.8",
+    "numpy": "2.2.6",
+    "platform": "Windows"
+  },
+  "fixed_cases": [
+    {
+      "case": "A",
+      "passed": true,
+      "production": {
+        "status": "OK",
+        "alpha": 1.0,
+        "original_selected_alpha": 1.0,
+        "positive_feasible_exists": true,
+        "feasible_components": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            1.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 1.0,
+          "cells": [
+            {
+              "id": "A",
+              "n": 2,
+              "rmse": 0.3644344934278313,
+              "mae": 0.3125,
+              "data_fingerprint": "1a7dbfa5229cb5d267f67c83cd38c23788b7932c87c5a9eb3adaa2b77095bc75",
+              "mse": 0.1328125,
+              "raw_rmse": 0.7905694150420949,
+              "raw_mae": 0.75
+            }
+          ],
+          "macro": {
+            "rmse": 0.3644344934278313,
+            "mae": 0.3125
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.3644344934278313,
+        "stats": {
+          "events": 1,
+          "segments": 2,
+          "candidates": 7,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 2
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "reference": {
+        "alpha": 1.0,
+        "objective": 0.3644344934278313,
+        "mae": 0.3125,
+        "components": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            1.0
+          ]
+        ],
+        "precision": 80
+      }
+    },
+    {
+      "case": "B",
+      "passed": true,
+      "production": {
+        "status": "OK",
+        "alpha": 0.5,
+        "original_selected_alpha": 0.5,
+        "positive_feasible_exists": true,
+        "feasible_components": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.5,
+            0.5
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.5,
+          "cells": [
+            {
+              "id": "B",
+              "n": 3,
+              "rmse": 0.10206207261596575,
+              "mae": 0.08333333333333333,
+              "data_fingerprint": "a85a8568d8f9645d074ddfa24ae2c860385a07a5aba012bd6b9577ca79c360d0",
+              "mse": 0.010416666666666666,
+              "raw_rmse": 0.408248290463863,
+              "raw_mae": 0.3333333333333333
+            }
+          ],
+          "macro": {
+            "rmse": 0.10206207261596575,
+            "mae": 0.08333333333333333
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 4.163336342344337e-17,
+        "finite_candidate_minimum": 0.1020620726159658,
+        "stats": {
+          "events": 3,
+          "segments": 3,
+          "candidates": 7,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 2
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "reference": {
+        "alpha": 0.5,
+        "objective": 0.10206207261596575,
+        "mae": 0.08333333333333333,
+        "components": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.5,
+            0.5
+          ]
+        ],
+        "precision": 80
+      }
+    },
+    {
+      "case": "C",
+      "passed": true,
+      "production": {
+        "status": "ZERO_ONLY_FEASIBLE",
+        "alpha": 0.0,
+        "original_selected_alpha": 0.0,
+        "positive_feasible_exists": false,
+        "feasible_components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.0,
+          "cells": [
+            {
+              "id": "C",
+              "n": 1,
+              "rmse": 0.0,
+              "mae": 0.0,
+              "data_fingerprint": "606e5166986dd9f186277d16e3d18bae3887a944a829487b59fd8672bbb20251",
+              "mse": 0.0,
+              "raw_rmse": 0.0,
+              "raw_mae": 0.0
+            }
+          ],
+          "macro": {
+            "rmse": 0.0,
+            "mae": 0.0
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.0,
+        "stats": {
+          "events": 0,
+          "segments": 1,
+          "candidates": 4,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "reference": {
+        "alpha": 0.0,
+        "objective": 0.0,
+        "mae": 0.0,
+        "components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "precision": 80
+      }
+    }
+  ],
+  "random_cases_planned": 200,
+  "random_cases_executed": 23,
+  "random_cases": [
+    {
+      "case": 0,
+      "production_status": "OK",
+      "reference": {
+        "alpha": 1.0,
+        "objective": 0.4881406047441659,
+        "mae": 0.34375,
+        "components": [
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "OK",
+        "alpha": 1.0,
+        "original_selected_alpha": 1.0,
+        "positive_feasible_exists": true,
+        "feasible_components": [
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 1.0,
+          "cells": [
+            {
+              "id": "case0_cell0",
+              "n": 4,
+              "rmse": 0.4881406047441659,
+              "mae": 0.34375,
+              "data_fingerprint": "b24a31afd6ef0825ae866d3cce59aa4b7238699dbc0aaecdf02087b00e19c235",
+              "mse": 0.23828125,
+              "raw_rmse": 0.9519716382329886,
+              "raw_mae": 0.625
+            }
+          ],
+          "macro": {
+            "rmse": 0.4881406047441659,
+            "mae": 0.34375
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.4881406047441659,
+        "stats": {
+          "events": 2,
+          "segments": 3,
+          "candidates": 10,
+          "interior_minimizations": 2,
+          "bisection_iterations": 77,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 3
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 0.0,
+      "final_direct_constraint_violation": -0.14939064448994022
+    },
+    {
+      "case": 1,
+      "production_status": "ZERO_ONLY_FEASIBLE",
+      "reference": {
+        "alpha": 0.0,
+        "objective": 0.30618621784789724,
+        "mae": 0.21428571428571427,
+        "components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "ZERO_ONLY_FEASIBLE",
+        "alpha": 0.0,
+        "original_selected_alpha": 0.0,
+        "positive_feasible_exists": false,
+        "feasible_components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.0,
+          "cells": [
+            {
+              "id": "case1_cell0",
+              "n": 7,
+              "rmse": 0.30618621784789724,
+              "mae": 0.21428571428571427,
+              "data_fingerprint": "95d111d6162beb724f4b589258e10b8b00a004a0adf5dca7f342cd279c580874",
+              "mse": 0.09375,
+              "raw_rmse": 0.3439528622188968,
+              "raw_mae": 0.23214285714285715
+            }
+          ],
+          "macro": {
+            "rmse": 0.30618621784789724,
+            "mae": 0.21428571428571427
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.30618621784789724,
+        "stats": {
+          "events": 8,
+          "segments": 9,
+          "candidates": 4,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 0.0,
+      "final_direct_constraint_violation": 0.0
+    },
+    {
+      "case": 2,
+      "production_status": "OK",
+      "reference": {
+        "alpha": 0.1236309335888597,
+        "objective": 0.4047043303675542,
+        "mae": 0.34058748887158763,
+        "components": [
+          [
+            0.0,
+            0.1236309335888597
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "OK",
+        "alpha": 0.12363093348885988,
+        "original_selected_alpha": 0.12363093358885988,
+        "positive_feasible_exists": true,
+        "feasible_components": [
+          [
+            0.0,
+            0.12363093358885988
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.12363093348885988,
+          "cells": [
+            {
+              "id": "case2_cell0",
+              "n": 4,
+              "rmse": 0.32044451328610346,
+              "mae": 0.2542057332993119,
+              "data_fingerprint": "620471f214b847b5a5ea2bbe940f2eb50e7587a11b082fc50f342aba66a69330",
+              "mse": 0.10268468609516773,
+              "raw_rmse": 0.511845955278451,
+              "raw_mae": 0.45784413324098944
+            },
+            {
+              "id": "case2_cell1",
+              "n": 6,
+              "rmse": 0.4889641474519586,
+              "mae": 0.426969244457405,
+              "data_fingerprint": "1b144362b22a5b50a94b22710b441fd6ae5c5d65d0ced6b8338a4167f08548c9",
+              "mse": 0.2390859374934207,
+              "raw_rmse": 0.6653609434384584,
+              "raw_mae": 0.5831051555814767
+            }
+          ],
+          "macro": {
+            "rmse": 0.40470433036903103,
+            "mae": 0.34058748887835844
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 5.551115123125783e-17,
+        "finite_candidate_minimum": 0.40470433036755415,
+        "stats": {
+          "events": 7,
+          "segments": 6,
+          "candidates": 4,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 8,
+          "boundary_repairs": 1,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 1.8041124150158794e-16,
+      "objective_abs_error": 1.4768186673563832e-12,
+      "final_direct_constraint_violation": -6.727784995774755e-12
+    },
+    {
+      "case": 3,
+      "production_status": "ZERO_ONLY_FEASIBLE",
+      "reference": {
+        "alpha": 0.0,
+        "objective": 0.3829253944790807,
+        "mae": 0.3238095238095238,
+        "components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "ZERO_ONLY_FEASIBLE",
+        "alpha": 0.0,
+        "original_selected_alpha": 0.0,
+        "positive_feasible_exists": false,
+        "feasible_components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.0,
+          "cells": [
+            {
+              "id": "case3_cell0",
+              "n": 7,
+              "rmse": 0.5088502445991074,
+              "mae": 0.42857142857142855,
+              "data_fingerprint": "da5b45e7aa184f7a6036169072bf61bd9faf70c8e81b80f73d55e1a06c34a79c",
+              "mse": 0.25892857142857145,
+              "raw_rmse": 0.5509731650193397,
+              "raw_mae": 0.4642857142857143
+            },
+            {
+              "id": "case3_cell1",
+              "n": 5,
+              "rmse": 0.15811388300841897,
+              "mae": 0.15,
+              "data_fingerprint": "734c75d3a86b26d91f29a48d9704eaacaf04533fdc5180ae5f5dbe71f5728f43",
+              "mse": 0.025,
+              "raw_rmse": 0.3535533905932738,
+              "raw_mae": 0.25
+            },
+            {
+              "id": "case3_cell2",
+              "n": 7,
+              "rmse": 0.48181205582971576,
+              "mae": 0.39285714285714285,
+              "data_fingerprint": "ca610e1baf5efa35601731f3b3c12a2265287010719dfb92d0418cc08dc819f5",
+              "mse": 0.23214285714285715,
+              "raw_rmse": 0.7440238091428449,
+              "raw_mae": 0.5714285714285714
+            }
+          ],
+          "macro": {
+            "rmse": 0.3829253944790807,
+            "mae": 0.3238095238095238
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.3829253944790807,
+        "stats": {
+          "events": 6,
+          "segments": 6,
+          "candidates": 4,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 0.0,
+      "final_direct_constraint_violation": 0.0
+    },
+    {
+      "case": 4,
+      "production_status": "ZERO_ONLY_FEASIBLE",
+      "reference": {
+        "alpha": 0.0,
+        "objective": 0.41089435984329203,
+        "mae": 0.296875,
+        "components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "ZERO_ONLY_FEASIBLE",
+        "alpha": 0.0,
+        "original_selected_alpha": 0.0,
+        "positive_feasible_exists": false,
+        "feasible_components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.0,
+          "cells": [
+            {
+              "id": "case4_cell0",
+              "n": 5,
+              "rmse": 0.5092887196865841,
+              "mae": 0.375,
+              "data_fingerprint": "5a7525175ed10d2edf69ed141681fffbb4484853534965d9b69086af3bbae547",
+              "mse": 0.259375,
+              "raw_rmse": 0.6224949798994366,
+              "raw_mae": 0.5
+            },
+            {
+              "id": "case4_cell1",
+              "n": 4,
+              "rmse": 0.3125,
+              "mae": 0.21875,
+              "data_fingerprint": "80ac974de38f21d7d094a7a8f1829c866edaf903b154096e1edc2933b32bfd5b",
+              "mse": 0.09765625,
+              "raw_rmse": 0.5896238207535377,
+              "raw_mae": 0.40625
+            }
+          ],
+          "macro": {
+            "rmse": 0.41089435984329203,
+            "mae": 0.296875
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.41089435984329203,
+        "stats": {
+          "events": 6,
+          "segments": 5,
+          "candidates": 4,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 0.0,
+      "final_direct_constraint_violation": 0.0
+    },
+    {
+      "case": 5,
+      "production_status": "OK",
+      "reference": {
+        "alpha": 0.6666666666666666,
+        "objective": 0.40697051490249264,
+        "mae": 0.275,
+        "components": [
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "OK",
+        "alpha": 0.6666666666666666,
+        "original_selected_alpha": 0.6666666666666666,
+        "positive_feasible_exists": true,
+        "feasible_components": [
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.6666666666666666,
+          "cells": [
+            {
+              "id": "case5_cell0",
+              "n": 5,
+              "rmse": 0.40697051490249264,
+              "mae": 0.275,
+              "data_fingerprint": "2a2e061900b90fe83a39016ceba7bcd8182b3d2c3679178121ab706998e569cb",
+              "mse": 0.165625,
+              "raw_rmse": 0.6371049974515799,
+              "raw_mae": 0.475
+            }
+          ],
+          "macro": {
+            "rmse": 0.40697051490249264,
+            "mae": 0.275
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 5.551115123125783e-17,
+        "finite_candidate_minimum": 0.4069705149024927,
+        "stats": {
+          "events": 2,
+          "segments": 2,
+          "candidates": 7,
+          "interior_minimizations": 1,
+          "bisection_iterations": 40,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 0.0,
+      "final_direct_constraint_violation": -0.062027419527926786
+    },
+    {
+      "case": 6,
+      "production_status": "OK",
+      "reference": {
+        "alpha": 0.9245283018867925,
+        "objective": 0.4747454630820406,
+        "mae": 0.4257075471698113,
+        "components": [
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "OK",
+        "alpha": 0.9245283018868317,
+        "original_selected_alpha": 0.9245283018868317,
+        "positive_feasible_exists": true,
+        "feasible_components": [
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.9245283018868317,
+          "cells": [
+            {
+              "id": "case6_cell0",
+              "n": 4,
+              "rmse": 0.4747454630820406,
+              "mae": 0.42570754716981746,
+              "data_fingerprint": "f89562cec3fd989e7e8a3c2791c1941d8777d94acabb5d2b9f2f4d9dc657dd05",
+              "mse": 0.22538325471698115,
+              "raw_rmse": 0.9806422545903797,
+              "raw_mae": 0.8154481132075619
+            }
+          ],
+          "macro": {
+            "rmse": 0.4747454630820406,
+            "mae": 0.42570754716981746
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 5.551115123125783e-17,
+        "finite_candidate_minimum": 0.4747454630820405,
+        "stats": {
+          "events": 3,
+          "segments": 4,
+          "candidates": 13,
+          "interior_minimizations": 1,
+          "bisection_iterations": 39,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 4
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 0.0,
+      "final_direct_constraint_violation": -0.011792452830182543
+    },
+    {
+      "case": 7,
+      "production_status": "ZERO_ONLY_FEASIBLE",
+      "reference": {
+        "alpha": 0.0,
+        "objective": 0.24549512651549144,
+        "mae": 0.19642857142857142,
+        "components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "ZERO_ONLY_FEASIBLE",
+        "alpha": 0.0,
+        "original_selected_alpha": 0.0,
+        "positive_feasible_exists": false,
+        "feasible_components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.0,
+          "cells": [
+            {
+              "id": "case7_cell0",
+              "n": 7,
+              "rmse": 0.24549512651549144,
+              "mae": 0.19642857142857142,
+              "data_fingerprint": "20c6a2975fba120f4e1149674bd5a2bd68a22fa64bd403a2f31f66158b5bec27",
+              "mse": 0.060267857142857144,
+              "raw_rmse": 0.45561967222046695,
+              "raw_mae": 0.375
+            }
+          ],
+          "macro": {
+            "rmse": 0.24549512651549144,
+            "mae": 0.19642857142857142
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.24549512651549144,
+        "stats": {
+          "events": 1,
+          "segments": 2,
+          "candidates": 4,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 0.0,
+      "final_direct_constraint_violation": 0.0
+    },
+    {
+      "case": 8,
+      "production_status": "ZERO_ONLY_FEASIBLE",
+      "reference": {
+        "alpha": 0.0,
+        "objective": 0.409839907768875,
+        "mae": 0.34375,
+        "components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "ZERO_ONLY_FEASIBLE",
+        "alpha": 0.0,
+        "original_selected_alpha": 0.0,
+        "positive_feasible_exists": false,
+        "feasible_components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.0,
+          "cells": [
+            {
+              "id": "case8_cell0",
+              "n": 4,
+              "rmse": 0.409839907768875,
+              "mae": 0.34375,
+              "data_fingerprint": "2a4bafda823f23fa5bd872c38fb750bf7d034822435ee0ef8da5f1c7b878af21",
+              "mse": 0.16796875,
+              "raw_rmse": 0.409839907768875,
+              "raw_mae": 0.34375
+            }
+          ],
+          "macro": {
+            "rmse": 0.409839907768875,
+            "mae": 0.34375
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.409839907768875,
+        "stats": {
+          "events": 1,
+          "segments": 2,
+          "candidates": 4,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 0.0,
+      "final_direct_constraint_violation": 0.0
+    },
+    {
+      "case": 9,
+      "production_status": "ZERO_ONLY_FEASIBLE",
+      "reference": {
+        "alpha": 0.0,
+        "objective": 0.4024392156753688,
+        "mae": 0.325,
+        "components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "ZERO_ONLY_FEASIBLE",
+        "alpha": 0.0,
+        "original_selected_alpha": 0.0,
+        "positive_feasible_exists": false,
+        "feasible_components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.0,
+          "cells": [
+            {
+              "id": "case9_cell0",
+              "n": 5,
+              "rmse": 0.42573465914816,
+              "mae": 0.35,
+              "data_fingerprint": "0955962cbf15e1eefa5685c8d44b8a411dd2cc445c5ea54168afb7404b2b9b18",
+              "mse": 0.18125,
+              "raw_rmse": 0.48088460154178364,
+              "raw_mae": 0.45
+            },
+            {
+              "id": "case9_cell1",
+              "n": 5,
+              "rmse": 0.3791437722025775,
+              "mae": 0.3,
+              "data_fingerprint": "f9fa29a10a70581d4728021ee9cf3d349a87a764195bc3093278b31f349068e2",
+              "mse": 0.14375,
+              "raw_rmse": 0.3913118960624632,
+              "raw_mae": 0.325
+            }
+          ],
+          "macro": {
+            "rmse": 0.4024392156753688,
+            "mae": 0.32499999999999996
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.4024392156753688,
+        "stats": {
+          "events": 6,
+          "segments": 5,
+          "candidates": 4,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 0.0,
+      "final_direct_constraint_violation": 0.0
+    },
+    {
+      "case": 10,
+      "production_status": "ZERO_ONLY_FEASIBLE",
+      "reference": {
+        "alpha": 0.0,
+        "objective": 0.49371044145328746,
+        "mae": 0.35,
+        "components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "ZERO_ONLY_FEASIBLE",
+        "alpha": 0.0,
+        "original_selected_alpha": 0.0,
+        "positive_feasible_exists": false,
+        "feasible_components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.0,
+          "cells": [
+            {
+              "id": "case10_cell0",
+              "n": 5,
+              "rmse": 0.49371044145328746,
+              "mae": 0.35,
+              "data_fingerprint": "97d83dd09a3d7c1fe10b528d4a7134b20fdf42732b839cd0c32a29bfdcb7d6e9",
+              "mse": 0.24375,
+              "raw_rmse": 0.6471089552772392,
+              "raw_mae": 0.45
+            }
+          ],
+          "macro": {
+            "rmse": 0.49371044145328746,
+            "mae": 0.35
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.49371044145328746,
+        "stats": {
+          "events": 1,
+          "segments": 2,
+          "candidates": 4,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 0.0,
+      "final_direct_constraint_violation": 0.0
+    },
+    {
+      "case": 11,
+      "production_status": "ZERO_ONLY_FEASIBLE",
+      "reference": {
+        "alpha": 0.0,
+        "objective": 0.5087395467707131,
+        "mae": 0.41805555555555557,
+        "components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "ZERO_ONLY_FEASIBLE",
+        "alpha": 0.0,
+        "original_selected_alpha": 0.0,
+        "positive_feasible_exists": false,
+        "feasible_components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.0,
+          "cells": [
+            {
+              "id": "case11_cell0",
+              "n": 5,
+              "rmse": 0.45414755311462374,
+              "mae": 0.4,
+              "data_fingerprint": "97fe100d73e7cfa122c5499856b88a30c4be4be1370efb5a2f1c17ea004157a2",
+              "mse": 0.20625,
+              "raw_rmse": 0.6373774391990981,
+              "raw_mae": 0.5
+            },
+            {
+              "id": "case11_cell1",
+              "n": 6,
+              "rmse": 0.5153882032022076,
+              "mae": 0.375,
+              "data_fingerprint": "bc9c95973a1fdeb640c9e77c3d654e4fdba28e9bbdd6cb9d99f9145d506d122a",
+              "mse": 0.265625,
+              "raw_rmse": 0.673145600891813,
+              "raw_mae": 0.5
+            },
+            {
+              "id": "case11_cell2",
+              "n": 6,
+              "rmse": 0.5566828839953077,
+              "mae": 0.4791666666666667,
+              "data_fingerprint": "fca8a9034c0a21c335cc983769c0fb2d581fae1eea64381e08017dc0aa520000",
+              "mse": 0.3098958333333333,
+              "raw_rmse": 0.6789237807000135,
+              "raw_mae": 0.6041666666666666
+            }
+          ],
+          "macro": {
+            "rmse": 0.508739546770713,
+            "mae": 0.41805555555555557
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.508739546770713,
+        "stats": {
+          "events": 7,
+          "segments": 7,
+          "candidates": 4,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 1.1102230246251565e-16,
+      "final_direct_constraint_violation": 0.0
+    },
+    {
+      "case": 12,
+      "production_status": "OK",
+      "reference": {
+        "alpha": 0.8809523809523809,
+        "objective": 0.12914746401039962,
+        "mae": 0.10416666666666667,
+        "components": [
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "OK",
+        "alpha": 0.8809523809526582,
+        "original_selected_alpha": 0.8809523809526582,
+        "positive_feasible_exists": true,
+        "feasible_components": [
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.8809523809526582,
+          "cells": [
+            {
+              "id": "case12_cell0",
+              "n": 6,
+              "rmse": 0.1291474640103996,
+              "mae": 0.10416666666666667,
+              "data_fingerprint": "8a7884e24c8711dc0cb87729ae9a8f2aa907c76052b3c2f37a6ffd575d207a33",
+              "mse": 0.01667906746031746,
+              "raw_rmse": 0.5095967603725873,
+              "raw_mae": 0.3784722222222627
+            }
+          ],
+          "macro": {
+            "rmse": 0.1291474640103996,
+            "mae": 0.10416666666666667
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 2.7755575615628914e-17,
+        "finite_candidate_minimum": 0.12914746401039956,
+        "stats": {
+          "events": 2,
+          "segments": 3,
+          "candidates": 10,
+          "interior_minimizations": 1,
+          "bisection_iterations": 39,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 3
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 2.7755575615628914e-17,
+      "final_direct_constraint_violation": -0.08333333333333333
+    },
+    {
+      "case": 13,
+      "production_status": "OPTIMAL_ALPHA_ZERO",
+      "reference": {
+        "alpha": 0.0,
+        "objective": 0.49673832355064335,
+        "mae": 0.4442460317460317,
+        "components": [
+          [
+            0.0,
+            0.023540240894225524
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "OPTIMAL_ALPHA_ZERO",
+        "alpha": 0.0,
+        "original_selected_alpha": 0.0,
+        "positive_feasible_exists": true,
+        "feasible_components": [
+          [
+            0.0,
+            0.02354024089422546
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.0,
+          "cells": [
+            {
+              "id": "case13_cell0",
+              "n": 7,
+              "rmse": 0.49099025303098287,
+              "mae": 0.42857142857142855,
+              "data_fingerprint": "8b3663b99310a08bdb9e375a3a604943f0780a611d4174176bd946a58645eb2e",
+              "mse": 0.24107142857142858,
+              "raw_rmse": 0.625,
+              "raw_mae": 0.5892857142857143
+            },
+            {
+              "id": "case13_cell1",
+              "n": 5,
+              "rmse": 0.6072478900745559,
+              "mae": 0.55,
+              "data_fingerprint": "1918b4f27aadc14f262da2a4ee272855c0c46f4c7f759e19fe978667c97d9929",
+              "mse": 0.36875,
+              "raw_rmse": 0.920258115965298,
+              "raw_mae": 0.875
+            },
+            {
+              "id": "case13_cell2",
+              "n": 6,
+              "rmse": 0.39197682754639124,
+              "mae": 0.3541666666666667,
+              "data_fingerprint": "6ab4b693356711ba5339ffa7c53b5d927775fc76b62116ec5ffbd0e6d13b2b40",
+              "mse": 0.15364583333333334,
+              "raw_rmse": 0.408248290463863,
+              "raw_mae": 0.375
+            }
+          ],
+          "macro": {
+            "rmse": 0.49673832355064335,
+            "mae": 0.4442460317460317
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.49673832355064335,
+        "stats": {
+          "events": 8,
+          "segments": 9,
+          "candidates": 4,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 6.245004513516506e-17,
+      "objective_abs_error": 0.0,
+      "final_direct_constraint_violation": 0.0
+    },
+    {
+      "case": 14,
+      "production_status": "ZERO_ONLY_FEASIBLE",
+      "reference": {
+        "alpha": 0.0,
+        "objective": 0.5333252810310942,
+        "mae": 0.4496031746031746,
+        "components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "ZERO_ONLY_FEASIBLE",
+        "alpha": 0.0,
+        "original_selected_alpha": 0.0,
+        "positive_feasible_exists": false,
+        "feasible_components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.0,
+          "cells": [
+            {
+              "id": "case14_cell0",
+              "n": 6,
+              "rmse": 0.4018187817080398,
+              "mae": 0.2916666666666667,
+              "data_fingerprint": "49d6481b87cadb56784f564f144cbc38e1bd41ce4e487448dc684e9cced6acf1",
+              "mse": 0.16145833333333334,
+              "raw_rmse": 0.6789237807000135,
+              "raw_mae": 0.5208333333333334
+            },
+            {
+              "id": "case14_cell1",
+              "n": 5,
+              "rmse": 0.4437059837324712,
+              "mae": 0.325,
+              "data_fingerprint": "0b10f535219c3fa2f91b28fbfcaeb759fe88bf36b4d6136b5ad291ce49280c4d",
+              "mse": 0.196875,
+              "raw_rmse": 0.6046693311223912,
+              "raw_mae": 0.475
+            },
+            {
+              "id": "case14_cell2",
+              "n": 7,
+              "rmse": 0.7544510776527718,
+              "mae": 0.7321428571428571,
+              "data_fingerprint": "c8ac63a9314f9a3a3de19a7e085e6e35d6f09f8c6811ebae4df948b1bb2c71a5",
+              "mse": 0.5691964285714286,
+              "raw_rmse": 0.9808432960613899,
+              "raw_mae": 0.9464285714285714
+            }
+          ],
+          "macro": {
+            "rmse": 0.5333252810310943,
+            "mae": 0.4496031746031746
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.5333252810310943,
+        "stats": {
+          "events": 7,
+          "segments": 5,
+          "candidates": 4,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 1.1102230246251565e-16,
+      "final_direct_constraint_violation": 0.0
+    },
+    {
+      "case": 15,
+      "production_status": "OK",
+      "reference": {
+        "alpha": 0.09195872834944627,
+        "objective": 0.5058117299757275,
+        "mae": 0.42369661281986853,
+        "components": [
+          [
+            0.0,
+            0.09195872834944627
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "OK",
+        "alpha": 0.09195872834944632,
+        "original_selected_alpha": 0.09195872834944632,
+        "positive_feasible_exists": true,
+        "feasible_components": [
+          [
+            0.0,
+            0.09195872834944632
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.09195872834944632,
+          "cells": [
+            {
+              "id": "case15_cell0",
+              "n": 6,
+              "rmse": 0.4090967565869962,
+              "mae": 0.32974226156552117,
+              "data_fingerprint": "2755211ad96d0d31b166158a45270ec390e27711fd47a3a7182ddff5badd15f8",
+              "mse": 0.16736015625,
+              "raw_rmse": 0.6155177049138677,
+              "raw_mae": 0.5232302240007763
+            },
+            {
+              "id": "case15_cell1",
+              "n": 7,
+              "rmse": 0.6025267033644588,
+              "mae": 0.517650964074216,
+              "data_fingerprint": "ae1ac1059df2529b50fa725ff5077dd0343e9fd0e6993e8b101d6366082ccab6",
+              "mse": 0.3630384282672426,
+              "raw_rmse": 0.7219709819134223,
+              "raw_mae": 0.6325920643967055
+            }
+          ],
+          "macro": {
+            "rmse": 0.5058117299757274,
+            "mae": 0.4236966128198686
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 1.1102230246251565e-16,
+        "finite_candidate_minimum": 0.5058117299757274,
+        "stats": {
+          "events": 8,
+          "segments": 8,
+          "candidates": 4,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 5.551115123125783e-17,
+      "objective_abs_error": 1.1102230246251565e-16,
+      "final_direct_constraint_violation": 0.0
+    },
+    {
+      "case": 16,
+      "production_status": "OK",
+      "reference": {
+        "alpha": 1.0,
+        "objective": 0.6091746465505602,
+        "mae": 0.59375,
+        "components": [
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "OK",
+        "alpha": 1.0,
+        "original_selected_alpha": 1.0,
+        "positive_feasible_exists": true,
+        "feasible_components": [
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 1.0,
+          "cells": [
+            {
+              "id": "case16_cell0",
+              "n": 4,
+              "rmse": 0.6091746465505602,
+              "mae": 0.59375,
+              "data_fingerprint": "4b4e70769ae2fa211a5c784912df90af368bf39c4850f7d87269f90ec375dabf",
+              "mse": 0.37109375,
+              "raw_rmse": 0.6091746465505602,
+              "raw_mae": 0.59375
+            }
+          ],
+          "macro": {
+            "rmse": 0.6091746465505602,
+            "mae": 0.59375
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.6091746465505602,
+        "stats": {
+          "events": 1,
+          "segments": 2,
+          "candidates": 7,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 2
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 0.0,
+      "final_direct_constraint_violation": -0.09375
+    },
+    {
+      "case": 17,
+      "production_status": "ZERO_ONLY_FEASIBLE",
+      "reference": {
+        "alpha": 0.0,
+        "objective": 0.46606091719844095,
+        "mae": 0.41964285714285715,
+        "components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "ZERO_ONLY_FEASIBLE",
+        "alpha": 0.0,
+        "original_selected_alpha": 0.0,
+        "positive_feasible_exists": false,
+        "feasible_components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.0,
+          "cells": [
+            {
+              "id": "case17_cell0",
+              "n": 7,
+              "rmse": 0.49551560448255744,
+              "mae": 0.4642857142857143,
+              "data_fingerprint": "aa76a5eea4d7957077f535c39173224e4a5de8040a94f68383fedb1b1b3d7d73",
+              "mse": 0.24553571428571427,
+              "raw_rmse": 0.7544510776527718,
+              "raw_mae": 0.6607142857142857
+            },
+            {
+              "id": "case17_cell1",
+              "n": 5,
+              "rmse": 0.4366062299143245,
+              "mae": 0.375,
+              "data_fingerprint": "0b4d27b12b624fc0b46809d9aede943ca84495f571e891ffd168c7eeb8385beb",
+              "mse": 0.190625,
+              "raw_rmse": 0.4366062299143245,
+              "raw_mae": 0.375
+            }
+          ],
+          "macro": {
+            "rmse": 0.466060917198441,
+            "mae": 0.41964285714285715
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.466060917198441,
+        "stats": {
+          "events": 6,
+          "segments": 6,
+          "candidates": 4,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 5.551115123125783e-17,
+      "final_direct_constraint_violation": 0.0
+    },
+    {
+      "case": 18,
+      "production_status": "OK",
+      "reference": {
+        "alpha": 0.9164658922284348,
+        "objective": 0.4582996301374105,
+        "mae": 0.3685618650406873,
+        "components": [
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "OK",
+        "alpha": 0.9164658922284918,
+        "original_selected_alpha": 0.9164658922284918,
+        "positive_feasible_exists": true,
+        "feasible_components": [
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.9164658922284918,
+          "cells": [
+            {
+              "id": "case18_cell0",
+              "n": 5,
+              "rmse": 0.39439055939855233,
+              "mae": 0.32291164730571226,
+              "data_fingerprint": "5cc5ca1656f0383e7205fd57ce3ae9a5156df20f3b28f17ad4feb693694c110c",
+              "mse": 0.15554391334270304,
+              "raw_rmse": 0.46880306788842674,
+              "raw_mae": 0.36664658922284915
+            },
+            {
+              "id": "case18_cell1",
+              "n": 7,
+              "rmse": 0.5059472683464512,
+              "mae": 0.4077309247224461,
+              "data_fingerprint": "eb2ab15e81bb9db4ac1ecc505b5476a76a52b707eb5bc67e216fbb808f07631a",
+              "mse": 0.2559826383472359,
+              "raw_rmse": 0.9121390534625505,
+              "raw_mae": 0.7499569769061054
+            },
+            {
+              "id": "case18_cell2",
+              "n": 7,
+              "rmse": 0.47456106266722786,
+              "mae": 0.3750430230938946,
+              "data_fingerprint": "2759bf4dc09f2a8a64a4ba1a32921b8db026752651f1988f690118dcc7b7434b",
+              "mse": 0.22520820219984858,
+              "raw_rmse": 0.5837658506016119,
+              "raw_mae": 0.49701663900816045
+            }
+          ],
+          "macro": {
+            "rmse": 0.4582996301374105,
+            "mae": 0.36856186504068433
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 5.551115123125783e-17,
+        "finite_candidate_minimum": 0.4582996301374105,
+        "stats": {
+          "events": 14,
+          "segments": 8,
+          "candidates": 25,
+          "interior_minimizations": 1,
+          "bisection_iterations": 39,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 8
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 0.0,
+      "final_direct_constraint_violation": -0.04848596059743415
+    },
+    {
+      "case": 19,
+      "production_status": "OK",
+      "reference": {
+        "alpha": 0.7665076800242411,
+        "objective": 0.5164298028698068,
+        "mae": 0.39921715844380473,
+        "components": [
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "OK",
+        "alpha": 0.7665076800243696,
+        "original_selected_alpha": 0.7665076800243696,
+        "positive_feasible_exists": true,
+        "feasible_components": [
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.7665076800243696,
+          "cells": [
+            {
+              "id": "case19_cell0",
+              "n": 5,
+              "rmse": 0.6012593168082979,
+              "mae": 0.4441626920006092,
+              "data_fingerprint": "e5cde57f5a3a21043de6923b94f09847918b09faf5a1769765a37cf2f4c9d9e5",
+              "mse": 0.36151276604878113,
+              "raw_rmse": 1.0076108873735237,
+              "raw_mae": 0.7932776880085294
+            },
+            {
+              "id": "case19_cell1",
+              "n": 7,
+              "rmse": 0.531142300796113,
+              "mae": 0.375,
+              "data_fingerprint": "94b33dfe9e7938b34529fc84eea478c7c4f273a94c5295be27a6c532b9810006",
+              "mse": 0.2821121436949886,
+              "raw_rmse": 1.176737005781624,
+              "raw_mae": 0.8546994457238595
+            },
+            {
+              "id": "case19_cell2",
+              "n": 6,
+              "rmse": 0.41688779100500944,
+              "mae": 0.37848878333079483,
+              "data_fingerprint": "972f2a8b8aa03edcb3611ae925769816038e7e5f09bea3a9a3511e7d6183c0e4",
+              "mse": 0.17379543028903643,
+              "raw_rmse": 0.7052388402625684,
+              "raw_mae": 0.5812201900045694
+            }
+          ],
+          "macro": {
+            "rmse": 0.5164298028698068,
+            "mae": 0.39921715844380135
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 5.551115123125783e-17,
+        "finite_candidate_minimum": 0.5164298028698068,
+        "stats": {
+          "events": 11,
+          "segments": 10,
+          "candidates": 31,
+          "interior_minimizations": 1,
+          "bisection_iterations": 38,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 8
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 0.0,
+      "final_direct_constraint_violation": -0.029473364618998688
+    },
+    {
+      "case": 20,
+      "production_status": "ZERO_ONLY_FEASIBLE",
+      "reference": {
+        "alpha": 0.0,
+        "objective": 0.535218024111047,
+        "mae": 0.4583333333333333,
+        "components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "ZERO_ONLY_FEASIBLE",
+        "alpha": 0.0,
+        "original_selected_alpha": 0.0,
+        "positive_feasible_exists": false,
+        "feasible_components": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.0,
+          "cells": [
+            {
+              "id": "case20_cell0",
+              "n": 6,
+              "rmse": 0.535218024111047,
+              "mae": 0.4583333333333333,
+              "data_fingerprint": "d032cff75740b1c3cc3d926cbff2b6a52602af98fd0d651c661338e3f952197a",
+              "mse": 0.2864583333333333,
+              "raw_rmse": 0.6166103577895309,
+              "raw_mae": 0.5
+            }
+          ],
+          "macro": {
+            "rmse": 0.535218024111047,
+            "mae": 0.4583333333333333
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.535218024111047,
+        "stats": {
+          "events": 4,
+          "segments": 5,
+          "candidates": 4,
+          "interior_minimizations": 0,
+          "bisection_iterations": 0,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 0.0,
+      "objective_abs_error": 0.0,
+      "final_direct_constraint_violation": 0.0
+    },
+    {
+      "case": 21,
+      "production_status": "OK",
+      "reference": {
+        "alpha": 0.11180124223602485,
+        "objective": 0.2550917810714142,
+        "mae": 0.2221790890269151,
+        "components": [
+          [
+            0.0,
+            0.24282506597989323
+          ],
+          [
+            0.37300266924614817,
+            0.46359863794339434
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "OK",
+        "alpha": 0.11180124223634871,
+        "original_selected_alpha": 0.11180124223634871,
+        "positive_feasible_exists": true,
+        "feasible_components": [
+          [
+            0.0,
+            0.24282506597989306
+          ],
+          [
+            0.3730026692461483,
+            0.46359863794339423
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.11180124223634871,
+          "cells": [
+            {
+              "id": "case21_cell0",
+              "n": 6,
+              "rmse": 0.2550917810714142,
+              "mae": 0.22217908902689487,
+              "data_fingerprint": "8cc6dd782f8f965f3a6453e7029707ef9b3295080e71ded6da541690f84d700a",
+              "mse": 0.06507181677018634,
+              "raw_rmse": 0.3592939763468889,
+              "raw_mae": 0.29839544513447436
+            }
+          ],
+          "macro": {
+            "rmse": 0.2550917810714142,
+            "mae": 0.22217908902689487
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 0.0,
+        "finite_candidate_minimum": 0.2550917810714142,
+        "stats": {
+          "events": 9,
+          "segments": 8,
+          "candidates": 13,
+          "interior_minimizations": 2,
+          "bisection_iterations": 75,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 1
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": true,
+      "component_count_equal": true,
+      "endpoint_max_abs_error": 1.6653345369377348e-16,
+      "objective_abs_error": 0.0,
+      "final_direct_constraint_violation": -0.006987577639771786
+    },
+    {
+      "case": 22,
+      "production_status": "OK",
+      "reference": {
+        "alpha": 1.0,
+        "objective": 0.3423265984407288,
+        "mae": 0.3125,
+        "components": [
+          [
+            0.0,
+            0.5
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        "precision": 80
+      },
+      "production": {
+        "status": "OK",
+        "alpha": 0.3800000000004988,
+        "original_selected_alpha": 0.3800000000004988,
+        "positive_feasible_exists": true,
+        "feasible_components": [
+          [
+            0.0,
+            0.4999999999999998
+          ]
+        ],
+        "score": {
+          "status": "OK",
+          "alpha": 0.3800000000004988,
+          "cells": [
+            {
+              "id": "case22_cell0",
+              "n": 4,
+              "rmse": 0.35233595473638507,
+              "mae": 0.2900000000000935,
+              "data_fingerprint": "77062d803ab581f6d3bec50eb66100b0b0a2069906833ee68a154c541cbb4db4",
+              "mse": 0.12414062499999999,
+              "raw_rmse": 0.44364259263530575,
+              "raw_mae": 0.4012500000002806
+            }
+          ],
+          "macro": {
+            "rmse": 0.35233595473638507,
+            "mae": 0.2900000000000935
+          },
+          "aggregation": "equal cells"
+        },
+        "scan_direct_max_difference": 5.551115123125783e-17,
+        "finite_candidate_minimum": 0.35233595473638507,
+        "stats": {
+          "events": 3,
+          "segments": 4,
+          "candidates": 10,
+          "interior_minimizations": 2,
+          "bisection_iterations": 76,
+          "full_sample_scans": 7,
+          "boundary_repairs": 0,
+          "replay_segments": 3
+        },
+        "claim": "registered-domain numerical all-segment search with listed verification; not an exact global certificate"
+      },
+      "passed": false,
+      "component_count_equal": false,
+      "endpoint_max_abs_error": null,
+      "objective_abs_error": 0.010009356295656247,
+      "final_direct_constraint_violation": -0.01574288362572457,
+      "reproducible_synthetic_inputs": [
+        {
+          "id": "case22_cell0",
+          "p": [
+            0.5,
+            0.125,
+            1.0,
+            1.0
+          ],
+          "delta": [
+            -0.875,
+            -0.625,
+            -0.125,
+            0.875
+          ],
+          "y": [
+            0.25,
+            0.375,
+            0.375,
+            0.875
+          ]
+        }
+      ]
+    }
+  ],
+  "verification_status": "FAILED_STOPPED",
+  "scale_tests_status": "NOT_RUN_IN_THIS_PHASE",
+  "synthetic_only_results_not_research_metrics": true,
+  "elapsed_seconds": 0.10352950000378769,
+  "required_remaining_checks": "NOT_RUN: stopped at first random acceptance failure",
+  "scale_tests": {
+    "two_horizon": "NOT_RUN_STOP_RULE",
+    "four_horizon": "NOT_RUN_STOP_RULE"
+  }
+}

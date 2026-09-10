@@ -65,6 +65,42 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/continuous_v2_solver_draft/case22_trace.json",
+      "sha256": "54bceb607d31bad2ed5aa7d43e341a7a3db89fab19dda34c7597ea12356df417",
+      "bytes": 2705,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_solver_draft/implementation_receipt.json",
+      "sha256": "e8968d4a478c58ecb666bb8ae9be864ccf6eb700b66e98b1092103e28ae12137",
+      "bytes": 2350,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_solver_draft/regression_case22.log.txt",
+      "sha256": "41f7285283780b1e1a5a81907bf0538743aa6bc375822baee930507832eaf2ca",
+      "bytes": 1105,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/continuous_v2_solver_draft/solver_verification.json",
+      "sha256": "51b8bb2f27134e6c850d96eb4430c411063568758b88f720e7d1624c30944408",
+      "bytes": 58988,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/distillation/D1_CELLS.csv",
       "sha256": "1e9cf647a193d82dc124ee73997c1e4d0368e022ada74ae2ac4f4d1b1d9ef635",
       "bytes": 8310,
@@ -824,6 +860,15 @@
       "path": "configs/research/RESIDUAL_CONTINUOUS_STEP_V2_REGISTRATION.json",
       "sha256": "8dd48925ddc3da0716cb03df320c982c3e18af3c984557d7e28aa0ace836cace",
       "bytes": 12149,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "configs/research/RESIDUAL_CONTINUOUS_STEP_V2_SOLVER.json",
+      "sha256": "c696421c537203cd185555c443339acf0bb9ecc83a51eed8dd03379977c9408c",
+      "bytes": 1242,
       "role": "configs",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",

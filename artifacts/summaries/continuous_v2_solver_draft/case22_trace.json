@@ -1,0 +1,141 @@
+{
+  "synthetic_case": 22,
+  "native": {
+    "status": "OK",
+    "alpha": 0.0,
+    "cells": [
+      {
+        "id": "case22",
+        "n": 4,
+        "rmse": 0.3644344934278313,
+        "mae": 0.3125,
+        "data_fingerprint": "77062d803ab581f6d3bec50eb66100b0b0a2069906833ee68a154c541cbb4db4",
+        "mse": 0.1328125,
+        "raw_rmse": 0.3644344934278313,
+        "raw_mae": 0.3125
+      }
+    ],
+    "macro": {
+      "rmse": 0.3644344934278313,
+      "mae": 0.3125
+    },
+    "aggregation": "equal cells"
+  },
+  "alpha1_direct": {
+    "status": "OK",
+    "alpha": 1.0,
+    "cells": [
+      {
+        "id": "case22",
+        "n": 4,
+        "rmse": 0.3423265984407288,
+        "mae": 0.3125,
+        "data_fingerprint": "77062d803ab581f6d3bec50eb66100b0b0a2069906833ee68a154c541cbb4db4",
+        "mse": 0.1171875,
+        "raw_rmse": 0.7756046028744286,
+        "raw_mae": 0.75
+      }
+    ],
+    "macro": {
+      "rmse": 0.3423265984407288,
+      "mae": 0.3125
+    },
+    "aggregation": "equal cells"
+  },
+  "segments": [
+    {
+      "left": 0.0,
+      "right": 0.2,
+      "W": [
+        0.1328125
+      ],
+      "G": [
+        -0.03515625
+      ],
+      "U": [
+        0.29296875
+      ],
+      "B": [
+        0.3125
+      ],
+      "mae_slope": [
+        -0.09375
+      ],
+      "feasible_local_interval": [
+        0.0,
+        0.2
+      ],
+      "mae_at_right_from_scan": 0.29375
+    },
+    {
+      "left": 0.2,
+      "right": 0.2857142857142857,
+      "W": [
+        0.13046875
+      ],
+      "G": [
+        -0.03515625
+      ],
+      "U": [
+        0.1953125
+      ],
+      "B": [
+        0.29375
+      ],
+      "mae_slope": [
+        -0.25
+      ],
+      "feasible_local_interval": [
+        0.0,
+        0.08571428571428569
+      ],
+      "mae_at_right_from_scan": 0.2723214285714286
+    },
+    {
+      "left": 0.2857142857142857,
+      "right": 0.5714285714285714,
+      "W": [
+        0.12587691326530612
+      ],
+      "G": [
+        -0.018415178571428575
+      ],
+      "U": [
+        0.1953125
+      ],
+      "B": [
+        0.2723214285714286
+      ],
+      "mae_slope": [
+        0.1875
+      ],
+      "feasible_local_interval": [
+        0.0,
+        0.2142857142857141
+      ],
+      "mae_at_right_from_scan": 0.32589285714285715
+    },
+    {
+      "left": 0.5714285714285714,
+      "right": 1.0,
+      "W": [
+        0.13129783163265304
+      ],
+      "G": [
+        -0.01729910714285715
+      ],
+      "U": [
+        0.00390625
+      ],
+      "B": [
+        0.32589285714285715
+      ],
+      "mae_slope": [
+        -0.03125
+      ],
+      "feasible_local_interval": null,
+      "mae_at_right_from_scan": 0.3125
+    }
+  ],
+  "scope": "failure trace only, no change to algorithm"
+}

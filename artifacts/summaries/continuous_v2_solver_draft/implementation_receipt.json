@@ -1,0 +1,48 @@
+{
+  "spec": "CONTINUOUS_STEP_V2_SOLVER_SPEC_20260910",
+  "acceptance": "FAILED_CASE22_STOPPED",
+  "publication_policy": "draft branch only; stable main remains registration commit4b87f513faa99fb1b3ae13121f03eb18b7a0305f",
+  "registration_sha256": "8dd48925ddc3da0716cb03df320c982c3e18af3c984557d7e28aa0ace836cace",
+  "solver_config_sha256": "c696421c537203cd185555c443339acf0bb9ecc83a51eed8dd03379977c9408c",
+  "production_sha256": "2afa6ac05adf54c5dfe8455a26c1182517921d09550cd226b76483aa93d76cbd",
+  "reference_sha256": "d1818e40e054baafd451d513d42de2e9a21834fdf75f098d4f3be2693b102361",
+  "environment": {
+    "python": "3.10.8",
+    "numpy": "2.2.6",
+    "os": "Windows"
+  },
+  "commands": [
+    {
+      "command": "python -c \"import sys;sys.path.insert(0,'src');import pytest;raise SystemExit(pytest.main(['tests/test_continuous_step.py','tests/test_continuous_step_gates.py','-x']))\"",
+      "observed_tool_output": "20 passed in0.27s, before regression was added",
+      "status": "PASS_INITIAL_SUBSET"
+    },
+    {
+      "command": "python scripts/research/verify_continuous_step_synthetic.py --phase random --output ../work/continuous-v2-solver-20260910/solver_verification_random.json",
+      "status": "FAILED_STOPPED_AFTER23_OF200"
+    },
+    {
+      "command": "python -c \"import sys;sys.path.insert(0,'src');import pytest;raise SystemExit(pytest.main(['tests/test_continuous_step.py::test_regression_random_case22_must_not_return_wrong_success','-x']))\"",
+      "status": "FAILED,1failed in0.86s, see raw log"
+    }
+  ],
+  "runtime_monitor": {
+    "scope": "all production solve invocations; imports and report writes outside guarded region",
+    "observed_forbidden_call_counts": {
+      "builtin_open": 0,
+      "path_open": 0,
+      "numpy_load": 0,
+      "model_init": 0,
+      "gate_from_solver": 0
+    },
+    "inputs": "fixed and seeded synthetic arrays constructed by runner; no file-loaded research arrays"
+  },
+  "real_calibration_run": false,
+  "tail_scoring": false,
+  "new_foundation_inference": false,
+  "third_fold_validation_opened": false,
+  "third_fold_test_opened": false,
+  "solver_code_review": "pending",
+  "remote_ci": "not yet submitted at receipt creation; draft push status returned separately",
+  "receipt_scope": "execution snapshot before draft publication; not a claim of accepted solver or green CI"
+}

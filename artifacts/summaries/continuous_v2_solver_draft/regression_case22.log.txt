@@ -1,0 +1,19 @@
+F
+================================== FAILURES ===================================
+_________ test_regression_random_case22_must_not_return_wrong_success _________
+
+    def test_regression_random_case22_must_not_return_wrong_success():
+        """Known failed acceptance case; intentionally remains red pending research review."""
+        c=cell([.5,.125,1,1],[-.875,-.625,-.125,.875],[.25,.375,.375,.875],'case22_cell0')
+        r=m.solve_continuous_alpha([c],CFG)
+        if r['status']=='NUMERICAL_BLOCKED':return
+        assert r['status']=='OK',r
+>       assert r['alpha']==1.,r
+E       AssertionError: {'status': 'OK', 'alpha': 0.3800000000004988, 'original_selected_alpha': 0.3800000000004988, 'positive_feasible_exists': True, ...}
+E       assert 0.3800000000004988 == 1.0
+
+tests\test_continuous_step.py:94: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_continuous_step.py::test_regression_random_case22_must_not_return_wrong_success
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!
+1 failed in 0.86s
