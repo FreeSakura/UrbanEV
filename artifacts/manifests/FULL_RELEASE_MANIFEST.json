@@ -3126,8 +3126,8 @@
     },
     {
       "path": "docs/research/sota/FORWARD_RESIDUAL_TRANSFER_REPORT_20260913.md",
-      "sha256": "4b7eb2d9479c25d2dbc1ea7bfcf43c4637d96e67d76431c7aa64e9a72aea6f03",
-      "bytes": 15008,
+      "sha256": "633768794066c2b216a81cd481fc2e62a101f9432561af202bc96f3ff8165e3c",
+      "bytes": 16337,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
@@ -3360,8 +3360,8 @@
     },
     {
       "path": "docs/research/sota/SOTA_GAP_ASSESSMENT_20260913.md",
-      "sha256": "39d02b305fba51e0dab80fce0448ad8e75843ea73f31c4c57626195b9faba235",
-      "bytes": 4156,
+      "sha256": "74634a31312549ad26211a40cc117486033efddcc87749d23788e5738c75b11f",
+      "bytes": 4683,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
