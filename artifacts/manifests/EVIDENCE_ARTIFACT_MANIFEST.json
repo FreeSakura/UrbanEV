@@ -1802,6 +1802,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "configs/research/SHORT_STATE_RELAXATION_V1.json",
+      "sha256": "31682244f5326e95438b2038905afa81c61fc49663bbc757d943e97e7cf86713",
+      "bytes": 7210,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
       "path": "configs/research/SIGNAL_REPLICATION_V1.json",
       "sha256": "3eb967056ad1a8ab50562e8788f4e9fed27b940f1eee142cf4941a0a515a8787",
       "bytes": 2762,

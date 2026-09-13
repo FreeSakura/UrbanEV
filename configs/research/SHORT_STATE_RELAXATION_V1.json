@@ -1,0 +1,242 @@
+{
+  "protocol_id": "SHORT_STATE_RELAXATION_V1_20260913",
+  "anchor_commit": "e32850fce91efc0539430a98fdfd9a70a310f913",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "limits": {
+    "FIT": {
+      "occupancy.csv": 1056,
+      "duration.csv": 1043
+    },
+    "SELECT": {
+      "occupancy.csv": 1224,
+      "duration.csv": 1211
+    },
+    "PREDICT": {
+      "occupancy.csv": 1548,
+      "duration.csv": 1547
+    },
+    "SCORE": {
+      "occupancy.csv": 1560
+    }
+  },
+  "prefixes": {
+    "FIT": {
+      "occupancy.csv": {
+        "rows": 1056,
+        "sha256": "939339567e3935dbc390343623dcbb8f30e45e1c30259b12a748c938f123e4bd"
+      },
+      "duration.csv": {
+        "rows": 1043,
+        "sha256": "1e7cc3810fb4b11e1b59f06aa798793a0e8bc1493c04ac428bb7074b062ccf55"
+      }
+    },
+    "SELECT": {
+      "occupancy.csv": {
+        "rows": 1224,
+        "sha256": "4dd8eaa18bf1bc80575f86acba328f9946d326f4802c5f48e10eb6a872ebf8e1"
+      },
+      "duration.csv": {
+        "rows": 1211,
+        "sha256": "01d532a43434012d0447f0859d58a4ec86206d52227657c670e349a599a36c52"
+      }
+    },
+    "PREDICT": {
+      "occupancy.csv": {
+        "rows": 1548,
+        "sha256": "64145637b256e74991c3dca0cd227c3215f8313a4ea02a7408649306d964d2c2"
+      },
+      "duration.csv": {
+        "rows": 1547,
+        "sha256": "91535b3742ac389b3ac70c26563dfe88cad3f5149a7f359ad033c6d60a14a455"
+      }
+    },
+    "SCORE": {
+      "occupancy.csv": {
+        "rows": 1560,
+        "sha256": "40f3769bc207bb5411225c73ee7f174d194238b61ff71f07aa736dc26bc8bb02"
+      }
+    }
+  },
+  "static_info_sha256": "03c9830965e9e99b29adfb8cceed0eba98d37631f514273cb3fe61f80d63de7c",
+  "column_order_sha256": "3924066ec0c48a6636ee1738baa902c2a11ce93992c3fb4f98c24df785dcc649",
+  "cache_files": [
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1392_h3.npy",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "sha256": "2b6c1a1790ad879adc24aa6eb9d021ce819a01777a7e3789ecad7df64e9a4964",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "native",
+      "file": "private_1392_h3_native_a1.npy",
+      "sha256": "a8870d582828961b80b010a679b8a03ecd0009b1075839ffd9fc64566c16ebf3",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1392_h12.npy",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "sha256": "e9e43f31a9a16f0882a4693dfb1d93e2b59514a235f055101fa02140d3279cf7",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "native",
+      "file": "private_1392_h12_native_a1.npy",
+      "sha256": "e01540b22a04d814f798f6a65370bdf9db69b13d5a4494d81a58e24b06455796",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    }
+  ],
+  "fit_origins": {
+    "start": 169,
+    "stop_exclusive": 1045,
+    "stride": 1,
+    "count": 876
+  },
+  "select_origins": {
+    "start": 1056,
+    "stop_exclusive": 1213,
+    "stride": 12,
+    "count": 14
+  },
+  "eval_origins": {
+    "start": 1392,
+    "stop_exclusive": 1549,
+    "stride": 12,
+    "count": 14
+  },
+  "training_rows": 240900,
+  "training_target": "joint 12-step occupancy, raw source float32 count/cap then float64 data construction",
+  "models": [
+    "RELAX_SHORT_O",
+    "RELAX_SHORT_OD",
+    "DIRECT_SHORT_OD",
+    "DIRECT_LONG_OD",
+    "RIDGE_SHORT_OD",
+    "RIDGE_LONG_OD"
+  ],
+  "primary_candidate": "RELAX_SHORT_OD",
+  "widths": {
+    "SHORT_OD": 8,
+    "SHORT_O": 8,
+    "LONG_OD": 341
+  },
+  "context": "exact-special-value sin/cos of origin mod24 and mod168; log1p(capacity)",
+  "duration_latest_lag": 2,
+  "shared_standardization": "FIT rows equal weight; zero scale iff std<=1e-10 max(1,abs(mean)); SHORT_O D masked and does not use D statistics",
+  "architecture": "Linear(input,32)-Tanh-Linear(32,32)-Tanh; direct output12 residual logits, relax2",
+  "relaxation": "mu=sigmoid(logit(clip(p,1e-4,1-1e-4))+r_mu); rho=sigmoid(r_rho); pred_j=rho^j*p+(1-rho^j)*mu",
+  "direct": "sigmoid(logit(clip(p,1e-4,1-1e-4))+r_j)",
+  "initialization": "reset RNG after construction; hidden Xavier uniform and zero bias; output zero weights/bias except relax rho bias log9",
+  "neural_training_runs": 8,
+  "deterministic_ridge_fits": 2,
+  "seeds": [
+    20260913,
+    20260914
+  ],
+  "epochs": 20,
+  "batch_size": 4096,
+  "drop_last": false,
+  "shuffle": "np.random.default_rng(SeedSequence([seed,epoch])).permutation(N); same order per seed/epoch across models",
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay_weights": 0.0001,
+    "weight_decay_bias": 0,
+    "foreach": false,
+    "gradient_clip_norm": 1.0
+  },
+  "checkpoint_epochs": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "optimizer_steps_per_neural_run": 1180,
+  "optimizer_steps_total": 9440,
+  "training_loss": "mean MSE across training rows and all12 outputs",
+  "checkpoint_selection": "after all fixed training trajectories close; mean SELECT terminal RMSE across H3,H6,H9,H12; exact tie earlier epoch",
+  "refit_after_selection": false,
+  "select_best_seed": false,
+  "ensemble_seeds": false,
+  "ridge_lambda": 0.01,
+  "ridge_intercept_penalty": 0,
+  "ridge_dtype": "float64",
+  "ridge_output_variants": [
+    "raw",
+    "clip_0_1"
+  ],
+  "neural_dtype": "float32",
+  "device": "CPU",
+  "threads": 2,
+  "deterministic_algorithms": true,
+  "horizons": [
+    3,
+    6,
+    9,
+    12
+  ],
+  "native_horizons": [
+    3,
+    12
+  ],
+  "native_h6_h9": "NOT_AVAILABLE",
+  "primary_view": "terminal_H",
+  "secondary_view": "path_1_to_H",
+  "primary_metric": "RMSE",
+  "secondary_metric": "MAE",
+  "legacy_screening_thresholds_active": false,
+  "scientific_automatic_admission": false,
+  "known_future_inputs": [],
+  "new_foundation_inference": 0,
+  "alpha_searches": 0,
+  "max_executions": 1,
+  "automatic_next_round": false,
+  "automation_enabled": false,
+  "human_review_after_completion": true,
+  "sota_claim": false,
+  "uncertainty": "two seeds, fourteen exposed evaluation origins; descriptive means/ranges only",
+  "code_sha256_lf": {
+    "src/urbanev_forecast/short_state.py": "1ac322e99e59a26ea679c5463b43eed4fbc6a9bcca6073ca1f9534fc41d54bc5",
+    "src/urbanev_forecast/short_state_torch.py": "ae4756e2d08cbde9865267403dc3e980ec355fa77f7f2f0ab9790917d7ff5d55",
+    "src/urbanev_forecast/bounded_predictor_csv.py": "65bbd90f82a2adb59d02dfce573e6d0029a4d0ed65a392cc87efe1b94b0bf51d",
+    "src/urbanev_forecast/comparability_bridge.py": "4ed53ed3c290e71829acefd23e4d8201a86bffcc6964156ea9ce3b6ec433c9ec",
+    "src/urbanev_forecast/benchmark_metrics.py": "e959f4455d405f21a59187df248fe0accaaf8f963753a64b9659ca6be1946a9c",
+    "scripts/research/run_short_state_relaxation.py": "2e440d10081dd22bec84931a693cc14467e5eccfe0671e619066d37edf4a7786"
+  }
+}
