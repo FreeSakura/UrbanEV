@@ -1820,6 +1820,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "configs/research/LONG_HISTORY_SOURCE_ABLATION_V1.json",
+      "sha256": "7404cd7d0d2105205ef079bc47dc45c82158d19cc63ae06c50eea52c9f7be3cf",
+      "bytes": 22972,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
       "path": "configs/research/RESIDUAL_CONTINUOUS_STEP_V2_CANDIDATE_REPAIR.json",
       "sha256": "fc2fb79aba11677df414f70a5df83126073677defde1ee8807b16e00e309731d",
       "bytes": 2098,
