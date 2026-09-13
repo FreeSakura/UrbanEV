@@ -2559,8 +2559,8 @@
     },
     {
       "path": "docs/research/sota/SHORT_STATE_RELAXATION_REPORT_20260913.md",
-      "sha256": "61c0f1858b8113e72f205da530b2d10d50e3d4e1b1edb09777c53086cc432a3e",
-      "bytes": 9147,
+      "sha256": "59c6a859d8693bb65c375dbc8d50c8c6e92ac12616e9630f34f629a2bfc65aa6",
+      "bytes": 9615,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
