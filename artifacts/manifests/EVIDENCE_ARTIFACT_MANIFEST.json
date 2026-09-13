@@ -2171,6 +2171,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "configs/research/REFERENCE_HARM_STABILITY_V1.json",
+      "sha256": "b070a58b6fd9a0f8f4403a22d2167d200287eb3a88c429703269d4d657150fa2",
+      "bytes": 8751,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
       "path": "configs/research/RESIDUAL_CONTINUOUS_STEP_V2_CANDIDATE_REPAIR.json",
       "sha256": "fc2fb79aba11677df414f70a5df83126073677defde1ee8807b16e00e309731d",
       "bytes": 2098,
