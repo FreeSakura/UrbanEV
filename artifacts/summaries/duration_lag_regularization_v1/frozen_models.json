@@ -1,0 +1,153 @@
+{
+  "models": {
+    "BASE_OD": {
+      "family": "BASE",
+      "gamma": 0.0,
+      "file": "private_BASE_OD.npy",
+      "sha256": "5f56deb0cf65dee89ffac98687a96809a95c85c9f23b1fd0d9fbdffd1a68145b",
+      "fit_seconds": 0.02544080000370741,
+      "edf": 269.77074438013085,
+      "normal_equation_relative_residual": 5.387319440671266e-18,
+      "coefficient_count": 4104,
+      "training_objective_total": 0.07830851314285758
+    },
+    "TIME_SMOOTH_D_g0.01": {
+      "family": "TIME_SMOOTH_D",
+      "gamma": 0.01,
+      "file": "private_TIME_SMOOTH_D_g0.01.npy",
+      "sha256": "2e5e969e891e54aa1b3c815fc0db8f6526395e137ff0f507ce7f0a69f4b4b804",
+      "fit_seconds": 0.017811099998652935,
+      "edf": 248.9293198241853,
+      "normal_equation_relative_residual": 5.52461306958804e-18,
+      "coefficient_count": 4104,
+      "training_objective_total": 0.07841154595533625
+    },
+    "TIME_SMOOTH_D_g0.1": {
+      "family": "TIME_SMOOTH_D",
+      "gamma": 0.1,
+      "file": "private_TIME_SMOOTH_D_g0.1.npy",
+      "sha256": "d4ee5e8bc7ee239bcecb577b1b8aed7c651932611e831c0256061e7b068a9e5c",
+      "fit_seconds": 0.01565919996937737,
+      "edf": 219.31822790968147,
+      "normal_equation_relative_residual": 5.011207899938417e-18,
+      "coefficient_count": 4104,
+      "training_objective_total": 0.07873222244851867
+    },
+    "TIME_SMOOTH_D_g1": {
+      "family": "TIME_SMOOTH_D",
+      "gamma": 1.0,
+      "file": "private_TIME_SMOOTH_D_g1.npy",
+      "sha256": "ca1c2f6a656f10ff6c034cafa82adf86072dbbe21f4998d2a61cfcaa7edf071a",
+      "fit_seconds": 0.01875129999825731,
+      "edf": 197.03634359904223,
+      "normal_equation_relative_residual": 5.011605831121333e-18,
+      "coefficient_count": 4104,
+      "training_objective_total": 0.07921813162364015
+    },
+    "SCRAMBLED_SMOOTH_D_g0.01": {
+      "family": "SCRAMBLED_SMOOTH_D",
+      "gamma": 0.01,
+      "file": "private_SCRAMBLED_SMOOTH_D_g0.01.npy",
+      "sha256": "5e55d62389f15e53434989ffe780b5e803babb4309c52b376c2c1e524b097200",
+      "fit_seconds": 0.015277299971785396,
+      "edf": 251.14290170744562,
+      "normal_equation_relative_residual": 5.262318531390652e-18,
+      "coefficient_count": 4104,
+      "training_objective_total": 0.07853157407287761
+    },
+    "SCRAMBLED_SMOOTH_D_g0.1": {
+      "family": "SCRAMBLED_SMOOTH_D",
+      "gamma": 0.1,
+      "file": "private_SCRAMBLED_SMOOTH_D_g0.1.npy",
+      "sha256": "57b6c7e20c05b8b0cfdf354b2a2733ab5bd039202263e5d5c6c40491fb8b85d5",
+      "fit_seconds": 0.018491299997549504,
+      "edf": 217.8058493886051,
+      "normal_equation_relative_residual": 5.228511176673278e-18,
+      "coefficient_count": 4104,
+      "training_objective_total": 0.07908671339442257
+    },
+    "SCRAMBLED_SMOOTH_D_g1": {
+      "family": "SCRAMBLED_SMOOTH_D",
+      "gamma": 1.0,
+      "file": "private_SCRAMBLED_SMOOTH_D_g1.npy",
+      "sha256": "4446f95565b7f7d8d007fe645f74dc54fa222fb8746c7fd18310466d0032f6d7",
+      "fit_seconds": 0.015268699964508414,
+      "edf": 192.39113893694383,
+      "normal_equation_relative_residual": 4.9365493357101704e-18,
+      "coefficient_count": 4104,
+      "training_objective_total": 0.0797391019761108
+    },
+    "D_NORM_g0.01": {
+      "family": "D_NORM",
+      "gamma": 0.01,
+      "file": "private_D_NORM_g0.01.npy",
+      "sha256": "f37657d57b2f37e86c7138cfa716a42eaa06dce15e7154a72dd282451aae463d",
+      "fit_seconds": 0.014669099997263402,
+      "edf": 247.84755851764825,
+      "normal_equation_relative_residual": 5.006885048218754e-18,
+      "coefficient_count": 4104,
+      "training_objective_total": 0.07857877615032739
+    },
+    "D_NORM_g0.1": {
+      "family": "D_NORM",
+      "gamma": 0.1,
+      "file": "private_D_NORM_g0.1.npy",
+      "sha256": "25d9acfc56b0bc36d9f45f812552d3a880b6d1fc96c4eeeddbcab9b395cf4a31",
+      "fit_seconds": 0.014321599970571697,
+      "edf": 196.94285534104557,
+      "normal_equation_relative_residual": 3.891914959209651e-18,
+      "coefficient_count": 4104,
+      "training_objective_total": 0.07960837194539311
+    },
+    "D_NORM_g1": {
+      "family": "D_NORM",
+      "gamma": 1.0,
+      "file": "private_D_NORM_g1.npy",
+      "sha256": "16af98c6a2bdf46a1da60800d0f8c283995d1a8539523da79bd685058ab2a9b6",
+      "fit_seconds": 0.02524819999234751,
+      "edf": 165.95725522953774,
+      "normal_equation_relative_residual": 4.282361371774259e-18,
+      "coefficient_count": 4104,
+      "training_objective_total": 0.08074945277306718
+    },
+    "GLOBAL_RIDGE_g0.01": {
+      "family": "GLOBAL_RIDGE",
+      "gamma": 0.01,
+      "file": "private_GLOBAL_RIDGE_g0.01.npy",
+      "sha256": "d56242eb9a8743ef2dcc8f34a9c3f05de8461b03e344f2749b0e28a8937f39b9",
+      "fit_seconds": 0.016477399971336126,
+      "edf": 249.36705816420098,
+      "normal_equation_relative_residual": 4.132605946269287e-18,
+      "coefficient_count": 4104,
+      "training_objective_total": 0.07932092118640123
+    },
+    "GLOBAL_RIDGE_g0.1": {
+      "family": "GLOBAL_RIDGE",
+      "gamma": 0.1,
+      "file": "private_GLOBAL_RIDGE_g0.1.npy",
+      "sha256": "5720f043270fef71e055bdf2121c2f559a6eb51863eef88569134e5b01225de1",
+      "fit_seconds": 0.017175599990878254,
+      "edf": 165.5215676510001,
+      "normal_equation_relative_residual": 3.647086098336498e-18,
+      "coefficient_count": 4104,
+      "training_objective_total": 0.08544396900810043
+    },
+    "GLOBAL_RIDGE_g1": {
+      "family": "GLOBAL_RIDGE",
+      "gamma": 1.0,
+      "file": "private_GLOBAL_RIDGE_g1.npy",
+      "sha256": "9f4c93857f9c91d4e4f3db97848dfd7adcbda1e671de2c2d596d965a172a0b9f",
+      "fit_seconds": 0.015617199998814613,
+      "edf": 60.77039259037505,
+      "normal_equation_relative_residual": 7.025259798632876e-18,
+      "coefficient_count": 4104,
+      "training_objective_total": 0.10437632033042507
+    }
+  },
+  "transform": {
+    "file": "private_transform.npz",
+    "sha256": "31ecb4e3c84891448ad822f7dd3f96eed4b85dc359934ba167e520d2e5f9c908"
+  },
+  "training_closed": true,
+  "unique_fits": 13
+}

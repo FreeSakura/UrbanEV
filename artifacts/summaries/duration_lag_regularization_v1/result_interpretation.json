@@ -1,0 +1,156 @@
+{
+  "contrasts": [
+    {
+      "stage": "SELECT",
+      "reference": "BASE_OD",
+      "postprocess": "raw",
+      "rmse_change_percent": -0.010388859458443367,
+      "mae_change_percent": -0.008028305336904573
+    },
+    {
+      "stage": "SELECT",
+      "reference": "SCRAMBLED_SELECTED",
+      "postprocess": "raw",
+      "rmse_change_percent": -0.007026583856317714,
+      "mae_change_percent": -0.022837610352344218
+    },
+    {
+      "stage": "SELECT",
+      "reference": "BASE_OD",
+      "postprocess": "clip_0_1",
+      "rmse_change_percent": -0.010453695022571985,
+      "mae_change_percent": -0.008034947750101828
+    },
+    {
+      "stage": "SELECT",
+      "reference": "SCRAMBLED_SELECTED",
+      "postprocess": "clip_0_1",
+      "rmse_change_percent": -0.006688825718881297,
+      "mae_change_percent": -0.022326133090821987
+    },
+    {
+      "stage": "DEV_EVAL",
+      "reference": "BASE_OD",
+      "postprocess": "raw",
+      "rmse_change_percent": 0.000294985540527648,
+      "mae_change_percent": -0.009583404550306263
+    },
+    {
+      "stage": "DEV_EVAL",
+      "reference": "SCRAMBLED_SELECTED",
+      "postprocess": "raw",
+      "rmse_change_percent": 0.04280921718196051,
+      "mae_change_percent": 0.01973698169772664
+    },
+    {
+      "stage": "DEV_EVAL",
+      "reference": "BASE_OD",
+      "postprocess": "clip_0_1",
+      "rmse_change_percent": 0.0003102288552492283,
+      "mae_change_percent": -0.00909143453143857
+    },
+    {
+      "stage": "DEV_EVAL",
+      "reference": "SCRAMBLED_SELECTED",
+      "postprocess": "clip_0_1",
+      "rmse_change_percent": 0.04284550271080878,
+      "mae_change_percent": 0.019667630451003504
+    }
+  ],
+  "structure": [
+    {
+      "fit_id": "BASE_OD",
+      "edf": 269.77074438013085,
+      "D_roughness_frobenius": 0.28625811953126806,
+      "D_coefficient_frobenius": 0.17788050556575694
+    },
+    {
+      "fit_id": "TIME_SMOOTH_D_g0.01",
+      "edf": 248.9293198241853,
+      "D_roughness_frobenius": 0.21810368830665683,
+      "D_coefficient_frobenius": 0.16491752904390397
+    },
+    {
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "edf": 251.14290170744562,
+      "D_roughness_frobenius": 0.2648330479678399,
+      "D_coefficient_frobenius": 0.16128543606974083
+    }
+  ],
+  "grouped_raw_endpoint_losses": [
+    {
+      "reference": "BASE_OD",
+      "group": "[0,0.01)",
+      "sample_count": 2419,
+      "mae_positive_sum": 0.5888118489200653,
+      "mae_negative_sum": -0.70411085120223,
+      "mae_net_sum": -0.11529900228216465,
+      "mse_net_sum": -0.0023001254821219093
+    },
+    {
+      "reference": "BASE_OD",
+      "group": "[0.01,0.05)",
+      "sample_count": 6526,
+      "mae_positive_sum": 2.045680696861268,
+      "mae_negative_sum": -1.9455484129553078,
+      "mae_net_sum": 0.10013228390596039,
+      "mse_net_sum": 0.0011128532211052092
+    },
+    {
+      "reference": "BASE_OD",
+      "group": "[0.05,0.10)",
+      "sample_count": 3336,
+      "mae_positive_sum": 1.3261562994798866,
+      "mae_negative_sum": -1.1930705553332124,
+      "mae_net_sum": 0.13308574414667415,
+      "mse_net_sum": 0.014567636792845288
+    },
+    {
+      "reference": "BASE_OD",
+      "group": "[0.10,infinity)",
+      "sample_count": 3119,
+      "mae_positive_sum": 1.3646923999013176,
+      "mae_negative_sum": -1.3815240677845484,
+      "mae_net_sum": -0.01683166788323079,
+      "mse_net_sum": -0.014397789365260238
+    },
+    {
+      "reference": "SCRAMBLED_SELECTED",
+      "group": "[0,0.01)",
+      "sample_count": 2419,
+      "mae_positive_sum": 1.7313189170078505,
+      "mae_negative_sum": -1.3656680106782855,
+      "mae_net_sum": 0.36565090632956465,
+      "mse_net_sum": 0.00694218036832982
+    },
+    {
+      "reference": "SCRAMBLED_SELECTED",
+      "group": "[0.01,0.05)",
+      "sample_count": 6526,
+      "mae_positive_sum": 4.801798079808225,
+      "mae_negative_sum": -5.03932904118022,
+      "mae_net_sum": -0.2375309613719947,
+      "mse_net_sum": 0.017068999551521073
+    },
+    {
+      "reference": "SCRAMBLED_SELECTED",
+      "group": "[0.05,0.10)",
+      "sample_count": 3336,
+      "mae_positive_sum": 2.529576602819919,
+      "mae_negative_sum": -2.8779720470768537,
+      "mae_net_sum": -0.348395444256935,
+      "mse_net_sum": -0.03387273744910833
+    },
+    {
+      "reference": "SCRAMBLED_SELECTED",
+      "group": "[0.10,infinity)",
+      "sample_count": 3119,
+      "mae_positive_sum": 3.012256006158873,
+      "mae_negative_sum": -3.000108469007981,
+      "mae_net_sum": 0.01214753715089234,
+      "mse_net_sum": -0.14361718977663712
+    }
+  ],
+  "public_only_reduction_error": 2.325613659981407e-17,
+  "interpretation": "Positive relative change means worse; bins use BASE raw labels and overlapping horizons, not causal or independent samples"
+}

@@ -830,6 +830,123 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/duration_lag_regularization_v1/development_scores.csv",
+      "sha256": "98bf962389d6925f6d1f94fb6c09922f55c83797b5f363e8e6949163c23fdc9e",
+      "bytes": 13055,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/duration_lag_regularization_v1/execution_receipt.json",
+      "sha256": "f60a47d3fa9b1ee21e4d11433ca867a4f8374e8340d53fedd84c988536f85e45",
+      "bytes": 3758,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/duration_lag_regularization_v1/frozen_models.json",
+      "sha256": "273e129719e3140d0724116d9818ca00d0cfecbc8f3238d32a3be768bdf7012b",
+      "bytes": 5975,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/duration_lag_regularization_v1/frozen_selection.json",
+      "sha256": "357ae3dede214ba104b4d4b261634be90898277e557c7e0375bbca1f1b2a7774",
+      "bytes": 1347,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/duration_lag_regularization_v1/paired_loss_report.json",
+      "sha256": "c33ba6b4b67fa3a0dcd2413f6b391cbf49310b805037a3ef77b6ec6739bd3ef3",
+      "bytes": 266274,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/duration_lag_regularization_v1/paired_origin_errors.csv",
+      "sha256": "7626b4fac59620861d1a77592acab41584f32d3fff82434c71d56675788a496c",
+      "bytes": 114013,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/duration_lag_regularization_v1/penalty_manifest.json",
+      "sha256": "55deb944cdbcbcc2a740c5993c7cb8cf6ea1498034f55c6988473d1f00de468b",
+      "bytes": 6921,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/duration_lag_regularization_v1/prediction_freeze.json",
+      "sha256": "8a01c578007f05d3a49db4c462fd4377c37f92e08fa64d1f23e5a4f94cc3a531",
+      "bytes": 1809,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/duration_lag_regularization_v1/regularization_diagnostics.csv",
+      "sha256": "c53039d3a369da7c1f7f625add272c7948ac82241aa871ec39584224160196c1",
+      "bytes": 31625,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/duration_lag_regularization_v1/result_interpretation.json",
+      "sha256": "75c055ccbfe25422c96a6315606a4932cd0ff8f9607addd3a8d535a43332d79a",
+      "bytes": 4759,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/duration_lag_regularization_v1/selection_scores.csv",
+      "sha256": "110e558f331edd35fefa37d4713ff628ef5410be765a050b15b2c58d7631409b",
+      "bytes": 20857,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/duration_lag_regularization_v1/summary.json",
+      "sha256": "7c939eaeaac5c3a1052ba86ea985ba3b734aa4a9d6ccb01021c463b357f440dc",
+      "bytes": 12703,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/duration_lag_regularization_v1/verification.json",
+      "sha256": "64596c96ca921bbfee44bf9f795e13b65c7b99bdc22da05062c726df6f93b57d",
+      "bytes": 359,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/fixed_fusion/FIXED_FUSION_SUMMARY.json",
       "sha256": "c795e09ea8c380aef00c1dc8e4e3585edc1ef03300008539fade31102989df59",
       "bytes": 1580,

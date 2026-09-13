@@ -1,0 +1,447 @@
+{
+  "rows": [
+    {
+      "stage": "SELECT",
+      "system": "BASE_OD",
+      "fit_id": "BASE_OD",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08142685624896802,
+      "macro_mae": 0.05170774614339457
+    },
+    {
+      "stage": "SELECT",
+      "system": "BASE_OD",
+      "fit_id": "BASE_OD",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07210682098042341,
+      "macro_mae": 0.0429238723001787
+    },
+    {
+      "stage": "SELECT",
+      "system": "BASE_OD",
+      "fit_id": "BASE_OD",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08142395053066231,
+      "macro_mae": 0.051695921296532735
+    },
+    {
+      "stage": "SELECT",
+      "system": "BASE_OD",
+      "fit_id": "BASE_OD",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.0720923795976906,
+      "macro_mae": 0.04289921639157708
+    },
+    {
+      "stage": "SELECT",
+      "system": "TIME_SELECTED",
+      "fit_id": "TIME_SMOOTH_D_g0.01",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08141839692731088,
+      "macro_mae": 0.05170359488765135
+    },
+    {
+      "stage": "SELECT",
+      "system": "TIME_SELECTED",
+      "fit_id": "TIME_SMOOTH_D_g0.01",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07213030638271906,
+      "macro_mae": 0.04294801072193384
+    },
+    {
+      "stage": "SELECT",
+      "system": "TIME_SELECTED",
+      "fit_id": "TIME_SMOOTH_D_g0.01",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08141543871919851,
+      "macro_mae": 0.05169176755626762
+    },
+    {
+      "stage": "SELECT",
+      "system": "TIME_SELECTED",
+      "fit_id": "TIME_SMOOTH_D_g0.01",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07211743983070526,
+      "macro_mae": 0.04292421198773648
+    },
+    {
+      "stage": "SELECT",
+      "system": "SCRAMBLED_SELECTED",
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08142411826125978,
+      "macro_mae": 0.051715405450440254
+    },
+    {
+      "stage": "SELECT",
+      "system": "SCRAMBLED_SELECTED",
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07217758185737218,
+      "macro_mae": 0.042970755699683685
+    },
+    {
+      "stage": "SELECT",
+      "system": "SCRAMBLED_SELECTED",
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08142088482028291,
+      "macro_mae": 0.05170331090627292
+    },
+    {
+      "stage": "SELECT",
+      "system": "SCRAMBLED_SELECTED",
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07216484012273136,
+      "macro_mae": 0.042946757417748074
+    },
+    {
+      "stage": "SELECT",
+      "system": "D_NORM_SELECTED",
+      "fit_id": "BASE_OD",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08142685624896802,
+      "macro_mae": 0.05170774614339457
+    },
+    {
+      "stage": "SELECT",
+      "system": "D_NORM_SELECTED",
+      "fit_id": "BASE_OD",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07210682098042341,
+      "macro_mae": 0.0429238723001787
+    },
+    {
+      "stage": "SELECT",
+      "system": "D_NORM_SELECTED",
+      "fit_id": "BASE_OD",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08142395053066231,
+      "macro_mae": 0.051695921296532735
+    },
+    {
+      "stage": "SELECT",
+      "system": "D_NORM_SELECTED",
+      "fit_id": "BASE_OD",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.0720923795976906,
+      "macro_mae": 0.04289921639157708
+    },
+    {
+      "stage": "SELECT",
+      "system": "GLOBAL_RIDGE_SELECTED",
+      "fit_id": "BASE_OD",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08142685624896802,
+      "macro_mae": 0.05170774614339457
+    },
+    {
+      "stage": "SELECT",
+      "system": "GLOBAL_RIDGE_SELECTED",
+      "fit_id": "BASE_OD",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07210682098042341,
+      "macro_mae": 0.0429238723001787
+    },
+    {
+      "stage": "SELECT",
+      "system": "GLOBAL_RIDGE_SELECTED",
+      "fit_id": "BASE_OD",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08142395053066231,
+      "macro_mae": 0.051695921296532735
+    },
+    {
+      "stage": "SELECT",
+      "system": "GLOBAL_RIDGE_SELECTED",
+      "fit_id": "BASE_OD",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.0720923795976906,
+      "macro_mae": 0.04289921639157708
+    },
+    {
+      "stage": "SELECT",
+      "system": "SCRAMBLED_MATCHED",
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08142411826125978,
+      "macro_mae": 0.051715405450440254
+    },
+    {
+      "stage": "SELECT",
+      "system": "SCRAMBLED_MATCHED",
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07217758185737218,
+      "macro_mae": 0.042970755699683685
+    },
+    {
+      "stage": "SELECT",
+      "system": "SCRAMBLED_MATCHED",
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08142088482028291,
+      "macro_mae": 0.05170331090627292
+    },
+    {
+      "stage": "SELECT",
+      "system": "SCRAMBLED_MATCHED",
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07216484012273136,
+      "macro_mae": 0.042946757417748074
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "BASE_OD",
+      "fit_id": "BASE_OD",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11114679530313792,
+      "macro_mae": 0.06849459515196628
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "BASE_OD",
+      "fit_id": "BASE_OD",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.1129239978966311,
+      "macro_mae": 0.06382211189926876
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "BASE_OD",
+      "fit_id": "BASE_OD",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11114439957895435,
+      "macro_mae": 0.06848363560309487
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "BASE_OD",
+      "fit_id": "BASE_OD",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11292099965319902,
+      "macro_mae": 0.0638056181212632
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "TIME_SELECTED",
+      "fit_id": "TIME_SMOOTH_D_g0.01",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11114712317011283,
+      "macro_mae": 0.06848803103781777
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "TIME_SELECTED",
+      "fit_id": "TIME_SMOOTH_D_g0.01",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11297582850096836,
+      "macro_mae": 0.06385013184259936
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "TIME_SELECTED",
+      "fit_id": "TIME_SMOOTH_D_g0.01",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11114474438095284,
+      "macro_mae": 0.06847740945819926
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "TIME_SELECTED",
+      "fit_id": "TIME_SMOOTH_D_g0.01",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11297326336915223,
+      "macro_mae": 0.06383519860215064
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "SCRAMBLED_SELECTED",
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11109956231719224,
+      "macro_mae": 0.06847451623508084
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "SCRAMBLED_SELECTED",
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11269952268283262,
+      "macro_mae": 0.06371319501699398
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "SCRAMBLED_SELECTED",
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11109714425100115,
+      "macro_mae": 0.06846394422265736
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "SCRAMBLED_SELECTED",
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11269671326319339,
+      "macro_mae": 0.06369783108992164
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "D_NORM_SELECTED",
+      "fit_id": "BASE_OD",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11114679530313792,
+      "macro_mae": 0.06849459515196628
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "D_NORM_SELECTED",
+      "fit_id": "BASE_OD",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.1129239978966311,
+      "macro_mae": 0.06382211189926876
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "D_NORM_SELECTED",
+      "fit_id": "BASE_OD",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11114439957895435,
+      "macro_mae": 0.06848363560309487
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "D_NORM_SELECTED",
+      "fit_id": "BASE_OD",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11292099965319902,
+      "macro_mae": 0.0638056181212632
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "GLOBAL_RIDGE_SELECTED",
+      "fit_id": "BASE_OD",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11114679530313792,
+      "macro_mae": 0.06849459515196628
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "GLOBAL_RIDGE_SELECTED",
+      "fit_id": "BASE_OD",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.1129239978966311,
+      "macro_mae": 0.06382211189926876
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "GLOBAL_RIDGE_SELECTED",
+      "fit_id": "BASE_OD",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11114439957895435,
+      "macro_mae": 0.06848363560309487
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "GLOBAL_RIDGE_SELECTED",
+      "fit_id": "BASE_OD",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11292099965319902,
+      "macro_mae": 0.0638056181212632
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "SCRAMBLED_MATCHED",
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11109956231719224,
+      "macro_mae": 0.06847451623508084
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "SCRAMBLED_MATCHED",
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11269952268283262,
+      "macro_mae": 0.06371319501699398
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "SCRAMBLED_MATCHED",
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11109714425100115,
+      "macro_mae": 0.06846394422265736
+    },
+    {
+      "stage": "DEV_EVAL",
+      "system": "SCRAMBLED_MATCHED",
+      "fit_id": "SCRAMBLED_SMOOTH_D_g0.01",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11269671326319339,
+      "macro_mae": 0.06369783108992164
+    }
+  ],
+  "gamma_by_family": {
+    "TIME_SMOOTH_D": 0.01,
+    "SCRAMBLED_SMOOTH_D": 0.01,
+    "D_NORM": 0.0,
+    "GLOBAL_RIDGE": 0.0
+  },
+  "primary_method": "TIME_SELECTED",
+  "primary_metric": "raw four-H endpoint macro RMSE",
+  "scientific_automatic_admission": false,
+  "sota_claim": false,
+  "uncertainty": "exposed development windows, 1056 used for gamma selection; no independent confirmation or p-values"
+}

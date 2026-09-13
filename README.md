@@ -24,6 +24,8 @@
 
 ## 当前科学问题
 
+最新[时长滞后有序正则化](docs/research/sota/DURATION_LAG_REGULARIZATION_REPORT_20260913.md)完成13组拟合：真实顺序平滑虽然使系数更平滑，但在1392开发窗未形成整体预测优势，并弱于同强度错序对照；小误差组仍有净增损。**长D有增量，不代表二阶平滑就是有效利用方式。** 本轮结果和别名完整保留，无新SOTA声明。
+
 最新[长历史来源消融](docs/research/sota/LONG_HISTORY_SOURCE_REPORT_20260913.md)完成8个固定ridge对照：给定长O和单个D，更早D使两个开发窗口的raw末点RMSE分别下降0.943%/3.765%，MAE也改善；本次重复O控制未解释掉该收益。较早历史的作用随窗口变化，不能据此宣称总体信息识别或SOTA。**这一轮保留长D建模线索，不把最新单个D或短摘要的失败推广为时长无用。**
 
 本轮[短摘要与条件弛豫真实实验](docs/research/sota/SHORT_STATE_RELAXATION_REPORT_20260913.md)已完成8次神经训练、2次ridge拟合：主候选未优于同信息直接模型；长历史DIRECT/RIDGE分别较短历史降低四H末点RMSE约11.21%/15.62%。长ridge接近native的H3/H12 RMSE，但MAE更差。**保留长历史研究线索，不主张单模弛豫优势或SOTA**；全部结果返回人工审核，没有恢复旧收益门。

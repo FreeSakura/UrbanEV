@@ -1,0 +1,37 @@
+{
+  "gamma_by_family": {
+    "TIME_SMOOTH_D": 0.01,
+    "SCRAMBLED_SMOOTH_D": 0.01,
+    "D_NORM": 0.0,
+    "GLOBAL_RIDGE": 0.0
+  },
+  "system_to_fit_id": {
+    "BASE_OD": "BASE_OD",
+    "TIME_SELECTED": "TIME_SMOOTH_D_g0.01",
+    "SCRAMBLED_SELECTED": "SCRAMBLED_SMOOTH_D_g0.01",
+    "D_NORM_SELECTED": "BASE_OD",
+    "GLOBAL_RIDGE_SELECTED": "BASE_OD",
+    "SCRAMBLED_MATCHED": "SCRAMBLED_SMOOTH_D_g0.01"
+  },
+  "selection_rmse_by_fit": {
+    "BASE_OD": 0.08142685624896802,
+    "TIME_SMOOTH_D_g0.01": 0.08141839692731088,
+    "TIME_SMOOTH_D_g0.1": 0.08144425997708626,
+    "TIME_SMOOTH_D_g1": 0.08154703942435484,
+    "SCRAMBLED_SMOOTH_D_g0.01": 0.08142411826125978,
+    "SCRAMBLED_SMOOTH_D_g0.1": 0.08147420856245739,
+    "SCRAMBLED_SMOOTH_D_g1": 0.08161650165925613,
+    "D_NORM_g0.01": 0.08143717241948453,
+    "D_NORM_g0.1": 0.08159753526336617,
+    "D_NORM_g1": 0.08198789165367444,
+    "GLOBAL_RIDGE_g0.01": 0.08161452523585738,
+    "GLOBAL_RIDGE_g0.1": 0.08319794672839734,
+    "GLOBAL_RIDGE_g1": 0.08932395750873735
+  },
+  "shared_zero_fit": "BASE_OD",
+  "selection_rule": "raw four-H endpoint macro RMSE, exact ties smaller gamma; no MAE or effect-size filter",
+  "models_sha256": "273e129719e3140d0724116d9818ca00d0cfecbc8f3238d32a3be768bdf7012b",
+  "same_gamma_scrambled": 0.01,
+  "unique_dev_parameter_sets": 3,
+  "no_refit": true
+}

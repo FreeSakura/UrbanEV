@@ -1,0 +1,10 @@
+{
+  "anchor_max_error": 0.0,
+  "direct_loss_reduction_max_error": 2.3259524731603087e-17,
+  "loss_identity_or_bin_sum_max_error": 1.3322676295501878e-15,
+  "normal_equation_max_relative_residual": 7.025259798632876e-18,
+  "unique_selection_parameter_sets": 13,
+  "dev_unique_parameter_sets": 3,
+  "dev_logical_identities": 6,
+  "old_private_arrays_read": 0
+}
