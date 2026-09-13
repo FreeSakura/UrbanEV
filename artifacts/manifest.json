@@ -1910,6 +1910,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "configs/research/DURATION_LAG_REGULARIZATION_V1.json",
+      "sha256": "f23505e33a62f5ad424e86aba82c3ac5aececaae020d4954ab6e324789fb941d",
+      "bytes": 5578,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
       "path": "configs/research/FM_CALIBRATION_FOLD1_V1.json",
       "sha256": "ae27de96837bd070e83af80319439bd81f6798548cd95b0150d51eb8dfc5cceb",
       "bytes": 1498,

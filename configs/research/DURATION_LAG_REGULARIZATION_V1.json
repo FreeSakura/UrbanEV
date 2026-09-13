@@ -1,0 +1,164 @@
+{
+  "protocol_id": "DURATION_LAG_REGULARIZATION_V1_20260913",
+  "anchor_commit": "b0b9cb567f2124343adae8880abb0fb658bad9a4",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "parent_protocol": "LONG_HISTORY_SOURCE_ABLATION_V1_20260913",
+  "limits": {
+    "FIT": {
+      "occupancy.csv": 1056,
+      "duration.csv": 1043
+    },
+    "SELECT": {
+      "occupancy.csv": 1224,
+      "duration.csv": 1211
+    },
+    "PREDICT": {
+      "occupancy.csv": 1548,
+      "duration.csv": 1547
+    },
+    "SCORE": {
+      "occupancy.csv": 1560
+    }
+  },
+  "prefixes": {
+    "FIT": {
+      "occupancy.csv": {
+        "rows": 1056,
+        "sha256": "939339567e3935dbc390343623dcbb8f30e45e1c30259b12a748c938f123e4bd"
+      },
+      "duration.csv": {
+        "rows": 1043,
+        "sha256": "1e7cc3810fb4b11e1b59f06aa798793a0e8bc1493c04ac428bb7074b062ccf55"
+      }
+    },
+    "SELECT": {
+      "occupancy.csv": {
+        "rows": 1224,
+        "sha256": "4dd8eaa18bf1bc80575f86acba328f9946d326f4802c5f48e10eb6a872ebf8e1"
+      },
+      "duration.csv": {
+        "rows": 1211,
+        "sha256": "01d532a43434012d0447f0859d58a4ec86206d52227657c670e349a599a36c52"
+      }
+    },
+    "PREDICT": {
+      "occupancy.csv": {
+        "rows": 1548,
+        "sha256": "64145637b256e74991c3dca0cd227c3215f8313a4ea02a7408649306d964d2c2"
+      },
+      "duration.csv": {
+        "rows": 1547,
+        "sha256": "91535b3742ac389b3ac70c26563dfe88cad3f5149a7f359ad033c6d60a14a455"
+      }
+    },
+    "SCORE": {
+      "occupancy.csv": {
+        "rows": 1560,
+        "sha256": "40f3769bc207bb5411225c73ee7f174d194238b61ff71f07aa736dc26bc8bb02"
+      }
+    }
+  },
+  "static_info_sha256": "03c9830965e9e99b29adfb8cceed0eba98d37631f514273cb3fe61f80d63de7c",
+  "column_order_sha256": "3924066ec0c48a6636ee1738baa902c2a11ce93992c3fb4f98c24df785dcc649",
+  "fit_origins": {
+    "start": 169,
+    "stop_exclusive": 1045,
+    "stride": 1,
+    "count": 876
+  },
+  "select_origins": {
+    "start": 1056,
+    "stop_exclusive": 1213,
+    "stride": 12,
+    "count": 14
+  },
+  "eval_origins": {
+    "start": 1392,
+    "stop_exclusive": 1549,
+    "stride": 12,
+    "count": 14
+  },
+  "input": "168O + 168D(last o-2) + five context, shared FIT standardization",
+  "constant_column_rule": "std<=1e-10 max(1,abs(mean)); remove for solve, exact zero coefficient fill",
+  "penalty_coordinates": "standardized coefficients; no physical kernel interpretation",
+  "families": [
+    "TIME_SMOOTH_D",
+    "SCRAMBLED_SMOOTH_D",
+    "D_NORM",
+    "GLOBAL_RIDGE"
+  ],
+  "gammas": [
+    0.0,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "base_ridge": 0.01,
+  "objective": "1/N sum row/output squared residual + .01 nonintercept norm squared + gamma trace(B.T Q B)",
+  "time_penalty": "active consecutive D triples [1,-2,1], no gap bridging or wrap; trace scaled to active D count m",
+  "scrambled_penalty": "P.T Q_time P, P=eye(m)[default_rng(20260913).permutation(m)]",
+  "scramble_seed": 20260913,
+  "D_norm": "active D identity",
+  "global_ridge": "active nonintercept identity scaled m/k",
+  "matrix_check_tolerance": 1e-10,
+  "normal_equation_relative_tolerance": 1e-10,
+  "anchor_score_tolerance": 1e-08,
+  "score_loss_absolute_tolerance": 1e-10,
+  "unique_fits": 13,
+  "shared_gamma_zero": "BASE_OD",
+  "selection_rule": "per-family raw four-H terminal macro RMSE, exact ties smaller gamma",
+  "dev_systems": [
+    "BASE_OD",
+    "TIME_SELECTED",
+    "SCRAMBLED_SELECTED",
+    "D_NORM_SELECTED",
+    "GLOBAL_RIDGE_SELECTED",
+    "SCRAMBLED_MATCHED"
+  ],
+  "scrambled_matched": "same gamma as TIME_SELECTED, no new fitting",
+  "selection_score_rows": 208,
+  "dev_logical_score_rows": 96,
+  "core_comparisons": [
+    "BASE_OD",
+    "GLOBAL_RIDGE_SELECTED",
+    "D_NORM_SELECTED",
+    "SCRAMBLED_SELECTED",
+    "SCRAMBLED_MATCHED"
+  ],
+  "error_bins": [
+    0,
+    0.01,
+    0.05,
+    0.1,
+    "infinity"
+  ],
+  "error_bin_reference": "absolute BASE_OD raw error, same labels for raw/clip, descriptive only",
+  "device": "CPU",
+  "threads": 2,
+  "dtype": "float64",
+  "max_executions": 1,
+  "neural_training_runs": 0,
+  "new_foundation_inference": 0,
+  "alpha_searches": 0,
+  "refit_after_selection": false,
+  "prior_scores_sha256": "40b68614207d25f75075164706a0ac1b1b2c5f529cd5ab8549a93c53f50b50e5",
+  "prior_summary_sha256": "74fb53fb7928d43be95f151d7150b6983e884da8ae201d3f8af4b29533a97085",
+  "old_private_array_reads": 0,
+  "known_future_inputs": [],
+  "legacy_screening_thresholds_active": false,
+  "scientific_automatic_admission": false,
+  "automatic_next_round": false,
+  "automation_enabled": false,
+  "human_review_after_completion": true,
+  "sota_claim": false,
+  "code_sha256_lf": {
+    "src/urbanev_forecast/lag_regularization.py": "bad58ef9dcd254b56210a795827ca65aa97cdb8a0e3e841e41081fa5215d4b11",
+    "scripts/research/run_duration_lag_regularization.py": "dd3202876b4f94adf88fa83098477f1efb9ff599ccf899a7c9c508b8a2345d1b",
+    "scripts/research/run_long_history_source_ablation.py": "4c6a9d88dc19bb483f8896af57eaffacab14f6e6fedf8452b2d8445ab425a51c",
+    "src/urbanev_forecast/history_source.py": "314105318c0df02254b540471a991bdcaf9996a0b5252db030f6e55fdba4ba58",
+    "src/urbanev_forecast/short_state.py": "1ac322e99e59a26ea679c5463b43eed4fbc6a9bcca6073ca1f9534fc41d54bc5",
+    "src/urbanev_forecast/bounded_predictor_csv.py": "65bbd90f82a2adb59d02dfce573e6d0029a4d0ed65a392cc87efe1b94b0bf51d",
+    "src/urbanev_forecast/comparability_bridge.py": "4ed53ed3c290e71829acefd23e4d8201a86bffcc6964156ea9ce3b6ec433c9ec",
+    "src/urbanev_forecast/benchmark_metrics.py": "e959f4455d405f21a59187df248fe0accaaf8f963753a64b9659ca6be1946a9c"
+  }
+}
