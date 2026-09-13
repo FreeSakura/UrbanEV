@@ -677,6 +677,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/journal_methods_20260913/source_verification.json",
+      "sha256": "3adb560e4226853e8872b0586be367ed05eb15d7a8608dc1c320e8a4db62e966",
+      "bytes": 10354,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/latency/ACCURACY_LATENCY_FRONTIER.csv",
       "sha256": "e18cf9ed80d071bae5b5c1c62ff4ad47062417502d8023a9153adff2e8cea294",
       "bytes": 2244,

@@ -57,8 +57,8 @@
     },
     {
       "path": "artifacts/manifest.json",
-      "sha256": "71320d454b4ade7a2702e4e4cfaf973f4eff1ec9b846c3f587f0cd95f08de0bf",
-      "bytes": 60251,
+      "sha256": "6be11d3726e95ceb76bd4b56854788c39215837d0338953c9466b7aa8010262a",
+      "bytes": 60621,
       "role": "artifacts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -66,8 +66,8 @@
     },
     {
       "path": "artifacts/manifests/EVIDENCE_ARTIFACT_MANIFEST.json",
-      "sha256": "71320d454b4ade7a2702e4e4cfaf973f4eff1ec9b846c3f587f0cd95f08de0bf",
-      "bytes": 60251,
+      "sha256": "6be11d3726e95ceb76bd4b56854788c39215837d0338953c9466b7aa8010262a",
+      "bytes": 60621,
       "role": "artifacts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -806,6 +806,15 @@
       "path": "artifacts/summaries/fm_calibration_v1/timesfm_weight_lock.json",
       "sha256": "a5d8be49423bdce00d363704675889bee7694e511b9a51e9213b9740ff35cc46",
       "bytes": 974,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/journal_methods_20260913/source_verification.json",
+      "sha256": "3adb560e4226853e8872b0586be367ed05eb15d7a8608dc1c320e8a4db62e966",
+      "bytes": 10354,
       "role": "evidence_summary",
       "origin": "frozen project artifact; publicly sanitized",
       "license": "CC-BY-4.0",
@@ -1625,6 +1634,15 @@
       "path": "docs/research/sota/INITIAL_PROPOSAL.md",
       "sha256": "039e512bd4d05408f68e6bdb0be9be0024c9d8abeb87302068b4bdd451d7d4fd",
       "bytes": 5416,
+      "role": "paper_or_documentation",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "docs/research/sota/JOURNAL_READING_NOTES_20260913.md",
+      "sha256": "1d01c49013cbed04fa6436b44ea7ad78de0d964996e038c7105ee378a69842b7",
+      "bytes": 11381,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",

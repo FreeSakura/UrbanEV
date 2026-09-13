@@ -1,0 +1,450 @@
+{
+  "date": "2026-09-13",
+  "discovery_sources": [
+    "web"
+  ],
+  "local_paper_library": "No papers/ or literature/ library found in the research repository",
+  "batch_helper": "unavailable; initial unverified fallback retained privately",
+  "independent_verification": "Direct Crossref DOI identity checks completed for every included record; content interpretation separately checked against publisher/author sources",
+  "records": [
+    {
+      "id": "powell2022",
+      "doi": "10.1038/s41560-022-01105-7",
+      "status": "verified",
+      "method": "direct_crossref",
+      "source_url": "https://api.crossref.org/works/10.1038%2Fs41560-022-01105-7",
+      "title": [
+        "Charging infrastructure access and operation to reduce the grid impacts of deep electric vehicle adoption"
+      ],
+      "authors": [
+        "Siobhan Powell",
+        "Gustavo Vianna Cezar",
+        "Liang Min",
+        "Inês M. L. Azevedo",
+        "Ram Rajagopal"
+      ],
+      "venue": [
+        "Nature Energy"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            22
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            22
+          ]
+        ]
+      },
+      "published_print": null,
+      "type": "journal-article"
+    },
+    {
+      "id": "behavior2026",
+      "doi": "10.1038/s41467-025-66796-4",
+      "status": "verified",
+      "method": "direct_crossref",
+      "source_url": "https://api.crossref.org/works/10.1038%2Fs41467-025-66796-4",
+      "title": [
+        "Behavioral uncertainty in EV charging drives heterogeneous grid load variability under climate goals"
+      ],
+      "authors": [
+        "Bin Zhang",
+        "Qingyao Xin",
+        "Siyuan Chen",
+        "Zhaohua Wang",
+        "Yang Lu",
+        "Niu Niu",
+        "Fang Zhang",
+        "Guangchuan Liu",
+        "Prateek Bansal"
+      ],
+      "venue": [
+        "Nature Communications"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            6
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            6
+          ]
+        ]
+      },
+      "published_print": null,
+      "type": "journal-article"
+    },
+    {
+      "id": "li2025",
+      "doi": "10.1038/s41467-025-65970-y",
+      "status": "verified",
+      "method": "direct_crossref",
+      "source_url": "https://api.crossref.org/works/10.1038%2Fs41467-025-65970-y",
+      "title": [
+        "Deep learning predicts real-world electric vehicle direct current charging profiles and durations"
+      ],
+      "authors": [
+        "Siyi Li",
+        "Mingrui Zhang",
+        "Robert Doel",
+        "Benjamin Ross",
+        "Matthew D. Piggott"
+      ],
+      "venue": [
+        "Nature Communications"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            5
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            5
+          ]
+        ]
+      },
+      "published_print": null,
+      "type": "journal-article"
+    },
+    {
+      "id": "shang2025",
+      "doi": "10.1016/j.apenergy.2025.125460",
+      "status": "verified",
+      "method": "direct_crossref",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.apenergy.2025.125460",
+      "title": [
+        "Explainable spatiotemporal multi-task learning for electric vehicle charging demand prediction"
+      ],
+      "authors": [
+        "Yitong Shang",
+        "Duo Li",
+        "Yang Li",
+        "Sen Li"
+      ],
+      "venue": [
+        "Applied Energy"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4
+          ]
+        ]
+      },
+      "published_online": null,
+      "published_print": {
+        "date-parts": [
+          [
+            2025,
+            4
+          ]
+        ]
+      },
+      "type": "journal-article"
+    },
+    {
+      "id": "lim2021",
+      "doi": "10.1016/j.ijforecast.2021.03.012",
+      "status": "verified",
+      "method": "direct_crossref",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.ijforecast.2021.03.012",
+      "title": [
+        "Temporal Fusion Transformers for interpretable multi-horizon time series forecasting"
+      ],
+      "authors": [
+        "Bryan Lim",
+        "Sercan Ö. Arık",
+        "Nicolas Loeff",
+        "Tomas Pfister"
+      ],
+      "venue": [
+        "International Journal of Forecasting"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            10
+          ]
+        ]
+      },
+      "published_online": null,
+      "published_print": {
+        "date-parts": [
+          [
+            2021,
+            10
+          ]
+        ]
+      },
+      "type": "journal-article"
+    },
+    {
+      "id": "gneiting2011",
+      "doi": "10.1198/jasa.2011.r10138",
+      "status": "verified",
+      "method": "direct_crossref",
+      "source_url": "https://api.crossref.org/works/10.1198%2Fjasa.2011.r10138",
+      "title": [
+        "Making and Evaluating Point Forecasts"
+      ],
+      "authors": [
+        "Tilmann Gneiting"
+      ],
+      "venue": [
+        "Journal of the American Statistical Association"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            6
+          ]
+        ]
+      },
+      "published_online": null,
+      "published_print": {
+        "date-parts": [
+          [
+            2011,
+            6
+          ]
+        ]
+      },
+      "type": "journal-article"
+    },
+    {
+      "id": "anchor2021",
+      "doi": "10.1111/rssb.12398",
+      "status": "verified",
+      "method": "direct_crossref_retry",
+      "source_url": "https://api.crossref.org/works/10.1111%2Frssb.12398",
+      "title": [
+        "Anchor Regression: Heterogeneous Data Meet Causality"
+      ],
+      "authors": [
+        "Dominik Rothenhäusler",
+        "Nicolai Meinshausen",
+        "Peter Bühlmann",
+        "Jonas Peters"
+      ],
+      "venue": [
+        "Journal of the Royal Statistical Society Series B: Statistical Methodology"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            25
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            25
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2021,
+            4,
+            1
+          ]
+        ]
+      },
+      "type": "journal-article",
+      "prior_attempt_status": "verify_pending"
+    },
+    {
+      "id": "mint2019",
+      "doi": "10.1080/01621459.2018.1448825",
+      "status": "verified",
+      "method": "direct_crossref",
+      "source_url": "https://api.crossref.org/works/10.1080%2F01621459.2018.1448825",
+      "title": [
+        "Optimal Forecast Reconciliation for Hierarchical and Grouped Time Series Through Trace Minimization"
+      ],
+      "authors": [
+        "Shanika L. Wickramasuriya",
+        "George Athanasopoulos",
+        "Rob J. Hyndman"
+      ],
+      "venue": [
+        "Journal of the American Statistical Association"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            26
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            26
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2019,
+            4,
+            3
+          ]
+        ]
+      },
+      "type": "journal-article"
+    },
+    {
+      "id": "anchor_correction2021",
+      "doi": "10.1111/rssb.12440",
+      "status": "verified",
+      "method": "direct_crossref",
+      "source_url": "https://api.crossref.org/works/10.1111%2Frssb.12440",
+      "title": [
+        "Erratum: Anchor Regression: Heterogeneous Data Meet Causality"
+      ],
+      "authors": [],
+      "venue": [
+        "Journal of the Royal Statistical Society Series B: Statistical Methodology"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            2
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            2
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2021,
+            11,
+            1
+          ]
+        ]
+      },
+      "type": "journal-article"
+    }
+  ],
+  "additional_competing_work": [
+    {
+      "id": "cup_ev2026",
+      "doi": "10.1016/j.ins.2026.123681",
+      "status": "verified",
+      "method": "direct_crossref",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.ins.2026.123681",
+      "title": [
+        "CUP-EV: Hybrid DLinear-based cost and uncertainty-aware probabilistic multi-horizon electric vehicle charging forecasting"
+      ],
+      "authors": [
+        "Muhammad Waqar",
+        "Yong-Woon Kim",
+        "Yung-Cheol Byun"
+      ],
+      "venue": [
+        "Information Sciences"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            10
+          ]
+        ]
+      },
+      "published_online": null,
+      "published_print": {
+        "date-parts": [
+          [
+            2026,
+            10
+          ]
+        ]
+      },
+      "type": "journal-article"
+    },
+    {
+      "id": "par_llm2026",
+      "doi": "10.1109/access.2026.3679962",
+      "status": "verified",
+      "method": "direct_crossref",
+      "source_url": "https://api.crossref.org/works/10.1109%2FACCESS.2026.3679962",
+      "title": [
+        "PAR-LLM: Peak-Aware Residual LLM Over Anchor for EV Charging Station Demand"
+      ],
+      "authors": [
+        "Junhwa Hwang",
+        "Dongjun Suh"
+      ],
+      "venue": [
+        "IEEE Access"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published_online": null,
+      "published_print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "type": "journal-article"
+    }
+  ]
+}
