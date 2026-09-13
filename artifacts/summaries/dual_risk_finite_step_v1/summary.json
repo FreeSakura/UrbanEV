@@ -16,6 +16,9 @@
   "new_foundation_inference": 0,
   "old_no_go_unchanged": true,
   "scientific_scope": "registered eight-point grid in an exposed calibration window; no variable-level uselessness or independent-confirmation claim",
-  "research_review": "PENDING",
-  "automation_status": "PAUSED"
+  "research_review": "ACCEPTED_VALID_CALIBRATION_NO_GO; public-code/artifact review without private-array rerun",
+  "automation_status": "PAUSED",
+  "joint_finite_improvement_vs_native": true,
+  "promotion_requirements_satisfied": false,
+  "crossing_ratio_interpretation": "72.0125% of derivative-linearized MAE improvement offset at selected point; not sample fraction or information inefficiency"
 }

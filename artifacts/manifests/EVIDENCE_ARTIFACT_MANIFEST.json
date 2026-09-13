@@ -606,8 +606,8 @@
     },
     {
       "path": "artifacts/summaries/dual_risk_finite_step_v1/summary.json",
-      "sha256": "76055395850d2c37212f017875dd9ce4ac1587f045549963c184db81e2439952",
-      "bytes": 811,
+      "sha256": "c024ae4912a2a3906bf307e16049d1e3afca3dccf1cd03fd099f9be8ffe30d8d",
+      "bytes": 1146,
       "role": "evidence_summary",
       "origin": "frozen project artifact; publicly sanitized",
       "license": "CC-BY-4.0",
