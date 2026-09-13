@@ -1,0 +1,47 @@
+{
+  "status": "COMPARABILITY_BRIDGE_COMPLETE_REVIEW_REQUIRED",
+  "protocol_id": "URBANEV_COMPARABILITY_BRIDGE_V2_20260913",
+  "config_sha256": "7f1a1b84f3092137cad80e246a40bb01616513a2ce2b6d7921393a8bae71abd6",
+  "frozen_code_commit": "2154cb8f5904fcfdc0629fe243ed406f50c51d86",
+  "prefixes": [
+    {
+      "file": "occupancy.csv",
+      "rows": [
+        0,
+        1560
+      ],
+      "sha256": "40f3769bc207bb5411225c73ee7f174d194238b61ff71f07aa736dc26bc8bb02"
+    },
+    {
+      "file": "duration.csv",
+      "rows": [
+        0,
+        1547
+      ],
+      "sha256": "91535b3742ac389b3ac70c26563dfe88cad3f5149a7f359ad033c6d60a14a455"
+    }
+  ],
+  "static_numeric_columns": [
+    "station_id",
+    "TAZID",
+    "charge_count"
+  ],
+  "cache_decodes": 12,
+  "origin_count": 42,
+  "source_max_target_index": 1559,
+  "duration_max_index": 1546,
+  "score_rows_available": 96,
+  "score_rows_not_available": 24,
+  "new_model_fits": 0,
+  "new_foundation_inference": 0,
+  "alpha_searches": 0,
+  "old_candidate_reselection": false,
+  "executions": 1,
+  "elapsed_seconds": 22.88407049997477,
+  "peak_memory": "NOT_MEASURED",
+  "official_paper_reproduction": false,
+  "sota_claim": false,
+  "automation_enabled": false,
+  "human_review_required": true,
+  "automatic_next_round": false
+}

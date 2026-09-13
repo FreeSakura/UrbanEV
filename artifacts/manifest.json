@@ -20,6 +20,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/benchmark_alignment_20260913/research_results.csv",
+      "sha256": "4df0d910c2d538632948853e31ea82b571178ba879950e3d104f919eafece3ec",
+      "bytes": 2271,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/benchmark_alignment_20260913/upstream_source_manifest.json",
       "sha256": "c208863519cbad040e3e06d56ca93db187757e9097f9651faf238dfe1103aae6",
       "bytes": 4978,
@@ -113,6 +122,51 @@
       "path": "artifacts/summaries/coarse_memory_identifiability_v1_20260913/same_information_baseline_checks.json",
       "sha256": "20b74edbbe8bb21f27f3e7bd5798a990d428d9272d8d0ad51a21aa8cdc2e9d16",
       "bytes": 1965,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comparability_bridge_v2/alignment_checks.json",
+      "sha256": "81f82a6d6798d423d8dd43fad8c77254d35524bfab6b77fe0610d1653bc14930",
+      "bytes": 1082,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comparability_bridge_v2/comparison_table.csv",
+      "sha256": "5dcb6f283d8152fec4f3b19f6d046cbe1c5a45f6af26f86ff9848db4a3a1a62d",
+      "bytes": 9519,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comparability_bridge_v2/private_package_manifest.json",
+      "sha256": "f9e90f6590249d78daa4b1d0bc1794bcf2a164875095f86b5afeb1a5d27425ec",
+      "bytes": 1316,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comparability_bridge_v2/protocol_receipt.json",
+      "sha256": "5060aef569d35a2cc02ac22db4a92d8604f2001ab838151c22354f2e442b6beb",
+      "bytes": 1279,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comparability_bridge_v2/summary.json",
+      "sha256": "26b23c7322e6cdc91ae4fe628d6a79f41d1b95098c39246de4b0e581389021f0",
+      "bytes": 3637,
       "role": "evidence_summary",
       "origin": "frozen project artifact; publicly sanitized",
       "license": "CC-BY-4.0",

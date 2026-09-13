@@ -10,12 +10,12 @@
 | 跨区结构 | 首折相关分组有线索；第二折未复现，残差引导交换不及对照 | 双方向与复核未通过 | 特定分组方法缺乏稳定优势，不证明空间信息无效。[初试](DUAL_DIRECTION_PILOT_REPORT.md)、[复核](SIGNAL_REPLICATION_REPORT.md) |
 | 观测算子 | 额外结构未优于直接时长输入；直接时长开发收益存在 | 结构优势未成立 | 不支持把潜状态解释当成额外贡献，保留输入线索。[报告](DUAL_DIRECTION_PILOT_REPORT.md) |
 | 时长残差与连续步长 | 部分RMSE改善伴MAE代价；V2两视野合法非零修正改善RMSE0.3896%且不高于native MAE | 旧内部1%/结构门NO_GO | 低于1%并非国际失败依据；范围仍限开发窗口，不能补写SOTA。[V1](RESIDUAL_INFORMATION_REPORT.md)、[V2](CONTINUOUS_V2_CALIBRATION_2H_REPORT.md) |
-| 双风险局部方向及有限步长 | 两窗口局部共同下降线索；有限步长对强对照收益小、同信息硬门更好 | 探针准入；有限步长NO_GO | 局部导数不保证有限收益；不证明新门控优于经典同信息方法。[探针](DUAL_RISK_PROBE_REPORT_20260913.md)、[有限步长](DUAL_RISK_FINITE_STEP_REPORT_20260913.md) |
+| 双风险局部方向 | 两窗口出现局部共同下降线索 | 探针准入 | 局部导数不保证有限收益，不能作真实预测SOTA比较。[探针](DUAL_RISK_PROBE_REPORT_20260913.md) |
+| 双风险有限步长 | 对强非时长对照RMSE改善0.185943%，同信息硬门更好 | 有限步长NO_GO | 保留权衡和强对照结论；不证明新门控优于经典同信息方法。[有限步长](DUAL_RISK_FINITE_STEP_REPORT_20260913.md) |
 | 动态电量条件增量 | 动态列确有变化；固定ridge正网格点均恶化MAE，主候选网格最佳RMSE改善0.444636% | 校准NO_GO，未开1392评价 | 保留这一表示的负结果，不推断电量或其他变量普遍无效。[报告](VOLUME_COMPOSITION_INCREMENT_REPORT_20260913.md) |
 | 粗粒化记忆与交通启发 | 固定人工系统下完整历史对I2改善1.6010%，对I3仅0.2468%；同信息HMM一致 | 合成机制检查完成 | 是观测充分性与时间尺度线索，非真实预测优势；没有新模型SOTA证据。[理论](COARSE_MEMORY_THEORY_REPORT_20260913.md)、[结果](COARSE_MEMORY_IDENTIFIABILITY_REPORT_20260913.md) |
-| 信息范围与历史审计 | 21字段/8类信息登记、事件/缺失风险理论及可复现工具 | 各历史任务独立保留 | 其他信息尚未被普遍排除；事件、覆盖与审计指标不冒充占用预测RMSE。[信息地图](INFORMATION_EVIDENCE_MAP_20260913.md)、[历史入口](../../history/AUDIT_PROJECT_README.md) |
 
-**这些行没有共同的实验总体，不能相互按百分比排行。** 已有结果多数来自开发/校准范围，完整最新基线比较仍缺。停止一轮试验可以是预算决策；SOTA判断必须另给可比证据。旧claim继续消费状态，不以本次调整为由重跑或改写旧网格。
+**这些行没有共同的实验总体，不能相互按百分比排行。** 已有结果多数来自开发/校准范围，完整最新基线比较仍缺。停止一轮试验可以是预算决策；SOTA判断必须另给可比证据。旧claim继续消费状态，不以本次调整为由重跑或改写旧网格。对应[机器可读八方向映射](../../../artifacts/summaries/benchmark_alignment_20260913/research_results.csv)分别记录原门、证据和SOTA适用范围。
 
 ## 二、当前统一入口
 
@@ -29,5 +29,7 @@
 ## 三、工程与论文资产
 
 预测代码在`src/urbanev_forecast/`；公开配置在`configs/research/`；经脱敏的数值与回执在`artifacts/summaries/`。历史审计工具在`src/urbanev_audit/`，历史论文在`paper/`，它们是支撑积累，不是当前标准占用预测的SOTA论文。源码、模型权重、数据版本与训练预算分开登记。
+
+[信息地图](INFORMATION_EVIDENCE_MAP_20260913.md)的21字段/8类信息登记与[历史审计成果](../../history/AUDIT_PROJECT_README.md)单列为支撑资产。没有证明其他信息均无效，也不把事件、覆盖或审计指标当作占用预测RMSE。
 
 每轮完成后由人工审核决定下一轮，不启动定时或自动实验。公开只包含代码、协议、推导与汇总；原始序列、私有预测和权重不上传。

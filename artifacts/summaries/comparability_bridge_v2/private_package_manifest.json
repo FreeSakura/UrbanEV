@@ -1,0 +1,80 @@
+{
+  "file_role": "private_dynamic_inputs.npz",
+  "sha256": "1e6e48f4ce3903904c44755cafde0bd11cb9661f3e81e907119f1dbb6d733e52",
+  "arrays": {
+    "origins": {
+      "shape": [
+        42
+      ],
+      "dtype": "int64"
+    },
+    "short": {
+      "shape": [
+        42,
+        275,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "long_occupancy": {
+      "shape": [
+        42,
+        168,
+        275
+      ],
+      "dtype": "float64"
+    },
+    "long_duration": {
+      "shape": [
+        42,
+        168,
+        275
+      ],
+      "dtype": "float64"
+    },
+    "targets_H12": {
+      "shape": [
+        42,
+        12,
+        275
+      ],
+      "dtype": "float64"
+    },
+    "capacity": {
+      "shape": [
+        275
+      ],
+      "dtype": "float64"
+    },
+    "hour_of_day": {
+      "shape": [
+        42
+      ],
+      "dtype": "int64"
+    },
+    "hour_of_week": {
+      "shape": [
+        42
+      ],
+      "dtype": "int64"
+    }
+  },
+  "package_uploaded": false,
+  "short_axes": [
+    "origin",
+    "region",
+    "feature"
+  ],
+  "long_axes": [
+    "origin",
+    "history",
+    "region"
+  ],
+  "short_features": [
+    "y[o-2]",
+    "y[o-1]",
+    "duration_per_capacity[o-2]"
+  ],
+  "duration_history": "[o-169,o-1)",
+  "calendar": "hour offsets from dataset start; deterministic features only"
+}

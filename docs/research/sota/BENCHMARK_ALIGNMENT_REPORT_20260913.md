@@ -1,6 +1,6 @@
 # UrbanEV比较口径核查与本轮研究推进
 
-日期：2026-09-13。公开上游代码锁定为`44f2aa0c8d89f192bce00bafb0def74a21b39c68`；本轮读取13份源代码/脚本文本及论文、数据版本说明，未执行上游训练代码，未读取UrbanEV数值行或旧预测缓存。新增显式指标接口和一次代码派生的日历/指标探针，**不是新的模型成绩**。
+日期：2026-09-13。公开上游代码锁定为`44f2aa0c8d89f192bce00bafb0def74a21b39c68`。先读取13份源码/脚本文本并完成无真实数据的日历/指标探针，随后按独立冻结V2执行一次真实开发桥接。**已产生同口径开发基线表，尚非新方法或官方测试成绩**；没有执行上游训练代码、拟合模型或调用基础模型。
 
 ## 1. 比较对象尚未对齐，不能用内部阈值代替
 
@@ -14,7 +14,7 @@ SOTA比较首先需要同一个预测对象。官方代码的测试评分与本�
 | classical原点 | 每个划分内独立构窗，舍弃前12小时作为上下文；range未含最后一个合法窗 | 可借用划分前历史 | 复现上游与统一比较需要分别标注 |
 | 折边界取整 | classical与Transformer算法略有差异 | 跟随Transformer式边界 | 不把“80/10/10”文字当成完全相同索引 |
 | 输出裁剪 | 读取到的上游RMSE/MAE评分未裁剪 | 以clip到[0,1]作为主报告 | 新接口强制声明raw或clip；训练/后处理都是方法组成 |
-| 训练预算 | 当前Transformer脚本EPOCH=1，classical脚本20 | 旧研究各自预算 | 当前脚本不是论文最佳实验身份；不能只击败一轮训练便声称击败最佳TimeXer |
+| 训练预算 | 所读Transformer exp.sh中EPOCH=1，classical exp.sh中20 | 旧研究各自预算 | 当前脚本不是论文最佳实验身份；不能只击败一轮训练便声称击败最佳TimeXer |
 
 证据：[上游末点指标](https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code-transformer/utils/metrics.py#L60)、[classical构窗与划分](https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code/utils.py#L160)、[Transformer划分](https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code-transformer/data_provider/data_loader.py#L62)、[实际启动脚本](https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code-transformer/exp.sh)。
 
@@ -54,8 +54,34 @@ Dryad列出2025-03-17、2025-04-25、2025-09-24、2026-02-04版本；变更记�
 
 来源：[UrbanEV](https://doi.org/10.1038/s41597-025-04874-4)、[DyConfuse-Net](https://doi.org/10.1016/j.epsr.2026.112765)、[TriCast出版商方法预览](https://www.sciencedirect.com/science/article/pii/S0167865526001510)、[Urban-CSTPNet](https://doi.org/10.3390/electronics15153297)。元数据登记见[近期论文记录](../../../artifacts/summaries/benchmark_alignment_20260913/recent_paper_metadata.json)。本轮检索不声称穷尽全部文献，未获得全文的方法不记为已复现。
 
-## 5. 对后续研究的直接影响
+## 5. 一次真实开发桥接结果
+
+配置[V2](../../../configs/research/URBANEV_COMPARISON_V2.json)于提交`2154cb8f5904fcfdc0629fe243ed406f50c51d86`冻结后执行一次，状态为**COMPARABILITY_BRIDGE_COMPLETE_REVIEW_REQUIRED**。42原点为cuts720/1056/1392各14个，步长12小时；这是已曝光开发集合，不是官方六折测试或独立盲测。
+
+仅读取occupancy[0,1560)、duration[0,1547)、静态容量所需三列及12份既有native/truth缓存。零拟合、零基础推理、零alpha搜索、零旧候选重选。1392用于本次新的基线桥接，不恢复旧实验的条件评价。实际耗时22.88秒，峰值内存未测量。
+
+下表为**同一H3/H12共同支持、三个窗口共六单元等权平均**，不能与四视野平均或论文表3直接比较。
+
+| 系统 | 末点RMSE | 末点MAE | 全路径RMSE | 全路径MAE |
+|---|---:|---:|---:|---:|
+| Last | 0.129825 | 0.076593 | 0.110484 | 0.055823 |
+| Day | 0.122793 | 0.074500 | 0.123167 | 0.074843 |
+| Week | 0.141872 | 0.093798 | 0.142680 | 0.094840 |
+| Chronos原生raw Q0.5 | 0.089446 | 0.051398 | 0.081448 | 0.043156 |
+| 同一Q0.5＋clip[0,1] | 0.089440 | 0.051377 | 0.081440 | 0.043121 |
+
+这里出现真实的口径排名变化：**末点RMSE是Day优于Last，全路径RMSE则是Last优于Day**。同一个模型的两列也不能称为“改善”，因为评分对象变了。Chronos在这张有限开发表中误差较低，但对照只有三个确定性基线，不能据此声称SOTA。裁剪的微小变化属于明确后处理，不是新模型贡献。
+
+在另列的四视野确定性基线表中，Day末点宏RMSE为0.121678，低于Last的0.123562；但Day末点MAE为0.074347，高于Last的0.071390。V2保留这一权衡，不因MAE稍差自动判NO_GO。没有对这些开发点估计进行显著性声明，窗口和区域不能视作独立随机重复。
+
+有效评分96行，native H6/H9缺失状态24行。没有用H12切片冒充对应原生调用。源目标与缓存truth、原native历史path评分、独立直接归约均经过核对，详见[检查结果](../../../artifacts/summaries/comparability_bridge_v2/alignment_checks.json)；一致性不是新的独立成绩。
+
+私有输入包已生成：短双观测42×275×3、长占用与长duration各42×168×275、H12标签42×12×275及原点/容量/日历。duration额外滞后1小时，不把快照减累计量解释为队列或会话年龄。公开仅含[包哈希与布局](../../../artifacts/summaries/comparability_bridge_v2/private_package_manifest.json)，原始数据包未上传。
+
+[逐单元比较表](../../../artifacts/summaries/comparability_bridge_v2/comparison_table.csv) · [共同支持汇总](../../../artifacts/summaries/comparability_bridge_v2/summary.json) · [执行回执](../../../artifacts/summaries/comparability_bridge_v2/protocol_receipt.json)
+
+## 6. 对后续研究的直接影响
 
 应先建立可复现的同协议比较，再研究容量约束与滞后双观测摘要是否改善预测。新研究可以主张特定指标的改善，不再要求其超过自设1%或每个次指标都同步改善；但必须说明真实比较范围、训练预算与不确定性。仅满足旧内部预算门，也不能代替这条证据链。
 
-本轮已把评分范围显式化，并揭示版本、目标与原点差异。真实训练和测试尚未因此自动开启；完整后续决定以本轮统一研究路线为准。定时保持暂停，每轮返回人工审核，未使用额度重置卡。
+本轮已经把比较对象落到真实开发基线与输入包。下一问题是短摘要/长历史及动态结构是否在指定预测时距提供超出同信息普通模型的增量，且应与现代强基线对齐。真实训练与保留测试没有自动开启；完整后续决定以[统一研究路线](RESEARCH_ROADMAP.md)为准。定时保持暂停，每轮返回人工审核，未使用额度重置卡。

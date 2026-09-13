@@ -1,0 +1,134 @@
+{
+  "aggregation": "Equal mean of named window-horizon cell metrics, not pooled RMSE; comparisons only within same support",
+  "rows": [
+    {
+      "support": "H3_H12_COMMON",
+      "system": "last",
+      "target_scope": "terminal_H",
+      "cells": 6,
+      "macro_rmse": 0.1298245740924404,
+      "macro_mae": 0.07659284006917115
+    },
+    {
+      "support": "H3_H12_COMMON",
+      "system": "last",
+      "target_scope": "path_1_to_H",
+      "cells": 6,
+      "macro_rmse": 0.11048412242854509,
+      "macro_mae": 0.055822994621204484
+    },
+    {
+      "support": "H3_H12_COMMON",
+      "system": "day",
+      "target_scope": "terminal_H",
+      "cells": 6,
+      "macro_rmse": 0.12279343689560022,
+      "macro_mae": 0.07449990446921197
+    },
+    {
+      "support": "H3_H12_COMMON",
+      "system": "day",
+      "target_scope": "path_1_to_H",
+      "cells": 6,
+      "macro_rmse": 0.12316718949271965,
+      "macro_mae": 0.07484327823914787
+    },
+    {
+      "support": "H3_H12_COMMON",
+      "system": "week",
+      "target_scope": "terminal_H",
+      "cells": 6,
+      "macro_rmse": 0.14187154357477563,
+      "macro_mae": 0.09379795468029328
+    },
+    {
+      "support": "H3_H12_COMMON",
+      "system": "week",
+      "target_scope": "path_1_to_H",
+      "cells": 6,
+      "macro_rmse": 0.14268013024763063,
+      "macro_mae": 0.09483983529779338
+    },
+    {
+      "support": "H3_H12_COMMON",
+      "system": "native_raw",
+      "target_scope": "terminal_H",
+      "cells": 6,
+      "macro_rmse": 0.08944580555733635,
+      "macro_mae": 0.051398170285527484
+    },
+    {
+      "support": "H3_H12_COMMON",
+      "system": "native_raw",
+      "target_scope": "path_1_to_H",
+      "cells": 6,
+      "macro_rmse": 0.08144834561523405,
+      "macro_mae": 0.04315589211319054
+    },
+    {
+      "support": "H3_H12_COMMON",
+      "system": "native_clip",
+      "target_scope": "terminal_H",
+      "cells": 6,
+      "macro_rmse": 0.08944031883797941,
+      "macro_mae": 0.05137672222001192
+    },
+    {
+      "support": "H3_H12_COMMON",
+      "system": "native_clip",
+      "target_scope": "path_1_to_H",
+      "cells": 6,
+      "macro_rmse": 0.08144018134526902,
+      "macro_mae": 0.04312104653344345
+    },
+    {
+      "support": "H3_H6_H9_H12_BASELINES",
+      "system": "last",
+      "target_scope": "terminal_H",
+      "cells": 12,
+      "macro_rmse": 0.12356208918513308,
+      "macro_mae": 0.07138950525248802
+    },
+    {
+      "support": "H3_H6_H9_H12_BASELINES",
+      "system": "last",
+      "target_scope": "path_1_to_H",
+      "cells": 12,
+      "macro_rmse": 0.10850703782951492,
+      "macro_mae": 0.05450043852881253
+    },
+    {
+      "support": "H3_H6_H9_H12_BASELINES",
+      "system": "day",
+      "target_scope": "terminal_H",
+      "cells": 12,
+      "macro_rmse": 0.12167772541817053,
+      "macro_mae": 0.07434695038003082
+    },
+    {
+      "support": "H3_H6_H9_H12_BASELINES",
+      "system": "day",
+      "target_scope": "path_1_to_H",
+      "cells": 12,
+      "macro_rmse": 0.12376154609903776,
+      "macro_mae": 0.07504277909288007
+    },
+    {
+      "support": "H3_H6_H9_H12_BASELINES",
+      "system": "week",
+      "target_scope": "terminal_H",
+      "cells": 12,
+      "macro_rmse": 0.14060006539113512,
+      "macro_mae": 0.09367062746889858
+    },
+    {
+      "support": "H3_H6_H9_H12_BASELINES",
+      "system": "week",
+      "target_scope": "path_1_to_H",
+      "cells": 12,
+      "macro_rmse": 0.142211682804903,
+      "macro_mae": 0.09462052538358783
+    }
+  ],
+  "uncertainty": "Descriptive development estimates, no significance claim; three exposed windows are not independent tests"
+}

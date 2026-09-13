@@ -1,0 +1,53 @@
+{
+  "truth_source_max_difference": 0.0,
+  "legacy_native_path_max_difference": 0.0,
+  "independent_reduction_max_difference": 0.0,
+  "capacity_rule": "sum station charge_count grouped by TAZID",
+  "native_output_domain": [
+    {
+      "cut": 720,
+      "horizon": 3,
+      "values": 11550,
+      "below_zero": 30,
+      "above_one": 5
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "values": 46200,
+      "below_zero": 54,
+      "above_one": 15
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "values": 11550,
+      "below_zero": 18,
+      "above_one": 7
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "values": 46200,
+      "below_zero": 34,
+      "above_one": 15
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "values": 11550,
+      "below_zero": 176,
+      "above_one": 1
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "values": 46200,
+      "below_zero": 499,
+      "above_one": 1
+    }
+  ],
+  "future_inputs_used": false,
+  "native_h6_h9": "NOT_AVAILABLE; no slicing or inference",
+  "old_candidates_reselected": false
+}
