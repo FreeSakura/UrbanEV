@@ -1,0 +1,47 @@
+{
+  "blocks": [
+    {
+      "base": "B1",
+      "origins": 181,
+      "rows": 49775,
+      "IS_mean": -0.0012206968139946526,
+      "FWD_mean": -0.007174451264297482,
+      "IS_mse": 0.006256878616331183,
+      "FWD_mse": 0.006843187133605063,
+      "IS_mae": 0.04959039898720858,
+      "FWD_mae": 0.051995799790188445,
+      "base_difference_mean": -0.005953754450302829,
+      "base_difference_rms": 0.019869603408649898
+    },
+    {
+      "base": "B2",
+      "origins": 181,
+      "rows": 49775,
+      "IS_mean": -0.0037206472079097832,
+      "FWD_mean": -0.005810277079830977,
+      "IS_mse": 0.00610680075971828,
+      "FWD_mse": 0.006674983373697337,
+      "IS_mae": 0.04986273328576752,
+      "FWD_mae": 0.05290314334205956,
+      "base_difference_mean": -0.002089629871921194,
+      "base_difference_rms": 0.014577455749969532
+    },
+    {
+      "base": "B3",
+      "origins": 181,
+      "rows": 49775,
+      "IS_mean": -0.0001122038577868698,
+      "FWD_mean": -0.0001225657997755472,
+      "IS_mse": 0.006066889503395639,
+      "FWD_mse": 0.00657627235631665,
+      "IS_mae": 0.04983156684897838,
+      "FWD_mae": 0.05215531518659093,
+      "base_difference_mean": -1.0361941988677383e-05,
+      "base_difference_rms": 0.009507408262574697
+    }
+  ],
+  "transport_identity_error": 1.1102230246251565e-16,
+  "meta_origins": 543,
+  "meta_rows": 149325,
+  "scope": "FIT only, source difference includes base maturity; no label adjustment"
+}

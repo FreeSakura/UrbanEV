@@ -1,0 +1,6 @@
+{
+  "rms_float64": 0.07838062872811773,
+  "scale_float64": 0.07838062872811773,
+  "floor_applied": false,
+  "source": "BF in-sample residual on common 543 meta origins, before float32 cast"
+}

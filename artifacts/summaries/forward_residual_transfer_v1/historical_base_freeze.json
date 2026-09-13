@@ -1,0 +1,86 @@
+{
+  "B1": {
+    "ridge": {
+      "file": "private_base_B1.npy",
+      "sha256": "74ec82b717050406dd316f0e178ef4fd3ca13ad30afe9a97514e5f27f5fa12f0",
+      "coefficients": 4104
+    },
+    "transform": {
+      "file": "private_transform_B1.npz",
+      "sha256": "fc5a0b2bc0c8438d4f588ea5607d14a46d5732b953e6ffdd67cf4999a9194176"
+    },
+    "origin_start": 169,
+    "origin_stop_exclusive": 457,
+    "train_rows": 79200,
+    "max_label": 467,
+    "O_local_prefix": 468,
+    "D_local_prefix": 455,
+    "fit_seconds": 0.7957529000123031,
+    "forward": {
+      "file": "private_forward_B1.npy",
+      "sha256": "2935dedf1dfc41c784d5774a2ff3e18e1f244a4b35317ff91a4a630421f84355",
+      "origin_start": 480,
+      "origin_stop_exclusive": 661,
+      "label_gap": [
+        468,
+        480
+      ]
+    }
+  },
+  "B2": {
+    "ridge": {
+      "file": "private_base_B2.npy",
+      "sha256": "bf53a23681183dc01283be8ca1a4a1f3d9ff2548283063407ce7f45da7def399",
+      "coefficients": 4104
+    },
+    "transform": {
+      "file": "private_transform_B2.npz",
+      "sha256": "2fbecab00896fb110bbe637cd90c5f72b9555146ede62ec075a1335c5ec62544"
+    },
+    "origin_start": 169,
+    "origin_stop_exclusive": 649,
+    "train_rows": 132000,
+    "max_label": 659,
+    "O_local_prefix": 660,
+    "D_local_prefix": 647,
+    "fit_seconds": 1.3994777000043541,
+    "forward": {
+      "file": "private_forward_B2.npy",
+      "sha256": "86e997623de47f548bb80d65d4f5a6822d54a514d5da369a18bc92a7a709b92d",
+      "origin_start": 672,
+      "origin_stop_exclusive": 853,
+      "label_gap": [
+        660,
+        672
+      ]
+    }
+  },
+  "B3": {
+    "ridge": {
+      "file": "private_base_B3.npy",
+      "sha256": "5998ae3b7cf1d2bd5f30619cf21a4b89e59d02001e0c4c9e4cf9330ce3cf9cbb",
+      "coefficients": 4104
+    },
+    "transform": {
+      "file": "private_transform_B3.npz",
+      "sha256": "2b9df04fc11280e605bcf3dcc4b90461766b8de8846793dc38dfcd788a0e8e9d"
+    },
+    "origin_start": 169,
+    "origin_stop_exclusive": 841,
+    "train_rows": 184800,
+    "max_label": 851,
+    "O_local_prefix": 852,
+    "D_local_prefix": 839,
+    "fit_seconds": 1.8340942000504583,
+    "forward": {
+      "file": "private_forward_B3.npy",
+      "sha256": "66b66908b0eda73cc20eee57e280201d85a1758ba561d94c59dfad1fe1c41dd0",
+      "origin_start": 864,
+      "origin_stop_exclusive": 1045,
+      "label_gap": [
+        852,
+        864
+      ]
+    }
+  }
+}

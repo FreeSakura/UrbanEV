@@ -1,0 +1,66 @@
+{
+  "selection_sha256": "ca6701c80b6644f24b27e60a8a802de0f977a4017bc10b6733409690c6a1879d",
+  "track": "B3 diagnostic only, raw terminal scoring only",
+  "predictions": [
+    {
+      "model": "B3",
+      "seed": "fixed",
+      "file": "private_DEV_B3_DIAG_B3_fixed.npy",
+      "sha256": "a51a02194a9317cea8767f3cd6072bdc1e311101811c284492ba39778d88c28d"
+    },
+    {
+      "model": "P_FWD_X",
+      "seed": "20260915",
+      "file": "private_DEV_B3_DIAG_P_FWD_X_20260915.npy",
+      "sha256": "a51a02194a9317cea8767f3cd6072bdc1e311101811c284492ba39778d88c28d"
+    },
+    {
+      "model": "P_FWD_X",
+      "seed": "20260916",
+      "file": "private_DEV_B3_DIAG_P_FWD_X_20260916.npy",
+      "sha256": "a51a02194a9317cea8767f3cd6072bdc1e311101811c284492ba39778d88c28d"
+    },
+    {
+      "model": "P_FWD_X",
+      "seed": "20260917",
+      "file": "private_DEV_B3_DIAG_P_FWD_X_20260917.npy",
+      "sha256": "a51a02194a9317cea8767f3cd6072bdc1e311101811c284492ba39778d88c28d"
+    },
+    {
+      "model": "P_FWD_BC",
+      "seed": "20260915",
+      "file": "private_DEV_B3_DIAG_P_FWD_BC_20260915.npy",
+      "sha256": "a51a02194a9317cea8767f3cd6072bdc1e311101811c284492ba39778d88c28d"
+    },
+    {
+      "model": "P_FWD_BC",
+      "seed": "20260916",
+      "file": "private_DEV_B3_DIAG_P_FWD_BC_20260916.npy",
+      "sha256": "a51a02194a9317cea8767f3cd6072bdc1e311101811c284492ba39778d88c28d"
+    },
+    {
+      "model": "P_FWD_BC",
+      "seed": "20260917",
+      "file": "private_DEV_B3_DIAG_P_FWD_BC_20260917.npy",
+      "sha256": "a51a02194a9317cea8767f3cd6072bdc1e311101811c284492ba39778d88c28d"
+    },
+    {
+      "model": "C_FWD_BC",
+      "seed": "20260915",
+      "file": "private_DEV_B3_DIAG_C_FWD_BC_20260915.npy",
+      "sha256": "a51a02194a9317cea8767f3cd6072bdc1e311101811c284492ba39778d88c28d"
+    },
+    {
+      "model": "C_FWD_BC",
+      "seed": "20260916",
+      "file": "private_DEV_B3_DIAG_C_FWD_BC_20260916.npy",
+      "sha256": "a51a02194a9317cea8767f3cd6072bdc1e311101811c284492ba39778d88c28d"
+    },
+    {
+      "model": "C_FWD_BC",
+      "seed": "20260917",
+      "file": "private_DEV_B3_DIAG_C_FWD_BC_20260917.npy",
+      "sha256": "a51a02194a9317cea8767f3cd6072bdc1e311101811c284492ba39778d88c28d"
+    }
+  ]
+}
