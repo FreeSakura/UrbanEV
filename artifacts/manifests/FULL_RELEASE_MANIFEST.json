@@ -2028,8 +2028,8 @@
     },
     {
       "path": "docs/research/sota/COARSE_MEMORY_IDENTIFIABILITY_REPORT_20260913.md",
-      "sha256": "d0aafcc64f6e9d961af0a815b46218540c0bd2ff94610357ceb30ffae0826fea",
-      "bytes": 7739,
+      "sha256": "543125e5a066ba36f18d945dfbdc37d068c9ffc5258cd49ccad4484b11d30d47",
+      "bytes": 8245,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
