@@ -1,6 +1,58 @@
 # 短观测摘要与条件弛豫：真实模型开发研究
 
-日期：2026-09-13。本轮检验预测参数化是否有价值，不宣称识别了真实驻留过程。[冻结配置](../../../configs/research/SHORT_STATE_RELAXATION_V1.json)与[执行入口](../../../scripts/research/run_short_state_relaxation.py)定义唯一实验；运行状态以实际回执为准。
+日期：2026-09-13。状态：**SHORT_STATE_EXPERIMENT_COMPLETE_REVIEW_REQUIRED**。8次神经训练、2次ridge拟合和一次固定开发评价全部完成；无基础模型新推理、alpha搜索或旧候选重选。
+
+**主候选未显示额外预测优势。** 短OD弛豫的四H末点RMSE/MAE均略差于同信息直接MLP，也差于不含D的同结构消融；长历史在DIRECT与RIDGE两类模型中均有明显开发收益。最佳本地ridge的H3/H12末点RMSE接近native，MAE仍更差，尚无SOTA证据。
+
+[冻结配置](../../../configs/research/SHORT_STATE_RELAXATION_V1.json)与[执行入口](../../../scripts/research/run_short_state_relaxation.py)定义唯一实验；本轮检验预测参数化，不宣称识别真实驻留过程。
+
+## 实际结果：长历史线索强于本轮单模弛豫
+
+以下只评价1392窗口，**不混入训练范围内的720或用于选择的1056**。神经结果为两个种子的指标均值，不是预测集成；括号为两种子的最小—最大值，不是置信区间。
+
+| 模型 | 四H末点宏RMSE | 四H末点宏MAE |
+|---|---:|---:|
+| RELAX_SHORT_O | 0.132505（0.132483—0.132526） | 0.080077 |
+| **RELAX_SHORT_OD** | **0.135213（0.135095—0.135331）** | **0.080937** |
+| DIRECT_SHORT_OD | 0.134545（0.134369—0.134722） | 0.080524 |
+| RIDGE_SHORT_OD raw/clip（相同） | 0.131726 | 0.088755 |
+| DIRECT_LONG_OD | 0.119469（0.119141—0.119798） | 0.068872 |
+| RIDGE_LONG_OD raw | 0.111147 | 0.068495 |
+| RIDGE_LONG_OD clip | 0.111144 | 0.068484 |
+| Last | 0.141709 | 0.078815 |
+| Day | 0.145824 | 0.085311 |
+| Week | 0.172126 | 0.116268 |
+
+三个核心对照的描述结果：
+
+- **信息消融未支持本轮D增益。** RELAX_SHORT_OD对RELAX_SHORT_O的末点RMSE恶化2.044%，MAE恶化1.074%。它在训练与选择上更好、到1392却更差，说明开发窗口外推问题，不能据此断言D普遍无效。
+- **弛豫结构优势未成立。** 相对同信息DIRECT_SHORT_OD，主候选末点RMSE恶化0.497%、MAE恶化0.513%。短ridge的RMSE更低但MAE更高，因此存在权衡；没有通过挑一个指标删除对照。
+- **长历史存在可利用线索。** DIRECT_LONG_OD相对DIRECT_SHORT_OD的末点RMSE/MAE下降11.205%/14.470%；clip版本长ridge相对短ridge下降15.625%/22.840%。它们不能证明信息论充分性或独立泛化，但不支持“这个短摘要已足够”的实际主张。
+
+native只在H3/H12共同支持上比较：
+
+| 系统 | H3/H12末点宏RMSE | H3/H12末点宏MAE |
+|---|---:|---:|
+| RELAX_SHORT_OD（两种子指标均值） | 0.138288 | 0.083048 |
+| DIRECT_LONG_OD（两种子指标均值） | 0.119634 | 0.069129 |
+| RIDGE_LONG_OD raw | 0.1116945205 | 0.0686871384 |
+| RIDGE_LONG_OD clip | 0.1116900035 | 0.0686709654 |
+| native raw Q0.5 | 0.1116902749 | 0.0603376188 |
+| native Q0.5＋clip | 0.1116868437 | 0.0602893678 |
+
+在相同clip处理下，长ridge的RMSE比native高约0.002829%，MAE高约13.902%。**RMSE近似持平不等于整体打平或超越native**，也不应把ridge clip与native raw的微小交叉包装成优势。两种方法预训练、输入组织和训练预算不同，结构贡献只能由同信息对照讨论。
+
+所有8条神经训练轨迹均在注册checkpoint中选中epoch20。训练/选择仍有下降空间只能作为预算限制，未追加epoch、换宽度或调学习率。固定单模弛豫无法表示转折是一个理论限制，但本次没有单独隔离证明它就是误差差异的原因；短历史信息、参数化、估计和优化共同影响结果。长O和长D同时扩展，本轮也不能单独归因是哪一路历史带来增益。
+
+## 执行与验证
+
+代码冻结提交为`cd86cbebd75438e8fa95047e232a0e4e8945fe42`，配置先于正式运行固定。CPU两线程正式执行约110.90秒，含分阶段CSV读取、10次拟合、选择及评分；峰值内存未测量。八次神经训练各1180步，共9440步，未重训。
+
+16项针对性本地测试通过，覆盖时间可见性、统计量、模型性质、参数量、梯度、优化器、阶段顺序及禁止基础调用。源目标对既有truth、确定性基线/native对上轮1392桥接得分差均为0；逐原点误差独立归约与评分接口最大差为2.78×10^-17。该核对不新增训练或独立预测证据。
+
+最终136行评分记录中128行有效、8行为native H6/H9不可用；公开1792行按原点聚合误差，不含区域级目标或预测。私有checkpoint、变换和15组新模型/确定性预测均已冻结，只有文件哈希与汇总公开。
+
+[逐模型/种子/视野成绩](../../../artifacts/summaries/short_state_relaxation_v1/development_scores.csv) · [模型汇总](../../../artifacts/summaries/short_state_relaxation_v1/model_comparison_summary.json) · [核心对照及复算](../../../artifacts/summaries/short_state_relaxation_v1/result_interpretation.json) · [训练曲线](../../../artifacts/summaries/short_state_relaxation_v1/training_curves.csv) · [冻结选择](../../../artifacts/summaries/short_state_relaxation_v1/frozen_selection.json) · [执行回执](../../../artifacts/summaries/short_state_relaxation_v1/execution_receipt.json)
 
 ## 研究主张与可否定的限制
 

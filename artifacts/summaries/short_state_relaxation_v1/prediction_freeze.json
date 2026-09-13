@@ -1,0 +1,112 @@
+{
+  "selection_sha256": "39c7a55ac628b8381473d1f79300808c847f96d16330e623690ba1cf1009d047",
+  "predictions": [
+    {
+      "model": "RELAX_SHORT_O",
+      "seed": "20260913",
+      "postprocess": "raw",
+      "file": "private_prediction_RELAX_SHORT_O_20260913_raw.npy",
+      "sha256": "fc5f0fb61f92feed154ace7abab0b0346a3521272f86afdd3a885c01530c6103"
+    },
+    {
+      "model": "RELAX_SHORT_O",
+      "seed": "20260914",
+      "postprocess": "raw",
+      "file": "private_prediction_RELAX_SHORT_O_20260914_raw.npy",
+      "sha256": "24af79a54a88d1ae6264eba17ba2f87d84166d98ca0021cba1dd22b161028955"
+    },
+    {
+      "model": "RELAX_SHORT_OD",
+      "seed": "20260913",
+      "postprocess": "raw",
+      "file": "private_prediction_RELAX_SHORT_OD_20260913_raw.npy",
+      "sha256": "3cac1407987161c71824c2320906898f83ea1ff9d4fa0429cae6ec243e15d3d3"
+    },
+    {
+      "model": "RELAX_SHORT_OD",
+      "seed": "20260914",
+      "postprocess": "raw",
+      "file": "private_prediction_RELAX_SHORT_OD_20260914_raw.npy",
+      "sha256": "c65217be43bc8bbc02bb20b337a3b0a4a24372c6242926f8af8a095dfc6c5d2b"
+    },
+    {
+      "model": "DIRECT_SHORT_OD",
+      "seed": "20260913",
+      "postprocess": "raw",
+      "file": "private_prediction_DIRECT_SHORT_OD_20260913_raw.npy",
+      "sha256": "e97aae13a476398f3c6d6d9bf99de7e67c6dbc46739933c1d3aba6951a6e182b"
+    },
+    {
+      "model": "DIRECT_SHORT_OD",
+      "seed": "20260914",
+      "postprocess": "raw",
+      "file": "private_prediction_DIRECT_SHORT_OD_20260914_raw.npy",
+      "sha256": "b7ca95c7a93a2cad21fc072a7c51301a2534a3e3c7425485419ecfd4103fbd6a"
+    },
+    {
+      "model": "DIRECT_LONG_OD",
+      "seed": "20260913",
+      "postprocess": "raw",
+      "file": "private_prediction_DIRECT_LONG_OD_20260913_raw.npy",
+      "sha256": "6986dda2c49fa10bdaf2631b076b9ce54cd172a0b6f0e0678b973976e4afba89"
+    },
+    {
+      "model": "DIRECT_LONG_OD",
+      "seed": "20260914",
+      "postprocess": "raw",
+      "file": "private_prediction_DIRECT_LONG_OD_20260914_raw.npy",
+      "sha256": "87daa1abc219ef2bea6b2a7018fd9739575110025dda4cac0934346bd6be49d8"
+    },
+    {
+      "model": "RIDGE_SHORT_OD",
+      "seed": "deterministic",
+      "postprocess": "raw",
+      "file": "private_prediction_RIDGE_SHORT_OD_deterministic_raw.npy",
+      "sha256": "e920417bbd0621c53c2ef45afbe7e002844e7cb6e1bd4bebf8de43611567e91d"
+    },
+    {
+      "model": "RIDGE_SHORT_OD",
+      "seed": "deterministic",
+      "postprocess": "clip_0_1",
+      "file": "private_prediction_RIDGE_SHORT_OD_deterministic_clip_0_1.npy",
+      "sha256": "e920417bbd0621c53c2ef45afbe7e002844e7cb6e1bd4bebf8de43611567e91d"
+    },
+    {
+      "model": "RIDGE_LONG_OD",
+      "seed": "deterministic",
+      "postprocess": "raw",
+      "file": "private_prediction_RIDGE_LONG_OD_deterministic_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578"
+    },
+    {
+      "model": "RIDGE_LONG_OD",
+      "seed": "deterministic",
+      "postprocess": "clip_0_1",
+      "file": "private_prediction_RIDGE_LONG_OD_deterministic_clip_0_1.npy",
+      "sha256": "33cd6de1883a44b1f9c36dfa0fd22d78e6075fb2e4998b25583428eb5d363940"
+    },
+    {
+      "model": "last",
+      "seed": "deterministic",
+      "postprocess": "raw",
+      "file": "private_prediction_last_deterministic_raw.npy",
+      "sha256": "69c50942d5f6c26ad52171c3d05d41f5b6d6a560831374d26b4b64120b5ff83e"
+    },
+    {
+      "model": "day",
+      "seed": "deterministic",
+      "postprocess": "raw",
+      "file": "private_prediction_day_deterministic_raw.npy",
+      "sha256": "275f5e33ae42521f2c05ebee71e12433e3eac3403d68bb8830e16c4a4a16ae34"
+    },
+    {
+      "model": "week",
+      "seed": "deterministic",
+      "postprocess": "raw",
+      "file": "private_prediction_week_deterministic_raw.npy",
+      "sha256": "c2415c03d90c8b3db82eed9d10cd9c9c5ddeb716a6858c5334f538c57f5eff0b"
+    }
+  ],
+  "final_score_prefix_not_yet_decoded": true,
+  "rolling_earlier_evaluation_observations_available": true
+}

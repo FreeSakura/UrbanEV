@@ -1,0 +1,924 @@
+{
+  "selected_neural": [
+    {
+      "model": "RELAX_SHORT_O",
+      "seed": 20260913,
+      "representation": "SHORT_O",
+      "parameters": 1410,
+      "selected": {
+        "epoch": 20,
+        "file": "private_RELAX_SHORT_O_s20260913_e20.pt",
+        "sha256": "b39dea1926fa2c07e2f25eaaadae9025b1eb59edf510e3805aca260f0de08e07",
+        "selection_rmse": 0.1198713140640636,
+        "scores": [
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_O",
+            "seed": "20260913",
+            "horizon": 3,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.09320582299783682,
+            "mae": 0.051868186944175484
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_O",
+            "seed": "20260913",
+            "horizon": 3,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 11550,
+            "rmse": 0.0876999906167344,
+            "mae": 0.04395501847778063
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_O",
+            "seed": "20260913",
+            "horizon": 6,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.09847643346529263,
+            "mae": 0.06184735991116485
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_O",
+            "seed": "20260913",
+            "horizon": 6,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 23100,
+            "rmse": 0.09153542955658027,
+            "mae": 0.05120500174382589
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_O",
+            "seed": "20260913",
+            "horizon": 9,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.12409674238731089,
+            "mae": 0.08420346982907898
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_O",
+            "seed": "20260913",
+            "horizon": 9,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 34650,
+            "rmse": 0.10017915750549586,
+            "mae": 0.058857103855317616
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_O",
+            "seed": "20260913",
+            "horizon": 12,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.16370625740581402,
+            "mae": 0.11519606220125078
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_O",
+            "seed": "20260913",
+            "horizon": 12,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 46200,
+            "rmse": 0.1165035471622448,
+            "mae": 0.07119615770198778
+          }
+        ]
+      }
+    },
+    {
+      "model": "RELAX_SHORT_O",
+      "seed": 20260914,
+      "representation": "SHORT_O",
+      "parameters": 1410,
+      "selected": {
+        "epoch": 20,
+        "file": "private_RELAX_SHORT_O_s20260914_e20.pt",
+        "sha256": "c2f4b3c4f9236a6e10ec510d0acc79ac6784f8e0db4b01887354a1976116bebb",
+        "selection_rmse": 0.12055545822383404,
+        "scores": [
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_O",
+            "seed": "20260914",
+            "horizon": 3,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.0934311253268863,
+            "mae": 0.051841664101022096
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_O",
+            "seed": "20260914",
+            "horizon": 3,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 11550,
+            "rmse": 0.08778533771813045,
+            "mae": 0.04388993189904622
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_O",
+            "seed": "20260914",
+            "horizon": 6,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.09882962027848981,
+            "mae": 0.061747069589705994
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_O",
+            "seed": "20260914",
+            "horizon": 6,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 23100,
+            "rmse": 0.09173396098528505,
+            "mae": 0.05112393820375253
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_O",
+            "seed": "20260914",
+            "horizon": 9,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.12474688215943337,
+            "mae": 0.08388427898664233
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_O",
+            "seed": "20260914",
+            "horizon": 9,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 34650,
+            "rmse": 0.1004903275207426,
+            "mae": 0.05869975390119945
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_O",
+            "seed": "20260914",
+            "horizon": 12,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.1652142051305267,
+            "mae": 0.11555488121400431
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_O",
+            "seed": "20260914",
+            "horizon": 12,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 46200,
+            "rmse": 0.11719580170508657,
+            "mae": 0.07117035936187706
+          }
+        ]
+      }
+    },
+    {
+      "model": "RELAX_SHORT_OD",
+      "seed": 20260913,
+      "representation": "SHORT_OD",
+      "parameters": 1410,
+      "selected": {
+        "epoch": 20,
+        "file": "private_RELAX_SHORT_OD_s20260913_e20.pt",
+        "sha256": "f64a36e0ac44a1c8ceb28e2b536ff3915194c9bffd377129434f2403fb6c5472",
+        "selection_rmse": 0.11690196312240049,
+        "scores": [
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_OD",
+            "seed": "20260913",
+            "horizon": 3,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.09371231688073245,
+            "mae": 0.052370423550443315
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_OD",
+            "seed": "20260913",
+            "horizon": 3,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 11550,
+            "rmse": 0.08776479200385519,
+            "mae": 0.044269664344374175
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_OD",
+            "seed": "20260913",
+            "horizon": 6,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.0991919679190763,
+            "mae": 0.062467762361746094
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_OD",
+            "seed": "20260913",
+            "horizon": 6,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 23100,
+            "rmse": 0.09202541818274061,
+            "mae": 0.051742322680030976
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_OD",
+            "seed": "20260913",
+            "horizon": 9,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.1180901926285299,
+            "mae": 0.08026562254974738
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_OD",
+            "seed": "20260913",
+            "horizon": 9,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 34650,
+            "rmse": 0.09926957746973934,
+            "mae": 0.058616109887646366
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_OD",
+            "seed": "20260913",
+            "horizon": 12,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.15661337506126333,
+            "mae": 0.11049734736760049
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_OD",
+            "seed": "20260913",
+            "horizon": 12,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 46200,
+            "rmse": 0.1137377201524251,
+            "mae": 0.0699780585715418
+          }
+        ]
+      }
+    },
+    {
+      "model": "RELAX_SHORT_OD",
+      "seed": 20260914,
+      "representation": "SHORT_OD",
+      "parameters": 1410,
+      "selected": {
+        "epoch": 20,
+        "file": "private_RELAX_SHORT_OD_s20260914_e20.pt",
+        "sha256": "2efd342e0fe83b3ba3da09cfd885907ae7a63757694ac7f62dd5b6007679753b",
+        "selection_rmse": 0.11705792437757992,
+        "scores": [
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_OD",
+            "seed": "20260914",
+            "horizon": 3,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.0935030635782539,
+            "mae": 0.05254638061418802
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_OD",
+            "seed": "20260914",
+            "horizon": 3,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 11550,
+            "rmse": 0.08760762115614651,
+            "mae": 0.044388502841612096
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_OD",
+            "seed": "20260914",
+            "horizon": 6,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.09922687894377072,
+            "mae": 0.06270686011681108
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_OD",
+            "seed": "20260914",
+            "horizon": 6,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 23100,
+            "rmse": 0.09193453111908319,
+            "mae": 0.05187734998494649
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_OD",
+            "seed": "20260914",
+            "horizon": 9,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.11858290410056625,
+            "mae": 0.08020929637126732
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_OD",
+            "seed": "20260914",
+            "horizon": 9,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 34650,
+            "rmse": 0.09938259418515538,
+            "mae": 0.05875515858887163
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_OD",
+            "seed": "20260914",
+            "horizon": 12,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.15691885088772875,
+            "mae": 0.11019577921765052
+          },
+          {
+            "stage": "SELECT",
+            "model": "RELAX_SHORT_OD",
+            "seed": "20260914",
+            "horizon": 12,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 46200,
+            "rmse": 0.1139607509991321,
+            "mae": 0.07001477777786903
+          }
+        ]
+      }
+    },
+    {
+      "model": "DIRECT_SHORT_OD",
+      "seed": 20260913,
+      "representation": "SHORT_OD",
+      "parameters": 1740,
+      "selected": {
+        "epoch": 20,
+        "file": "private_DIRECT_SHORT_OD_s20260913_e20.pt",
+        "sha256": "a527f9e8abeeb66ea786abfc1a6f2fd1a5023d8b51a0c4c3339926879150e344",
+        "selection_rmse": 0.11124167738147803,
+        "scores": [
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_SHORT_OD",
+            "seed": "20260913",
+            "horizon": 3,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.08987645054528492,
+            "mae": 0.049771913819675724
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_SHORT_OD",
+            "seed": "20260913",
+            "horizon": 3,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 11550,
+            "rmse": 0.08506196192238767,
+            "mae": 0.043626307995629714
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_SHORT_OD",
+            "seed": "20260913",
+            "horizon": 6,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.09226698433727532,
+            "mae": 0.0537386399696962
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_SHORT_OD",
+            "seed": "20260913",
+            "horizon": 6,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 23100,
+            "rmse": 0.08778779828645934,
+            "mae": 0.04804526977836597
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_SHORT_OD",
+            "seed": "20260913",
+            "horizon": 9,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.11730399100510276,
+            "mae": 0.08026308701920562
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_SHORT_OD",
+            "seed": "20260913",
+            "horizon": 9,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 34650,
+            "rmse": 0.09566276822504022,
+            "mae": 0.05504132509557169
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_SHORT_OD",
+            "seed": "20260913",
+            "horizon": 12,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.14551928363824915,
+            "mae": 0.10048382066349747
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_SHORT_OD",
+            "seed": "20260913",
+            "horizon": 12,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 46200,
+            "rmse": 0.10857598130172555,
+            "mae": 0.06550642997617057
+          }
+        ]
+      }
+    },
+    {
+      "model": "DIRECT_SHORT_OD",
+      "seed": 20260914,
+      "representation": "SHORT_OD",
+      "parameters": 1740,
+      "selected": {
+        "epoch": 20,
+        "file": "private_DIRECT_SHORT_OD_s20260914_e20.pt",
+        "sha256": "a411d21e38c3e8e2293b188be2c413945c7b04e0a42bedd472968ba50b1375e8",
+        "selection_rmse": 0.11119425654991895,
+        "scores": [
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_SHORT_OD",
+            "seed": "20260914",
+            "horizon": 3,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.08931527999214016,
+            "mae": 0.04917147030941265
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_SHORT_OD",
+            "seed": "20260914",
+            "horizon": 3,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 11550,
+            "rmse": 0.08481906819745756,
+            "mae": 0.04317400665379553
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_SHORT_OD",
+            "seed": "20260914",
+            "horizon": 6,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.09215508348711499,
+            "mae": 0.053978706499771066
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_SHORT_OD",
+            "seed": "20260914",
+            "horizon": 6,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 23100,
+            "rmse": 0.08743303252292638,
+            "mae": 0.04765635969146797
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_SHORT_OD",
+            "seed": "20260914",
+            "horizon": 9,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.11756807610582423,
+            "mae": 0.08025381175064869
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_SHORT_OD",
+            "seed": "20260914",
+            "horizon": 9,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 34650,
+            "rmse": 0.09538856111792962,
+            "mae": 0.05477169303988653
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_SHORT_OD",
+            "seed": "20260914",
+            "horizon": 12,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.14573858661459643,
+            "mae": 0.10002645944739169
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_SHORT_OD",
+            "seed": "20260914",
+            "horizon": 12,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 46200,
+            "rmse": 0.108479760072047,
+            "mae": 0.06522289795914135
+          }
+        ]
+      }
+    },
+    {
+      "model": "DIRECT_LONG_OD",
+      "seed": 20260913,
+      "representation": "LONG_OD",
+      "parameters": 12396,
+      "selected": {
+        "epoch": 20,
+        "file": "private_DIRECT_LONG_OD_s20260913_e20.pt",
+        "sha256": "1ac7a304ccf8c7ef6c5994404889f639d32b2462c6614c32de6e64565ffccb25",
+        "selection_rmse": 0.09061905323148922,
+        "scores": [
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_LONG_OD",
+            "seed": "20260913",
+            "horizon": 3,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.07890966006129314,
+            "mae": 0.0432576825340447
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_LONG_OD",
+            "seed": "20260913",
+            "horizon": 3,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 11550,
+            "rmse": 0.07334944819591756,
+            "mae": 0.038381212386220755
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_LONG_OD",
+            "seed": "20260913",
+            "horizon": 6,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.08286959224433445,
+            "mae": 0.04877639182874262
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_LONG_OD",
+            "seed": "20260913",
+            "horizon": 6,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 23100,
+            "rmse": 0.07718298526227937,
+            "mae": 0.04252719505267056
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_LONG_OD",
+            "seed": "20260913",
+            "horizon": 9,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.09407210105751716,
+            "mae": 0.060261412881645104
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_LONG_OD",
+            "seed": "20260913",
+            "horizon": 9,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 34650,
+            "rmse": 0.0820993098074429,
+            "mae": 0.04703681063929562
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_LONG_OD",
+            "seed": "20260913",
+            "horizon": 12,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.10662485956281215,
+            "mae": 0.06534068004581957
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_LONG_OD",
+            "seed": "20260913",
+            "horizon": 12,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 46200,
+            "rmse": 0.08757382008910017,
+            "mae": 0.05113904300137206
+          }
+        ]
+      }
+    },
+    {
+      "model": "DIRECT_LONG_OD",
+      "seed": 20260914,
+      "representation": "LONG_OD",
+      "parameters": 12396,
+      "selected": {
+        "epoch": 20,
+        "file": "private_DIRECT_LONG_OD_s20260914_e20.pt",
+        "sha256": "d47225bfebc6f788513b6e69bc996515861ee162899840e57c4c99ac7be51672",
+        "selection_rmse": 0.09081657932810407,
+        "scores": [
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_LONG_OD",
+            "seed": "20260914",
+            "horizon": 3,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.07900402624805111,
+            "mae": 0.04374096133153358
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_LONG_OD",
+            "seed": "20260914",
+            "horizon": 3,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 11550,
+            "rmse": 0.07390223168528272,
+            "mae": 0.039032874914085004
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_LONG_OD",
+            "seed": "20260914",
+            "horizon": 6,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.08317497930056156,
+            "mae": 0.048705065127828025
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_LONG_OD",
+            "seed": "20260914",
+            "horizon": 6,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 23100,
+            "rmse": 0.07781858606183925,
+            "mae": 0.042991956195512646
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_LONG_OD",
+            "seed": "20260914",
+            "horizon": 9,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.09576348432799382,
+            "mae": 0.061097564784359785
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_LONG_OD",
+            "seed": "20260914",
+            "horizon": 9,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 34650,
+            "rmse": 0.08260468046233398,
+            "mae": 0.047221744827977225
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_LONG_OD",
+            "seed": "20260914",
+            "horizon": 12,
+            "status": "AVAILABLE",
+            "target_scope": "terminal_H",
+            "postprocess": "raw",
+            "scored_values": 3850,
+            "rmse": 0.10532382743580974,
+            "mae": 0.0639101918130057
+          },
+          {
+            "stage": "SELECT",
+            "model": "DIRECT_LONG_OD",
+            "seed": "20260914",
+            "horizon": 12,
+            "status": "AVAILABLE",
+            "target_scope": "path_1_to_H",
+            "postprocess": "raw",
+            "scored_values": 46200,
+            "rmse": 0.08782599600932751,
+            "mae": 0.05111769333054807
+          }
+        ]
+      }
+    }
+  ],
+  "ridge": {
+    "RIDGE_SHORT_OD": {
+      "file": "private_RIDGE_SHORT_OD.npy",
+      "sha256": "bb2e5a31ebf43db74ad5e4d251f2a1cf443a491b1390ff5d8df4bceb310092ef",
+      "coefficients": 108,
+      "representation": "SHORT_OD",
+      "elapsed_seconds": 0.034590099996421486
+    },
+    "RIDGE_LONG_OD": {
+      "file": "private_RIDGE_LONG_OD.npy",
+      "sha256": "b0c75c76a5d9ffcdb4f884ba75da3c244113b196b32744b5a3eead5cac1b0ca7",
+      "coefficients": 4104,
+      "representation": "LONG_OD",
+      "elapsed_seconds": 0.5662851000088267
+    }
+  },
+  "transforms": {
+    "SHORT_OD": {
+      "file": "private_transform_SHORT_OD.npz",
+      "sha256": "b2da2a2d1326c19468382c915c14f544f7616604f51acd7630a31c454dba0214",
+      "width": 8,
+      "inactive_columns": 0
+    },
+    "SHORT_O": {
+      "file": "private_transform_SHORT_O.npz",
+      "sha256": "b5a2ea3557dfae7b89348194ecd936ab93346d00cce1b5cf80853dab01148b0e",
+      "width": 8,
+      "inactive_columns": 1
+    },
+    "LONG_OD": {
+      "file": "private_transform_LONG_OD.npz",
+      "sha256": "31ecb4e3c84891448ad822f7dd3f96eed4b85dc359934ba167e520d2e5f9c908",
+      "width": 341,
+      "inactive_columns": 0
+    }
+  },
+  "training_closed": true,
+  "selection_rule": "minimum SELECT mean four endpoint RMSEs; exact ties earlier epoch; no model or seed selection",
+  "neural_ensemble": false,
+  "config_sha256": "31682244f5326e95438b2038905afa81c61fc49663bbc757d943e97e7cf86713"
+}

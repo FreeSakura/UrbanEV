@@ -8,7 +8,13 @@
 
 已有[八方向成果地图](RESEARCH_INDEX.md)提供分位适配、空间结构、时长、电量、风险权衡和粗粒化记忆的积累。当前SOTA证据不足主要来自比较协议与最新强基线覆盖缺口；不是由于某些改善低于1%。
 
-## 本轮唯一数值任务
+## 本轮：短摘要与条件弛豫真实模型研究
+
+[SHORT_STATE_RELAXATION_V1](../../../configs/research/SHORT_STATE_RELAXATION_V1.json)已经执行一次：FIT原点169—1044拟合8个神经实例与2个ridge，1056选择固定checkpoint，1392评价全部有效模型。主候选的短OD弛豫未优于同信息直接MLP；长历史DIRECT/RIDGE相对短历史有明显开发收益。长ridge的H3/H12 RMSE接近native，但MAE更差。[结果、限制及回执](SHORT_STATE_RELAXATION_REPORT_20260913.md)
+
+本轮结果保留长历史和普通线性对照的重要性，未确立短摘要充分性或单模弛豫优势。长O和长D同时扩展，尚不能单独归因哪一路历史；两个种子和一个已曝光窗口不是独立确认。任何下一方案都等待人工审核，不追加当前epoch或自动拓展模型。
+
+## 已完成：比较口径桥接
 
 执行`URBANEV_COMPARABILITY_BRIDGE_V2_20260913`：在42个已曝光开发原点上，比较last/day/week三个确定性基线，以及已有Chronos native的H3/H12 raw与clip版本。三个确定性基线覆盖H3/H6/H9/H12；native缺失的H6/H9明确记NOT_AVAILABLE，不追加推理或用H12截取冒充原调用。
 

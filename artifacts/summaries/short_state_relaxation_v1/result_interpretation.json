@@ -1,0 +1,102 @@
+{
+  "contrasts": [
+    {
+      "candidate": "RELAX_SHORT_OD",
+      "reference": "RELAX_SHORT_O",
+      "candidate_postprocess": "raw",
+      "reference_postprocess": "raw",
+      "support": "FOUR_H",
+      "rmse_change_percent": 2.0441355958898733,
+      "mae_change_percent": 1.0743648681360796
+    },
+    {
+      "candidate": "RELAX_SHORT_OD",
+      "reference": "DIRECT_SHORT_OD",
+      "candidate_postprocess": "raw",
+      "reference_postprocess": "raw",
+      "support": "FOUR_H",
+      "rmse_change_percent": 0.49651986135221815,
+      "mae_change_percent": 0.5128564309928363
+    },
+    {
+      "candidate": "RELAX_SHORT_OD",
+      "reference": "RIDGE_SHORT_OD",
+      "candidate_postprocess": "raw",
+      "reference_postprocess": "clip_0_1",
+      "support": "FOUR_H",
+      "rmse_change_percent": 2.647430501249315,
+      "mae_change_percent": -8.808585343296526
+    },
+    {
+      "candidate": "DIRECT_LONG_OD",
+      "reference": "DIRECT_SHORT_OD",
+      "candidate_postprocess": "raw",
+      "reference_postprocess": "raw",
+      "support": "FOUR_H",
+      "rmse_change_percent": -11.20515405279907,
+      "mae_change_percent": -14.469843052094422
+    },
+    {
+      "candidate": "RIDGE_LONG_OD",
+      "reference": "RIDGE_SHORT_OD",
+      "candidate_postprocess": "clip_0_1",
+      "reference_postprocess": "clip_0_1",
+      "support": "FOUR_H",
+      "rmse_change_percent": -15.624547782819088,
+      "mae_change_percent": -22.83959768847026
+    },
+    {
+      "candidate": "RIDGE_LONG_OD",
+      "reference": "native_clip",
+      "candidate_postprocess": "clip_0_1",
+      "reference_postprocess": "clip_0_1",
+      "support": "H3_H12_COMMON",
+      "rmse_change_percent": 0.0028291717682815687,
+      "mae_change_percent": 13.902281433848284
+    }
+  ],
+  "interpretation": "Positive change means worse; descriptive fixed-development comparison, not a hypothesis test or admission gate",
+  "public_only_score_verification_max_error": 2.7755575615628914e-17,
+  "selected_epochs": [
+    {
+      "model": "RELAX_SHORT_O",
+      "seed": 20260913,
+      "epoch": 20
+    },
+    {
+      "model": "RELAX_SHORT_O",
+      "seed": 20260914,
+      "epoch": 20
+    },
+    {
+      "model": "RELAX_SHORT_OD",
+      "seed": 20260913,
+      "epoch": 20
+    },
+    {
+      "model": "RELAX_SHORT_OD",
+      "seed": 20260914,
+      "epoch": 20
+    },
+    {
+      "model": "DIRECT_SHORT_OD",
+      "seed": 20260913,
+      "epoch": 20
+    },
+    {
+      "model": "DIRECT_SHORT_OD",
+      "seed": 20260914,
+      "epoch": 20
+    },
+    {
+      "model": "DIRECT_LONG_OD",
+      "seed": 20260913,
+      "epoch": 20
+    },
+    {
+      "model": "DIRECT_LONG_OD",
+      "seed": 20260914,
+      "epoch": 20
+    }
+  ]
+}

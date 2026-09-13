@@ -24,6 +24,8 @@
 
 ## 当前科学问题
 
+本轮[短摘要与条件弛豫真实实验](docs/research/sota/SHORT_STATE_RELAXATION_REPORT_20260913.md)已完成8次神经训练、2次ridge拟合：主候选未优于同信息直接模型；长历史DIRECT/RIDGE分别较短历史降低四H末点RMSE约11.21%/15.62%。长ridge接近native的H3/H12 RMSE，但MAE更差。**保留长历史研究线索，不主张单模弛豫优势或SOTA**；全部结果返回人工审核，没有恢复旧收益门。
+
 **容量约束、隐藏驻留阶段和滞后累计观测下，什么简洁摘要足以预测未来占用？** [理论报告](docs/research/sota/COARSE_MEMORY_THEORY_REPORT_20260913.md)整合物理记忆、经济选择及交通调度思想。[合成机制检查](docs/research/sota/COARSE_MEMORY_IDENTIFIABILITY_REPORT_20260913.md)显示，在一个固定慢动态人工系统中，完整历史对纯占用历史的RMSE增量为1.6010%，对短双观测摘要仅0.2468%，且等于已知参数HMM过滤。它支持问题建模，尚未建立新方法优势或UrbanEV成绩。
 
 研究继续围绕可比基线、预测状态及实际增量展开。每轮完成后返回人工审核；定时任务暂停，不自动进入下一轮。

@@ -1379,6 +1379,78 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/short_state_relaxation_v1/development_scores.csv",
+      "sha256": "975bdbf007cd35b70bf178d07a8d2a1f9016099b3e5dd686a34158aa151ed1c5",
+      "bytes": 14247,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/short_state_relaxation_v1/execution_receipt.json",
+      "sha256": "029eb32f835c0f58ae37618bdfe3a9120608e9dc551e1123feef9bbbe1a6f6bc",
+      "bytes": 4371,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/short_state_relaxation_v1/frozen_selection.json",
+      "sha256": "39c7a55ac628b8381473d1f79300808c847f96d16330e623690ba1cf1009d047",
+      "bytes": 29019,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/short_state_relaxation_v1/model_comparison_summary.json",
+      "sha256": "900debc105dc0d8ff070d23e9f785289634ff683559f2373ab213caf35bd311e",
+      "bytes": 30609,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/short_state_relaxation_v1/paired_origin_errors.csv",
+      "sha256": "a30f18544373b696be6be84c3d3b18878211e3cb0ffdad6578a7f73f5b937887",
+      "bytes": 158095,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "sha256": "89670cdb0d8e89046cea20ff71cbe51ba04c08c76d32eb58cb87a582d9ca236c",
+      "bytes": 4012,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/short_state_relaxation_v1/result_interpretation.json",
+      "sha256": "01bb4c833e0a69de0c4c58a80e8be5d23eebffea69e105e65f279ab50cebdeab",
+      "bytes": 2708,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/short_state_relaxation_v1/training_curves.csv",
+      "sha256": "2254e751191269a65592d9be9d4bf3f82004a373a90142ad42cebc40f116294c",
+      "bytes": 9062,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/signal_replication_v1/augmented_structure_receipt.json",
       "sha256": "fcda8750be6d0d3148da21f799d6635ecdb66656a10c9c705e76b2328461b537",
       "bytes": 393,
