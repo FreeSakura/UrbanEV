@@ -1,0 +1,176 @@
+{
+  "selection_sha256": "c9611bed15d8aa65545d9c4f1170291dc3de4b4495a3221f26872a13b6ebc4d4",
+  "predictions": [
+    {
+      "model": "BASE_FIXED",
+      "seed": "fixed",
+      "postprocess": "raw",
+      "file": "private_DEV_BASE_FIXED_fixed_raw.npy",
+      "sha256": "c5f53ea43e3cfcb27f8d073817b2e2cbf77994882bebf4637fa2fdd801ea1396"
+    },
+    {
+      "model": "BASE_FIXED",
+      "seed": "fixed",
+      "postprocess": "clip_0_1",
+      "file": "private_DEV_BASE_FIXED_fixed_clip_0_1.npy",
+      "sha256": "0f8fbcd0d5ce042db7d8629eb807220d92dbf92579421928a9792e88dedb2a81"
+    },
+    {
+      "model": "LINEAR_REPAIR",
+      "seed": "fixed",
+      "postprocess": "raw",
+      "file": "private_DEV_LINEAR_REPAIR_fixed_raw.npy",
+      "sha256": "e62fc696d462f3cd9c2dff4363e39b5ae24bb3a28ad8b110c216638bc257e961"
+    },
+    {
+      "model": "LINEAR_REPAIR",
+      "seed": "fixed",
+      "postprocess": "clip_0_1",
+      "file": "private_DEV_LINEAR_REPAIR_fixed_clip_0_1.npy",
+      "sha256": "b973fb8b57e2933a0a0ee9f2a9290d06efd349ce353bdd8b135014934cccf2c0"
+    },
+    {
+      "model": "RIDGE_FULL",
+      "seed": "fixed",
+      "postprocess": "raw",
+      "file": "private_DEV_RIDGE_FULL_fixed_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578"
+    },
+    {
+      "model": "RIDGE_FULL",
+      "seed": "fixed",
+      "postprocess": "clip_0_1",
+      "file": "private_DEV_RIDGE_FULL_fixed_clip_0_1.npy",
+      "sha256": "33cd6de1883a44b1f9c36dfa0fd22d78e6075fb2e4998b25583428eb5d363940"
+    },
+    {
+      "model": "FIXED_PRODUCT",
+      "seed": "20260915",
+      "postprocess": "raw",
+      "file": "private_DEV_FIXED_PRODUCT_20260915_raw.npy",
+      "sha256": "cace0d8c380b0da42c1d4afcef4a0ad70b0ce4a5c63c1f6eb147b03030e5e5a4"
+    },
+    {
+      "model": "FIXED_PRODUCT",
+      "seed": "20260915",
+      "postprocess": "clip_0_1",
+      "file": "private_DEV_FIXED_PRODUCT_20260915_clip_0_1.npy",
+      "sha256": "1c4de785c6f647c65e656d62ac5385d27e92b8e27eabc9887c43090cf19961a2"
+    },
+    {
+      "model": "FIXED_PRODUCT",
+      "seed": "20260916",
+      "postprocess": "raw",
+      "file": "private_DEV_FIXED_PRODUCT_20260916_raw.npy",
+      "sha256": "12cd64c14d98dd11a4ea246c394f95721e295d65e629a9e44e8afb4810fe642f"
+    },
+    {
+      "model": "FIXED_PRODUCT",
+      "seed": "20260916",
+      "postprocess": "clip_0_1",
+      "file": "private_DEV_FIXED_PRODUCT_20260916_clip_0_1.npy",
+      "sha256": "b348072ad75c756aebc260bf432d4c4a516782da0e1fd6787b44b7bc6b8db9d9"
+    },
+    {
+      "model": "FIXED_PRODUCT",
+      "seed": "20260917",
+      "postprocess": "raw",
+      "file": "private_DEV_FIXED_PRODUCT_20260917_raw.npy",
+      "sha256": "cdf22a9da88759f1f3dd90e1ca552e0340e9b6bb7f07482a5ba464349d138082"
+    },
+    {
+      "model": "FIXED_PRODUCT",
+      "seed": "20260917",
+      "postprocess": "clip_0_1",
+      "file": "private_DEV_FIXED_PRODUCT_20260917_clip_0_1.npy",
+      "sha256": "5ff347ef55303cb5b26ec980869f6abec337cf302f84507882bb77a9cbc85470"
+    },
+    {
+      "model": "FIXED_SEPARABLE",
+      "seed": "20260915",
+      "postprocess": "raw",
+      "file": "private_DEV_FIXED_SEPARABLE_20260915_raw.npy",
+      "sha256": "5467fd881688bc72c347606452c1df359cab55d75a3dc919e390f61781e25522"
+    },
+    {
+      "model": "FIXED_SEPARABLE",
+      "seed": "20260915",
+      "postprocess": "clip_0_1",
+      "file": "private_DEV_FIXED_SEPARABLE_20260915_clip_0_1.npy",
+      "sha256": "07bd9f875e63bf6df6f6f0e7bf71561030d7ad44d11463c49eb7caf5bc1c4513"
+    },
+    {
+      "model": "FIXED_SEPARABLE",
+      "seed": "20260916",
+      "postprocess": "raw",
+      "file": "private_DEV_FIXED_SEPARABLE_20260916_raw.npy",
+      "sha256": "30c131a4a3996255a8063f46434274a1e70566335fdc1956c553c42359c0d279"
+    },
+    {
+      "model": "FIXED_SEPARABLE",
+      "seed": "20260916",
+      "postprocess": "clip_0_1",
+      "file": "private_DEV_FIXED_SEPARABLE_20260916_clip_0_1.npy",
+      "sha256": "2f5e844a0772c51dbbe9fcd4b7e9b9319c35131c242cdf60dfa3dbdea750342d"
+    },
+    {
+      "model": "FIXED_SEPARABLE",
+      "seed": "20260917",
+      "postprocess": "raw",
+      "file": "private_DEV_FIXED_SEPARABLE_20260917_raw.npy",
+      "sha256": "03a2cfff7ab678c2b601936d9a8f4ca91f86c3374d57440b7740e55106131d84"
+    },
+    {
+      "model": "FIXED_SEPARABLE",
+      "seed": "20260917",
+      "postprocess": "clip_0_1",
+      "file": "private_DEV_FIXED_SEPARABLE_20260917_clip_0_1.npy",
+      "sha256": "1aecbddbce65a02c03914fd5fb0ea286df7f1bd8ac5ef3c862529c157e558b3d"
+    },
+    {
+      "model": "FIXED_CONCAT",
+      "seed": "20260915",
+      "postprocess": "raw",
+      "file": "private_DEV_FIXED_CONCAT_20260915_raw.npy",
+      "sha256": "82a128a8abedf5f8dd6963ce41dd927df5467410656382566c81441b05c2d815"
+    },
+    {
+      "model": "FIXED_CONCAT",
+      "seed": "20260915",
+      "postprocess": "clip_0_1",
+      "file": "private_DEV_FIXED_CONCAT_20260915_clip_0_1.npy",
+      "sha256": "f6d84a046e1ff4cdc63f043f26dd2f4d298a3a14faa0d74007cc706b1a52bb7c"
+    },
+    {
+      "model": "FIXED_CONCAT",
+      "seed": "20260916",
+      "postprocess": "raw",
+      "file": "private_DEV_FIXED_CONCAT_20260916_raw.npy",
+      "sha256": "7c3e1c3f58ebdc3c3f58a50d4dd27394f5d1baec4d6216a507a24746e12f2e29"
+    },
+    {
+      "model": "FIXED_CONCAT",
+      "seed": "20260916",
+      "postprocess": "clip_0_1",
+      "file": "private_DEV_FIXED_CONCAT_20260916_clip_0_1.npy",
+      "sha256": "782c77316ea619ea5eb8d20e0fc76016afd8a803dd4b39416afbb129a4daceb9"
+    },
+    {
+      "model": "FIXED_CONCAT",
+      "seed": "20260917",
+      "postprocess": "raw",
+      "file": "private_DEV_FIXED_CONCAT_20260917_raw.npy",
+      "sha256": "68347b8b66df59d696ae6e826b2bd6ba1fec1434a6036ce9ae150b00df60b88f"
+    },
+    {
+      "model": "FIXED_CONCAT",
+      "seed": "20260917",
+      "postprocess": "clip_0_1",
+      "file": "private_DEV_FIXED_CONCAT_20260917_clip_0_1.npy",
+      "sha256": "5d5705d5a2e85b196b14f58d40a67d92c258e650815c46a2746ea396634bbba6"
+    }
+  ],
+  "rolling_past_observations_available": true,
+  "evaluation_losses_not_computed": true,
+  "each_origin_uses_only_past_inputs": true
+}

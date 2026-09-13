@@ -1,0 +1,184 @@
+{
+  "protocol_id": "FIXED_REFERENCE_CORRECTION_V1_20260913",
+  "config_sha256": "5d01b5787c5e5496273b25728a22f681f227be48b2c4b2b383306a7b16ad2d96",
+  "frozen_code_commit": "935bee2415b20b7c72e46acea0949c978d316cfd",
+  "stage_reads": [
+    {
+      "stage": "FIT",
+      "file": "inf.csv",
+      "columns": [
+        "station_id",
+        "TAZID",
+        "charge_count"
+      ],
+      "rule": "groupby TAZID sum"
+    },
+    {
+      "stage": "FIT",
+      "file": "occupancy.csv",
+      "rows": 1056,
+      "columns": 275,
+      "prefix_sha256": "939339567e3935dbc390343623dcbb8f30e45e1c30259b12a748c938f123e4bd",
+      "numeric_row_range": [
+        0,
+        1056
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "FIT",
+      "file": "duration.csv",
+      "rows": 1043,
+      "columns": 275,
+      "prefix_sha256": "1e7cc3810fb4b11e1b59f06aa798793a0e8bc1493c04ac428bb7074b062ccf55",
+      "numeric_row_range": [
+        0,
+        1043
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "SELECT",
+      "file": "occupancy.csv",
+      "rows": 1224,
+      "columns": 275,
+      "prefix_sha256": "4dd8eaa18bf1bc80575f86acba328f9946d326f4802c5f48e10eb6a872ebf8e1",
+      "numeric_row_range": [
+        0,
+        1224
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "SELECT",
+      "file": "duration.csv",
+      "rows": 1211,
+      "columns": 275,
+      "prefix_sha256": "01d532a43434012d0447f0859d58a4ec86206d52227657c670e349a599a36c52",
+      "numeric_row_range": [
+        0,
+        1211
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "PREDICT",
+      "file": "occupancy.csv",
+      "rows": 1548,
+      "columns": 275,
+      "prefix_sha256": "64145637b256e74991c3dca0cd227c3215f8313a4ea02a7408649306d964d2c2",
+      "numeric_row_range": [
+        0,
+        1548
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "PREDICT",
+      "file": "duration.csv",
+      "rows": 1547,
+      "columns": 275,
+      "prefix_sha256": "91535b3742ac389b3ac70c26563dfe88cad3f5149a7f359ad033c6d60a14a455",
+      "numeric_row_range": [
+        0,
+        1547
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "SCORE",
+      "file": "occupancy.csv",
+      "rows": 1560,
+      "columns": 275,
+      "prefix_sha256": "40f3769bc207bb5411225c73ee7f174d194238b61ff71f07aa736dc26bc8bb02",
+      "numeric_row_range": [
+        0,
+        1560
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "SCORE",
+      "file": "private_truth_1392_h3.npy",
+      "kind": "whitelisted_cache_decode",
+      "sha256": "2b6c1a1790ad879adc24aa6eb9d021ce819a01777a7e3789ecad7df64e9a4964"
+    },
+    {
+      "stage": "SCORE",
+      "file": "private_1392_h3_native_a1.npy",
+      "kind": "whitelisted_cache_decode",
+      "sha256": "a8870d582828961b80b010a679b8a03ecd0009b1075839ffd9fc64566c16ebf3"
+    },
+    {
+      "stage": "SCORE",
+      "file": "private_truth_1392_h12.npy",
+      "kind": "whitelisted_cache_decode",
+      "sha256": "e9e43f31a9a16f0882a4693dfb1d93e2b59514a235f055101fa02140d3279cf7"
+    },
+    {
+      "stage": "SCORE",
+      "file": "private_1392_h12_native_a1.npy",
+      "kind": "whitelisted_cache_decode",
+      "sha256": "e01540b22a04d814f798f6a65370bdf9db69b13d5a4494d81a58e24b06455796"
+    }
+  ],
+  "base_ridge_fits": 2,
+  "neural_training_runs_started": 9,
+  "neural_training_runs_completed": 9,
+  "optimizer_steps": 13320,
+  "executions": 1,
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "cuda_device": "cuda:0",
+  "torch_version": "2.5.1+cu121",
+  "cuda_runtime": "12.1",
+  "numpy_version": "2.2.6",
+  "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "cpu_threads": 2,
+  "cublas_workspace_config": ":4096:8",
+  "TF32": false,
+  "AMP": false,
+  "torch_compile": false,
+  "new_foundation_inference": 0,
+  "alpha_searches": 0,
+  "old_private_model_reads": 0,
+  "automatic_next_round": false,
+  "automation_enabled": false,
+  "human_review_required": true,
+  "linear_correction_fits": 1,
+  "linear_correction_seconds": 0.7522132999729365,
+  "frozen_epoch40_fit_evaluations": 9,
+  "ridge_fit_seconds": 6.225550000031944,
+  "status": "FIXED_REFERENCE_CORRECTION_COMPLETE_REVIEW_REQUIRED",
+  "mechanism_probe_is_selection_independent": true,
+  "independent_statistical_confirmation": false,
+  "fit_rows": 149325,
+  "fit_origins": 543,
+  "full_base_fit_rows": 240900,
+  "full_base_fit_origins": 876,
+  "mechanism_score_rows": 48,
+  "mechanism_prediction_files": 12,
+  "select_origins": 14,
+  "dev_origins": 14,
+  "selection_score_rows": 720,
+  "valid_dev_score_rows": 200,
+  "missing_native_rows": 8,
+  "loss_comparison_cells": 264,
+  "paired_origin_rows": 3696,
+  "cache_decodes": 4,
+  "inference_seconds_synchronized": 0.16008430015062913,
+  "neural_training_seconds_synchronized": 80.00210860004881,
+  "gpu_peak_allocated_bytes": 290989056,
+  "gpu_peak_reserved_bytes": 297795584,
+  "scientific_automatic_admission": false,
+  "sota_claim": false,
+  "total_seconds": 158.4346188000054,
+  "process_peak_memory": "NOT_MEASURED",
+  "gpu_memory_scope": "PyTorch allocated/reserved, not total process/device memory"
+}

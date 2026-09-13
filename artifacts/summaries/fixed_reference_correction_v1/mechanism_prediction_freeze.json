@@ -1,0 +1,107 @@
+{
+  "selection_sha256": "c9611bed15d8aa65545d9c4f1170291dc3de4b4495a3221f26872a13b6ebc4d4",
+  "fixed_epoch": 40,
+  "origins": [
+    1224,
+    1236,
+    1248,
+    1260,
+    1272,
+    1284,
+    1296,
+    1308,
+    1320,
+    1332,
+    1344,
+    1356,
+    1368,
+    1380
+  ],
+  "not_used_for_selection": true,
+  "predictions": [
+    {
+      "model": "BASE_FIXED",
+      "seed": "fixed",
+      "file": "private_MECH_FIXED40_BASE_FIXED_fixed.npy",
+      "sha256": "ae983566132dc08129e3b80b2bf4bcdd769475c195de6e1c5bc607040d1d6acc",
+      "epoch": null
+    },
+    {
+      "model": "LINEAR_REPAIR",
+      "seed": "fixed",
+      "file": "private_MECH_FIXED40_LINEAR_REPAIR_fixed.npy",
+      "sha256": "2e1fae31c2fef43ae9965a72ded36c899d2aa53fee8fbdbaa271ea556410f7d7",
+      "epoch": null
+    },
+    {
+      "model": "RIDGE_FULL",
+      "seed": "fixed",
+      "file": "private_MECH_FIXED40_RIDGE_FULL_fixed.npy",
+      "sha256": "cfa2c3992373d85faa88e3de07c162bedf28fea4fc5c4ebfb9306db199e8758b",
+      "epoch": null
+    },
+    {
+      "model": "FIXED_PRODUCT",
+      "seed": "20260915",
+      "file": "private_MECH_FIXED40_FIXED_PRODUCT_20260915.npy",
+      "sha256": "f4ecb79b3bf0285460c9edc8ba5ce4af720e3b06f36d7ee9db7daf863cacdeb0",
+      "epoch": 40
+    },
+    {
+      "model": "FIXED_PRODUCT",
+      "seed": "20260916",
+      "file": "private_MECH_FIXED40_FIXED_PRODUCT_20260916.npy",
+      "sha256": "dadca33c577a4b73a40c91086be10c034e30427d3e11b658fc3e80fa81b5bb41",
+      "epoch": 40
+    },
+    {
+      "model": "FIXED_PRODUCT",
+      "seed": "20260917",
+      "file": "private_MECH_FIXED40_FIXED_PRODUCT_20260917.npy",
+      "sha256": "546bf0ac1036ab9c79331b3c7ad341e838594d188fdb4ab6f7c119aa343a37bb",
+      "epoch": 40
+    },
+    {
+      "model": "FIXED_SEPARABLE",
+      "seed": "20260915",
+      "file": "private_MECH_FIXED40_FIXED_SEPARABLE_20260915.npy",
+      "sha256": "a8281918ed3eebce6be9546408c566838d536b1e92528eb398ef4169446b869f",
+      "epoch": 40
+    },
+    {
+      "model": "FIXED_SEPARABLE",
+      "seed": "20260916",
+      "file": "private_MECH_FIXED40_FIXED_SEPARABLE_20260916.npy",
+      "sha256": "9bbcf7af2a67c4244c4ca0bad94be6756c709ddd5324ebeb0a66125d98193047",
+      "epoch": 40
+    },
+    {
+      "model": "FIXED_SEPARABLE",
+      "seed": "20260917",
+      "file": "private_MECH_FIXED40_FIXED_SEPARABLE_20260917.npy",
+      "sha256": "4fc5e1fc1166ea6cb29e4459392b6f0d3a6cf39c3b10f60c97f2271a5446cba7",
+      "epoch": 40
+    },
+    {
+      "model": "FIXED_CONCAT",
+      "seed": "20260915",
+      "file": "private_MECH_FIXED40_FIXED_CONCAT_20260915.npy",
+      "sha256": "adc790b5bc6bac8400e2aa924fb287b7f8d318e1785295e34ce5e9595451e160",
+      "epoch": 40
+    },
+    {
+      "model": "FIXED_CONCAT",
+      "seed": "20260916",
+      "file": "private_MECH_FIXED40_FIXED_CONCAT_20260916.npy",
+      "sha256": "af1ac23d0079927820b1fb7ebaee69db86510f2488b00421a538ac911b4bbaf3",
+      "epoch": 40
+    },
+    {
+      "model": "FIXED_CONCAT",
+      "seed": "20260917",
+      "file": "private_MECH_FIXED40_FIXED_CONCAT_20260917.npy",
+      "sha256": "3da621e417d317facb038a9561217cd709a2d78ee86127c2415b6d87e26c81b7",
+      "epoch": 40
+    }
+  ]
+}

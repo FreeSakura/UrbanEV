@@ -1,0 +1,19 @@
+{
+  "ridge": {
+    "file": "private_base_BASE_FIXED.npy",
+    "sha256": "74ec82b717050406dd316f0e178ef4fd3ca13ad30afe9a97514e5f27f5fa12f0",
+    "coefficients": 4104
+  },
+  "transform": {
+    "file": "private_transform_BASE_FIXED.npz",
+    "sha256": "fc5a0b2bc0c8438d4f588ea5607d14a46d5732b953e6ffdd67cf4999a9194176"
+  },
+  "origin_start": 169,
+  "origin_stop_exclusive": 457,
+  "train_rows": 79200,
+  "max_label": 467,
+  "O_local_prefix": 468,
+  "D_local_prefix": 455,
+  "fit_seconds": 1.3272451999946497,
+  "normal_equation_relative_error": 3.734478813208003e-18
+}

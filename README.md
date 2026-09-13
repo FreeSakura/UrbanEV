@@ -25,6 +25,8 @@
 
 ## 当前科学问题
 
+[固定底座纠错与固定epoch诊断](docs/research/sota/FIXED_REFERENCE_CORRECTION_REPORT_20260913.md)完成3次确定性拟合和9次神经训练，无零修正别名。线性纠错在两个后续窗口改善固定底座；交互模型在机制窗有益、DEV却恶化，且不及普通控制与完整ridge。**存在普通纠错收益，专用交互与跨时段稳定优势仍未成立，无SOTA声明。**
+
 [前向残差与底座上下文](docs/research/sota/FORWARD_RESIDUAL_TRANSFER_REPORT_20260913.md)完成4个独立底座和18次神经训练。所有9个前向实例均在SELECT选择epoch0，等于完整ridge底座；B3迁移诊断随之退化，不能说明非零纠错器的迁移性质。**未取得新的非零预测收益，不把零波动或回退优势称作创新成功。** 当前[SOTA差距评估](docs/research/sota/SOTA_GAP_ASSESSMENT_20260913.md)区分局部强参考和完整前沿证据。
 
 [底座正增损稳定化](docs/research/sota/REFERENCE_HARM_STABILITY_REPORT_20260913.md)完成六方案、三个新种子、18次神经训练。主方法相对原MSE平均RMSE/MAE改善0.0834%/0.6728%，但四H宏指标仍差于ridge底座，成绩标准差增加；普通MAE混合与通用MLP控制限制了专用稳定化解释。**减少增损的局部作用存在，整体稳定性主张未成立，无SOTA声明。**

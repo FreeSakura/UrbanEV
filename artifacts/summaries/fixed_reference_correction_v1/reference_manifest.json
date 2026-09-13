@@ -1,0 +1,73 @@
+{
+  "ridge": {
+    "file": "private_base_BASE_FIXED.npy",
+    "sha256": "74ec82b717050406dd316f0e178ef4fd3ca13ad30afe9a97514e5f27f5fa12f0",
+    "coefficients": 4104
+  },
+  "transform": {
+    "file": "private_transform_BASE_FIXED.npz",
+    "sha256": "fc5a0b2bc0c8438d4f588ea5607d14a46d5732b953e6ffdd67cf4999a9194176"
+  },
+  "origin_start": 169,
+  "origin_stop_exclusive": 457,
+  "train_rows": 79200,
+  "max_label": 467,
+  "O_local_prefix": 468,
+  "D_local_prefix": 455,
+  "fit_seconds": 1.3272451999946497,
+  "normal_equation_relative_error": 3.734478813208003e-18,
+  "bases": {
+    "BASE_FIXED": {
+      "ridge": {
+        "file": "private_base_BASE_FIXED.npy",
+        "sha256": "74ec82b717050406dd316f0e178ef4fd3ca13ad30afe9a97514e5f27f5fa12f0",
+        "coefficients": 4104
+      },
+      "transform": {
+        "file": "private_transform_BASE_FIXED.npz",
+        "sha256": "fc5a0b2bc0c8438d4f588ea5607d14a46d5732b953e6ffdd67cf4999a9194176"
+      },
+      "origin_start": 169,
+      "origin_stop_exclusive": 457,
+      "train_rows": 79200,
+      "max_label": 467,
+      "O_local_prefix": 468,
+      "D_local_prefix": 455,
+      "fit_seconds": 1.3272451999946497,
+      "normal_equation_relative_error": 3.734478813208003e-18
+    },
+    "RIDGE_FULL": {
+      "ridge": {
+        "file": "private_base_RIDGE_FULL.npy",
+        "sha256": "b0c75c76a5d9ffcdb4f884ba75da3c244113b196b32744b5a3eead5cac1b0ca7",
+        "coefficients": 4104
+      },
+      "transform": {
+        "file": "private_transform_RIDGE_FULL.npz",
+        "sha256": "31ecb4e3c84891448ad822f7dd3f96eed4b85dc359934ba167e520d2e5f9c908"
+      },
+      "origin_start": 169,
+      "origin_stop_exclusive": 1045,
+      "train_rows": 240900,
+      "max_label": 1055,
+      "O_local_prefix": 1056,
+      "D_local_prefix": 1043,
+      "fit_seconds": 4.898304800037295,
+      "normal_equation_relative_error": 3.6418626428241525e-18
+    }
+  },
+  "linear_repair": {
+    "normal_equation_relative_error": 4.412403388303866e-18,
+    "coefficients": 4104,
+    "lambda": 0.01,
+    "target_units": "raw occupancy residual",
+    "file": "private_linear_repair.npy",
+    "sha256": "4d67f674fb30cffbac66f66dd2187ccd25f24240593bd75d59767228c616220d"
+  },
+  "correction_transform": {
+    "file": "private_correction_transform.npz",
+    "sha256": "ddcd53025f8e18096153229e11afee095310bbef0de1b80187e53d189faf2941"
+  },
+  "same_reference_all_stages": true,
+  "full_ridge_is_reference_only": true
+}

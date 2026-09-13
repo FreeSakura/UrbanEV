@@ -1,0 +1,13 @@
+{
+  "saved_prediction_score_error": 0.0,
+  "base_anchor_error": 2.636779683484747e-16,
+  "cache_truth_error": 0.0,
+  "direct_loss_reduction_error": 3.5805776746333784e-17,
+  "selected_epoch_zero_aliases": 0,
+  "frozen_base_unchanged": true,
+  "prediction_file_count": 24,
+  "mechanism_prediction_files": 12,
+  "mechanism_saved_score_error": 0.0,
+  "mechanism_alignment_error": 3.63207727782644e-18,
+  "linear_normal_equation_relative_error": 4.412403388303866e-18
+}
