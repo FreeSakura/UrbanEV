@@ -1,0 +1,86 @@
+[
+  {
+    "seed": 20260915,
+    "horizon": 3,
+    "interaction_mean_square": 7.220158511952749e-05,
+    "total_extra_mean_square": 0.00011157509784565276,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260915,
+    "horizon": 6,
+    "interaction_mean_square": 0.0002671634753008903,
+    "total_extra_mean_square": 0.00036054504364765546,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260915,
+    "horizon": 9,
+    "interaction_mean_square": 0.00037988628481725313,
+    "total_extra_mean_square": 0.00048766635351753175,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260915,
+    "horizon": 12,
+    "interaction_mean_square": 0.0002839092126503152,
+    "total_extra_mean_square": 0.00037011109784697695,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260916,
+    "horizon": 3,
+    "interaction_mean_square": 5.567714383525687e-05,
+    "total_extra_mean_square": 0.00010317769030831236,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260916,
+    "horizon": 6,
+    "interaction_mean_square": 0.000239314409187619,
+    "total_extra_mean_square": 0.0003555841578342292,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260916,
+    "horizon": 9,
+    "interaction_mean_square": 0.000379112671418278,
+    "total_extra_mean_square": 0.00048664544944854496,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260916,
+    "horizon": 12,
+    "interaction_mean_square": 0.0003232903314936583,
+    "total_extra_mean_square": 0.00037288838816974026,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260917,
+    "horizon": 3,
+    "interaction_mean_square": 0.00010462417927365128,
+    "total_extra_mean_square": 0.00012626924411229465,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260917,
+    "horizon": 6,
+    "interaction_mean_square": 0.0003141387139074824,
+    "total_extra_mean_square": 0.00039931577409788743,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260917,
+    "horizon": 9,
+    "interaction_mean_square": 0.0004508309299145313,
+    "total_extra_mean_square": 0.0005176451751907874,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260917,
+    "horizon": 12,
+    "interaction_mean_square": 0.00033195793922954106,
+    "total_extra_mean_square": 0.0003804929921056384,
+    "interpretation": "module activity, not causal importance or necessity"
+  }
+]

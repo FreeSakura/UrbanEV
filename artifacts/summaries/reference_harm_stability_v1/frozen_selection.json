@@ -1,0 +1,225 @@
+{
+  "base_sha256": "216baf5b9296159564c0f223174bf50fdded7ce646fdb24bd853bd55109a6723",
+  "selected": [
+    {
+      "model": "PRODUCT_MSE",
+      "seed": 20260915,
+      "selected": {
+        "epoch": 40,
+        "file": "private_PRODUCT_MSE_s20260915_e40.pt",
+        "sha256": "999556074b10ef4c5b6d31ba9e0289c77c27a6cbe58e427930d4b3d66c8148d3",
+        "selection_rmse": 0.08012216995742036
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "PRODUCT_MSE",
+      "seed": 20260916,
+      "selected": {
+        "epoch": 20,
+        "file": "private_PRODUCT_MSE_s20260916_e20.pt",
+        "sha256": "958f3bf430843692e882a0ce1be2426cbc796c4aebc531fdd6b0d3fa7eddd428",
+        "selection_rmse": 0.08083930061646638
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "PRODUCT_MSE",
+      "seed": 20260917,
+      "selected": {
+        "epoch": 40,
+        "file": "private_PRODUCT_MSE_s20260917_e40.pt",
+        "sha256": "5159e7c62c3b1913e5ad2aa491410d5d9fb08e4ea8f77df6702b8a8042dd35fb",
+        "selection_rmse": 0.08027169732528452
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "PRODUCT_POSREG",
+      "seed": 20260915,
+      "selected": {
+        "epoch": 40,
+        "file": "private_PRODUCT_POSREG_s20260915_e40.pt",
+        "sha256": "b26bc40981e64ac57e398180704e9baab3040e98de859752a54e4d26bc7a68cd",
+        "selection_rmse": 0.07999145177212448
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "PRODUCT_POSREG",
+      "seed": 20260916,
+      "selected": {
+        "epoch": 20,
+        "file": "private_PRODUCT_POSREG_s20260916_e20.pt",
+        "sha256": "3e3d617ae3baa538a6cdb661a5c12934cd997a50d0a200a9592cb00a2361dea1",
+        "selection_rmse": 0.08048408687787939
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "PRODUCT_POSREG",
+      "seed": 20260917,
+      "selected": {
+        "epoch": 20,
+        "file": "private_PRODUCT_POSREG_s20260917_e20.pt",
+        "sha256": "bb16fd49f9c67a31408fc673665b9d7dfdd1a90b361ab2b9b75d1f5129cc807a",
+        "selection_rmse": 0.08029218525233932
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "PRODUCT_MIX",
+      "seed": 20260915,
+      "selected": {
+        "epoch": 40,
+        "file": "private_PRODUCT_MIX_s20260915_e40.pt",
+        "sha256": "ddd39579a90ede57156b92e453c7a0e9be5223e096140613b85cd8e9908100dc",
+        "selection_rmse": 0.08021946370867952
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "PRODUCT_MIX",
+      "seed": 20260916,
+      "selected": {
+        "epoch": 20,
+        "file": "private_PRODUCT_MIX_s20260916_e20.pt",
+        "sha256": "1b1a6a67518997fde083eb7849e8a1a3cceb09003a8f79afb176c598bb3fe690",
+        "selection_rmse": 0.08078796449112045
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "PRODUCT_MIX",
+      "seed": 20260917,
+      "selected": {
+        "epoch": 40,
+        "file": "private_PRODUCT_MIX_s20260917_e40.pt",
+        "sha256": "6492f0e1e5e79f5bea37df25cf99ed185da02680498777bbb0f3e7ca6d8e69cd",
+        "selection_rmse": 0.08036148854466921
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "PRODUCT_L1",
+      "seed": 20260915,
+      "selected": {
+        "epoch": 40,
+        "file": "private_PRODUCT_L1_s20260915_e40.pt",
+        "sha256": "10dbbcbe31522e755a2242e263b28bcdf280ca98fff3cdab0cef0c009b0cd853",
+        "selection_rmse": 0.08052742541617323
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "PRODUCT_L1",
+      "seed": 20260916,
+      "selected": {
+        "epoch": 40,
+        "file": "private_PRODUCT_L1_s20260916_e40.pt",
+        "sha256": "0683ccd6b89948fbad0768ce86d5ad56147dccd400459bcbcbf8548d273ade5f",
+        "selection_rmse": 0.08060999314833814
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "PRODUCT_L1",
+      "seed": 20260917,
+      "selected": {
+        "epoch": 40,
+        "file": "private_PRODUCT_L1_s20260917_e40.pt",
+        "sha256": "d9b5300e424bcbfdb9937cf124774ed8f9d5cc2a467aa3ab2bf1c469c6779872",
+        "selection_rmse": 0.08056126062620858
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "CONCAT_MSE",
+      "seed": 20260915,
+      "selected": {
+        "epoch": 5,
+        "file": "private_CONCAT_MSE_s20260915_e5.pt",
+        "sha256": "f257f41cfc51e19fa288c6fb5709dd0a91a97ec60caa83b28cf36c4e942caa95",
+        "selection_rmse": 0.08119692155161018
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "CONCAT_MSE",
+      "seed": 20260916,
+      "selected": {
+        "epoch": 20,
+        "file": "private_CONCAT_MSE_s20260916_e20.pt",
+        "sha256": "50cb958104817ddd84509664c3b3ed495565b4b56119e5abade9bcdb8fd854ae",
+        "selection_rmse": 0.0809870865275851
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "CONCAT_MSE",
+      "seed": 20260917,
+      "selected": {
+        "epoch": 10,
+        "file": "private_CONCAT_MSE_s20260917_e10.pt",
+        "sha256": "62f9355988ddcd3df625af449fb4023fb09ffd998c1bbd61b4cea14b4c209fbf",
+        "selection_rmse": 0.08117937977619442
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "CONCAT_POSREG",
+      "seed": 20260915,
+      "selected": {
+        "epoch": 20,
+        "file": "private_CONCAT_POSREG_s20260915_e20.pt",
+        "sha256": "95a0089527a7d27c5614bc4a66e48b2e6a748a5285d10733c091d80b1713fe00",
+        "selection_rmse": 0.08091548377499054
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "CONCAT_POSREG",
+      "seed": 20260916,
+      "selected": {
+        "epoch": 40,
+        "file": "private_CONCAT_POSREG_s20260916_e40.pt",
+        "sha256": "46a01ebb558cafd4298b7439d02b2f9aca38feeeaff1b52812120e75770236a3",
+        "selection_rmse": 0.08041748545294311
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "CONCAT_POSREG",
+      "seed": 20260917,
+      "selected": {
+        "epoch": 40,
+        "file": "private_CONCAT_POSREG_s20260917_e40.pt",
+        "sha256": "63811566d13f51ffb47c843c3569589b284d336ef4fbbaa3e5c6725ac3770387",
+        "selection_rmse": 0.08088048056015071
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    }
+  ],
+  "selection_rule": "raw four-H endpoint macro RMSE, exact ties earlier epoch including0; no best-seed or model-family selection",
+  "base_frozen": true,
+  "no_refit": true,
+  "no_ensemble": true
+}

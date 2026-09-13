@@ -1559,6 +1559,150 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/reference_harm_stability_v1/base_selection_scores.csv",
+      "sha256": "504a3e90ee7bf4987ad5c21bafade26ec42e318071329d81149b2429c7b10398",
+      "bytes": 1632,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/reference_harm_stability_v1/development_scores.csv",
+      "sha256": "b4c5def5b26760ddacc1536b0b2fa88cafc8f659805f6f6edf68f562f74716b3",
+      "bytes": 33456,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/reference_harm_stability_v1/execution_receipt.json",
+      "sha256": "c92f6bd00bf7a6c42b9d3e1ae64bdc422bc49cbd45c0c936443ea2a730ae669e",
+      "bytes": 5072,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/reference_harm_stability_v1/frozen_base.json",
+      "sha256": "216baf5b9296159564c0f223174bf50fdded7ce646fdb24bd853bd55109a6723",
+      "bytes": 368,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/reference_harm_stability_v1/frozen_selection.json",
+      "sha256": "fadcbc9bb986a0993a09cfc9849b4eda562d9cbebef02fba31cbd3595fb0a325",
+      "bytes": 7016,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/reference_harm_stability_v1/harm_benefit_report.json",
+      "sha256": "9faa4d4e05f1cdd9bcfbeae9d634bd787f28856004984d90718c5b7cbe8e5ccd",
+      "bytes": 97837,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/reference_harm_stability_v1/interaction_activity.json",
+      "sha256": "f09f57c89b0e926e1b1deb57f088a6a627db5944601e68e582dfb58460a97e06",
+      "bytes": 2812,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/reference_harm_stability_v1/loss_scale.json",
+      "sha256": "30268a1855ce6de396472b651cfc13934b610f1371d08c6588636a4ff1b97ce5",
+      "bytes": 238,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/reference_harm_stability_v1/model_summary.json",
+      "sha256": "a6aa68788937af3a8c67f6ba9c33f220a1e77d1733cbaa3913b8d56de53c86de",
+      "bytes": 84552,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/reference_harm_stability_v1/paired_origin_errors.csv",
+      "sha256": "3a7f717216f2aa3692c11c12dd3adc5dc6f208e3eb2972d33c7cc05c9206fef6",
+      "bytes": 458606,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "sha256": "35b50edfe01b61acc30ae857e2ef9e8e1b4b7ab4dffa915a470aab0ad91572f8",
+      "bytes": 9452,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/reference_harm_stability_v1/selection_scores.csv",
+      "sha256": "65654232dd40136ae440698bc287ca064e8ee1742514d5dc74017e049eb4a67d",
+      "bytes": 154105,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/reference_harm_stability_v1/stability_summary.json",
+      "sha256": "c6d15dddaf079fe852a09fa0a3d6c78d9009af86299159524d650dc5680e2b18",
+      "bytes": 94006,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/reference_harm_stability_v1/state_group_losses.json",
+      "sha256": "689e5a3e5493921c417ce804f81e5cf482b686de2cc15722f6bae129320eb86e",
+      "bytes": 1022894,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/reference_harm_stability_v1/training_curves.csv",
+      "sha256": "f399f3f30d50337bb5ebff74c3abb3ec72fb6753a7496ec97def1499be7fc05a",
+      "bytes": 162504,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/reference_harm_stability_v1/verification.json",
+      "sha256": "f70f81f6771d07b6d8326f650f95661bf2d796e37572696a26905f962736f276",
+      "bytes": 272,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/registry/CONFIG_STATUS.csv",
       "sha256": "0de9fecc60ba14ce31ff3475ded56816c7add709e027beb411d45b1ae4caf882",
       "bytes": 598923,

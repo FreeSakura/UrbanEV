@@ -1,0 +1,8 @@
+{
+  "rms_float64": 0.07964856335645439,
+  "scale_float64": 0.07964856335645439,
+  "floor_applied": false,
+  "kappa": 0.5,
+  "tau_float32": 0.03982428088784218,
+  "source": "FIT in-sample ridge residual cast to float32 then RMS float64"
+}
