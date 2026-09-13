@@ -1982,6 +1982,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "configs/research/CONDITIONAL_OD_INTERACTION_V1.json",
+      "sha256": "2e4c38379cf4fac67a5ac2e636e3770d4112d2d503a2e73bad9bcb2cfa070bef",
+      "bytes": 8190,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
       "path": "configs/research/CONTINUOUS_V2_CALIBRATION_2H_AUTHORIZATION.json",
       "sha256": "3212983a471731f13edb6be47710db8b038a14199496ca55ca58aa38516081de",
       "bytes": 2000,
