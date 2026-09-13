@@ -92,7 +92,7 @@ LOCAL与GLOBAL目标相同但信息不同，跨轨分数只能评价系统，不
 | TIMEXER_LOCAL_OD | LOCAL_OD_168 | 3 | 0.114078650 | 0.070074650 | 0.000966730 |
 | TIMEXER_GLOBAL_O | GLOBAL_O_168 | 3 | 0.121226897 | 0.075408422 | 0.002599343 |
 
-RIDGE_OD在本核心集合四H raw宏RMSE和MAE均最低，相对RIDGE_O分别降低3.552460%/5.569482%。这是当前信息表示和估计器的表现，不是时长因果信息量，也不证明其他字段无效。
+RIDGE_OD在本核心集合四H raw宏RMSE和MAE均最低，相对RIDGE_O分别降低3.552460%/5.569482%。这是当前信息表示和估计器的表现，不是时长因果信息量，也不证明其他字段无效。两种ridge重建了同训练数据的既有锚点，不增加独立泛化证据。
 
 | 模型 | 种子 | raw RMSE | raw MAE | 选择epoch |
 |---|---:|---:|---:|---:|
@@ -112,7 +112,7 @@ RIDGE_OD在本核心集合四H raw宏RMSE和MAE均最低，相对RIDGE_O分别�
 | TIMEXER_GLOBAL_O | 20260916 | 0.123246512 | 0.077447406 | 20 |
 | TIMEXER_GLOBAL_O | 20260917 | 0.122139964 | 0.076065860 | 40 |
 
-PRODUCT和SEPARABLE各有两个种子选择epoch0，共四个RIDGE_OD别名；它们不能被称为独立的稳定改善。CONCAT的种子16有很小的双指标改善，但三种子均值仍较差，不能事后选出这一种子作主结论。TimeXer没有选中未训练epoch0；LOCAL三个种子均选择40，GLOBAL选择10/20/40。
+PRODUCT和SEPARABLE各有两个种子选择epoch0，共四个RIDGE_OD别名；它们不能被称为独立的稳定改善。CONCAT的种子16相对RIDGE_OD的RMSE低0.029828%、MAE低0.232652%，但三种子均值仍较差，不能事后选出这一种子作主结论。“RIDGE_OD最低”仅指新核心表按预注册种子汇总，不是优于每次神经运行或全部历史成果。TimeXer没有选中未训练epoch0；LOCAL三个种子均选择40，GLOBAL选择10/20/40。
 
 在这次168小时输入、固定小型作者配置、40epoch和raw MSE目标下，两条TimeXer适配轨未超过ridge。不能因此声称TimeXer论文结论被推翻、所有Transformer不如线性模型，或空间信息无用；内部归一化、预测形式、参数量、信息轨道和优化适配均有区别。没有证据证明各模型都收敛。
 
@@ -129,7 +129,7 @@ PRODUCT和SEPARABLE各有两个种子选择epoch0，共四个RIDGE_OD别名；�
 | TIMEXER_GLOBAL_O | GLOBAL_O_168 | 0.119756570 | 0.074059891 |
 | NATIVE | GLOBAL_O_168 | 0.111690275 | 0.060337619 |
 
-缓存native在这个共同支持上的RMSE略低于RIDGE_OD，MAE明显更低；它拥有不同的预训练条件。不能用这两H结果填补native的H6/H9，也不能与四H均值混排。所有模型的clip及path完整分数在CSV中，未按结果选择后处理。
+缓存native在这个共同支持上的RMSE略低于RIDGE_OD，MAE明显更低；它拥有不同的预训练条件。RIDGE_OD raw相对native的RMSE高0.003801%、MAE高13.838000%；clip对clip高0.002829%/13.902281%。接近的点估计不是统计等效，MAE差距也不是RMSE-SOTA必须先通过的门。不能用这两H结果填补native的H6/H9，也不能与四H均值混排。所有模型的clip及path完整分数在CSV中，未按结果选择后处理。
 
 ![核心开发比较](figures/comprehensive_development_comparison.png)
 
@@ -192,6 +192,8 @@ PRODUCT和SEPARABLE各有两个种子选择epoch0，共四个RIDGE_OD别名；�
 | fixed_reference_correction_v1 | FIXED_SEPARABLE | 3 | 3 | 0.113023432 | 0.070227837 |
 | fixed_reference_correction_v1 | FIXED_CONCAT | 3 | 3 | 0.113383213 | 0.071285478 |
 
+“无文件缺失或身份错误”仅覆盖本轮83文件白名单，不意味着全部历史方法和正式评估缺口已经补齐。零误差重算是评分一致性，不是重新训练或新增泛化证据。新增clip视图不是新模型或原实验已选择的输出。
+
 载荷重复说明保存预测完全相同，不构成独立重复证据。不同载荷也不自动等于不同信息或独立模型；训练/选择/基础模型身份仍见各原协议。旧方案有利和不利的数字全部保留，不从中重新挑seed、alpha或checkpoint。
 
 ### 7.4 早期六折成果：原报告摘录，不与本轮开发表混排
@@ -230,7 +232,7 @@ Oracle是使用目标信息的诊断上限，不是可部署对手。早期路�
 | TIMEXER_LOCAL_OD | 123788 | 2200 | 345.752 | 499527168 |
 | TIMEXER_GLOBAL_O | 141324 | 2200 | 340.131 | 504762368 |
 
-共2次ridge拟合、15次神经训练、33,000优化步。1,200条神经SELECT与32条ridge参考；新核心280条有效成绩加8条native缺失。17份新raw预测冻结后独立重评分误差0，历史已发表分数对应误差0，native标签误差0，ridge锚点误差0。总执行2467.580秒，后续神经推断累计1.974秒（不含模型构造/checkpoint读取）。GPU峰值包含训练数据缓存，不等于进程总内存或模型内在部署内存。
+共2次ridge拟合、15次神经训练、33,000优化步。1,200条神经SELECT与32条ridge参考；新核心280条有效成绩加8条native缺失。17份新raw预测冻结后独立重评分误差0，历史已发表分数对应误差0，native标签误差0，ridge锚点误差0。总执行2467.580秒，后续神经推断累计1.974秒（不含模型构造/checkpoint读取）。GPU峰值包含训练数据缓存，不等于进程总内存或模型内在部署内存。十五次训练运行计时合计约2390.79秒，包含模型/优化器构造、数据传输及checkpoint保存，并非纯前后向内核时间。推断累计1.974208秒涵盖SELECT多个checkpoint和最终DEV，不是单个模型的一次部署延迟，不能据此与native在线延迟排名。
 
 270项本地测试和隐私检查通过。源码、配置、选择、完整分数及缺口可追溯；原数组与权重不上传。时间与参数仅作实际成本披露，不宣称同一步数意味着相同算力或公平收敛。
 
@@ -243,3 +245,5 @@ Oracle是使用目标信息的诊断上限，不是可部署对手。早期路�
 本轮因此保持“有明确缺口的部分比较”状态，**不将用户要求的完整最新全基准任务标成已完成**。正式范围仍待前述范围选择解决；该步骤不是重新恢复1%或MAE门。现有[SOTA比较规则](SOTA_COMPARISON_STANDARD.md)继续适用。
 
 [全部结果](../../../artifacts/summaries/comprehensive_development_comparison_v1/)、[新核心表](../../../artifacts/summaries/comprehensive_development_comparison_v1/matched_core_scores.csv)、[历史重算](../../../artifacts/summaries/comprehensive_development_comparison_v1/archive_common_scores.csv)、[覆盖与缺失](../../../artifacts/summaries/comprehensive_development_comparison_v1/coverage_and_limits.json)、[来源登记](../../../artifacts/summaries/comprehensive_development_comparison_v1/baseline_sources.csv)。没有SOTA声明，定时暂停，未使用额度重置卡。
+
+研究侧已核对公开冻结runner、适配代码与配置，并复算回传数字；未独立读取私有预测或重新执行训练。270项测试和隐私检查由执行侧完成；正式范围问题未得到答复，不将沉默视为开放原保留区间。

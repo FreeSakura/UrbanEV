@@ -3252,8 +3252,8 @@
     },
     {
       "path": "docs/research/sota/COMPREHENSIVE_COMPARISON_REPORT_20260913.md",
-      "sha256": "a016e98d03853f85ef7d16beed78cc260ced0a51c7525aca566ad5f51fa8ec47",
-      "bytes": 22231,
+      "sha256": "8e0e5e1be5455473da9a1620443e97b1c3ddff1366f691ce5c897a61fc6a0b3a",
+      "bytes": 23493,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
