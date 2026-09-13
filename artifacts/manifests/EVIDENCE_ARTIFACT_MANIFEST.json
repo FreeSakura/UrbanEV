@@ -1523,6 +1523,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "configs/research/VOLUME_COMPOSITION_INCREMENT_V1.json",
+      "sha256": "44ad23014f1c840fb01592c68ce597527a5f0c2bc21b21200a5c15fe3652f1ef",
+      "bytes": 11209,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
       "path": "configs/TEACHER_QUALIFICATION_CONFIG.json",
       "sha256": "196c66cb68aace87d839ffb6ecc9454cb9dc6a98e5e699fd320d3089563951fe",
       "bytes": 1116,
