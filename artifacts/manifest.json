@@ -1316,6 +1316,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "configs/research/DUAL_RISK_FINITE_STEP_V1.json",
+      "sha256": "4bf8ba31fb96daca408b947777f63a5355f6bcd05f858209bc11314c27891b48",
+      "bytes": 18523,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
       "path": "configs/research/DUAL_RISK_INFORMATION_PROBE_V1.json",
       "sha256": "ea0a0b5305bcc5c9e598a675563fda0d07a386e582277e9ca7bb5e220feb07fd",
       "bytes": 16578,
