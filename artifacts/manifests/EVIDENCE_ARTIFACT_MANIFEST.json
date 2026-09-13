@@ -1370,6 +1370,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/volume_composition_increment_v1/grid_description.json",
+      "sha256": "dc648fdf4d8dce8f0698272937963e5874fcbc6357fbc245afbb0f50dc191ea5",
+      "bytes": 312,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/volume_composition_increment_v1/loss_decomposition.json",
       "sha256": "73d9b669c4034a44614ea4b2da6b4ef43ad0f7eb3691c8c08c6f8ef78b2f3936",
       "bytes": 7990,
@@ -1398,8 +1407,8 @@
     },
     {
       "path": "artifacts/summaries/volume_composition_increment_v1/summary.json",
-      "sha256": "f494b5359883802091bdc4b7cb626ae58c72e850582efb6afbb713b0b155b88e",
-      "bytes": 702,
+      "sha256": "7b0cc7a78bec3f801d3034bfaa33fbddfeae7b890b6d64c769e811dd75f5fe06",
+      "bytes": 998,
       "role": "evidence_summary",
       "origin": "frozen project artifact; publicly sanitized",
       "license": "CC-BY-4.0",

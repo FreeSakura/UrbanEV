@@ -11,7 +11,11 @@
   "evaluation1392": "NOT_RUN",
   "new_structure_claim_tested": false,
   "old_no_go_unchanged": true,
-  "research_review": "PENDING",
+  "research_review": "ACCEPTED_VALID_CALIBRATION_NO_GO; two wording clarifications incorporated; no private-array rerun",
   "automation_status": "PAUSED",
-  "scope": "No usable increment in this finite representation/learner/grid; not a proof of volume redundancy or all-positive-step infeasibility"
+  "scope": "No usable increment in this finite representation/learner/grid; not a proof of volume redundancy or all-positive-step infeasibility",
+  "alpha0_feasible_for_every_system": true,
+  "positive_registered_steps_feasible": false,
+  "lowest_grid_rmse_gain_vs_native_percent": 0.4446359962469226,
+  "lowest_grid_rmse_point_is_not_selected": true
 }

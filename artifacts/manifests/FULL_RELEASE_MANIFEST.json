@@ -57,8 +57,8 @@
     },
     {
       "path": "artifacts/manifest.json",
-      "sha256": "db8cc414643ec3bce873dc61df828bd1947619798fb18933821a0b39af128aed",
-      "bytes": 77439,
+      "sha256": "56aef1ae54abba9df852bfb0682656c2ce1cc125d0f68a7ba350bc67cb6f87a2",
+      "bytes": 77811,
       "role": "artifacts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -66,8 +66,8 @@
     },
     {
       "path": "artifacts/manifests/EVIDENCE_ARTIFACT_MANIFEST.json",
-      "sha256": "db8cc414643ec3bce873dc61df828bd1947619798fb18933821a0b39af128aed",
-      "bytes": 77439,
+      "sha256": "56aef1ae54abba9df852bfb0682656c2ce1cc125d0f68a7ba350bc67cb6f87a2",
+      "bytes": 77811,
       "role": "artifacts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -1505,6 +1505,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/volume_composition_increment_v1/grid_description.json",
+      "sha256": "dc648fdf4d8dce8f0698272937963e5874fcbc6357fbc245afbb0f50dc191ea5",
+      "bytes": 312,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/volume_composition_increment_v1/loss_decomposition.json",
       "sha256": "73d9b669c4034a44614ea4b2da6b4ef43ad0f7eb3691c8c08c6f8ef78b2f3936",
       "bytes": 7990,
@@ -1533,8 +1542,8 @@
     },
     {
       "path": "artifacts/summaries/volume_composition_increment_v1/summary.json",
-      "sha256": "f494b5359883802091bdc4b7cb626ae58c72e850582efb6afbb713b0b155b88e",
-      "bytes": 702,
+      "sha256": "7b0cc7a78bec3f801d3034bfaa33fbddfeae7b890b6d64c769e811dd75f5fe06",
+      "bytes": 998,
       "role": "evidence_summary",
       "origin": "frozen project artifact; publicly sanitized",
       "license": "CC-BY-4.0",
@@ -2271,8 +2280,8 @@
     },
     {
       "path": "docs/research/sota/VOLUME_COMPOSITION_INCREMENT_REPORT_20260913.md",
-      "sha256": "26a349a3f66d3a2052346e2569025122845c7decdeaf2d5d263f595e1686f678",
-      "bytes": 7607,
+      "sha256": "3e846221563dce52b9cad9712adc3078ac7cf45d0794c2711baa9932fcfa4bb6",
+      "bytes": 8534,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",

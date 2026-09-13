@@ -1,0 +1,10 @@
+{
+  "source": "already-computed calibration grid",
+  "not_a_new_selection": true,
+  "selected_alpha_still": 0,
+  "smallest_registered_RMSE": 0.07003264371922494,
+  "at_unselected_alpha": 0.5,
+  "rmse_gain_percent_vs_native": 0.4446359962469226,
+  "MAE_at_that_point": 0.04031530892676861,
+  "infeasible": true
+}
