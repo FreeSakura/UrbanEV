@@ -1,0 +1,26 @@
+{
+  "doi": "10.1214/19-aos1857",
+  "title": [
+    "The hardness of conditional independence testing and the generalised covariance measure"
+  ],
+  "authors": [
+    "Rajen D. Shah",
+    "Jonas Peters"
+  ],
+  "venue": [
+    "The Annals of Statistics"
+  ],
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        6,
+        1
+      ]
+    ]
+  },
+  "status": "verified",
+  "method": "Crossref DOI query",
+  "source_url": "https://api.crossref.org/works/10.1214%2F19-AOS1857",
+  "reading_scope": "publisher/author abstract and scoped theorem summary; not an executed conditional independence test"
+}

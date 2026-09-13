@@ -1,0 +1,30 @@
+{
+  "id": "INFORMATION_DEPENDENCY_GRAPH_V1_20260913",
+  "kind": "provenance_and_aggregation_graph_not_identified_causal_graph",
+  "anchor_commit": "7dd7db862d86268e4a6e6ac95312ba29a359a80b",
+  "new_numeric_computation": false,
+  "edges": [
+    {"parents": ["pile_busy_state", "zone_membership"], "child": "occupancy_count", "relation": "sum of unavailable/busy pile indicators", "status": "SOURCE_DECLARED_EXACT_ENDPOINT_UNKNOWN"},
+    {"parents": ["pile_active_durations", "zone_membership"], "child": "duration", "relation": "sum_k d_k", "status": "SOURCE_DECLARED_LOCAL_GENERATOR_NOT_REVALIDATED"},
+    {"parents": ["pile_active_durations", "rated_power_by_pile", "zone_membership"], "child": "volume", "relation": "sum_k P_k d_k", "status": "CONSTRUCTED_ESTIMATE_NOT_INDEPENDENT_METER"},
+    {"parents": ["pile_active_durations", "alternative_power_assumption", "zone_membership"], "child": "volume_11kw", "relation": "sum_k P_alternative,k d_k", "status": "ALTERNATIVE_CONSTRUCTED_ESTIMATE"},
+    {"parents": ["station_charge_count", "TAZID"], "child": "zone_capacity_count", "relation": "sum station charge_count by zone", "status": "IMPLEMENTED_IN_CURRENT_PREPARE_CODE_VALIDITY_PERIOD_UNKNOWN"},
+    {"parents": ["occupancy_count", "zone_capacity_count"], "child": "occupancy_rate", "relation": "count / capacity", "status": "CURRENT_TARGET_CONSTRUCTION"},
+    {"parents": ["duration", "zone_capacity_count", "interval_hours"], "child": "normalized_duration", "relation": "pile_hours / capacity / interval_hours", "status": "EXISTING_OFFLINE_INPUT_NOT_SESSION_REMAINING_TIME"},
+    {"parents": ["forecast_origin"], "child": "calendar_features", "relation": "deterministic clock functions", "status": "INFORMATION_REDUNDANT_IF_ORIGIN_ALREADY_GIVEN_MAY_HELP_FINITE_MODELS"},
+    {"parents": ["zone_geometry"], "child": "adjacency_and_centroid_distance", "relation": "spatial geometry operations", "status": "SOURCE_DECLARED_NOT_CURRENT_NUMERICALLY_REVALIDATED"},
+    {"parents": ["poi_observations", "zone_geometry"], "child": "prospective_zonal_poi_features", "relation": "prospective spatial aggregation", "status": "NOT_IMPLEMENTED_SURVEY_TIME_QUALIFICATION_REQUIRED"}
+  ],
+  "unknown_or_invalid_shortcuts": [
+    {"claim": "zone_duration plus static power list determines zone_volume", "status": "NOT_GENERALLY_TRUE", "reason": "Active-pile duration allocation is lost by aggregation", "synthetic_counterexample": "One hour on a7kW pile versus one hour on a60kW pile: same aggregate duration1h, estimated volumes7 versus60kWh; no real observations used"},
+    {"claim": "occupancy minus normalized_duration is identified arrival pressure or remaining service time", "status": "NOT_IDENTIFIED", "reason": "Busy and actively charging coverage, snapshots versus integrals and time alignment differ"},
+    {"claim": "a predictor derived from another variable must be useless to a finite model", "status": "NOT_VALID", "reason": "Representation convenience and statistical information are different objects"},
+    {"claim": "price/weather/POI changes causally explain current residuals", "status": "UNKNOWN", "reason": "No causal identification or current matched incremental test"}
+  ],
+  "sources": [
+    "https://www.nature.com/articles/s41597-025-04874-4",
+    "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md",
+    "src/urbanev_forecast/prepare.py",
+    "scripts/research/residual_information.py"
+  ]
+}

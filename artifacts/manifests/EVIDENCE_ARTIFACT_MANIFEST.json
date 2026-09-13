@@ -740,6 +740,96 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/information_scope_20260913/code_scope_checks.json",
+      "sha256": "c4bef846b3d27674fc2c03623b0fed017d137fc791e43bd43e3f189e238f8911",
+      "bytes": 2284,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/information_scope_20260913/conditional_independence_reference.json",
+      "sha256": "5bc7d91bd44e6332ec463f05bbf29ac51f52408e25a3853f1ed563044b39329c",
+      "bytes": 605,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/information_scope_20260913/derivation_graph.json",
+      "sha256": "999d22b8b26662b85a936e3601755dc5122936343c38a46c5938407b6dd9b36e",
+      "bytes": 3433,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/information_scope_20260913/experiment_evidence.csv",
+      "sha256": "1c7f5438b53e48bfc3cbb6736fd6112d32c11bd02ecc5c728e11ffef2eba833a",
+      "bytes": 129291,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/information_scope_20260913/field_registry.json",
+      "sha256": "d97e0e1ea4593b5714bc8d66b21a4476ae6169544be78c0916f7aab8440e7683",
+      "bytes": 43456,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/information_scope_20260913/legacy_feature_inventory.json",
+      "sha256": "c373365bf35990d64e79b641c4b75187388d52ff813725c073d53f11b9cedff3",
+      "bytes": 4475,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/information_scope_20260913/legacy_result_metadata.json",
+      "sha256": "4ce8edd8fc1cdbea31148aebdfcb70746184bd8c54a6a166e53bd323ad5700c7",
+      "bytes": 3469,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/information_scope_20260913/registry_receipt.json",
+      "sha256": "002451c0a50fa38ecd172dd3cdb9dde7a76894c5726cc8c20ba8fc2c2486d8dc",
+      "bytes": 1710,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/information_scope_20260913/registry_tests.txt",
+      "sha256": "c8821c555b7c240c0e692b7359d8b147a90c3909f5f00f359cb9ff2513a91b47",
+      "bytes": 266,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/information_scope_20260913/schema_inventory.json",
+      "sha256": "6d45f855e63c885e9a4a85b8248b034bb6ce9b00688d5546ece565eb007f23e6",
+      "bytes": 4942,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/journal_methods_20260913/source_verification.json",
       "sha256": "30546d56964983034fbee18da54ec042eab08be2df8aef18477cce4bd997194f",
       "bytes": 15469,

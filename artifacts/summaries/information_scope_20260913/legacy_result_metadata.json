@@ -1,0 +1,169 @@
+{
+  "scope": "legacy result metadata only; no metric comparisons performed",
+  "results_with_exogenous_feature_group": 188,
+  "groups": [
+    {
+      "feature_group": "P",
+      "model": "TimeXer",
+      "status_field": "complete",
+      "records": 11
+    },
+    {
+      "feature_group": "P",
+      "model": "TimeXer",
+      "status_field": "failed",
+      "records": 1
+    },
+    {
+      "feature_group": "P",
+      "model": "astgcn",
+      "status_field": "failed",
+      "records": 4
+    },
+    {
+      "feature_group": "P",
+      "model": "fcnn",
+      "status_field": "complete",
+      "records": 12
+    },
+    {
+      "feature_group": "P",
+      "model": "fcnn",
+      "status_field": "failed",
+      "records": 1
+    },
+    {
+      "feature_group": "P",
+      "model": "lstm",
+      "status_field": "failed",
+      "records": 4
+    },
+    {
+      "feature_group": "P+ps",
+      "model": "TimeXer",
+      "status_field": "complete",
+      "records": 6
+    },
+    {
+      "feature_group": "P+ps",
+      "model": "fcnn",
+      "status_field": "complete",
+      "records": 12
+    },
+    {
+      "feature_group": "Ta",
+      "model": "TimeXer",
+      "status_field": "complete",
+      "records": 9
+    },
+    {
+      "feature_group": "Ta",
+      "model": "TimeXer",
+      "status_field": "failed",
+      "records": 1
+    },
+    {
+      "feature_group": "Ta",
+      "model": "fcnn",
+      "status_field": "complete",
+      "records": 12
+    },
+    {
+      "feature_group": "Ta+pe",
+      "model": "TimeXer",
+      "status_field": "complete",
+      "records": 6
+    },
+    {
+      "feature_group": "Ta+pe",
+      "model": "fcnn",
+      "status_field": "complete",
+      "records": 12
+    },
+    {
+      "feature_group": "all",
+      "model": "fcnn",
+      "status_field": "complete",
+      "records": 12
+    },
+    {
+      "feature_group": "all",
+      "model": "fcnn",
+      "status_field": "failed",
+      "records": 2
+    },
+    {
+      "feature_group": "h",
+      "model": "TimeXer",
+      "status_field": "complete",
+      "records": 6
+    },
+    {
+      "feature_group": "h",
+      "model": "fcnn",
+      "status_field": "complete",
+      "records": 12
+    },
+    {
+      "feature_group": "h+Ta",
+      "model": "TimeXer",
+      "status_field": "complete",
+      "records": 3
+    },
+    {
+      "feature_group": "h+Ta",
+      "model": "TimeXer",
+      "status_field": "failed",
+      "records": 1
+    },
+    {
+      "feature_group": "h+Ta",
+      "model": "fcnn",
+      "status_field": "complete",
+      "records": 12
+    },
+    {
+      "feature_group": "pe",
+      "model": "TimeXer",
+      "status_field": "complete",
+      "records": 5
+    },
+    {
+      "feature_group": "pe",
+      "model": "TimeXer",
+      "status_field": "failed",
+      "records": 1
+    },
+    {
+      "feature_group": "pe",
+      "model": "fcnn",
+      "status_field": "complete",
+      "records": 12
+    },
+    {
+      "feature_group": "ps",
+      "model": "TimeXer",
+      "status_field": "complete",
+      "records": 6
+    },
+    {
+      "feature_group": "ps",
+      "model": "fcnn",
+      "status_field": "complete",
+      "records": 12
+    },
+    {
+      "feature_group": "ps",
+      "model": "fcnn",
+      "status_field": "failed",
+      "records": 1
+    },
+    {
+      "feature_group": "ps+pe",
+      "model": "fcnn",
+      "status_field": "complete",
+      "records": 12
+    }
+  ],
+  "interpretation": "result presence/status is not same-information feature uselessness proof"
+}

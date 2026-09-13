@@ -1,0 +1,2 @@
+7 synthetic metadata tests passed. No real time-series data or predictions used by tests.
+Validated state separation, canonical identity/coverage, no unsupported exclusion, zero compute budget, header-only decoding, bounded read size and path rejection before open.

@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-13",
+  "commit": "7dd7db862d86268e4a6e6ac95312ba29a359a80b",
+  "searches": [
+    {
+      "name": "exogenous_inputs_in_current_forecast_package",
+      "exit_code": 1,
+      "matching_lines": 0,
+      "interpretation": "Current research entry points have no searched exogenous-field references; legacy loader has configurable price/weather inputs. Absence of a name is supporting evidence, not an exhaustive mathematical exclusion."
+    },
+    {
+      "name": "legacy_reproduction_exogenous_references",
+      "exit_code": 0,
+      "matching_lines": 11,
+      "interpretation": "Current research entry points have no searched exogenous-field references; legacy loader has configurable price/weather inputs. Absence of a name is supporting evidence, not an exhaustive mathematical exclusion."
+    }
+  ],
+  "source_identities": [
+    {
+      "file": "src/urbanev_forecast/prepare.py",
+      "sha256_lf": "81cf1ebef5a3662f1c4103419600c8c998479c514c96d886f6da24659df94ca6"
+    },
+    {
+      "file": "scripts/research/residual_information.py",
+      "sha256_lf": "fd3f37c0997ab6aed814f8f49cb86c011664422ee6eaaa0d2cf1156ead08c2bf"
+    },
+    {
+      "file": "scripts/research/dual_region_pilot.py",
+      "sha256_lf": "ce17e2f28a3b9ddaf92c19c1ea72e475cd8b7e4eefa4f74ead771bdafd7d1b91"
+    },
+    {
+      "file": "src/urbanev_forecast/dual_risk_probe.py",
+      "sha256_lf": "b23a8aea459f6337bde82341ceb1e6e7c143b5dd4fb864cff7b3d1f93fcbd625"
+    },
+    {
+      "file": "configs/research/URBANEV_SOTA_V1.json",
+      "sha256_lf": "112dda8e193023906c568683a58f32c1a75a3c866fa4be23e81ce810a5e926cc"
+    },
+    {
+      "file": "configs/research/DUAL_DIRECTION_PILOT_V1.json",
+      "sha256_lf": "5b702847f20348dad92cab38851ea5d260d963dc6078139d8434fb48add10dbe"
+    },
+    {
+      "file": "docs/research/sota/SIGNAL_REPLICATION_REPORT.md",
+      "sha256_lf": "e1a6bd8185dcc4985d60f37ae2d915eea9cd463b27fcba51fa38d1df3da089c6"
+    },
+    {
+      "file": "docs/research/sota/DUAL_DIRECTION_PILOT_REPORT.md",
+      "sha256_lf": "b3ea2247d1d987a2556503dd5b9ddbc0deca3147514ba06364a4943eb2cc91a3"
+    },
+    {
+      "file": "docs/research/sota/DUAL_RISK_PROBE_REPORT_20260913.md",
+      "sha256_lf": "2a769432c563644715ad9e574b53254c9a368aa035dd54c13ff896e754d40795"
+    }
+  ]
+}

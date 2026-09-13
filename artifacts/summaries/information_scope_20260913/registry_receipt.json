@@ -1,0 +1,48 @@
+{
+  "status": "REGISTRY_COMPLETE_WITH_UNRESOLVED_ELIGIBILITY",
+  "families": 8,
+  "fields": 21,
+  "new_experiment_authorized": false,
+  "id": "INFORMATION_SCOPE_REGISTRY_V1_20260913",
+  "anchor_commit": "7dd7db862d86268e4a6e6ac95312ba29a359a80b",
+  "scope": "Metadata registry and evidence indexing; no real-data numerical experiment",
+  "current_study_summaries": 8,
+  "legacy_result_metadata_records": 188,
+  "independent_experiment_count_not_claimed": true,
+  "header_records_present": 12,
+  "header_records_missing": 1,
+  "fits": 0,
+  "new_foundation_inference": 0,
+  "alpha_searches": 0,
+  "new_time_series_rows_read": 0,
+  "prediction_arrays_read": 0,
+  "new_target_values_read": 0,
+  "full_dynamic_file_hashes": 0,
+  "unknowns_are_not_ineffectiveness": true,
+  "known_future_inputs": [],
+  "old_claim_files_unchanged": true,
+  "old_v1_v2_no_go_unchanged": true,
+  "automation_status": "PAUSED",
+  "quota_reset_used": false,
+  "validation": {
+    "synthetic_metadata_tests_passed": 7,
+    "all_eight_families_present": true,
+    "current_source_refs_and_hashes_checked": true,
+    "document_links_checked": true
+  },
+  "experiment_csv_hash_convention": "metadata_sha256 is raw local metadata/document bytes from the recorded snapshot; not full dynamic data identity",
+  "actual_input_roles": [
+    "existing code/config/report files",
+    "existing result/config metadata",
+    "12 whitelisted CSV first lines",
+    "weather_header.txt data dictionary",
+    "official article/README/Dryad metadata"
+  ],
+  "not_run": [
+    "feature correlation/distribution analysis",
+    "numerical feature screening",
+    "finite-step prediction experiment",
+    "tail or third-fold loading",
+    "Paris loading"
+  ]
+}

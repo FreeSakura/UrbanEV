@@ -1,0 +1,148 @@
+{
+  "date": "2026-09-13",
+  "source_role": "existing audited UrbanEV snapshot",
+  "temporal_data_rows_read": 0,
+  "records": [
+    {
+      "file": "occupancy.csv",
+      "present": true,
+      "access": "file existence and first-line schema only; no temporal observation rows",
+      "bytes": 5513676,
+      "first_line_sha256": "7f423dd0fd273870ca9e94153f5bc0b677d1273aa112d22380760794f2b7424f",
+      "first_line_field_count": 276,
+      "header_matches_occupancy_order": true
+    },
+    {
+      "file": "duration.csv",
+      "present": true,
+      "access": "file existence and first-line schema only; no temporal observation rows",
+      "bytes": 17802378,
+      "first_line_sha256": "7f423dd0fd273870ca9e94153f5bc0b677d1273aa112d22380760794f2b7424f",
+      "first_line_field_count": 276,
+      "header_matches_occupancy_order": true
+    },
+    {
+      "file": "volume.csv",
+      "present": true,
+      "access": "file existence and first-line schema only; no temporal observation rows",
+      "bytes": 16503910,
+      "first_line_sha256": "7f423dd0fd273870ca9e94153f5bc0b677d1273aa112d22380760794f2b7424f",
+      "first_line_field_count": 276,
+      "header_matches_occupancy_order": true
+    },
+    {
+      "file": "volume-11kW.csv",
+      "present": true,
+      "access": "file existence and first-line schema only; no temporal observation rows",
+      "bytes": 19719503,
+      "first_line_sha256": "7f423dd0fd273870ca9e94153f5bc0b677d1273aa112d22380760794f2b7424f",
+      "first_line_field_count": 276,
+      "header_matches_occupancy_order": true
+    },
+    {
+      "file": "e_price.csv",
+      "present": true,
+      "access": "file existence and first-line schema only; no temporal observation rows",
+      "bytes": 12046239,
+      "first_line_sha256": "7f423dd0fd273870ca9e94153f5bc0b677d1273aa112d22380760794f2b7424f",
+      "first_line_field_count": 276,
+      "header_matches_occupancy_order": true
+    },
+    {
+      "file": "s_price.csv",
+      "present": true,
+      "access": "file existence and first-line schema only; no temporal observation rows",
+      "bytes": 14966150,
+      "first_line_sha256": "7f423dd0fd273870ca9e94153f5bc0b677d1273aa112d22380760794f2b7424f",
+      "first_line_field_count": 276,
+      "header_matches_occupancy_order": true
+    },
+    {
+      "file": "weather_central.csv",
+      "present": true,
+      "access": "file existence and first-line schema only; no temporal observation rows",
+      "bytes": 181328,
+      "first_line_sha256": "a4945f32d35e6eafba00e40763fc58232022d41240114933946d8d155d196408",
+      "first_line_field_count": 7,
+      "schema_fields": [
+        "time",
+        "T",
+        "P0",
+        "P",
+        "U",
+        "nRAIN",
+        "Td"
+      ]
+    },
+    {
+      "file": "weather_airport.csv",
+      "present": true,
+      "access": "file existence and first-line schema only; no temporal observation rows",
+      "bytes": 165880,
+      "first_line_sha256": "a4945f32d35e6eafba00e40763fc58232022d41240114933946d8d155d196408",
+      "first_line_field_count": 7,
+      "schema_fields": [
+        "time",
+        "T",
+        "P0",
+        "P",
+        "U",
+        "nRAIN",
+        "Td"
+      ]
+    },
+    {
+      "file": "inf.csv",
+      "present": true,
+      "access": "file existence and first-line schema only; no temporal observation rows",
+      "bytes": 74446,
+      "first_line_sha256": "9c0fce6cdba86fe46502a2e3f254f91159bac06017c0e8159b6e4109a32337c5",
+      "first_line_field_count": 7,
+      "schema_fields": [
+        "station_id",
+        "longitude",
+        "latitude",
+        "charge_count",
+        "TAZID",
+        "area",
+        "perimeter"
+      ]
+    },
+    {
+      "file": "poi.csv",
+      "present": true,
+      "access": "file existence and first-line schema only; no temporal observation rows",
+      "bytes": 32646500,
+      "first_line_sha256": "47bb576008f55113f21a8cc62b5f6adfb55bae7ba97ded1f695e59a244827cd5",
+      "first_line_field_count": 3,
+      "schema_fields": [
+        "primary_types",
+        "longitude",
+        "latitude"
+      ]
+    },
+    {
+      "file": "adj.csv",
+      "present": true,
+      "access": "file existence and first-line schema only; no temporal observation rows",
+      "bytes": 152420,
+      "first_line_sha256": "dd17bb5e85200575fdf9b2ee6f9570d038ec1c2fd231a2c6c7e7a1a0890b310a",
+      "first_line_field_count": 275,
+      "header_matches_occupancy_order": true
+    },
+    {
+      "file": "distance.csv",
+      "present": true,
+      "access": "file existence and first-line schema only; no temporal observation rows",
+      "bytes": 897582,
+      "first_line_sha256": "dd17bb5e85200575fdf9b2ee6f9570d038ec1c2fd231a2c6c7e7a1a0890b310a",
+      "first_line_field_count": 275,
+      "header_matches_occupancy_order": true
+    },
+    {
+      "file": "station_information.csv",
+      "present": false,
+      "access": "file existence and first-line schema only; no temporal observation rows"
+    }
+  ]
+}

@@ -1,0 +1,868 @@
+{
+  "id": "INFORMATION_SCOPE_REGISTRY_V1_20260913",
+  "anchor_commit": "7dd7db862d86268e4a6e6ac95312ba29a359a80b",
+  "status": "REGISTRY_COMPLETE_WITH_UNRESOLVED_ELIGIBILITY",
+  "known_future_inputs": [],
+  "execution_budget": {
+    "fits": 0,
+    "inference": 0,
+    "alpha_searches": 0,
+    "new_target_rows": 0,
+    "full_dynamic_file_hashes": 0
+  },
+  "read_policy": "Existing source/config/summary metadata and explicitly whitelisted CSV first lines only; no time-series observations/prediction arrays/labels",
+  "protected_ranges": [
+    [
+      1560,
+      1747
+    ],
+    [
+      1747,
+      1966
+    ],
+    [
+      1966,
+      2184
+    ]
+  ],
+  "paris_access": false,
+  "automation_status": "PAUSED",
+  "fields": [
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "Existing research indexes hourly samples; exact physical snapshot endpoint UNKNOWN",
+      "normalization": "Current prepare.py sums inf.charge_count by TAZID, reindexes columns, divides occupancy in float32; no source clipping",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "BASELINE_USED",
+      "time_eligibility": "OFFLINE_PREFIX_USE_ESTABLISHED_LIVE_LINEAGE_UNKNOWN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "Predictive incremental value not established by metadata",
+        "Deployment-time availability not proven"
+      ],
+      "proven_ineffective": false,
+      "id": "occupancy_count",
+      "family": "occupancy_calendar",
+      "source_files": [
+        "occupancy.csv"
+      ],
+      "column_or_alias": "time + ordered275 zone columns",
+      "unit": "count in the pinned working snapshot; upstream historical percentage label is not authoritative for this snapshot",
+      "spatial_level": "zone",
+      "measurement_kind": "busy/unavailable-pile snapshot",
+      "generation": "Sum of busy/unavailable pile indicators; actual endpoint provenance remains unresolved",
+      "parents": [
+        "pile_busy_state"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "Computable from forecast origin",
+      "effective_at": "Forecast origin",
+      "published_at": "Not a future observation",
+      "revised_at": "Not applicable",
+      "interval_definition": "Registered origin index modulo24/168; exact sine zeros fixed in dual-risk probe",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "None",
+      "experimental_status": "USED_IN_RESIDUAL_HEADS_AND_PROBE_NOT_NATIVE_FOUNDATION_INPUT",
+      "time_eligibility": "DETERMINISTIC_FEATURE_EXISTING_INTERFACE_ONLY",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "Predictive incremental value not established by metadata",
+        "Deployment-time availability not proven"
+      ],
+      "proven_ineffective": false,
+      "id": "calendar_features",
+      "family": "occupancy_calendar",
+      "source_files": [],
+      "column_or_alias": "hour/week sin-cos from origin; timestamp",
+      "unit": "dimensionless",
+      "spatial_level": "shared clock",
+      "measurement_kind": "deterministic metadata",
+      "generation": "Functions of registered forecast origin/time",
+      "parents": [
+        "forecast_origin"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "Existing experiments divide by matching zone capacity; latest D source row origin-2",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "LIMITED_NOGO_AND_POSITIVE_DIRECTION_DIAGNOSTIC",
+      "time_eligibility": "OFFLINE_LAGGED_USE_LIVE_RELEASE_UNKNOWN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "Not session duration or remaining lifetime",
+        "Finite-step >=1% gain unproven",
+        "Lag alone does not remove upstream backfill/revision uncertainty"
+      ],
+      "proven_ineffective": false,
+      "id": "duration",
+      "family": "duration",
+      "source_files": [
+        "duration.csv"
+      ],
+      "column_or_alias": "time + ordered275 zone columns",
+      "unit": "pile-hours per interval (declared)",
+      "spatial_level": "zone",
+      "measurement_kind": "integrated active charging exposure",
+      "generation": "Aggregate active-pile time, distinct from unavailable/busy snapshot",
+      "parents": [
+        "pile_active_state",
+        "integration_interval"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "HISTORICAL_RECORDS_CURRENT_INCREMENT_UNESTABLISHED",
+      "time_eligibility": "UNIT_CONFLICT_AND_RELEASE_UNKNOWN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "No future-known fee schedule provenance",
+        "Prediction value is not causal elasticity",
+        "Regional aggregation weights/price effectiveness times UNKNOWN"
+      ],
+      "proven_ineffective": false,
+      "id": "electricity_price",
+      "family": "electricity_price",
+      "source_files": [
+        "e_price.csv"
+      ],
+      "column_or_alias": "time + ordered275 zone columns",
+      "unit": {
+        "status": "CONFLICT",
+        "paper": "CNY/hour",
+        "author_readme": "CNY/kWh"
+      },
+      "spatial_level": "zone",
+      "measurement_kind": "hourly recorded rate/fee",
+      "generation": "Upstream charging-station fee observations then zonal/time aggregation; exact local weights UNKNOWN",
+      "parents": [
+        "station_fee_record"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "HISTORICAL_RECORDS_CURRENT_INCREMENT_UNESTABLISHED",
+      "time_eligibility": "UNIT_CONFLICT_AND_RELEASE_UNKNOWN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "No future-known fee schedule provenance",
+        "Prediction value is not causal elasticity",
+        "Regional aggregation weights/price effectiveness times UNKNOWN"
+      ],
+      "proven_ineffective": false,
+      "id": "service_price",
+      "family": "service_price",
+      "source_files": [
+        "s_price.csv"
+      ],
+      "column_or_alias": "time + ordered275 zone columns",
+      "unit": {
+        "status": "CONFLICT",
+        "paper": "CNY/hour",
+        "author_readme": "CNY/kWh"
+      },
+      "spatial_level": "zone",
+      "measurement_kind": "hourly recorded rate/fee",
+      "generation": "Upstream charging-station fee observations then zonal/time aggregation; exact local weights UNKNOWN",
+      "parents": [
+        "station_fee_record"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "HISTORICAL_TEMPERATURE_PRESSURE_HUMIDITY_RECORDS_NO_CURRENT_MATCHED_INCREMENT",
+      "time_eligibility": "PAST_OBSERVATION_RELEASE_UNKNOWN_FUTURE_ACTUAL_FORBIDDEN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "No forecast-vintage/release archive inspected",
+        "Historical alias Ta/h/P mapping must follow legacy adapter, not a filename guess",
+        "Shared station observations are not275 independent weather samples"
+      ],
+      "proven_ineffective": false,
+      "id": "weather_T",
+      "family": "weather",
+      "source_files": [
+        "weather_central.csv",
+        "weather_airport.csv"
+      ],
+      "column_or_alias": "T",
+      "unit": "degree Celsius",
+      "spatial_level": "two meteorological stations shared across zones",
+      "measurement_kind": "historical weather observation",
+      "generation": "Station records aligned to hourly table",
+      "parents": [
+        "station_weather_observation"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "HISTORICAL_TEMPERATURE_PRESSURE_HUMIDITY_RECORDS_NO_CURRENT_MATCHED_INCREMENT",
+      "time_eligibility": "PAST_OBSERVATION_RELEASE_UNKNOWN_FUTURE_ACTUAL_FORBIDDEN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "No forecast-vintage/release archive inspected",
+        "Historical alias Ta/h/P mapping must follow legacy adapter, not a filename guess",
+        "Shared station observations are not275 independent weather samples"
+      ],
+      "proven_ineffective": false,
+      "id": "weather_P0",
+      "family": "weather",
+      "source_files": [
+        "weather_central.csv",
+        "weather_airport.csv"
+      ],
+      "column_or_alias": "P0",
+      "unit": "mmHg, station-level pressure",
+      "spatial_level": "two meteorological stations shared across zones",
+      "measurement_kind": "historical weather observation",
+      "generation": "Station records aligned to hourly table",
+      "parents": [
+        "station_weather_observation"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "HISTORICAL_TEMPERATURE_PRESSURE_HUMIDITY_RECORDS_NO_CURRENT_MATCHED_INCREMENT",
+      "time_eligibility": "PAST_OBSERVATION_RELEASE_UNKNOWN_FUTURE_ACTUAL_FORBIDDEN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "No forecast-vintage/release archive inspected",
+        "Historical alias Ta/h/P mapping must follow legacy adapter, not a filename guess",
+        "Shared station observations are not275 independent weather samples"
+      ],
+      "proven_ineffective": false,
+      "id": "weather_P",
+      "family": "weather",
+      "source_files": [
+        "weather_central.csv",
+        "weather_airport.csv"
+      ],
+      "column_or_alias": "P",
+      "unit": "mmHg, sea-level-reduced pressure",
+      "spatial_level": "two meteorological stations shared across zones",
+      "measurement_kind": "historical weather observation",
+      "generation": "Station records aligned to hourly table",
+      "parents": [
+        "station_weather_observation"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "HISTORICAL_TEMPERATURE_PRESSURE_HUMIDITY_RECORDS_NO_CURRENT_MATCHED_INCREMENT",
+      "time_eligibility": "PAST_OBSERVATION_RELEASE_UNKNOWN_FUTURE_ACTUAL_FORBIDDEN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "No forecast-vintage/release archive inspected",
+        "Historical alias Ta/h/P mapping must follow legacy adapter, not a filename guess",
+        "Shared station observations are not275 independent weather samples"
+      ],
+      "proven_ineffective": false,
+      "id": "weather_U",
+      "family": "weather",
+      "source_files": [
+        "weather_central.csv",
+        "weather_airport.csv"
+      ],
+      "column_or_alias": "U",
+      "unit": "percent relative humidity",
+      "spatial_level": "two meteorological stations shared across zones",
+      "measurement_kind": "historical weather observation",
+      "generation": "Station records aligned to hourly table",
+      "parents": [
+        "station_weather_observation"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "HISTORICAL_TEMPERATURE_PRESSURE_HUMIDITY_RECORDS_NO_CURRENT_MATCHED_INCREMENT",
+      "time_eligibility": "PAST_OBSERVATION_RELEASE_UNKNOWN_FUTURE_ACTUAL_FORBIDDEN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "No forecast-vintage/release archive inspected",
+        "Historical alias Ta/h/P mapping must follow legacy adapter, not a filename guess",
+        "Shared station observations are not275 independent weather samples"
+      ],
+      "proven_ineffective": false,
+      "id": "weather_nRAIN",
+      "family": "weather",
+      "source_files": [
+        "weather_central.csv",
+        "weather_airport.csv"
+      ],
+      "column_or_alias": "nRAIN",
+      "unit": "ordinal0 normal,1 light,2 moderate,3 heavy",
+      "spatial_level": "two meteorological stations shared across zones",
+      "measurement_kind": "historical weather observation",
+      "generation": "Station records aligned to hourly table",
+      "parents": [
+        "station_weather_observation"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "HISTORICAL_TEMPERATURE_PRESSURE_HUMIDITY_RECORDS_NO_CURRENT_MATCHED_INCREMENT",
+      "time_eligibility": "PAST_OBSERVATION_RELEASE_UNKNOWN_FUTURE_ACTUAL_FORBIDDEN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "No forecast-vintage/release archive inspected",
+        "Historical alias Ta/h/P mapping must follow legacy adapter, not a filename guess",
+        "Shared station observations are not275 independent weather samples"
+      ],
+      "proven_ineffective": false,
+      "id": "weather_Td",
+      "family": "weather",
+      "source_files": [
+        "weather_central.csv",
+        "weather_airport.csv"
+      ],
+      "column_or_alias": "Td",
+      "unit": "degree Celsius, dew point",
+      "spatial_level": "two meteorological stations shared across zones",
+      "measurement_kind": "historical weather observation",
+      "generation": "Station records aligned to hourly table",
+      "parents": [
+        "station_weather_observation"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "Static table; coverage and validity period UNKNOWN",
+      "normalization": "Used as denominator, not learned scaling",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "USED_FOR_TARGET_NORMALIZATION_FEATURE_INCREMENT_UNTESTED",
+      "time_eligibility": "SNAPSHOT_DATE_AND_TIME_VARIATION_UNKNOWN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "Predictive incremental value not established by metadata",
+        "Deployment-time availability not proven"
+      ],
+      "proven_ineffective": false,
+      "id": "pile_capacity_count",
+      "family": "capacity_static",
+      "source_files": [
+        "inf.csv"
+      ],
+      "column_or_alias": "charge_count grouped by TAZID",
+      "unit": "pile count",
+      "spatial_level": "station rows aggregated to zone",
+      "measurement_kind": "static capacity snapshot",
+      "generation": "C_zone=sum(charge_count) within TAZID",
+      "parents": [
+        "station_pile_count",
+        "TAZID"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "NO_CURRENT_INCREMENT_TEST",
+      "time_eligibility": "SNAPSHOT_DATE_UNKNOWN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "Do not sum repeated zone geometry over station rows",
+        "Incremental forecast value untested"
+      ],
+      "proven_ineffective": false,
+      "id": "zone_area",
+      "family": "capacity_static",
+      "source_files": [
+        "inf.csv"
+      ],
+      "column_or_alias": "area",
+      "unit": "m^2",
+      "spatial_level": "station rows with TAZID; geometric-field repetition not checked",
+      "measurement_kind": "static geometry descriptor",
+      "generation": "Source geometry calculation; deduplication rule must be established",
+      "parents": [
+        "zone_geometry"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "NO_CURRENT_INCREMENT_TEST",
+      "time_eligibility": "SNAPSHOT_DATE_UNKNOWN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "Do not sum repeated zone geometry over station rows",
+        "Incremental forecast value untested"
+      ],
+      "proven_ineffective": false,
+      "id": "zone_perimeter",
+      "family": "capacity_static",
+      "source_files": [
+        "inf.csv"
+      ],
+      "column_or_alias": "perimeter",
+      "unit": "m",
+      "spatial_level": "station rows with TAZID; geometric-field repetition not checked",
+      "measurement_kind": "static geometry descriptor",
+      "generation": "Source geometry calculation; deduplication rule must be established",
+      "parents": [
+        "zone_geometry"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "USED_IN_LIMITED_GEOGRAPHIC_SORTING_STRATEGY",
+      "time_eligibility": "SNAPSHOT_DATE_CRS_UNKNOWN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "Predictive incremental value not established by metadata",
+        "Deployment-time availability not proven"
+      ],
+      "proven_ineffective": false,
+      "id": "coordinate_longitude",
+      "family": "spatial",
+      "source_files": [
+        "inf.csv"
+      ],
+      "column_or_alias": "longitude",
+      "unit": "degrees; exact local CRS UNKNOWN",
+      "spatial_level": "station rows with TAZID",
+      "measurement_kind": "static coordinate",
+      "generation": "Source station coordinates",
+      "parents": [
+        "station_location"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "USED_IN_LIMITED_GEOGRAPHIC_SORTING_STRATEGY",
+      "time_eligibility": "SNAPSHOT_DATE_CRS_UNKNOWN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "Predictive incremental value not established by metadata",
+        "Deployment-time availability not proven"
+      ],
+      "proven_ineffective": false,
+      "id": "coordinate_latitude",
+      "family": "spatial",
+      "source_files": [
+        "inf.csv"
+      ],
+      "column_or_alias": "latitude",
+      "unit": "degrees; exact local CRS UNKNOWN",
+      "spatial_level": "station rows with TAZID",
+      "measurement_kind": "static coordinate",
+      "generation": "Source station coordinates",
+      "parents": [
+        "station_location"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "LEGACY_GRAPH_USE_SPECIFIC_GROUPING_TESTS_NOT_UNIVERSAL_SPATIAL_EXCLUSION",
+      "time_eligibility": "STATIC_COVERAGE_AND_VERSION_UNKNOWN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "Header alignment verified, full matrix values not read",
+        "No new graph or lagged-spatial information experiment"
+      ],
+      "proven_ineffective": false,
+      "id": "adjacency",
+      "family": "spatial",
+      "source_files": [
+        "adj.csv"
+      ],
+      "column_or_alias": "275 zone-column labels matching occupancy order",
+      "unit": "binary",
+      "spatial_level": "zone pairs",
+      "measurement_kind": "static spatial relation",
+      "generation": "Shared-boundary relation / centroid distance as described upstream",
+      "parents": [
+        "zone_geometry"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "LEGACY_GRAPH_USE_SPECIFIC_GROUPING_TESTS_NOT_UNIVERSAL_SPATIAL_EXCLUSION",
+      "time_eligibility": "STATIC_COVERAGE_AND_VERSION_UNKNOWN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "Header alignment verified, full matrix values not read",
+        "No new graph or lagged-spatial information experiment"
+      ],
+      "proven_ineffective": false,
+      "id": "distance",
+      "family": "spatial",
+      "source_files": [
+        "distance.csv"
+      ],
+      "column_or_alias": "275 zone-column labels matching occupancy order",
+      "unit": "meters (declared)",
+      "spatial_level": "zone pairs",
+      "measurement_kind": "static spatial relation",
+      "generation": "Shared-boundary relation / centroid distance as described upstream",
+      "parents": [
+        "zone_geometry"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "December2022 per dataset paper",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "NO_CURRENT_INCREMENT_TEST",
+      "time_eligibility": "COLLECTED_2022_12_NOT_AUTOMATICALLY_AVAILABLE_IN_2022_09",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "Survey after early evaluation dates",
+        "No current POI incremental experiment",
+        "No rows or coordinates loaded in this stage"
+      ],
+      "proven_ineffective": false,
+      "id": "poi",
+      "family": "spatial",
+      "source_files": [
+        "poi.csv"
+      ],
+      "column_or_alias": "primary_types,longitude,latitude",
+      "unit": "category + degrees; WGS84 per author README",
+      "spatial_level": "individual POI locations, not yet zonal model features",
+      "measurement_kind": "dated static survey",
+      "generation": "POI survey and prospective spatial aggregation",
+      "parents": [
+        "poi_observation",
+        "zone_geometry"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "NO_CURRENT_INCREMENT_TEST_POTENTIAL_DERIVED_REDUNDANCY",
+      "time_eligibility": "ENDPOINT_RELEASE_AND_LOCAL_GENERATION_UNKNOWN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "Not independent physical ground truth",
+        "D_zone plus static power list does not generally identify active-pile composition",
+        "Redundancy conditional on all parent fields is different from redundancy conditional on aggregate duration alone"
+      ],
+      "proven_ineffective": false,
+      "id": "volume",
+      "family": "volume",
+      "source_files": [
+        "volume.csv"
+      ],
+      "column_or_alias": "time + ordered275 zone columns",
+      "unit": "kWh (estimated, not independent metering)",
+      "spatial_level": "zone",
+      "measurement_kind": "hourly integrated constructed quantity",
+      "generation": "rated-power estimate: sum_k power_k * active_duration_k (idealized provenance, exact local generator not revalidated)",
+      "parents": [
+        "pile_active_durations",
+        "pile_power_assumption"
+      ]
+    },
+    {
+      "data_version": "Existing local audited snapshot; research anchor 7dd7db862d86268e4a6e6ac95312ba29a359a80b; header identities in schema_inventory.json are not full-content version proofs",
+      "observed_at": "UNKNOWN unless explicitly overridden",
+      "effective_at": "UNKNOWN",
+      "published_at": "UNKNOWN",
+      "revised_at": "UNKNOWN",
+      "interval_definition": "UNKNOWN exact endpoints; hourly label alone is insufficient",
+      "normalization": "No new normalization performed; any future scaler must be fitted on earlier training data only",
+      "imputation": "Upstream describes forward/back filling, adjacent-value outlier replacement; exact per-field local lineage not revalidated",
+      "experimental_status": "NO_CURRENT_INCREMENT_TEST_POTENTIAL_DERIVED_REDUNDANCY",
+      "time_eligibility": "ENDPOINT_RELEASE_AND_LOCAL_GENERATION_UNKNOWN",
+      "evidence": [
+        "schema_inventory.json",
+        "https://www.nature.com/articles/s41597-025-04874-4",
+        "https://github.com/IntelligentSystemsLab/UrbanEV/blob/main/readme.md"
+      ],
+      "uncertainties": [
+        "Not independent physical ground truth",
+        "D_zone plus static power list does not generally identify active-pile composition",
+        "Redundancy conditional on all parent fields is different from redundancy conditional on aggregate duration alone"
+      ],
+      "proven_ineffective": false,
+      "id": "volume_11kw",
+      "family": "volume",
+      "source_files": [
+        "volume-11kW.csv"
+      ],
+      "column_or_alias": "time + ordered275 zone columns",
+      "unit": "kWh (estimated, not independent metering)",
+      "spatial_level": "zone",
+      "measurement_kind": "hourly integrated constructed quantity",
+      "generation": "alternative11kW estimate: sum_k power_k * active_duration_k (idealized provenance, exact local generator not revalidated)",
+      "parents": [
+        "pile_active_durations",
+        "pile_power_assumption"
+      ]
+    }
+  ],
+  "future_comparisons": [
+    {
+      "family": "electricity_price",
+      "status": "DESIGN_ONLY_NOT_AUTHORIZED",
+      "base": "I0: fixed occupancy history + explicitly registered calendar/backbone output",
+      "single_augmentation": "I0 + Z_electricity_price",
+      "conditional_on_duration": "I0 + D versus I0 + D + Z_electricity_price",
+      "fairness": "Same origins/targets/lags/model class/feature and search budget; matched re-encoding/duplicate or placebo controls; separate method comparison at identical information",
+      "eligibility_gate": "Resolve or explicitly bound source/release semantics before numerical loading; no future realized values",
+      "exclusion_claim_allowed": false
+    },
+    {
+      "family": "service_price",
+      "status": "DESIGN_ONLY_NOT_AUTHORIZED",
+      "base": "I0: fixed occupancy history + explicitly registered calendar/backbone output",
+      "single_augmentation": "I0 + Z_service_price",
+      "conditional_on_duration": "I0 + D versus I0 + D + Z_service_price",
+      "fairness": "Same origins/targets/lags/model class/feature and search budget; matched re-encoding/duplicate or placebo controls; separate method comparison at identical information",
+      "eligibility_gate": "Resolve or explicitly bound source/release semantics before numerical loading; no future realized values",
+      "exclusion_claim_allowed": false
+    },
+    {
+      "family": "weather",
+      "status": "DESIGN_ONLY_NOT_AUTHORIZED",
+      "base": "I0: fixed occupancy history + explicitly registered calendar/backbone output",
+      "single_augmentation": "I0 + Z_weather",
+      "conditional_on_duration": "I0 + D versus I0 + D + Z_weather",
+      "fairness": "Same origins/targets/lags/model class/feature and search budget; matched re-encoding/duplicate or placebo controls; separate method comparison at identical information",
+      "eligibility_gate": "Resolve or explicitly bound source/release semantics before numerical loading; no future realized values",
+      "exclusion_claim_allowed": false
+    },
+    {
+      "family": "capacity_static",
+      "status": "DESIGN_ONLY_NOT_AUTHORIZED",
+      "base": "I0: fixed occupancy history + explicitly registered calendar/backbone output",
+      "single_augmentation": "I0 + Z_capacity_static",
+      "conditional_on_duration": "I0 + D versus I0 + D + Z_capacity_static",
+      "fairness": "Same origins/targets/lags/model class/feature and search budget; matched re-encoding/duplicate or placebo controls; separate method comparison at identical information",
+      "eligibility_gate": "Resolve or explicitly bound source/release semantics before numerical loading; no future realized values",
+      "exclusion_claim_allowed": false
+    },
+    {
+      "family": "spatial",
+      "status": "DESIGN_ONLY_NOT_AUTHORIZED",
+      "base": "I0: fixed occupancy history + explicitly registered calendar/backbone output",
+      "single_augmentation": "I0 + Z_spatial",
+      "conditional_on_duration": "I0 + D versus I0 + D + Z_spatial",
+      "fairness": "Same origins/targets/lags/model class/feature and search budget; matched re-encoding/duplicate or placebo controls; separate method comparison at identical information",
+      "eligibility_gate": "Resolve or explicitly bound source/release semantics before numerical loading; no future realized values",
+      "exclusion_claim_allowed": false
+    },
+    {
+      "family": "volume",
+      "status": "DESIGN_ONLY_NOT_AUTHORIZED",
+      "base": "I0: fixed occupancy history + explicitly registered calendar/backbone output",
+      "single_augmentation": "I0 + Z_volume",
+      "conditional_on_duration": "I0 + D versus I0 + D + Z_volume",
+      "fairness": "Same origins/targets/lags/model class/feature and search budget; matched re-encoding/duplicate or placebo controls; separate method comparison at identical information",
+      "eligibility_gate": "Resolve or explicitly bound source/release semantics before numerical loading; no future realized values",
+      "exclusion_claim_allowed": false
+    },
+    {
+      "family": "duration",
+      "status": "DESIGN_ONLY_NOT_AUTHORIZED",
+      "base": "I0: fixed occupancy history + explicitly registered calendar/backbone output",
+      "single_augmentation": "I0 + Z_duration",
+      "conditional_on_duration": "not applicable: duration is the conditioning family",
+      "fairness": "Same origins/targets/lags/model class/feature and search budget; matched re-encoding/duplicate or placebo controls; separate method comparison at identical information",
+      "eligibility_gate": "Resolve or explicitly bound source/release semantics before numerical loading; no future realized values",
+      "exclusion_claim_allowed": false
+    }
+  ]
+}

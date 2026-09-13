@@ -1,0 +1,220 @@
+{
+  "scope": "legacy configuration inventory only; no numerical performance or raw observations read",
+  "configs_read": 889,
+  "parse_errors": 0,
+  "nonempty_feature_groups": [
+    {
+      "feature_group": "P",
+      "model": "TimeXer",
+      "epochs_field": "1",
+      "config_count": 12
+    },
+    {
+      "feature_group": "P",
+      "model": "astgcn",
+      "epochs_field": "20",
+      "config_count": 4
+    },
+    {
+      "feature_group": "P",
+      "model": "fcnn",
+      "epochs_field": "20",
+      "config_count": 13
+    },
+    {
+      "feature_group": "P",
+      "model": "lstm",
+      "epochs_field": "20",
+      "config_count": 4
+    },
+    {
+      "feature_group": "P+ps",
+      "model": "TimeXer",
+      "epochs_field": "1",
+      "config_count": 6
+    },
+    {
+      "feature_group": "P+ps",
+      "model": "fcnn",
+      "epochs_field": "20",
+      "config_count": 12
+    },
+    {
+      "feature_group": "Ta",
+      "model": "TimeXer",
+      "epochs_field": "1",
+      "config_count": 10
+    },
+    {
+      "feature_group": "Ta",
+      "model": "fcnn",
+      "epochs_field": "20",
+      "config_count": 12
+    },
+    {
+      "feature_group": "Ta+pe",
+      "model": "TimeXer",
+      "epochs_field": "1",
+      "config_count": 6
+    },
+    {
+      "feature_group": "Ta+pe",
+      "model": "fcnn",
+      "epochs_field": "20",
+      "config_count": 12
+    },
+    {
+      "feature_group": "all",
+      "model": "fcnn",
+      "epochs_field": "20",
+      "config_count": 14
+    },
+    {
+      "feature_group": "h",
+      "model": "TimeXer",
+      "epochs_field": "1",
+      "config_count": 6
+    },
+    {
+      "feature_group": "h",
+      "model": "fcnn",
+      "epochs_field": "20",
+      "config_count": 12
+    },
+    {
+      "feature_group": "h+Ta",
+      "model": "TimeXer",
+      "epochs_field": "1",
+      "config_count": 4
+    },
+    {
+      "feature_group": "h+Ta",
+      "model": "fcnn",
+      "epochs_field": "20",
+      "config_count": 12
+    },
+    {
+      "feature_group": "pe",
+      "model": "TimeXer",
+      "epochs_field": "1",
+      "config_count": 6
+    },
+    {
+      "feature_group": "pe",
+      "model": "fcnn",
+      "epochs_field": "20",
+      "config_count": 12
+    },
+    {
+      "feature_group": "ps",
+      "model": "TimeXer",
+      "epochs_field": "1",
+      "config_count": 6
+    },
+    {
+      "feature_group": "ps",
+      "model": "fcnn",
+      "epochs_field": "20",
+      "config_count": 13
+    },
+    {
+      "feature_group": "ps+pe",
+      "model": "fcnn",
+      "epochs_field": "20",
+      "config_count": 12
+    }
+  ],
+  "examples": {
+    "P": {
+      "model": "astgcn",
+      "target": "occ",
+      "horizon": "3",
+      "fold": "1",
+      "feature_group": "P",
+      "epoch": "20",
+      "status": "pending"
+    },
+    "all": {
+      "model": "fcnn",
+      "target": "occ",
+      "horizon": "3",
+      "fold": "1",
+      "feature_group": "all",
+      "epoch": "20",
+      "status": "pending"
+    },
+    "h": {
+      "model": "fcnn",
+      "target": "occ",
+      "horizon": "3",
+      "fold": "1",
+      "feature_group": "h",
+      "epoch": "20",
+      "status": "pending"
+    },
+    "h+Ta": {
+      "model": "fcnn",
+      "target": "occ",
+      "horizon": "3",
+      "fold": "1",
+      "feature_group": "h+Ta",
+      "epoch": "20",
+      "status": "pending"
+    },
+    "pe": {
+      "model": "fcnn",
+      "target": "occ",
+      "horizon": "3",
+      "fold": "1",
+      "feature_group": "pe",
+      "epoch": "20",
+      "status": "pending"
+    },
+    "ps": {
+      "model": "fcnn",
+      "target": "occ",
+      "horizon": "3",
+      "fold": "1",
+      "feature_group": "ps",
+      "epoch": "20",
+      "status": "pending"
+    },
+    "ps+pe": {
+      "model": "fcnn",
+      "target": "occ",
+      "horizon": "3",
+      "fold": "1",
+      "feature_group": "ps+pe",
+      "epoch": "20",
+      "status": "pending"
+    },
+    "P+ps": {
+      "model": "fcnn",
+      "target": "occ",
+      "horizon": "3",
+      "fold": "1",
+      "feature_group": "P+ps",
+      "epoch": "20",
+      "status": "pending"
+    },
+    "Ta": {
+      "model": "fcnn",
+      "target": "occ",
+      "horizon": "3",
+      "fold": "1",
+      "feature_group": "Ta",
+      "epoch": "20",
+      "status": "pending"
+    },
+    "Ta+pe": {
+      "model": "fcnn",
+      "target": "occ",
+      "horizon": "3",
+      "fold": "1",
+      "feature_group": "Ta+pe",
+      "epoch": "20",
+      "status": "pending"
+    }
+  },
+  "not_a_claim_of_completed_or_valid_runs": true
+}
