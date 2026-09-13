@@ -36,3 +36,5 @@
 SOTA声明遵循[统一比较规则](SOTA_COMPARISON_STANDARD.md)。不足1%不自动淘汰；RMSE优但MAE不优应报告权衡；无完整同协议基线与泛化证据则限定为开发结果。模型新意、实际价值与数值领先分开讨论。
 
 历史数值与各阶段NO_GO集中见[成果地图](RESEARCH_INDEX.md)，旧原文及配置保留。后续每轮人工审核，不自动训练或扩展测试数据。
+
+本轮重访补充：DyConfuse-Net的出版商预览报告MAE0.0155，并称数据覆盖2022-09-01至2023-02-28；完整切分、归一化与评分仍待核对，不能与本地275区域占用率局部开发值直接计算差距。[出版商预览](https://www.sciencedirect.com/science/article/abs/pii/S0378779626000581)。更详细的当前距离解释见[SOTA差距快照](SOTA_GAP_ASSESSMENT_20260913.md)。

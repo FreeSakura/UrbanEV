@@ -11,6 +11,7 @@
 
 | 内容 | 入口 |
 |---|---|
+| 目前距离SOTA有多远 | [差距与证据评估](docs/research/sota/SOTA_GAP_ASSESSMENT_20260913.md) |
 | 如何判断SOTA与如何报告研究价值 | [比较与声明规则](docs/research/sota/SOTA_COMPARISON_STANDARD.md) |
 | 已有什么结果，哪些还不能下结论 | [研究成果地图](docs/research/sota/RESEARCH_INDEX.md) |
 | 下一步研究和当前执行范围 | [研究路线](docs/research/sota/RESEARCH_ROADMAP.md) |
