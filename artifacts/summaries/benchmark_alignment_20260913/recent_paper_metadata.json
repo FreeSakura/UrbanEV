@@ -1,0 +1,157 @@
+[
+  {
+    "doi": "10.1016/j.epsr.2026.112765",
+    "title": [
+      "Spatio-temporal graph fusion framework for accurate city-wide EV charging forecasting"
+    ],
+    "authors": [
+      {
+        "given": "Xufeng",
+        "family": "Wu"
+      },
+      {
+        "given": "Zuowei",
+        "family": "Chen"
+      },
+      {
+        "given": "Hefang",
+        "family": "Jiang"
+      },
+      {
+        "given": "Shoukang",
+        "family": "Luo"
+      },
+      {
+        "given": "Honghao",
+        "family": "Liang"
+      },
+      {
+        "given": "Siming",
+        "family": "Li"
+      },
+      {
+        "given": "Chenyang",
+        "family": "Xu"
+      },
+      {
+        "given": "Bojin",
+        "family": "Wang"
+      },
+      {
+        "given": "Wensai",
+        "family": "Xuan"
+      },
+      {
+        "given": "Yi",
+        "family": "Zhao"
+      },
+      {
+        "given": "Lin",
+        "family": "Lin"
+      },
+      {
+        "given": "Hao",
+        "family": "Wang"
+      }
+    ],
+    "venue": [
+      "Electric Power Systems Research"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "url": "https://doi.org/10.1016/j.epsr.2026.112765",
+    "verified_on": "2026-09-13",
+    "verification": "direct_crossref; method comparability separately assessed"
+  },
+  {
+    "doi": "10.1016/j.patrec.2026.04.028",
+    "title": [
+      "Tri-modal causal learning for forecasting EV charging demand"
+    ],
+    "authors": [
+      {
+        "given": "Xiaoping",
+        "family": "Wang"
+      },
+      {
+        "given": "Qianqian",
+        "family": "Ren"
+      },
+      {
+        "given": "Hezhe",
+        "family": "Wang"
+      },
+      {
+        "given": "Zhijuan",
+        "family": "Li"
+      }
+    ],
+    "venue": [
+      "Pattern Recognition Letters"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          8
+        ]
+      ]
+    },
+    "url": "https://doi.org/10.1016/j.patrec.2026.04.028",
+    "verified_on": "2026-09-13",
+    "verification": "direct_crossref; method comparability separately assessed"
+  },
+  {
+    "doi": "10.3390/electronics15153297",
+    "title": [
+      "Urban-CSTPNet: Time-Conditioned Multi-Relational Spatio-Temporal Probabilistic Forecasting for Smart Urban Electric Vehicle Charging Networks"
+    ],
+    "authors": [
+      {
+        "given": "Lili",
+        "family": "Zheng"
+      },
+      {
+        "given": "Hengrui",
+        "family": "Ma"
+      },
+      {
+        "given": "Bo",
+        "family": "Wang"
+      },
+      {
+        "given": "Shidong",
+        "family": "Wu"
+      },
+      {
+        "given": "Sichang",
+        "family": "Xiao"
+      },
+      {
+        "given": "Fuqi",
+        "family": "Ma"
+      }
+    ],
+    "venue": [
+      "Electronics"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          26
+        ]
+      ]
+    },
+    "url": "https://doi.org/10.3390/electronics15153297",
+    "verified_on": "2026-09-13",
+    "verification": "direct_crossref; method comparability separately assessed"
+  }
+]

@@ -1,0 +1,316 @@
+{
+  "protocol_id": "URBANEV_COMPARABILITY_BRIDGE_V2_20260913",
+  "policy_version": "URBANEV_COMPARISON_V2",
+  "project_anchor": "31bb0b61effe6975685a5c1c7aee7229208b2019",
+  "official_code_anchor": "44f2aa0c8d89f192bce00bafb0def74a21b39c68",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "legacy_screening_thresholds_active": false,
+  "automatic_scientific_admission": false,
+  "human_review_after_each_round": true,
+  "automation_enabled": false,
+  "primary_view": "terminal_H",
+  "secondary_view": "path_1_to_H",
+  "primary_metric": "RMSE",
+  "secondary_metrics": [
+    "MAE"
+  ],
+  "target_unit": "occupancy_rate_0_1",
+  "primary_baseline_postprocess": "raw",
+  "native_variants": [
+    "raw_Q0.5",
+    "Q0.5_plus_clip_0_1"
+  ],
+  "universal_minimum_effect": null,
+  "universal_mae_noninferiority": false,
+  "prefix_rows": {
+    "occupancy.csv": 1560,
+    "duration.csv": 1547
+  },
+  "prefix_sha256": {
+    "occupancy.csv": "40f3769bc207bb5411225c73ee7f174d194238b61ff71f07aa736dc26bc8bb02",
+    "duration.csv": "91535b3742ac389b3ac70c26563dfe88cad3f5149a7f359ad033c6d60a14a455"
+  },
+  "static_info_sha256": "03c9830965e9e99b29adfb8cceed0eba98d37631f514273cb3fe61f80d63de7c",
+  "column_order_sha256": "3924066ec0c48a6636ee1738baa902c2a11ce93992c3fb4f98c24df785dcc649",
+  "cache_files": [
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_720_h3.npy",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "sha256": "72e905bc8cb10272898fd2a0904124665dd4c65b67a3dbb39164709ca4653536",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "native",
+      "file": "private_720_h3_native_a1.npy",
+      "sha256": "bcbd6d5ca7c100e22c3ce2d65970268ca81b0902f25a3aa55f4b16f28b3b81de",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_720_h12.npy",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "sha256": "3097af20c1bde6221cdb032728be52791df28da363366c7549ace42beb41b315",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "native",
+      "file": "private_720_h12_native_a1.npy",
+      "sha256": "0581a023b31506a497d6cb1ebc1f7b6219c925d860a7430c1287ddc520c6be0d",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1056_h3.npy",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "sha256": "7754531e1c667d9760f183a536bab2b8bd1471533c3b9c9a57d3c7a453f9787e",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "native",
+      "file": "private_1056_h3_native_a1.npy",
+      "sha256": "86a2230dac3d4b1170809afeb397dfe48b7bd916c9fded1b1ea1b4fdd894eed8",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1056_h12.npy",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "sha256": "451005d4bc1fbef9d11e1303140a6ee41963363eecc0b9f81383bf5f3eba3cd7",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "native",
+      "file": "private_1056_h12_native_a1.npy",
+      "sha256": "b3c8b26025da3f5f8c5a03adc278eca58be5d10687be9703bf72f3bd7659eb67",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1392_h3.npy",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "sha256": "2b6c1a1790ad879adc24aa6eb9d021ce819a01777a7e3789ecad7df64e9a4964",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "native",
+      "file": "private_1392_h3_native_a1.npy",
+      "sha256": "a8870d582828961b80b010a679b8a03ecd0009b1075839ffd9fc64566c16ebf3",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1392_h12.npy",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "sha256": "e9e43f31a9a16f0882a4693dfb1d93e2b59514a235f055101fa02140d3279cf7",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "native",
+      "file": "private_1392_h12_native_a1.npy",
+      "sha256": "e01540b22a04d814f798f6a65370bdf9db69b13d5a4494d81a58e24b06455796",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    }
+  ],
+  "cuts": [
+    720,
+    1056,
+    1392
+  ],
+  "origins_per_cut": 14,
+  "origin_stride": 12,
+  "horizons": [
+    3,
+    6,
+    9,
+    12
+  ],
+  "native_horizons": [
+    3,
+    12
+  ],
+  "source_normalization": "float32 occupancy counts / float32 grouped station capacities then float64; duration float64 / capacity",
+  "short_input": "[y[o-2],y[o-1],d[o-2]]",
+  "long_occupancy": "y[o-168:o]",
+  "long_duration": "d[o-169:o-1]",
+  "known_future_inputs": [],
+  "new_model_fits": 0,
+  "new_foundation_inference": 0,
+  "alpha_searches": 0,
+  "historical_candidate_reselection": false,
+  "max_executions": 1,
+  "automatic_next_round": false,
+  "identity_tolerance": 1e-07,
+  "score_tolerance": 1e-12,
+  "data_scope": "Previously exposed development windows; not official six-fold test or blind evaluation",
+  "code_sha256_lf": {
+    "src/urbanev_forecast/bounded_predictor_csv.py": "65bbd90f82a2adb59d02dfce573e6d0029a4d0ed65a392cc87efe1b94b0bf51d",
+    "src/urbanev_forecast/benchmark_metrics.py": "e959f4455d405f21a59187df248fe0accaaf8f963753a64b9659ca6be1946a9c",
+    "src/urbanev_forecast/comparability_bridge.py": "4ed53ed3c290e71829acefd23e4d8201a86bffcc6964156ea9ce3b6ec433c9ec",
+    "scripts/research/run_comparability_bridge.py": "be24ee85f46517f2506555f0e3d7df7273ef0093d9cd1855949bf26b52b8b6c6"
+  },
+  "native_reference_scores": [
+    {
+      "cut": 720,
+      "horizon": 3,
+      "raw": {
+        "rmse": 0.055895773082662754,
+        "mae": 0.02846733320343159
+      },
+      "clipped": {
+        "rmse": 0.05589026129081106,
+        "mae": 0.02845714276180768
+      }
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "raw": {
+        "rmse": 0.06240414869487597,
+        "mae": 0.033239056211795445
+      },
+      "clipped": {
+        "rmse": 0.06238493648552846,
+        "mae": 0.0332112496331318
+      }
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "raw": {
+        "rmse": 0.10785652026129472,
+        "mae": 0.05142333254606192
+      },
+      "clipped": {
+        "rmse": 0.10784551376242232,
+        "mae": 0.05132710722814822
+      }
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "raw": {
+        "rmse": 0.0702744804016077,
+        "mae": 0.04018362104094454
+      },
+      "clipped": {
+        "rmse": 0.0702725282325206,
+        "mae": 0.04018002874407417
+      }
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "raw": {
+        "rmse": 0.07831167412920281,
+        "mae": 0.04633956363835892
+      },
+      "clipped": {
+        "rmse": 0.07830591311366505,
+        "mae": 0.04632589489157066
+      }
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "raw": {
+        "rmse": 0.11394747712176027,
+        "mae": 0.05928244603855079
+      },
+      "clipped": {
+        "rmse": 0.11394193518666669,
+        "mae": 0.05922485594192819
+      }
+    }
+  ]
+}

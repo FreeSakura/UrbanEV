@@ -1,36 +1,38 @@
-# 强基线清单与结果状态
+# 基线登记：来源、复现与可比性
 
-更新日期：2026-09-09。首折H3/H12开发结果已发布，完整测试成绩仍为空；这里不是SOTA排行榜。详见[基础模型开发报告](FM_CALIBRATION_REPORT.md)，不以文献数字补空位。
+更新：2026-09-13。本表是基线登记，**不是SOTA排行榜**。`paper_reported`表示文献值，`locally_reproduced`表示指定本地协议实际运行，`adapted`表示额外训练/后处理，`not_run`表示尚未运行；可比性另列，不能由名称或论文地位替代。
 
-| 系统 | 来源与角色 | 新协议实现状态 | 新协议结果 |
+## 官方锚点与最新相关工作
+
+| 方法或来源 | 身份 | 可比性状态 | 下一处理 |
 |---|---|---|---|
-| TimeXer | 已有上游快照；训练模型强基线 | 新训练入口已接通，合成前向/反向和训练通过 | 未运行 |
-| Seasonal Linear / MLP | 季节锚与容量控制 | 已实现 | 未运行 |
-| Innovation / Level Attention | 等参数输入表示探针 | 已实现，非成熟创新 | 未运行 |
-| Chronos-2 native median | 原生多变量基础模型 | 2.2.2冻结环境已接通 | 首折开发完成，测试未运行 |
-| TimesFM-3 native median | 2026年8月发布的原生多变量基础模型 | 3.0.1 full-275底层接口已接通 | 首折开发完成，测试未运行 |
-| Bounded quantile midpoint | 基础模型有限分位的有界均值近似 | NumPy核心与首折开发评价完成 | 劣于原始Q0.5 |
-| Bias / affine calibration | 排除普通校准即可解释增益 | 训练区拟合与开发评价完成 | 见执行报告 |
-| Full-quantile ridge | 与约束头同分位信息的公平控制 | 同分位信息ridge已运行 | 两骨干最强校准控制 |
-| Simplex MSE quantile head | 一个受约束共享头的候选路线 | 真实开发评价完成 | 两骨干均NO_GO |
+| UrbanEV论文Table 3：TimeXer及统计/深度基线 | peer_reviewed / paper_reported | 本地尚未完整复现，末点/全路径、历史和原点差异已核实 | 作为原始基准锚点，不视为永久SOTA |
+| Time Series Foundation Models as Strong Baselines in Transportation Forecasting，arXiv:2602.24238v2 | preprint / paper_reported；包含UrbanEV与Chronos-2 | 上下文168；忙桩数量与本项目占用率需区分，完整协议待桥接 | 纳入现代基础模型证据，不直接混排 |
+| DyConfuse-Net，Electric Power Systems Research 2026 | peer_reviewed / paper_reported | unresolved：本轮只有出版商摘要及元数据，未复现完整设置 | 必须跟进，不能忽略也不能按摘要小数值直接排名 |
+| TriCast，Pattern Recognition Letters 2026 | peer_reviewed / paper_reported | mismatch_documented：预览写247区、5分钟、2022年6—7月 | 独立相关任务，非本项目275区小时结果 |
+| Urban-CSTPNet，Electronics 2026 | peer_reviewed / paper_reported | unresolved：概率目标及数据/视野需逐项核查 | 保留待核，不当作已经可比 |
 
-## 历史结果仅作研究起点
+来源：[UrbanEV论文](https://doi.org/10.1038/s41597-025-04874-4)、[官方代码固定版本](https://github.com/IntelligentSystemsLab/UrbanEV/tree/44f2aa0c8d89f192bce00bafb0def74a21b39c68)、[交通基础模型预印本](https://arxiv.org/abs/2602.24238v2)、[DyConfuse-Net](https://doi.org/10.1016/j.epsr.2026.112765)、[TriCast](https://doi.org/10.1016/j.patrec.2026.04.028)、[Urban-CSTPNet](https://doi.org/10.3390/electronics15153297)。截至检索日未建立完整维护的可比排行榜；本表也不声称穷尽全部文献。
 
-旧内部协议的全局固定融合RMSE约0.071367，TimeXer约0.073709，Chronos-2中位数约0.073542。它们来自既有研究，不是本轮新训练成绩。必须核对原点、区域顺序、目标构造、H步范围、上下文、划分、归一化、裁剪和聚合，才能复用到新表。新入口配置与旧紧凑TimeXer的所有超参数尚未逐项建立相同身份。
+官方论文TimeXer表3的文献RMSE为H3/H6/H9/H12：0.0832/0.0938/0.0989/0.0939，文中平均0.0924；对应MAE为0.0471/0.0566/0.0620/0.0589，平均0.0561。**不将这些文献值与本地局部开发分数直接比较**；也不从单节点或外生因素表挑更低数值拼成一行。
 
-旧router、蒸馏和Paris教师的失败门均保留。新的占用率RMSE研究不会把事件Brier收益或缺失评价区间缩窄计作预测成绩。
+## 本地方法与运行状态
 
-## 一手来源与适用范围
+| 系统 | 本地身份与状态 | 比较范围 |
+|---|---|---|
+| Last/day/week | 确定性、无训练；本轮V2桥接按实际回执登记 | 42个已曝光开发原点，四视野，端点/全路径并列 |
+| Chronos-2 native Q0.5 | 既有冻结预测，局部locally_reproduced | V2只复用H3/H12缓存；raw与clip明确分行，H6/H9不补推理 |
+| TimesFM-3 native Q0.5 | 既有首折开发运行 | 本轮不读取其缓存；完整同协议测试缺失 |
+| TimeXer本地适配 | 代码接通，历史紧凑实现另有结果 | 当前完整同协议复现not_run；不能把同名旧配置当新复现 |
+| Seasonal Linear / MLP | 已实现、合成工程检查通过 | 本轮无拟合；完整真实比较not_run |
+| Full-quantile ridge、bias/affine、simplex头 | adapted，历史开发已运行 | 同信息控制有效，但旧局部表不构成前沿榜 |
+| HMM/状态空间/隐半马尔可夫动态模型 | 经典机制对照 | 已知人工参数HMM核对不等于真实训练；真实研究not_run |
+| Innovation/Level Attention | 实现为机制探针 | 尚无成熟方法优势；不预设其新颖性 |
 
-- [UrbanEV数据论文](https://www.nature.com/articles/s41597-025-04874-4)与[官方代码](https://github.com/IntelligentSystemsLab/UrbanEV)：小时区域占用率、逐月扩展折及3/6/9/12小时任务的主要对齐对象。论文表格与本项目168小时上下文不能未经配置桥接直接作优越性比较。
-- [TimeXer](https://arxiv.org/abs/2402.19072)：外生信息感知时间序列预测。现有快照复用许可证和来源清单；新入口使用统一配置，尚未复现其最佳UrbanEV配置。
-- [Chronos-2](https://arxiv.org/abs/2510.15821)与[官方仓库](https://github.com/amazon-science/chronos-forecasting)：支持多变量和协变量；新比较固定历史168小时及同原点275区域，不默认额外未来信息。
-- [TimesFM-3官方发布](https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/)与[官方仓库](https://github.com/google-research/timesfm)：330M参数，原生多变量。当前3.0权重采用单独的非商业、非生产许可；代码许可与权重许可不同。本项目仅规划本地研究使用，不重新发布权重。
-- [Urban-CSTPNet](https://www.mdpi.com/2079-9292/15/15/3297)：2026年EV时空概率预测相关工作；其概率目标、量纲、视野及划分与本主任务不能默认一致。公开数据声明为处理数据与补充结果按请求获取，尚未建立本项目可复现的匹配实现，不能用其数字直接排名。
-- [LTSF-Linear](https://arxiv.org/abs/2205.13504)：提醒季节/线性基线不可缺席；日差分和静态线性混合不是新颖性证据。
+当前bridge表中的排序只适用于它列出的基线和共同支持，不代表覆盖上表全部强方法。现代方法的原生零样本输出与监督适配系统须分别标明预算；预测API名称不自动等于条件均值，见[输出语义](POINT_FORECAST_CONTRACT.md)。
 
-## 点预测语义
+## 比较与发表口径
 
-Chronos-2的`mean`和TimesFM-3默认`forecast`均不能按名称当作均值。固定源码核查及比较规则见[POINT_FORECAST_CONTRACT.md](POINT_FORECAST_CONTRACT.md)。以中位数计算RMSE是合法基线，但训练期MSE适配需独立标为adapted系统，不能称零样本。
+SOTA声明遵循[统一比较规则](SOTA_COMPARISON_STANDARD.md)。不足1%不自动淘汰；RMSE优但MAE不优应报告权衡；无完整同协议基线与泛化证据则限定为开发结果。模型新意、实际价值与数值领先分开讨论。
 
-在声称SOTA之前，仍需补齐最新可比方法检索、源码/权重版本锁定、完整多种子结果、信息与训练预算对齐以及独立确认范围。当前只报告研究目标和已实现能力。
+历史数值与各阶段NO_GO集中见[成果地图](RESEARCH_INDEX.md)，旧原文及配置保留。后续每轮人工审核，不自动训练或扩展测试数据。

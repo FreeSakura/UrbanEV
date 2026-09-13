@@ -1,0 +1,100 @@
+{
+  "upstream_commit": "44f2aa0c8d89f192bce00bafb0def74a21b39c68",
+  "checked_on": "2026-09-13",
+  "source_files_read": 13,
+  "dataset_rows_read": 0,
+  "upstream_code_executed": false,
+  "files": [
+    {
+      "path": "code/exp.sh",
+      "sha256": "1b58f9ae25ef675e33a8ffe41bbe4e16fd7cfaa760e918b262689f49cae01229",
+      "git_blob_sha": "6af6934a667a310a6265f987be5bc93999d900b1",
+      "source_url": "https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code/exp.sh",
+      "bytes": 405
+    },
+    {
+      "path": "code/main.py",
+      "sha256": "0f5243bf09eae8a57b676747c1b692feb80352bc244d8a8006bc2eb0bd2e639e",
+      "git_blob_sha": "ba412749ab83aed864d8e322c9201a87c26f9138",
+      "source_url": "https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code/main.py",
+      "bytes": 2529
+    },
+    {
+      "path": "code/parse.py",
+      "sha256": "98de858ff42bd4980ef6279a5d269ae23f2a8c55fa893648f3a132dd5525b0dc",
+      "git_blob_sha": "ae67464d5e9c62b30d9807e9143ea3f1bbe77a67",
+      "source_url": "https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code/parse.py",
+      "bytes": 1517
+    },
+    {
+      "path": "code/preprocess.py",
+      "sha256": "18ade9680c1223d4333cc7dab08ab938605f20817a2d20f5066825a44959d423",
+      "git_blob_sha": "1f95a599b27cda15caff6b11a80066f3b16e39be",
+      "source_url": "https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code/preprocess.py",
+      "bytes": 635
+    },
+    {
+      "path": "code/train.py",
+      "sha256": "a428d027bc88266f4a9c5373ae683dfc96e909be53a4fc186a51baa93ed705b0",
+      "git_blob_sha": "cc29f5bb7913a6151c5af12da10b94e3359b84f7",
+      "source_url": "https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code/train.py",
+      "bytes": 5229
+    },
+    {
+      "path": "code/utils.py",
+      "sha256": "be5c3a9afcf1face73660ab8d67120504017b4c562cf3b7c32f2fb079fbf0753",
+      "git_blob_sha": "c8186f627723d79033cb2ae5cd4fb13edf34bc1f",
+      "source_url": "https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code/utils.py",
+      "bytes": 9699
+    },
+    {
+      "path": "code-transformer/data_provider/data_factory.py",
+      "sha256": "7067cbe0fccf348e07ad2bb66a20938b6050c318b9334de66aa48594792b6ff9",
+      "git_blob_sha": "202fb5fdf079ffd5708bbc5b3a3b0444340cf626",
+      "source_url": "https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code-transformer/data_provider/data_factory.py",
+      "bytes": 1086
+    },
+    {
+      "path": "code-transformer/data_provider/data_loader.py",
+      "sha256": "dfd7b35895b60795c90db9198c95e01478b835001c55e47e6478b356d4273faa",
+      "git_blob_sha": "88d97cad5522f7e2b3a30597dbd7ecab6e188127",
+      "source_url": "https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code-transformer/data_provider/data_loader.py",
+      "bytes": 4715
+    },
+    {
+      "path": "code-transformer/exp/exp_long_term_forecasting.py",
+      "sha256": "e38aaa1005d3d57758969df25c122072a19252cbbe8d8dc8b343015fc98627f5",
+      "git_blob_sha": "56dcfc2d20c4b5480f783b107789eb9c3a66e3ab",
+      "source_url": "https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code-transformer/exp/exp_long_term_forecasting.py",
+      "bytes": 11022
+    },
+    {
+      "path": "code-transformer/exp.sh",
+      "sha256": "a221b6935d5438609f70895876f79510692bd4b31b18a87cb9003ca7394252d3",
+      "git_blob_sha": "50582534b95762648a43993c6cd7dea8f89cd16e",
+      "source_url": "https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code-transformer/exp.sh",
+      "bytes": 689
+    },
+    {
+      "path": "code-transformer/run.py",
+      "sha256": "cd2370879667e3f037bea0e3dbe9aa6d7795964e262bcf9e0ece5515a1dcdd09",
+      "git_blob_sha": "659e3c7fc12f24f07f965812b95ca5b17e17ecd1",
+      "source_url": "https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code-transformer/run.py",
+      "bytes": 8482
+    },
+    {
+      "path": "code-transformer/utils/metrics.py",
+      "sha256": "f5fecad9863b5b96e4d803040d25be2c7a78d4b3f40ade81b58d7359e81b22c9",
+      "git_blob_sha": "48761d523bc76199450276be6c4e6cea3f1166b4",
+      "source_url": "https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code-transformer/utils/metrics.py",
+      "bytes": 2536
+    },
+    {
+      "path": "readme.md",
+      "sha256": "3b05a73c4cb5e85492aeb655a9de5667246334ca24d7618419f1c25e91923494",
+      "git_blob_sha": "405490e2b86591d911ad565351f968a8c0f512a0",
+      "source_url": "https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/readme.md",
+      "bytes": 13742
+    }
+  ]
+}

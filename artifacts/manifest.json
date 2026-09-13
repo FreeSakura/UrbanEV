@@ -2,6 +2,33 @@
   "schema_version": "urbanev-evidence-artifact-manifest/v1",
   "tracked_files": [
     {
+      "path": "artifacts/summaries/benchmark_alignment_20260913/contract_probe.json",
+      "sha256": "24c2d538b95639ae88e80b411730b52033339c40990a63b5be218b03f4da8ddd",
+      "bytes": 19753,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/benchmark_alignment_20260913/recent_paper_metadata.json",
+      "sha256": "2a1c1ab41ab229a84a92a9ff6ac120cd0fcca8980bfa7c262245c67ccbbf7165",
+      "bytes": 3102,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/benchmark_alignment_20260913/upstream_source_manifest.json",
+      "sha256": "c208863519cbad040e3e06d56ca93db187757e9097f9651faf238dfe1103aae6",
+      "bytes": 4978,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/chronos2/CHRONOS2_QUALIFICATION_CELLS.csv",
       "sha256": "18a2f96ccd789736d5116eb777b7daec2e8fea4ee3412513e6606908a20d396d",
       "bytes": 6829,
@@ -1724,6 +1751,15 @@
       "path": "configs/research/SIGNAL_REPLICATION_V1.json",
       "sha256": "3eb967056ad1a8ab50562e8788f4e9fed27b940f1eee142cf4941a0a515a8787",
       "bytes": 2762,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "configs/research/URBANEV_COMPARISON_V2.json",
+      "sha256": "7f1a1b84f3092137cad80e246a40bb01616513a2ce2b6d7921393a8bae71abd6",
+      "bytes": 8421,
       "role": "configs",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",

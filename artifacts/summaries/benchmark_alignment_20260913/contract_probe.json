@@ -1,0 +1,718 @@
+{
+  "status": "PUBLIC_SOURCE_CONTRACT_PROBE_COMPLETE",
+  "upstream_commit": "44f2aa0c8d89f192bce00bafb0def74a21b39c68",
+  "real_data_reads": 0,
+  "model_fits": 0,
+  "foundation_inference": 0,
+  "actual_paper_run_reproduced": false,
+  "calendar_assumption": "Complete hourly calendar, not verified by opening dataset rows",
+  "rank_reversal_example": {
+    "terminal_H": {
+      "A": {
+        "target_scope": "terminal_H",
+        "postprocess": "raw",
+        "scored_values": 1,
+        "rmse": 0.0,
+        "mae": 0.0
+      },
+      "B": {
+        "target_scope": "terminal_H",
+        "postprocess": "raw",
+        "scored_values": 1,
+        "rmse": 0.3,
+        "mae": 0.3
+      }
+    },
+    "path_1_to_H": {
+      "A": {
+        "target_scope": "path_1_to_H",
+        "postprocess": "raw",
+        "scored_values": 3,
+        "rmse": 0.4898979485566356,
+        "mae": 0.39999999999999997
+      },
+      "B": {
+        "target_scope": "path_1_to_H",
+        "postprocess": "raw",
+        "scored_values": 3,
+        "rmse": 0.30000000000000004,
+        "mae": 0.3
+      }
+    }
+  },
+  "calendar_origin_contracts": [
+    {
+      "fold": 1,
+      "calendar_hours": 720,
+      "horizon": 3,
+      "source_launch_history": 12,
+      "classical_validation_stop": 648,
+      "transformer_validation_stop": 648,
+      "classical_validation_targets": {
+        "first_terminal_index": 590,
+        "last_terminal_index": 646,
+        "count": 57
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 578,
+        "last_terminal_index": 647,
+        "count": 70
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 662,
+        "last_terminal_index": 718,
+        "count": 57
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 650,
+        "last_terminal_index": 719,
+        "count": 70
+      }
+    },
+    {
+      "fold": 1,
+      "calendar_hours": 720,
+      "horizon": 6,
+      "source_launch_history": 12,
+      "classical_validation_stop": 648,
+      "transformer_validation_stop": 648,
+      "classical_validation_targets": {
+        "first_terminal_index": 593,
+        "last_terminal_index": 646,
+        "count": 54
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 581,
+        "last_terminal_index": 647,
+        "count": 67
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 665,
+        "last_terminal_index": 718,
+        "count": 54
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 653,
+        "last_terminal_index": 719,
+        "count": 67
+      }
+    },
+    {
+      "fold": 1,
+      "calendar_hours": 720,
+      "horizon": 9,
+      "source_launch_history": 12,
+      "classical_validation_stop": 648,
+      "transformer_validation_stop": 648,
+      "classical_validation_targets": {
+        "first_terminal_index": 596,
+        "last_terminal_index": 646,
+        "count": 51
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 584,
+        "last_terminal_index": 647,
+        "count": 64
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 668,
+        "last_terminal_index": 718,
+        "count": 51
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 656,
+        "last_terminal_index": 719,
+        "count": 64
+      }
+    },
+    {
+      "fold": 1,
+      "calendar_hours": 720,
+      "horizon": 12,
+      "source_launch_history": 12,
+      "classical_validation_stop": 648,
+      "transformer_validation_stop": 648,
+      "classical_validation_targets": {
+        "first_terminal_index": 599,
+        "last_terminal_index": 646,
+        "count": 48
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 587,
+        "last_terminal_index": 647,
+        "count": 61
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 671,
+        "last_terminal_index": 718,
+        "count": 48
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 659,
+        "last_terminal_index": 719,
+        "count": 61
+      }
+    },
+    {
+      "fold": 2,
+      "calendar_hours": 1464,
+      "horizon": 3,
+      "source_launch_history": 12,
+      "classical_validation_stop": 1317,
+      "transformer_validation_stop": 1318,
+      "classical_validation_targets": {
+        "first_terminal_index": 1185,
+        "last_terminal_index": 1315,
+        "count": 131
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 1173,
+        "last_terminal_index": 1317,
+        "count": 145
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 1331,
+        "last_terminal_index": 1462,
+        "count": 132
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 1320,
+        "last_terminal_index": 1463,
+        "count": 144
+      }
+    },
+    {
+      "fold": 2,
+      "calendar_hours": 1464,
+      "horizon": 6,
+      "source_launch_history": 12,
+      "classical_validation_stop": 1317,
+      "transformer_validation_stop": 1318,
+      "classical_validation_targets": {
+        "first_terminal_index": 1188,
+        "last_terminal_index": 1315,
+        "count": 128
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 1176,
+        "last_terminal_index": 1317,
+        "count": 142
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 1334,
+        "last_terminal_index": 1462,
+        "count": 129
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 1323,
+        "last_terminal_index": 1463,
+        "count": 141
+      }
+    },
+    {
+      "fold": 2,
+      "calendar_hours": 1464,
+      "horizon": 9,
+      "source_launch_history": 12,
+      "classical_validation_stop": 1317,
+      "transformer_validation_stop": 1318,
+      "classical_validation_targets": {
+        "first_terminal_index": 1191,
+        "last_terminal_index": 1315,
+        "count": 125
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 1179,
+        "last_terminal_index": 1317,
+        "count": 139
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 1337,
+        "last_terminal_index": 1462,
+        "count": 126
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 1326,
+        "last_terminal_index": 1463,
+        "count": 138
+      }
+    },
+    {
+      "fold": 2,
+      "calendar_hours": 1464,
+      "horizon": 12,
+      "source_launch_history": 12,
+      "classical_validation_stop": 1317,
+      "transformer_validation_stop": 1318,
+      "classical_validation_targets": {
+        "first_terminal_index": 1194,
+        "last_terminal_index": 1315,
+        "count": 122
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 1182,
+        "last_terminal_index": 1317,
+        "count": 136
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 1340,
+        "last_terminal_index": 1462,
+        "count": 123
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 1329,
+        "last_terminal_index": 1463,
+        "count": 135
+      }
+    },
+    {
+      "fold": 3,
+      "calendar_hours": 2184,
+      "horizon": 3,
+      "source_launch_history": 12,
+      "classical_validation_stop": 1965,
+      "transformer_validation_stop": 1966,
+      "classical_validation_targets": {
+        "first_terminal_index": 1761,
+        "last_terminal_index": 1963,
+        "count": 203
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 1749,
+        "last_terminal_index": 1965,
+        "count": 217
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 1979,
+        "last_terminal_index": 2182,
+        "count": 204
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 1968,
+        "last_terminal_index": 2183,
+        "count": 216
+      }
+    },
+    {
+      "fold": 3,
+      "calendar_hours": 2184,
+      "horizon": 6,
+      "source_launch_history": 12,
+      "classical_validation_stop": 1965,
+      "transformer_validation_stop": 1966,
+      "classical_validation_targets": {
+        "first_terminal_index": 1764,
+        "last_terminal_index": 1963,
+        "count": 200
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 1752,
+        "last_terminal_index": 1965,
+        "count": 214
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 1982,
+        "last_terminal_index": 2182,
+        "count": 201
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 1971,
+        "last_terminal_index": 2183,
+        "count": 213
+      }
+    },
+    {
+      "fold": 3,
+      "calendar_hours": 2184,
+      "horizon": 9,
+      "source_launch_history": 12,
+      "classical_validation_stop": 1965,
+      "transformer_validation_stop": 1966,
+      "classical_validation_targets": {
+        "first_terminal_index": 1767,
+        "last_terminal_index": 1963,
+        "count": 197
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 1755,
+        "last_terminal_index": 1965,
+        "count": 211
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 1985,
+        "last_terminal_index": 2182,
+        "count": 198
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 1974,
+        "last_terminal_index": 2183,
+        "count": 210
+      }
+    },
+    {
+      "fold": 3,
+      "calendar_hours": 2184,
+      "horizon": 12,
+      "source_launch_history": 12,
+      "classical_validation_stop": 1965,
+      "transformer_validation_stop": 1966,
+      "classical_validation_targets": {
+        "first_terminal_index": 1770,
+        "last_terminal_index": 1963,
+        "count": 194
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 1758,
+        "last_terminal_index": 1965,
+        "count": 208
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 1988,
+        "last_terminal_index": 2182,
+        "count": 195
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 1977,
+        "last_terminal_index": 2183,
+        "count": 207
+      }
+    },
+    {
+      "fold": 4,
+      "calendar_hours": 2928,
+      "horizon": 3,
+      "source_launch_history": 12,
+      "classical_validation_stop": 2634,
+      "transformer_validation_stop": 2636,
+      "classical_validation_targets": {
+        "first_terminal_index": 2356,
+        "last_terminal_index": 2632,
+        "count": 277
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 2344,
+        "last_terminal_index": 2635,
+        "count": 292
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 2648,
+        "last_terminal_index": 2926,
+        "count": 279
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 2638,
+        "last_terminal_index": 2927,
+        "count": 290
+      }
+    },
+    {
+      "fold": 4,
+      "calendar_hours": 2928,
+      "horizon": 6,
+      "source_launch_history": 12,
+      "classical_validation_stop": 2634,
+      "transformer_validation_stop": 2636,
+      "classical_validation_targets": {
+        "first_terminal_index": 2359,
+        "last_terminal_index": 2632,
+        "count": 274
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 2347,
+        "last_terminal_index": 2635,
+        "count": 289
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 2651,
+        "last_terminal_index": 2926,
+        "count": 276
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 2641,
+        "last_terminal_index": 2927,
+        "count": 287
+      }
+    },
+    {
+      "fold": 4,
+      "calendar_hours": 2928,
+      "horizon": 9,
+      "source_launch_history": 12,
+      "classical_validation_stop": 2634,
+      "transformer_validation_stop": 2636,
+      "classical_validation_targets": {
+        "first_terminal_index": 2362,
+        "last_terminal_index": 2632,
+        "count": 271
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 2350,
+        "last_terminal_index": 2635,
+        "count": 286
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 2654,
+        "last_terminal_index": 2926,
+        "count": 273
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 2644,
+        "last_terminal_index": 2927,
+        "count": 284
+      }
+    },
+    {
+      "fold": 4,
+      "calendar_hours": 2928,
+      "horizon": 12,
+      "source_launch_history": 12,
+      "classical_validation_stop": 2634,
+      "transformer_validation_stop": 2636,
+      "classical_validation_targets": {
+        "first_terminal_index": 2365,
+        "last_terminal_index": 2632,
+        "count": 268
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 2353,
+        "last_terminal_index": 2635,
+        "count": 283
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 2657,
+        "last_terminal_index": 2926,
+        "count": 270
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 2647,
+        "last_terminal_index": 2927,
+        "count": 281
+      }
+    },
+    {
+      "fold": 5,
+      "calendar_hours": 3672,
+      "horizon": 3,
+      "source_launch_history": 12,
+      "classical_validation_stop": 3304,
+      "transformer_validation_stop": 3305,
+      "classical_validation_targets": {
+        "first_terminal_index": 2951,
+        "last_terminal_index": 3302,
+        "count": 352
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 2939,
+        "last_terminal_index": 3304,
+        "count": 366
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 3318,
+        "last_terminal_index": 3670,
+        "count": 353
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 3307,
+        "last_terminal_index": 3671,
+        "count": 365
+      }
+    },
+    {
+      "fold": 5,
+      "calendar_hours": 3672,
+      "horizon": 6,
+      "source_launch_history": 12,
+      "classical_validation_stop": 3304,
+      "transformer_validation_stop": 3305,
+      "classical_validation_targets": {
+        "first_terminal_index": 2954,
+        "last_terminal_index": 3302,
+        "count": 349
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 2942,
+        "last_terminal_index": 3304,
+        "count": 363
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 3321,
+        "last_terminal_index": 3670,
+        "count": 350
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 3310,
+        "last_terminal_index": 3671,
+        "count": 362
+      }
+    },
+    {
+      "fold": 5,
+      "calendar_hours": 3672,
+      "horizon": 9,
+      "source_launch_history": 12,
+      "classical_validation_stop": 3304,
+      "transformer_validation_stop": 3305,
+      "classical_validation_targets": {
+        "first_terminal_index": 2957,
+        "last_terminal_index": 3302,
+        "count": 346
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 2945,
+        "last_terminal_index": 3304,
+        "count": 360
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 3324,
+        "last_terminal_index": 3670,
+        "count": 347
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 3313,
+        "last_terminal_index": 3671,
+        "count": 359
+      }
+    },
+    {
+      "fold": 5,
+      "calendar_hours": 3672,
+      "horizon": 12,
+      "source_launch_history": 12,
+      "classical_validation_stop": 3304,
+      "transformer_validation_stop": 3305,
+      "classical_validation_targets": {
+        "first_terminal_index": 2960,
+        "last_terminal_index": 3302,
+        "count": 343
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 2948,
+        "last_terminal_index": 3304,
+        "count": 357
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 3327,
+        "last_terminal_index": 3670,
+        "count": 344
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 3316,
+        "last_terminal_index": 3671,
+        "count": 356
+      }
+    },
+    {
+      "fold": 6,
+      "calendar_hours": 4344,
+      "horizon": 3,
+      "source_launch_history": 12,
+      "classical_validation_stop": 3909,
+      "transformer_validation_stop": 3910,
+      "classical_validation_targets": {
+        "first_terminal_index": 3489,
+        "last_terminal_index": 3907,
+        "count": 419
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 3477,
+        "last_terminal_index": 3909,
+        "count": 433
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 3923,
+        "last_terminal_index": 4342,
+        "count": 420
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 3912,
+        "last_terminal_index": 4343,
+        "count": 432
+      }
+    },
+    {
+      "fold": 6,
+      "calendar_hours": 4344,
+      "horizon": 6,
+      "source_launch_history": 12,
+      "classical_validation_stop": 3909,
+      "transformer_validation_stop": 3910,
+      "classical_validation_targets": {
+        "first_terminal_index": 3492,
+        "last_terminal_index": 3907,
+        "count": 416
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 3480,
+        "last_terminal_index": 3909,
+        "count": 430
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 3926,
+        "last_terminal_index": 4342,
+        "count": 417
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 3915,
+        "last_terminal_index": 4343,
+        "count": 429
+      }
+    },
+    {
+      "fold": 6,
+      "calendar_hours": 4344,
+      "horizon": 9,
+      "source_launch_history": 12,
+      "classical_validation_stop": 3909,
+      "transformer_validation_stop": 3910,
+      "classical_validation_targets": {
+        "first_terminal_index": 3495,
+        "last_terminal_index": 3907,
+        "count": 413
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 3483,
+        "last_terminal_index": 3909,
+        "count": 427
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 3929,
+        "last_terminal_index": 4342,
+        "count": 414
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 3918,
+        "last_terminal_index": 4343,
+        "count": 426
+      }
+    },
+    {
+      "fold": 6,
+      "calendar_hours": 4344,
+      "horizon": 12,
+      "source_launch_history": 12,
+      "classical_validation_stop": 3909,
+      "transformer_validation_stop": 3910,
+      "classical_validation_targets": {
+        "first_terminal_index": 3498,
+        "last_terminal_index": 3907,
+        "count": 410
+      },
+      "transformer_validation_targets": {
+        "first_terminal_index": 3486,
+        "last_terminal_index": 3909,
+        "count": 424
+      },
+      "classical_test_targets": {
+        "first_terminal_index": 3932,
+        "last_terminal_index": 4342,
+        "count": 411
+      },
+      "transformer_test_targets": {
+        "first_terminal_index": 3921,
+        "last_terminal_index": 4343,
+        "count": 423
+      }
+    }
+  ],
+  "interpretation": "Different prediction targets and origin populations can change ranking; this probe scores only two fixed illustrative arrays, never project predictions. No SOTA claim follows."
+}
