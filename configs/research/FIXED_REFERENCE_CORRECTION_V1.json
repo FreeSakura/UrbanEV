@@ -1,0 +1,304 @@
+{
+  "limits": {
+    "FIT": {
+      "occupancy.csv": 1056,
+      "duration.csv": 1043
+    },
+    "SELECT": {
+      "occupancy.csv": 1224,
+      "duration.csv": 1211
+    },
+    "PREDICT": {
+      "occupancy.csv": 1548,
+      "duration.csv": 1547
+    },
+    "SCORE": {
+      "occupancy.csv": 1560
+    }
+  },
+  "prefixes": {
+    "FIT": {
+      "occupancy.csv": {
+        "rows": 1056,
+        "sha256": "939339567e3935dbc390343623dcbb8f30e45e1c30259b12a748c938f123e4bd"
+      },
+      "duration.csv": {
+        "rows": 1043,
+        "sha256": "1e7cc3810fb4b11e1b59f06aa798793a0e8bc1493c04ac428bb7074b062ccf55"
+      }
+    },
+    "SELECT": {
+      "occupancy.csv": {
+        "rows": 1224,
+        "sha256": "4dd8eaa18bf1bc80575f86acba328f9946d326f4802c5f48e10eb6a872ebf8e1"
+      },
+      "duration.csv": {
+        "rows": 1211,
+        "sha256": "01d532a43434012d0447f0859d58a4ec86206d52227657c670e349a599a36c52"
+      }
+    },
+    "PREDICT": {
+      "occupancy.csv": {
+        "rows": 1548,
+        "sha256": "64145637b256e74991c3dca0cd227c3215f8313a4ea02a7408649306d964d2c2"
+      },
+      "duration.csv": {
+        "rows": 1547,
+        "sha256": "91535b3742ac389b3ac70c26563dfe88cad3f5149a7f359ad033c6d60a14a455"
+      }
+    },
+    "SCORE": {
+      "occupancy.csv": {
+        "rows": 1560,
+        "sha256": "40f3769bc207bb5411225c73ee7f174d194238b61ff71f07aa736dc26bc8bb02"
+      }
+    }
+  },
+  "static_info_sha256": "03c9830965e9e99b29adfb8cceed0eba98d37631f514273cb3fe61f80d63de7c",
+  "column_order_sha256": "3924066ec0c48a6636ee1738baa902c2a11ce93992c3fb4f98c24df785dcc649",
+  "select_origins": {
+    "start": 1056,
+    "stop_exclusive": 1213,
+    "stride": 12,
+    "count": 14
+  },
+  "eval_origins": {
+    "start": 1392,
+    "stop_exclusive": 1549,
+    "stride": 12,
+    "count": 14
+  },
+  "cache_files": [
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1392_h3.npy",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "sha256": "2b6c1a1790ad879adc24aa6eb9d021ce819a01777a7e3789ecad7df64e9a4964",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "native",
+      "file": "private_1392_h3_native_a1.npy",
+      "sha256": "a8870d582828961b80b010a679b8a03ecd0009b1075839ffd9fc64566c16ebf3",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1392_h12.npy",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "sha256": "e9e43f31a9a16f0882a4693dfb1d93e2b59514a235f055101fa02140d3279cf7",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "native",
+      "file": "private_1392_h12_native_a1.npy",
+      "sha256": "e01540b22a04d814f798f6a65370bdf9db69b13d5a4494d81a58e24b06455796",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    }
+  ],
+  "prior_public_scores_sha256": "40b68614207d25f75075164706a0ac1b1b2c5f529cd5ab8549a93c53f50b50e5",
+  "input": "O[o-168:o], D[o-169:o-1], sin/cos24/168 and log1pC; FIT-only population standardization; inactive std<=1e-10 max(1,abs(mean)) maps zero",
+  "device": "cuda:0 NVIDIA GeForce RTX 4060 Laptop GPU, no fallback",
+  "dtype": "neural float32; base and statistics float64 CPU2",
+  "deterministic_algorithms": true,
+  "cublas_workspace_config": ":4096:8",
+  "tf32": false,
+  "amp": false,
+  "torch_compile": false,
+  "protected_data": "tail [1560,1747), validation [1747,1966), test [1966,2184), Paris remain closed",
+  "development_status": "SELECT and DEV windows previously exposed, not independent confirmation",
+  "optimizer": "AdamW lr cosine .001 to .0001, betas .9/.999 eps1e-8; weights wd1e-4, bias0; foreachFalse fusedFalse; global grad clip1",
+  "learning_rate": "1e-4+(1e-3-1e-4)/2*(1+cos(pi*(epoch-1)/39))",
+  "shuffle": "default_rng(SeedSequence([seed,epoch])).permutation(149325); common all schemes",
+  "diagnostic_groups": "p<0.5/>=0.5 crossed with y[o-1]-y[o-25]<0/>=0; fixed prediction-time groups, no routing",
+  "protocol_id": "FIXED_REFERENCE_CORRECTION_V1_20260913",
+  "anchor_commit": "76b2e0d3eacf9e1f76966ff9320b1747d3df55ce",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "models": [
+    "FIXED_PRODUCT",
+    "FIXED_SEPARABLE",
+    "FIXED_CONCAT"
+  ],
+  "seeds": [
+    20260915,
+    20260916,
+    20260917
+  ],
+  "seed_interpretation": "registered paired seeds, not pooled with previous schemes",
+  "base_fixed": {
+    "origin_start": 169,
+    "origin_stop_exclusive": 457,
+    "origins": 288,
+    "rows": 79200,
+    "O_local_prefix": 468,
+    "D_local_prefix": 455,
+    "same_parameters_all_stages": true
+  },
+  "meta_blocks": [
+    [
+      480,
+      661
+    ],
+    [
+      672,
+      853
+    ],
+    [
+      864,
+      1045
+    ]
+  ],
+  "meta_origins": 543,
+  "meta_rows": 149325,
+  "ridge_full": {
+    "origin_start": 169,
+    "origin_stop_exclusive": 1045,
+    "rows": 240900,
+    "O_local_prefix": 1056,
+    "D_local_prefix": 1043,
+    "reference_only": true,
+    "additional_training_origins": 45
+  },
+  "base_ridge_fits": 2,
+  "linear_correction_fits": 1,
+  "deterministic_fit_order": [
+    "BASE_FIXED",
+    "LINEAR_REPAIR",
+    "RIDGE_FULL after9neural"
+  ],
+  "ridge_lambda": 0.01,
+  "intercept_penalized": false,
+  "normal_equation_tolerance": 1e-10,
+  "correction_standardization": "common M input population moments, separate from TA and TF",
+  "scale": "float64 RMS raw(Y-qA) over M and12 outputs, floor1e-6 before target float32 cast",
+  "linear_objective": "raw fixed-reference residual ridge, lambda .01, unpenalized intercept",
+  "neural_objective": "mean squared normalized residual error only",
+  "output": "qA64+s64*float64(f32)",
+  "neural_parameters": 9108,
+  "base_context": false,
+  "initialization": "original hidden Xavier seed+11/+13, zero bias and head",
+  "epochs": 40,
+  "batch_size": 4096,
+  "drop_last": false,
+  "checkpoints": [
+    0,
+    5,
+    10,
+    20,
+    40
+  ],
+  "steps_per_run": 1480,
+  "total_optimizer_steps": 13320,
+  "neural_training_runs": 9,
+  "frozen_epoch40_fit_evaluations": 9,
+  "frozen_fit_evaluation": "one complete M no-gradient forward per trained run, float64 difference of f32 and t32; not a training update",
+  "max_executions": 1,
+  "selection": "only SELECT raw4H terminal macro RMSE per model/seed; exacttiesearlierincl0; every scheme proceeds",
+  "mechanism": {
+    "origin_start": 1224,
+    "origin_stop_exclusive": 1381,
+    "stride": 12,
+    "origins": 14,
+    "labels": [
+      1224,
+      1392
+    ],
+    "fixed_epoch": 40,
+    "scope": "terminal_H",
+    "postprocess": "raw",
+    "scores": 48,
+    "no_checkpoint_or_base_selection": true
+  },
+  "mechanism_probe_is_selection_independent": true,
+  "independent_statistical_confirmation": false,
+  "all_predictions_frozen_before_evaluation_losses": true,
+  "refit": false,
+  "ensemble": false,
+  "best_seed_selection": false,
+  "old_private_model_reads": 0,
+  "new_foundation_inference": 0,
+  "alpha_searches": 0,
+  "hyperparameter_searches": 0,
+  "selection_score_rows": 720,
+  "deterministic_selection_score_rows": 48,
+  "dev_valid_score_rows": 200,
+  "dev_missing_score_rows": 8,
+  "dev_prediction_files": 24,
+  "mechanism_prediction_files": 12,
+  "std_ddof": 1,
+  "known_future_inputs": [],
+  "legacy_screening_thresholds_active": false,
+  "scientific_automatic_admission": false,
+  "sota_claim": false,
+  "automatic_next_round": false,
+  "automation_enabled": false,
+  "human_review_after_completion": true,
+  "code_sha256_lf": {
+    "scripts/research/run_long_history_source_ablation.py": "4c6a9d88dc19bb483f8896af57eaffacab14f6e6fedf8452b2d8445ab425a51c",
+    "src/urbanev_forecast/history_source.py": "314105318c0df02254b540471a991bdcaf9996a0b5252db030f6e55fdba4ba58",
+    "src/urbanev_forecast/short_state.py": "1ac322e99e59a26ea679c5463b43eed4fbc6a9bcca6073ca1f9534fc41d54bc5",
+    "src/urbanev_forecast/bounded_predictor_csv.py": "65bbd90f82a2adb59d02dfce573e6d0029a4d0ed65a392cc87efe1b94b0bf51d",
+    "src/urbanev_forecast/comparability_bridge.py": "4ed53ed3c290e71829acefd23e4d8201a86bffcc6964156ea9ce3b6ec433c9ec",
+    "src/urbanev_forecast/benchmark_metrics.py": "e959f4455d405f21a59187df248fe0accaaf8f963753a64b9659ca6be1946a9c",
+    "src/urbanev_forecast/conditional_od.py": "eb32d91ab6f9ff85d1bfd3650af643f4daad7b0a781ab1655226aecaffb0e0f8",
+    "src/urbanev_forecast/reference_harm.py": "8dfc9eb346e65a9d0143075bd361119c519199e0f16ab302a2683beea7aff286",
+    "src/urbanev_forecast/forward_residual_transfer.py": "06d8a2d9c0486ddc673a7e8db74ec11bdaa271434c696e433b751cc34986fac0",
+    "src/urbanev_forecast/fixed_reference_correction.py": "0a4c4c22b5127d867aaa7933d2c1ade8cdfcfb65320953f0b66ae1062e9332a0",
+    "scripts/research/run_fixed_reference_correction.py": "b88313b38a2444dd71b00df6aae5ca63c7dbcc4402613ed2e3737513a0cf2499"
+  },
+  "gpu_preflight": {
+    "status": "PASS_ARTIFICIAL_ONLY",
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "torch": "2.5.1+cu121",
+    "records": [
+      {
+        "scheme": "FIXED_PRODUCT",
+        "parameters": 9108,
+        "steps": 2,
+        "finite": true
+      },
+      {
+        "scheme": "FIXED_SEPARABLE",
+        "parameters": 9108,
+        "steps": 2,
+        "finite": true
+      },
+      {
+        "scheme": "FIXED_CONCAT",
+        "parameters": 9108,
+        "steps": 2,
+        "finite": true
+      }
+    ]
+  }
+}

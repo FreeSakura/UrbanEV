@@ -2477,6 +2477,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "configs/research/FIXED_REFERENCE_CORRECTION_V1.json",
+      "sha256": "5d01b5787c5e5496273b25728a22f681f227be48b2c4b2b383306a7b16ad2d96",
+      "bytes": 9691,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
       "path": "configs/research/FM_CALIBRATION_FOLD1_V1.json",
       "sha256": "ae27de96837bd070e83af80319439bd81f6798548cd95b0150d51eb8dfc5cceb",
       "bytes": 1498,
