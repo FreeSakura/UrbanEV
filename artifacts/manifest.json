@@ -1109,6 +1109,105 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/long_history_source_ablation_v1/development_scores.csv",
+      "sha256": "40b68614207d25f75075164706a0ac1b1b2c5f529cd5ab8549a93c53f50b50e5",
+      "bytes": 21059,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/long_history_source_ablation_v1/execution_receipt.json",
+      "sha256": "5fc72a0064fdb2e313b05a22a213e487ed106c7f16b1fe4ffc7f76dad36fdeef",
+      "bytes": 3737,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/long_history_source_ablation_v1/factorial_attribution.json",
+      "sha256": "384b29d1b87ee016a8f4a0ff060bf07eaa0104bdfc7f82c8d248e74eac174127",
+      "bytes": 5124,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/long_history_source_ablation_v1/feature_masks.json",
+      "sha256": "4c3553d6716d2f8e462b006fbafbb5e38d41a505125b36d9caa140b1ef41e0fc",
+      "bytes": 19033,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/long_history_source_ablation_v1/frozen_models.json",
+      "sha256": "c562057de449f442837fd03a92e93435dba003b1d2ac9e3db3a68918140f01db",
+      "bytes": 3641,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/long_history_source_ablation_v1/loss_contributions.json",
+      "sha256": "94c9b3b0d37373bedf20344cb87fa4c8b14ba56b16bfb7c423ef589d30a197d7",
+      "bytes": 281633,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/long_history_source_ablation_v1/paired_origin_errors.csv",
+      "sha256": "1e34549d93729b9cf88ef158b3575c932a3df07491589990abcf2d289b3cb0f2",
+      "bytes": 499274,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "sha256": "f546eb3e955cbd203b3cfe8a5f121d246713f8bb3b286b39e726b2fc6131bcf9",
+      "bytes": 7560,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/long_history_source_ablation_v1/result_interpretation.json",
+      "sha256": "352afdb2617a10e9e51ebae07ba60184ce2712453b347b6c7b8339f2f14e3e66",
+      "bytes": 4926,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/long_history_source_ablation_v1/summary.json",
+      "sha256": "74fb53fb7928d43be95f151d7150b6983e884da8ae201d3f8af4b29533a97085",
+      "bytes": 13894,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/long_history_source_ablation_v1/verification.json",
+      "sha256": "f4ab5192343b2408b01b5edff973a788f87d09808d07078c7c024edffc470722",
+      "bytes": 381,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/paired_audit_v3/protocol_receipt.json",
       "sha256": "c96cb5f3497331bd2ade8cd08f94d527eda75b2a258ccdfdc1b2bccaf09b79a1",
       "bytes": 676,

@@ -1,0 +1,9 @@
+{
+  "old_anchor_score_max_error": 2.636779683484747e-16,
+  "loss_reduction_max_error": 3.122502256758253e-17,
+  "factorial_or_loss_identity_max_error": 2.883977778811442e-16,
+  "normal_equation_max_relative_residual": 3.94348076740852e-17,
+  "old_private_weights_or_predictions_read": 0,
+  "native_arrays_read": 0,
+  "deterministic_refits_are_not_independent_replications": true
+}

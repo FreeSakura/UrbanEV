@@ -1,0 +1,521 @@
+{
+  "rows": [
+    {
+      "stage": "SELECT",
+      "model": "S",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11380487324658739,
+      "macro_mae": 0.0785495642997001
+    },
+    {
+      "stage": "SELECT",
+      "model": "S",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.0955679498482764,
+      "macro_mae": 0.059127818341536104
+    },
+    {
+      "stage": "SELECT",
+      "model": "S",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11380476134286474,
+      "macro_mae": 0.07854950446608604
+    },
+    {
+      "stage": "SELECT",
+      "model": "S",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.09556787274856071,
+      "macro_mae": 0.05912777679041523
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08220167331821346,
+      "macro_mae": 0.05244568978451283
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07352625370368143,
+      "macro_mae": 0.04400061194379356
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08219340411641396,
+      "macro_mae": 0.052430381511995056
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07351697964681325,
+      "macro_mae": 0.04397843340277092
+    },
+    {
+      "stage": "SELECT",
+      "model": "D_LONG",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08452997348364373,
+      "macro_mae": 0.053236976382130666
+    },
+    {
+      "stage": "SELECT",
+      "model": "D_LONG",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07510242295817202,
+      "macro_mae": 0.04385346562739118
+    },
+    {
+      "stage": "SELECT",
+      "model": "D_LONG",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.0845185794592913,
+      "macro_mae": 0.05322095691889016
+    },
+    {
+      "stage": "SELECT",
+      "model": "D_LONG",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07508078995700063,
+      "macro_mae": 0.04383488689136774
+    },
+    {
+      "stage": "SELECT",
+      "model": "OD_LONG",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08142685624896802,
+      "macro_mae": 0.05170774614339457
+    },
+    {
+      "stage": "SELECT",
+      "model": "OD_LONG",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07210682098042341,
+      "macro_mae": 0.0429238723001787
+    },
+    {
+      "stage": "SELECT",
+      "model": "OD_LONG",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08142395053066231,
+      "macro_mae": 0.051695921296532735
+    },
+    {
+      "stage": "SELECT",
+      "model": "OD_LONG",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.0720923795976906,
+      "macro_mae": 0.04289921639157708
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_D24",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08145113451945749,
+      "macro_mae": 0.052044921547474136
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_D24",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07230374198467422,
+      "macro_mae": 0.043361604732177025
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_D24",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.0814460030832137,
+      "macro_mae": 0.052030976726600724
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_D24",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07229757761130096,
+      "macro_mae": 0.04333911649307702
+    },
+    {
+      "stage": "SELECT",
+      "model": "O24_D_LONG",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08162389420605831,
+      "macro_mae": 0.05174269666049543
+    },
+    {
+      "stage": "SELECT",
+      "model": "O24_D_LONG",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07219231535894574,
+      "macro_mae": 0.04288844549956554
+    },
+    {
+      "stage": "SELECT",
+      "model": "O24_D_LONG",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08162083615893871,
+      "macro_mae": 0.05173144882575549
+    },
+    {
+      "stage": "SELECT",
+      "model": "O24_D_LONG",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07217964135720258,
+      "macro_mae": 0.04286591516798609
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_D0",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08223887126298854,
+      "macro_mae": 0.052415318283110086
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_D0",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07355953728728176,
+      "macro_mae": 0.044006000002698005
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_D0",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08222790364251589,
+      "macro_mae": 0.05239816399686857
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_D0",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07354933913606446,
+      "macro_mae": 0.04398366962418347
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_DUP",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08219773988062341,
+      "macro_mae": 0.05243743838259077
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_DUP",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07350509827253351,
+      "macro_mae": 0.043985019898632335
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_DUP",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.08218869285458796,
+      "macro_mae": 0.05242154353372057
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_DUP",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.07349424457568153,
+      "macro_mae": 0.04396204418039598
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "S",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.13172598979721112,
+      "macro_mae": 0.08875489700869756
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "S",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.12858921065814044,
+      "macro_mae": 0.07746589167944917
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "S",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.13172598979721112,
+      "macro_mae": 0.08875489700869756
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "S",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.12858921065814044,
+      "macro_mae": 0.07746589167944917
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O_LONG",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11549570716429047,
+      "macro_mae": 0.07253681990798397
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O_LONG",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11548567339183251,
+      "macro_mae": 0.0668442413376984
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O_LONG",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11549271725201903,
+      "macro_mae": 0.0725259764334818
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O_LONG",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11547723958316428,
+      "macro_mae": 0.06682771908871828
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "D_LONG",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11559944340443334,
+      "macro_mae": 0.06849952138853892
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "D_LONG",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11741737507507322,
+      "macro_mae": 0.06398757715556325
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "D_LONG",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11553186492175571,
+      "macro_mae": 0.06843916293632327
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "D_LONG",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11738178611177322,
+      "macro_mae": 0.06393756604336598
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "OD_LONG",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11114679530313792,
+      "macro_mae": 0.06849459515196628
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "OD_LONG",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.1129239978966311,
+      "macro_mae": 0.06382211189926876
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "OD_LONG",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11114439957895435,
+      "macro_mae": 0.06848363560309487
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "OD_LONG",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11292099965319902,
+      "macro_mae": 0.0638056181212632
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O_LONG_D24",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11233124723624426,
+      "macro_mae": 0.07028140411728276
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O_LONG_D24",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11317923384128192,
+      "macro_mae": 0.06478346548477816
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O_LONG_D24",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11232818087221152,
+      "macro_mae": 0.07027117542901387
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O_LONG_D24",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11317442153601519,
+      "macro_mae": 0.06475541202527178
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O24_D_LONG",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11622899412303112,
+      "macro_mae": 0.06991721697652156
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O24_D_LONG",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11671004218454255,
+      "macro_mae": 0.06455190628292398
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O24_D_LONG",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11622521767710726,
+      "macro_mae": 0.069880530363294
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O24_D_LONG",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11670474370364027,
+      "macro_mae": 0.06450705166902833
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O_LONG_D0",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11524067386879448,
+      "macro_mae": 0.07253438429798494
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O_LONG_D0",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11551224576649989,
+      "macro_mae": 0.06678857273577055
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O_LONG_D0",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11523836949827489,
+      "macro_mae": 0.07252399606377466
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O_LONG_D0",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11550441692812113,
+      "macro_mae": 0.06677237755006678
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O_LONG_DUP",
+      "postprocess": "raw",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11555970112799926,
+      "macro_mae": 0.0725758782336227
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O_LONG_DUP",
+      "postprocess": "raw",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.1155070186891886,
+      "macro_mae": 0.06685158008160035
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O_LONG_DUP",
+      "postprocess": "clip_0_1",
+      "target_scope": "terminal_H",
+      "macro_rmse": 0.11555651340429833,
+      "macro_mae": 0.07256459632776664
+    },
+    {
+      "stage": "DEV_EVAL",
+      "model": "O_LONG_DUP",
+      "postprocess": "clip_0_1",
+      "target_scope": "path_1_to_H",
+      "macro_rmse": 0.11549774260594951,
+      "macro_mae": 0.066833449344928
+    }
+  ],
+  "primary": "OD_LONG vs O_LONG; raw four-H endpoint macro RMSE",
+  "selection_action": "NONE_FIXED_ABLATIONS",
+  "uncertainty": "Descriptive exposed-development results; no independent confirmation or significance claim",
+  "scientific_automatic_admission": false,
+  "sota_claim": false
+}

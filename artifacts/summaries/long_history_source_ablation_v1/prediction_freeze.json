@@ -1,0 +1,231 @@
+{
+  "frozen_models_sha256": "c562057de449f442837fd03a92e93435dba003b1d2ac9e3db3a68918140f01db",
+  "predictions": [
+    {
+      "stage": "SELECT",
+      "model": "S",
+      "postprocess": "raw",
+      "file": "private_SELECT_S_raw.npy",
+      "sha256": "a77199c62457091ce6e3636fad5f3b31fdc704f633185e40123437d8ebb79030"
+    },
+    {
+      "stage": "SELECT",
+      "model": "S",
+      "postprocess": "clip_0_1",
+      "file": "private_SELECT_S_clip_0_1.npy",
+      "sha256": "f19d997e6fa7ef6c8e22cf390a086aedf14ae6df938c0f397a1c9125ed26b78e"
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG",
+      "postprocess": "raw",
+      "file": "private_SELECT_O_LONG_raw.npy",
+      "sha256": "0b33f14fbd164ca54adb0a53f60ec2c7d843acfe3eb65b83b67688388723c24c"
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG",
+      "postprocess": "clip_0_1",
+      "file": "private_SELECT_O_LONG_clip_0_1.npy",
+      "sha256": "61d352b20681f0814560cf1a586283b7fc438c73e4c1e0f1f08503f1c9c8bed2"
+    },
+    {
+      "stage": "SELECT",
+      "model": "D_LONG",
+      "postprocess": "raw",
+      "file": "private_SELECT_D_LONG_raw.npy",
+      "sha256": "1dc97b23ef2d592edd4b9433c140cbebd6b5d61ee8a533188b4bbc864b14eb7a"
+    },
+    {
+      "stage": "SELECT",
+      "model": "D_LONG",
+      "postprocess": "clip_0_1",
+      "file": "private_SELECT_D_LONG_clip_0_1.npy",
+      "sha256": "80dc789caaaba87682b776cb59f588150b7a95cfa7e23bee7591d92c38293fad"
+    },
+    {
+      "stage": "SELECT",
+      "model": "OD_LONG",
+      "postprocess": "raw",
+      "file": "private_SELECT_OD_LONG_raw.npy",
+      "sha256": "ada8e8c816a6741cf2664bb8ad4066180be143e53045aabc964b97ab8f3e241b"
+    },
+    {
+      "stage": "SELECT",
+      "model": "OD_LONG",
+      "postprocess": "clip_0_1",
+      "file": "private_SELECT_OD_LONG_clip_0_1.npy",
+      "sha256": "0cc4ee0f06308d324bdab790d7ad9b22827b49fe0582cf0b1c44671d737b15c6"
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_D24",
+      "postprocess": "raw",
+      "file": "private_SELECT_O_LONG_D24_raw.npy",
+      "sha256": "91d1c1125a13e8c312b3e8d5c65627c1c433ceda6e9704d3862fed230638a6c4"
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_D24",
+      "postprocess": "clip_0_1",
+      "file": "private_SELECT_O_LONG_D24_clip_0_1.npy",
+      "sha256": "4c76a3a5f2c534f7e8ab2cf309ef550f3b453cf3482f3ce97ef689436b501a0b"
+    },
+    {
+      "stage": "SELECT",
+      "model": "O24_D_LONG",
+      "postprocess": "raw",
+      "file": "private_SELECT_O24_D_LONG_raw.npy",
+      "sha256": "6477cbdb2cf3e27ce06d963cec0553383575e08fd981d3f345719f5864e2dd21"
+    },
+    {
+      "stage": "SELECT",
+      "model": "O24_D_LONG",
+      "postprocess": "clip_0_1",
+      "file": "private_SELECT_O24_D_LONG_clip_0_1.npy",
+      "sha256": "73623b8c08a3f96ce0bef0915a37d8c58be86271816a652fc15d55aec0495a8b"
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_D0",
+      "postprocess": "raw",
+      "file": "private_SELECT_O_LONG_D0_raw.npy",
+      "sha256": "5e1b0c6c9e33f445b545abc456d87ce600a7067eb598ef26ff0c218e9a46b4f2"
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_D0",
+      "postprocess": "clip_0_1",
+      "file": "private_SELECT_O_LONG_D0_clip_0_1.npy",
+      "sha256": "9a196af9de50582b60843bd6f2988b2646c29297748a04c6b919e4af369e720a"
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_DUP",
+      "postprocess": "raw",
+      "file": "private_SELECT_O_LONG_DUP_raw.npy",
+      "sha256": "8144bb041eac88c766669caa11ad323d2c9a20ba35952da7d9db97be2ed37d6a"
+    },
+    {
+      "stage": "SELECT",
+      "model": "O_LONG_DUP",
+      "postprocess": "clip_0_1",
+      "file": "private_SELECT_O_LONG_DUP_clip_0_1.npy",
+      "sha256": "0fb8d9f57093d0d3a0d6a1fd483c4be81d764bfa54bc2414b9fc4187eeaa3787"
+    },
+    {
+      "stage": "PREDICT",
+      "model": "S",
+      "postprocess": "raw",
+      "file": "private_PREDICT_S_raw.npy",
+      "sha256": "8ad4463d1f60cd935ab0d78c614d2ee3cac21e745041df712873e4c078b1071e"
+    },
+    {
+      "stage": "PREDICT",
+      "model": "S",
+      "postprocess": "clip_0_1",
+      "file": "private_PREDICT_S_clip_0_1.npy",
+      "sha256": "8ad4463d1f60cd935ab0d78c614d2ee3cac21e745041df712873e4c078b1071e"
+    },
+    {
+      "stage": "PREDICT",
+      "model": "O_LONG",
+      "postprocess": "raw",
+      "file": "private_PREDICT_O_LONG_raw.npy",
+      "sha256": "30d548de3bc91af5cb85b3dd9edc52300ef536da76549eb81b6c5f49e4997e9f"
+    },
+    {
+      "stage": "PREDICT",
+      "model": "O_LONG",
+      "postprocess": "clip_0_1",
+      "file": "private_PREDICT_O_LONG_clip_0_1.npy",
+      "sha256": "87cb9e41be50f66bb9b7cf1bc8c4fb8737bec42b7d9c2b473d5ba18c5092f880"
+    },
+    {
+      "stage": "PREDICT",
+      "model": "D_LONG",
+      "postprocess": "raw",
+      "file": "private_PREDICT_D_LONG_raw.npy",
+      "sha256": "261b24167df9bd406279d24f2c0ea5ee652c38567bcb13b0dcecf19b9eeb0587"
+    },
+    {
+      "stage": "PREDICT",
+      "model": "D_LONG",
+      "postprocess": "clip_0_1",
+      "file": "private_PREDICT_D_LONG_clip_0_1.npy",
+      "sha256": "e2eb5ebc72b4dae7db80f825fa3ad2d9661600b715de0ad117b17f587137d474"
+    },
+    {
+      "stage": "PREDICT",
+      "model": "OD_LONG",
+      "postprocess": "raw",
+      "file": "private_PREDICT_OD_LONG_raw.npy",
+      "sha256": "3d4744d694af3a42c883344aa66608c668d185f5c83e6261716f1de132ee6b44"
+    },
+    {
+      "stage": "PREDICT",
+      "model": "OD_LONG",
+      "postprocess": "clip_0_1",
+      "file": "private_PREDICT_OD_LONG_clip_0_1.npy",
+      "sha256": "15ec64f0ccc2401f1b992814c87687153cceaba2054c85faaa1edec3a5f81cfb"
+    },
+    {
+      "stage": "PREDICT",
+      "model": "O_LONG_D24",
+      "postprocess": "raw",
+      "file": "private_PREDICT_O_LONG_D24_raw.npy",
+      "sha256": "1bfac7ada8b61d8b25b1ea72abd1eeab2ddbb42ca2123b769fca2f431801fb3f"
+    },
+    {
+      "stage": "PREDICT",
+      "model": "O_LONG_D24",
+      "postprocess": "clip_0_1",
+      "file": "private_PREDICT_O_LONG_D24_clip_0_1.npy",
+      "sha256": "e12d60cf76d092807b27a0b4045ae72e814853410bc2c1000c161862bad24eb6"
+    },
+    {
+      "stage": "PREDICT",
+      "model": "O24_D_LONG",
+      "postprocess": "raw",
+      "file": "private_PREDICT_O24_D_LONG_raw.npy",
+      "sha256": "1238f482bfc021e05dad6487d9ff07b685baab0f9c2408d9b0d07fad89a5ac5f"
+    },
+    {
+      "stage": "PREDICT",
+      "model": "O24_D_LONG",
+      "postprocess": "clip_0_1",
+      "file": "private_PREDICT_O24_D_LONG_clip_0_1.npy",
+      "sha256": "effc4ef5a18cb5970a9e27750d3f8bc3581278f3d01dd6b86d60019244d243f1"
+    },
+    {
+      "stage": "PREDICT",
+      "model": "O_LONG_D0",
+      "postprocess": "raw",
+      "file": "private_PREDICT_O_LONG_D0_raw.npy",
+      "sha256": "600795b5044ce0320a9f28a93d003cf30510e99ebf939c2328be7cd589a78e17"
+    },
+    {
+      "stage": "PREDICT",
+      "model": "O_LONG_D0",
+      "postprocess": "clip_0_1",
+      "file": "private_PREDICT_O_LONG_D0_clip_0_1.npy",
+      "sha256": "8f1b689b822998afcf7b9ed6f58c042e9a65338a077412b17a599e36a443b0c1"
+    },
+    {
+      "stage": "PREDICT",
+      "model": "O_LONG_DUP",
+      "postprocess": "raw",
+      "file": "private_PREDICT_O_LONG_DUP_raw.npy",
+      "sha256": "d942bb3e686b026492a7ccbd13260759798121208d38ed9a86ebd847ebec6094"
+    },
+    {
+      "stage": "PREDICT",
+      "model": "O_LONG_DUP",
+      "postprocess": "clip_0_1",
+      "file": "private_PREDICT_O_LONG_DUP_clip_0_1.npy",
+      "sha256": "0ec090455e79ff18ddfd636650b0850c7bccf07aacec73a67159d6fa61aebe0b"
+    }
+  ],
+  "dev_predictions_before_final_score_prefix": 16,
+  "rolling_history_available": true
+}

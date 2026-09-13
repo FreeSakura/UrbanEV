@@ -1,0 +1,166 @@
+{
+  "contrasts": [
+    {
+      "stage": "SELECT",
+      "candidate": "OD_LONG",
+      "reference": "O_LONG",
+      "rmse_change_percent": -0.9425806531285774,
+      "mae_change_percent": -1.4070625139078197,
+      "origin_horizon_cells": 56,
+      "mse_better_cells": 41,
+      "mae_better_cells": 41
+    },
+    {
+      "stage": "SELECT",
+      "candidate": "OD_LONG",
+      "reference": "O_LONG_DUP",
+      "rmse_change_percent": -0.9378404233193693,
+      "mae_change_percent": -1.391548217653693,
+      "origin_horizon_cells": 56,
+      "mse_better_cells": 41,
+      "mae_better_cells": 42
+    },
+    {
+      "stage": "SELECT",
+      "candidate": "O_LONG_D24",
+      "reference": "O_LONG",
+      "rmse_change_percent": -0.9130456454950031,
+      "mae_change_percent": -0.764158577540619,
+      "origin_horizon_cells": 56,
+      "mse_better_cells": 35,
+      "mae_better_cells": 40
+    },
+    {
+      "stage": "SELECT",
+      "candidate": "OD_LONG",
+      "reference": "O_LONG_D24",
+      "rmse_change_percent": -0.029807160615624717,
+      "mae_change_percent": -0.6478545726541274,
+      "origin_horizon_cells": 56,
+      "mse_better_cells": 28,
+      "mae_better_cells": 43
+    },
+    {
+      "stage": "SELECT",
+      "candidate": "O24_D_LONG",
+      "reference": "D_LONG",
+      "rmse_change_percent": -3.43792758689051,
+      "mae_change_percent": -2.8068455858751618,
+      "origin_horizon_cells": 56,
+      "mse_better_cells": 47,
+      "mae_better_cells": 47
+    },
+    {
+      "stage": "SELECT",
+      "candidate": "OD_LONG",
+      "reference": "O24_D_LONG",
+      "rmse_change_percent": -0.24139739840501884,
+      "mae_change_percent": -0.06754676380741342,
+      "origin_horizon_cells": 56,
+      "mse_better_cells": 26,
+      "mae_better_cells": 29
+    },
+    {
+      "stage": "SELECT",
+      "candidate": "O_LONG",
+      "reference": "O_LONG_D0",
+      "rmse_change_percent": -0.045231584777138956,
+      "mae_change_percent": 0.05794394157583316,
+      "origin_horizon_cells": 56,
+      "mse_better_cells": 30,
+      "mae_better_cells": 29
+    },
+    {
+      "stage": "SELECT",
+      "candidate": "O_LONG_DUP",
+      "reference": "O_LONG",
+      "rmse_change_percent": -0.00478510647200503,
+      "mae_change_percent": -0.01573323176026209,
+      "origin_horizon_cells": 56,
+      "mse_better_cells": 32,
+      "mae_better_cells": 34
+    },
+    {
+      "stage": "DEV_EVAL",
+      "candidate": "OD_LONG",
+      "reference": "O_LONG",
+      "rmse_change_percent": -3.7654316060131143,
+      "mae_change_percent": -5.572652290444246,
+      "origin_horizon_cells": 56,
+      "mse_better_cells": 35,
+      "mae_better_cells": 30
+    },
+    {
+      "stage": "DEV_EVAL",
+      "candidate": "OD_LONG",
+      "reference": "O_LONG_DUP",
+      "rmse_change_percent": -3.8187238127012857,
+      "mae_change_percent": -5.623470471164982,
+      "origin_horizon_cells": 56,
+      "mse_better_cells": 35,
+      "mae_better_cells": 31
+    },
+    {
+      "stage": "DEV_EVAL",
+      "candidate": "O_LONG_D24",
+      "reference": "O_LONG",
+      "rmse_change_percent": -2.7398939802540268,
+      "mae_change_percent": -3.109339220498364,
+      "origin_horizon_cells": 56,
+      "mse_better_cells": 41,
+      "mae_better_cells": 40
+    },
+    {
+      "stage": "DEV_EVAL",
+      "candidate": "OD_LONG",
+      "reference": "O_LONG_D24",
+      "rmse_change_percent": -1.0544278304106314,
+      "mae_change_percent": -2.5423637842162727,
+      "origin_horizon_cells": 56,
+      "mse_better_cells": 30,
+      "mae_better_cells": 26
+    },
+    {
+      "stage": "DEV_EVAL",
+      "candidate": "O24_D_LONG",
+      "reference": "D_LONG",
+      "rmse_change_percent": 0.5445966693760296,
+      "mae_change_percent": 2.069643056250392,
+      "origin_horizon_cells": 56,
+      "mse_better_cells": 35,
+      "mae_better_cells": 28
+    },
+    {
+      "stage": "DEV_EVAL",
+      "candidate": "OD_LONG",
+      "reference": "O24_D_LONG",
+      "rmse_change_percent": -4.372574036486599,
+      "mae_change_percent": -2.034723185611076,
+      "origin_horizon_cells": 56,
+      "mse_better_cells": 37,
+      "mae_better_cells": 35
+    },
+    {
+      "stage": "DEV_EVAL",
+      "candidate": "O_LONG",
+      "reference": "O_LONG_D0",
+      "rmse_change_percent": 0.22130493248100347,
+      "mae_change_percent": 0.003357869543663128,
+      "origin_horizon_cells": 56,
+      "mse_better_cells": 28,
+      "mae_better_cells": 29
+    },
+    {
+      "stage": "DEV_EVAL",
+      "candidate": "O_LONG_DUP",
+      "reference": "O_LONG",
+      "rmse_change_percent": 0.05540808856017154,
+      "mae_change_percent": 0.05384620622779224,
+      "origin_horizon_cells": 56,
+      "mse_better_cells": 16,
+      "mae_better_cells": 18
+    }
+  ],
+  "public_only_check_max_error": 1.9081958235744878e-17,
+  "interpretation": "Negative relative change is lower error; origin-horizon counts overlap and are not independent sample sizes; no p-values or causal effects"
+}

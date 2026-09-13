@@ -1,0 +1,140 @@
+{
+  "protocol_id": "LONG_HISTORY_SOURCE_ABLATION_V1_20260913",
+  "config_sha256": "7404cd7d0d2105205ef079bc47dc45c82158d19cc63ae06c50eea52c9f7be3cf",
+  "frozen_code_commit": "99bb1637276c842d4f545493c5f47dd278823585",
+  "stage_reads": [
+    {
+      "stage": "FIT",
+      "file": "inf.csv",
+      "columns": [
+        "station_id",
+        "TAZID",
+        "charge_count"
+      ],
+      "rule": "groupby TAZID sum"
+    },
+    {
+      "stage": "FIT",
+      "file": "occupancy.csv",
+      "rows": 1056,
+      "columns": 275,
+      "prefix_sha256": "939339567e3935dbc390343623dcbb8f30e45e1c30259b12a748c938f123e4bd",
+      "numeric_row_range": [
+        0,
+        1056
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "FIT",
+      "file": "duration.csv",
+      "rows": 1043,
+      "columns": 275,
+      "prefix_sha256": "1e7cc3810fb4b11e1b59f06aa798793a0e8bc1493c04ac428bb7074b062ccf55",
+      "numeric_row_range": [
+        0,
+        1043
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "SELECT",
+      "file": "occupancy.csv",
+      "rows": 1224,
+      "columns": 275,
+      "prefix_sha256": "4dd8eaa18bf1bc80575f86acba328f9946d326f4802c5f48e10eb6a872ebf8e1",
+      "numeric_row_range": [
+        0,
+        1224
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "SELECT",
+      "file": "duration.csv",
+      "rows": 1211,
+      "columns": 275,
+      "prefix_sha256": "01d532a43434012d0447f0859d58a4ec86206d52227657c670e349a599a36c52",
+      "numeric_row_range": [
+        0,
+        1211
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "PREDICT",
+      "file": "occupancy.csv",
+      "rows": 1548,
+      "columns": 275,
+      "prefix_sha256": "64145637b256e74991c3dca0cd227c3215f8313a4ea02a7408649306d964d2c2",
+      "numeric_row_range": [
+        0,
+        1548
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "PREDICT",
+      "file": "duration.csv",
+      "rows": 1547,
+      "columns": 275,
+      "prefix_sha256": "91535b3742ac389b3ac70c26563dfe88cad3f5149a7f359ad033c6d60a14a455",
+      "numeric_row_range": [
+        0,
+        1547
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "SCORE",
+      "file": "occupancy.csv",
+      "rows": 1560,
+      "columns": 275,
+      "prefix_sha256": "40f3769bc207bb5411225c73ee7f174d194238b61ff71f07aa736dc26bc8bb02",
+      "numeric_row_range": [
+        0,
+        1560
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    }
+  ],
+  "ridge_fits_started": 8,
+  "ridge_fits_completed": 8,
+  "executions": 1,
+  "device": "CPU",
+  "threads": 2,
+  "dtype": "float64",
+  "numpy_version": "2.2.6",
+  "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "selection_action": "NONE_FIXED_ABLATIONS",
+  "neural_training_runs": 0,
+  "new_foundation_inference": 0,
+  "alpha_searches": 0,
+  "hyperparameter_searches": 0,
+  "old_private_array_reads": 0,
+  "automatic_next_round": false,
+  "automation_enabled": false,
+  "human_review_required": true,
+  "status": "LONG_HISTORY_ABLATION_COMPLETE_REVIEW_REQUIRED",
+  "training_closed": true,
+  "fit_origins": 876,
+  "training_rows": 240900,
+  "select_origins": 14,
+  "dev_origins": 14,
+  "score_rows": 256,
+  "loss_contrast_rows": 384,
+  "paired_origin_rows": 5376,
+  "max_target_index": 1559,
+  "max_duration_index": 1546,
+  "scientific_automatic_admission": false,
+  "sota_claim": false,
+  "elapsed_seconds": 67.99255369999446,
+  "peak_memory": "NOT_MEASURED"
+}

@@ -1,0 +1,129 @@
+{
+  "results": [
+    {
+      "stage": "SELECT",
+      "postprocess": "raw",
+      "quantity": "equal mean of four endpoint MSEs, not square of macro RMSE",
+      "mse": {
+        "S": 0.013502945069881667,
+        "O_LONG": 0.0068178025770311455,
+        "D_LONG": 0.0072230227207366405,
+        "OD_LONG": 0.006697507273862121,
+        "O_LONG_D24": 0.006702620055969549,
+        "O24_D_LONG": 0.0067302697527183725,
+        "O_LONG_D0": 0.006824706666686179,
+        "O_LONG_DUP": 0.006817381173862181
+      },
+      "gains": {
+        "O_given_short": 0.0066851424928505215,
+        "D_given_short": 0.0062799223491450265,
+        "D_given_longO": 0.0001202953031690249,
+        "O_given_longD": 0.0005255154468745199,
+        "total": 0.006805437796019546,
+        "interaction_J": -0.006159627045976002,
+        "D_1_to_24_given_longO": 0.00011518252106159678,
+        "D_24_to_168_given_longO": 5.112782107428125e-06,
+        "O_2_to_24_given_longD": 0.0004927529680182679,
+        "O_24_to_168_given_longD": 3.276247885625194e-05,
+        "single_D_given_longO": 6.904089655033682e-06,
+        "duplicate_O_effect": 4.2140316896480817e-07,
+        "true_D_vs_duplicate_O": 0.0001198739000000601,
+        "path_identity_max_error": 0.0
+      }
+    },
+    {
+      "stage": "SELECT",
+      "postprocess": "clip_0_1",
+      "quantity": "equal mean of four endpoint MSEs, not square of macro RMSE",
+      "mse": {
+        "S": 0.01350292507021011,
+        "O_LONG": 0.006816445292735389,
+        "D_LONG": 0.007221087290228847,
+        "OD_LONG": 0.00669701513877032,
+        "O_LONG_D24": 0.00670176605303878,
+        "O24_D_LONG": 0.00672974675141378,
+        "O_LONG_D0": 0.006822888268223725,
+        "O_LONG_DUP": 0.006815903450829896
+      },
+      "gains": {
+        "O_given_short": 0.00668647977747472,
+        "D_given_short": 0.006281837779981262,
+        "D_given_longO": 0.00011943015396506922,
+        "O_given_longD": 0.0005240721514585276,
+        "total": 0.00680590993143979,
+        "interaction_J": -0.006162407626016193,
+        "D_1_to_24_given_longO": 0.00011467923969660926,
+        "D_24_to_168_given_longO": 4.7509142684599645e-06,
+        "O_2_to_24_given_longD": 0.000491340538815067,
+        "O_24_to_168_given_longD": 3.273161264346052e-05,
+        "single_D_given_longO": 6.4429754883365414e-06,
+        "duplicate_O_effect": 5.418419054929735e-07,
+        "true_D_vs_duplicate_O": 0.00011888831205957625,
+        "path_identity_max_error": 0.0
+      }
+    },
+    {
+      "stage": "DEV_EVAL",
+      "postprocess": "raw",
+      "quantity": "equal mean of four endpoint MSEs, not square of macro RMSE",
+      "mse": {
+        "S": 0.017439433462897676,
+        "O_LONG": 0.013351667665703087,
+        "D_LONG": 0.01337057872998502,
+        "OD_LONG": 0.012359715136092556,
+        "O_LONG_D24": 0.012627362573184524,
+        "O24_D_LONG": 0.013521880081967863,
+        "O_LONG_D0": 0.013291583807795597,
+        "O_LONG_DUP": 0.013366408334780972
+      },
+      "gains": {
+        "O_given_short": 0.004087765797194588,
+        "D_given_short": 0.004068854732912656,
+        "D_given_longO": 0.0009919525296105316,
+        "O_given_longD": 0.0010108635938924637,
+        "total": 0.00507971832680512,
+        "interaction_J": -0.0030769022033021263,
+        "D_1_to_24_given_longO": 0.0007243050925185637,
+        "D_24_to_168_given_longO": 0.00026764743709196785,
+        "O_2_to_24_given_longD": -0.00015130135198284343,
+        "O_24_to_168_given_longD": 0.0011621649458753072,
+        "single_D_given_longO": -6.0083857907490545e-05,
+        "duplicate_O_effect": -1.4740669077884308e-05,
+        "true_D_vs_duplicate_O": 0.0010066931986884159,
+        "path_identity_max_error": 0.0
+      }
+    },
+    {
+      "stage": "DEV_EVAL",
+      "postprocess": "clip_0_1",
+      "quantity": "equal mean of four endpoint MSEs, not square of macro RMSE",
+      "mse": {
+        "S": 0.017439433462897676,
+        "O_LONG": 0.013350980490798914,
+        "D_LONG": 0.013354619103598349,
+        "OD_LONG": 0.012359174943088871,
+        "O_LONG_D24": 0.012626661220198286,
+        "O24_D_LONG": 0.01352099493652232,
+        "O_LONG_D0": 0.013291058375300535,
+        "O_LONG_DUP": 0.013365675131238363
+      },
+      "gains": {
+        "O_given_short": 0.004088452972098762,
+        "D_given_short": 0.004084814359299327,
+        "D_given_longO": 0.0009918055477100424,
+        "O_given_longD": 0.000995444160509477,
+        "total": 0.005080258519808804,
+        "interaction_J": -0.003093008811589283,
+        "D_1_to_24_given_longO": 0.000724319270600628,
+        "D_24_to_168_given_longO": 0.00026748627710941435,
+        "O_2_to_24_given_longD": -0.00016637583292397097,
+        "O_24_to_168_given_longD": 0.001161819993433448,
+        "single_D_given_longO": -5.992211549837867e-05,
+        "duplicate_O_effect": -1.4694640439448861e-05,
+        "true_D_vs_duplicate_O": 0.0010065001881494912,
+        "path_identity_max_error": 0.0
+      }
+    }
+  ],
+  "interpretation": "Positive empirical MSE gain means improvement in these fitted models; not ideal information value or causal attribution"
+}

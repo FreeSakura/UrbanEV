@@ -1,0 +1,93 @@
+{
+  "models": {
+    "S": {
+      "file": "private_model_S.npy",
+      "sha256": "eb8d7397505bd61b9abfbe016eae3cbf7c4a38f5954757ed22e09386d7b98cce",
+      "fit_seconds": 0.015781800029799342,
+      "normal_equation_relative_residual": 3.94348076740852e-17,
+      "effective_df": 8.808127457063373,
+      "nominal_columns": 8,
+      "unique_column_identities": 8,
+      "coefficient_count": 108
+    },
+    "O_LONG": {
+      "file": "private_model_O_LONG.npy",
+      "sha256": "f57059cc08f2a08d598970a4ee9c0324d8b1b83e16c92e5cf0091f3e10e8c87d",
+      "fit_seconds": 0.013267999980598688,
+      "normal_equation_relative_residual": 7.788637037567068e-18,
+      "effective_df": 158.48565716484964,
+      "nominal_columns": 174,
+      "unique_column_identities": 174,
+      "coefficient_count": 2100
+    },
+    "D_LONG": {
+      "file": "private_model_D_LONG.npy",
+      "sha256": "e3fdb0ec724e7abc91ce95d32416fe25b4e20252554e34fa5f10fb9eebe71d05",
+      "fit_seconds": 0.013562900014221668,
+      "normal_equation_relative_residual": 5.68368785643652e-18,
+      "effective_df": 131.9478557401907,
+      "nominal_columns": 175,
+      "unique_column_identities": 175,
+      "coefficient_count": 2112
+    },
+    "OD_LONG": {
+      "file": "private_model_OD_LONG.npy",
+      "sha256": "5f56deb0cf65dee89ffac98687a96809a95c85c9f23b1fd0d9fbdffd1a68145b",
+      "fit_seconds": 0.017504599993117154,
+      "normal_equation_relative_residual": 5.387319440671266e-18,
+      "effective_df": 269.77074438013085,
+      "nominal_columns": 341,
+      "unique_column_identities": 341,
+      "coefficient_count": 4104
+    },
+    "O_LONG_D24": {
+      "file": "private_model_O_LONG_D24.npy",
+      "sha256": "926ccd9c0a940aa4653187121ec8331fc2f31d316e98323c36e51a25c36aca8d",
+      "fit_seconds": 0.012346400006208569,
+      "normal_equation_relative_residual": 7.60905120009825e-18,
+      "effective_df": 174.13674127997325,
+      "nominal_columns": 197,
+      "unique_column_identities": 197,
+      "coefficient_count": 2376
+    },
+    "O24_D_LONG": {
+      "file": "private_model_O24_D_LONG.npy",
+      "sha256": "4bb34e9678555f77ebdb3ffbf466cb4463797c97d4ae020da35d9a7975f9631f",
+      "fit_seconds": 0.01428870001109317,
+      "normal_equation_relative_residual": 3.3236627388962504e-18,
+      "effective_df": 150.1195800964943,
+      "nominal_columns": 197,
+      "unique_column_identities": 197,
+      "coefficient_count": 2376
+    },
+    "O_LONG_D0": {
+      "file": "private_model_O_LONG_D0.npy",
+      "sha256": "af8ea685aa798349f26c28e93207bf950c0d72b2ffe9453aab4d2f7d67dbd9d0",
+      "fit_seconds": 0.014481700025498867,
+      "normal_equation_relative_residual": 8.103005003139609e-18,
+      "effective_df": 157.5203273497911,
+      "nominal_columns": 173,
+      "unique_column_identities": 173,
+      "coefficient_count": 2088
+    },
+    "O_LONG_DUP": {
+      "file": "private_model_O_LONG_DUP.npy",
+      "sha256": "2039fd394ec76aedd2a56962ecf3adc33a41f3343295a363ce9af2237bfc221e",
+      "fit_seconds": 0.020061399962287396,
+      "normal_equation_relative_residual": 4.218447951555194e-18,
+      "effective_df": 166.12213854917556,
+      "nominal_columns": 341,
+      "unique_column_identities": 174,
+      "coefficient_count": 4104
+    }
+  },
+  "transform": {
+    "file": "private_mother_transform.npz",
+    "sha256": "31ecb4e3c84891448ad822f7dd3f96eed4b85dc359934ba167e520d2e5f9c908"
+  },
+  "all_eight_frozen": true,
+  "selection_action": "NONE_FIXED_ABLATIONS",
+  "lambda": 0.01,
+  "normalization": "1/N summed over twelve outputs; unpenalized intercept",
+  "config_sha256": "7404cd7d0d2105205ef079bc47dc45c82158d19cc63ae06c50eea52c9f7be3cf"
+}
