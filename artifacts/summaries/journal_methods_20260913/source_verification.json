@@ -446,5 +446,225 @@
       },
       "type": "journal-article"
     }
-  ]
+  ],
+  "research_side_additions": [
+    {
+      "id": "speech2022",
+      "doi": "10.1016/j.apenergy.2021.118382",
+      "status": "verified",
+      "method": "direct_crossref",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.apenergy.2021.118382",
+      "title": [
+        "Scalable probabilistic estimates of electric vehicle charging given observed driver behavior"
+      ],
+      "authors": [
+        "Siobhan Powell",
+        "Gustavo Vianna Cezar",
+        "Ram Rajagopal"
+      ],
+      "venue": [
+        "Applied Energy"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            3
+          ]
+        ]
+      },
+      "published_online": null,
+      "published_print": {
+        "date-parts": [
+          [
+            2022,
+            3
+          ]
+        ]
+      },
+      "type": "journal-article"
+    },
+    {
+      "id": "pag2024",
+      "doi": "10.1109/tits.2024.3401850",
+      "status": "verified",
+      "method": "direct_crossref",
+      "source_url": "https://api.crossref.org/works/10.1109%2FTITS.2024.3401850",
+      "title": [
+        "A Physics-Informed and Attention-Based Graph Learning Approach for Regional Electric Vehicle Charging Demand Prediction"
+      ],
+      "authors": [
+        "Haohao Qu",
+        "Haoxuan Kuang",
+        "Qiuxuan Wang",
+        "Jun Li",
+        "Linlin You"
+      ],
+      "venue": [
+        "IEEE Transactions on Intelligent Transportation Systems"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10
+          ]
+        ]
+      },
+      "published_online": null,
+      "published_print": {
+        "date-parts": [
+          [
+            2024,
+            10
+          ]
+        ]
+      },
+      "type": "journal-article"
+    },
+    {
+      "id": "dgcn2021",
+      "doi": "10.1016/j.trc.2021.103185",
+      "status": "verified",
+      "method": "direct_crossref",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.trc.2021.103185",
+      "title": [
+        "Multistep traffic forecasting by dynamic graph convolution: Interpretations of real-time spatial correlations"
+      ],
+      "authors": [
+        "Guopeng Li",
+        "Victor L. Knoop",
+        "Hans van Lint"
+      ],
+      "venue": [
+        "Transportation Research Part C: Emerging Technologies"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            7
+          ]
+        ]
+      },
+      "published_online": null,
+      "published_print": {
+        "date-parts": [
+          [
+            2021,
+            7
+          ]
+        ]
+      },
+      "type": "journal-article"
+    },
+    {
+      "id": "scores2016",
+      "doi": "10.1111/rssb.12154",
+      "status": "verified",
+      "method": "direct_crossref",
+      "source_url": "https://api.crossref.org/works/10.1111%2Frssb.12154",
+      "title": [
+        "Of Quantiles and Expectiles: Consistent Scoring Functions, Choquet Representations and Forecast Rankings"
+      ],
+      "authors": [
+        "Werner Ehm",
+        "Tilmann Gneiting",
+        "Alexander Jordan",
+        "Fabian Krüger"
+      ],
+      "venue": [
+        "Journal of the Royal Statistical Society Series B: Statistical Methodology"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            10
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            10
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2016,
+            6,
+            1
+          ]
+        ]
+      },
+      "type": "journal-article"
+    },
+    {
+      "id": "idr2021",
+      "doi": "10.1111/rssb.12450",
+      "status": "verified",
+      "method": "direct_crossref",
+      "source_url": "https://api.crossref.org/works/10.1111%2Frssb.12450",
+      "title": [
+        "Isotonic Distributional Regression"
+      ],
+      "authors": [
+        "Alexander Henzi",
+        "Johanna F. Ziegel",
+        "Tilmann Gneiting"
+      ],
+      "venue": [
+        "Journal of the Royal Statistical Society Series B: Statistical Methodology"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            26
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            26
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2021,
+            11,
+            1
+          ]
+        ]
+      },
+      "type": "journal-article"
+    }
+  ],
+  "separate_preprint": {
+    "title": "An efficient hybrid approach of quantile and expectile regression",
+    "authors": [
+      "Abdellah Atanane",
+      "Abdallah Mkhadri",
+      "Karim Oualkacha"
+    ],
+    "arxiv_id": "2510.05268",
+    "year": 2025,
+    "status": "verified",
+    "method": "official_arxiv_page",
+    "source_url": "https://arxiv.org/abs/2510.05268",
+    "reading_depth": "abstract only",
+    "journal_status": "not claimed"
+  }
 }
