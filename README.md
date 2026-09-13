@@ -24,7 +24,7 @@
 
 ## 当前科学问题
 
-[底座正增损稳定化](docs/research/sota/REFERENCE_HARM_STABILITY_REPORT_20260913.md)完成六方案、三个新种子、18次神经训练。主方法相对原MSE平均RMSE/MAE改善0.0834%/0.6728%，但仍差于ridge底座，成绩标准差增加；普通MAE混合与通用MLP控制限制了专用稳定化解释。**减少增损的局部作用存在，整体稳定性主张未成立，无SOTA声明。**
+[底座正增损稳定化](docs/research/sota/REFERENCE_HARM_STABILITY_REPORT_20260913.md)完成六方案、三个新种子、18次神经训练。主方法相对原MSE平均RMSE/MAE改善0.0834%/0.6728%，但四H宏指标仍差于ridge底座，成绩标准差增加；普通MAE混合与通用MLP控制限制了专用稳定化解释。**减少增损的局部作用存在，整体稳定性主张未成立，无SOTA声明。**
 
 [条件O–D乘性交互真实实验](docs/research/sota/CONDITIONAL_OD_INTERACTION_REPORT_20260913.md)完成冻结ridge底座上的四个等参数模型、八次GPU训练。主模型两种子平均四H末点RMSE较底座降低0.410%，但MAE增加0.922%，种子结果分化；平均RMSE低于三个神经对照。**保留交互结构的有限开发线索，不宣称稳定优势或SOTA。**
 
