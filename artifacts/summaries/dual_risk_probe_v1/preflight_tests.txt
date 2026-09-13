@@ -1,0 +1,2 @@
+11 targeted tests passed. Command: PYTHONPATH=src python -m pytest tests/test_dual_risk_probe.py -q
+Scope: population algebra and median counterexamples, simplex/tangent boundaries, one-sided derivatives with atoms, equal-cell ridge weighting, train-only scaling, feature semantics, strict gate, all-hash-before-numerical-read whitelist, forbidden model imports, forward split/8-fit and macro weighting.

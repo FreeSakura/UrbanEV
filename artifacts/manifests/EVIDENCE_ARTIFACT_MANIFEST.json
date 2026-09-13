@@ -524,6 +524,60 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/dual_risk_probe_v1/directional_risk_report.json",
+      "sha256": "a93bee0145869ef6e1ea02318cb9a9b8e479b6aaa19f09eaceb1591c6ee024de",
+      "bytes": 12799,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/dual_risk_probe_v1/moment_prediction_scores.csv",
+      "sha256": "070d514474be78507354c10f8f5962a61dc7d769dfccdda3bdc2a47117a08ff1",
+      "bytes": 2732,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/dual_risk_probe_v1/preflight_tests.txt",
+      "sha256": "15274156a00bcb9e973b4a2a10ce3306af3915bd74cbf4941c08205a85638a2b",
+      "bytes": 404,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/dual_risk_probe_v1/probe_manifest.json",
+      "sha256": "ea0a0b5305bcc5c9e598a675563fda0d07a386e582277e9ca7bb5e220feb07fd",
+      "bytes": 16578,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/dual_risk_probe_v1/probe_receipt.json",
+      "sha256": "eeb4f9824f5063599e95c63152a0ba371652d7b6b2f0f4b89d6bc03ec7d9a478",
+      "bytes": 18478,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/dual_risk_probe_v1/summary.json",
+      "sha256": "6cf7a8dca50a62db45aa3c065b41a143712950267c5e464f12e0168852c66a86",
+      "bytes": 759,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/fixed_fusion/FIXED_FUSION_SUMMARY.json",
       "sha256": "c795e09ea8c380aef00c1dc8e4e3585edc1ef03300008539fade31102989df59",
       "bytes": 1580,

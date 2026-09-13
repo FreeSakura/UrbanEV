@@ -1,0 +1,604 @@
+{
+  "id": "DUAL_RISK_INFORMATION_PROBE_V1_20260913",
+  "status": "MECHANISM_SUPPORTED_FOR_NEW_PROTOCOL_DESIGN",
+  "execution_commit": "4f559cdbe419b0669baa7a37eb701d5a32600ea3",
+  "config_sha256_lf": "ea0a0b5305bcc5c9e598a675563fda0d07a386e582277e9ca7bb5e220feb07fd",
+  "read_ledger": [
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_720_h3.npy",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "sha256": "72e905bc8cb10272898fd2a0904124665dd4c65b67a3dbb39164709ca4653536",
+      "hash_origin": "V2 saved-output verification receipt",
+      "actual_sha256": "72e905bc8cb10272898fd2a0904124665dd4c65b67a3dbb39164709ca4653536",
+      "bytes": 46328
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "native",
+      "file": "private_720_h3_native_a1.npy",
+      "sha256": "bcbd6d5ca7c100e22c3ce2d65970268ca81b0902f25a3aa55f4b16f28b3b81de",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "bcbd6d5ca7c100e22c3ce2d65970268ca81b0902f25a3aa55f4b16f28b3b81de",
+      "bytes": 92528
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "occupancy",
+      "file": "private_720_h3_occupancy_a1.npy",
+      "sha256": "75754e59dca296e40c0e44f9a04d49f750772d23bf045f3cf7f119170732b63c",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "75754e59dca296e40c0e44f9a04d49f750772d23bf045f3cf7f119170732b63c",
+      "bytes": 92528
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "duplicate",
+      "file": "private_720_h3_duplicate_a1.npy",
+      "sha256": "9c94a899a7a38a0bd48c01df0463ab23a62621f170bf5bc3aaaa5dce53aed043",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "9c94a899a7a38a0bd48c01df0463ab23a62621f170bf5bc3aaaa5dce53aed043",
+      "bytes": 92528
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "raw_duration",
+      "file": "private_720_h3_raw_duration_a1.npy",
+      "sha256": "da976654312e5b47f8acd2de641f7bc344fadfaaa0668d539ca46a33f3b4f8ad",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "da976654312e5b47f8acd2de641f7bc344fadfaaa0668d539ca46a33f3b4f8ad",
+      "bytes": 92528
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "permuted_orthogonal",
+      "file": "private_720_h3_permuted_orthogonal_a1.npy",
+      "sha256": "1c233a08eed42a26351eee995400382933dc04e8c4b48a1e0472ff2fca03c006",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "1c233a08eed42a26351eee995400382933dc04e8c4b48a1e0472ff2fca03c006",
+      "bytes": 92528
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_720_h12.npy",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "sha256": "3097af20c1bde6221cdb032728be52791df28da363366c7549ace42beb41b315",
+      "hash_origin": "V2 saved-output verification receipt",
+      "actual_sha256": "3097af20c1bde6221cdb032728be52791df28da363366c7549ace42beb41b315",
+      "bytes": 184928
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "native",
+      "file": "private_720_h12_native_a1.npy",
+      "sha256": "0581a023b31506a497d6cb1ebc1f7b6219c925d860a7430c1287ddc520c6be0d",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "0581a023b31506a497d6cb1ebc1f7b6219c925d860a7430c1287ddc520c6be0d",
+      "bytes": 369728
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "occupancy",
+      "file": "private_720_h12_occupancy_a1.npy",
+      "sha256": "54ea454237abd260238a7600eb12b144c19f2441870c513ffa2c23a8ad94e476",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "54ea454237abd260238a7600eb12b144c19f2441870c513ffa2c23a8ad94e476",
+      "bytes": 369728
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "duplicate",
+      "file": "private_720_h12_duplicate_a1.npy",
+      "sha256": "650d3959e7b6af18d9e644691b05f01de9621977ce920725f37059c9e3086072",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "650d3959e7b6af18d9e644691b05f01de9621977ce920725f37059c9e3086072",
+      "bytes": 369728
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "raw_duration",
+      "file": "private_720_h12_raw_duration_a1.npy",
+      "sha256": "ab3d24fa90353914426505007f0201ab4fcd2f327ad94af0bd73f6ee9162fb0b",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "ab3d24fa90353914426505007f0201ab4fcd2f327ad94af0bd73f6ee9162fb0b",
+      "bytes": 369728
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "permuted_orthogonal",
+      "file": "private_720_h12_permuted_orthogonal_a1.npy",
+      "sha256": "c6ed97899c85f7d2171f79e62c737cc57df988502d91af74345788628c7bd1be",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "c6ed97899c85f7d2171f79e62c737cc57df988502d91af74345788628c7bd1be",
+      "bytes": 369728
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1056_h3.npy",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "sha256": "7754531e1c667d9760f183a536bab2b8bd1471533c3b9c9a57d3c7a453f9787e",
+      "hash_origin": "V2 saved-output verification receipt",
+      "actual_sha256": "7754531e1c667d9760f183a536bab2b8bd1471533c3b9c9a57d3c7a453f9787e",
+      "bytes": 46328
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "native",
+      "file": "private_1056_h3_native_a1.npy",
+      "sha256": "86a2230dac3d4b1170809afeb397dfe48b7bd916c9fded1b1ea1b4fdd894eed8",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "86a2230dac3d4b1170809afeb397dfe48b7bd916c9fded1b1ea1b4fdd894eed8",
+      "bytes": 92528
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "occupancy",
+      "file": "private_1056_h3_occupancy_a1.npy",
+      "sha256": "21cb37ddaff1c3549be08336aa40e95cb8bef4dbea7855dcf0ecf1d2dbb4f6d6",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "21cb37ddaff1c3549be08336aa40e95cb8bef4dbea7855dcf0ecf1d2dbb4f6d6",
+      "bytes": 92528
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "duplicate",
+      "file": "private_1056_h3_duplicate_a1.npy",
+      "sha256": "7b8f582fe2f97baf5cac10474fa8a51a65c85c47e71fce3c2c52d763054c4e43",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "7b8f582fe2f97baf5cac10474fa8a51a65c85c47e71fce3c2c52d763054c4e43",
+      "bytes": 92528
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "raw_duration",
+      "file": "private_1056_h3_raw_duration_a1.npy",
+      "sha256": "2866058ad9b8a6732ef9f3f2e0f597923a718d0ab3fbad3e118a07af1a6ace05",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "2866058ad9b8a6732ef9f3f2e0f597923a718d0ab3fbad3e118a07af1a6ace05",
+      "bytes": 92528
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "permuted_orthogonal",
+      "file": "private_1056_h3_permuted_orthogonal_a1.npy",
+      "sha256": "abea8264b5fb83467baa4b96ae7447f868ebcffb1c40ef51c6c19d832ed707f6",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "abea8264b5fb83467baa4b96ae7447f868ebcffb1c40ef51c6c19d832ed707f6",
+      "bytes": 92528
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1056_h12.npy",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "sha256": "451005d4bc1fbef9d11e1303140a6ee41963363eecc0b9f81383bf5f3eba3cd7",
+      "hash_origin": "V2 saved-output verification receipt",
+      "actual_sha256": "451005d4bc1fbef9d11e1303140a6ee41963363eecc0b9f81383bf5f3eba3cd7",
+      "bytes": 184928
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "native",
+      "file": "private_1056_h12_native_a1.npy",
+      "sha256": "b3c8b26025da3f5f8c5a03adc278eca58be5d10687be9703bf72f3bd7659eb67",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "b3c8b26025da3f5f8c5a03adc278eca58be5d10687be9703bf72f3bd7659eb67",
+      "bytes": 369728
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "occupancy",
+      "file": "private_1056_h12_occupancy_a1.npy",
+      "sha256": "c201c045503394e1bef6cfa239f752723939225dd3b76a26b7f4017417b47a06",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "c201c045503394e1bef6cfa239f752723939225dd3b76a26b7f4017417b47a06",
+      "bytes": 369728
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "duplicate",
+      "file": "private_1056_h12_duplicate_a1.npy",
+      "sha256": "1f42fcbef4e3e5caac13c79f0f466f0b727cd0379e6d3c9f1e17577d6d0a1742",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "1f42fcbef4e3e5caac13c79f0f466f0b727cd0379e6d3c9f1e17577d6d0a1742",
+      "bytes": 369728
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "raw_duration",
+      "file": "private_1056_h12_raw_duration_a1.npy",
+      "sha256": "b147b1c2d7f436158baf14cccd3e7feced77ee4f4bea908744a583ee1af2e23d",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "b147b1c2d7f436158baf14cccd3e7feced77ee4f4bea908744a583ee1af2e23d",
+      "bytes": 369728
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "permuted_orthogonal",
+      "file": "private_1056_h12_permuted_orthogonal_a1.npy",
+      "sha256": "60c58627c0b989efd1d81809803969f247fe0a7c0e70f400ea23464418e67a10",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "60c58627c0b989efd1d81809803969f247fe0a7c0e70f400ea23464418e67a10",
+      "bytes": 369728
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1392_h3.npy",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "sha256": "2b6c1a1790ad879adc24aa6eb9d021ce819a01777a7e3789ecad7df64e9a4964",
+      "hash_origin": "V2 saved-output verification receipt",
+      "actual_sha256": "2b6c1a1790ad879adc24aa6eb9d021ce819a01777a7e3789ecad7df64e9a4964",
+      "bytes": 46328
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "native",
+      "file": "private_1392_h3_native_a1.npy",
+      "sha256": "a8870d582828961b80b010a679b8a03ecd0009b1075839ffd9fc64566c16ebf3",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "a8870d582828961b80b010a679b8a03ecd0009b1075839ffd9fc64566c16ebf3",
+      "bytes": 92528
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "occupancy",
+      "file": "private_1392_h3_occupancy_a1.npy",
+      "sha256": "609c38f8e2b247e96acf0b215a038aad03d13d304a08e9d7b08fed5c9f22b7d2",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "609c38f8e2b247e96acf0b215a038aad03d13d304a08e9d7b08fed5c9f22b7d2",
+      "bytes": 92528
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "duplicate",
+      "file": "private_1392_h3_duplicate_a1.npy",
+      "sha256": "0d6aabf6d0c2835c00ab4ffc064d8b362fd9e9d05ca553cf534fc22a08203e57",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "0d6aabf6d0c2835c00ab4ffc064d8b362fd9e9d05ca553cf534fc22a08203e57",
+      "bytes": 92528
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "raw_duration",
+      "file": "private_1392_h3_raw_duration_a1.npy",
+      "sha256": "83f5cf3946ef6ea31b9cc3a0e15818c410bb184ece3dbb2e4c8df98ef79f04dd",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "83f5cf3946ef6ea31b9cc3a0e15818c410bb184ece3dbb2e4c8df98ef79f04dd",
+      "bytes": 92528
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "permuted_orthogonal",
+      "file": "private_1392_h3_permuted_orthogonal_a1.npy",
+      "sha256": "24a3ba4ea5868498d32f83926eaee6858a1a3e68321db28c6ced6715322663d3",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "24a3ba4ea5868498d32f83926eaee6858a1a3e68321db28c6ced6715322663d3",
+      "bytes": 92528
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1392_h12.npy",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "sha256": "e9e43f31a9a16f0882a4693dfb1d93e2b59514a235f055101fa02140d3279cf7",
+      "hash_origin": "V2 saved-output verification receipt",
+      "actual_sha256": "e9e43f31a9a16f0882a4693dfb1d93e2b59514a235f055101fa02140d3279cf7",
+      "bytes": 184928
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "native",
+      "file": "private_1392_h12_native_a1.npy",
+      "sha256": "e01540b22a04d814f798f6a65370bdf9db69b13d5a4494d81a58e24b06455796",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "e01540b22a04d814f798f6a65370bdf9db69b13d5a4494d81a58e24b06455796",
+      "bytes": 369728
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "occupancy",
+      "file": "private_1392_h12_occupancy_a1.npy",
+      "sha256": "4516299d2b82ec8027f7adb7406fdfb2db7e097c534773edc0779df53040f81e",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "4516299d2b82ec8027f7adb7406fdfb2db7e097c534773edc0779df53040f81e",
+      "bytes": 369728
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "duplicate",
+      "file": "private_1392_h12_duplicate_a1.npy",
+      "sha256": "613a68e299eb07ed5ca9d26bf76d6f0ebe7202158b3c3559a685a15f71951171",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "613a68e299eb07ed5ca9d26bf76d6f0ebe7202158b3c3559a685a15f71951171",
+      "bytes": 369728
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "raw_duration",
+      "file": "private_1392_h12_raw_duration_a1.npy",
+      "sha256": "5454066d9836602a7f55a8b51a05bb9d4cc3893f7ee15a10b7955dcc18db2bb2",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "5454066d9836602a7f55a8b51a05bb9d4cc3893f7ee15a10b7955dcc18db2bb2",
+      "bytes": 369728
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "permuted_orthogonal",
+      "file": "private_1392_h12_permuted_orthogonal_a1.npy",
+      "sha256": "1b7439d5a96c2c377ed98978e85a346e286525fb802da7eb6bee99b2c2bd24ff",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest",
+      "actual_sha256": "1b7439d5a96c2c377ed98978e85a346e286525fb802da7eb6bee99b2c2bd24ff",
+      "bytes": 369728
+    }
+  ],
+  "numerical_array_count": 36,
+  "fit_monitor": {
+    "ridge_linear_solves": 8
+  },
+  "forbidden_import_attempts": 0,
+  "new_foundation_inference": 0,
+  "alpha_searches": 0,
+  "original_data_files_read": 0,
+  "maximum_target_index": 1559,
+  "duration_latest_source_rule": "origin-2, inherited from frozen V1 prediction lineage",
+  "post_hoc_development_diagnostic": true,
+  "blind_test": false,
+  "new_point_forecast_scores_generated": false,
+  "old_no_go_unchanged": true,
+  "elapsed_seconds": 1.0076098999707028,
+  "threads": 2,
+  "timing_scope": "load/verify arrays, fits, derivative summaries and result writing; excludes preflight and receipt write",
+  "peak_process_memory_bytes": null,
+  "peak_memory_status": "NOT_MEASURED",
+  "quota_reset_used": false
+}

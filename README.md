@@ -7,9 +7,13 @@
 
 这不是UrbanEV数据集官方仓库。原始数据与官方方法见 [IntelligentSystemsLab/UrbanEV](https://github.com/IntelligentSystemsLab/UrbanEV)。本项目从证据审计转向预测方法研究：新模型、强基线、实验和结果是主线，既有审计工具承担验证工作。
 
+## 文献驱动的新研究（2026-09-13）
+
+[期刊阅读笔记](docs/research/sota/JOURNAL_READING_NOTES_20260913.md)与[理论研究报告](docs/research/sota/JOURNAL_METHOD_REPORT_20260913.md)将主问题改为：额外时长信息能否产生RMSE–MAE共同改进。一次冻结的[条件双风险方向探针](docs/research/sota/DUAL_RISK_PROBE_REPORT_20260913.md)已完成：8次小型线性拟合、36份既有数组、零新增基础推理；时长表示在两个前向开发窗口均给出共同下降方向，达到机制设计准入。**这不是≥1%有限步长改善或SOTA，旧V1/V2 NO_GO不变。** 尚未训练新点预测方法或打开保留数据；定时任务继续暂停。
+
 ## 阶段性收尾（2026-09-10）
 
-**当前阶段已结束，自动跟进已暂停。** [阶段总结](docs/research/sota/PHASE_CLOSEOUT_20260910.md)集中记录各方向成果、失败原因、最终数值与恢复条件。当前不启动新实验，完整SOTA比较尚未建立。
+**9月10日阶段已结束，自动跟进已暂停。** [阶段总结](docs/research/sota/PHASE_CLOSEOUT_20260910.md)集中记录各方向成果、失败原因、最终数值与恢复条件。当时完成阶段收尾；9月13日按用户要求另起文献研究与有界探针，完整SOTA比较尚未建立。
 
 ## 已完成的执行结果
 

@@ -1,0 +1,601 @@
+{
+  "id": "DUAL_RISK_INFORMATION_PROBE_V1_20260913",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "source_main_commit": "59ebd641231a934cf68763621137f4f10a824088",
+  "source_v1_execution_metadata_sha256": "ad19e2d866b3400465990b697395357282e924d125124c0fa68ad7d48dce6644",
+  "horizons": [
+    3,
+    12
+  ],
+  "cuts": [
+    720,
+    1056,
+    1392
+  ],
+  "channels": 275,
+  "origins_per_cell": 14,
+  "origin_stride": 12,
+  "maximum_target_index": 1559,
+  "files": [
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_720_h3.npy",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "sha256": "72e905bc8cb10272898fd2a0904124665dd4c65b67a3dbb39164709ca4653536",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "native",
+      "file": "private_720_h3_native_a1.npy",
+      "sha256": "bcbd6d5ca7c100e22c3ce2d65970268ca81b0902f25a3aa55f4b16f28b3b81de",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "occupancy",
+      "file": "private_720_h3_occupancy_a1.npy",
+      "sha256": "75754e59dca296e40c0e44f9a04d49f750772d23bf045f3cf7f119170732b63c",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "duplicate",
+      "file": "private_720_h3_duplicate_a1.npy",
+      "sha256": "9c94a899a7a38a0bd48c01df0463ab23a62621f170bf5bc3aaaa5dce53aed043",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "raw_duration",
+      "file": "private_720_h3_raw_duration_a1.npy",
+      "sha256": "da976654312e5b47f8acd2de641f7bc344fadfaaa0668d539ca46a33f3b4f8ad",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 720,
+      "horizon": 3,
+      "system": "permuted_orthogonal",
+      "file": "private_720_h3_permuted_orthogonal_a1.npy",
+      "sha256": "1c233a08eed42a26351eee995400382933dc04e8c4b48a1e0472ff2fca03c006",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_720_h12.npy",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "sha256": "3097af20c1bde6221cdb032728be52791df28da363366c7549ace42beb41b315",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "native",
+      "file": "private_720_h12_native_a1.npy",
+      "sha256": "0581a023b31506a497d6cb1ebc1f7b6219c925d860a7430c1287ddc520c6be0d",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "occupancy",
+      "file": "private_720_h12_occupancy_a1.npy",
+      "sha256": "54ea454237abd260238a7600eb12b144c19f2441870c513ffa2c23a8ad94e476",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "duplicate",
+      "file": "private_720_h12_duplicate_a1.npy",
+      "sha256": "650d3959e7b6af18d9e644691b05f01de9621977ce920725f37059c9e3086072",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "raw_duration",
+      "file": "private_720_h12_raw_duration_a1.npy",
+      "sha256": "ab3d24fa90353914426505007f0201ab4fcd2f327ad94af0bd73f6ee9162fb0b",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 720,
+      "horizon": 12,
+      "system": "permuted_orthogonal",
+      "file": "private_720_h12_permuted_orthogonal_a1.npy",
+      "sha256": "c6ed97899c85f7d2171f79e62c737cc57df988502d91af74345788628c7bd1be",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1056_h3.npy",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "sha256": "7754531e1c667d9760f183a536bab2b8bd1471533c3b9c9a57d3c7a453f9787e",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "native",
+      "file": "private_1056_h3_native_a1.npy",
+      "sha256": "86a2230dac3d4b1170809afeb397dfe48b7bd916c9fded1b1ea1b4fdd894eed8",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "occupancy",
+      "file": "private_1056_h3_occupancy_a1.npy",
+      "sha256": "21cb37ddaff1c3549be08336aa40e95cb8bef4dbea7855dcf0ecf1d2dbb4f6d6",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "duplicate",
+      "file": "private_1056_h3_duplicate_a1.npy",
+      "sha256": "7b8f582fe2f97baf5cac10474fa8a51a65c85c47e71fce3c2c52d763054c4e43",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "raw_duration",
+      "file": "private_1056_h3_raw_duration_a1.npy",
+      "sha256": "2866058ad9b8a6732ef9f3f2e0f597923a718d0ab3fbad3e118a07af1a6ace05",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1056,
+      "horizon": 3,
+      "system": "permuted_orthogonal",
+      "file": "private_1056_h3_permuted_orthogonal_a1.npy",
+      "sha256": "abea8264b5fb83467baa4b96ae7447f868ebcffb1c40ef51c6c19d832ed707f6",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1056_h12.npy",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "sha256": "451005d4bc1fbef9d11e1303140a6ee41963363eecc0b9f81383bf5f3eba3cd7",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "native",
+      "file": "private_1056_h12_native_a1.npy",
+      "sha256": "b3c8b26025da3f5f8c5a03adc278eca58be5d10687be9703bf72f3bd7659eb67",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "occupancy",
+      "file": "private_1056_h12_occupancy_a1.npy",
+      "sha256": "c201c045503394e1bef6cfa239f752723939225dd3b76a26b7f4017417b47a06",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "duplicate",
+      "file": "private_1056_h12_duplicate_a1.npy",
+      "sha256": "1f42fcbef4e3e5caac13c79f0f466f0b727cd0379e6d3c9f1e17577d6d0a1742",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "raw_duration",
+      "file": "private_1056_h12_raw_duration_a1.npy",
+      "sha256": "b147b1c2d7f436158baf14cccd3e7feced77ee4f4bea908744a583ee1af2e23d",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1056,
+      "horizon": 12,
+      "system": "permuted_orthogonal",
+      "file": "private_1056_h12_permuted_orthogonal_a1.npy",
+      "sha256": "60c58627c0b989efd1d81809803969f247fe0a7c0e70f400ea23464418e67a10",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1392_h3.npy",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "sha256": "2b6c1a1790ad879adc24aa6eb9d021ce819a01777a7e3789ecad7df64e9a4964",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "native",
+      "file": "private_1392_h3_native_a1.npy",
+      "sha256": "a8870d582828961b80b010a679b8a03ecd0009b1075839ffd9fc64566c16ebf3",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "occupancy",
+      "file": "private_1392_h3_occupancy_a1.npy",
+      "sha256": "609c38f8e2b247e96acf0b215a038aad03d13d304a08e9d7b08fed5c9f22b7d2",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "duplicate",
+      "file": "private_1392_h3_duplicate_a1.npy",
+      "sha256": "0d6aabf6d0c2835c00ab4ffc064d8b362fd9e9d05ca553cf534fc22a08203e57",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "raw_duration",
+      "file": "private_1392_h3_raw_duration_a1.npy",
+      "sha256": "83f5cf3946ef6ea31b9cc3a0e15818c410bb184ece3dbb2e4c8df98ef79f04dd",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "permuted_orthogonal",
+      "file": "private_1392_h3_permuted_orthogonal_a1.npy",
+      "sha256": "24a3ba4ea5868498d32f83926eaee6858a1a3e68321db28c6ced6715322663d3",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1392_h12.npy",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "sha256": "e9e43f31a9a16f0882a4693dfb1d93e2b59514a235f055101fa02140d3279cf7",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "native",
+      "file": "private_1392_h12_native_a1.npy",
+      "sha256": "e01540b22a04d814f798f6a65370bdf9db69b13d5a4494d81a58e24b06455796",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "occupancy",
+      "file": "private_1392_h12_occupancy_a1.npy",
+      "sha256": "4516299d2b82ec8027f7adb7406fdfb2db7e097c534773edc0779df53040f81e",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "duplicate",
+      "file": "private_1392_h12_duplicate_a1.npy",
+      "sha256": "613a68e299eb07ed5ca9d26bf76d6f0ebe7202158b3c3559a685a15f71951171",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "raw_duration",
+      "file": "private_1392_h12_raw_duration_a1.npy",
+      "sha256": "5454066d9836602a7f55a8b51a05bb9d4cc3893f7ee15a10b7955dcc18db2bb2",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "permuted_orthogonal",
+      "file": "private_1392_h12_permuted_orthogonal_a1.npy",
+      "sha256": "1b7439d5a96c2c377ed98978e85a346e286525fb802da7eb6bee99b2c2bd24ff",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    }
+  ],
+  "representations": [
+    "base",
+    "duration",
+    "duplicate",
+    "permuted"
+  ],
+  "features": [
+    "intercept",
+    "clipped_native",
+    "clipped_native_squared",
+    "occupancy_alpha1_minus_native_raw",
+    "H/12",
+    "j/H",
+    "sin_origin_hour",
+    "cos_origin_hour",
+    "native_raw<=0",
+    "native_raw>=1"
+  ],
+  "extra_contrasts": {
+    "duration": "raw_duration_alpha1 - occupancy_alpha1",
+    "duplicate": "duplicate_alpha1 - occupancy_alpha1",
+    "permuted": "permuted_orthogonal_alpha1 - occupancy_alpha1"
+  },
+  "notation_resolution": "p_raw in boundary indicators means raw native, never raw_duration",
+  "calendar_numeric_rule": "origin modulo24; sine at hours0 and12 exactly zero to avoid amplifying trigonometric roundoff",
+  "forward_splits": [
+    {
+      "training_cuts": [
+        720
+      ],
+      "evaluation_cut": 1056
+    },
+    {
+      "training_cuts": [
+        720,
+        1056
+      ],
+      "evaluation_cut": 1392
+    }
+  ],
+  "ridge": 0.01,
+  "intercept_penalty": 0,
+  "weighting": "sum weights1; each training window x horizon cell equal; within cell all origin x step x region entries equal",
+  "standardization": "training-only weighted population mean/std; exactly constant columns set zero; intercept retained1",
+  "targets": [
+    "Y-p",
+    "Y<p",
+    "Y=p",
+    "Y>p"
+  ],
+  "probability_projection": "Euclidean projection of three raw outputs onto probability simplex",
+  "atom_equality": "exact numeric equality after float64 conversion",
+  "direction": "clip(m,-1,1) * max(-s*sign(m)-pi,0), then inward tangent at p=0/1",
+  "zero_native_rmse": "PROBE_BLOCKED; formula assumption r0>0",
+  "metrics": [
+    "conditional residual MSE/bias",
+    "multiclass Brier and three class probability MSEs",
+    "actual one-sided MAE/RMSE derivatives",
+    "equal-cell direction norm",
+    "normalized RMSE descent"
+  ],
+  "gate": "Both evaluation windows: duration direction nonzero; macro MAE and RMSE derivatives strictly negative; normalized RMSE descent strictly better than every control with strictly negative MAE derivative; absent compatible controls reference0",
+  "thresholds_changed_after_execution": false,
+  "max_executions": 1,
+  "max_ridge_fits": 8,
+  "new_foundation_inference": 0,
+  "alpha_searches": 0,
+  "automatic_stage_advance": false,
+  "post_hoc_development_diagnostic": true,
+  "independent_confirmation": false,
+  "old_no_go_unchanged": true,
+  "code_sha256_lf": {
+    "src/urbanev_forecast/dual_risk_probe.py": "b23a8aea459f6337bde82341ceb1e6e7c143b5dd4fb864cff7b3d1f93fcbd625",
+    "scripts/research/run_dual_risk_probe.py": "22222c9222f6a4b39fc672d6f30f59633d395c3d0f7e8c87896c8ac8f6a6f2df",
+    "tests/test_dual_risk_probe.py": "e161639974536d00070cd66c74c2e1e66ee0336ff7324490474b20c58a88e697"
+  }
+}

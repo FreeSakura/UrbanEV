@@ -1,0 +1,20 @@
+{
+  "status": "MECHANISM_SUPPORTED_FOR_NEW_PROTOCOL_DESIGN",
+  "execution_commit": "4f559cdbe419b0669baa7a37eb701d5a32600ea3",
+  "eight_fits_completed": true,
+  "array_count": 36,
+  "new_foundation_inference": 0,
+  "alpha_searches": 0,
+  "old_v1_v2_no_go_unchanged": true,
+  "next_stage": "new finite-step protocol requires separate design and registration; not executed",
+  "claim_supported": "post-hoc development evidence for a learned common descent direction in this representation",
+  "not_supported": [
+    ">=1% finite-step RMSE improvement",
+    "MAE nondegradation at a finite step",
+    "independent or blind confirmation",
+    "causal duration information",
+    "SOTA"
+  ],
+  "automation_status": "PAUSED",
+  "research_result_review": "pending"
+}
