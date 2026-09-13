@@ -1650,8 +1650,8 @@
     },
     {
       "path": "docs/research/sota/DUAL_RISK_PROBE_REPORT_20260913.md",
-      "sha256": "17fb31d8854dff31e4697b365e1299d0492e936302ce10a1001fec042efa9d10",
-      "bytes": 6065,
+      "sha256": "c380fe1bb5c214cae37746b583cc45d6c7d60f13ff46e97abe97cfefdd884f27",
+      "bytes": 6174,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
@@ -1661,6 +1661,24 @@
       "path": "docs/research/sota/EXPERIMENT_PLAN.md",
       "sha256": "4354367f842697fe68d04e605c2529d41d855b9cd38c25f90064dd6a7d189b08",
       "bytes": 4290,
+      "role": "paper_or_documentation",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "docs/research/sota/figures/dual_risk_probe_20260913.png",
+      "sha256": "c5beec42cd4366849f69272947b7e06d0d23f0cd72fddb8e32772b1b18997e79",
+      "bytes": 106859,
+      "role": "paper_or_documentation",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "docs/research/sota/figures/dual_risk_probe_20260913.svg",
+      "sha256": "cd49f8f2c16a4b08402ff9ceb59556cfbe8725d556f5b3b70cafddcbed054b4f",
+      "bytes": 72632,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
@@ -1713,8 +1731,8 @@
     },
     {
       "path": "docs/research/sota/JOURNAL_METHOD_REPORT_20260913.md",
-      "sha256": "ac073cd65d37c53d6ecd5a4727578d22157434ca26360810b7091164d2211df3",
-      "bytes": 20196,
+      "sha256": "f0428a48fa6a5b8742e6a9134113001deefa28f8733870903e06446c20e2205e",
+      "bytes": 20294,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
@@ -2975,6 +2993,15 @@
       "path": "scripts/research/extend_observation_optimization.py",
       "sha256": "2f7703634730dda4377b8ddd779b3fa2c61a80f539ab762d5f6501b3475d35b9",
       "bytes": 6232,
+      "role": "scripts",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "scripts/research/plot_dual_risk_probe.py",
+      "sha256": "273ad09473009ee1f5a41aa16ce6b9f7954d87f5f410373a1ab4496e9e6a230e",
+      "bytes": 2330,
       "role": "scripts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
