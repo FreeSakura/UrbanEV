@@ -1,0 +1,215 @@
+[
+  {
+    "doi": "10.1143/PTP.33.423",
+    "title": "Transport, Collective Motion, and Brownian Motion",
+    "authors": [
+      "Hazime Mori"
+    ],
+    "venue": "Progress of Theoretical Physics",
+    "published": [
+      1965,
+      3
+    ],
+    "volume": "33",
+    "issue": "3",
+    "crossref_page": "423-455",
+    "url": "https://doi.org/10.1143/ptp.33.423",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "full_text_verification": "See reading notes for per-paper depth; metadata verification is not proof verification"
+  },
+  {
+    "doi": "10.1103/PhysRev.124.983",
+    "title": "Memory Effects in Irreversible Thermodynamics",
+    "authors": [
+      "Robert Zwanzig"
+    ],
+    "venue": "Physical Review",
+    "published": [
+      1961,
+      11,
+      15
+    ],
+    "volume": "124",
+    "issue": "4",
+    "crossref_page": "983-992",
+    "url": "https://doi.org/10.1103/physrev.124.983",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "full_text_verification": "See reading notes for per-paper depth; metadata verification is not proof verification"
+  },
+  {
+    "doi": "10.1073/pnas.1609587113",
+    "title": "Data-driven parameterization of the generalized Langevin equation",
+    "authors": [
+      "Huan Lei",
+      "Nathan A. Baker",
+      "Xiantao Li"
+    ],
+    "venue": "Proceedings of the National Academy of Sciences",
+    "published": [
+      2016,
+      11,
+      29
+    ],
+    "volume": "113",
+    "issue": "50",
+    "crossref_page": "14183-14188",
+    "url": "https://doi.org/10.1073/pnas.1609587113",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "full_text_verification": "See reading notes for per-paper depth; metadata verification is not proof verification"
+  },
+  {
+    "doi": "10.1287/opre.9.3.383",
+    "title": "A Proof for the Queuing Formula: L = λ W",
+    "authors": [
+      "John D. C. Little"
+    ],
+    "venue": "Operations Research",
+    "published": [
+      1961,
+      6
+    ],
+    "volume": "9",
+    "issue": "3",
+    "crossref_page": "383-387",
+    "url": "https://doi.org/10.1287/opre.9.3.383",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "full_text_verification": "See reading notes for per-paper depth; metadata verification is not proof verification"
+  },
+  {
+    "doi": "10.1287/opre.41.4.731",
+    "title": "The Physics of the Mt/G/∞ Queue",
+    "authors": [
+      "Stephen G. Eick",
+      "William A. Massey",
+      "Ward Whitt"
+    ],
+    "venue": "Operations Research",
+    "published": [
+      1993,
+      8
+    ],
+    "volume": "41",
+    "issue": "4",
+    "crossref_page": "731-742",
+    "url": "https://doi.org/10.1287/opre.41.4.731",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "full_text_verification": "See reading notes for per-paper depth; metadata verification is not proof verification"
+  },
+  {
+    "doi": "10.2307/2171802",
+    "title": "Automobile Prices in Market Equilibrium",
+    "authors": [
+      "Steven Berry",
+      "James Levinsohn",
+      "Ariel Pakes"
+    ],
+    "venue": "Econometrica",
+    "published": [
+      1995,
+      7
+    ],
+    "volume": "63",
+    "issue": "4",
+    "crossref_page": "841",
+    "url": "https://doi.org/10.2307/2171802",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "full_text_verification": "See reading notes for per-paper depth; metadata verification is not proof verification"
+  },
+  {
+    "doi": "10.2307/1909200",
+    "title": "The Regulation of Queue Size by Levying Tolls",
+    "authors": [
+      "P. Naor"
+    ],
+    "venue": "Econometrica",
+    "published": [
+      1969,
+      1
+    ],
+    "volume": "37",
+    "issue": "1",
+    "crossref_page": "15",
+    "url": "https://doi.org/10.2307/1909200",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "full_text_verification": "See reading notes for per-paper depth; metadata verification is not proof verification"
+  },
+  {
+    "doi": "10.1016/0191-2615(94)90002-7",
+    "title": "The cell transmission model: A dynamic representation of highway traffic consistent with the hydrodynamic theory",
+    "authors": [
+      "Carlos F. Daganzo"
+    ],
+    "venue": "Transportation Research Part B: Methodological",
+    "published": [
+      1994,
+      8
+    ],
+    "volume": "28",
+    "issue": "4",
+    "crossref_page": "269-287",
+    "url": "https://doi.org/10.1016/0191-2615(94)90002-7",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "full_text_verification": "See reading notes for per-paper depth; metadata verification is not proof verification"
+  },
+  {
+    "doi": "10.1016/j.trc.2013.08.014",
+    "title": "Max pressure control of a network of signalized intersections",
+    "authors": [
+      "Pravin Varaiya"
+    ],
+    "venue": "Transportation Research Part C: Emerging Technologies",
+    "published": [
+      2013,
+      11
+    ],
+    "volume": "36",
+    "issue": null,
+    "crossref_page": "177-195",
+    "url": "https://doi.org/10.1016/j.trc.2013.08.014",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "full_text_verification": "See reading notes for per-paper depth; metadata verification is not proof verification"
+  },
+  {
+    "doi": "10.1038/s41560-022-01105-7",
+    "title": "Charging infrastructure access and operation to reduce the grid impacts of deep electric vehicle adoption",
+    "authors": [
+      "Siobhan Powell",
+      "Gustavo Vianna Cezar",
+      "Liang Min",
+      "Inês M. L. Azevedo",
+      "Ram Rajagopal"
+    ],
+    "venue": "Nature Energy",
+    "published": [
+      2022,
+      9,
+      22
+    ],
+    "volume": "7",
+    "issue": "10",
+    "crossref_page": "932-945",
+    "url": "https://doi.org/10.1038/s41560-022-01105-7",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "full_text_verification": "See reading notes for per-paper depth; metadata verification is not proof verification"
+  }
+]

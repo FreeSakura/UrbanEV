@@ -1,0 +1,23 @@
+{
+  "protocol_id": "COARSE_MEMORY_IDENTIFIABILITY_V1_20260913",
+  "status": "SYNTHETIC_MECHANISM_CHECK_COMPLETE",
+  "issues": [],
+  "config_sha256": "6e983f2d79c92b38c2450ca80a4b2feb3778c383cde78927739dedd0edef3b4d",
+  "runner_sha256": "0316a9a248e5e7d14deb27a9f34bfb871bcb90215eb1f7fbe0784e6c552ec7b7",
+  "numpy_version": "2.2.6",
+  "systems": 4,
+  "enumerated_histories": 10816,
+  "risk_rows": 240,
+  "real_data_reads": 0,
+  "model_fits": 0,
+  "foundation_inference": 0,
+  "alpha_searches": 0,
+  "parameter_searches": 0,
+  "executions": 1,
+  "real_method_gate": "NOT_RUN",
+  "real_data_stage_authorized": false,
+  "automation_status": "PAUSED",
+  "elapsed_seconds": 1.1691019999561831,
+  "peak_memory": "NOT_MEASURED",
+  "numerical_method": "float64 finite sums and matrix products, not symbolic exact arithmetic or Monte Carlo"
+}

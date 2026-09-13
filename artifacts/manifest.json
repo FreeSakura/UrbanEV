@@ -38,6 +38,60 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/coarse_memory_identifiability_v1_20260913/execution_receipt.json",
+      "sha256": "5184a7484f500943ca8925b1c5cda18cb0d762daac38c3473add7d10bc771d12",
+      "bytes": 833,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/coarse_memory_identifiability_v1_20260913/identifiability_counterexamples.json",
+      "sha256": "dac4bd428bcd5654daca139905db37ab035e826e8078e8ad88a2c642dbbedd13",
+      "bytes": 1801,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/coarse_memory_identifiability_v1_20260913/mechanism_preregistration.json",
+      "sha256": "8ae3749198a798622fbaea020a325f25c0471bb318e8b7b6adc0dc870cccf983",
+      "bytes": 1487,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/coarse_memory_identifiability_v1_20260913/memory_value_by_horizon.json",
+      "sha256": "c76d92648dd4ff90a77c7d283968014c3457ac68a52418e36d0020b4cf500677",
+      "bytes": 25048,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/coarse_memory_identifiability_v1_20260913/observed_history_risks.csv",
+      "sha256": "9cafb9d6c279f65b96d4400ecedd36241380f111a1a8feca29967d3add01f6c6",
+      "bytes": 26000,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/coarse_memory_identifiability_v1_20260913/same_information_baseline_checks.json",
+      "sha256": "20b74edbbe8bb21f27f3e7bd5798a990d428d9272d8d0ad51a21aa8cdc2e9d16",
+      "bytes": 1965,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/continuous_v2_calibration_2h/calibration_2h.json",
       "sha256": "b655e84aed1885c7822715a033835f2b41624e752070d435e0debc1d02fbf504",
       "bytes": 71925,
@@ -1073,6 +1127,24 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/physics_economics_traffic_20260913/additional_source_metadata.json",
+      "sha256": "4d7533216f4691e055612e82e99d4723ff058d320c0fbb4c0c5c13d6253acff5",
+      "bytes": 5039,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/physics_economics_traffic_20260913/source_metadata.json",
+      "sha256": "e03f5fc20bc10f8cc0e76cb16ac636d61f414240c8f45c06491d66f785c28872",
+      "bytes": 6482,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/PROTECTED_BOUNDARY_PUBLIC.json",
       "sha256": "ab8790cb0aba3da07a701726c82175874c005862c4f758f435a0439b20973fbb",
       "bytes": 720,
@@ -1526,6 +1598,15 @@
       "path": "configs/PARIS_TEACHER_MODEL_CONFIG.json",
       "sha256": "b301ee69d8c2d2a5f24413318cd89cf861b6508018bbdbfaeee201215959568b",
       "bytes": 2832,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "configs/research/COARSE_MEMORY_IDENTIFIABILITY_V1_20260913.json",
+      "sha256": "6e983f2d79c92b38c2450ca80a4b2feb3778c383cde78927739dedd0edef3b4d",
+      "bytes": 977,
       "role": "configs",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",

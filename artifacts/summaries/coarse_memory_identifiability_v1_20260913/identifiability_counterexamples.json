@@ -1,0 +1,70 @@
+{
+  "snapshot_minus_integral": {
+    "active_interval": "[0,1)",
+    "departure_time": 1,
+    "D1": 1,
+    "O1": 0,
+    "O1_minus_D1": -1,
+    "conclusion": "Snapshot minus accumulated activity is not an instantaneous non-active count; this is a continuous-time illustration distinct from the discrete protocol endpoint convention."
+  },
+  "service_aliasing": {
+    "arrival_rate": 4,
+    "service_A_hours": [
+      0.5
+    ],
+    "service_B_hours": [
+      0.25,
+      0.75
+    ],
+    "service_B_probabilities": [
+      0.5,
+      0.5
+    ],
+    "both_mean_hours": 0.5,
+    "integer_sample_distribution": "iid Poisson(2)",
+    "reason": "Stationary independent Poisson arrivals with iid marks; service <1 hour makes the marked-arrival sets serving different integer snapshots disjoint. Counts have the same mean lambda E[S].",
+    "scope": "Only integer occupancy snapshots, not an equivalence claim after duration observations."
+  },
+  "price_equivalence": {
+    "price": [
+      1.0,
+      2.0
+    ],
+    "utility_1": [
+      -1.0,
+      -2.0
+    ],
+    "utility_2": [
+      -1.0,
+      -2.0
+    ],
+    "logit_with_outside_1": [
+      0.6652409557748218,
+      0.24472847105479764,
+      0.09003057317038046
+    ],
+    "logit_with_outside_2": [
+      0.6652409557748218,
+      0.24472847105479764,
+      0.09003057317038046
+    ],
+    "max_difference": 0.0,
+    "scope": "Unrestricted latent utility shocks; no causal elasticity identification."
+  },
+  "rejected_arrivals": {
+    "busy_path_A": [
+      1,
+      1,
+      1
+    ],
+    "busy_path_B": [
+      1,
+      1,
+      1
+    ],
+    "rejected_A": 2,
+    "rejected_B": 20,
+    "admitted_both": 0,
+    "assumption": "All resources busy throughout interval; arrivals leave without influencing incumbent service; no rejection log observed."
+  }
+}

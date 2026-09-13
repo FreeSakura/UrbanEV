@@ -1,0 +1,160 @@
+[
+  {
+    "doi": "10.1073/pnas.97.7.2968",
+    "title": "Optimal prediction and the Mori–Zwanzig representation of irreversible processes",
+    "authors": [
+      "Alexandre J. Chorin",
+      "Ole H. Hald",
+      "Raz Kupferman"
+    ],
+    "venue": "Proceedings of the National Academy of Sciences",
+    "published": [
+      2000,
+      3,
+      28
+    ],
+    "volume": "97",
+    "issue": "7",
+    "crossref_page": "2968-2973",
+    "url": "https://doi.org/10.1073/pnas.97.7.2968",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "metadata_note": "",
+    "reading_depth": "See theory and reading notes; metadata check alone is not full-text verification"
+  },
+  {
+    "doi": "10.1103/PhysRevLett.133.077301",
+    "title": "Data-Driven Learning of the Generalized Langevin Equation with State-Dependent Memory",
+    "authors": [
+      "Pei Ge",
+      "Zhongqiang Zhang",
+      "Huan Lei"
+    ],
+    "venue": "Physical Review Letters",
+    "published": [
+      2024,
+      8,
+      13
+    ],
+    "volume": "133",
+    "issue": "7",
+    "crossref_page": null,
+    "url": "https://doi.org/10.1103/physrevlett.133.077301",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "metadata_note": "",
+    "reading_depth": "See theory and reading notes; metadata check alone is not full-text verification"
+  },
+  {
+    "doi": "10.1017/apr.2016.67",
+    "title": "Nonparametric estimation of the service time distribution in the M/G/∞ queue",
+    "authors": [
+      "Alexander Goldenshluger"
+    ],
+    "venue": "Advances in Applied Probability",
+    "published": [
+      2016,
+      12
+    ],
+    "volume": "48",
+    "issue": "4",
+    "crossref_page": "1117-1138",
+    "url": "https://doi.org/10.1017/apr.2016.67",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "metadata_note": "",
+    "reading_depth": "See theory and reading notes; metadata check alone is not full-text verification"
+  },
+  {
+    "doi": "10.2307/1913415",
+    "title": "Congestion Tolls for Poisson Queuing Processes",
+    "authors": [
+      "Noel M. Edelson",
+      "David K. Hilderbrand"
+    ],
+    "venue": "Econometrica",
+    "published": [
+      1975,
+      1
+    ],
+    "volume": "43",
+    "issue": "1",
+    "crossref_page": "81",
+    "url": "https://doi.org/10.2307/1913415",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "metadata_note": "Crossref and JSTOR cover spell Hilderbrand; original article byline p81 spells Hildebrand. Theory report follows original byline, preserving variant here.",
+    "reading_depth": "See theory and reading notes; metadata check alone is not full-text verification"
+  },
+  {
+    "doi": "10.1257/mic.5.4.1",
+    "title": "Demand Estimation Under Incomplete Product Availability",
+    "authors": [
+      "Christopher T Conlon",
+      "Julie Holland Mortimer"
+    ],
+    "venue": "American Economic Journal: Microeconomics",
+    "published": [
+      2013,
+      11,
+      1
+    ],
+    "volume": "5",
+    "issue": "4",
+    "crossref_page": "1-30",
+    "url": "https://doi.org/10.1257/mic.5.4.1",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "metadata_note": "",
+    "reading_depth": "See theory and reading notes; metadata check alone is not full-text verification"
+  },
+  {
+    "doi": "10.3982/ECTA9027",
+    "title": "Identification in Differentiated Products Markets Using Market Level Data",
+    "authors": [
+      "Steven T. Berry",
+      "Philip A. Haile"
+    ],
+    "venue": "Econometrica",
+    "published": [
+      2014
+    ],
+    "volume": "82",
+    "issue": "5",
+    "crossref_page": "1749-1797",
+    "url": "https://doi.org/10.3982/ecta9027",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "metadata_note": "Crossref author field missing; publisher citation verified at https://doi.org/10.3982/ECTA9027",
+    "reading_depth": "See theory and reading notes; metadata check alone is not full-text verification"
+  },
+  {
+    "doi": "10.1016/j.trb.2018.04.001",
+    "title": "How likely am I to find parking? – A practical model-based framework for predicting parking availability",
+    "authors": [
+      "Jun Xiao",
+      "Yingyan Lou",
+      "Joshua Frisby"
+    ],
+    "venue": "Transportation Research Part B: Methodological",
+    "published": [
+      2018,
+      6
+    ],
+    "volume": "112",
+    "issue": null,
+    "crossref_page": "19-39",
+    "url": "https://doi.org/10.1016/j.trb.2018.04.001",
+    "metadata_status": "VERIFIED_METADATA",
+    "verification_method": "direct_crossref",
+    "checked_on": "2026-09-13",
+    "metadata_note": "",
+    "reading_depth": "See theory and reading notes; metadata check alone is not full-text verification"
+  }
+]

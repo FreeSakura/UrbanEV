@@ -1,0 +1,52 @@
+{
+  "M_r1": {
+    "positive_support_histories": 2208,
+    "enumerated_histories": 2704,
+    "mass_error": 0.0,
+    "row_sum_error": 0.0,
+    "stationary_error": 0.0,
+    "coefficient_sum_error": 2.7755575615628914e-16,
+    "hmm_probability_error": 3.3306690738754696e-16,
+    "hmm_history_mass_error": 1.1102230246251565e-16,
+    "risk_identity_error": 7.771561172376096e-16,
+    "minimum_joint_probability": 3.739435299888727e-09
+  },
+  "M_r1_4": {
+    "positive_support_histories": 2208,
+    "enumerated_histories": 2704,
+    "mass_error": 2.220446049250313e-16,
+    "row_sum_error": 0.0,
+    "stationary_error": 0.0,
+    "coefficient_sum_error": 2.220446049250313e-16,
+    "hmm_probability_error": 3.3306690738754696e-16,
+    "hmm_history_mass_error": 1.1102230246251565e-16,
+    "risk_identity_error": 8.049116928532385e-16,
+    "minimum_joint_probability": 9.413043302021467e-13
+  },
+  "L_r1": {
+    "positive_support_histories": 2402,
+    "enumerated_histories": 2704,
+    "mass_error": 1.5543122344752192e-15,
+    "row_sum_error": 1.1102230246251565e-16,
+    "stationary_error": 5.551115123125783e-17,
+    "coefficient_sum_error": 2.7755575615628914e-16,
+    "hmm_probability_error": 3.3306690738754696e-16,
+    "hmm_history_mass_error": 1.3877787807814457e-17,
+    "risk_identity_error": 4.440892098500626e-16,
+    "minimum_joint_probability": 3.2976740581583427e-07,
+    "lumpable_memory_max_gamma": 2.494727278391189e-30
+  },
+  "L_r1_4": {
+    "positive_support_histories": 2402,
+    "enumerated_histories": 2704,
+    "mass_error": 1.887379141862766e-15,
+    "row_sum_error": 1.1102230246251565e-16,
+    "stationary_error": 0.0,
+    "coefficient_sum_error": 2.220446049250313e-16,
+    "hmm_probability_error": 3.3306690738754696e-16,
+    "hmm_history_mass_error": 8.326672684688674e-17,
+    "risk_identity_error": 4.163336342344337e-16,
+    "minimum_joint_probability": 2.176184990552795e-09,
+    "lumpable_memory_max_gamma": 1.6867635847221073e-30
+  }
+}

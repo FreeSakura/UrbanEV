@@ -7,6 +7,10 @@
 
 这不是UrbanEV数据集官方仓库。原始数据与官方方法见 [IntelligentSystemsLab/UrbanEV](https://github.com/IntelligentSystemsLab/UrbanEV)。本项目从证据审计转向预测方法研究：新模型、强基线、实验和结果是主线，既有审计工具承担验证工作。
 
+## 物理学、经济学与交通调度启发（2026-09-13）
+
+[完整理论报告](docs/research/sota/COARSE_MEMORY_THEORY_REPORT_20260913.md)从粗粒化记忆、容量约束与异质选择推导新的研究问题，并完成一次[纯合成反证](docs/research/sota/COARSE_MEMORY_IDENTIFIABILITY_REPORT_20260913.md)：慢隐藏过程下完整历史相对纯占用历史改善宏RMSE 1.6010%，相对简单短双观测仅0.2468%；与同信息标准HMM一致。**这是机制线索，未建立新模型优势或UrbanEV成绩。** 交通调度用于明确接纳、占用与释放状态；控制收益不替代预测SOTA。零真实数据读取、零拟合，自动化保持暂停。
+
 ## 动态电量条件增量（2026-09-13）
 
 [新电量实验](docs/research/sota/VOLUME_COMPOSITION_INCREMENT_REPORT_20260913.md)已执行：以总时长和历史静态功率关系为条件，比较区域匹配的动态电量差与重复/错位对照。5个普通ridge在固定网格中全部回退α=0，35个正步长点均使宏MAE恶化，状态为**VOLUME_INCREMENT_CALIBRATION_NO_GO**，未进入1392评价。动态差11列均保留非零训练尺度，不能把本次失败解释为电量完全冗余或所有表示无效。未使用旧门控方向，也未切换价格、天气或11kW版本。
