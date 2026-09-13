@@ -1,0 +1,206 @@
+{
+  "status": "PASS",
+  "scope": "Independent NumPy reductions at already registered calibration points; no new fit or selection",
+  "tunable_points_recomputed": 56,
+  "native_points_recomputed": 1,
+  "maximum_metric_difference": 1.3877787807814457e-17,
+  "source_numeric_arrays_read": 12,
+  "source_ledger": [
+    {
+      "file": "private_truth_1056_h3.npy",
+      "sha256": "7754531e1c667d9760f183a536bab2b8bd1471533c3b9c9a57d3c7a453f9787e",
+      "cut": 1056
+    },
+    {
+      "file": "private_1056_h3_native_a1.npy",
+      "sha256": "86a2230dac3d4b1170809afeb397dfe48b7bd916c9fded1b1ea1b4fdd894eed8",
+      "cut": 1056
+    },
+    {
+      "file": "private_1056_h3_occupancy_a1.npy",
+      "sha256": "21cb37ddaff1c3549be08336aa40e95cb8bef4dbea7855dcf0ecf1d2dbb4f6d6",
+      "cut": 1056
+    },
+    {
+      "file": "private_1056_h3_duplicate_a1.npy",
+      "sha256": "7b8f582fe2f97baf5cac10474fa8a51a65c85c47e71fce3c2c52d763054c4e43",
+      "cut": 1056
+    },
+    {
+      "file": "private_1056_h3_raw_duration_a1.npy",
+      "sha256": "2866058ad9b8a6732ef9f3f2e0f597923a718d0ab3fbad3e118a07af1a6ace05",
+      "cut": 1056
+    },
+    {
+      "file": "private_1056_h3_permuted_orthogonal_a1.npy",
+      "sha256": "abea8264b5fb83467baa4b96ae7447f868ebcffb1c40ef51c6c19d832ed707f6",
+      "cut": 1056
+    },
+    {
+      "file": "private_truth_1056_h12.npy",
+      "sha256": "451005d4bc1fbef9d11e1303140a6ee41963363eecc0b9f81383bf5f3eba3cd7",
+      "cut": 1056
+    },
+    {
+      "file": "private_1056_h12_native_a1.npy",
+      "sha256": "b3c8b26025da3f5f8c5a03adc278eca58be5d10687be9703bf72f3bd7659eb67",
+      "cut": 1056
+    },
+    {
+      "file": "private_1056_h12_occupancy_a1.npy",
+      "sha256": "c201c045503394e1bef6cfa239f752723939225dd3b76a26b7f4017417b47a06",
+      "cut": 1056
+    },
+    {
+      "file": "private_1056_h12_duplicate_a1.npy",
+      "sha256": "1f42fcbef4e3e5caac13c79f0f466f0b727cd0379e6d3c9f1e17577d6d0a1742",
+      "cut": 1056
+    },
+    {
+      "file": "private_1056_h12_raw_duration_a1.npy",
+      "sha256": "b147b1c2d7f436158baf14cccd3e7feced77ee4f4bea908744a583ee1af2e23d",
+      "cut": 1056
+    },
+    {
+      "file": "private_1056_h12_permuted_orthogonal_a1.npy",
+      "sha256": "60c58627c0b989efd1d81809803969f247fe0a7c0e70f400ea23464418e67a10",
+      "cut": 1056
+    }
+  ],
+  "max_source_target_index": 1223,
+  "saved_models_loaded": 4,
+  "new_ridge_fits": 0,
+  "new_foundation_inference": 0,
+  "evaluation_arrays_decoded": 0,
+  "original_selection_unchanged": true,
+  "private_selected_artifact_hashes": [
+    {
+      "file": "private_calibration_native_h3_direction.npy",
+      "sha256": "a067cf8699a43f8fff0cbb69080036aea95fe70fad4fb5ff90545422a65826bb"
+    },
+    {
+      "file": "private_calibration_native_h3_selected_unclipped_move.npy",
+      "sha256": "fcfd223b43e16ab9f37d7380fd457d92c9ff6f5ace973658fc462b7af59ec88f"
+    },
+    {
+      "file": "private_calibration_native_h12_direction.npy",
+      "sha256": "a9e1a537e27f01e85577e83ce5f25b189ada8e36f3448b589f97816f1b568b5e"
+    },
+    {
+      "file": "private_calibration_native_h12_selected_unclipped_move.npy",
+      "sha256": "f311e1612f88c4c9fc6a197a50b34b38ad2117139e104e3bc3229d47ffbf541e"
+    },
+    {
+      "file": "private_calibration_mean_base_h3_direction.npy",
+      "sha256": "9eb6e45660857c335d1ad5cc6c00fabedd7d2712264cc79c4416fd03e44157c4"
+    },
+    {
+      "file": "private_calibration_mean_base_h3_selected_unclipped_move.npy",
+      "sha256": "ee7257f5fa3af85ccd3e9d15a37eac9d66affa773f10df61df723bd2e0a4e672"
+    },
+    {
+      "file": "private_calibration_mean_base_h12_direction.npy",
+      "sha256": "7758acfc2579b9b4a831b57d4d6d79495a3b5cc649715d1a4edca587dfc71f2e"
+    },
+    {
+      "file": "private_calibration_mean_base_h12_selected_unclipped_move.npy",
+      "sha256": "0ba9ab9dbfaaafb83c3de033653677019bfc2e9fe815794a4dad67470caaf62c"
+    },
+    {
+      "file": "private_calibration_gate_base_h3_direction.npy",
+      "sha256": "ef981175de69465bc3cea2dd0a3f95490d3f74ae706e880127643bb5323b6304"
+    },
+    {
+      "file": "private_calibration_gate_base_h3_selected_unclipped_move.npy",
+      "sha256": "2dce8b916315d50c3ce7ce84df21b1639fb8c04c977f2f7be71f9627534183b7"
+    },
+    {
+      "file": "private_calibration_gate_base_h12_direction.npy",
+      "sha256": "6f8c36ab5d17af1ccdb45bed73c62d623ed021f7fdc6a20ba31990dbfd9e81c0"
+    },
+    {
+      "file": "private_calibration_gate_base_h12_selected_unclipped_move.npy",
+      "sha256": "21b7e0c3cb0fc0c5e827550b02871e1338035650c1c4568e6dddd7fcb2dc4668"
+    },
+    {
+      "file": "private_calibration_mean_duration_h3_direction.npy",
+      "sha256": "e56817aa9aca2981e9a11eb41ecea29a361c82aaf324e09dd0a4cd7a8327509b"
+    },
+    {
+      "file": "private_calibration_mean_duration_h3_selected_unclipped_move.npy",
+      "sha256": "be19e849f356ced2f9dd50a9fe2204674b722ffedc6495c7f45edc663424e7a5"
+    },
+    {
+      "file": "private_calibration_mean_duration_h12_direction.npy",
+      "sha256": "f1e5abd15ea48443565769ef29cd8bc5e413d964d461afe23abf45cad953a597"
+    },
+    {
+      "file": "private_calibration_mean_duration_h12_selected_unclipped_move.npy",
+      "sha256": "93f9c20f98f515e657881beb96e656e44f67fc1a5150fe3dc4234237674eccd9"
+    },
+    {
+      "file": "private_calibration_hard_duration_h3_direction.npy",
+      "sha256": "28ae0f35d5afeb33147189f6711c5a6daa5703f0e67f74e51f8c21496e9af0f9"
+    },
+    {
+      "file": "private_calibration_hard_duration_h3_selected_unclipped_move.npy",
+      "sha256": "d4c3981b2672586332191d53ca228639b86abbf7ae2d970fd5e3bbe4130c05b8"
+    },
+    {
+      "file": "private_calibration_hard_duration_h12_direction.npy",
+      "sha256": "bacc298f8b31d1a24604bab3d43dcd8db60e34ee2aa0f85c52c9e7f14ef423bd"
+    },
+    {
+      "file": "private_calibration_hard_duration_h12_selected_unclipped_move.npy",
+      "sha256": "741bee1ac5bfa5a6a0a8487d4f4e6734f0f0730b90d3697342f1a2fccde913a9"
+    },
+    {
+      "file": "private_calibration_gate_duration_h3_direction.npy",
+      "sha256": "9504b3f4430d0f99fe46a1cc8d5d4b0f0bddc3e33a0f18116c63ab83bce8130e"
+    },
+    {
+      "file": "private_calibration_gate_duration_h3_selected_unclipped_move.npy",
+      "sha256": "a63dccb7ed21028e6d093362bd807664561c28cf95684e8796466c811f460364"
+    },
+    {
+      "file": "private_calibration_gate_duration_h12_direction.npy",
+      "sha256": "fc7562700d9117515b9746e3d3f30a4be0a01614ebc7617e5a8edfa243b2d919"
+    },
+    {
+      "file": "private_calibration_gate_duration_h12_selected_unclipped_move.npy",
+      "sha256": "81128ec8bb5d6887096b0e6d77e95c2b12a8fbbc810017c910b78aa9d14b5ed2"
+    },
+    {
+      "file": "private_calibration_gate_duplicate_h3_direction.npy",
+      "sha256": "acb04513344b58cbfe111f943c8f3cc8f7da9cf9ed55085746a8a39f1a8b9e89"
+    },
+    {
+      "file": "private_calibration_gate_duplicate_h3_selected_unclipped_move.npy",
+      "sha256": "11fb3fd8dff805ebb6c9c88400190da756a90ebb0beb73faeabfc9a0d927114d"
+    },
+    {
+      "file": "private_calibration_gate_duplicate_h12_direction.npy",
+      "sha256": "8bea1f6612eeabc5e98791c13b6d32108acec89306cce3cde25aaabb15c11ddb"
+    },
+    {
+      "file": "private_calibration_gate_duplicate_h12_selected_unclipped_move.npy",
+      "sha256": "521808b82b67570d51cb00d7e95b606e6c315a203f6b6f206b95d800f2a5d403"
+    },
+    {
+      "file": "private_calibration_gate_permuted_h3_direction.npy",
+      "sha256": "945160156b5b1961c25fa6a197fd93a927e8c3a0938832027a286877e80b9e33"
+    },
+    {
+      "file": "private_calibration_gate_permuted_h3_selected_unclipped_move.npy",
+      "sha256": "22888c1c11a612fc3a68269e762d5e8adedb50438e39499cccee659566299b78"
+    },
+    {
+      "file": "private_calibration_gate_permuted_h12_direction.npy",
+      "sha256": "d858dea80011d8813d9edfdbe94a3cc2004e9047b42c67ce3fbf22ae2c49eb5c"
+    },
+    {
+      "file": "private_calibration_gate_permuted_h12_selected_unclipped_move.npy",
+      "sha256": "2dfd54185fb49a899eb007e8448df92b4c19f9c458a3e13732af9eeb29248056"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "status": "FINITE_STEP_CALIBRATION_NO_GO",
+  "execution_commit": "6076a6d701b15e5691b4407ba702105a2f174c7b",
+  "primary": "gate_duration",
+  "alpha": 4,
+  "rmse_gain_vs_native_percent": 0.5385000357730707,
+  "rmse_gain_vs_Cstar_percent": 0.18594302107257654,
+  "Cstar": "gate_base",
+  "information_gate": false,
+  "method_gate": false,
+  "evaluation_cut1392": "NOT_RUN",
+  "cross_window_confirmation": "NOT_EVALUATED",
+  "full_four_horizon_confirmation": "NOT_EVALUATED",
+  "new_ridge_fits": 4,
+  "source_arrays_decoded": 24,
+  "new_foundation_inference": 0,
+  "old_no_go_unchanged": true,
+  "scientific_scope": "registered eight-point grid in an exposed calibration window; no variable-level uselessness or independent-confirmation claim",
+  "research_review": "PENDING",
+  "automation_status": "PAUSED"
+}

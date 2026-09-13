@@ -1,0 +1,12 @@
+{
+  "mae_linear_term": -9.956822769866197e-05,
+  "mae_crossing_term": 7.170161642371545e-05,
+  "mae_clipping_adjustment": 0.0,
+  "rmse_gain_native_percent": 0.5385000357730707,
+  "rmse_gain_Cstar_percent": 0.18594302107257654,
+  "mae_relative_to_Cstar_percent": 0.03493683964630456,
+  "rmse_worse_than_hard_percent": 0.1749624823066398,
+  "mae_worse_than_hard_percent": 0.07424006959206864,
+  "crossing_fraction_of_local_mae_gain": 0.7201254665365405,
+  "macro_mae_change": -2.7866611274948716e-05
+}

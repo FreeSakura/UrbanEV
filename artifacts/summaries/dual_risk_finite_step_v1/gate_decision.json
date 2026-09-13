@@ -1,0 +1,71 @@
+{
+  "status": "FINITE_STEP_CALIBRATION_NO_GO",
+  "calibration": {
+    "Cstar": "gate_base",
+    "conditions": {
+      "positive_selected_alpha": true,
+      "reference_has_positive_rmse": true,
+      "macro_rmse_gain_at_least1percent": false,
+      "macro_mae_no_worse_than_native": true,
+      "macro_mae_no_worse_than_Cstar": false,
+      "beats_permuted_rmse": true,
+      "mae_no_worse_than_permuted": false,
+      "h3_rmse_harm_native_at_most1percent": true,
+      "h3_rmse_harm_Cstar_at_most1percent": true,
+      "h12_rmse_harm_native_at_most1percent": true,
+      "h12_rmse_harm_Cstar_at_most1percent": true
+    },
+    "information_pass": false,
+    "rmse_gain_percent_vs_Cstar": 0.18594302107257654,
+    "primary_macro": {
+      "rmse": 0.06996661466188621,
+      "mae": 0.03974070565107628,
+      "unclipped_move_rmse": 0.06996661466188621,
+      "unclipped_move_mae": 0.03974070565107628,
+      "baseline_rmse": 0.07034542479959675,
+      "baseline_mae": 0.039768572262351226
+    },
+    "reference_macro": {
+      "rmse": 0.07009695505780057,
+      "mae": 0.039726826353456604,
+      "unclipped_move_rmse": 0.07009695513681369,
+      "unclipped_move_mae": 0.039726841899562194,
+      "baseline_rmse": 0.07034542479959675,
+      "baseline_mae": 0.039768572262351226
+    },
+    "method_comparisons": {
+      "mean_duration": {
+        "conditions": {
+          "positive_reference_rmse": true,
+          "macro_rmse_gain_at_least1percent": false,
+          "macro_mae_no_worse": true,
+          "h3_rmse_harm_at_most1percent": true,
+          "h12_rmse_harm_at_most1percent": true
+        },
+        "passed": false
+      },
+      "hard_duration": {
+        "conditions": {
+          "positive_reference_rmse": true,
+          "macro_rmse_gain_at_least1percent": false,
+          "macro_mae_no_worse": false,
+          "h3_rmse_harm_at_most1percent": true,
+          "h12_rmse_harm_at_most1percent": true
+        },
+        "passed": false
+      }
+    },
+    "method_pass": false
+  },
+  "evaluation": {
+    "status": "NOT_RUN",
+    "reason": "CALIBRATION_INFORMATION_GATE_FAILED"
+  },
+  "cross_window_confirmation": "NOT_EVALUATED",
+  "full_four_horizon_confirmation": "NOT_EVALUATED",
+  "old_v1_v2_information_gate": false,
+  "old_v1_v2_structure_gate": false,
+  "independent_confirmation": false,
+  "sota_claim": false,
+  "automatic_stage_advance": false
+}

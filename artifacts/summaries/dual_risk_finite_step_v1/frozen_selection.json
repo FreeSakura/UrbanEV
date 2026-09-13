@@ -1,0 +1,48 @@
+{
+  "config_sha256": "4bf8ba31fb96daca408b947777f63a5355f6bcd05f858209bc11314c27891b48",
+  "models": {
+    "base": {
+      "file": "private_model_base.npz",
+      "sha256": "72f4bc4101dd63fce8d5fe1cf77d246dcd10b9e9a7c041b2b48b6031447559b8",
+      "training_cut": 720,
+      "training_cells": 2,
+      "training_rows": 57750
+    },
+    "duration": {
+      "file": "private_model_duration.npz",
+      "sha256": "7dde9cfb92e0d888ec0e779f5f506344c1efe6c1a1212b7e69cbbc9afbee45c5",
+      "training_cut": 720,
+      "training_cells": 2,
+      "training_rows": 57750
+    },
+    "duplicate": {
+      "file": "private_model_duplicate.npz",
+      "sha256": "b3797f2902b1ebe83e299ef0780d3e82ad70604ed6de14584348b4a51bc3b84d",
+      "training_cut": 720,
+      "training_cells": 2,
+      "training_rows": 57750
+    },
+    "permuted": {
+      "file": "private_model_permuted.npz",
+      "sha256": "f8c16d5cc1a5c49a8e11819c3ee49c3a842297ed0ed936db64172e14654c7b54",
+      "training_cut": 720,
+      "training_cells": 2,
+      "training_rows": 57750
+    }
+  },
+  "alphas": {
+    "native": 0.0,
+    "mean_base": 0.125,
+    "gate_base": 8.0,
+    "mean_duration": 0.25,
+    "hard_duration": 0.5,
+    "gate_duration": 4.0,
+    "gate_duplicate": 4.0,
+    "gate_permuted": 8.0
+  },
+  "output_family": "clip(clipped_native + alpha * frozen_direction,0,1)",
+  "calibration_information_gate": false,
+  "calibration_cut": 1056,
+  "fit_cut": 720,
+  "refit_after_selection": false
+}

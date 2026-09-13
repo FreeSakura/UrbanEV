@@ -1,0 +1,3 @@
+33 tests passed in the final preflight before execution.
+Command: PYTHONPATH=src python -m pytest tests/test_finite_step_metrics.py tests/test_dual_risk_finite_step.py tests/test_dual_risk_probe.py -o addopts= -q
+Scope: frozen helper regression tests, finite-step loss identities, staged decode and parameter freezing, future-label isolation, strict MAE constraint and objective ties, shared alpha, complete controls, conditional no-go stop and fixed-point evaluation.
