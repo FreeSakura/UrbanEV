@@ -22,7 +22,7 @@ jobs:
           pytest tests/test_dual_region_pilot.py tests/test_dual_observation_pilot.py
           pytest tests/test_signal_replication.py
           pytest tests/test_residual_information.py
-          pytest tests/test_short_state.py tests/test_short_state_torch.py tests/test_conditional_od.py tests/test_reference_harm_stability.py tests/test_forward_residual_transfer.py tests/test_fixed_reference_correction.py
+          pytest tests/test_short_state.py tests/test_short_state_torch.py tests/test_conditional_od.py tests/test_reference_harm_stability.py tests/test_forward_residual_transfer.py tests/test_fixed_reference_correction.py tests/test_comparison_core.py tests/test_comparison_core.py
           python -m urbanev_forecast smoke --model innovation_attention --epochs 2 --output local-data/ci-smoke
   test-and-build:
     runs-on: ubuntu-latest

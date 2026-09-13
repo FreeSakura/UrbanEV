@@ -1,0 +1,2361 @@
+{
+  "limits": {
+    "FIT": {
+      "occupancy.csv": 1056,
+      "duration.csv": 1043
+    },
+    "SELECT": {
+      "occupancy.csv": 1224,
+      "duration.csv": 1211
+    },
+    "PREDICT": {
+      "occupancy.csv": 1548,
+      "duration.csv": 1547
+    },
+    "SCORE": {
+      "occupancy.csv": 1560
+    }
+  },
+  "prefixes": {
+    "FIT": {
+      "occupancy.csv": {
+        "rows": 1056,
+        "sha256": "939339567e3935dbc390343623dcbb8f30e45e1c30259b12a748c938f123e4bd"
+      },
+      "duration.csv": {
+        "rows": 1043,
+        "sha256": "1e7cc3810fb4b11e1b59f06aa798793a0e8bc1493c04ac428bb7074b062ccf55"
+      }
+    },
+    "SELECT": {
+      "occupancy.csv": {
+        "rows": 1224,
+        "sha256": "4dd8eaa18bf1bc80575f86acba328f9946d326f4802c5f48e10eb6a872ebf8e1"
+      },
+      "duration.csv": {
+        "rows": 1211,
+        "sha256": "01d532a43434012d0447f0859d58a4ec86206d52227657c670e349a599a36c52"
+      }
+    },
+    "PREDICT": {
+      "occupancy.csv": {
+        "rows": 1548,
+        "sha256": "64145637b256e74991c3dca0cd227c3215f8313a4ea02a7408649306d964d2c2"
+      },
+      "duration.csv": {
+        "rows": 1547,
+        "sha256": "91535b3742ac389b3ac70c26563dfe88cad3f5149a7f359ad033c6d60a14a455"
+      }
+    },
+    "SCORE": {
+      "occupancy.csv": {
+        "rows": 1560,
+        "sha256": "40f3769bc207bb5411225c73ee7f174d194238b61ff71f07aa736dc26bc8bb02"
+      }
+    }
+  },
+  "static_info_sha256": "03c9830965e9e99b29adfb8cceed0eba98d37631f514273cb3fe61f80d63de7c",
+  "column_order_sha256": "3924066ec0c48a6636ee1738baa902c2a11ce93992c3fb4f98c24df785dcc649",
+  "fit_origins": {
+    "start": 169,
+    "stop_exclusive": 1045,
+    "stride": 1,
+    "count": 876
+  },
+  "select_origins": {
+    "start": 1056,
+    "stop_exclusive": 1213,
+    "stride": 12,
+    "count": 14
+  },
+  "eval_origins": {
+    "start": 1392,
+    "stop_exclusive": 1549,
+    "stride": 12,
+    "count": 14
+  },
+  "cache_files": [
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1392_h3.npy",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "sha256": "2b6c1a1790ad879adc24aa6eb9d021ce819a01777a7e3789ecad7df64e9a4964",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 1392,
+      "horizon": 3,
+      "system": "native",
+      "file": "private_1392_h3_native_a1.npy",
+      "sha256": "a8870d582828961b80b010a679b8a03ecd0009b1075839ffd9fc64566c16ebf3",
+      "root_role": "v1",
+      "shape": [
+        14,
+        3,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "truth",
+      "root_role": "truth",
+      "file": "private_truth_1392_h12.npy",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "sha256": "e9e43f31a9a16f0882a4693dfb1d93e2b59514a235f055101fa02140d3279cf7",
+      "hash_origin": "V2 saved-output verification receipt"
+    },
+    {
+      "cut": 1392,
+      "horizon": 12,
+      "system": "native",
+      "file": "private_1392_h12_native_a1.npy",
+      "sha256": "e01540b22a04d814f798f6a65370bdf9db69b13d5a4494d81a58e24b06455796",
+      "root_role": "v1",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "hash_origin": "previously frozen V1 alpha1 lineage manifest"
+    }
+  ],
+  "prior_public_scores_sha256": "40b68614207d25f75075164706a0ac1b1b2c5f529cd5ab8549a93c53f50b50e5",
+  "protocol_id": "COMPREHENSIVE_DEVELOPMENT_COMPARISON_V1_20260913",
+  "anchor_commit": "d7807aba97e6682dc6486d78e75194f4cb7841f5",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "scope": "LOCAL_DEVELOPMENT_NOT_OFFICIAL_SIX_FOLD",
+  "models": [
+    "OD_PRODUCT",
+    "OD_SEPARABLE",
+    "OD_CONCAT_MLP",
+    "TIMEXER_LOCAL_OD",
+    "TIMEXER_GLOBAL_O"
+  ],
+  "seeds": [
+    20260915,
+    20260916,
+    20260917
+  ],
+  "new_ridge_fits": 2,
+  "new_neural_runs": 15,
+  "epochs": 40,
+  "checkpoints": [
+    0,
+    5,
+    10,
+    20,
+    40
+  ],
+  "effective_batch_origins": 16,
+  "microbatch_origins": 2,
+  "last_effective_batch_origins": 12,
+  "optimizer_steps_per_run": 2200,
+  "total_optimizer_steps": 33000,
+  "optimizer": "AdamW lr cosine .001 to .0001; betas .9/.999 eps1e-8 matrix weights decay1e-4 bias and1D no decay; foreachFalse/fusedFalse; global gradient clip1 after accumulation",
+  "microbatch_loss_weight": "number of micro origins / actual effective-batch origins",
+  "objective": "mean raw-unit MSE over all regions and12 future outputs; residual nets use float32(Y64-qRidge64)",
+  "selection": "raw four-H terminal macroRMSE on SELECT; exactties earliest incl0; no best seed or ensemble",
+  "author_source": {
+    "repo": "https://github.com/thuml/TimeXer",
+    "commit": "76011909357972bd55a27adba2e1be994d81b327",
+    "files_sha256_lf": {
+      "models/TimeXer.py": "b334d7869544d0a5de7a35501d0342d7bd0be4ebda06ccc045855a42819728c0",
+      "layers/Embed.py": "17e7c3577324c41a0da427a199c955b782fde905aabb1f7cbc3c4e15ebd4ae35",
+      "layers/SelfAttention_Family.py": "6f6592aed0753e342fc04c01db70528c2eb191eeb067cd5fd4c8d348fddcb794",
+      "utils/masking.py": "5976ac3dc84915d0d294c1761573bc18434751f29ec421bcca5a9b280de46bae",
+      "layers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "vendored_into_public_repo": false,
+    "existing_local_license_reference": "licenses/TSLIB-MIT.txt"
+  },
+  "author_configuration": {
+    "seq_len": 168,
+    "pred_len": 12,
+    "patch_len": 12,
+    "d_model": 64,
+    "n_heads": 4,
+    "e_layers": 2,
+    "d_ff": 128,
+    "dropout": 0.1,
+    "factor": 3,
+    "activation": "gelu",
+    "use_norm": true,
+    "embed": "timeF",
+    "freq": "h",
+    "local_mode": "MS, D first O last; five origin marker values repeated168",
+    "global_mode": "M, all275 O series; markerNone"
+  },
+  "archive_whitelist": [
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_RELAX_SHORT_O_20260913_raw.npy",
+      "sha256": "fc5f0fb61f92feed154ace7abab0b0346a3521272f86afdd3a885c01530c6103",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "RELAX_SHORT_O",
+      "seed": "20260913",
+      "logical_models": [
+        "RELAX_SHORT_O"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_RELAX_SHORT_O_20260914_raw.npy",
+      "sha256": "24af79a54a88d1ae6264eba17ba2f87d84166d98ca0021cba1dd22b161028955",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "RELAX_SHORT_O",
+      "seed": "20260914",
+      "logical_models": [
+        "RELAX_SHORT_O"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_RELAX_SHORT_OD_20260913_raw.npy",
+      "sha256": "3cac1407987161c71824c2320906898f83ea1ff9d4fa0429cae6ec243e15d3d3",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "RELAX_SHORT_OD",
+      "seed": "20260913",
+      "logical_models": [
+        "RELAX_SHORT_OD"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_RELAX_SHORT_OD_20260914_raw.npy",
+      "sha256": "c65217be43bc8bbc02bb20b337a3b0a4a24372c6242926f8af8a095dfc6c5d2b",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "RELAX_SHORT_OD",
+      "seed": "20260914",
+      "logical_models": [
+        "RELAX_SHORT_OD"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_DIRECT_SHORT_OD_20260913_raw.npy",
+      "sha256": "e97aae13a476398f3c6d6d9bf99de7e67c6dbc46739933c1d3aba6951a6e182b",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "DIRECT_SHORT_OD",
+      "seed": "20260913",
+      "logical_models": [
+        "DIRECT_SHORT_OD"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_DIRECT_SHORT_OD_20260914_raw.npy",
+      "sha256": "b7ca95c7a93a2cad21fc072a7c51301a2534a3e3c7425485419ecfd4103fbd6a",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "DIRECT_SHORT_OD",
+      "seed": "20260914",
+      "logical_models": [
+        "DIRECT_SHORT_OD"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_DIRECT_LONG_OD_20260913_raw.npy",
+      "sha256": "6986dda2c49fa10bdaf2631b076b9ce54cd172a0b6f0e0678b973976e4afba89",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "DIRECT_LONG_OD",
+      "seed": "20260913",
+      "logical_models": [
+        "DIRECT_LONG_OD"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_DIRECT_LONG_OD_20260914_raw.npy",
+      "sha256": "87daa1abc219ef2bea6b2a7018fd9739575110025dda4cac0934346bd6be49d8",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "DIRECT_LONG_OD",
+      "seed": "20260914",
+      "logical_models": [
+        "DIRECT_LONG_OD"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_RIDGE_SHORT_OD_deterministic_raw.npy",
+      "sha256": "e920417bbd0621c53c2ef45afbe7e002844e7cb6e1bd4bebf8de43611567e91d",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "RIDGE_SHORT_OD",
+      "seed": "deterministic",
+      "logical_models": [
+        "RIDGE_SHORT_OD"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_RIDGE_LONG_OD_deterministic_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "RIDGE_LONG_OD",
+      "seed": "deterministic",
+      "logical_models": [
+        "RIDGE_LONG_OD"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_last_deterministic_raw.npy",
+      "sha256": "69c50942d5f6c26ad52171c3d05d41f5b6d6a560831374d26b4b64120b5ff83e",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "last",
+      "seed": "deterministic",
+      "logical_models": [
+        "last"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_day_deterministic_raw.npy",
+      "sha256": "275f5e33ae42521f2c05ebee71e12433e3eac3403d68bb8830e16c4a4a16ae34",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "day",
+      "seed": "deterministic",
+      "logical_models": [
+        "day"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_week_deterministic_raw.npy",
+      "sha256": "c2415c03d90c8b3db82eed9d10cd9c9c5ddeb716a6858c5334f538c57f5eff0b",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "week",
+      "seed": "deterministic",
+      "logical_models": [
+        "week"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "long_history_source_ablation_v1",
+      "file": "private_PREDICT_S_raw.npy",
+      "sha256": "8ad4463d1f60cd935ab0d78c614d2ee3cac21e745041df712873e4c078b1071e",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "S",
+      "seed": "fixed",
+      "logical_models": [
+        "S"
+      ],
+      "source_manifest": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "long_history_source_ablation_v1",
+      "file": "private_PREDICT_O_LONG_raw.npy",
+      "sha256": "30d548de3bc91af5cb85b3dd9edc52300ef536da76549eb81b6c5f49e4997e9f",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "O_LONG",
+      "seed": "fixed",
+      "logical_models": [
+        "O_LONG"
+      ],
+      "source_manifest": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "long_history_source_ablation_v1",
+      "file": "private_PREDICT_D_LONG_raw.npy",
+      "sha256": "261b24167df9bd406279d24f2c0ea5ee652c38567bcb13b0dcecf19b9eeb0587",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "D_LONG",
+      "seed": "fixed",
+      "logical_models": [
+        "D_LONG"
+      ],
+      "source_manifest": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "long_history_source_ablation_v1",
+      "file": "private_PREDICT_OD_LONG_raw.npy",
+      "sha256": "3d4744d694af3a42c883344aa66608c668d185f5c83e6261716f1de132ee6b44",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OD_LONG",
+      "seed": "fixed",
+      "logical_models": [
+        "OD_LONG"
+      ],
+      "source_manifest": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "long_history_source_ablation_v1",
+      "file": "private_PREDICT_O_LONG_D24_raw.npy",
+      "sha256": "1bfac7ada8b61d8b25b1ea72abd1eeab2ddbb42ca2123b769fca2f431801fb3f",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "O_LONG_D24",
+      "seed": "fixed",
+      "logical_models": [
+        "O_LONG_D24"
+      ],
+      "source_manifest": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "long_history_source_ablation_v1",
+      "file": "private_PREDICT_O24_D_LONG_raw.npy",
+      "sha256": "1238f482bfc021e05dad6487d9ff07b685baab0f9c2408d9b0d07fad89a5ac5f",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "O24_D_LONG",
+      "seed": "fixed",
+      "logical_models": [
+        "O24_D_LONG"
+      ],
+      "source_manifest": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "long_history_source_ablation_v1",
+      "file": "private_PREDICT_O_LONG_D0_raw.npy",
+      "sha256": "600795b5044ce0320a9f28a93d003cf30510e99ebf939c2328be7cd589a78e17",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "O_LONG_D0",
+      "seed": "fixed",
+      "logical_models": [
+        "O_LONG_D0"
+      ],
+      "source_manifest": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "long_history_source_ablation_v1",
+      "file": "private_PREDICT_O_LONG_DUP_raw.npy",
+      "sha256": "d942bb3e686b026492a7ccbd13260759798121208d38ed9a86ebd847ebec6094",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "O_LONG_DUP",
+      "seed": "fixed",
+      "logical_models": [
+        "O_LONG_DUP"
+      ],
+      "source_manifest": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "duration_lag_regularization_v1",
+      "file": "private_DEV_BASE_OD_raw.npy",
+      "sha256": "3d4744d694af3a42c883344aa66608c668d185f5c83e6261716f1de132ee6b44",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "BASE_OD",
+      "seed": "fixed",
+      "logical_models": [
+        "BASE_OD",
+        "D_NORM_SELECTED",
+        "GLOBAL_RIDGE_SELECTED"
+      ],
+      "source_manifest": "artifacts/summaries/duration_lag_regularization_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "duration_lag_regularization_v1",
+      "file": "private_DEV_TIME_SMOOTH_D_g0.01_raw.npy",
+      "sha256": "668260228b3c64e5bb2a39a2cd3912b18f140770e9c27319d716db574bdc9331",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "TIME_SMOOTH_D_g0.01",
+      "seed": "fixed",
+      "logical_models": [
+        "TIME_SELECTED"
+      ],
+      "source_manifest": "artifacts/summaries/duration_lag_regularization_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "duration_lag_regularization_v1",
+      "file": "private_DEV_SCRAMBLED_SMOOTH_D_g0.01_raw.npy",
+      "sha256": "6f8d2b48f86e4ef19c2149b39d587dc595557e890223d8e7bb842269c365e294",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "SCRAMBLED_SMOOTH_D_g0.01",
+      "seed": "fixed",
+      "logical_models": [
+        "SCRAMBLED_SELECTED",
+        "SCRAMBLED_MATCHED"
+      ],
+      "source_manifest": "artifacts/summaries/duration_lag_regularization_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_BASE_OD_fixed_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "BASE_OD",
+      "seed": "fixed",
+      "logical_models": [
+        "BASE_OD"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_OD_PRODUCT_20260913_raw.npy",
+      "sha256": "4d28ffbbddc895f1aba7a13148f7bc9df78ad691a3e3f4d1d5c4f9a3adf76ee0",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OD_PRODUCT",
+      "seed": "20260913",
+      "logical_models": [
+        "OD_PRODUCT"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_OD_PRODUCT_20260914_raw.npy",
+      "sha256": "520cd41a2adf53bec25f2b58dee747e9ba2f3d705df0d87ffb92b1fb7426ecd3",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OD_PRODUCT",
+      "seed": "20260914",
+      "logical_models": [
+        "OD_PRODUCT"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_OD_SEPARABLE_20260913_raw.npy",
+      "sha256": "6e494025915d4095769574ab5f8d5b460b0043703dd7a41dbaf0859cf44f4698",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OD_SEPARABLE",
+      "seed": "20260913",
+      "logical_models": [
+        "OD_SEPARABLE"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_OD_SEPARABLE_20260914_raw.npy",
+      "sha256": "1e261a5027cd585903ef6dc620937fd49ef17edc9371404fb26ce6e8deeca61f",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OD_SEPARABLE",
+      "seed": "20260914",
+      "logical_models": [
+        "OD_SEPARABLE"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_OD_CONCAT_MLP_20260913_raw.npy",
+      "sha256": "6ce5ee650d4843397ba0b0144bb8fc4abb72f64355dc9967b92d8ad0391952bd",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OD_CONCAT_MLP",
+      "seed": "20260913",
+      "logical_models": [
+        "OD_CONCAT_MLP"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_OD_CONCAT_MLP_20260914_raw.npy",
+      "sha256": "0785db735a0347f9f4e13f7444cc3f6b1ba72a240701377817a767431039cb52",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OD_CONCAT_MLP",
+      "seed": "20260914",
+      "logical_models": [
+        "OD_CONCAT_MLP"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_OO_PRODUCT_20260913_raw.npy",
+      "sha256": "daf2ea2cdbb9adc3196392b5caf6312346e2c648dedb88708355cd8fe4ce2856",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OO_PRODUCT",
+      "seed": "20260913",
+      "logical_models": [
+        "OO_PRODUCT"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_OO_PRODUCT_20260914_raw.npy",
+      "sha256": "d8a14fb4760c7b734eb6665e38b879e738ac7a66f5e45fb08688d01b53d7c59d",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OO_PRODUCT",
+      "seed": "20260914",
+      "logical_models": [
+        "OO_PRODUCT"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_BASE_OD_fixed_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "BASE_OD",
+      "seed": "fixed",
+      "logical_models": [
+        "BASE_OD"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_MSE_20260915_raw.npy",
+      "sha256": "79f3ed7d3dbf4933a108e42118a15ceeaba7379a401ea76ea36478e68c3d466c",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_MSE",
+      "seed": "20260915",
+      "logical_models": [
+        "PRODUCT_MSE"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_MSE_20260916_raw.npy",
+      "sha256": "7c69a89639789e86942cdb2ce2783dd55b4627d215da9558f9f9b4d5d8c0b1f5",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_MSE",
+      "seed": "20260916",
+      "logical_models": [
+        "PRODUCT_MSE"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_MSE_20260917_raw.npy",
+      "sha256": "cda5366616d50a5cefe2828a5dab2082581e9bb4f7d42004c09a4bc7d36d9c18",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_MSE",
+      "seed": "20260917",
+      "logical_models": [
+        "PRODUCT_MSE"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_POSREG_20260915_raw.npy",
+      "sha256": "e44ee2bdcbd6c03858dbd5be9ae4422cb1310963f45126a3fa86b8a692aa1eed",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_POSREG",
+      "seed": "20260915",
+      "logical_models": [
+        "PRODUCT_POSREG"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_POSREG_20260916_raw.npy",
+      "sha256": "57eec0547b7d60678414a4acbb1e299f722f3fc9e83bd80fd6085381a1fdf4b6",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_POSREG",
+      "seed": "20260916",
+      "logical_models": [
+        "PRODUCT_POSREG"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_POSREG_20260917_raw.npy",
+      "sha256": "35ed7a282f0199373165b553422e17e716015c1af04c82830fe6dd657235deba",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_POSREG",
+      "seed": "20260917",
+      "logical_models": [
+        "PRODUCT_POSREG"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_MIX_20260915_raw.npy",
+      "sha256": "4cf246a908f39d3267d36b99fa97a81a727afc885f4fed1c9003aaa64d94e7b0",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_MIX",
+      "seed": "20260915",
+      "logical_models": [
+        "PRODUCT_MIX"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_MIX_20260916_raw.npy",
+      "sha256": "ff1a4c75347b58fcda2d9b88f7e8861e39aab837939c295545185bb4195fff7e",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_MIX",
+      "seed": "20260916",
+      "logical_models": [
+        "PRODUCT_MIX"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_MIX_20260917_raw.npy",
+      "sha256": "fbcbb0649a45eec6c217a74d93ac7a78e13800cf9968b9e677ecc79f70b31f4d",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_MIX",
+      "seed": "20260917",
+      "logical_models": [
+        "PRODUCT_MIX"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_L1_20260915_raw.npy",
+      "sha256": "7a70e85970fdd414f8c61576b3d0280351329aed142da1202584537fd6bb6876",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_L1",
+      "seed": "20260915",
+      "logical_models": [
+        "PRODUCT_L1"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_L1_20260916_raw.npy",
+      "sha256": "06795149a5dfb66da449f516ca4ea4ba87bc168fbbb4a2bd828574e0c5072c6b",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_L1",
+      "seed": "20260916",
+      "logical_models": [
+        "PRODUCT_L1"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_L1_20260917_raw.npy",
+      "sha256": "2c44833fbc52f332796a2b526ff4748145e481eb6de98217b535834ab3ebfe4e",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_L1",
+      "seed": "20260917",
+      "logical_models": [
+        "PRODUCT_L1"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_CONCAT_MSE_20260915_raw.npy",
+      "sha256": "a9edb3d8ce64b9647db1e58fa5462d8dba9289edf05650755f794a9f05e2b899",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "CONCAT_MSE",
+      "seed": "20260915",
+      "logical_models": [
+        "CONCAT_MSE"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_CONCAT_MSE_20260916_raw.npy",
+      "sha256": "71d5686513f845e2b29493a6be1deee3546c6f228a4f281de93c8d8462d21504",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "CONCAT_MSE",
+      "seed": "20260916",
+      "logical_models": [
+        "CONCAT_MSE"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_CONCAT_MSE_20260917_raw.npy",
+      "sha256": "27c02f522d5268597b0b1e0287400005e3ce1f942f9178fc2aee95b1c2b3b3d3",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "CONCAT_MSE",
+      "seed": "20260917",
+      "logical_models": [
+        "CONCAT_MSE"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_CONCAT_POSREG_20260915_raw.npy",
+      "sha256": "241f2addb52be8804d0dbfdb2e35530e63418c1d984467cb8d8af9c397faec48",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "CONCAT_POSREG",
+      "seed": "20260915",
+      "logical_models": [
+        "CONCAT_POSREG"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_CONCAT_POSREG_20260916_raw.npy",
+      "sha256": "4a0f1a9e435bf211221a5ad22fb09e09afdb65d1c0d054d951c4b45b25d86290",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "CONCAT_POSREG",
+      "seed": "20260916",
+      "logical_models": [
+        "CONCAT_POSREG"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_CONCAT_POSREG_20260917_raw.npy",
+      "sha256": "4045a8d4de34082abe35587a285ab50168b291437678236873f00eb1e827e608",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "CONCAT_POSREG",
+      "seed": "20260917",
+      "logical_models": [
+        "CONCAT_POSREG"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_BASE_OD_fixed_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "BASE_OD",
+      "seed": "fixed",
+      "logical_models": [
+        "BASE_OD"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_IS_X_20260915_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_IS_X",
+      "seed": "20260915",
+      "logical_models": [
+        "P_IS_X"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_IS_X_20260916_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_IS_X",
+      "seed": "20260916",
+      "logical_models": [
+        "P_IS_X"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_IS_X_20260917_raw.npy",
+      "sha256": "64fc5c72aae7fcb1259c95265bae65049f93442903c26ab7689bf3e30d79abdb",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_IS_X",
+      "seed": "20260917",
+      "logical_models": [
+        "P_IS_X"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_FWD_X_20260915_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_FWD_X",
+      "seed": "20260915",
+      "logical_models": [
+        "P_FWD_X"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_FWD_X_20260916_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_FWD_X",
+      "seed": "20260916",
+      "logical_models": [
+        "P_FWD_X"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_FWD_X_20260917_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_FWD_X",
+      "seed": "20260917",
+      "logical_models": [
+        "P_FWD_X"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_IS_BC_20260915_raw.npy",
+      "sha256": "8305ab913ca9c961b603c28f6ad25f048f3704042d2b96b6bbf42682eecc90c6",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_IS_BC",
+      "seed": "20260915",
+      "logical_models": [
+        "P_IS_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_IS_BC_20260916_raw.npy",
+      "sha256": "2eb933ac6800f4cd560e9899c2a7b5eaa24b4b4f7622a16ea650a14736ddff8e",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_IS_BC",
+      "seed": "20260916",
+      "logical_models": [
+        "P_IS_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_IS_BC_20260917_raw.npy",
+      "sha256": "dcee4af8f0faad9a74096d35431009100c6f08705c1046d34053e81a9f5159eb",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_IS_BC",
+      "seed": "20260917",
+      "logical_models": [
+        "P_IS_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_FWD_BC_20260915_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_FWD_BC",
+      "seed": "20260915",
+      "logical_models": [
+        "P_FWD_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_FWD_BC_20260916_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_FWD_BC",
+      "seed": "20260916",
+      "logical_models": [
+        "P_FWD_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_FWD_BC_20260917_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_FWD_BC",
+      "seed": "20260917",
+      "logical_models": [
+        "P_FWD_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_C_IS_BC_20260915_raw.npy",
+      "sha256": "7ed2210e34cbc8b39765f9c1ea8bf4c527b72ff35dbe467dd23bb1d866994155",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "C_IS_BC",
+      "seed": "20260915",
+      "logical_models": [
+        "C_IS_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_C_IS_BC_20260916_raw.npy",
+      "sha256": "99e0b958812bbeb58f6266e529fe23bff38fec3d28d26fc226b110c0e8ba60db",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "C_IS_BC",
+      "seed": "20260916",
+      "logical_models": [
+        "C_IS_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_C_IS_BC_20260917_raw.npy",
+      "sha256": "662eb9eb1864e1ffc4ba884ca1a17cd4235a4d4bec36503f2f899324468b8384",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "C_IS_BC",
+      "seed": "20260917",
+      "logical_models": [
+        "C_IS_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_C_FWD_BC_20260915_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "C_FWD_BC",
+      "seed": "20260915",
+      "logical_models": [
+        "C_FWD_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_C_FWD_BC_20260916_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "C_FWD_BC",
+      "seed": "20260916",
+      "logical_models": [
+        "C_FWD_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_C_FWD_BC_20260917_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "C_FWD_BC",
+      "seed": "20260917",
+      "logical_models": [
+        "C_FWD_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_BASE_FIXED_fixed_raw.npy",
+      "sha256": "c5f53ea43e3cfcb27f8d073817b2e2cbf77994882bebf4637fa2fdd801ea1396",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "BASE_FIXED",
+      "seed": "fixed",
+      "logical_models": [
+        "BASE_FIXED"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_LINEAR_REPAIR_fixed_raw.npy",
+      "sha256": "e62fc696d462f3cd9c2dff4363e39b5ae24bb3a28ad8b110c216638bc257e961",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "LINEAR_REPAIR",
+      "seed": "fixed",
+      "logical_models": [
+        "LINEAR_REPAIR"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_RIDGE_FULL_fixed_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "RIDGE_FULL",
+      "seed": "fixed",
+      "logical_models": [
+        "RIDGE_FULL"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_PRODUCT_20260915_raw.npy",
+      "sha256": "cace0d8c380b0da42c1d4afcef4a0ad70b0ce4a5c63c1f6eb147b03030e5e5a4",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_PRODUCT",
+      "seed": "20260915",
+      "logical_models": [
+        "FIXED_PRODUCT"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_PRODUCT_20260916_raw.npy",
+      "sha256": "12cd64c14d98dd11a4ea246c394f95721e295d65e629a9e44e8afb4810fe642f",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_PRODUCT",
+      "seed": "20260916",
+      "logical_models": [
+        "FIXED_PRODUCT"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_PRODUCT_20260917_raw.npy",
+      "sha256": "cdf22a9da88759f1f3dd90e1ca552e0340e9b6bb7f07482a5ba464349d138082",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_PRODUCT",
+      "seed": "20260917",
+      "logical_models": [
+        "FIXED_PRODUCT"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_SEPARABLE_20260915_raw.npy",
+      "sha256": "5467fd881688bc72c347606452c1df359cab55d75a3dc919e390f61781e25522",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_SEPARABLE",
+      "seed": "20260915",
+      "logical_models": [
+        "FIXED_SEPARABLE"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_SEPARABLE_20260916_raw.npy",
+      "sha256": "30c131a4a3996255a8063f46434274a1e70566335fdc1956c553c42359c0d279",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_SEPARABLE",
+      "seed": "20260916",
+      "logical_models": [
+        "FIXED_SEPARABLE"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_SEPARABLE_20260917_raw.npy",
+      "sha256": "03a2cfff7ab678c2b601936d9a8f4ca91f86c3374d57440b7740e55106131d84",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_SEPARABLE",
+      "seed": "20260917",
+      "logical_models": [
+        "FIXED_SEPARABLE"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_CONCAT_20260915_raw.npy",
+      "sha256": "82a128a8abedf5f8dd6963ce41dd927df5467410656382566c81441b05c2d815",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_CONCAT",
+      "seed": "20260915",
+      "logical_models": [
+        "FIXED_CONCAT"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_CONCAT_20260916_raw.npy",
+      "sha256": "7c3e1c3f58ebdc3c3f58a50d4dd27394f5d1baec4d6216a507a24746e12f2e29",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_CONCAT",
+      "seed": "20260916",
+      "logical_models": [
+        "FIXED_CONCAT"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_CONCAT_20260917_raw.npy",
+      "sha256": "68347b8b66df59d696ae6e826b2bd6ba1fec1434a6036ce9ae150b00df60b88f",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_CONCAT",
+      "seed": "20260917",
+      "logical_models": [
+        "FIXED_CONCAT"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    }
+  ],
+  "archive_contracts": [
+    {
+      "cohort": "short_state_relaxation_v1",
+      "protocol_id": "SHORT_STATE_RELAXATION_V1_20260913",
+      "config_path": "configs/research/SHORT_STATE_RELAXATION_V1.json",
+      "config_sha256_lf": "31682244f5326e95438b2038905afa81c61fc49663bbc757d943e97e7cf86713",
+      "evaluation_origins": [
+        1392,
+        1549,
+        12
+      ],
+      "training_protocol_uniform_with_other_cohorts": false
+    },
+    {
+      "cohort": "long_history_source_ablation_v1",
+      "protocol_id": "LONG_HISTORY_SOURCE_ABLATION_V1_20260913",
+      "config_path": "configs/research/LONG_HISTORY_SOURCE_ABLATION_V1.json",
+      "config_sha256_lf": "7404cd7d0d2105205ef079bc47dc45c82158d19cc63ae06c50eea52c9f7be3cf",
+      "evaluation_origins": [
+        1392,
+        1549,
+        12
+      ],
+      "training_protocol_uniform_with_other_cohorts": false
+    },
+    {
+      "cohort": "duration_lag_regularization_v1",
+      "protocol_id": "DURATION_LAG_REGULARIZATION_V1_20260913",
+      "config_path": "configs/research/DURATION_LAG_REGULARIZATION_V1.json",
+      "config_sha256_lf": "f23505e33a62f5ad424e86aba82c3ac5aececaae020d4954ab6e324789fb941d",
+      "evaluation_origins": [
+        1392,
+        1549,
+        12
+      ],
+      "training_protocol_uniform_with_other_cohorts": false
+    },
+    {
+      "cohort": "conditional_od_interaction_v1",
+      "protocol_id": "CONDITIONAL_OD_INTERACTION_V1_20260913",
+      "config_path": "configs/research/CONDITIONAL_OD_INTERACTION_V1.json",
+      "config_sha256_lf": "2e4c38379cf4fac67a5ac2e636e3770d4112d2d503a2e73bad9bcb2cfa070bef",
+      "evaluation_origins": [
+        1392,
+        1549,
+        12
+      ],
+      "training_protocol_uniform_with_other_cohorts": false
+    },
+    {
+      "cohort": "reference_harm_stability_v1",
+      "protocol_id": "REFERENCE_HARM_STABILITY_V1_20260913",
+      "config_path": "configs/research/REFERENCE_HARM_STABILITY_V1.json",
+      "config_sha256_lf": "b070a58b6fd9a0f8f4403a22d2167d200287eb3a88c429703269d4d657150fa2",
+      "evaluation_origins": [
+        1392,
+        1549,
+        12
+      ],
+      "training_protocol_uniform_with_other_cohorts": false
+    },
+    {
+      "cohort": "forward_residual_transfer_v1",
+      "protocol_id": "FORWARD_RESIDUAL_TRANSFER_V1_20260913",
+      "config_path": "configs/research/FORWARD_RESIDUAL_TRANSFER_V1.json",
+      "config_sha256_lf": "ab86483ebf2597b3ff428e450b771f6630d928beb25f1faf7f4bbb22a41818e8",
+      "evaluation_origins": [
+        1392,
+        1549,
+        12
+      ],
+      "training_protocol_uniform_with_other_cohorts": false
+    },
+    {
+      "cohort": "fixed_reference_correction_v1",
+      "protocol_id": "FIXED_REFERENCE_CORRECTION_V1_20260913",
+      "config_path": "configs/research/FIXED_REFERENCE_CORRECTION_V1.json",
+      "config_sha256_lf": "5d01b5787c5e5496273b25728a22f681f227be48b2c4b2b383306a7b16ad2d96",
+      "evaluation_origins": [
+        1392,
+        1549,
+        12
+      ],
+      "training_protocol_uniform_with_other_cohorts": false
+    }
+  ],
+  "candidate_coverage": [
+    {
+      "id": "benchmark_alignment_20260913",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "SUPPORTING_ARTIFACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Supporting theory, solver, metadata or engineering evidence; not a stand-alone score entrant",
+      "source": "artifacts/summaries/benchmark_alignment_20260913"
+    },
+    {
+      "id": "chronos2",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "HISTORICAL_SIX_FOLD_OTHER_CONTRACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Chronos qualification:24 cells/5960 origins; exposure history retained, not a fresh blind test",
+      "source": "artifacts/summaries/chronos2"
+    },
+    {
+      "id": "coarse_memory_identifiability_v1_20260913",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "SYNTHETIC_ONLY",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Artificial HMM and identifiability experiments, no real forecast rank",
+      "source": "artifacts/summaries/coarse_memory_identifiability_v1_20260913"
+    },
+    {
+      "id": "comparability_bridge_v2",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "SUPPORTING_ARTIFACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Supporting theory, solver, metadata or engineering evidence; not a stand-alone score entrant",
+      "source": "artifacts/summaries/comparability_bridge_v2"
+    },
+    {
+      "id": "conditional_od_interaction_v1",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "REGISTERED_FOR_LOCKED_REPLAY",
+      "core_rerun_status": "SEPARATE_NEW_CORE",
+      "note": "Final selected raw predictions only; training/selection cohorts stay separate",
+      "source": "artifacts/summaries/conditional_od_interaction_v1"
+    },
+    {
+      "id": "continuous_v2_calibration_2h",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "SELECTION_OVERLAP",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Calibration used1392 labels; not in1392 unselected evaluation table",
+      "source": "artifacts/summaries/continuous_v2_calibration_2h"
+    },
+    {
+      "id": "continuous_v2_candidate_reduction",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "SUPPORTING_ARTIFACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Supporting theory, solver, metadata or engineering evidence; not a stand-alone score entrant",
+      "source": "artifacts/summaries/continuous_v2_candidate_reduction"
+    },
+    {
+      "id": "continuous_v2_registration",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "SUPPORTING_ARTIFACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Supporting theory, solver, metadata or engineering evidence; not a stand-alone score entrant",
+      "source": "artifacts/summaries/continuous_v2_registration"
+    },
+    {
+      "id": "continuous_v2_solver_draft",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "SUPPORTING_ARTIFACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Supporting theory, solver, metadata or engineering evidence; not a stand-alone score entrant",
+      "source": "artifacts/summaries/continuous_v2_solver_draft"
+    },
+    {
+      "id": "continuous_v2_solver_repair",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "SUPPORTING_ARTIFACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Supporting theory, solver, metadata or engineering evidence; not a stand-alone score entrant",
+      "source": "artifacts/summaries/continuous_v2_solver_repair"
+    },
+    {
+      "id": "distillation",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "HISTORICAL_SIX_FOLD_OTHER_CONTRACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "D1 cells and model audits, original teacher/caches and selection not merged with local DEV",
+      "source": "artifacts/summaries/distillation"
+    },
+    {
+      "id": "dual_direction_pilot_v1",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "NOT_RUN_AT_COMMON_ORIGINS",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Spatial grouping and observation operators; preserve original scope",
+      "source": "artifacts/summaries/dual_direction_pilot_v1"
+    },
+    {
+      "id": "dual_risk_finite_step_v1",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "NOT_RUN_AT_COMMON_ORIGINS",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Stopped at1056 under old protocol; do not revive candidate",
+      "source": "artifacts/summaries/dual_risk_finite_step_v1"
+    },
+    {
+      "id": "dual_risk_probe_v1",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "DIAGNOSTIC_ONLY",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Directional derivative evidence, not deployed forecast scores",
+      "source": "artifacts/summaries/dual_risk_probe_v1"
+    },
+    {
+      "id": "duration_lag_regularization_v1",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "REGISTERED_FOR_LOCKED_REPLAY",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Final selected raw predictions only; training/selection cohorts stay separate",
+      "source": "artifacts/summaries/duration_lag_regularization_v1"
+    },
+    {
+      "id": "fixed_fusion",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "HISTORICAL_SIX_FOLD_OTHER_CONTRACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "CAPER/TimeXer/fixed fusion; oracle uses targets and is diagnostic only",
+      "source": "artifacts/summaries/fixed_fusion"
+    },
+    {
+      "id": "fixed_reference_correction_v1",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "REGISTERED_FOR_LOCKED_REPLAY",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Final selected raw predictions only; training/selection cohorts stay separate",
+      "source": "artifacts/summaries/fixed_reference_correction_v1"
+    },
+    {
+      "id": "fm_calibration_v1",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "NOT_RUN_AT_COMMON_ORIGINS",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "First-fold quantile/simplex/full-quantile ridge and TimesFM, different training/evaluation",
+      "source": "artifacts/summaries/fm_calibration_v1"
+    },
+    {
+      "id": "forward_residual_transfer_v1",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "REGISTERED_FOR_LOCKED_REPLAY",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Final selected raw predictions only; training/selection cohorts stay separate",
+      "source": "artifacts/summaries/forward_residual_transfer_v1"
+    },
+    {
+      "id": "information_scope_20260913",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "SUPPORTING_ARTIFACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Supporting theory, solver, metadata or engineering evidence; not a stand-alone score entrant",
+      "source": "artifacts/summaries/information_scope_20260913"
+    },
+    {
+      "id": "journal_methods_20260913",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "SUPPORTING_ARTIFACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Supporting theory, solver, metadata or engineering evidence; not a stand-alone score entrant",
+      "source": "artifacts/summaries/journal_methods_20260913"
+    },
+    {
+      "id": "latency",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "SUPPORTING_ARTIFACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Supporting theory, solver, metadata or engineering evidence; not a stand-alone score entrant",
+      "source": "artifacts/summaries/latency"
+    },
+    {
+      "id": "long_history_source_ablation_v1",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "REGISTERED_FOR_LOCKED_REPLAY",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Final selected raw predictions only; training/selection cohorts stay separate",
+      "source": "artifacts/summaries/long_history_source_ablation_v1"
+    },
+    {
+      "id": "paired_audit_v3",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "SUPPORTING_ARTIFACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Supporting theory, solver, metadata or engineering evidence; not a stand-alone score entrant",
+      "source": "artifacts/summaries/paired_audit_v3"
+    },
+    {
+      "id": "paper_audits",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "SUPPORTING_ARTIFACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Supporting theory, solver, metadata or engineering evidence; not a stand-alone score entrant",
+      "source": "artifacts/summaries/paper_audits"
+    },
+    {
+      "id": "paris_development",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "DIFFERENT_DATASET",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Paris kept separate; no access to protected data",
+      "source": "artifacts/summaries/paris_development"
+    },
+    {
+      "id": "physics_economics_traffic_20260913",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "SUPPORTING_ARTIFACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Supporting theory, solver, metadata or engineering evidence; not a stand-alone score entrant",
+      "source": "artifacts/summaries/physics_economics_traffic_20260913"
+    },
+    {
+      "id": "reference_harm_stability_v1",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "REGISTERED_FOR_LOCKED_REPLAY",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Final selected raw predictions only; training/selection cohorts stay separate",
+      "source": "artifacts/summaries/reference_harm_stability_v1"
+    },
+    {
+      "id": "registry",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "HISTORICAL_REPRODUCTION_REGISTRY",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "1224 configs:865 complete,340 not executed,19 failed; historical evidence grades are not SOTA gates",
+      "source": "artifacts/summaries/registry"
+    },
+    {
+      "id": "research_directions_20260910",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "SUPPORTING_ARTIFACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Supporting theory, solver, metadata or engineering evidence; not a stand-alone score entrant",
+      "source": "artifacts/summaries/research_directions_20260910"
+    },
+    {
+      "id": "research_transition",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "SUPPORTING_ARTIFACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Supporting theory, solver, metadata or engineering evidence; not a stand-alone score entrant",
+      "source": "artifacts/summaries/research_transition"
+    },
+    {
+      "id": "residual_information_v1",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "DIFFERENT_SELECTION_OR_EVALUATION",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Residual and baseline lineage retain original train/calibration scope",
+      "source": "artifacts/summaries/residual_information_v1"
+    },
+    {
+      "id": "router",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "HISTORICAL_SIX_FOLD_OTHER_CONTRACT",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Router and fixed controls, original prior-fold label availability retained",
+      "source": "artifacts/summaries/router"
+    },
+    {
+      "id": "short_state_relaxation_v1",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "REGISTERED_FOR_LOCKED_REPLAY",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Final selected raw predictions only; training/selection cohorts stay separate",
+      "source": "artifacts/summaries/short_state_relaxation_v1"
+    },
+    {
+      "id": "signal_replication_v1",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "NOT_RUN_AT_COMMON_ORIGINS",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Second-window replication and negative results retained",
+      "source": "artifacts/summaries/signal_replication_v1"
+    },
+    {
+      "id": "volume_composition_increment_v1",
+      "type": "EXISTING_RESULT_GROUP",
+      "common_origin_status": "NOT_RUN_AT_COMMON_ORIGINS",
+      "core_rerun_status": "NOT_RENAMED_OR_RETRAINED_AS_OLD_RESULT",
+      "note": "Stopped at1056; no fabricated1392 results",
+      "source": "artifacts/summaries/volume_composition_increment_v1"
+    },
+    {
+      "id": "CAPER_implementation",
+      "type": "EXISTING_MODEL",
+      "common_origin_status": "HISTORICAL_SIX_FOLD_OTHER_CONTRACT",
+      "core_rerun_status": "NOT_IN_THIS_CORE_BUDGET",
+      "note": "Project-authored local implementation, no established official paper-to-code identity",
+      "source": "models/caper/IDENTITY.md"
+    }
+  ],
+  "baseline_sources": [
+    {
+      "method": "UrbanEV original baselines",
+      "publication_identity": "Scientific Data2025",
+      "primary_source": "https://doi.org/10.1038/s41597-025-04874-4",
+      "code_source": "https://github.com/IntelligentSystemsLab/UrbanEV",
+      "comparability": "Official six folds differ from current local window; data version/rates/counts require mapping",
+      "this_execution": "HISTORICAL_REGISTRY_AND_PAPER_VALUES_ONLY"
+    },
+    {
+      "method": "TimeXer LOCAL-OD and GLOBAL-O",
+      "publication_identity": "NeurIPS2024",
+      "primary_source": "https://proceedings.neurips.cc/paper_files/paper/2024/file/0113ef4642264adc2e6924a3cbbdf532-Paper-Conference.pdf",
+      "code_source": "https://github.com/thuml/TimeXer/tree/76011909357972bd55a27adba2e1be994d81b327",
+      "comparability": "Author core at fixed pin, local task adaptations disclosed; not Table3 reproduction",
+      "this_execution": "NEW_CORE_TRAINING_PLANNED"
+    },
+    {
+      "method": "Chronos-2 transportation benchmark",
+      "publication_identity": "arXiv2602.24238v2 preprint",
+      "primary_source": "https://arxiv.org/abs/2602.24238v2",
+      "code_source": "https://github.com/fmpr/mobility-baselines",
+      "comparability": "Published counts and protocol not same as local occupancy rate; local H3/H12 native identity fixed",
+      "this_execution": "CACHED_H3_H12_ONLY_NO_NEW_INFERENCE"
+    },
+    {
+      "method": "TimesFM-3",
+      "publication_identity": "Official software checkpoint",
+      "primary_source": "https://github.com/google-research/timesfm",
+      "code_source": "https://github.com/google-research/timesfm",
+      "comparability": "Local 3.0.1 environment and pinned weights available; recent common1392 calls absent",
+      "this_execution": "HISTORICAL_SCOPE_ONLY_NO_NEW_INFERENCE"
+    },
+    {
+      "method": "DyConfuse-Net",
+      "publication_identity": "EPSR2026",
+      "primary_source": "https://doi.org/10.1016/j.epsr.2026.112765",
+      "code_source": "",
+      "comparability": "Full processing/normalization/horizon contract unresolved; preview MAE .0155 not directly ranked",
+      "this_execution": "PAPER_REPORTED_NOT_REPRODUCED"
+    },
+    {
+      "method": "TriCast",
+      "publication_identity": "PRL2026",
+      "primary_source": "https://doi.org/10.1016/j.patrec.2026.04.028",
+      "code_source": "",
+      "comparability": "247 zones,5min,June19-July18 2022; different task/version",
+      "this_execution": "NOT_SAME_DATA_CONTRACT"
+    },
+    {
+      "method": "Urban-CSTPNet",
+      "publication_identity": "Electronics2026",
+      "primary_source": "https://doi.org/10.3390/electronics15153297",
+      "code_source": "",
+      "comparability": "Probabilistic regional demand, conditional median; full unit/source details unresolved due access limits",
+      "this_execution": "PAPER_REPORTED_NOT_REPRODUCED"
+    },
+    {
+      "method": "MDFANet",
+      "publication_identity": "Scientific Reports2026",
+      "primary_source": "https://doi.org/10.1038/s41598-026-38855-3",
+      "code_source": "https://github.com/kion-86/MDFANet",
+      "comparability": "ST-EVCDP247 zones5min, not current275 hourly task",
+      "this_execution": "NOT_SAME_DATA_CONTRACT"
+    },
+    {
+      "method": "MAGE",
+      "publication_identity": "NeurIPS2025",
+      "primary_source": "https://papers.neurips.cc/paper_files/paper/2025/file/54c9bfb0885ae07f23607f617ab64c2b-Paper-Conference.pdf",
+      "code_source": "https://github.com/PoorOtterBob/MAGE/tree/f1fdd27da4e72a140c4f341f94d368fbcaec7507",
+      "comparability": "Table4 1682 nodes1hour1year, text mixes247/5min/one-month;60/20/20 and24step; author data setup not aligned",
+      "this_execution": "SOURCE_INSPECTED_NOT_REPRODUCED"
+    },
+    {
+      "method": "ST-Attention",
+      "publication_identity": "Energies2026",
+      "primary_source": "https://doi.org/10.3390/en19143411",
+      "code_source": "",
+      "comparability": "Hourly regional charging energy kWh, not occupancy rate",
+      "this_execution": "NOT_SAME_TARGET"
+    },
+    {
+      "method": "SCLD+FCW",
+      "publication_identity": "World EV Journal2026",
+      "primary_source": "https://doi.org/10.3390/wevj17060288",
+      "code_source": "",
+      "comparability": "Aggregated load/energy results not current rate prediction",
+      "this_execution": "NOT_SAME_TARGET"
+    },
+    {
+      "method": "DLinear",
+      "publication_identity": "General forecasting baseline",
+      "primary_source": "",
+      "code_source": "https://github.com/cure-lab/LTSF-Linear",
+      "comparability": "Formal same-task adapter/version not frozen in this execution",
+      "this_execution": "NOT_RUN_EXPLICIT_GAP"
+    },
+    {
+      "method": "PatchTST",
+      "publication_identity": "General forecasting baseline",
+      "primary_source": "",
+      "code_source": "https://github.com/yuqinie98/PatchTST",
+      "comparability": "Formal same-task adapter/version not frozen in this execution",
+      "this_execution": "NOT_RUN_EXPLICIT_GAP"
+    },
+    {
+      "method": "iTransformer",
+      "publication_identity": "General forecasting baseline",
+      "primary_source": "",
+      "code_source": "https://github.com/thuml/iTransformer",
+      "comparability": "Formal same-task adapter/version not frozen in this execution",
+      "this_execution": "NOT_RUN_EXPLICIT_GAP"
+    }
+  ],
+  "gpu_preflight": {
+    "status": "PASS_SYNTHETIC_ONLY",
+    "source_identity": "76011909357972bd55a27adba2e1be994d81b327",
+    "models": [
+      {
+        "model": "OD_PRODUCT",
+        "parameters": 9108,
+        "effective_steps": 2,
+        "seconds": 0.4650563999894075,
+        "gpu_peak_allocated": 76027392,
+        "gpu_peak_reserved": 92274688,
+        "estimated_2200_steps_seconds": 511.56203998834826
+      },
+      {
+        "model": "OD_SEPARABLE",
+        "parameters": 9108,
+        "effective_steps": 2,
+        "seconds": 0.04389000002993271,
+        "gpu_peak_allocated": 76027392,
+        "gpu_peak_reserved": 92274688,
+        "estimated_2200_steps_seconds": 48.27900003292598
+      },
+      {
+        "model": "OD_CONCAT_MLP",
+        "parameters": 9108,
+        "effective_steps": 2,
+        "seconds": 0.0318886999739334,
+        "gpu_peak_allocated": 75434496,
+        "gpu_peak_reserved": 92274688,
+        "estimated_2200_steps_seconds": 35.07756997132674
+      },
+      {
+        "model": "TIMEXER_LOCAL_OD",
+        "parameters": 123788,
+        "effective_steps": 2,
+        "seconds": 0.7661686000064947,
+        "gpu_peak_allocated": 166568448,
+        "gpu_peak_reserved": 190840832,
+        "estimated_2200_steps_seconds": 842.7854600071441
+      },
+      {
+        "model": "TIMEXER_GLOBAL_O",
+        "parameters": 141324,
+        "effective_steps": 2,
+        "seconds": 0.3528113000211306,
+        "gpu_peak_allocated": 170221568,
+        "gpu_peak_reserved": 184549376,
+        "estimated_2200_steps_seconds": 388.09243002324365
+      }
+    ],
+    "warning": "two-step cold-run extrapolation is not measured full training runtime"
+  },
+  "foundation_inference": 0,
+  "weight_downloads": 0,
+  "legacy_reselection": false,
+  "new_raw_prediction_files": 17,
+  "core_valid_score_rows": 280,
+  "core_missing_native_rows": 8,
+  "neural_selection_score_rows": 1200,
+  "deterministic_selection_rows": 32,
+  "formal_six_fold_complete": false,
+  "legacy_screening_thresholds_active": false,
+  "sota_claim": false,
+  "max_executions": 1,
+  "automatic_next_round": false,
+  "automation_enabled": false,
+  "human_review_after_completion": true,
+  "code_sha256_lf": {
+    "src/urbanev_forecast/comparison_core.py": "5d73184e6ced6b4f204e5cc84ee197d11226feaa0e94dcee1076c1065a2a3817",
+    "scripts/research/run_comprehensive_development_comparison.py": "6eee67da9c057e7df0563691cd38ac3d567a13dc6a00c9560243ae621f568e66",
+    "src/urbanev_forecast/conditional_od.py": "eb32d91ab6f9ff85d1bfd3650af643f4daad7b0a781ab1655226aecaffb0e0f8",
+    "src/urbanev_forecast/short_state.py": "1ac322e99e59a26ea679c5463b43eed4fbc6a9bcca6073ca1f9534fc41d54bc5",
+    "src/urbanev_forecast/history_source.py": "314105318c0df02254b540471a991bdcaf9996a0b5252db030f6e55fdba4ba58",
+    "src/urbanev_forecast/benchmark_metrics.py": "e959f4455d405f21a59187df248fe0accaaf8f963753a64b9659ca6be1946a9c",
+    "src/urbanev_forecast/bounded_predictor_csv.py": "65bbd90f82a2adb59d02dfce573e6d0029a4d0ed65a392cc87efe1b94b0bf51d",
+    "src/urbanev_forecast/comparability_bridge.py": "4ed53ed3c290e71829acefd23e4d8201a86bffcc6964156ea9ce3b6ec433c9ec",
+    "scripts/research/run_long_history_source_ablation.py": "4c6a9d88dc19bb483f8896af57eaffacab14f6e6fedf8452b2d8445ab425a51c",
+    "scripts/research/run_conditional_od_interaction.py": "fe7d1d7ae9effa812b4965478609ef9e70857296b1ca960eb515afd9c92dd300"
+  }
+}

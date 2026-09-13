@@ -2576,6 +2576,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "configs/research/COMPREHENSIVE_DEVELOPMENT_COMPARISON_V1.json",
+      "sha256": "ac5d259aca7e93436b76743e3f08b6d2064ec7b1b0e0cbd932c406a20096a05e",
+      "bytes": 81070,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
       "path": "configs/research/CONDITIONAL_OD_INTERACTION_V1.json",
       "sha256": "2e4c38379cf4fac67a5ac2e636e3770d4112d2d503a2e73bad9bcb2cfa070bef",
       "bytes": 8190,
