@@ -3279,8 +3279,8 @@
     },
     {
       "path": "docs/research/sota/FIXED_REFERENCE_CORRECTION_REPORT_20260913.md",
-      "sha256": "8e850e55dcbbb73f72527ffdd634cc5fcb8b06776b01e0bbcbf0ae953818b5fd",
-      "bytes": 17626,
+      "sha256": "7bcb6bc0e1d484e39d6e9b6b89aaf0e999471556e676518af62d6c6db84ed1af",
+      "bytes": 18877,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
@@ -3549,8 +3549,8 @@
     },
     {
       "path": "docs/research/sota/SOTA_GAP_ASSESSMENT_20260913.md",
-      "sha256": "74634a31312549ad26211a40cc117486033efddcc87749d23788e5738c75b11f",
-      "bytes": 4683,
+      "sha256": "9abb353e103fcb50dc1e8ec358fd6caebd79598fa5ff90cfb63d341c74bf412f",
+      "bytes": 5035,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
