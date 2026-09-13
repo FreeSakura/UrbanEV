@@ -2577,8 +2577,8 @@
     },
     {
       "path": "docs/research/sota/CONDITIONAL_OD_INTERACTION_REPORT_20260913.md",
-      "sha256": "6d5ec6e3016d2c0f3ae4a02744db2eceab3686eb2bfa5fff79c86c155aa62b95",
-      "bytes": 12396,
+      "sha256": "c8fae59e43d0f9d0f0ea4bcc7e83d7a6f36a8acf4c0b1d147602b8d2e3e61742",
+      "bytes": 13928,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
