@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "scope": "Recompute differences from existing public CSV; no private arrays or model fits",
+  "comparisons": [
+    {
+      "evaluation_cut": 1056,
+      "horizon": 3,
+      "duration_minus_base": {
+        "mean_residual_mse": -2.831849061257774e-05,
+        "multiclass_brier": -0.00039868460920156057,
+        "atom_probability_mse": 7.993072321275897e-06
+      }
+    },
+    {
+      "evaluation_cut": 1056,
+      "horizon": 12,
+      "duration_minus_base": {
+        "mean_residual_mse": -5.170215165912692e-05,
+        "multiclass_brier": -0.0007037047242266503,
+        "atom_probability_mse": 5.2173140622561694e-06
+      }
+    },
+    {
+      "evaluation_cut": 1392,
+      "horizon": 3,
+      "duration_minus_base": {
+        "mean_residual_mse": -9.467093707892123e-05,
+        "multiclass_brier": -0.0020728667865494987,
+        "atom_probability_mse": 5.950476284679023e-06
+      }
+    },
+    {
+      "evaluation_cut": 1392,
+      "horizon": 12,
+      "duration_minus_base": {
+        "mean_residual_mse": -6.100841612379643e-05,
+        "multiclass_brier": -0.004807950113165704,
+        "atom_probability_mse": 4.7663087512426865e-06
+      }
+    }
+  ]
+}

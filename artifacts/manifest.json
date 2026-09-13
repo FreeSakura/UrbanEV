@@ -533,6 +533,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/dual_risk_probe_v1/moment_comparison_verification.json",
+      "sha256": "5ad2994ca58186f0b9703206580ab61f5c379625d8d54e83e53e0ea22d55c18a",
+      "bytes": 1188,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/dual_risk_probe_v1/moment_prediction_scores.csv",
       "sha256": "070d514474be78507354c10f8f5962a61dc7d769dfccdda3bdc2a47117a08ff1",
       "bytes": 2732,
@@ -570,8 +579,8 @@
     },
     {
       "path": "artifacts/summaries/dual_risk_probe_v1/summary.json",
-      "sha256": "6cf7a8dca50a62db45aa3c065b41a143712950267c5e464f12e0168852c66a86",
-      "bytes": 759,
+      "sha256": "ff3f78467cdaaf17d58e9697db2a58978878952c08587d1f85cac2b828190392",
+      "bytes": 1125,
       "role": "evidence_summary",
       "origin": "frozen project artifact; publicly sanitized",
       "license": "CC-BY-4.0",

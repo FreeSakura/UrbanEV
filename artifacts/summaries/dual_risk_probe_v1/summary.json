@@ -10,11 +10,13 @@
   "claim_supported": "post-hoc development evidence for a learned common descent direction in this representation",
   "not_supported": [
     ">=1% finite-step RMSE improvement",
-    "MAE nondegradation at a finite step",
+    "MAE nondegradation at a preselected operational finite step",
     "independent or blind confirmation",
     "causal duration information",
+    "benefit attributed to better atom-probability estimation",
     "SOTA"
   ],
   "automation_status": "PAUSED",
-  "research_result_review": "pending"
+  "research_result_review": "ACCEPTED_LIMITED_TO_NEW_PROTOCOL_DESIGN; public-source review, no private-array rerun",
+  "local_empirical_existence": "Strictly negative right derivatives imply sufficiently small positive empirical joint-improvement steps; usable step width and out-of-sample selection remain unknown"
 }
