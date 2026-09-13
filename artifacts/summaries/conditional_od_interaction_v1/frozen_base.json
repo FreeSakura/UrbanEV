@@ -1,0 +1,13 @@
+{
+  "ridge": {
+    "file": "private_base_ridge.npy",
+    "sha256": "b0c75c76a5d9ffcdb4f884ba75da3c244113b196b32744b5a3eead5cac1b0ca7",
+    "coefficients": 4104
+  },
+  "transform": {
+    "file": "private_transform.npz",
+    "sha256": "31ecb4e3c84891448ad822f7dd3f96eed4b85dc359934ba167e520d2e5f9c908"
+  },
+  "training_only": true,
+  "fixed_for_all_neural_runs": true
+}

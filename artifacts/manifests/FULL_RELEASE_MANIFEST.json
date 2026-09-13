@@ -57,8 +57,8 @@
     },
     {
       "path": "artifacts/manifest.json",
-      "sha256": "7b8fc46435375af5dd425ef22c10d0ccd3391048636a597092ba8b91d18b637f",
-      "bytes": 98093,
+      "sha256": "e162bf0700d89e816c356ff9ef220796801093039fc7eed83fe0ee2cbdfdd95b",
+      "bytes": 102548,
       "role": "artifacts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -66,8 +66,8 @@
     },
     {
       "path": "artifacts/manifests/EVIDENCE_ARTIFACT_MANIFEST.json",
-      "sha256": "7b8fc46435375af5dd425ef22c10d0ccd3391048636a597092ba8b91d18b637f",
-      "bytes": 98093,
+      "sha256": "e162bf0700d89e816c356ff9ef220796801093039fc7eed83fe0ee2cbdfdd95b",
+      "bytes": 102548,
       "role": "artifacts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -302,6 +302,114 @@
       "path": "artifacts/summaries/comparability_bridge_v2/summary.json",
       "sha256": "26b23c7322e6cdc91ae4fe628d6a79f41d1b95098c39246de4b0e581389021f0",
       "bytes": 3637,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/development_scores.csv",
+      "sha256": "39e5f4836594a11219a6717a0e760c25fcfd4834808aac50b18980765702bfbe",
+      "bytes": 16471,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/execution_receipt.json",
+      "sha256": "2de4161d0f3dab6a5e59e90ad97302814bc9c31b7ef92ec3e884f05abe80f53e",
+      "bytes": 5072,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/frozen_base.json",
+      "sha256": "216baf5b9296159564c0f223174bf50fdded7ce646fdb24bd853bd55109a6723",
+      "bytes": 368,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/frozen_selection.json",
+      "sha256": "1e8d786986dac11ae9550d32d67ed8635bb677f701ddda343dabd4b2f376e7df",
+      "bytes": 3281,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/interaction_activity.json",
+      "sha256": "05080476d09daef3b6abbed74b899cc6bb5a521e962f59e62f19582bb9eca5f3",
+      "bytes": 1871,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/model_summary.json",
+      "sha256": "0bb3a6d7c79393fa7531a9492a752666edec96c8c122702ffa2fac6212c1faec",
+      "bytes": 41523,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/paired_origin_errors.csv",
+      "sha256": "c29eb0df034fcdfc02cb47b815752de5c0d79a394d997591a68260a7be33866d",
+      "bytes": 203297,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "sha256": "77e402ff10934f14c470191203132e0292b06d9879f3a425a5fc4e1ffb938b01",
+      "bytes": 4564,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/selection_scores.csv",
+      "sha256": "66717c1438c02fb27ac4327eccec3966819f9deb2db50f1768039929d7ec5ee5",
+      "bytes": 68400,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/state_group_losses.json",
+      "sha256": "db87ea999746701d98da8cec5c59e66fb50a96b6f70c567201771e7dc431aa4b",
+      "bytes": 470864,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/training_curves.csv",
+      "sha256": "9e496a719140dd454b5ecea05636cfb8177fc3eb2b3e02f0117254882f0e29f2",
+      "bytes": 24279,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/verification.json",
+      "sha256": "91569309d49ff5a13b1147544f141ca78c99b932d5228e9bcfdfeaadc0ca1efa",
+      "bytes": 272,
       "role": "evidence_summary",
       "origin": "frozen project artifact; publicly sanitized",
       "license": "CC-BY-4.0",
@@ -2469,8 +2577,8 @@
     },
     {
       "path": "docs/research/sota/CONDITIONAL_OD_INTERACTION_REPORT_20260913.md",
-      "sha256": "e14a97139f13f2f02ace469b7b9ae777dd5b67cc014835f8b61ddfe99b9ea75a",
-      "bytes": 6013,
+      "sha256": "6d5ec6e3016d2c0f3ae4a02744db2eceab3686eb2bfa5fff79c86c155aa62b95",
+      "bytes": 12396,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
@@ -2775,8 +2883,8 @@
     },
     {
       "path": "docs/research/sota/RESEARCH_INDEX.md",
-      "sha256": "be75a82d6f071091d2abfd3a9c3ce5d6395f801d6c3ea4224636e23bfcb438cc",
-      "bytes": 5555,
+      "sha256": "cca35c015599f6b660249e3d61ecaa51dc25c98de7b9d3fe50c2ce6f38e522b6",
+      "bytes": 5930,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
@@ -2784,8 +2892,8 @@
     },
     {
       "path": "docs/research/sota/RESEARCH_ROADMAP.md",
-      "sha256": "dee79250fb9be13dc37a4ab5b77826142275de575aa62ba2ad6340e41f315de0",
-      "bytes": 6077,
+      "sha256": "be2458b91108b1a293fbbed5dcff91074b88d0a1ceb255aad5a22a043ea38ceb",
+      "bytes": 6678,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
@@ -3792,8 +3900,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "08dd0362b67c83ebc9461af950fa0b0882e34514ac9646fed74ea834f849d6f1",
-      "bytes": 7642,
+      "sha256": "2d9c01a93ff67724451402fad228818318d1102d4b6bb5d7a21d6088338936db",
+      "bytes": 8036,
       "role": "README.md",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",

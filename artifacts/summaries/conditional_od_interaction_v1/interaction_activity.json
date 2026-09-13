@@ -1,0 +1,58 @@
+[
+  {
+    "seed": 20260913,
+    "horizon": 3,
+    "interaction_mean_square": 0.0002492897193910751,
+    "total_extra_mean_square": 0.0004166301055255212,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260913,
+    "horizon": 6,
+    "interaction_mean_square": 0.0004900691794500883,
+    "total_extra_mean_square": 0.0007353084190378472,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260913,
+    "horizon": 9,
+    "interaction_mean_square": 0.0005749249476384177,
+    "total_extra_mean_square": 0.0008503447345960827,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260913,
+    "horizon": 12,
+    "interaction_mean_square": 0.00044808438975611997,
+    "total_extra_mean_square": 0.0007078595183765943,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260914,
+    "horizon": 3,
+    "interaction_mean_square": 0.0001631797174678171,
+    "total_extra_mean_square": 0.0003027909277503266,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260914,
+    "horizon": 6,
+    "interaction_mean_square": 0.00044896207327493095,
+    "total_extra_mean_square": 0.0007036689951369458,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260914,
+    "horizon": 9,
+    "interaction_mean_square": 0.0006660687070550202,
+    "total_extra_mean_square": 0.0008073616751091387,
+    "interpretation": "module activity, not causal importance or necessity"
+  },
+  {
+    "seed": 20260914,
+    "horizon": 12,
+    "interaction_mean_square": 0.0005567545446477661,
+    "total_extra_mean_square": 0.0006689808990619109,
+    "interpretation": "module activity, not causal importance or necessity"
+  }
+]

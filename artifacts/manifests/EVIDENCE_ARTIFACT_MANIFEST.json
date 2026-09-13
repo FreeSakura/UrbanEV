@@ -173,6 +173,114 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/development_scores.csv",
+      "sha256": "39e5f4836594a11219a6717a0e760c25fcfd4834808aac50b18980765702bfbe",
+      "bytes": 16471,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/execution_receipt.json",
+      "sha256": "2de4161d0f3dab6a5e59e90ad97302814bc9c31b7ef92ec3e884f05abe80f53e",
+      "bytes": 5072,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/frozen_base.json",
+      "sha256": "216baf5b9296159564c0f223174bf50fdded7ce646fdb24bd853bd55109a6723",
+      "bytes": 368,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/frozen_selection.json",
+      "sha256": "1e8d786986dac11ae9550d32d67ed8635bb677f701ddda343dabd4b2f376e7df",
+      "bytes": 3281,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/interaction_activity.json",
+      "sha256": "05080476d09daef3b6abbed74b899cc6bb5a521e962f59e62f19582bb9eca5f3",
+      "bytes": 1871,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/model_summary.json",
+      "sha256": "0bb3a6d7c79393fa7531a9492a752666edec96c8c122702ffa2fac6212c1faec",
+      "bytes": 41523,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/paired_origin_errors.csv",
+      "sha256": "c29eb0df034fcdfc02cb47b815752de5c0d79a394d997591a68260a7be33866d",
+      "bytes": 203297,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "sha256": "77e402ff10934f14c470191203132e0292b06d9879f3a425a5fc4e1ffb938b01",
+      "bytes": 4564,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/selection_scores.csv",
+      "sha256": "66717c1438c02fb27ac4327eccec3966819f9deb2db50f1768039929d7ec5ee5",
+      "bytes": 68400,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/state_group_losses.json",
+      "sha256": "db87ea999746701d98da8cec5c59e66fb50a96b6f70c567201771e7dc431aa4b",
+      "bytes": 470864,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/training_curves.csv",
+      "sha256": "9e496a719140dd454b5ecea05636cfb8177fc3eb2b3e02f0117254882f0e29f2",
+      "bytes": 24279,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/conditional_od_interaction_v1/verification.json",
+      "sha256": "91569309d49ff5a13b1147544f141ca78c99b932d5228e9bcfdfeaadc0ca1efa",
+      "bytes": 272,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/continuous_v2_calibration_2h/calibration_2h.json",
       "sha256": "b655e84aed1885c7822715a033835f2b41624e752070d435e0debc1d02fbf504",
       "bytes": 71925,

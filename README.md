@@ -24,6 +24,8 @@
 
 ## 当前科学问题
 
+[条件O–D乘性交互真实实验](docs/research/sota/CONDITIONAL_OD_INTERACTION_REPORT_20260913.md)完成冻结ridge底座上的四个等参数模型、八次GPU训练。主模型两种子平均四H末点RMSE较底座降低0.410%，但MAE增加0.922%，种子结果分化；平均RMSE低于三个神经对照。**保留交互结构的有限开发线索，不宣称稳定优势或SOTA。**
+
 最新[时长滞后有序正则化](docs/research/sota/DURATION_LAG_REGULARIZATION_REPORT_20260913.md)完成13组拟合：真实顺序平滑虽然使系数更平滑，但在1392开发窗未形成整体预测优势，并弱于同强度错序对照；小误差组仍有净增损。**长D有增量，不代表二阶平滑就是有效利用方式。** 本轮结果和别名完整保留，无新SOTA声明。
 
 最新[长历史来源消融](docs/research/sota/LONG_HISTORY_SOURCE_REPORT_20260913.md)完成8个固定ridge对照：给定长O和单个D，更早D使两个开发窗口的raw末点RMSE分别下降0.943%/3.765%，MAE也改善；本次重复O控制未解释掉该收益。较早历史的作用随窗口变化，不能据此宣称总体信息识别或SOTA。**这一轮保留长D建模线索，不把最新单个D或短摘要的失败推广为时长无用。**

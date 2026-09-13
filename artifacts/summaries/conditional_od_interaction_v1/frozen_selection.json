@@ -1,0 +1,105 @@
+{
+  "base_sha256": "216baf5b9296159564c0f223174bf50fdded7ce646fdb24bd853bd55109a6723",
+  "selected": [
+    {
+      "model": "OD_PRODUCT",
+      "seed": 20260913,
+      "selected": {
+        "epoch": 40,
+        "file": "private_OD_PRODUCT_s20260913_e40.pt",
+        "sha256": "cf3b95793a3ba176d319e0025981e3e1d8686668314d5e18a394dc442174128a",
+        "selection_rmse": 0.0806716682746986
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "OD_PRODUCT",
+      "seed": 20260914,
+      "selected": {
+        "epoch": 40,
+        "file": "private_OD_PRODUCT_s20260914_e40.pt",
+        "sha256": "b10a164bf4162454658f19b24bb7b0a6c29c42b3085ebd0a048b2f59beb48acd",
+        "selection_rmse": 0.08064946787429328
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "OD_SEPARABLE",
+      "seed": 20260913,
+      "selected": {
+        "epoch": 40,
+        "file": "private_OD_SEPARABLE_s20260913_e40.pt",
+        "sha256": "58ec8721440df729f57c15274233c7bf3ec3dd2f7f6df2864edad84b6def9595",
+        "selection_rmse": 0.08090165588093061
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "OD_SEPARABLE",
+      "seed": 20260914,
+      "selected": {
+        "epoch": 10,
+        "file": "private_OD_SEPARABLE_s20260914_e10.pt",
+        "sha256": "523ee42a11015153a9df703a13c72dd7825c400a3621563013a9309fb59c2288",
+        "selection_rmse": 0.08107782012356099
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "OD_CONCAT_MLP",
+      "seed": 20260913,
+      "selected": {
+        "epoch": 5,
+        "file": "private_OD_CONCAT_MLP_s20260913_e5.pt",
+        "sha256": "f79e14226faa118b8f82e73e379ab61eca4b391271ca40ae57d3fa3664cb3235",
+        "selection_rmse": 0.08094207558702529
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "OD_CONCAT_MLP",
+      "seed": 20260914,
+      "selected": {
+        "epoch": 10,
+        "file": "private_OD_CONCAT_MLP_s20260914_e10.pt",
+        "sha256": "d76a5622183781e20741837a85a3da3a1fdd335f1250ed96bbc1cfed0bc4b95a",
+        "selection_rmse": 0.08124731340126834
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "OO_PRODUCT",
+      "seed": 20260913,
+      "selected": {
+        "epoch": 40,
+        "file": "private_OO_PRODUCT_s20260913_e40.pt",
+        "sha256": "3bf1b20e5c5c4cd94bd412f85217ed6a247497c86c284b6c3deca6ed4e85ce63",
+        "selection_rmse": 0.08077188813727729
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    },
+    {
+      "model": "OO_PRODUCT",
+      "seed": 20260914,
+      "selected": {
+        "epoch": 10,
+        "file": "private_OO_PRODUCT_s20260914_e10.pt",
+        "sha256": "9c8c3e377d150c58dc7e3987473595254b103e591f25c0eee96e72046dfb7331",
+        "selection_rmse": 0.0810321177838782
+      },
+      "prediction_alias": null,
+      "trainable_parameters": 9108
+    }
+  ],
+  "selection_rule": "raw four-H endpoint macro RMSE, exact ties earlier epoch including0; no best-seed or model-family selection",
+  "base_frozen": true,
+  "no_refit": true,
+  "no_ensemble": true
+}
