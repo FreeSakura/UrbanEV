@@ -1,0 +1,34 @@
+{
+  "systems": {
+    "native": {
+      "macro_mae_right_derivative": 0.0
+    },
+    "OD": {
+      "macro_mae_right_derivative": 2.0785276278998392e-05,
+      "smallest_positive_rmse_gain_percent": 0.23525438265556975,
+      "smallest_positive_mae_change_percent": 0.09913901175482298
+    },
+    "OD_STATIC": {
+      "macro_mae_right_derivative": -0.00010470043132084584,
+      "smallest_positive_rmse_gain_percent": 0.24357494580273809,
+      "smallest_positive_mae_change_percent": 0.06483251551938629
+    },
+    "OD_DUPLICATE": {
+      "macro_mae_right_derivative": -0.0001224196980599432,
+      "smallest_positive_rmse_gain_percent": 0.24277978853872728,
+      "smallest_positive_mae_change_percent": 0.06076235365723992
+    },
+    "OD_VOLUME": {
+      "macro_mae_right_derivative": -8.888827125923165e-05,
+      "smallest_positive_rmse_gain_percent": 0.2582531979513303,
+      "smallest_positive_mae_change_percent": 0.074904397632225
+    },
+    "OD_MISALIGNED": {
+      "macro_mae_right_derivative": -0.00011476477642416414,
+      "smallest_positive_rmse_gain_percent": 0.24419900994592236,
+      "smallest_positive_mae_change_percent": 0.06413006206726912
+    }
+  },
+  "all35_positive_grid_points_worsen_macro_MAE": true,
+  "calibration_grid_only": true
+}

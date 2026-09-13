@@ -1,0 +1,17 @@
+{
+  "status": "VOLUME_INCREMENT_CALIBRATION_NO_GO",
+  "execution_commit": "715e6b0ef64950235ce7b8073e80473e7d03dc43",
+  "selected_alphas": "all five tunable systems choose0; native fixed0",
+  "positive_grid_points": 35,
+  "all_positive_grid_points_worsen_macro_MAE": true,
+  "dynamic_history_columns_zeroed": 0,
+  "fits": 5,
+  "power_reference_passes": 1,
+  "new_foundation_inference": 0,
+  "evaluation1392": "NOT_RUN",
+  "new_structure_claim_tested": false,
+  "old_no_go_unchanged": true,
+  "research_review": "PENDING",
+  "automation_status": "PAUSED",
+  "scope": "No usable increment in this finite representation/learner/grid; not a proof of volume redundancy or all-positive-step infeasibility"
+}

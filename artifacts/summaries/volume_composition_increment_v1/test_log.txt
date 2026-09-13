@@ -1,0 +1,3 @@
+28 synthetic/regression tests passed before execution.
+Command: PYTHONPATH=src python -m pytest tests/test_volume_composition_increment.py tests/test_bounded_predictor_csv.py tests/test_finite_step_metrics.py -o addopts= -q
+Tests cover reference cutoff/fallback, constant-power cancellation, composition counterexample, O/D/V historical indices, same-scale threshold, five fits and label separation, conditional evaluation access, source identities, score/gate and loss contracts.

@@ -1,0 +1,51 @@
+{
+  "config_sha256": "44ad23014f1c840fb01592c68ce597527a5f0c2bc21b21200a5c15fe3652f1ef",
+  "models": {
+    "OD": {
+      "file": "private_model_OD.npz",
+      "sha256": "fb9f52f2f78cd23772a522bbdf1ea3b33c91ad44b3f40d07701146235e5a5f71",
+      "fit_cut": 720
+    },
+    "OD_STATIC": {
+      "file": "private_model_OD_STATIC.npz",
+      "sha256": "64e64b26796e2b8e11125d7e145f7137551e022615f49356d9a90c679ec27c9a",
+      "fit_cut": 720
+    },
+    "OD_DUPLICATE": {
+      "file": "private_model_OD_DUPLICATE.npz",
+      "sha256": "b76ee24f2f6fbdef501cc3bbfa5fd7ba723c5437ac000b32d7e85fc9416707d8",
+      "fit_cut": 720
+    },
+    "OD_VOLUME": {
+      "file": "private_model_OD_VOLUME.npz",
+      "sha256": "87ef5b1fd023a7765ac92965e6753540706a45f72ae211ae8d1cd63f19e0bc80",
+      "fit_cut": 720
+    },
+    "OD_MISALIGNED": {
+      "file": "private_model_OD_MISALIGNED.npz",
+      "sha256": "d106020738c1d34f89009f1b79524607dea705549f5d1e2f292558f2da9a903e",
+      "fit_cut": 720
+    }
+  },
+  "power_reference": {
+    "file": "private_power_reference.npy",
+    "sha256": "f87c437f65a59670f3c25e6dcbb7047abaa879f22255a092e81a139e86e43f01",
+    "reference_range": [
+      0,
+      719
+    ]
+  },
+  "alphas": {
+    "native": 0.0,
+    "OD": 0.0,
+    "OD_STATIC": 0.0,
+    "OD_DUPLICATE": 0.0,
+    "OD_VOLUME": 0.0,
+    "OD_MISALIGNED": 0.0
+  },
+  "fit_cut": 720,
+  "calibration_cut": 1056,
+  "calibration_information_gate": false,
+  "output_family": "clip(clipped_native + alpha * plain_ridge_direction,0,1)",
+  "refit_after_selection": false
+}

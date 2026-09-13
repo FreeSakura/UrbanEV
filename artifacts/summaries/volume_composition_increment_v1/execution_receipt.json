@@ -1,0 +1,332 @@
+{
+  "id": "VOLUME_COMPOSITION_INCREMENT_V1_20260913",
+  "status": "VOLUME_INCREMENT_CALIBRATION_NO_GO",
+  "execution_commit": "715e6b0ef64950235ce7b8073e80473e7d03dc43",
+  "config_sha256_lf": "44ad23014f1c840fb01592c68ce597527a5f0c2bc21b21200a5c15fe3652f1ef",
+  "selection_sha256": "efb262a4fe13f20511e22f10eb3010b6e64cc3e73ea63f3cb30c03f075989263",
+  "monitor": {
+    "ridge_solves": 5,
+    "power_reference_passes": 1,
+    "formal_scores": 72,
+    "fitting_closed": true
+  },
+  "read_ledger": [
+    {
+      "kind": "opaque_cache_hash",
+      "file": "private_truth_720_h3.npy",
+      "sha256": "72e905bc8cb10272898fd2a0904124665dd4c65b67a3dbb39164709ca4653536"
+    },
+    {
+      "kind": "opaque_cache_hash",
+      "file": "private_720_h3_native_a1.npy",
+      "sha256": "bcbd6d5ca7c100e22c3ce2d65970268ca81b0902f25a3aa55f4b16f28b3b81de"
+    },
+    {
+      "kind": "opaque_cache_hash",
+      "file": "private_truth_720_h12.npy",
+      "sha256": "3097af20c1bde6221cdb032728be52791df28da363366c7549ace42beb41b315"
+    },
+    {
+      "kind": "opaque_cache_hash",
+      "file": "private_720_h12_native_a1.npy",
+      "sha256": "0581a023b31506a497d6cb1ebc1f7b6219c925d860a7430c1287ddc520c6be0d"
+    },
+    {
+      "kind": "opaque_cache_hash",
+      "file": "private_truth_1056_h3.npy",
+      "sha256": "7754531e1c667d9760f183a536bab2b8bd1471533c3b9c9a57d3c7a453f9787e"
+    },
+    {
+      "kind": "opaque_cache_hash",
+      "file": "private_1056_h3_native_a1.npy",
+      "sha256": "86a2230dac3d4b1170809afeb397dfe48b7bd916c9fded1b1ea1b4fdd894eed8"
+    },
+    {
+      "kind": "opaque_cache_hash",
+      "file": "private_truth_1056_h12.npy",
+      "sha256": "451005d4bc1fbef9d11e1303140a6ee41963363eecc0b9f81383bf5f3eba3cd7"
+    },
+    {
+      "kind": "opaque_cache_hash",
+      "file": "private_1056_h12_native_a1.npy",
+      "sha256": "b3c8b26025da3f5f8c5a03adc278eca58be5d10687be9703bf72f3bd7659eb67"
+    },
+    {
+      "kind": "opaque_cache_hash",
+      "file": "private_truth_1392_h3.npy",
+      "sha256": "2b6c1a1790ad879adc24aa6eb9d021ce819a01777a7e3789ecad7df64e9a4964"
+    },
+    {
+      "kind": "opaque_cache_hash",
+      "file": "private_1392_h3_native_a1.npy",
+      "sha256": "a8870d582828961b80b010a679b8a03ecd0009b1075839ffd9fc64566c16ebf3"
+    },
+    {
+      "kind": "opaque_cache_hash",
+      "file": "private_truth_1392_h12.npy",
+      "sha256": "e9e43f31a9a16f0882a4693dfb1d93e2b59514a235f055101fa02140d3279cf7"
+    },
+    {
+      "kind": "opaque_cache_hash",
+      "file": "private_1392_h12_native_a1.npy",
+      "sha256": "e01540b22a04d814f798f6a65370bdf9db69b13d5a4494d81a58e24b06455796"
+    },
+    {
+      "kind": "opaque_static_hash",
+      "file": "inf.csv",
+      "sha256": "03c9830965e9e99b29adfb8cceed0eba98d37631f514273cb3fe61f80d63de7c"
+    },
+    {
+      "kind": "opaque_prefix_hash",
+      "stage": "FIT",
+      "file": "occupancy.csv",
+      "row_range": [
+        0,
+        876
+      ],
+      "sha256": "8632533e1f187d9d316109b73c3e4a048266e43d1ad8dffdfd2f392ed3a42420"
+    },
+    {
+      "kind": "opaque_prefix_hash",
+      "stage": "FIT",
+      "file": "duration.csv",
+      "row_range": [
+        0,
+        875
+      ],
+      "sha256": "21c22635699d4e8d9afee87d03c6274409f21e780a02d7759d5c2839cae32e6e"
+    },
+    {
+      "kind": "opaque_prefix_hash",
+      "stage": "FIT",
+      "file": "volume.csv",
+      "row_range": [
+        0,
+        875
+      ],
+      "sha256": "dbeeb98229a94e57caca547ce805c4ff5de94657b722d3c0ac27c0522d46769a"
+    },
+    {
+      "kind": "static_numeric_columns",
+      "file": "inf.csv",
+      "columns": [
+        "station_id",
+        "TAZID",
+        "charge_count"
+      ],
+      "zone_count": 275,
+      "ordered_capacity_float32_sha256": "1b061e910cc2177a1e5d1f9d0908f211f6a0223b456debc5081951d2a9c4f479"
+    },
+    {
+      "kind": "numeric_csv_prefix",
+      "stage": "FIT",
+      "file": "occupancy.csv",
+      "rows": 876,
+      "columns": 275,
+      "prefix_sha256": "8632533e1f187d9d316109b73c3e4a048266e43d1ad8dffdfd2f392ed3a42420",
+      "numeric_row_range": [
+        0,
+        876
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "kind": "numeric_csv_prefix",
+      "stage": "FIT",
+      "file": "duration.csv",
+      "rows": 875,
+      "columns": 275,
+      "prefix_sha256": "21c22635699d4e8d9afee87d03c6274409f21e780a02d7759d5c2839cae32e6e",
+      "numeric_row_range": [
+        0,
+        875
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "kind": "numeric_csv_prefix",
+      "stage": "FIT",
+      "file": "volume.csv",
+      "rows": 875,
+      "columns": 275,
+      "prefix_sha256": "dbeeb98229a94e57caca547ce805c4ff5de94657b722d3c0ac27c0522d46769a",
+      "numeric_row_range": [
+        0,
+        875
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "kind": "numeric_cache_decode",
+      "stage": "FIT",
+      "cut": 720,
+      "horizon": 3,
+      "system": "native",
+      "file": "private_720_h3_native_a1.npy",
+      "max_target_index": 878
+    },
+    {
+      "kind": "numeric_cache_decode",
+      "stage": "FIT",
+      "cut": 720,
+      "horizon": 3,
+      "system": "truth",
+      "file": "private_truth_720_h3.npy",
+      "max_target_index": 878
+    },
+    {
+      "kind": "numeric_cache_decode",
+      "stage": "FIT",
+      "cut": 720,
+      "horizon": 12,
+      "system": "native",
+      "file": "private_720_h12_native_a1.npy",
+      "max_target_index": 887
+    },
+    {
+      "kind": "numeric_cache_decode",
+      "stage": "FIT",
+      "cut": 720,
+      "horizon": 12,
+      "system": "truth",
+      "file": "private_truth_720_h12.npy",
+      "max_target_index": 887
+    },
+    {
+      "kind": "available_target_lineage_check",
+      "stage": "FIT",
+      "entries_checked": 53625,
+      "maximum_difference": 0.0,
+      "no_extra_rows_read": true
+    },
+    {
+      "kind": "opaque_prefix_hash",
+      "stage": "CALIBRATE",
+      "file": "occupancy.csv",
+      "row_range": [
+        0,
+        1212
+      ],
+      "sha256": "26ce39a625cdd0b26b45dfb54aa8fbaaa9e5d59f21ea8c960c08c655ae804589"
+    },
+    {
+      "kind": "opaque_prefix_hash",
+      "stage": "CALIBRATE",
+      "file": "duration.csv",
+      "row_range": [
+        0,
+        1211
+      ],
+      "sha256": "01d532a43434012d0447f0859d58a4ec86206d52227657c670e349a599a36c52"
+    },
+    {
+      "kind": "opaque_prefix_hash",
+      "stage": "CALIBRATE",
+      "file": "volume.csv",
+      "row_range": [
+        0,
+        1211
+      ],
+      "sha256": "3914e20aa49c66d1845eb15282842c66d64662fc5f580f0c049a5a59982ed9a3"
+    },
+    {
+      "kind": "numeric_csv_prefix",
+      "stage": "CALIBRATE",
+      "file": "occupancy.csv",
+      "rows": 1212,
+      "columns": 275,
+      "prefix_sha256": "26ce39a625cdd0b26b45dfb54aa8fbaaa9e5d59f21ea8c960c08c655ae804589",
+      "numeric_row_range": [
+        0,
+        1212
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "kind": "numeric_csv_prefix",
+      "stage": "CALIBRATE",
+      "file": "duration.csv",
+      "rows": 1211,
+      "columns": 275,
+      "prefix_sha256": "01d532a43434012d0447f0859d58a4ec86206d52227657c670e349a599a36c52",
+      "numeric_row_range": [
+        0,
+        1211
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "kind": "numeric_csv_prefix",
+      "stage": "CALIBRATE",
+      "file": "volume.csv",
+      "rows": 1211,
+      "columns": 275,
+      "prefix_sha256": "3914e20aa49c66d1845eb15282842c66d64662fc5f580f0c049a5a59982ed9a3",
+      "numeric_row_range": [
+        0,
+        1211
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "kind": "numeric_cache_decode",
+      "stage": "CALIBRATE",
+      "cut": 1056,
+      "horizon": 3,
+      "system": "native",
+      "file": "private_1056_h3_native_a1.npy",
+      "max_target_index": 1214
+    },
+    {
+      "kind": "numeric_cache_decode",
+      "stage": "CALIBRATE",
+      "cut": 1056,
+      "horizon": 3,
+      "system": "truth",
+      "file": "private_truth_1056_h3.npy",
+      "max_target_index": 1214
+    },
+    {
+      "kind": "numeric_cache_decode",
+      "stage": "CALIBRATE",
+      "cut": 1056,
+      "horizon": 12,
+      "system": "native",
+      "file": "private_1056_h12_native_a1.npy",
+      "max_target_index": 1223
+    },
+    {
+      "kind": "numeric_cache_decode",
+      "stage": "CALIBRATE",
+      "cut": 1056,
+      "horizon": 12,
+      "system": "truth",
+      "file": "private_truth_1056_h12.npy",
+      "max_target_index": 1223
+    },
+    {
+      "kind": "available_target_lineage_check",
+      "stage": "CALIBRATE",
+      "entries_checked": 111375,
+      "maximum_difference": 0.0,
+      "no_extra_rows_read": true
+    }
+  ],
+  "cache_arrays_decoded": 8,
+  "new_foundation_inference": 0,
+  "forbidden_import_attempts": 0,
+  "post_hoc_development": true,
+  "known_future_inputs": [],
+  "live_availability_established": false,
+  "elapsed_seconds": 56.59510810003849,
+  "threads": 2,
+  "timing_scope": "bounded decoding/lineage checks, one reference, five fits, calibration and conditional evaluation, exports; excludes preflight/receipt",
+  "peak_memory_status": "NOT_MEASURED",
+  "quota_reset_used": false
+}

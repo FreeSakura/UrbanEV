@@ -1,0 +1,26 @@
+{
+  "status": "OPAQUE_IDENTITIES_PREPARED",
+  "dynamic_numeric_rows_read": 0,
+  "opaque_reads": [
+    {
+      "file": "occupancy.csv",
+      "opaque_max_prefix_rows": 1548,
+      "bytes": 1966402,
+      "numeric_parsing": false
+    },
+    {
+      "file": "duration.csv",
+      "opaque_max_prefix_rows": 1547,
+      "bytes": 6399537,
+      "numeric_parsing": false
+    },
+    {
+      "file": "volume.csv",
+      "opaque_max_prefix_rows": 1547,
+      "bytes": 5959052,
+      "numeric_parsing": false
+    }
+  ],
+  "static_info_sha256": "03c9830965e9e99b29adfb8cceed0eba98d37631f514273cb3fe61f80d63de7c",
+  "cache_identities_inherited": 12
+}

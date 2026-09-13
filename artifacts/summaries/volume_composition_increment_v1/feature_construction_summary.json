@@ -1,0 +1,69 @@
+{
+  "power_reference": {
+    "reference_range": [
+      0,
+      719
+    ],
+    "zero_denominator_fallback_regions": 0,
+    "global_weighted_reference": 20.523926714415847,
+    "reference_min": 3.5,
+    "reference_median": 7.0,
+    "reference_max": 240.0,
+    "interpretation": "historical duration-weighted estimated power, not rated/actual power truth"
+  },
+  "consistency": {
+    "FIT": {
+      "rows": 875,
+      "D_zero_V_positive": 0
+    },
+    "CALIBRATE": {
+      "rows": 1211,
+      "D_zero_V_positive": 0
+    }
+  },
+  "designs": {
+    "OD": {
+      "rows": 57750,
+      "columns": 36,
+      "zeroed_nonintercept_columns": 1
+    },
+    "OD_STATIC": {
+      "rows": 57750,
+      "columns": 48,
+      "zeroed_nonintercept_columns": 1
+    },
+    "OD_DUPLICATE": {
+      "rows": 57750,
+      "columns": 59,
+      "zeroed_nonintercept_columns": 1
+    },
+    "OD_VOLUME": {
+      "rows": 57750,
+      "columns": 59,
+      "zeroed_nonintercept_columns": 1
+    },
+    "OD_MISALIGNED": {
+      "rows": 57750,
+      "columns": 59,
+      "zeroed_nonintercept_columns": 1
+    }
+  },
+  "OD_VOLUME_dynamic_history_training_scales": [
+    1.3874196117286521,
+    1.3679483074884438,
+    1.2078735767635636,
+    1.26139075908607,
+    1.4190744605151664,
+    1.415653236712615,
+    1.4014426794372472,
+    1.4057559043986863,
+    1.314935562592049,
+    0.822722092624776,
+    0.448443699317744
+  ],
+  "OD_VOLUME_dynamic_history_zeroed_columns": 0,
+  "reference_vector_private": true,
+  "dynamic_z_not_statistically_orthogonal": true,
+  "static_controls_use_early_historical_volume": true,
+  "source_units_and_live_semantics_unverified": true
+}

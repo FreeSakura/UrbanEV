@@ -1,0 +1,54 @@
+{
+  "status": "VOLUME_INCREMENT_CALIBRATION_NO_GO",
+  "calibration": {
+    "passed": false,
+    "Cstar": "native",
+    "conditions": {
+      "positive_alpha": false,
+      "positive_reference_rmse": true,
+      "rmse_gain_at_least1percent": false,
+      "mae_no_worse_than_native": true,
+      "mae_no_worse_than_Cstar": true,
+      "rmse_better_than_misaligned": false,
+      "mae_no_worse_than_misaligned": true,
+      "H3_rmse_harm_native_at_most1percent": true,
+      "H3_rmse_harm_Cstar_at_most1percent": true,
+      "H12_rmse_harm_native_at_most1percent": true,
+      "H12_rmse_harm_Cstar_at_most1percent": true
+    },
+    "comparisons": {
+      "native": {
+        "rmse_gain_percent": 0.0,
+        "mae_difference": 0.0
+      },
+      "OD": {
+        "rmse_gain_percent": 0.0,
+        "mae_difference": 0.0
+      },
+      "OD_STATIC": {
+        "rmse_gain_percent": 0.0,
+        "mae_difference": 0.0
+      },
+      "OD_DUPLICATE": {
+        "rmse_gain_percent": 0.0,
+        "mae_difference": 0.0
+      },
+      "OD_MISALIGNED": {
+        "rmse_gain_percent": 0.0,
+        "mae_difference": 0.0
+      }
+    },
+    "new_structure_claim_tested": false
+  },
+  "evaluation": {
+    "status": "NOT_RUN",
+    "reason": "CALIBRATION_GATE_FAILED"
+  },
+  "new_structure_claim_tested": false,
+  "old_information_and_structure_gates": "UNCHANGED",
+  "cross_window_confirmation": "NOT_EVALUATED",
+  "four_horizon_confirmation": "NOT_EVALUATED",
+  "independent_confirmation": false,
+  "sota_claim": false,
+  "automatic_stage_advance": false
+}

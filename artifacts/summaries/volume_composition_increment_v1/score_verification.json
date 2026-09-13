@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "tunable_points_recomputed": 40,
+  "native_points_recomputed": 1,
+  "maximum_metric_difference": 2.7755575615628914e-17,
+  "cached_source_arrays_read": 4,
+  "dynamic_csv_rows_read": 0,
+  "new_supervised_fits": 0,
+  "new_reference_passes": 0,
+  "new_alpha_selection": false,
+  "evaluation_arrays_decoded": 0,
+  "scope": "Independent NumPy score reductions from archived directions; not independent feature/model reconstruction",
+  "archive_hash_timing": "Hashes recorded at this post-run verification, not claimed preregistered input identities",
+  "archived_direction_hashes": [
+    {
+      "file": "private_calibration_native_h3_direction.npy",
+      "postrun_sha256": "a067cf8699a43f8fff0cbb69080036aea95fe70fad4fb5ff90545422a65826bb"
+    },
+    {
+      "file": "private_calibration_native_h12_direction.npy",
+      "postrun_sha256": "a9e1a537e27f01e85577e83ce5f25b189ada8e36f3448b589f97816f1b568b5e"
+    },
+    {
+      "file": "private_calibration_OD_h3_direction.npy",
+      "postrun_sha256": "8c1962afdd7b5f85fa3c48c61d8a9a5462a8659f0b80e3a04e488592527da3e4"
+    },
+    {
+      "file": "private_calibration_OD_h12_direction.npy",
+      "postrun_sha256": "93627383486dd98037b2edfd55677b705d20559dc5d4f705268b31029c872629"
+    },
+    {
+      "file": "private_calibration_OD_STATIC_h3_direction.npy",
+      "postrun_sha256": "35dfe3df60b3955f8d29ef687e645959962c614a67f8599ec90a284ade854ce8"
+    },
+    {
+      "file": "private_calibration_OD_STATIC_h12_direction.npy",
+      "postrun_sha256": "67f1aae7192ea2c5e8972d8e0252f8433ac6ae6f91aab372b8becfa1041e9455"
+    },
+    {
+      "file": "private_calibration_OD_DUPLICATE_h3_direction.npy",
+      "postrun_sha256": "23f839f6362bebd46ee73889a90647ee506d4fa736be6693fe01d1eda2b13940"
+    },
+    {
+      "file": "private_calibration_OD_DUPLICATE_h12_direction.npy",
+      "postrun_sha256": "5963b06d184eb5e903f7ea501719d1c3a5445ca290688a96a069e8997573d03d"
+    },
+    {
+      "file": "private_calibration_OD_VOLUME_h3_direction.npy",
+      "postrun_sha256": "e180337b1a7603a4ab82ee6c9a3d918605a068d87272f573612c745f06b43ce1"
+    },
+    {
+      "file": "private_calibration_OD_VOLUME_h12_direction.npy",
+      "postrun_sha256": "eabe41e1dc54f26d389fb1363b03e1dc6c89a1d3c566537228011e1948fc8480"
+    },
+    {
+      "file": "private_calibration_OD_MISALIGNED_h3_direction.npy",
+      "postrun_sha256": "078275a70896b1f07382ba0ca350f31d3f539cc48227d0892d2a2284d6932d44"
+    },
+    {
+      "file": "private_calibration_OD_MISALIGNED_h12_direction.npy",
+      "postrun_sha256": "329d8eca2fb67fe7bf3f7b3804dc1d48318aed3912e9dfee0680ac4218d157ad"
+    }
+  ]
+}
