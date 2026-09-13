@@ -173,6 +173,159 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/archive_common_scores.csv",
+      "sha256": "b1e132514c585cd010f6183633b67ab64cfd7ecbfdf9b44d959e12ca0856c0ad",
+      "bytes": 306329,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/archive_family_summary.csv",
+      "sha256": "8d5a66d7677bc6412b8ed7f9dc568d73146fc40c1ef5a63d223ef1cacab47cd6",
+      "bytes": 4413,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/baseline_sources.csv",
+      "sha256": "4232f10eac61da2689ddb8d8a40ae43ff4fb35a53bebca3e0ca2f1b74345f5de",
+      "bytes": 3095,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/candidate_coverage.csv",
+      "sha256": "fabab6af3b20ccb78a73140e2bd0d3e33dc6a616193d3d3ac37a5c808343be2e",
+      "bytes": 8675,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/comparison_manifest.json",
+      "sha256": "be41bb002f7251ddee350bea2ee026c506b43811116ce63d1530efa35e7754f2",
+      "bytes": 53557,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/coverage_and_limits.json",
+      "sha256": "9083220a33543127f1f6ef7de1740be79874e3b25a6d18a2ea7f43407a91babb",
+      "bytes": 605,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/execution_receipt.json",
+      "sha256": "9973566841622d671fde9e6868900a2d3dcb2d854fb35dbbbc2c070221e70fbb",
+      "bytes": 3504,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/frozen_ridges.json",
+      "sha256": "d50c87b16dc1ef6b51bf5253a401e1d5f8dc498fc2295cc91b52571c75abe1bf",
+      "bytes": 6488,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/frozen_selection.json",
+      "sha256": "820a55a52b8d67c045d9e5dfa4d841819bd833f610af9b35ba9348eabbb9ac3c",
+      "bytes": 5843,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/historical_six_fold_reported.csv",
+      "sha256": "b2d20a2e8f1eb02bf73504a2f5c999fd14d8f8dce5a729ec0afe70c2874ab499",
+      "bytes": 4554,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/matched_core_scores.csv",
+      "sha256": "33352215080a067277b7e9e90453b0c9481ae84525947f0e7d56b1ad7f16b01d",
+      "bytes": 36588,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/model_summary.json",
+      "sha256": "26a8eb5e197cd1001b3f6e725fe86ccebfdf57e412d8a218ddb4c7612443791b",
+      "bytes": 35765,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/prediction_freeze.json",
+      "sha256": "c9860207fc6c4c4df2cc481b27be42bb392da2040fde30dd480ac4dd3c9b5c60",
+      "bytes": 3819,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/ridge_selection_scores.csv",
+      "sha256": "efd5156d73d1a80d904d81fb899aa546d6a3edfb79a4016042b1b03da9ba1491",
+      "bytes": 3896,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/selection_scores.csv",
+      "sha256": "4189669c952a30b7ae061f13f2678edd30057ded37ff392896711f7e954e238b",
+      "bytes": 157004,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/training_curves.csv",
+      "sha256": "6672690845aa48df8fd315a5ee783cbabd5fd757e395182b7399edfcafdf346e",
+      "bytes": 82364,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/comprehensive_development_comparison_v1/verification.json",
+      "sha256": "455724e368bf82db7e15c4c6d883b5c040b6ed55a1ceb2367109d5174ded4773",
+      "bytes": 337,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/conditional_od_interaction_v1/development_scores.csv",
       "sha256": "39e5f4836594a11219a6717a0e760c25fcfd4834808aac50b18980765702bfbe",
       "bytes": 16471,

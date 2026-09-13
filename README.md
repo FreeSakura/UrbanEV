@@ -12,6 +12,7 @@
 | 内容 | 入口 |
 |---|---|
 | 目前距离SOTA有多远 | [差距与证据评估](docs/research/sota/SOTA_GAP_ASSESSMENT_20260913.md) |
+| 已有成果的统一比较及未完成范围 | [比较报告](docs/research/sota/COMPREHENSIVE_COMPARISON_REPORT_20260913.md) |
 | 如何判断SOTA与如何报告研究价值 | [比较与声明规则](docs/research/sota/SOTA_COMPARISON_STANDARD.md) |
 | 已有什么结果，哪些还不能下结论 | [研究成果地图](docs/research/sota/RESEARCH_INDEX.md) |
 | 下一步研究和当前执行范围 | [研究路线](docs/research/sota/RESEARCH_ROADMAP.md) |
@@ -24,6 +25,8 @@
 新增评分接口强制声明`terminal_H`或`path_1_to_H`及raw/clip规则；已计算24个日历/原点合同单元，并完成42个已曝光原点的真实开发桥接。H3/H12共同支持上，Chronos原生raw末点RMSE为0.089446，全路径为0.081448；last/day基线在两种口径下的RMSE排名发生反转。这是同口径基线研究，尚非官方完整测试或SOTA；零新增拟合/基础推理，旧候选未重选，保护数据未打开。
 
 ## 当前科学问题
+
+[已有成果统一比较（开发部分）](docs/research/sota/COMPREHENSIVE_COMPARISON_REPORT_20260913.md)已完成83份历史锁定预测的重算，以及2个ridge、15次同训练合同神经对照，新增作者核心TimeXer两个适配版本。当前四H核心开发表中RIDGE_OD平均RMSE/MAE最低；不能推广为TimeXer原论文或所有现代方法不如线性模型。**官方六折和全部最新强基线仍未完成；历史不同训练cohort不混排，缺口明确列出。**
 
 [固定底座纠错与固定epoch诊断](docs/research/sota/FIXED_REFERENCE_CORRECTION_REPORT_20260913.md)完成3次确定性拟合和9次神经训练，无零修正别名。线性纠错在两个后续窗口改善固定底座；交互模型在机制窗有益、DEV却恶化，且不及普通控制与完整ridge。**存在普通纠错收益，专用交互与跨时段稳定优势仍未成立，无SOTA声明。**
 

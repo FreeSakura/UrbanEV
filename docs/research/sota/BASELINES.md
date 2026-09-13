@@ -1,6 +1,6 @@
 # 基线登记：来源、复现与可比性
 
-更新：2026-09-13。本表是基线登记，**不是SOTA排行榜**。`paper_reported`表示文献值，`locally_reproduced`表示指定本地协议实际运行，`adapted`表示额外训练/后处理，`not_run`表示尚未运行；可比性另列，不能由名称或论文地位替代。
+更新：2026-09-14。本表是基线登记，**不是SOTA排行榜**。`paper_reported`表示文献值，`locally_reproduced`表示指定本地协议实际运行，`adapted`表示额外训练/后处理，`not_run`表示尚未运行；可比性另列，不能由名称或论文地位替代。
 
 ## 官方锚点与最新相关工作
 
@@ -23,7 +23,7 @@
 | Last/day/week | 确定性、无训练；本轮V2桥接按实际回执登记 | 42个已曝光开发原点，四视野，端点/全路径并列 |
 | Chronos-2 native Q0.5 | 既有冻结预测，局部locally_reproduced | V2只复用H3/H12缓存；raw与clip明确分行，H6/H9不补推理 |
 | TimesFM-3 native Q0.5 | 既有首折开发运行 | 本轮不读取其缓存；完整同协议测试缺失 |
-| TimeXer本地适配 | 代码接通，历史紧凑实现另有结果 | 当前完整同协议复现not_run；不能把同名旧配置当新复现 |
+| TimeXer作者核心本地适配 | 两信息轨、各3种子已完成新核心开发比较 | 168历史、联合12步、统一40epoch；是已披露适配，不是官方六折或原论文完整复现 |
 | Seasonal Linear / MLP | 已实现、合成工程检查通过 | 本轮无拟合；完整真实比较not_run |
 | Full-quantile ridge、bias/affine、simplex头 | adapted，历史开发已运行 | 同信息控制有效，但旧局部表不构成前沿榜 |
 | HMM/状态空间/隐半马尔可夫动态模型 | 经典机制对照 | 已知人工参数HMM核对不等于真实训练；真实研究not_run |
@@ -38,3 +38,9 @@ SOTA声明遵循[统一比较规则](SOTA_COMPARISON_STANDARD.md)。不足1%不�
 历史数值与各阶段NO_GO集中见[成果地图](RESEARCH_INDEX.md)，旧原文及配置保留。后续每轮人工审核，不自动训练或扩展测试数据。
 
 本轮重访补充：DyConfuse-Net的出版商预览报告MAE0.0155，并称数据覆盖2022-09-01至2023-02-28；完整切分、归一化与评分仍待核对，不能与本地275区域占用率局部开发值直接计算差距。[出版商预览](https://www.sciencedirect.com/science/article/abs/pii/S0378779626000581)。更详细的当前距离解释见[SOTA差距快照](SOTA_GAP_ASSESSMENT_20260913.md)。
+
+## 本次来源覆盖扩展
+
+完整登记见[统一比较来源表](../../../artifacts/summaries/comprehensive_development_comparison_v1/baseline_sources.csv)。补入MDFANet（ST-EVCDP247区5分钟）、MAGE（作者代码可查但数据说明/协议不匹配）、ST-Attention与SCLD+FCW（能量/负荷目标），以及尚未同任务执行的DLinear、PatchTST、iTransformer。已安装Chronos2/TimesFM3的存在不等于本次产生了新调用或已经补齐所有视野。
+
+当前新核心仅五个神经配置与两ridge、一个已曝光DEV窗；来源登记完整于本次清单不等于穷尽全部最新论文或完成所有同协议性能复现。旧六折CAPER/融合/路由/蒸馏/Chronos资格数值在比较报告另列，不能与14原点开发值直接排序。

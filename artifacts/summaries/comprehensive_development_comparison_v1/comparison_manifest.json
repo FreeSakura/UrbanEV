@@ -1,0 +1,1688 @@
+{
+  "protocol_id": "COMPREHENSIVE_DEVELOPMENT_COMPARISON_V1_20260913",
+  "config_sha256": "ac5d259aca7e93436b76743e3f08b6d2064ec7b1b0e0cbd932c406a20096a05e",
+  "author_source": {
+    "repo": "https://github.com/thuml/TimeXer",
+    "commit": "76011909357972bd55a27adba2e1be994d81b327",
+    "files_sha256_lf": {
+      "models/TimeXer.py": "b334d7869544d0a5de7a35501d0342d7bd0be4ebda06ccc045855a42819728c0",
+      "layers/Embed.py": "17e7c3577324c41a0da427a199c955b782fde905aabb1f7cbc3c4e15ebd4ae35",
+      "layers/SelfAttention_Family.py": "6f6592aed0753e342fc04c01db70528c2eb191eeb067cd5fd4c8d348fddcb794",
+      "utils/masking.py": "5976ac3dc84915d0d294c1761573bc18434751f29ec421bcca5a9b280de46bae",
+      "layers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "vendored_into_public_repo": false,
+    "existing_local_license_reference": "licenses/TSLIB-MIT.txt"
+  },
+  "archive_whitelist": [
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_RELAX_SHORT_O_20260913_raw.npy",
+      "sha256": "fc5f0fb61f92feed154ace7abab0b0346a3521272f86afdd3a885c01530c6103",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "RELAX_SHORT_O",
+      "seed": "20260913",
+      "logical_models": [
+        "RELAX_SHORT_O"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_RELAX_SHORT_O_20260914_raw.npy",
+      "sha256": "24af79a54a88d1ae6264eba17ba2f87d84166d98ca0021cba1dd22b161028955",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "RELAX_SHORT_O",
+      "seed": "20260914",
+      "logical_models": [
+        "RELAX_SHORT_O"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_RELAX_SHORT_OD_20260913_raw.npy",
+      "sha256": "3cac1407987161c71824c2320906898f83ea1ff9d4fa0429cae6ec243e15d3d3",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "RELAX_SHORT_OD",
+      "seed": "20260913",
+      "logical_models": [
+        "RELAX_SHORT_OD"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_RELAX_SHORT_OD_20260914_raw.npy",
+      "sha256": "c65217be43bc8bbc02bb20b337a3b0a4a24372c6242926f8af8a095dfc6c5d2b",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "RELAX_SHORT_OD",
+      "seed": "20260914",
+      "logical_models": [
+        "RELAX_SHORT_OD"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_DIRECT_SHORT_OD_20260913_raw.npy",
+      "sha256": "e97aae13a476398f3c6d6d9bf99de7e67c6dbc46739933c1d3aba6951a6e182b",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "DIRECT_SHORT_OD",
+      "seed": "20260913",
+      "logical_models": [
+        "DIRECT_SHORT_OD"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_DIRECT_SHORT_OD_20260914_raw.npy",
+      "sha256": "b7ca95c7a93a2cad21fc072a7c51301a2534a3e3c7425485419ecfd4103fbd6a",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "DIRECT_SHORT_OD",
+      "seed": "20260914",
+      "logical_models": [
+        "DIRECT_SHORT_OD"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_DIRECT_LONG_OD_20260913_raw.npy",
+      "sha256": "6986dda2c49fa10bdaf2631b076b9ce54cd172a0b6f0e0678b973976e4afba89",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "DIRECT_LONG_OD",
+      "seed": "20260913",
+      "logical_models": [
+        "DIRECT_LONG_OD"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_DIRECT_LONG_OD_20260914_raw.npy",
+      "sha256": "87daa1abc219ef2bea6b2a7018fd9739575110025dda4cac0934346bd6be49d8",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "DIRECT_LONG_OD",
+      "seed": "20260914",
+      "logical_models": [
+        "DIRECT_LONG_OD"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_RIDGE_SHORT_OD_deterministic_raw.npy",
+      "sha256": "e920417bbd0621c53c2ef45afbe7e002844e7cb6e1bd4bebf8de43611567e91d",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "RIDGE_SHORT_OD",
+      "seed": "deterministic",
+      "logical_models": [
+        "RIDGE_SHORT_OD"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_RIDGE_LONG_OD_deterministic_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "RIDGE_LONG_OD",
+      "seed": "deterministic",
+      "logical_models": [
+        "RIDGE_LONG_OD"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_last_deterministic_raw.npy",
+      "sha256": "69c50942d5f6c26ad52171c3d05d41f5b6d6a560831374d26b4b64120b5ff83e",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "last",
+      "seed": "deterministic",
+      "logical_models": [
+        "last"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_day_deterministic_raw.npy",
+      "sha256": "275f5e33ae42521f2c05ebee71e12433e3eac3403d68bb8830e16c4a4a16ae34",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "day",
+      "seed": "deterministic",
+      "logical_models": [
+        "day"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "short_state_relaxation_v1",
+      "file": "private_prediction_week_deterministic_raw.npy",
+      "sha256": "c2415c03d90c8b3db82eed9d10cd9c9c5ddeb716a6858c5334f538c57f5eff0b",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "week",
+      "seed": "deterministic",
+      "logical_models": [
+        "week"
+      ],
+      "source_manifest": "artifacts/summaries/short_state_relaxation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "long_history_source_ablation_v1",
+      "file": "private_PREDICT_S_raw.npy",
+      "sha256": "8ad4463d1f60cd935ab0d78c614d2ee3cac21e745041df712873e4c078b1071e",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "S",
+      "seed": "fixed",
+      "logical_models": [
+        "S"
+      ],
+      "source_manifest": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "long_history_source_ablation_v1",
+      "file": "private_PREDICT_O_LONG_raw.npy",
+      "sha256": "30d548de3bc91af5cb85b3dd9edc52300ef536da76549eb81b6c5f49e4997e9f",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "O_LONG",
+      "seed": "fixed",
+      "logical_models": [
+        "O_LONG"
+      ],
+      "source_manifest": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "long_history_source_ablation_v1",
+      "file": "private_PREDICT_D_LONG_raw.npy",
+      "sha256": "261b24167df9bd406279d24f2c0ea5ee652c38567bcb13b0dcecf19b9eeb0587",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "D_LONG",
+      "seed": "fixed",
+      "logical_models": [
+        "D_LONG"
+      ],
+      "source_manifest": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "long_history_source_ablation_v1",
+      "file": "private_PREDICT_OD_LONG_raw.npy",
+      "sha256": "3d4744d694af3a42c883344aa66608c668d185f5c83e6261716f1de132ee6b44",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OD_LONG",
+      "seed": "fixed",
+      "logical_models": [
+        "OD_LONG"
+      ],
+      "source_manifest": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "long_history_source_ablation_v1",
+      "file": "private_PREDICT_O_LONG_D24_raw.npy",
+      "sha256": "1bfac7ada8b61d8b25b1ea72abd1eeab2ddbb42ca2123b769fca2f431801fb3f",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "O_LONG_D24",
+      "seed": "fixed",
+      "logical_models": [
+        "O_LONG_D24"
+      ],
+      "source_manifest": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "long_history_source_ablation_v1",
+      "file": "private_PREDICT_O24_D_LONG_raw.npy",
+      "sha256": "1238f482bfc021e05dad6487d9ff07b685baab0f9c2408d9b0d07fad89a5ac5f",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "O24_D_LONG",
+      "seed": "fixed",
+      "logical_models": [
+        "O24_D_LONG"
+      ],
+      "source_manifest": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "long_history_source_ablation_v1",
+      "file": "private_PREDICT_O_LONG_D0_raw.npy",
+      "sha256": "600795b5044ce0320a9f28a93d003cf30510e99ebf939c2328be7cd589a78e17",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "O_LONG_D0",
+      "seed": "fixed",
+      "logical_models": [
+        "O_LONG_D0"
+      ],
+      "source_manifest": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "long_history_source_ablation_v1",
+      "file": "private_PREDICT_O_LONG_DUP_raw.npy",
+      "sha256": "d942bb3e686b026492a7ccbd13260759798121208d38ed9a86ebd847ebec6094",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "O_LONG_DUP",
+      "seed": "fixed",
+      "logical_models": [
+        "O_LONG_DUP"
+      ],
+      "source_manifest": "artifacts/summaries/long_history_source_ablation_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "duration_lag_regularization_v1",
+      "file": "private_DEV_BASE_OD_raw.npy",
+      "sha256": "3d4744d694af3a42c883344aa66608c668d185f5c83e6261716f1de132ee6b44",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "BASE_OD",
+      "seed": "fixed",
+      "logical_models": [
+        "BASE_OD",
+        "D_NORM_SELECTED",
+        "GLOBAL_RIDGE_SELECTED"
+      ],
+      "source_manifest": "artifacts/summaries/duration_lag_regularization_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "duration_lag_regularization_v1",
+      "file": "private_DEV_TIME_SMOOTH_D_g0.01_raw.npy",
+      "sha256": "668260228b3c64e5bb2a39a2cd3912b18f140770e9c27319d716db574bdc9331",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "TIME_SMOOTH_D_g0.01",
+      "seed": "fixed",
+      "logical_models": [
+        "TIME_SELECTED"
+      ],
+      "source_manifest": "artifacts/summaries/duration_lag_regularization_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "duration_lag_regularization_v1",
+      "file": "private_DEV_SCRAMBLED_SMOOTH_D_g0.01_raw.npy",
+      "sha256": "6f8d2b48f86e4ef19c2149b39d587dc595557e890223d8e7bb842269c365e294",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "SCRAMBLED_SMOOTH_D_g0.01",
+      "seed": "fixed",
+      "logical_models": [
+        "SCRAMBLED_SELECTED",
+        "SCRAMBLED_MATCHED"
+      ],
+      "source_manifest": "artifacts/summaries/duration_lag_regularization_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_BASE_OD_fixed_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "BASE_OD",
+      "seed": "fixed",
+      "logical_models": [
+        "BASE_OD"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_OD_PRODUCT_20260913_raw.npy",
+      "sha256": "4d28ffbbddc895f1aba7a13148f7bc9df78ad691a3e3f4d1d5c4f9a3adf76ee0",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OD_PRODUCT",
+      "seed": "20260913",
+      "logical_models": [
+        "OD_PRODUCT"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_OD_PRODUCT_20260914_raw.npy",
+      "sha256": "520cd41a2adf53bec25f2b58dee747e9ba2f3d705df0d87ffb92b1fb7426ecd3",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OD_PRODUCT",
+      "seed": "20260914",
+      "logical_models": [
+        "OD_PRODUCT"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_OD_SEPARABLE_20260913_raw.npy",
+      "sha256": "6e494025915d4095769574ab5f8d5b460b0043703dd7a41dbaf0859cf44f4698",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OD_SEPARABLE",
+      "seed": "20260913",
+      "logical_models": [
+        "OD_SEPARABLE"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_OD_SEPARABLE_20260914_raw.npy",
+      "sha256": "1e261a5027cd585903ef6dc620937fd49ef17edc9371404fb26ce6e8deeca61f",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OD_SEPARABLE",
+      "seed": "20260914",
+      "logical_models": [
+        "OD_SEPARABLE"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_OD_CONCAT_MLP_20260913_raw.npy",
+      "sha256": "6ce5ee650d4843397ba0b0144bb8fc4abb72f64355dc9967b92d8ad0391952bd",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OD_CONCAT_MLP",
+      "seed": "20260913",
+      "logical_models": [
+        "OD_CONCAT_MLP"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_OD_CONCAT_MLP_20260914_raw.npy",
+      "sha256": "0785db735a0347f9f4e13f7444cc3f6b1ba72a240701377817a767431039cb52",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OD_CONCAT_MLP",
+      "seed": "20260914",
+      "logical_models": [
+        "OD_CONCAT_MLP"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_OO_PRODUCT_20260913_raw.npy",
+      "sha256": "daf2ea2cdbb9adc3196392b5caf6312346e2c648dedb88708355cd8fe4ce2856",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OO_PRODUCT",
+      "seed": "20260913",
+      "logical_models": [
+        "OO_PRODUCT"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "conditional_od_interaction_v1",
+      "file": "private_DEV_OO_PRODUCT_20260914_raw.npy",
+      "sha256": "d8a14fb4760c7b734eb6665e38b879e738ac7a66f5e45fb08688d01b53d7c59d",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "OO_PRODUCT",
+      "seed": "20260914",
+      "logical_models": [
+        "OO_PRODUCT"
+      ],
+      "source_manifest": "artifacts/summaries/conditional_od_interaction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_BASE_OD_fixed_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "BASE_OD",
+      "seed": "fixed",
+      "logical_models": [
+        "BASE_OD"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_MSE_20260915_raw.npy",
+      "sha256": "79f3ed7d3dbf4933a108e42118a15ceeaba7379a401ea76ea36478e68c3d466c",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_MSE",
+      "seed": "20260915",
+      "logical_models": [
+        "PRODUCT_MSE"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_MSE_20260916_raw.npy",
+      "sha256": "7c69a89639789e86942cdb2ce2783dd55b4627d215da9558f9f9b4d5d8c0b1f5",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_MSE",
+      "seed": "20260916",
+      "logical_models": [
+        "PRODUCT_MSE"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_MSE_20260917_raw.npy",
+      "sha256": "cda5366616d50a5cefe2828a5dab2082581e9bb4f7d42004c09a4bc7d36d9c18",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_MSE",
+      "seed": "20260917",
+      "logical_models": [
+        "PRODUCT_MSE"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_POSREG_20260915_raw.npy",
+      "sha256": "e44ee2bdcbd6c03858dbd5be9ae4422cb1310963f45126a3fa86b8a692aa1eed",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_POSREG",
+      "seed": "20260915",
+      "logical_models": [
+        "PRODUCT_POSREG"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_POSREG_20260916_raw.npy",
+      "sha256": "57eec0547b7d60678414a4acbb1e299f722f3fc9e83bd80fd6085381a1fdf4b6",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_POSREG",
+      "seed": "20260916",
+      "logical_models": [
+        "PRODUCT_POSREG"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_POSREG_20260917_raw.npy",
+      "sha256": "35ed7a282f0199373165b553422e17e716015c1af04c82830fe6dd657235deba",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_POSREG",
+      "seed": "20260917",
+      "logical_models": [
+        "PRODUCT_POSREG"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_MIX_20260915_raw.npy",
+      "sha256": "4cf246a908f39d3267d36b99fa97a81a727afc885f4fed1c9003aaa64d94e7b0",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_MIX",
+      "seed": "20260915",
+      "logical_models": [
+        "PRODUCT_MIX"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_MIX_20260916_raw.npy",
+      "sha256": "ff1a4c75347b58fcda2d9b88f7e8861e39aab837939c295545185bb4195fff7e",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_MIX",
+      "seed": "20260916",
+      "logical_models": [
+        "PRODUCT_MIX"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_MIX_20260917_raw.npy",
+      "sha256": "fbcbb0649a45eec6c217a74d93ac7a78e13800cf9968b9e677ecc79f70b31f4d",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_MIX",
+      "seed": "20260917",
+      "logical_models": [
+        "PRODUCT_MIX"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_L1_20260915_raw.npy",
+      "sha256": "7a70e85970fdd414f8c61576b3d0280351329aed142da1202584537fd6bb6876",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_L1",
+      "seed": "20260915",
+      "logical_models": [
+        "PRODUCT_L1"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_L1_20260916_raw.npy",
+      "sha256": "06795149a5dfb66da449f516ca4ea4ba87bc168fbbb4a2bd828574e0c5072c6b",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_L1",
+      "seed": "20260916",
+      "logical_models": [
+        "PRODUCT_L1"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_PRODUCT_L1_20260917_raw.npy",
+      "sha256": "2c44833fbc52f332796a2b526ff4748145e481eb6de98217b535834ab3ebfe4e",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "PRODUCT_L1",
+      "seed": "20260917",
+      "logical_models": [
+        "PRODUCT_L1"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_CONCAT_MSE_20260915_raw.npy",
+      "sha256": "a9edb3d8ce64b9647db1e58fa5462d8dba9289edf05650755f794a9f05e2b899",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "CONCAT_MSE",
+      "seed": "20260915",
+      "logical_models": [
+        "CONCAT_MSE"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_CONCAT_MSE_20260916_raw.npy",
+      "sha256": "71d5686513f845e2b29493a6be1deee3546c6f228a4f281de93c8d8462d21504",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "CONCAT_MSE",
+      "seed": "20260916",
+      "logical_models": [
+        "CONCAT_MSE"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_CONCAT_MSE_20260917_raw.npy",
+      "sha256": "27c02f522d5268597b0b1e0287400005e3ce1f942f9178fc2aee95b1c2b3b3d3",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "CONCAT_MSE",
+      "seed": "20260917",
+      "logical_models": [
+        "CONCAT_MSE"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_CONCAT_POSREG_20260915_raw.npy",
+      "sha256": "241f2addb52be8804d0dbfdb2e35530e63418c1d984467cb8d8af9c397faec48",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "CONCAT_POSREG",
+      "seed": "20260915",
+      "logical_models": [
+        "CONCAT_POSREG"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_CONCAT_POSREG_20260916_raw.npy",
+      "sha256": "4a0f1a9e435bf211221a5ad22fb09e09afdb65d1c0d054d951c4b45b25d86290",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "CONCAT_POSREG",
+      "seed": "20260916",
+      "logical_models": [
+        "CONCAT_POSREG"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "reference_harm_stability_v1",
+      "file": "private_DEV_CONCAT_POSREG_20260917_raw.npy",
+      "sha256": "4045a8d4de34082abe35587a285ab50168b291437678236873f00eb1e827e608",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "CONCAT_POSREG",
+      "seed": "20260917",
+      "logical_models": [
+        "CONCAT_POSREG"
+      ],
+      "source_manifest": "artifacts/summaries/reference_harm_stability_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_BASE_OD_fixed_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "BASE_OD",
+      "seed": "fixed",
+      "logical_models": [
+        "BASE_OD"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_IS_X_20260915_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_IS_X",
+      "seed": "20260915",
+      "logical_models": [
+        "P_IS_X"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_IS_X_20260916_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_IS_X",
+      "seed": "20260916",
+      "logical_models": [
+        "P_IS_X"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_IS_X_20260917_raw.npy",
+      "sha256": "64fc5c72aae7fcb1259c95265bae65049f93442903c26ab7689bf3e30d79abdb",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_IS_X",
+      "seed": "20260917",
+      "logical_models": [
+        "P_IS_X"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_FWD_X_20260915_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_FWD_X",
+      "seed": "20260915",
+      "logical_models": [
+        "P_FWD_X"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_FWD_X_20260916_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_FWD_X",
+      "seed": "20260916",
+      "logical_models": [
+        "P_FWD_X"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_FWD_X_20260917_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_FWD_X",
+      "seed": "20260917",
+      "logical_models": [
+        "P_FWD_X"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_IS_BC_20260915_raw.npy",
+      "sha256": "8305ab913ca9c961b603c28f6ad25f048f3704042d2b96b6bbf42682eecc90c6",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_IS_BC",
+      "seed": "20260915",
+      "logical_models": [
+        "P_IS_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_IS_BC_20260916_raw.npy",
+      "sha256": "2eb933ac6800f4cd560e9899c2a7b5eaa24b4b4f7622a16ea650a14736ddff8e",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_IS_BC",
+      "seed": "20260916",
+      "logical_models": [
+        "P_IS_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_IS_BC_20260917_raw.npy",
+      "sha256": "dcee4af8f0faad9a74096d35431009100c6f08705c1046d34053e81a9f5159eb",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_IS_BC",
+      "seed": "20260917",
+      "logical_models": [
+        "P_IS_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_FWD_BC_20260915_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_FWD_BC",
+      "seed": "20260915",
+      "logical_models": [
+        "P_FWD_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_FWD_BC_20260916_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_FWD_BC",
+      "seed": "20260916",
+      "logical_models": [
+        "P_FWD_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_P_FWD_BC_20260917_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "P_FWD_BC",
+      "seed": "20260917",
+      "logical_models": [
+        "P_FWD_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_C_IS_BC_20260915_raw.npy",
+      "sha256": "7ed2210e34cbc8b39765f9c1ea8bf4c527b72ff35dbe467dd23bb1d866994155",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "C_IS_BC",
+      "seed": "20260915",
+      "logical_models": [
+        "C_IS_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_C_IS_BC_20260916_raw.npy",
+      "sha256": "99e0b958812bbeb58f6266e529fe23bff38fec3d28d26fc226b110c0e8ba60db",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "C_IS_BC",
+      "seed": "20260916",
+      "logical_models": [
+        "C_IS_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_C_IS_BC_20260917_raw.npy",
+      "sha256": "662eb9eb1864e1ffc4ba884ca1a17cd4235a4d4bec36503f2f899324468b8384",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "C_IS_BC",
+      "seed": "20260917",
+      "logical_models": [
+        "C_IS_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_C_FWD_BC_20260915_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "C_FWD_BC",
+      "seed": "20260915",
+      "logical_models": [
+        "C_FWD_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_C_FWD_BC_20260916_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "C_FWD_BC",
+      "seed": "20260916",
+      "logical_models": [
+        "C_FWD_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "forward_residual_transfer_v1",
+      "file": "private_DEV_C_FWD_BC_20260917_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "C_FWD_BC",
+      "seed": "20260917",
+      "logical_models": [
+        "C_FWD_BC"
+      ],
+      "source_manifest": "artifacts/summaries/forward_residual_transfer_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_BASE_FIXED_fixed_raw.npy",
+      "sha256": "c5f53ea43e3cfcb27f8d073817b2e2cbf77994882bebf4637fa2fdd801ea1396",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "BASE_FIXED",
+      "seed": "fixed",
+      "logical_models": [
+        "BASE_FIXED"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_LINEAR_REPAIR_fixed_raw.npy",
+      "sha256": "e62fc696d462f3cd9c2dff4363e39b5ae24bb3a28ad8b110c216638bc257e961",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "LINEAR_REPAIR",
+      "seed": "fixed",
+      "logical_models": [
+        "LINEAR_REPAIR"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_RIDGE_FULL_fixed_raw.npy",
+      "sha256": "91dd402bf3df8a3dbdaa30b7a77c38e085c68b2a77d75c5a6ef0c97d3cd61578",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "RIDGE_FULL",
+      "seed": "fixed",
+      "logical_models": [
+        "RIDGE_FULL"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_PRODUCT_20260915_raw.npy",
+      "sha256": "cace0d8c380b0da42c1d4afcef4a0ad70b0ce4a5c63c1f6eb147b03030e5e5a4",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_PRODUCT",
+      "seed": "20260915",
+      "logical_models": [
+        "FIXED_PRODUCT"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_PRODUCT_20260916_raw.npy",
+      "sha256": "12cd64c14d98dd11a4ea246c394f95721e295d65e629a9e44e8afb4810fe642f",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_PRODUCT",
+      "seed": "20260916",
+      "logical_models": [
+        "FIXED_PRODUCT"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_PRODUCT_20260917_raw.npy",
+      "sha256": "cdf22a9da88759f1f3dd90e1ca552e0340e9b6bb7f07482a5ba464349d138082",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_PRODUCT",
+      "seed": "20260917",
+      "logical_models": [
+        "FIXED_PRODUCT"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_SEPARABLE_20260915_raw.npy",
+      "sha256": "5467fd881688bc72c347606452c1df359cab55d75a3dc919e390f61781e25522",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_SEPARABLE",
+      "seed": "20260915",
+      "logical_models": [
+        "FIXED_SEPARABLE"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_SEPARABLE_20260916_raw.npy",
+      "sha256": "30c131a4a3996255a8063f46434274a1e70566335fdc1956c553c42359c0d279",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_SEPARABLE",
+      "seed": "20260916",
+      "logical_models": [
+        "FIXED_SEPARABLE"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_SEPARABLE_20260917_raw.npy",
+      "sha256": "03a2cfff7ab678c2b601936d9a8f4ca91f86c3374d57440b7740e55106131d84",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_SEPARABLE",
+      "seed": "20260917",
+      "logical_models": [
+        "FIXED_SEPARABLE"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_CONCAT_20260915_raw.npy",
+      "sha256": "82a128a8abedf5f8dd6963ce41dd927df5467410656382566c81441b05c2d815",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_CONCAT",
+      "seed": "20260915",
+      "logical_models": [
+        "FIXED_CONCAT"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_CONCAT_20260916_raw.npy",
+      "sha256": "7c3e1c3f58ebdc3c3f58a50d4dd27394f5d1baec4d6216a507a24746e12f2e29",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_CONCAT",
+      "seed": "20260916",
+      "logical_models": [
+        "FIXED_CONCAT"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    },
+    {
+      "root_role": "fixed_reference_correction_v1",
+      "file": "private_DEV_FIXED_CONCAT_20260917_raw.npy",
+      "sha256": "68347b8b66df59d696ae6e826b2bd6ba1fec1434a6036ce9ae150b00df60b88f",
+      "shape": [
+        14,
+        12,
+        275
+      ],
+      "model": "FIXED_CONCAT",
+      "seed": "20260917",
+      "logical_models": [
+        "FIXED_CONCAT"
+      ],
+      "source_manifest": "artifacts/summaries/fixed_reference_correction_v1/prediction_freeze.json",
+      "file_exists": true,
+      "qualification": "FINAL_MAIN_LOCKED_PREDICTION",
+      "selection_overlap": false
+    }
+  ],
+  "archive_contracts": [
+    {
+      "cohort": "short_state_relaxation_v1",
+      "protocol_id": "SHORT_STATE_RELAXATION_V1_20260913",
+      "config_path": "configs/research/SHORT_STATE_RELAXATION_V1.json",
+      "config_sha256_lf": "31682244f5326e95438b2038905afa81c61fc49663bbc757d943e97e7cf86713",
+      "evaluation_origins": [
+        1392,
+        1549,
+        12
+      ],
+      "training_protocol_uniform_with_other_cohorts": false
+    },
+    {
+      "cohort": "long_history_source_ablation_v1",
+      "protocol_id": "LONG_HISTORY_SOURCE_ABLATION_V1_20260913",
+      "config_path": "configs/research/LONG_HISTORY_SOURCE_ABLATION_V1.json",
+      "config_sha256_lf": "7404cd7d0d2105205ef079bc47dc45c82158d19cc63ae06c50eea52c9f7be3cf",
+      "evaluation_origins": [
+        1392,
+        1549,
+        12
+      ],
+      "training_protocol_uniform_with_other_cohorts": false
+    },
+    {
+      "cohort": "duration_lag_regularization_v1",
+      "protocol_id": "DURATION_LAG_REGULARIZATION_V1_20260913",
+      "config_path": "configs/research/DURATION_LAG_REGULARIZATION_V1.json",
+      "config_sha256_lf": "f23505e33a62f5ad424e86aba82c3ac5aececaae020d4954ab6e324789fb941d",
+      "evaluation_origins": [
+        1392,
+        1549,
+        12
+      ],
+      "training_protocol_uniform_with_other_cohorts": false
+    },
+    {
+      "cohort": "conditional_od_interaction_v1",
+      "protocol_id": "CONDITIONAL_OD_INTERACTION_V1_20260913",
+      "config_path": "configs/research/CONDITIONAL_OD_INTERACTION_V1.json",
+      "config_sha256_lf": "2e4c38379cf4fac67a5ac2e636e3770d4112d2d503a2e73bad9bcb2cfa070bef",
+      "evaluation_origins": [
+        1392,
+        1549,
+        12
+      ],
+      "training_protocol_uniform_with_other_cohorts": false
+    },
+    {
+      "cohort": "reference_harm_stability_v1",
+      "protocol_id": "REFERENCE_HARM_STABILITY_V1_20260913",
+      "config_path": "configs/research/REFERENCE_HARM_STABILITY_V1.json",
+      "config_sha256_lf": "b070a58b6fd9a0f8f4403a22d2167d200287eb3a88c429703269d4d657150fa2",
+      "evaluation_origins": [
+        1392,
+        1549,
+        12
+      ],
+      "training_protocol_uniform_with_other_cohorts": false
+    },
+    {
+      "cohort": "forward_residual_transfer_v1",
+      "protocol_id": "FORWARD_RESIDUAL_TRANSFER_V1_20260913",
+      "config_path": "configs/research/FORWARD_RESIDUAL_TRANSFER_V1.json",
+      "config_sha256_lf": "ab86483ebf2597b3ff428e450b771f6630d928beb25f1faf7f4bbb22a41818e8",
+      "evaluation_origins": [
+        1392,
+        1549,
+        12
+      ],
+      "training_protocol_uniform_with_other_cohorts": false
+    },
+    {
+      "cohort": "fixed_reference_correction_v1",
+      "protocol_id": "FIXED_REFERENCE_CORRECTION_V1_20260913",
+      "config_path": "configs/research/FIXED_REFERENCE_CORRECTION_V1.json",
+      "config_sha256_lf": "5d01b5787c5e5496273b25728a22f681f227be48b2c4b2b383306a7b16ad2d96",
+      "evaluation_origins": [
+        1392,
+        1549,
+        12
+      ],
+      "training_protocol_uniform_with_other_cohorts": false
+    }
+  ],
+  "same_training_contract_for_new_core_only": true,
+  "formal_six_fold_in_this_execution": false
+}

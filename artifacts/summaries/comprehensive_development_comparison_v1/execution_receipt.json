@@ -1,0 +1,130 @@
+{
+  "protocol_id": "COMPREHENSIVE_DEVELOPMENT_COMPARISON_V1_20260913",
+  "config_sha256": "ac5d259aca7e93436b76743e3f08b6d2064ec7b1b0e0cbd932c406a20096a05e",
+  "frozen_code_commit": "3284abab607887b38e0b4e14281abea0a7586de6",
+  "stage_reads": [
+    {
+      "stage": "FIT",
+      "file": "inf.csv",
+      "columns": [
+        "station_id",
+        "TAZID",
+        "charge_count"
+      ],
+      "rule": "groupby TAZID sum"
+    },
+    {
+      "stage": "FIT",
+      "file": "occupancy.csv",
+      "rows": 1056,
+      "columns": 275,
+      "prefix_sha256": "939339567e3935dbc390343623dcbb8f30e45e1c30259b12a748c938f123e4bd",
+      "numeric_row_range": [
+        0,
+        1056
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "FIT",
+      "file": "duration.csv",
+      "rows": 1043,
+      "columns": 275,
+      "prefix_sha256": "1e7cc3810fb4b11e1b59f06aa798793a0e8bc1493c04ac428bb7074b062ccf55",
+      "numeric_row_range": [
+        0,
+        1043
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "SELECT",
+      "file": "occupancy.csv",
+      "rows": 1224,
+      "columns": 275,
+      "prefix_sha256": "4dd8eaa18bf1bc80575f86acba328f9946d326f4802c5f48e10eb6a872ebf8e1",
+      "numeric_row_range": [
+        0,
+        1224
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "SELECT",
+      "file": "duration.csv",
+      "rows": 1211,
+      "columns": 275,
+      "prefix_sha256": "01d532a43434012d0447f0859d58a4ec86206d52227657c670e349a599a36c52",
+      "numeric_row_range": [
+        0,
+        1211
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "PREDICT",
+      "file": "occupancy.csv",
+      "rows": 1548,
+      "columns": 275,
+      "prefix_sha256": "64145637b256e74991c3dca0cd227c3215f8313a4ea02a7408649306d964d2c2",
+      "numeric_row_range": [
+        0,
+        1548
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "PREDICT",
+      "file": "duration.csv",
+      "rows": 1547,
+      "columns": 275,
+      "prefix_sha256": "91535b3742ac389b3ac70c26563dfe88cad3f5149a7f359ad033c6d60a14a455",
+      "numeric_row_range": [
+        0,
+        1547
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    },
+    {
+      "stage": "SCORE",
+      "file": "occupancy.csv",
+      "rows": 1560,
+      "columns": 275,
+      "prefix_sha256": "40f3769bc207bb5411225c73ee7f174d194238b61ff71f07aa736dc26bc8bb02",
+      "numeric_row_range": [
+        0,
+        1560
+      ],
+      "imputation_performed": false,
+      "clipping_performed": false
+    }
+  ],
+  "ridge_fits": 2,
+  "neural_runs_started": 15,
+  "neural_runs_completed": 15,
+  "optimizer_steps": 33000,
+  "cache_decodes": 4,
+  "foundation_inference": 0,
+  "automatic_next_round": false,
+  "automation_enabled": false,
+  "human_review_required": true,
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch_version": "2.5.1+cu121",
+  "cpu_threads": 2,
+  "status": "COMPARISON_PARTIAL_WITH_EXPLICIT_GAPS_REVIEW_REQUIRED",
+  "core_complete": true,
+  "formal_six_fold_complete": false,
+  "core_valid_score_rows": 280,
+  "core_missing_score_rows": 8,
+  "historical_score_rows": 1376,
+  "historical_unique_arrays_decoded": 67,
+  "inference_seconds": 1.9742083002929576,
+  "sota_claim": false,
+  "total_seconds": 2467.580344099959
+}

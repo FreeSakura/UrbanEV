@@ -1,0 +1,15 @@
+method,publication_identity,primary_source,code_source,comparability,this_execution
+UrbanEV original baselines,Scientific Data2025,https://doi.org/10.1038/s41597-025-04874-4,https://github.com/IntelligentSystemsLab/UrbanEV,Official six folds differ from current local window; data version/rates/counts require mapping,HISTORICAL_REGISTRY_AND_PAPER_VALUES_ONLY
+TimeXer LOCAL-OD and GLOBAL-O,NeurIPS2024,https://proceedings.neurips.cc/paper_files/paper/2024/file/0113ef4642264adc2e6924a3cbbdf532-Paper-Conference.pdf,https://github.com/thuml/TimeXer/tree/76011909357972bd55a27adba2e1be994d81b327,"Author core at fixed pin, local task adaptations disclosed; not Table3 reproduction",COMPLETED_AUTHOR_CORE_ADAPTED_DEVELOPMENT
+Chronos-2 transportation benchmark,arXiv2602.24238v2 preprint,https://arxiv.org/abs/2602.24238v2,https://github.com/fmpr/mobility-baselines,Published counts and protocol not same as local occupancy rate; local H3/H12 native identity fixed,CACHED_H3_H12_ONLY_NO_NEW_INFERENCE
+TimesFM-3,Official software checkpoint,https://github.com/google-research/timesfm,https://github.com/google-research/timesfm,Local 3.0.1 environment and pinned weights available; recent common1392 calls absent,HISTORICAL_SCOPE_ONLY_NO_NEW_INFERENCE
+DyConfuse-Net,EPSR2026,https://doi.org/10.1016/j.epsr.2026.112765,,Full processing/normalization/horizon contract unresolved; preview MAE .0155 not directly ranked,PAPER_REPORTED_NOT_REPRODUCED
+TriCast,PRL2026,https://doi.org/10.1016/j.patrec.2026.04.028,,"247 zones,5min,June19-July18 2022; different task/version",NOT_SAME_DATA_CONTRACT
+Urban-CSTPNet,Electronics2026,https://doi.org/10.3390/electronics15153297,,"Probabilistic regional demand, conditional median; full unit/source details unresolved due access limits",PAPER_REPORTED_NOT_REPRODUCED
+MDFANet,Scientific Reports2026,https://doi.org/10.1038/s41598-026-38855-3,https://github.com/kion-86/MDFANet,"ST-EVCDP247 zones5min, not current275 hourly task",NOT_SAME_DATA_CONTRACT
+MAGE,NeurIPS2025,https://papers.neurips.cc/paper_files/paper/2025/file/54c9bfb0885ae07f23607f617ab64c2b-Paper-Conference.pdf,https://github.com/PoorOtterBob/MAGE/tree/f1fdd27da4e72a140c4f341f94d368fbcaec7507,"Table4 1682 nodes1hour1year, text mixes247/5min/one-month;60/20/20 and24step; author data setup not aligned",SOURCE_INSPECTED_NOT_REPRODUCED
+ST-Attention,Energies2026,https://doi.org/10.3390/en19143411,,"Hourly regional charging energy kWh, not occupancy rate",NOT_SAME_TARGET
+SCLD+FCW,World EV Journal2026,https://doi.org/10.3390/wevj17060288,,Aggregated load/energy results not current rate prediction,NOT_SAME_TARGET
+DLinear,General forecasting baseline,,https://github.com/cure-lab/LTSF-Linear,Formal same-task adapter/version not frozen in this execution,NOT_RUN_EXPLICIT_GAP
+PatchTST,General forecasting baseline,,https://github.com/yuqinie98/PatchTST,Formal same-task adapter/version not frozen in this execution,NOT_RUN_EXPLICIT_GAP
+iTransformer,General forecasting baseline,,https://github.com/thuml/iTransformer,Formal same-task adapter/version not frozen in this execution,NOT_RUN_EXPLICIT_GAP

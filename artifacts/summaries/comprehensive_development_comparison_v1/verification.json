@@ -1,0 +1,11 @@
+{
+  "saved_prediction_score_error": 0.0,
+  "native_truth_error": 0.0,
+  "ridge_od_anchor_error": 0.0,
+  "historical_published_score_error": 0.0,
+  "historical_published_rows_checked": 1288,
+  "historical_failures": [],
+  "historical_raw_files_registered": 83,
+  "historical_unique_arrays_decoded": 67,
+  "new_raw_prediction_files": 17
+}

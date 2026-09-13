@@ -1,0 +1,187 @@
+{
+  "models": [
+    {
+      "model": "OD_PRODUCT",
+      "seed": 20260915,
+      "selected": {
+        "epoch": 40,
+        "file": "private_OD_PRODUCT_20260915_e40.pt",
+        "sha256": "a8b6bd8b4c8b865436162e0e9d2c906512b4338fb3e8c58e1372e9cd593c0bd0",
+        "selection_rmse": 0.08077080767818852
+      },
+      "alias": null,
+      "untrained_initialization_selected": false
+    },
+    {
+      "model": "OD_PRODUCT",
+      "seed": 20260916,
+      "selected": {
+        "epoch": 0,
+        "file": "private_OD_PRODUCT_20260916_e0.pt",
+        "sha256": "f69f3231ea295aeadd94d7b0ac0eaa6aeaf9de4d6ead7a4f5b125821d6122588",
+        "selection_rmse": 0.08142685624896802
+      },
+      "alias": "RIDGE_OD",
+      "untrained_initialization_selected": false
+    },
+    {
+      "model": "OD_PRODUCT",
+      "seed": 20260917,
+      "selected": {
+        "epoch": 0,
+        "file": "private_OD_PRODUCT_20260917_e0.pt",
+        "sha256": "93af2978066b7d436a995896d26048966d9cc0d92a4c6537076b868f5bd3cda0",
+        "selection_rmse": 0.08142685624896802
+      },
+      "alias": "RIDGE_OD",
+      "untrained_initialization_selected": false
+    },
+    {
+      "model": "OD_SEPARABLE",
+      "seed": 20260915,
+      "selected": {
+        "epoch": 40,
+        "file": "private_OD_SEPARABLE_20260915_e40.pt",
+        "sha256": "edd285ae0d6450005bb0e6315f1f05f59bdd3e7ce1c48c84c22f1d5a46776f67",
+        "selection_rmse": 0.08123399982092262
+      },
+      "alias": null,
+      "untrained_initialization_selected": false
+    },
+    {
+      "model": "OD_SEPARABLE",
+      "seed": 20260916,
+      "selected": {
+        "epoch": 0,
+        "file": "private_OD_SEPARABLE_20260916_e0.pt",
+        "sha256": "a1cf8dc2ef4e575a6cd216d7c044ea5285178eb8d2bcee2c92c016f08095d5e1",
+        "selection_rmse": 0.08142685624896802
+      },
+      "alias": "RIDGE_OD",
+      "untrained_initialization_selected": false
+    },
+    {
+      "model": "OD_SEPARABLE",
+      "seed": 20260917,
+      "selected": {
+        "epoch": 0,
+        "file": "private_OD_SEPARABLE_20260917_e0.pt",
+        "sha256": "602e993b3cdafdb2217aaaa55bdbb237f0815a0cf0bc57a52221a3d986dda6c6",
+        "selection_rmse": 0.08142685624896802
+      },
+      "alias": "RIDGE_OD",
+      "untrained_initialization_selected": false
+    },
+    {
+      "model": "OD_CONCAT_MLP",
+      "seed": 20260915,
+      "selected": {
+        "epoch": 40,
+        "file": "private_OD_CONCAT_MLP_20260915_e40.pt",
+        "sha256": "46345f8b2e9b31b96a398d3b96b3a8a324e6fb1c7f14b0d5553a551dca9ba18c",
+        "selection_rmse": 0.08106052555018224
+      },
+      "alias": null,
+      "untrained_initialization_selected": false
+    },
+    {
+      "model": "OD_CONCAT_MLP",
+      "seed": 20260916,
+      "selected": {
+        "epoch": 5,
+        "file": "private_OD_CONCAT_MLP_20260916_e5.pt",
+        "sha256": "fe502a46ab8de0c909f8e92bf26a040b671ea64b0fe49022a51bd1266ee6224a",
+        "selection_rmse": 0.0812991063749872
+      },
+      "alias": null,
+      "untrained_initialization_selected": false
+    },
+    {
+      "model": "OD_CONCAT_MLP",
+      "seed": 20260917,
+      "selected": {
+        "epoch": 40,
+        "file": "private_OD_CONCAT_MLP_20260917_e40.pt",
+        "sha256": "449cfad0f79390d1592948926aa28645e65a6c42c1399c1d99dd1165eb8a7968",
+        "selection_rmse": 0.08121877786423035
+      },
+      "alias": null,
+      "untrained_initialization_selected": false
+    },
+    {
+      "model": "TIMEXER_LOCAL_OD",
+      "seed": 20260915,
+      "selected": {
+        "epoch": 40,
+        "file": "private_TIMEXER_LOCAL_OD_20260915_e40.pt",
+        "sha256": "540afb4ef83c16bb89b114162969f4e657de19072b404895e52f6fbe7adadc27",
+        "selection_rmse": 0.08028974418348102
+      },
+      "alias": null,
+      "untrained_initialization_selected": false
+    },
+    {
+      "model": "TIMEXER_LOCAL_OD",
+      "seed": 20260916,
+      "selected": {
+        "epoch": 40,
+        "file": "private_TIMEXER_LOCAL_OD_20260916_e40.pt",
+        "sha256": "039c3d92ae929af54022fabe0b3476e8c63fd027844d9d35ab78ab9050f719e1",
+        "selection_rmse": 0.08025272190204771
+      },
+      "alias": null,
+      "untrained_initialization_selected": false
+    },
+    {
+      "model": "TIMEXER_LOCAL_OD",
+      "seed": 20260917,
+      "selected": {
+        "epoch": 40,
+        "file": "private_TIMEXER_LOCAL_OD_20260917_e40.pt",
+        "sha256": "28968309a94ed89f1c7472172cb92878439ab4997b6520409f9c866854b994d7",
+        "selection_rmse": 0.08045138206325077
+      },
+      "alias": null,
+      "untrained_initialization_selected": false
+    },
+    {
+      "model": "TIMEXER_GLOBAL_O",
+      "seed": 20260915,
+      "selected": {
+        "epoch": 10,
+        "file": "private_TIMEXER_GLOBAL_O_20260915_e10.pt",
+        "sha256": "752fd3473c098651d47807017cb74cb85a09ad456fbda81a4e89eed55c0e36b5",
+        "selection_rmse": 0.08038476616074433
+      },
+      "alias": null,
+      "untrained_initialization_selected": false
+    },
+    {
+      "model": "TIMEXER_GLOBAL_O",
+      "seed": 20260916,
+      "selected": {
+        "epoch": 20,
+        "file": "private_TIMEXER_GLOBAL_O_20260916_e20.pt",
+        "sha256": "1a387fdc153bd2b47fa4019f5135aa3c8844fd714fd3d7a956e744f3ca5638c4",
+        "selection_rmse": 0.08075546331703616
+      },
+      "alias": null,
+      "untrained_initialization_selected": false
+    },
+    {
+      "model": "TIMEXER_GLOBAL_O",
+      "seed": 20260917,
+      "selected": {
+        "epoch": 40,
+        "file": "private_TIMEXER_GLOBAL_O_20260917_e40.pt",
+        "sha256": "77a6ae4a139881dde13b29437849576c2fd205e33f0af1f7c3a18cb3052390bc",
+        "selection_rmse": 0.08025597777466717
+      },
+      "alias": null,
+      "untrained_initialization_selected": false
+    }
+  ],
+  "no_best_seed": true,
+  "no_ensemble": true,
+  "selection_rule": "raw four-H endpoint macroRMSE, exact ties earliest epoch"
+}
