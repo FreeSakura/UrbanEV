@@ -30,8 +30,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "sha256": "09f92600ccb3a631c3d36190949e35d2b67c0ec0ca3df1bb7a9fac1d7a18c34e",
-      "bytes": 3678,
+      "sha256": "94960ac2a8c875b7ecd9e3067c1de5fb8ddb3a20a407302fd61e971df57aa6a3",
+      "bytes": 3762,
       "role": "github",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -57,8 +57,8 @@
     },
     {
       "path": "artifacts/manifest.json",
-      "sha256": "9e5e6b16d6a566821a34273c9753df5558319b84f3a6297b88d6374064c1eddb",
-      "bytes": 132700,
+      "sha256": "5507b44c163fd46cec312f10662c4d3898d6ecc8c136382635ac44d3e3ba94c1",
+      "bytes": 134130,
       "role": "artifacts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -66,8 +66,8 @@
     },
     {
       "path": "artifacts/manifests/EVIDENCE_ARTIFACT_MANIFEST.json",
-      "sha256": "9e5e6b16d6a566821a34273c9753df5558319b84f3a6297b88d6374064c1eddb",
-      "bytes": 132700,
+      "sha256": "5507b44c163fd46cec312f10662c4d3898d6ecc8c136382635ac44d3e3ba94c1",
+      "bytes": 134130,
       "role": "artifacts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -2666,6 +2666,33 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/urbanev_matched_six_fold_v1/origin_plan.csv",
+      "sha256": "d52c0aa8337d44f82d679ab519089f205fa1cc8842297f802f0f3b8c4bf062d2",
+      "bytes": 10894,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/urbanev_matched_six_fold_v1/registered_tasks.json",
+      "sha256": "6c076279d210a30e0c5c596d541f5f134a162525d17197a173df1f52989c7912",
+      "bytes": 66063,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/urbanev_matched_six_fold_v1/registration.json",
+      "sha256": "f0b8a902fb0099724849d61c3ac40740432512d266f678a6d32fe63013c1ca56",
+      "bytes": 2389,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/volume_composition_increment_v1/calibration_grid.csv",
       "sha256": "b63d701c27213adbe6ce119bd2c797706a97bf95fe7bbc206a0392c6ba71d41b",
       "bytes": 13345,
@@ -3134,6 +3161,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "configs/research/URBANEV_MATCHED_SIX_FOLD_V1_20260914.json",
+      "sha256": "c235ebddd0cbabb401b5e0f61e7fe5618560a5252911059e00b4cb2c56184494",
+      "bytes": 49223,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
       "path": "configs/research/URBANEV_SOTA_V1.json",
       "sha256": "112dda8e193023906c568683a58f32c1a75a3c866fa4be23e81ce810a5e926cc",
       "bytes": 1790,
@@ -3270,8 +3306,8 @@
     },
     {
       "path": "docs/research/sota/BASELINES.md",
-      "sha256": "bbc5b5ad4fab1bc7a9816eaf45f4e44c344ef55c3a214bd52b68ef029341dd7e",
-      "bytes": 6414,
+      "sha256": "baf09099d03405987c2cab8ba2386ca94456c4e808e7793fc8894e8521de815d",
+      "bytes": 6810,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
@@ -3611,6 +3647,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "docs/research/sota/MATCHED_SIX_FOLD_REPORT_20260914.md",
+      "sha256": "f6a496437860cfac9e36a2c075ff4955f85a35ca8cc546d3b5cfcb2d96aeef4b",
+      "bytes": 5197,
+      "role": "paper_or_documentation",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "docs/research/sota/next_protocol_requirements.md",
       "sha256": "45ae85442455cf2ffdd760ebc4fe4984c7bb63e72889eece6bde00a71aba1dca",
       "bytes": 5010,
@@ -3693,8 +3738,8 @@
     },
     {
       "path": "docs/research/sota/RESEARCH_ROADMAP.md",
-      "sha256": "eb2e9bdd3429301e012f150b2d44e6c129777ff0ef889aeceef92a734a723139",
-      "bytes": 9580,
+      "sha256": "c4aaaf893e2e0b5873c0fc87922efd7a3796b6d1e00380b6729cecd3aab3b7ce",
+      "bytes": 9925,
       "role": "paper_or_documentation",
       "origin": "UrbanEV evidence-audit project",
       "license": "CC-BY-4.0",
@@ -4710,8 +4755,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "ad6cf0ac22b4de56d2e447ae7b2014c2e3d642614251f01979ed84db368dbcb4",
-      "bytes": 10300,
+      "sha256": "b9b04493e16a7ef5051c296227acfc75375399a26a2648f8f5801d24d4bed877",
+      "bytes": 10432,
       "role": "README.md",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -5141,6 +5186,24 @@
       "public_or_external": "public"
     },
     {
+      "path": "scripts/research/run_full_benchmark.py",
+      "sha256": "4714c5b9e46ce8d8755a5b8024a2909eceb491dd2b26ad46c4703e32e8db8591",
+      "bytes": 19108,
+      "role": "scripts",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "scripts/research/run_full_foundation.py",
+      "sha256": "53d3d334b5245a6fcdff9c4aac3c8f8c983c4de1f14284c571ce6b41b49f1e48",
+      "bytes": 6351,
+      "role": "scripts",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
       "path": "scripts/research/run_long_history_source_ablation.py",
       "sha256": "4c6a9d88dc19bb483f8896af57eaffacab14f6e6fedf8452b2d8445ab425a51c",
       "bytes": 15144,
@@ -5180,6 +5243,15 @@
       "path": "scripts/research/run_volume_composition_increment.py",
       "sha256": "64924484db5689f1578d18c2a3edc6e8bb7cd3982dc737d10063c9a00e1f063d",
       "bytes": 15335,
+      "role": "scripts",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "scripts/research/score_full_benchmark.py",
+      "sha256": "9121bde63b2c2a836a46838b3420d36725e4d1af38bb6368fdd6b5be17302f5a",
+      "bytes": 15848,
       "role": "scripts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -5564,6 +5636,42 @@
       "public_or_external": "public"
     },
     {
+      "path": "src/urbanev_forecast/full_benchmark_data.py",
+      "sha256": "4523a00e31a9de57021b886804681c61537be8905bd3ed6a0505929ad213c84a",
+      "bytes": 7702,
+      "role": "src",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "src/urbanev_forecast/full_benchmark_foundation.py",
+      "sha256": "e99d4ac34fe81602e6acd9cb483a30a547b0494e24563d7f96e6c47a6a719029",
+      "bytes": 3707,
+      "role": "src",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "src/urbanev_forecast/full_benchmark_guard.py",
+      "sha256": "161d4b498558e636f1d60f74ece2e59c78160e976072cdf1381caa7888ed7d20",
+      "bytes": 2775,
+      "role": "src",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "src/urbanev_forecast/full_benchmark_models.py",
+      "sha256": "e413ea1b3f955332fc898bfc1997f3e9ceed9b975ca523d0c824c3448f29a3e4",
+      "bytes": 4563,
+      "role": "src",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
       "path": "src/urbanev_forecast/history_source.py",
       "sha256": "314105318c0df02254b540471a991bdcaf9996a0b5252db030f6e55fdba4ba58",
       "bytes": 3289,
@@ -5927,6 +6035,24 @@
       "path": "tests/test_foundation_contract.py",
       "sha256": "80325d854ff48322c4143fa04bf12a2ca4145e0d3ce0b454b5600c4db07347a7",
       "bytes": 1746,
+      "role": "tests",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "tests/test_full_benchmark.py",
+      "sha256": "590ade390764cc5882925dca9bd91d62c33d08ab0d26e0dbc7e35e9d3b0954c3",
+      "bytes": 3531,
+      "role": "tests",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "tests/test_full_benchmark_workflow.py",
+      "sha256": "5f44ba7f516e774e177f7ef0ea499336a5f5b19162e707179d7cf366d3a7e52b",
+      "bytes": 5686,
       "role": "tests",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",

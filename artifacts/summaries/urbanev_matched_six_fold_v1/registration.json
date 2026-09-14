@@ -1,0 +1,44 @@
+{
+  "status": "REGISTERED_FULL_SIX_FOLD_EXECUTION_PENDING",
+  "config_sha256": "c235ebddd0cbabb401b5e0f61e7fe5618560a5252911059e00b4cb2c56184494",
+  "expected": {
+    "ridge_fits": 72,
+    "neural_training_runs": 432,
+    "optimizer_steps": 1011960,
+    "foundation_origin_tasks": 11920,
+    "prediction_payloads": 672,
+    "score_rows": 2688,
+    "origin_counts": {
+      "train": 44780,
+      "validation": 5984,
+      "test": 5960
+    },
+    "endpoint_entries_per_instance": 1639000
+  },
+  "engineering_tests_passed": 303,
+  "author_model_shape_checks": 36,
+  "foundation_synthetic_api_calls": 8,
+  "gpu_epoch_resume_equal_to_uninterrupted": true,
+  "data_validity_pass": true,
+  "no_test_performance_metrics_computed": true,
+  "source_identity": {
+    "scripts/research/run_full_benchmark.py": "4714c5b9e46ce8d8755a5b8024a2909eceb491dd2b26ad46c4703e32e8db8591",
+    "scripts/research/run_full_foundation.py": "53d3d334b5245a6fcdff9c4aac3c8f8c983c4de1f14284c571ce6b41b49f1e48",
+    "scripts/research/score_full_benchmark.py": "9121bde63b2c2a836a46838b3420d36725e4d1af38bb6368fdd6b5be17302f5a",
+    "src/urbanev_forecast/full_benchmark_data.py": "4523a00e31a9de57021b886804681c61537be8905bd3ed6a0505929ad213c84a",
+    "src/urbanev_forecast/full_benchmark_models.py": "e413ea1b3f955332fc898bfc1997f3e9ceed9b975ca523d0c824c3448f29a3e4",
+    "src/urbanev_forecast/full_benchmark_foundation.py": "e99d4ac34fe81602e6acd9cb483a30a547b0494e24563d7f96e6c47a6a719029",
+    "src/urbanev_forecast/full_benchmark_guard.py": "161d4b498558e636f1d60f74ece2e59c78160e976072cdf1381caa7888ed7d20",
+    "src/urbanev_forecast/benchmark_contract.py": "56dd6b4530461838474ac81b47b373aa42764fca3f913a74ad289af71416cd67",
+    "src/urbanev_forecast/bounded_predictor_csv.py": "65bbd90f82a2adb59d02dfce573e6d0029a4d0ed65a392cc87efe1b94b0bf51d",
+    "src/urbanev_forecast/comparability_bridge.py": "4ed53ed3c290e71829acefd23e4d8201a86bffcc6964156ea9ce3b6ec433c9ec",
+    "src/urbanev_forecast/short_state.py": "1ac322e99e59a26ea679c5463b43eed4fbc6a9bcca6073ca1f9534fc41d54bc5",
+    "src/urbanev_forecast/foundation.py": "afa95a76d118d399ceeb7717902a5f9047966fdf0c633e8145f2d9e13afe900b"
+  },
+  "microbatch": 8,
+  "effective_batch": 16,
+  "historical_exposure": "retrospective comparison, not a new blind test",
+  "global_baseline_exhaustiveness": false,
+  "automation_enabled": false,
+  "quota_reset_used": false
+}

@@ -1,0 +1,3458 @@
+[
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 1,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 1,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 1,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 1,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 2,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 2,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 2,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 2,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 3,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 3,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 3,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 3,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 4,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 4,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 4,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 4,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 5,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 5,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 5,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 5,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 6,
+    "horizon": 3,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 6,
+    "horizon": 6,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 6,
+    "horizon": 9,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_MSE",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_SEPARABLE_MSE",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_CONCAT_MSE",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "OD_PRODUCT_POSREG",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_LOCAL_OD",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "TIMEXER_GLOBAL_O",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "DLINEAR_O",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "PATCHTST_O",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260921,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  },
+  {
+    "model": "ITRANSFORMER_GLOBAL_O",
+    "fold": 6,
+    "horizon": 12,
+    "seed": 20260922,
+    "epochs": 20,
+    "status": "REGISTERED_NOT_STARTED"
+  }
+]

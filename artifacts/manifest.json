@@ -2531,6 +2531,33 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/urbanev_matched_six_fold_v1/origin_plan.csv",
+      "sha256": "d52c0aa8337d44f82d679ab519089f205fa1cc8842297f802f0f3b8c4bf062d2",
+      "bytes": 10894,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/urbanev_matched_six_fold_v1/registered_tasks.json",
+      "sha256": "6c076279d210a30e0c5c596d541f5f134a162525d17197a173df1f52989c7912",
+      "bytes": 66063,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/urbanev_matched_six_fold_v1/registration.json",
+      "sha256": "f0b8a902fb0099724849d61c3ac40740432512d266f678a6d32fe63013c1ca56",
+      "bytes": 2389,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/volume_composition_increment_v1/calibration_grid.csv",
       "sha256": "b63d701c27213adbe6ce119bd2c797706a97bf95fe7bbc206a0392c6ba71d41b",
       "bytes": 13345,
@@ -2975,6 +3002,15 @@
       "path": "configs/research/URBANEV_COMPARISON_V2.json",
       "sha256": "7f1a1b84f3092137cad80e246a40bb01616513a2ce2b6d7921393a8bae71abd6",
       "bytes": 8421,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "configs/research/URBANEV_MATCHED_SIX_FOLD_V1_20260914.json",
+      "sha256": "c235ebddd0cbabb401b5e0f61e7fe5618560a5252911059e00b4cb2c56184494",
+      "bytes": 49223,
       "role": "configs",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",

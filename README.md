@@ -11,6 +11,7 @@
 
 | 内容 | 入口 |
 |---|---|
+| 正在补齐的完整六折匹配比较 | [正式合同与执行记录](docs/research/sota/MATCHED_SIX_FOLD_REPORT_20260914.md) |
 | 目前距离SOTA有多远 | [差距与证据评估](docs/research/sota/SOTA_GAP_ASSESSMENT_20260913.md) |
 | 已有成果的统一比较及未完成范围 | [比较报告](docs/research/sota/COMPREHENSIVE_COMPARISON_REPORT_20260913.md) |
 | 六折评价合同与DLinear作者接口准备 | [合成验证及后续边界](docs/research/sota/SOTA_COMPARISON_STANDARD.md#7-六折评价合同与作者接口准备2026-09-14) |
