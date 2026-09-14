@@ -88,3 +88,5 @@ N为原点数，I为区域数。两者不是同一指标。本轮发现指定上
 复核入口为[合成回执](../../../artifacts/summaries/benchmark_contract_preparation_20260914/synthetic_verification.json)、[源与实现快照](../../../artifacts/summaries/benchmark_contract_preparation_20260914/execution_source_manifest.json)及`python scripts/research/verify_benchmark_preparation.py --help`。执行需要已固定的源码目录以及既有torch/pandas/sklearn/matplotlib环境；入口无真实data-root、预测缓存或权重参数。
 
 本轮真实数据/历史预测权重读取、拟合、优化步和基础模型推理均为0。正式范围仍待用户原问题的答复。后续须冻结实际训练预算及全部比较对象、完成正式训练器与缺失基线，再做真实比较。历史曝光必须披露；扩展折、重叠时间窗、区域及初始化变异分别解释，不把重新冻结称为新盲测，也不以无依据的独立样本假设强加显著性结论。
+
+复核修订：24格汇总现在强制同一合法contract身份，并核对行内number/horizon与字典键一致；混合合同、缺失合同和键值错配均拒绝。原合成回执和执行源码快照保留，修订后的文件身份另见[修订记录](../../../artifacts/summaries/benchmark_contract_preparation_20260914/aggregation_review_fix.json)。这只是汇总防混用修正，未重跑作者集成、未新增任何真实实验，也不能代替未来训练器对完整输入、选择与种子身份的校验。

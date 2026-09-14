@@ -38,6 +38,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/benchmark_contract_preparation_20260914/aggregation_review_fix.json",
+      "sha256": "44ee5172eb45fe27259dcb2bc081401ed82b6f292acc945b70cbb5143a8e0416",
+      "bytes": 756,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/benchmark_contract_preparation_20260914/execution_source_manifest.json",
       "sha256": "2a34055146244a6c21d6ecc4d5d21182110a5ead47a324d7f25b656c43c4ce90",
       "bytes": 1271,

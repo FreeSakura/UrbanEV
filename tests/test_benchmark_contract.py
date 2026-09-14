@@ -50,9 +50,11 @@ def test_endpoint_path_and_clipping_do_not_silently_mix():
 
 def test_macro_is_mean_cell_rmse_not_pooled_mse_and_rejects_gaps():
     cells = {(f, h): dict(rmse=float(f), mae=float(f)/2, scope="terminal", postprocess="raw",
-                         split="test", history=168) for f in range(1, 7) for h in HORIZONS}
+                         split="test", history=168, number=f, horizon=h, contract="MATCHED_TERMINAL_168")
+             for f in range(1, 7) for h in HORIZONS}
     m = macro24(cells)
     assert m["rmse"] == 3.5 and m["mae"] == 1.75
+    assert m["contract"] == "MATCHED_TERMINAL_168"
     assert m["rmse"] != pytest.approx(np.sqrt(np.mean(np.arange(1, 7)**2)))
     cells[(1, 3)]["scope"] = "path"
     with pytest.raises(ValueError, match="mixed scope"):
@@ -158,3 +160,32 @@ def test_upstream_percentage_order_preserved_and_zero_denominator_exposed():
     assert upstream_percentage_mirror(p,y)["mape"] == pytest.approx(expected)
     assert np.isnan(upstream_percentage_mirror(np.ones(3),np.ones(3))["rae"])
     assert np.isinf(upstream_percentage_mirror(np.zeros(3),np.ones(3))["rae"])
+
+
+@pytest.fixture
+def complete_cells():
+    return {(f,h):dict(number=f,horizon=h,rmse=.1,mae=.05,scope="terminal",
+                       postprocess="raw",split="test",history=168,contract="UPSTREAM_TRANSFORMER")
+            for f in range(1,7) for h in HORIZONS}
+
+
+def test_macro_rejects_one_different_contract_in_complete_table(complete_cells):
+    complete_cells[(1,3)]["contract"]="UPSTREAM_CLASSICAL"
+    with pytest.raises(ValueError,match="mixed contract"):
+        macro24(complete_cells)
+
+
+def test_macro_rejects_missing_contract_identity(complete_cells):
+    del complete_cells[(1,3)]["contract"]
+    with pytest.raises(ValueError,match="contract identity"):
+        macro24(complete_cells)
+
+
+def test_macro_rejects_row_and_key_mismatch(complete_cells):
+    complete_cells[(1,3)]["number"]=2
+    with pytest.raises(ValueError,match="cell key"):
+        macro24(complete_cells)
+    complete_cells[(1,3)]["number"]=1
+    complete_cells[(1,3)]["horizon"]=6
+    with pytest.raises(ValueError,match="cell key"):
+        macro24(complete_cells)

@@ -159,13 +159,19 @@ def macro24(cells: Mapping[tuple[int, int], Mapping]) -> dict:
     required = {(f, h) for f in range(1, 7) for h in HORIZONS}
     if set(cells) != required:
         raise ValueError("exactly six folds by four horizons required")
+    for (fold, horizon), row in cells.items():
+        if (_integer(row.get("number"), "row fold", 1),
+                _integer(row.get("horizon"), "row horizon", 1)) != (fold, horizon):
+            raise ValueError("row fold/horizon differs from cell key")
+        if row.get("contract") not in CONTRACTS:
+            raise ValueError("missing or unknown contract identity")
     rows = [cells[key] for key in sorted(required)]
-    for field in ("scope", "postprocess", "split", "history"):
+    for field in ("contract", "scope", "postprocess", "split", "history"):
         if any(field not in r for r in rows) or len({r[field] for r in rows}) != 1:
             raise ValueError(f"missing or mixed {field}")
     if rows[0]["scope"] not in ("terminal", "path") or rows[0]["postprocess"] not in ("raw", "clip_0_1"):
         raise ValueError("unknown score convention")
-    result = {field: rows[0][field] for field in ("scope", "postprocess", "split", "history")}
+    result = {field: rows[0][field] for field in ("contract", "scope", "postprocess", "split", "history")}
     for metric in ("rmse", "mae"):
         values = np.array([r[metric] for r in rows], dtype=np.float64)
         if not np.isfinite(values).all() or np.any(values < 0):

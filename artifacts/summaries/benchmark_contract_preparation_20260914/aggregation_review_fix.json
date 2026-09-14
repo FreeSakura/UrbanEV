@@ -1,0 +1,17 @@
+{
+  "original_execution_commit": "224e59b8a0ff9da764be2b88f1af920e7c521192",
+  "finding": "macro24 previously allowed mixed contract identities and row/key mismatches",
+  "fix": "Require one legal contract; validate row number/horizon against key; retain contract in aggregate",
+  "new_rejection_tests": [
+    "mixed contracts",
+    "missing contract",
+    "row/key mismatch"
+  ],
+  "external_integration_rerun": false,
+  "original_synthetic_results_changed": false,
+  "real_numeric_execution": false,
+  "corrected_files": {
+    "src/urbanev_forecast/benchmark_contract.py": "56dd6b4530461838474ac81b47b373aa42764fca3f913a74ad289af71416cd67",
+    "tests/test_benchmark_contract.py": "640e84ebacb97b8eb6a27a2590252cb01fe0484344608169447c50f362df0cce"
+  }
+}
