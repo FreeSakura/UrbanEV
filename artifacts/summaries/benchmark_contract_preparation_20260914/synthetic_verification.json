@@ -1,0 +1,156 @@
+{
+  "protocol_id": "EVALUATION_CONTRACT_AUTHOR_BASELINE_PREP_V1",
+  "status": "CONTRACT_AND_AUTHOR_ADAPTER_READY_FORMAL_SCOPE_PENDING",
+  "config_sha256": "e4d66f76970230f542044655d69647996ea41c2e6c2d4034e500e519f86ef8bf",
+  "real_data_reads": 0,
+  "historical_prediction_or_weight_reads": 0,
+  "model_fits": 0,
+  "optimizer_steps": 0,
+  "foundation_inference": 0,
+  "transformer_loader_cases": 144,
+  "transformer_getitem_probes": 432,
+  "classical_extracted_function_cases": 144,
+  "metric_cases": 4,
+  "metric_max_error": 4.440892098500626e-16,
+  "dlinear_cases": [
+    {
+      "history": 12,
+      "horizon": 3,
+      "channels": 1,
+      "parameters": 78,
+      "output_max_error": 0.0,
+      "gradient_max_error": 0.0
+    },
+    {
+      "history": 12,
+      "horizon": 3,
+      "channels": 275,
+      "parameters": 78,
+      "output_max_error": 0.0,
+      "gradient_max_error": 0.0
+    },
+    {
+      "history": 12,
+      "horizon": 6,
+      "channels": 1,
+      "parameters": 156,
+      "output_max_error": 0.0,
+      "gradient_max_error": 0.0
+    },
+    {
+      "history": 12,
+      "horizon": 6,
+      "channels": 275,
+      "parameters": 156,
+      "output_max_error": 0.0,
+      "gradient_max_error": 0.0
+    },
+    {
+      "history": 12,
+      "horizon": 9,
+      "channels": 1,
+      "parameters": 234,
+      "output_max_error": 0.0,
+      "gradient_max_error": 0.0
+    },
+    {
+      "history": 12,
+      "horizon": 9,
+      "channels": 275,
+      "parameters": 234,
+      "output_max_error": 0.0,
+      "gradient_max_error": 0.0
+    },
+    {
+      "history": 12,
+      "horizon": 12,
+      "channels": 1,
+      "parameters": 312,
+      "output_max_error": 0.0,
+      "gradient_max_error": 0.0
+    },
+    {
+      "history": 12,
+      "horizon": 12,
+      "channels": 275,
+      "parameters": 312,
+      "output_max_error": 0.0,
+      "gradient_max_error": 0.0
+    },
+    {
+      "history": 168,
+      "horizon": 3,
+      "channels": 1,
+      "parameters": 1014,
+      "output_max_error": 0.0,
+      "gradient_max_error": 0.0
+    },
+    {
+      "history": 168,
+      "horizon": 3,
+      "channels": 275,
+      "parameters": 1014,
+      "output_max_error": 0.0,
+      "gradient_max_error": 0.0
+    },
+    {
+      "history": 168,
+      "horizon": 6,
+      "channels": 1,
+      "parameters": 2028,
+      "output_max_error": 0.0,
+      "gradient_max_error": 0.0
+    },
+    {
+      "history": 168,
+      "horizon": 6,
+      "channels": 275,
+      "parameters": 2028,
+      "output_max_error": 0.0,
+      "gradient_max_error": 0.0
+    },
+    {
+      "history": 168,
+      "horizon": 9,
+      "channels": 1,
+      "parameters": 3042,
+      "output_max_error": 0.0,
+      "gradient_max_error": 0.0
+    },
+    {
+      "history": 168,
+      "horizon": 9,
+      "channels": 275,
+      "parameters": 3042,
+      "output_max_error": 0.0,
+      "gradient_max_error": 0.0
+    },
+    {
+      "history": 168,
+      "horizon": 12,
+      "channels": 1,
+      "parameters": 4056,
+      "output_max_error": 0.0,
+      "gradient_max_error": 0.0
+    },
+    {
+      "history": 168,
+      "horizon": 12,
+      "channels": 275,
+      "parameters": 4056,
+      "output_max_error": 0.0,
+      "gradient_max_error": 0.0
+    }
+  ],
+  "plan_rows": 360,
+  "official_six_fold_completed": false,
+  "real_calendar_continuity_verified": false,
+  "limitations": [
+    "Synthetic verification only; upstream classical functions extracted without unrelated imports.",
+    "No author training entrypoint run; external modules tested in this process, not vendored.",
+    "Unit/selection/aggregation and test-factory isolation covered by repository unit tests."
+  ],
+  "config_sha256_byte_convention": "original execution bytes; Windows CRLF",
+  "config_canonical_lf_sha256": "d2ddcf51fc3c0001f6d57b13906b6f07170b813d2c6e6858106496f69ada3fa1",
+  "config_digest_note": "Canonical LF digest identifies the Git repository configuration; JSON semantics are unchanged."
+}

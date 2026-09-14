@@ -52,3 +52,39 @@ N为原点数，I为区域数。两者不是同一指标。本轮发现指定上
 ## 6. 本轮及未来执行
 
 本轮完成研究入口重整、来源与协议核查、显式评分接口、原点/目标探针及[V2真实开发桥接](BENCHMARK_ALIGNMENT_REPORT_20260913.md)。[V2配置](../../../configs/research/URBANEV_COMPARISON_V2.json)前瞻接管当前入口，明确旧门不再生效；没有据新规则给旧候选补授SOTA。新研究配置必须写明具体比较对象和评价范围，避免沿用旧默认门。定时保持暂停，每轮返回人工审核，下一轮由人工审核后决定。数据保护、隐私与额度重置禁令继续适用。
+
+## 7. 六折评价合同与作者接口准备（2026-09-14）
+
+**本轮完成代码与合成验证，没有新增真实预测成绩。** 状态为`CONTRACT_AND_AUTHOR_ADAPTER_READY_FORMAL_SCOPE_PENDING`；此前开发比较已经发布，但完整六折和最新强基线比较仍未完成。[准备配置](../../../configs/research/EVALUATION_CONTRACT_AUTHOR_BASELINE_PREP_V1.json)的真实执行开关为false，训练预算为空；不存在隐式默认训练或自动开放数据。
+
+### 三种合同明确区分
+
+| 身份 | 验证终点与构窗 | 用途 |
+|---|---|---|
+| UPSTREAM_TRANSFORMER | b=T−floor(0.1T)，允许划分前历史，包含最后合法窗口 | 固定源码行为镜像 |
+| UPSTREAM_CLASSICAL | b=floor(floor(0.8T)+0.1T)，仅段内历史，漏掉最后合法窗口 | 固定源码行为镜像，不静默修正 |
+| MATCHED_TERMINAL_168 | Transformer式边界，H独立、stride1，训练原点统一169起 | 项目明确选择的统一合同，非官方逐字复现 |
+
+固定[上游loader](https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code-transformer/data_provider/data_loader.py)、[传统模型构窗](https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code/utils.py)和[评分函数](https://github.com/IntelligentSystemsLab/UrbanEV/blob/44f2aa0c8d89f192bce00bafb0def74a21b39c68/code-transformer/utils/metrics.py)均按commit和文件SHA核对。历史本地“official”目录的8个检查文件有3个不同：条件列重排、保存预测钩子，以及容量聚合/附加特征兼容修正等；不因此改判旧成绩，但不将目录名当作未修改作者源码身份。[文件比较](../../../artifacts/summaries/benchmark_contract_preparation_20260914/legacy_source_comparison.json)
+
+六折纯日历终点为720/1464/2184/2928/3672/4344；Transformer验证终点648/1318/1966/2636/3305/3910，Classical为648/1317/1965/2634/3304/3909。计划器使用年月边界；这些数学结果不证明已核查真实4344行的完整性。H独立的测试窗口合计5,960个，不是5,960个独立统计重复。短H若复用联合12步的原点，会遗漏有效窗口；两种训练任务不得混标。
+
+匹配合同原点o输入O[o−168:o]，可选滞后D[o−169:o−1]，标签[o:o+H]，末点o+H−1。训练统一从169起，验证和测试从各自划分边界起；第一小时取舍使所有受控方法共享训练原点。所有窗口及最大输入/标签索引见[360行纯索引清单](../../../artifacts/summaries/benchmark_contract_preparation_20260914/six_fold_index_differences.csv)。传统段内L168在早期小验证/测试段可能没有窗口，清单如实保留零数量。
+
+### 训练、选择和评分分别声明
+
+上游Transformer用全路径MSE训练，验证对batch loss等权平均，验证shuffle且保留尾批；测试指标才取末点。这种选择不同于全验证样本的末点RMSE。统一合同按验证末点SSE/元素数后开方选checkpoint，完全并列取较早者，不选最好种子、不用test挑模型或后处理。训练目标、epoch、种子和搜索候选必须由后续真实配置明确填写。当前只实现其验证函数与准备辅助函数，**尚未实现和运行完整正式训练调度器**。
+
+上游train入口预先构造test loader，不能直接用于隔离训练与测试的新流程。新准备辅助函数仅请求train/validation，spy测试确认test构造次数为零；这只证明该辅助函数的行为，不声称尚未实现的完整训练器已经通过隔离验证。
+
+单位由声明决定：busy_count只除一次容量，station容量按TAZID求和，region容量禁止重复；声明occupancy_rate则不再除容量。主表raw末点RMSE及MAE，path和clip分别命名；每种子先算24格指标再等权平均。缺失格拒绝汇总。MAPE/RAE仅镜像上游运算顺序供诊断，保留修改目标后再生成预测掩码的行为和零分母非有限值，不加入主排名。
+
+### 已验证内容与剩余工作
+
+- 在人工年月日历上对照原Transformer loader共144个设置、432个getitem位置，对照提取的原Classical函数144个设置；Classical未加载不相关训练依赖，不是完整运行复现。
+- 四个H的RMSE/MAE及诊断MAPE/RAE与原metric最大绝对差4.45×10⁻¹⁶；单测覆盖末点/path排序反转、不等尾批权重、缺失原点、容量重复与未来标签边界。
+- DLinear原核心16组形状，适配输出/梯度与同参数直接调用最大差为0；常量/阶跃/脉冲的端点复制、通道重排等变与无跨通道影响均通过。没有optimizer step，未加载任何已训练权重。CI验证本地合同与哈希拒绝逻辑；外部作者代码的集成验证记录在本地回执，未在CI下载或运行作者代码。
+
+复核入口为[合成回执](../../../artifacts/summaries/benchmark_contract_preparation_20260914/synthetic_verification.json)、[源与实现快照](../../../artifacts/summaries/benchmark_contract_preparation_20260914/execution_source_manifest.json)及`python scripts/research/verify_benchmark_preparation.py --help`。执行需要已固定的源码目录以及既有torch/pandas/sklearn/matplotlib环境；入口无真实data-root、预测缓存或权重参数。
+
+本轮真实数据/历史预测权重读取、拟合、优化步和基础模型推理均为0。正式范围仍待用户原问题的答复。后续须冻结实际训练预算及全部比较对象、完成正式训练器与缺失基线，再做真实比较。历史曝光必须披露；扩展折、重叠时间窗、区域及初始化变异分别解释，不把重新冻结称为新盲测，也不以无依据的独立样本假设强加显著性结论。

@@ -44,3 +44,5 @@ SOTA声明遵循[统一比较规则](SOTA_COMPARISON_STANDARD.md)。不足1%不�
 完整登记见[统一比较来源表](../../../artifacts/summaries/comprehensive_development_comparison_v1/baseline_sources.csv)。补入MDFANet（ST-EVCDP247区5分钟）、MAGE（作者代码可查但数据说明/协议不匹配）、ST-Attention与SCLD+FCW（能量/负荷目标），以及尚未同任务执行的DLinear、PatchTST、iTransformer。已安装Chronos2/TimesFM3的存在不等于本次产生了新调用或已经补齐所有视野。
 
 当前新核心仅五个神经配置与两ridge、一个已曝光DEV窗；来源登记完整于本次清单不等于穷尽全部最新论文或完成所有同协议性能复现。旧六折CAPER/融合/路由/蒸馏/Chronos资格数值在比较报告另列，不能与14原点开发值直接排序。
+
+2026-09-14准备更新：DLinear固定[作者提交0c113668](https://github.com/cure-lab/LTSF-Linear/tree/0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6)，原模型外部加载、执行前验证SHA；16种合成形状的输出与梯度均与同参数作者模型一致。状态为`AUTHOR_CORE_ADAPTER_SYNTHETIC_VERIFIED / REAL_RUN_NOT_AUTHORIZED`，真实UrbanEV结果仍是NOT_RUN。采用共享时间权重、individual=false的`LOCAL_O_168_NO_CONTEXT`输入，既无空间交互，也无D/日历/容量特征输入。该轨不能与带上下文的RIDGE_O当作严格同信息消融。H12参数4,056，保留25点移动平均和默认初始化，不新增归一化或裁剪。PatchTST、iTransformer及其他正式比较缺口不变。[准备证据](../../../artifacts/summaries/benchmark_contract_preparation_20260914/synthetic_verification.json)

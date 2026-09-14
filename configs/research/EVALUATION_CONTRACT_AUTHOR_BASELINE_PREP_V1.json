@@ -1,0 +1,152 @@
+{
+  "protocol_id": "EVALUATION_CONTRACT_AUTHOR_BASELINE_PREP_V1",
+  "anchor_commit": "2de27d8449cf77c99f0b490e41e96d9757b03647",
+  "stage": "source_and_synthetic_preparation_only",
+  "real_execution_authorized": false,
+  "official_six_fold_completed": false,
+  "real_training_spec": null,
+  "budget": {
+    "real_data_reads": 0,
+    "historical_prediction_or_weight_reads": 0,
+    "model_fits": 0,
+    "optimizer_steps": 0,
+    "foundation_inference": 0,
+    "registered_verification_executions": 1
+  },
+  "source_lock": {
+    "urbanev": {
+      "repository": "https://github.com/IntelligentSystemsLab/UrbanEV",
+      "revision": "44f2aa0c8d89f192bce00bafb0def74a21b39c68",
+      "files": {
+        "code-transformer/data_provider/data_loader.py": "dfd7b35895b60795c90db9198c95e01478b835001c55e47e6478b356d4273faa",
+        "code-transformer/data_provider/data_factory.py": "7067cbe0fccf348e07ad2bb66a20938b6050c318b9334de66aa48594792b6ff9",
+        "code-transformer/utils/metrics.py": "f5fecad9863b5b96e4d803040d25be2c7a78d4b3f40ade81b58d7359e81b22c9",
+        "code-transformer/exp/exp_long_term_forecasting.py": "e38aaa1005d3d57758969df25c122072a19252cbbe8d8dc8b343015fc98627f5",
+        "code-transformer/run.py": "cd2370879667e3f037bea0e3dbe9aa6d7795964e262bcf9e0ece5515a1dcdd09",
+        "code-transformer/exp.sh": "a221b6935d5438609f70895876f79510692bd4b31b18a87cb9003ca7394252d3",
+        "code-transformer/utils/timefeatures.py": "319b3da2ef15ccae95162b1b4f4a9a0b0da63fa0062a7f6006a06dd567258d85",
+        "code/utils.py": "be5c3a9afcf1face73660ab8d67120504017b4c562cf3b7c32f2fb079fbf0753"
+      }
+    },
+    "dlinear": {
+      "repository": "https://github.com/cure-lab/LTSF-Linear",
+      "revision": "0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6",
+      "files": {
+        "models/DLinear.py": "0893b53cb6473d6bdca7aeca514cb3ee12efa6df227c29c4469571c9711451cc",
+        "LICENSE": "195440db73029b048f34f3a8509add1611d6608e1edafb766eb398a65300f7a2"
+      }
+    }
+  },
+  "synthetic_seed": 20260914,
+  "calendar": {
+    "start": "2022-09-01T00:00:00",
+    "stop_exclusive": "2023-03-01T00:00:00",
+    "frequency": "hourly",
+    "identity": "year_month",
+    "real_continuity_checked": false
+  },
+  "contracts": {
+    "UPSTREAM_TRANSFORMER": {
+      "train_stop": "floor(0.8*T)",
+      "validation_stop": "T-floor(0.1*T)",
+      "start": "max(split_start,L)",
+      "stop_exclusive": "split_stop-H+1",
+      "allow_pre_split_history": true,
+      "validation_loss": "mean_of_batch_path_mse",
+      "validation_shuffle": true,
+      "drop_last": false
+    },
+    "UPSTREAM_CLASSICAL": {
+      "train_stop": "floor(0.8*T)",
+      "validation_stop": "floor(train_stop+0.1*T)",
+      "start": "split_start+L",
+      "stop_exclusive": "split_stop-H",
+      "allow_pre_split_history": false,
+      "last_legal_window": "omitted_by_upstream_loop"
+    },
+    "MATCHED_TERMINAL_168": {
+      "history": 168,
+      "horizons": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "prediction_mode": "horizon_specific",
+      "train_start": 169,
+      "validation_start": "train_stop",
+      "test_start": "validation_stop",
+      "bounds": "UPSTREAM_TRANSFORMER",
+      "stride": 1,
+      "stop_exclusive": "split_stop-H+1",
+      "selection": "validation_raw_terminal_rmse_global_sse_count",
+      "ties": "earlier_checkpoint",
+      "best_seed_selection": false,
+      "postprocess_selection": false,
+      "training_objective": "must_be_explicit_in_future_run_spec",
+      "official_verbatim_reproduction": false
+    }
+  },
+  "unit_contract": {
+    "raw_unit": [
+      "busy_count",
+      "occupancy_rate"
+    ],
+    "capacity_level": [
+      "station",
+      "region"
+    ],
+    "capacity_aggregation": [
+      "sum_by_TAZID",
+      "already_aggregated"
+    ],
+    "conversion": "declared busy_count only: float32(count)/float32(region_capacity); declared rate is not divided again",
+    "range_inference": false
+  },
+  "primary_score": "raw_terminal_rmse",
+  "secondary_scores": [
+    "raw_terminal_mae",
+    "clip_0_1_terminal_rmse",
+    "clip_0_1_terminal_mae",
+    "raw_path_rmse",
+    "raw_path_mae"
+  ],
+  "aggregation": "equal mean of 24 fold-horizon cell metrics per seed; no missing-cell average, no pooled-MSE substitution",
+  "percentage_scores": "upstream_operation_order_diagnostic_only",
+  "dlinear": {
+    "identity": "author_core_external",
+    "information_track": "LOCAL_O_168_NO_CONTEXT",
+    "seq_len": 168,
+    "pred_len": "H",
+    "enc_in": 275,
+    "individual": false,
+    "kernel_size": 25,
+    "parameters": "2*H*(L+1)",
+    "normalization": "none_added_by_adapter",
+    "real_run_status": "NOT_RUN"
+  },
+  "synthetic_shapes": {
+    "history": [
+      12,
+      168
+    ],
+    "horizon": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "channels": [
+      1,
+      275
+    ]
+  },
+  "remaining": [
+    "Formal evaluation scope response",
+    "Freeze real epochs/seeds/search/inputs and all comparison candidates",
+    "Implement full training runner without test construction during training",
+    "Actual same-protocol strong-baseline runs",
+    "Time/seed uncertainty report and historical exposure declaration"
+  ],
+  "historical_exposure": "New freezing does not make previously exposed data blind; expanding folds are not independent trials."
+}

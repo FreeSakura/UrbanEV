@@ -38,6 +38,42 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/benchmark_contract_preparation_20260914/execution_source_manifest.json",
+      "sha256": "2a34055146244a6c21d6ecc4d5d21182110a5ead47a324d7f25b656c43c4ce90",
+      "bytes": 1271,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/benchmark_contract_preparation_20260914/legacy_source_comparison.json",
+      "sha256": "520f99c9e0e34502da32ad9c728222d42974ef7f6c70a610eeee557172bdaa76",
+      "bytes": 2599,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/benchmark_contract_preparation_20260914/six_fold_index_differences.csv",
+      "sha256": "b75086e9f22cdb6662494f7e25eefccf1e90ba5a6850f03a0d9c564550ee26b4",
+      "bytes": 50744,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/benchmark_contract_preparation_20260914/synthetic_verification.json",
+      "sha256": "97153c853b4aa794e6b811475d6ff5e3fa88b91af79d8b1f2bbc3625e0e4bbe4",
+      "bytes": 3938,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/chronos2/CHRONOS2_QUALIFICATION_CELLS.csv",
       "sha256": "18a2f96ccd789736d5116eb777b7daec2e8fea4ee3412513e6606908a20d396d",
       "bytes": 6829,
@@ -2795,6 +2831,15 @@
       "path": "configs/research/DURATION_LAG_REGULARIZATION_V1.json",
       "sha256": "f23505e33a62f5ad424e86aba82c3ac5aececaae020d4954ab6e324789fb941d",
       "bytes": 5578,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "configs/research/EVALUATION_CONTRACT_AUTHOR_BASELINE_PREP_V1.json",
+      "sha256": "d2ddcf51fc3c0001f6d57b13906b6f07170b813d2c6e6858106496f69ada3fa1",
+      "bytes": 5283,
       "role": "configs",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",

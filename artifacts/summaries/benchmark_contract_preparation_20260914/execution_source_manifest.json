@@ -1,0 +1,35 @@
+{
+  "purpose": "Post-verification implementation snapshot, not a formal real-run preregistration",
+  "files": {
+    "src/urbanev_forecast/benchmark_contract.py": {
+      "sha256": "33ebd77e82cc66040caf189538b48fcbeb913ef6f4d5dabb3a394b8f59b0362c",
+      "bytes": 13745,
+      "normalization": "LF"
+    },
+    "src/urbanev_forecast/author_dlinear.py": {
+      "sha256": "9808bb6f900d9ea59db8c160949c28ec3001888df6624074d347f7855c527755",
+      "bytes": 2595,
+      "normalization": "LF"
+    },
+    "scripts/research/verify_benchmark_preparation.py": {
+      "sha256": "feaf856f7bec119b942ce4c2f82db8d1962649cdf10d594925de5cda318b7e4b",
+      "bytes": 10261,
+      "normalization": "LF"
+    },
+    "configs/research/EVALUATION_CONTRACT_AUTHOR_BASELINE_PREP_V1.json": {
+      "sha256": "d2ddcf51fc3c0001f6d57b13906b6f07170b813d2c6e6858106496f69ada3fa1",
+      "bytes": 5283,
+      "normalization": "LF"
+    },
+    "tests/test_benchmark_contract.py": {
+      "sha256": "1ca1c9c0e29fa41e342e87f9ad83c9e83370c3531b8e5731aba8ce65258ded6c",
+      "bytes": 7983,
+      "normalization": "LF"
+    },
+    "tests/test_author_dlinear.py": {
+      "sha256": "0fd834657a09d172e432649dc1811c92068fbef3e6ae10c4caa87d2874c2c191",
+      "bytes": 871,
+      "normalization": "LF"
+    }
+  }
+}
