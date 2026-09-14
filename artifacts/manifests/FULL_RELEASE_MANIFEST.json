@@ -3872,6 +3872,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "docs/research/sota/WINDOWS_CHECKPOINT_RECOVERY_20260914.md",
+      "sha256": "137628cee5e0bcfac68ff3d1c9492035de67d3b905368a3f44a7d995230afeaf",
+      "bytes": 3295,
+      "role": "paper_or_documentation",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "docs/research/THEORY_REPORT_V1.md",
       "sha256": "10f3bd75bc9f4c6c8c2a8b085d50ce81cdbaf34503a7b4f277d561eed3e92a68",
       "bytes": 58624,
@@ -6233,6 +6242,15 @@
       "path": "tests/test_volume_composition_increment.py",
       "sha256": "6be014f8072b79691a816e83ba1b04abd55ebe87e5364a347fc0556d63fa47f2",
       "bytes": 10446,
+      "role": "tests",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "tests/test_windows_checkpoint_observer.py",
+      "sha256": "fdddfd6bdfaff15057f995d5196b56564ab570771a18982442dd9d82bf34655a",
+      "bytes": 1385,
       "role": "tests",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
