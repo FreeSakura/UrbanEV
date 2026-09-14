@@ -2792,6 +2792,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "configs/research/ADAPTIVE_INVOCATION_CONTRACT_PREP_V1.json",
+      "sha256": "47c431e024a10a4dd309f54d6ea62478be5f3a5b44544466ee073ab8a0eecd5e",
+      "bytes": 2326,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
       "path": "configs/research/COARSE_MEMORY_IDENTIFIABILITY_V1_20260913.json",
       "sha256": "6e983f2d79c92b38c2450ca80a4b2feb3778c383cde78927739dedd0edef3b4d",
       "bytes": 977,
