@@ -1,14 +1,52 @@
-# Contributing
+# 贡献指南
 
-Reports that improve artifact integrity, reproduction instructions, schema validation, or claim-to-artifact alignment are welcome.
+欢迎改进预测工程、结果复现、研究说明和资料完整性。提交应说明具体问题、改动后的行为及验证范围。
 
-Before opening a pull request, run:
+## 开发环境
+
+按[快速开始](docs/guides/quickstart.md)创建虚拟环境。安装 `.[test]` 可运行公开资料和审计检查；修改预测模型时同时安装 CPU PyTorch 与 `.[test,research]`，确保相关测试没有因缺少依赖而跳过。
+
+## 修改类型
+
+| 类型 | 维护要求 |
+|---|---|
+| 说明与导航 | 使用相对链接，更新对应入口，运行资料检查 |
+| 新研究 | 独立版本化配置、报告和公开证据目录；登记到 `results/studies.json` |
+| 科学执行逻辑 | 测试真实行为变化，明确数据/代码身份变化；保留原执行回执 |
+| 既有数值纠错 | 给出来源、受影响主张及版本记录，不静默改写旧实验 |
+| 论文 | 重新构建、核对论文清单，并检查版面与字体 |
+
+## 日常迭代
+
+按改动选择相关验证。修复一个局部问题时，不需要反复全仓审计、外部评审或重新执行历史实验。
+
+| 改动 | 本地验证 |
+|---|---|
+| 文档、导航 | `python scripts/repository.py build`，然后 `check` |
+| 预测代码 | 运行对应 `tests/test_*.py`，完成后运行一次适用套件 |
+| 公开结果 | 重建资料并核对来源；真实指标变化需要对应执行证据 |
+| 论文源码 | 构建受影响的论文版本并运行论文清单检查 |
+
+通用 CLI 允许已有输出目录，避免覆盖同名结果文件即可。代码变化只记录训练与评价代码身份，不阻止兼容 checkpoint 的开发评价。详细处理见[代码与流程精简](docs/maintenance/DEFENSIVE_CODE_REVIEW.md)。
+
+已明确的任务范围内直接完成实施和相关验证；历史报告中的“下一轮人工审核”不应被当作常规修复的额外许可。需要更改研究问题或执行范围时再明确新范围。
+
+## 提交时更新派生资料
 
 ```bash
-python -m pip install -e .[test]
-pytest
-python scripts/privacy_audit.py --root . --git-history
+python scripts/repository.py build
 python scripts/build_manifest.py
+python scripts/repository.py check
+python scripts/repository.py verify-manifest
+git diff --check
 ```
 
-Do not attach raw datasets, target-bearing arrays, model weights without redistribution permission, local paths, credentials, or Paris formal/protected material. Use the issue templates for a claim mismatch or public-artifact bug. Scientific result changes require a new versioned protocol and are outside ordinary maintenance pull requests.
+派生资料随源文件一起提交。只有修改 `models/` 时才需要额外运行 `python scripts/build_model_source_manifest.py`。完整 Git 历史审计用于明确的历史检查需求，不是每次文档修改的前置步骤。
+
+CI 自动按改动范围运行：文档无需安装 PyTorch 或 LaTeX，预测变更不重建未改动论文，适用测试只执行一次。失效链接、遗漏证据和错误汇总仍由轻量资料检查发现。`scripts/repository.py` 不触发实验。
+
+## 结果与公开边界
+
+开发、校准、合成、历史审计和完整匹配评价应明确区分。缺失结果写明状态，不能以计划预算代替完成数量。改变科学结论需要对应证据；重写说明不构成重新选择模型的依据。
+
+原始数据、目标数组、模型权重和运行缓存留在被忽略的本地目录。第三方材料保留许可与来源。问题反馈可使用工件错误或主张不一致模板；敏感暴露请遵循 [SECURITY.md](SECURITY.md)。

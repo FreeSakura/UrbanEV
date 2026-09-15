@@ -32,6 +32,6 @@ def main():
     for ax in axes:ax.grid(alpha=.2);ax.spines[['right','top']].set_visible(False);ax.legend(fontsize=8,loc='best')
     axes[1].legend(fontsize=8,loc='lower right')
     fig.suptitle('Forward residual transfer: three registered seeds, previously exposed development window',fontsize=11)
-    destination=ROOT/'docs/research/sota/figures/forward_residual_transfer.png';destination.parent.mkdir(exist_ok=True);fig.savefig(destination,dpi=220);plt.close(fig);print(destination)
+    destination=ROOT/'docs/reports/figures/forward_residual_transfer.png';destination.parent.mkdir(parents=True, exist_ok=True);fig.savefig(destination,dpi=220);plt.close(fig);print(destination)
 
 if __name__=='__main__':main()

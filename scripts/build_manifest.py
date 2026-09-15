@@ -9,10 +9,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_ROOTS = (
-    ".github", "artifacts", "configs", "docs", "licenses", "models", "paper", "release-assets", "scripts", "src", "tests",
+    ".github", "artifacts", "configs", "docs", "licenses", "models", "paper", "release-assets", "results", "scripts", "src", "tests",
 )
 ROOT_FILES = (
-    ".gitattributes", ".gitignore", "AUTHORS.yml", "CITATION.cff", "CONTRIBUTING.md",
+    ".gitattributes", ".gitignore", "AGENTS.md", "AUTHORS.yml", "CHANGELOG.md", "CITATION.cff", "CONTRIBUTING.md",
     "environment-gpu-cu121.yml", "LICENSE", "pyproject.toml", "README.md",
     "requirements-cpu.txt", "SECURITY.md", "THIRD_PARTY_NOTICES.md",
 )
@@ -39,8 +39,8 @@ def repository_bytes(path: Path) -> bytes:
 def metadata(relative: str) -> tuple[str, str, str, str]:
     if relative.startswith("models/timexer/"):
         return "model_source", "Time-Series-Library local snapshot", "MIT", "public"
-    if relative.startswith("paper/") or relative.startswith("docs/"):
-        return "paper_or_documentation", "UrbanEV evidence-audit project", "CC-BY-4.0", "public"
+    if relative.startswith(("paper/", "docs/", "results/")) or relative.endswith(".md"):
+        return "paper_or_documentation", "UrbanEV Forecast project", "CC-BY-4.0", "public"
     if relative.startswith("licenses/"):
         return "license_text", "upstream license authority", "as-named", "public"
     if relative.startswith("artifacts/summaries/"):

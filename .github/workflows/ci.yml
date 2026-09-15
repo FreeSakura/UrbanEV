@@ -2,66 +2,99 @@ name: public-artifact-ci
 
 on:
   push:
+    branches: [main]
   pull_request:
 
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  forecasting-smoke:
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      tests: ${{ steps.scope.outputs.tests }}
+      forecasting: ${{ steps.scope.outputs.forecasting }}
+      papers: ${{ steps.scope.outputs.papers }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - id: scope
+        run: python scripts/ci_scope.py
+
+  repository-quality:
+    name: Documentation and evidence integrity
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.10"
-      - name: Install CPU forecasting environment
+      - name: Check public indexes and committed hashes
         run: |
-          python -m pip install 'torch>=2.4,<3' --index-url https://download.pytorch.org/whl/cpu
-          python -m pip install -e .[test,research]
-      - name: Forecasting contracts, models and training
+          python scripts/repository.py check
+          python scripts/repository.py verify-manifest
+      - name: Verify deterministic indexes
         run: |
-          pytest tests/test_forecast_contract.py tests/test_forecast_models.py
-          pytest tests/test_dual_region_pilot.py tests/test_dual_observation_pilot.py
-          pytest tests/test_signal_replication.py
-          pytest tests/test_residual_information.py
-          pytest tests/test_short_state.py tests/test_short_state_torch.py tests/test_conditional_od.py tests/test_reference_harm_stability.py tests/test_forward_residual_transfer.py tests/test_fixed_reference_correction.py tests/test_comparison_core.py tests/test_benchmark_contract.py tests/test_author_dlinear.py
-          pytest tests/test_full_benchmark.py tests/test_full_benchmark_workflow.py
-          python -m urbanev_forecast smoke --model innovation_attention --epochs 2 --output local-data/ci-smoke
+          python scripts/repository.py build
+          git diff --exit-code -- results docs scripts/README.md
+
+  # Keep the required check present even when only documentation changes.
   test-and-build:
+    needs: changes
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
+        if: needs.changes.outputs.tests == 'true'
         with:
           python-version: "3.10"
           cache: pip
-      - name: Install Python environment
-        run: python -m pip install -e .[test]
-      - name: Unit, schema, citation, and privacy tests
+      - name: Install CPU forecasting environment
+        if: needs.changes.outputs.forecasting == 'true'
         run: |
-          pytest
-          python scripts/research/verify_continuous_step_synthetic.py --phase random --output local-data/ci-continuous-synthetic.json
-          python scripts/privacy_audit.py --root . --git-history
+          python -m pip install 'torch>=2.4,<3' --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install -e '.[test,research]'
+      - name: Install base test environment
+        if: needs.changes.outputs.tests == 'true' && needs.changes.outputs.forecasting != 'true'
+        run: python -m pip install -e '.[test]'
+      - name: Run the test suite once
+        if: needs.changes.outputs.tests == 'true'
+        run: pytest
+      - name: CPU training example
+        if: needs.changes.outputs.forecasting == 'true'
+        run: python -m urbanev_forecast smoke --model innovation_attention --epochs 2 --output local-data/ci-smoke
+      - name: Verify generated manifests
+        if: needs.changes.outputs.tests == 'true'
+        run: |
           python scripts/build_model_source_manifest.py
           python scripts/build_manifest.py
           git diff --exit-code artifacts/manifest.json artifacts/manifests models/MODEL_SOURCE_MANIFEST.csv
-      - name: Install LaTeX and PDF checks
+      - name: Install LaTeX
+        if: needs.changes.outputs.papers == 'true'
         run: |
           sudo apt-get update
           sudo apt-get install -y latexmk texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra poppler-utils
-      - name: Build all paper variants
+      - name: Build paper variants
+        if: needs.changes.outputs.papers == 'true'
         run: |
           python scripts/build_paper.py --variant main
           python scripts/build_paper.py --variant supplement
           python scripts/build_paper.py --variant archive
           python scripts/build_historical_archive.py
-      - name: PDF gates
-        run: |
-          test "$(pdfinfo paper/main/UrbanEV_Evidence_Audit_Main.pdf | awk '/^Pages:/{print $2}')" -ge 22
-          test "$(pdfinfo paper/main/UrbanEV_Evidence_Audit_Main.pdf | awk '/^Pages:/{print $2}')" -le 24
-          test "$(pdfinfo paper/archive/UrbanEV_Evidence_Audit_Archive.pdf | awk '/^Pages:/{print $2}')" -eq 42
-          test "$(pdfinfo paper/archive/UrbanEV_Evidence_Audit_Historical_Archive_v0.9.0.pdf | awk '/^Pages:/{print $2}')" -eq 43
-          pdffonts paper/main/UrbanEV_Evidence_Audit_Main.pdf | tail -n +3 | awk '$6 != "yes" {bad=1} END {exit bad}'
-          pdffonts paper/supplement/UrbanEV_Evidence_Audit_Supplement.pdf | tail -n +3 | awk '$6 != "yes" {bad=1} END {exit bad}'
-          pdffonts paper/archive/UrbanEV_Evidence_Audit_Archive.pdf | tail -n +3 | awk '$6 != "yes" {bad=1} END {exit bad}'
-          pdffonts paper/archive/UrbanEV_Evidence_Audit_Archive_Rebuilt.pdf | tail -n +3 | awk '$6 != "yes" {bad=1} END {exit bad}'
-          pdffonts paper/archive/UrbanEV_Evidence_Audit_Historical_Archive_v0.9.0.pdf | tail -n +3 | awk '$6 != "yes" {bad=1} END {exit bad}'
-          python scripts/verify_paper_manifest.py
+      - name: Verify PDF text, pages, fonts and attribution
+        if: needs.changes.outputs.papers == 'true'
+        run: python scripts/verify_paper_manifest.py
+      - name: Report selected scope
+        env:
+          TESTS: ${{ needs.changes.outputs.tests }}
+          FORECASTING: ${{ needs.changes.outputs.forecasting }}
+          PAPERS: ${{ needs.changes.outputs.papers }}
+        run: echo "tests=$TESTS forecasting=$FORECASTING papers=$PAPERS"
