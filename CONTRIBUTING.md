@@ -16,20 +16,34 @@
 | 既有数值纠错 | 给出来源、受影响主张及版本记录，不静默改写旧实验 |
 | 论文 | 重新构建、核对论文清单，并检查版面与字体 |
 
-## 提交前检查
+## 日常迭代
+
+按改动选择相关验证。修复一个局部问题时，不需要反复全仓审计、外部评审或重新执行历史实验。
+
+| 改动 | 本地验证 |
+|---|---|
+| 文档、导航 | `python scripts/repository.py build`，然后 `check` |
+| 预测代码 | 运行对应 `tests/test_*.py`，完成后运行一次适用套件 |
+| 公开结果 | 重建资料并核对来源；真实指标变化需要对应执行证据 |
+| 论文源码 | 构建受影响的论文版本并运行论文清单检查 |
+
+通用 CLI 允许已有输出目录，避免覆盖同名结果文件即可。代码变化只记录训练与评价代码身份，不阻止兼容 checkpoint 的开发评价。详细处理见[代码与流程精简](docs/maintenance/DEFENSIVE_CODE_REVIEW.md)。
+
+已明确的任务范围内直接完成实施和相关验证；历史报告中的“下一轮人工审核”不应被当作常规修复的额外许可。需要更改研究问题或执行范围时再明确新范围。
+
+## 提交时更新派生资料
 
 ```bash
-python -m pytest
 python scripts/repository.py build
-python scripts/build_model_source_manifest.py
 python scripts/build_manifest.py
 python scripts/repository.py check
 python scripts/repository.py verify-manifest
-python scripts/privacy_audit.py --root . --git-history
 git diff --check
 ```
 
-派生的结果页、CSV、资料目录和完整性清单应随源文件一起提交。CI 会拒绝失效本地链接、遗漏证据目录、缺失视野、混入其他 cohort 或过期派生文件。`scripts/repository.py` 只处理公开资料，不触发实验。
+派生资料随源文件一起提交。只有修改 `models/` 时才需要额外运行 `python scripts/build_model_source_manifest.py`。完整 Git 历史审计用于明确的历史检查需求，不是每次文档修改的前置步骤。
+
+CI 自动按改动范围运行：文档无需安装 PyTorch 或 LaTeX，预测变更不重建未改动论文，适用测试只执行一次。失效链接、遗漏证据和错误汇总仍由轻量资料检查发现。`scripts/repository.py` 不触发实验。
 
 ## 结果与公开边界
 

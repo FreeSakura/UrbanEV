@@ -8,6 +8,7 @@
 
 | 资料 | 格式 |
 |---|---|
+| [Working in UrbanEV](../AGENTS.md) | md |
 | [Changelog](../CHANGELOG.md) | md |
 | [贡献指南](../CONTRIBUTING.md) | md |
 | [UrbanEV Forecast](../README.md) | md |
@@ -79,6 +80,7 @@
 
 | 资料 | 格式 |
 |---|---|
+| [开发阻碍与重复检查审阅](maintenance/DEFENSIVE_CODE_REVIEW.md) | md |
 | [仓库维护与资料迁移](maintenance/README.md) | md |
 | [重构验证记录](maintenance/VALIDATION.md) | md |
 

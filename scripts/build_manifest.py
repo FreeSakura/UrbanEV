@@ -12,7 +12,7 @@ PUBLIC_ROOTS = (
     ".github", "artifacts", "configs", "docs", "licenses", "models", "paper", "release-assets", "results", "scripts", "src", "tests",
 )
 ROOT_FILES = (
-    ".gitattributes", ".gitignore", "AUTHORS.yml", "CHANGELOG.md", "CITATION.cff", "CONTRIBUTING.md",
+    ".gitattributes", ".gitignore", "AGENTS.md", "AUTHORS.yml", "CHANGELOG.md", "CITATION.cff", "CONTRIBUTING.md",
     "environment-gpu-cu121.yml", "LICENSE", "pyproject.toml", "README.md",
     "requirements-cpu.txt", "SECURITY.md", "THIRD_PARTY_NOTICES.md",
 )

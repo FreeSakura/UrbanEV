@@ -1,4 +1,4 @@
-"""Train/validate a forecast model, or score a previously frozen checkpoint."""
+"""Train a development model or evaluate a checkpoint using current code."""
 from __future__ import annotations
 import argparse
 import hashlib
@@ -35,8 +35,11 @@ def main():
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--device", choices=("cpu", "cuda"), default="cpu")
     args = parser.parse_args()
-    if args.output.exists():
-        parser.error("Use a fresh output directory")
+    if args.output.exists() and not args.output.is_dir():
+        parser.error("output must be a directory")
+    output_names = ("result.json",) if args.command == "test" else ("result.json", "checkpoint.pt")
+    if any((args.output / name).exists() for name in output_names):
+        parser.error("Output artifacts already exist; choose another output directory")
     if min(args.epochs, args.patience, args.batch_size) < 1:
         parser.error("epochs/patience/batch-size must be positive")
     import torch
@@ -44,13 +47,12 @@ def main():
     from .models import build_model
     torch.set_num_threads(2)
     started = time.perf_counter()
+    current_code = code_fingerprint()
     frozen = None
     if args.command == "test":
         if args.checkpoint is None or args.csv is None:
             parser.error("test requires --checkpoint and --csv")
         frozen = torch.load(args.checkpoint, map_location="cpu", weights_only=True)
-        if frozen["code_sha256"] != code_fingerprint():
-            parser.error("Forecast code changed since training; create an explicitly versioned new run")
         config = frozen["config"]
         if frozen["source_kind"] != "urbanev_prepared_rate":
             parser.error("Synthetic checkpoints cannot be used for benchmark tests")
@@ -91,7 +93,7 @@ def main():
             for x,y in loader:
                 ps.append(model(x.to(args.device)).cpu().numpy()); ys.append(y.numpy())
         return np.concatenate(ps), np.concatenate(ys)
-    args.output.mkdir(parents=True)
+    args.output.mkdir(parents=True, exist_ok=True)
     if frozen is not None:
         # Verify the training/validation prefix before using an immutable checkpoint.
         _, prefix = load_rate_prefix(args.csv, val_end)
@@ -99,7 +101,9 @@ def main():
             raise ValueError("Training/validation data differs from the frozen checkpoint")
         model.load_state_dict(frozen["state_dict"])
         p,y = predict(DataLoader(Windows(val_end,test_end), batch_size=args.batch_size))
-        report = {"stage":"benchmark_test", "checkpoint_sha256":hashlib.sha256(args.checkpoint.read_bytes()).hexdigest()}
+        report = {"stage":"benchmark_test", "checkpoint_sha256":hashlib.sha256(args.checkpoint.read_bytes()).hexdigest(),
+                  "checkpoint_code_sha256":frozen["code_sha256"],
+                  "evaluation_code_matches_training":frozen["code_sha256"] == current_code}
     else:
         train = DataLoader(Windows(0,train_end), batch_size=args.batch_size, shuffle=True,
                            generator=torch.Generator().manual_seed(config["seed"]))
@@ -121,13 +125,13 @@ def main():
             else:stale += 1
             if stale >= args.patience:break
         model.load_state_dict(best_state);p,y = predict(val)
-        torch.save({"config":config,"state_dict":best_state,"source":source,"source_kind":source["source_kind"],"code_sha256":code_fingerprint()},args.output/"checkpoint.pt")
+        torch.save({"config":config,"state_dict":best_state,"source":source,"source_kind":source["source_kind"],"code_sha256":current_code},args.output/"checkpoint.pt")
         report = {"stage":"synthetic_smoke" if args.command=="smoke" else "development_validation", "best_epoch":best_epoch,"training_log":log,
                   "training_recipe":{"optimizer":"AdamW","lr":.001,"weight_decay":.0001,"epochs_cap":args.epochs,"patience":args.patience,"batch_size":args.batch_size}}
     report.update({"config":config,"source":source,"raw":scores(p,y),"clipped":scores(np.clip(p,0,1),y),
                    "score_scope":"all forecast timesteps, origins and channels", "windows":len(p),
                    "parameters":sum(v.numel() for v in model.parameters()),"elapsed_seconds":time.perf_counter()-started,
-                   "code_sha256":code_fingerprint(),"torch_version":str(torch.__version__),"numpy_version":np.__version__,
+                   "code_sha256":current_code,"torch_version":str(torch.__version__),"numpy_version":np.__version__,
                    "device":args.device,"sota_claim":False,"real_test_executed":args.command=="test"})
     (args.output/"result.json").write_text(json.dumps(report,indent=2,allow_nan=False)+"\n",encoding="utf-8")
     print(json.dumps({k:report[k] for k in ("stage","raw","clipped","parameters","sota_claim")},indent=2))

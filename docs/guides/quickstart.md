@@ -41,7 +41,7 @@ python -m urbanev_forecast smoke --model innovation_attention --epochs 2 --outpu
 python -m pytest
 ```
 
-示例生成 8 通道周期序列，执行训练和验证；结果、配置与 checkpoint 保存在指定输出目录。它只能证明接口可以运行，不产生 UrbanEV 测试成绩。每次使用新的输出目录，避免覆盖已有运行。
+示例生成 8 通道周期序列，执行训练和验证；结果、配置与 checkpoint 保存在指定输出目录。它只能证明接口可以运行，不产生 UrbanEV 测试成绩。可以使用空目录或包含笔记的目录；同名结果文件已存在时更换输出目录。
 
 ## 开发训练
 
@@ -64,16 +64,16 @@ python -m urbanev_forecast train --csv local-data/urbanev-rates.csv --model seas
 python -m urbanev_forecast test --csv local-data/urbanev-rates-complete.csv --checkpoint local-data/seasonal-f1-h3-s42/checkpoint.pt --output local-data/seasonal-f1-h3-s42-test
 ```
 
-评价会核对训练/验证数据前缀和代码哈希。更换数据或修改受指纹保护的代码后，应建立显式的新版本运行，不能删除校验后继续使用旧 checkpoint。
+评价会核对训练/验证数据前缀并加载匹配的模型参数。代码修改不会直接阻止评价；`result.json` 同时记录训练代码和当前代码哈希，以及 `evaluation_code_matches_training`。模型结构变化导致参数不兼容时，由模型加载报告具体错误。
 
 ## 常见问题
 
 | 现象 | 处理 |
 |---|---|
-| 输出目录已存在 | 更换为尚不存在的运行目录 |
+| 同名结果文件已存在 | 更换输出目录，保留已有结果 |
 | 提示缺少 torch | 安装上面的 CPU PyTorch 和 research 扩展 |
 | 测试数据长度不足 | 检查所选折需要的完整时间前缀 |
-| checkpoint 数据/代码哈希不一致 | 找回匹配的数据与原代码版本，或注册新运行 |
+| checkpoint 数据前缀不一致 | 使用与训练匹配的数据；代码差异只记录，不阻塞 |
 | 只有公开结果，没有原始数据 | 使用仓库级复核；真实指标重算需要合法取得目标数据 |
 
 下一步：[阅读结果](../../results/README.md) · [复现分级](reproducibility.md) · [代码架构](architecture.md)。

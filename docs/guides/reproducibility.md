@@ -16,10 +16,10 @@ python -m pip install -e ".[test]"
 python scripts/repository.py check
 python -m pytest
 python scripts/repository.py verify-manifest
-python scripts/privacy_audit.py --root . --git-history
+python scripts/privacy_audit.py --root .
 ```
 
-`repository.py check` 会从原 CSV 重算开发核心宏指标，核对冻结汇总，检查登记表是否覆盖每个证据目录，检查 Markdown 本地链接及生成文件是否过期。它不读取原始目标，也不重新训练。Git 历史审计需要保留 `.git`；使用源码归档时，可去掉 `--git-history` 只检查当前文件。
+`repository.py check` 会从原 CSV 重算开发核心宏指标，核对冻结汇总，检查登记表是否覆盖每个证据目录，检查 Markdown 本地链接及生成文件是否过期。它不读取原始目标，也不重新训练。日常维护不需要反复扫描 Git 历史；`--git-history` 留给确有历史审计需求的场景，使用源码归档时去掉该参数。
 
 维护者在修改公开文件后更新派生资料：
 
@@ -36,7 +36,7 @@ python scripts/repository.py check
 
 ## 合成工程验证
 
-参照[快速开始](quickstart.md)安装 CPU PyTorch 和 research 扩展，然后运行完整测试及 `smoke`。CI 分别执行轻量资料检查、预测测试和历史论文构建。合成数据通过测试不意味着真实预测优势。
+参照[快速开始](quickstart.md)安装 CPU PyTorch 和 research 扩展，然后运行完整测试及 `smoke`。CI 按改动范围选择资料检查、预测测试或论文构建；同一次 CI 不重复运行测试套件。合成数据通过测试不意味着真实预测优势。
 
 ## 历史审计结果重算
 

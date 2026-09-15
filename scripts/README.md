@@ -17,6 +17,7 @@
 | [build_paper.py](build_paper.py) | Build one public paper variant and fail on unresolved references or overflow. |
 | [build_paper_manifest.py](build_paper_manifest.py) | Record deterministic text, metadata, page, font, and source hashes for paper PDFs. |
 | [build_release_asset_manifest.py](build_release_asset_manifest.py) | Build checksums and the tracked manifest for local Release assets. |
+| [ci_scope.py](ci_scope.py) | Select CI work from changed paths; docs do not need training or LaTeX. |
 | [compare_release_payloads.py](compare_release_payloads.py) | Prove that a packaging/schema revision did not change public numerical arrays. |
 | [download_release_assets.py](download_release_assets.py) | Download and checksum the target-free GitHub Release assets. |
 | [export_public_artifacts.py](export_public_artifacts.py) | Export deterministic target-free packages using registered family whitelists. |

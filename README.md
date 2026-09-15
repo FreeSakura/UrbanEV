@@ -45,7 +45,9 @@ python -m pip install -e ".[test,research]"
 python -m urbanev_forecast smoke --model innovation_attention --epochs 2 --output local-data/smoke
 ```
 
-`smoke` 只生成合成序列，用于检查训练流程。输出目录必须尚不存在。Windows 虚拟环境、真实数据准备及各复现层级见[快速开始](docs/guides/quickstart.md)。
+`smoke` 只生成合成序列，用于检查训练流程。输出目录可预先创建，已有结果文件不会被覆盖。Windows 虚拟环境、真实数据准备及各复现层级见[快速开始](docs/guides/quickstart.md)。
+
+日常迭代采用[轻量开发流程](CONTRIBUTING.md)，代码身份变化会记录在评价结果中，不再因无关源码改动阻塞 checkpoint 评价。
 
 ## 仓库结构
 

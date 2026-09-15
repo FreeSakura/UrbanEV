@@ -6,7 +6,7 @@
 |---|---|
 | 项目概况 | [当前状态](PROJECT_STATUS.md)、[研究综合报告](reports/PROJECT_REPORT.md) |
 | 安装与使用 | [快速开始](guides/quickstart.md)、[复现指南](guides/reproducibility.md)、[数据准备](guides/data.md) |
-| 代码与维护 | [架构和命令](guides/architecture.md)、[贡献指南](../CONTRIBUTING.md)、[维护规则](maintenance/README.md) |
+| 代码与维护 | [架构和命令](guides/architecture.md)、[贡献指南](../CONTRIBUTING.md)、[维护规则](maintenance/README.md)、[代码与流程精简](maintenance/DEFENSIVE_CODE_REVIEW.md) |
 | 科学问题 | [研究地图](research/README.md)、[下一步路线](research/roadmap.md)、[比较合同](research/evaluation.md)、[基线登记](research/baselines.md) |
 | 实验结果 | [结果总览](../results/README.md)、[研究与证据登记](../results/studies.json)、[分类报告](reports/README.md) |
 | 理论与协议 | [理论目录](theory/README.md)、[阶段协议目录](protocols/README.md) |
