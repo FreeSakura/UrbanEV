@@ -21,6 +21,6 @@ def main():
         ax.set(yticks=range(len(names)),yticklabels=names,xlabel='Raw endpoint macro RMSE (lower is better)',title=support+' — points are individual runs')
         ax.invert_yaxis();ax.grid(axis='x',alpha=.2);ax.spines[['top','right']].set_visible(False)
     fig.suptitle('Matched development core; gray=local O, blue=local OD, orange=global O\nDifferent information tracks; H6/H9 native unavailable; no six-fold/SOTA claim',fontsize=10)
-    p=ROOT/'docs/research/sota/figures/comprehensive_development_comparison.png';p.parent.mkdir(exist_ok=True);fig.savefig(p,dpi=220);plt.close(fig);print(p)
+    p=ROOT/'docs/reports/figures/comprehensive_development_comparison.png';p.parent.mkdir(parents=True, exist_ok=True);fig.savefig(p,dpi=220);plt.close(fig);print(p)
 
 if __name__=='__main__':main()

@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 ROOT = Path(__file__).resolve().parents[2]
 source = ROOT/'artifacts/summaries/dual_risk_probe_v1/directional_risk_report.json'
 data = json.loads(source.read_text(encoding='utf-8'))
-out = ROOT/'docs/research/sota/figures'
-out.mkdir(exist_ok=True)
+out = ROOT/'docs/reports/figures'
+out.mkdir(parents=True, exist_ok=True)
 plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 11, 'svg.hashsalt': 'dual-risk-probe-v1'})
 fig, axes = plt.subplots(1, 2, figsize=(11, 4.5), sharey=True)
 for ax, cut in zip(axes, (1056, 1392)):

@@ -1,0 +1,744 @@
+{
+  "schema_version": "urbanev-study-catalog/v1",
+  "as_of": "2026-09-15",
+  "source_commit": "5f38f7d151b58fd4f1dd8ab17981b5ee59659678",
+  "scope": "Public repository evidence; evidence_kind describes the type of evidence, not a claim of method success or real-time execution status.",
+  "studies": [
+    {
+      "id": "chronos2",
+      "title": "历史 Chronos-2 资格与评价",
+      "category": "audit",
+      "evidence_kind": "historical",
+      "summary": "早期预测资格及指标，按原协议保留。",
+      "evidence_dir": "artifacts/summaries/chronos2",
+      "reports": [
+        "docs/history/AUDIT_PROJECT_README.md"
+      ],
+      "entrypoints": [],
+      "configs": [],
+      "status_sources": [
+        "artifacts/summaries/chronos2/CHRONOS2_QUALIFICATION_SUMMARY.json"
+      ]
+    },
+    {
+      "id": "distillation",
+      "title": "历史残差蒸馏",
+      "category": "audit",
+      "evidence_kind": "historical",
+      "summary": "旧蒸馏实验的汇总、对照与终止结论。",
+      "evidence_dir": "artifacts/summaries/distillation",
+      "reports": [
+        "docs/history/AUDIT_PROJECT_README.md"
+      ],
+      "entrypoints": [],
+      "configs": [],
+      "status_sources": [
+        "artifacts/summaries/distillation/D1_SUMMARY.json"
+      ]
+    },
+    {
+      "id": "fixed_fusion",
+      "title": "历史固定融合",
+      "category": "audit",
+      "evidence_kind": "historical",
+      "summary": "原固定融合及教师权重证据。",
+      "evidence_dir": "artifacts/summaries/fixed_fusion",
+      "reports": [
+        "docs/history/AUDIT_PROJECT_README.md"
+      ],
+      "entrypoints": [],
+      "configs": [],
+      "status_sources": [
+        "artifacts/summaries/fixed_fusion/FIXED_FUSION_SUMMARY.json"
+      ]
+    },
+    {
+      "id": "latency",
+      "title": "历史准确率与延迟",
+      "category": "audit",
+      "evidence_kind": "historical",
+      "summary": "原设备、线程和调用组合下的成本；不可移植为新方法耗时。",
+      "evidence_dir": "artifacts/summaries/latency",
+      "reports": [
+        "docs/history/AUDIT_PROJECT_README.md"
+      ],
+      "entrypoints": [],
+      "configs": [],
+      "status_sources": [
+        "artifacts/summaries/latency/LATENCY_SUMMARY.json"
+      ]
+    },
+    {
+      "id": "paired_audit_v3",
+      "title": "缺失观测下的配对事件界",
+      "category": "audit",
+      "evidence_kind": "historical",
+      "summary": "Paris 开发事件界研究；不是当前 UrbanEV 末点预测分数。",
+      "evidence_dir": "artifacts/summaries/paired_audit_v3",
+      "reports": [
+        "docs/reports/audit/PAIRED_AUDIT_V3_REPORT.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_paris_event_audit.py"
+      ],
+      "configs": [],
+      "status_sources": [
+        "artifacts/summaries/paired_audit_v3/summary.json"
+      ]
+    },
+    {
+      "id": "paper_audits",
+      "title": "历史论文审计回执",
+      "category": "audit",
+      "evidence_kind": "historical",
+      "summary": "引用、主张与公开论文的原核验记录。",
+      "evidence_dir": "artifacts/summaries/paper_audits",
+      "reports": [
+        "docs/history/AUDIT_PROJECT_README.md"
+      ],
+      "entrypoints": [],
+      "configs": [],
+      "status_sources": [
+        "artifacts/summaries/paper_audits/CITATION_AUDIT.json"
+      ]
+    },
+    {
+      "id": "paris_development",
+      "title": "Paris 开发预测",
+      "category": "audit",
+      "evidence_kind": "historical",
+      "summary": "独立开发数据集结果，不与 UrbanEV 直接混排。",
+      "evidence_dir": "artifacts/summaries/paris_development",
+      "reports": [
+        "docs/history/AUDIT_PROJECT_README.md"
+      ],
+      "entrypoints": [],
+      "configs": [],
+      "status_sources": [
+        "artifacts/summaries/paris_development/PARIS_TEACHER_QUALIFICATION_SUMMARY.json"
+      ]
+    },
+    {
+      "id": "registry",
+      "title": "历史配置终态登记",
+      "category": "audit",
+      "evidence_kind": "historical",
+      "summary": "1,224 配置的完成、未运行及失败状态；非新比较工作量。",
+      "evidence_dir": "artifacts/summaries/registry",
+      "reports": [
+        "docs/history/AUDIT_PROJECT_README.md"
+      ],
+      "entrypoints": [],
+      "configs": [],
+      "status_sources": [
+        "artifacts/summaries/registry/CONFIG_STATUS_SUMMARY.json"
+      ]
+    },
+    {
+      "id": "router",
+      "title": "历史路由",
+      "category": "audit",
+      "evidence_kind": "historical",
+      "summary": "原路由系统、强对照与决策，不是新的调用前成本实验。",
+      "evidence_dir": "artifacts/summaries/router",
+      "reports": [
+        "docs/history/AUDIT_PROJECT_README.md"
+      ],
+      "entrypoints": [],
+      "configs": [],
+      "status_sources": [
+        "artifacts/summaries/router/ROUTER_V1_SUMMARY.json"
+      ]
+    },
+    {
+      "id": "benchmark_alignment_20260913",
+      "title": "上游基准与任务对齐",
+      "category": "benchmark",
+      "evidence_kind": "reference",
+      "summary": "单位、原点、历史和末点/path 的源码核查与研究映射。",
+      "evidence_dir": "artifacts/summaries/benchmark_alignment_20260913",
+      "reports": [
+        "docs/reports/benchmark/BENCHMARK_ALIGNMENT_REPORT_20260913.md"
+      ],
+      "entrypoints": [
+        "scripts/research/probe_benchmark_alignment.py"
+      ],
+      "configs": [
+        "configs/research/URBANEV_COMPARISON_V2.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/benchmark_alignment_20260913/contract_probe.json"
+      ]
+    },
+    {
+      "id": "benchmark_contract_preparation_20260914",
+      "title": "评价合同与作者接口准备",
+      "category": "benchmark",
+      "evidence_kind": "synthetic",
+      "summary": "纯索引、评分和 DLinear 作者核心合成核验；不是新增真实成绩。",
+      "evidence_dir": "artifacts/summaries/benchmark_contract_preparation_20260914",
+      "reports": [
+        "docs/reports/benchmark/EVALUATION_PREPARATION_20260914.md"
+      ],
+      "entrypoints": [
+        "scripts/research/verify_benchmark_preparation.py"
+      ],
+      "configs": [
+        "configs/research/EVALUATION_CONTRACT_AUTHOR_BASELINE_PREP_V1.json",
+        "configs/research/URBANEV_COMPARISON_V2.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/benchmark_contract_preparation_20260914/aggregation_review_fix.json"
+      ]
+    },
+    {
+      "id": "comparability_bridge_v2",
+      "title": "开发原点口径桥接",
+      "category": "benchmark",
+      "evidence_kind": "development",
+      "summary": "42 个已曝光原点的确定性参考与缓存基础预测；无新增拟合。",
+      "evidence_dir": "artifacts/summaries/comparability_bridge_v2",
+      "reports": [
+        "docs/reports/benchmark/BENCHMARK_ALIGNMENT_REPORT_20260913.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_comparability_bridge.py"
+      ],
+      "configs": [
+        "configs/research/URBANEV_COMPARISON_V2.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/comparability_bridge_v2/summary.json"
+      ]
+    },
+    {
+      "id": "comprehensive_development_comparison_v1",
+      "title": "开发集统一比较",
+      "category": "benchmark",
+      "evidence_kind": "development",
+      "summary": "两 ridge、五种神经配置及历史预测重算；训练 cohort 与共同支持分列。",
+      "evidence_dir": "artifacts/summaries/comprehensive_development_comparison_v1",
+      "reports": [
+        "docs/reports/benchmark/COMPREHENSIVE_COMPARISON_REPORT_20260913.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_comprehensive_development_comparison.py"
+      ],
+      "configs": [],
+      "status_sources": [
+        "artifacts/summaries/comprehensive_development_comparison_v1/execution_receipt.json",
+        "artifacts/summaries/comprehensive_development_comparison_v1/verification.json"
+      ]
+    },
+    {
+      "id": "urbanev_matched_six_fold_v1",
+      "title": "完整六折匹配比较",
+      "category": "benchmark",
+      "evidence_kind": "registered",
+      "summary": "已冻结清单；当前公开树没有完整执行与评分回执，登记预算不等于成绩。",
+      "evidence_dir": "artifacts/summaries/urbanev_matched_six_fold_v1",
+      "reports": [
+        "docs/reports/benchmark/MATCHED_SIX_FOLD_REPORT_20260914.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_full_benchmark.py"
+      ],
+      "configs": [
+        "configs/research/URBANEV_MATCHED_SIX_FOLD_V1_20260914.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/urbanev_matched_six_fold_v1/registration.json"
+      ]
+    },
+    {
+      "id": "continuous_v2_calibration_2h",
+      "title": "连续步长双视野校准",
+      "category": "calibration",
+      "evidence_kind": "calibration",
+      "summary": "H3/H12 合法非零修正有局部 RMSE 收益；旧内部门结论保留。",
+      "evidence_dir": "artifacts/summaries/continuous_v2_calibration_2h",
+      "reports": [
+        "docs/reports/calibration/CONTINUOUS_V2_CALIBRATION_2H_REPORT.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_continuous_calibration_2h.py"
+      ],
+      "configs": [
+        "configs/research/CONTINUOUS_V2_CALIBRATION_2H_AUTHORIZATION.json",
+        "configs/research/CONTINUOUS_V2_CALIBRATION_2H_RUN.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/continuous_v2_calibration_2h/execution_receipt.json",
+        "artifacts/summaries/continuous_v2_calibration_2h/summary.json"
+      ]
+    },
+    {
+      "id": "continuous_v2_candidate_reduction",
+      "title": "连续步长候选归约",
+      "category": "calibration",
+      "evidence_kind": "synthetic",
+      "summary": "候选完备性与归约验证，不等于新数据评价。",
+      "evidence_dir": "artifacts/summaries/continuous_v2_candidate_reduction",
+      "reports": [
+        "docs/protocols/CONTINUOUS_STEP_V2_CANDIDATE_REDUCTION.md"
+      ],
+      "entrypoints": [
+        "scripts/research/verify_continuous_candidates.py"
+      ],
+      "configs": [
+        "configs/research/RESIDUAL_CONTINUOUS_STEP_V2_CANDIDATE_REPAIR_ROUNDING.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/continuous_v2_candidate_reduction/candidate_reduction_verification.json"
+      ]
+    },
+    {
+      "id": "continuous_v2_registration",
+      "title": "连续步长 V2 注册",
+      "category": "calibration",
+      "evidence_kind": "protocol",
+      "summary": "版本化变量、对象及阶段范围登记。",
+      "evidence_dir": "artifacts/summaries/continuous_v2_registration",
+      "reports": [
+        "docs/protocols/CONTINUOUS_STEP_V2_REGISTRATION.md"
+      ],
+      "entrypoints": [
+        "scripts/research/verify_continuous_v2_registration.py"
+      ],
+      "configs": [
+        "configs/research/RESIDUAL_CONTINUOUS_STEP_V2_REGISTRATION.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/continuous_v2_registration/public_export.json"
+      ]
+    },
+    {
+      "id": "continuous_v2_solver_draft",
+      "title": "连续步长求解器草稿",
+      "category": "calibration",
+      "evidence_kind": "synthetic",
+      "summary": "原求解器草稿与合成检查记录；后续修订另列。",
+      "evidence_dir": "artifacts/summaries/continuous_v2_solver_draft",
+      "reports": [
+        "docs/protocols/CONTINUOUS_STEP_V2_SOLVER_SPEC.md"
+      ],
+      "entrypoints": [
+        "scripts/research/verify_continuous_step_synthetic.py"
+      ],
+      "configs": [
+        "configs/research/RESIDUAL_CONTINUOUS_STEP_V2_SOLVER.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/continuous_v2_solver_draft/case22_trace.json"
+      ]
+    },
+    {
+      "id": "continuous_v2_solver_repair",
+      "title": "连续步长精确修订",
+      "category": "calibration",
+      "evidence_kind": "synthetic",
+      "summary": "边界与精确案例修订证据；不产生真实预测成绩。",
+      "evidence_dir": "artifacts/summaries/continuous_v2_solver_repair",
+      "reports": [
+        "docs/protocols/CONTINUOUS_STEP_V2_EXACT_REPAIR.md"
+      ],
+      "entrypoints": [
+        "scripts/research/verify_continuous_exact_cases.py"
+      ],
+      "configs": [
+        "configs/research/RESIDUAL_CONTINUOUS_STEP_V2_SOLVER_REPAIR.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/continuous_v2_solver_repair/boundary_predicate_verification.json"
+      ]
+    },
+    {
+      "id": "dual_risk_finite_step_v1",
+      "title": "双风险有限步长",
+      "category": "calibration",
+      "evidence_kind": "calibration",
+      "summary": "同信息硬门更好，保留原有限步长 NO_GO 与对照结论。",
+      "evidence_dir": "artifacts/summaries/dual_risk_finite_step_v1",
+      "reports": [
+        "docs/reports/calibration/DUAL_RISK_FINITE_STEP_REPORT_20260913.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_dual_risk_finite_step.py"
+      ],
+      "configs": [
+        "configs/research/DUAL_RISK_FINITE_STEP_V1.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/dual_risk_finite_step_v1/execution_receipt.json",
+        "artifacts/summaries/dual_risk_finite_step_v1/summary.json"
+      ]
+    },
+    {
+      "id": "dual_risk_probe_v1",
+      "title": "双风险局部方向探针",
+      "category": "calibration",
+      "evidence_kind": "development",
+      "summary": "局部共同下降线索不保证有限步长或可部署预测收益。",
+      "evidence_dir": "artifacts/summaries/dual_risk_probe_v1",
+      "reports": [
+        "docs/reports/calibration/DUAL_RISK_PROBE_REPORT_20260913.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_dual_risk_probe.py"
+      ],
+      "configs": [
+        "configs/research/DUAL_RISK_INFORMATION_PROBE_V1.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/dual_risk_probe_v1/summary.json"
+      ]
+    },
+    {
+      "id": "fm_calibration_v1",
+      "title": "基础模型分位输出适配",
+      "category": "calibration",
+      "evidence_kind": "calibration",
+      "summary": "共享头有 RMSE 开发收益，但同信息 ridge 更强且 MAE 存在代价；原 NO_GO 保留。",
+      "evidence_dir": "artifacts/summaries/fm_calibration_v1",
+      "reports": [
+        "docs/reports/calibration/FM_CALIBRATION_REPORT.md"
+      ],
+      "entrypoints": [
+        "scripts/research/evaluate_point_heads.py"
+      ],
+      "configs": [],
+      "status_sources": [
+        "artifacts/summaries/fm_calibration_v1/chronos2_cache_receipt.json"
+      ]
+    },
+    {
+      "id": "residual_information_v1",
+      "title": "时长残差信息",
+      "category": "calibration",
+      "evidence_kind": "calibration",
+      "summary": "保留时长残差与风险权衡证据，不改写原协议决定。",
+      "evidence_dir": "artifacts/summaries/residual_information_v1",
+      "reports": [
+        "docs/reports/calibration/RESIDUAL_INFORMATION_REPORT.md"
+      ],
+      "entrypoints": [
+        "scripts/research/residual_information.py"
+      ],
+      "configs": [
+        "configs/research/RESIDUAL_INFORMATION_V1.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/residual_information_v1/summary.json"
+      ]
+    },
+    {
+      "id": "conditional_od_interaction_v1",
+      "title": "条件 O–D 乘性交互",
+      "category": "forecasting",
+      "evidence_kind": "development",
+      "summary": "两种子 RMSE 有限线索伴 MAE 代价；稳定优势未建立。",
+      "evidence_dir": "artifacts/summaries/conditional_od_interaction_v1",
+      "reports": [
+        "docs/reports/forecasting/CONDITIONAL_OD_INTERACTION_REPORT_20260913.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_conditional_od_interaction.py"
+      ],
+      "configs": [
+        "configs/research/CONDITIONAL_OD_INTERACTION_V1.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/conditional_od_interaction_v1/execution_receipt.json",
+        "artifacts/summaries/conditional_od_interaction_v1/verification.json"
+      ]
+    },
+    {
+      "id": "duration_lag_regularization_v1",
+      "title": "时长滞后有序正则化",
+      "category": "forecasting",
+      "evidence_kind": "development",
+      "summary": "13 组拟合未建立真实时间邻接平滑的特定预测优势。",
+      "evidence_dir": "artifacts/summaries/duration_lag_regularization_v1",
+      "reports": [
+        "docs/reports/forecasting/DURATION_LAG_REGULARIZATION_REPORT_20260913.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_duration_lag_regularization.py"
+      ],
+      "configs": [
+        "configs/research/DURATION_LAG_REGULARIZATION_V1.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/duration_lag_regularization_v1/execution_receipt.json",
+        "artifacts/summaries/duration_lag_regularization_v1/summary.json",
+        "artifacts/summaries/duration_lag_regularization_v1/verification.json"
+      ]
+    },
+    {
+      "id": "fixed_reference_correction_v1",
+      "title": "固定底座纠错",
+      "category": "forecasting",
+      "evidence_kind": "development",
+      "summary": "普通纠错有局部收益；主交互未形成跨窗口稳定优势。",
+      "evidence_dir": "artifacts/summaries/fixed_reference_correction_v1",
+      "reports": [
+        "docs/reports/forecasting/FIXED_REFERENCE_CORRECTION_REPORT_20260913.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_fixed_reference_correction.py"
+      ],
+      "configs": [],
+      "status_sources": [
+        "artifacts/summaries/fixed_reference_correction_v1/execution_receipt.json",
+        "artifacts/summaries/fixed_reference_correction_v1/verification.json"
+      ]
+    },
+    {
+      "id": "forward_residual_transfer_v1",
+      "title": "前向残差与底座上下文",
+      "category": "forecasting",
+      "evidence_kind": "development",
+      "summary": "九个前向实例选 epoch0；等于底座，不能解释为非零纠错迁移成功。",
+      "evidence_dir": "artifacts/summaries/forward_residual_transfer_v1",
+      "reports": [
+        "docs/reports/forecasting/FORWARD_RESIDUAL_TRANSFER_REPORT_20260913.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_forward_residual_transfer.py"
+      ],
+      "configs": [
+        "configs/research/FORWARD_RESIDUAL_TRANSFER_V1.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/forward_residual_transfer_v1/execution_receipt.json",
+        "artifacts/summaries/forward_residual_transfer_v1/verification.json"
+      ]
+    },
+    {
+      "id": "long_history_source_ablation_v1",
+      "title": "长历史来源消融",
+      "category": "forecasting",
+      "evidence_kind": "development",
+      "summary": "八个固定 ridge 对照拆分长 O 与长 D；结论限已曝光窗口。",
+      "evidence_dir": "artifacts/summaries/long_history_source_ablation_v1",
+      "reports": [
+        "docs/reports/forecasting/LONG_HISTORY_SOURCE_REPORT_20260913.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_long_history_source_ablation.py"
+      ],
+      "configs": [
+        "configs/research/LONG_HISTORY_SOURCE_ABLATION_V1.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/long_history_source_ablation_v1/execution_receipt.json",
+        "artifacts/summaries/long_history_source_ablation_v1/summary.json",
+        "artifacts/summaries/long_history_source_ablation_v1/verification.json"
+      ]
+    },
+    {
+      "id": "reference_harm_stability_v1",
+      "title": "底座正增损稳定化",
+      "category": "forecasting",
+      "evidence_kind": "development",
+      "summary": "六方案三种子研究；局部作用存在，整体稳定性主张未成立。",
+      "evidence_dir": "artifacts/summaries/reference_harm_stability_v1",
+      "reports": [
+        "docs/reports/forecasting/REFERENCE_HARM_STABILITY_REPORT_20260913.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_reference_harm_stability.py"
+      ],
+      "configs": [
+        "configs/research/REFERENCE_HARM_STABILITY_V1.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/reference_harm_stability_v1/execution_receipt.json",
+        "artifacts/summaries/reference_harm_stability_v1/verification.json"
+      ]
+    },
+    {
+      "id": "short_state_relaxation_v1",
+      "title": "短摘要与条件弛豫",
+      "category": "forecasting",
+      "evidence_kind": "development",
+      "summary": "长历史有开发收益；单模短状态弛豫未优于同信息直接模型。",
+      "evidence_dir": "artifacts/summaries/short_state_relaxation_v1",
+      "reports": [
+        "docs/reports/forecasting/SHORT_STATE_RELAXATION_REPORT_20260913.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_short_state_relaxation.py"
+      ],
+      "configs": [
+        "configs/research/SHORT_STATE_RELAXATION_V1.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/short_state_relaxation_v1/execution_receipt.json"
+      ]
+    },
+    {
+      "id": "research_directions_20260910",
+      "title": "阶段方向登记",
+      "category": "history",
+      "evidence_kind": "reference",
+      "summary": "当时的问题选择和来源，后续路线已单独更新。",
+      "evidence_dir": "artifacts/summaries/research_directions_20260910",
+      "reports": [
+        "docs/history/proposals/RESEARCH_DIRECTIONS_20260910.md"
+      ],
+      "entrypoints": [],
+      "configs": [],
+      "status_sources": [
+        "artifacts/summaries/research_directions_20260910/crossref_metadata.json"
+      ]
+    },
+    {
+      "id": "research_transition",
+      "title": "预测研究转型工程检查",
+      "category": "history",
+      "evidence_kind": "synthetic",
+      "summary": "既有单 epoch 工程画像；不代替完整基准。",
+      "evidence_dir": "artifacts/summaries/research_transition",
+      "reports": [
+        "docs/history/proposals/INITIAL_PROPOSAL.md"
+      ],
+      "entrypoints": [],
+      "configs": [],
+      "status_sources": [
+        "artifacts/summaries/research_transition/timexer_one_epoch_profile.json"
+      ]
+    },
+    {
+      "id": "dual_direction_pilot_v1",
+      "title": "跨区与双观测试点",
+      "category": "information",
+      "evidence_kind": "development",
+      "summary": "初步空间线索和直接时长输入；结构额外优势未建立。",
+      "evidence_dir": "artifacts/summaries/dual_direction_pilot_v1",
+      "reports": [
+        "docs/reports/information/DUAL_DIRECTION_PILOT_REPORT.md"
+      ],
+      "entrypoints": [
+        "scripts/research/dual_observation_pilot.py"
+      ],
+      "configs": [
+        "configs/research/DUAL_DIRECTION_PILOT_V1.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/dual_direction_pilot_v1/duration_qualification.json"
+      ]
+    },
+    {
+      "id": "information_scope_20260913",
+      "title": "观测字段与信息证据地图",
+      "category": "information",
+      "evidence_kind": "reference",
+      "summary": "字段、单位、可得性和历史输入范围登记；不是新训练结果。",
+      "evidence_dir": "artifacts/summaries/information_scope_20260913",
+      "reports": [
+        "docs/reports/information/INFORMATION_EVIDENCE_MAP_20260913.md"
+      ],
+      "entrypoints": [],
+      "configs": [
+        "configs/research/URBANEV_SOTA_V1.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/information_scope_20260913/registry_receipt.json"
+      ]
+    },
+    {
+      "id": "signal_replication_v1",
+      "title": "空间与观测信号复核",
+      "category": "information",
+      "evidence_kind": "development",
+      "summary": "跨区初始线索未稳定复现，不推断信息普遍无效。",
+      "evidence_dir": "artifacts/summaries/signal_replication_v1",
+      "reports": [
+        "docs/reports/information/SIGNAL_REPLICATION_REPORT.md"
+      ],
+      "entrypoints": [
+        "scripts/research/replicate_signals.py"
+      ],
+      "configs": [],
+      "status_sources": [
+        "artifacts/summaries/signal_replication_v1/summary.json"
+      ]
+    },
+    {
+      "id": "volume_composition_increment_v1",
+      "title": "动态电量条件增量",
+      "category": "information",
+      "evidence_kind": "calibration",
+      "summary": "主候选校准 NO_GO，未打开其条件后续评价窗口。",
+      "evidence_dir": "artifacts/summaries/volume_composition_increment_v1",
+      "reports": [
+        "docs/reports/information/VOLUME_COMPOSITION_INCREMENT_REPORT_20260913.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_volume_composition_increment.py"
+      ],
+      "configs": [
+        "configs/research/VOLUME_COMPOSITION_INCREMENT_V1.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/volume_composition_increment_v1/execution_receipt.json",
+        "artifacts/summaries/volume_composition_increment_v1/summary.json"
+      ]
+    },
+    {
+      "id": "coarse_memory_identifiability_v1_20260913",
+      "title": "粗粒化记忆机制检查",
+      "category": "mechanisms",
+      "evidence_kind": "synthetic",
+      "summary": "固定人工系统中的历史充分性与 HMM 对照；非真实 UrbanEV 收益。",
+      "evidence_dir": "artifacts/summaries/coarse_memory_identifiability_v1_20260913",
+      "reports": [
+        "docs/reports/mechanisms/COARSE_MEMORY_IDENTIFIABILITY_REPORT_20260913.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_coarse_memory_identifiability.py"
+      ],
+      "configs": [
+        "configs/research/COARSE_MEMORY_IDENTIFIABILITY_V1_20260913.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/coarse_memory_identifiability_v1_20260913/execution_receipt.json"
+      ]
+    },
+    {
+      "id": "journal_methods_20260913",
+      "title": "期刊方法与观测建模",
+      "category": "mechanisms",
+      "evidence_kind": "reference",
+      "summary": "方法阅读和研究问题整理，具体执行范围以阶段记录为准。",
+      "evidence_dir": "artifacts/summaries/journal_methods_20260913",
+      "reports": [
+        "docs/reports/mechanisms/JOURNAL_METHOD_REPORT_20260913.md"
+      ],
+      "entrypoints": [],
+      "configs": [
+        "configs/research/DUAL_RISK_INFORMATION_PROBE_V1.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/journal_methods_20260913/source_verification.json"
+      ]
+    },
+    {
+      "id": "physics_economics_traffic_20260913",
+      "title": "物理、经济与交通机制",
+      "category": "mechanisms",
+      "evidence_kind": "reference",
+      "summary": "理论来源及可观测性线索，不等于已有方法创新或真实性能。",
+      "evidence_dir": "artifacts/summaries/physics_economics_traffic_20260913",
+      "reports": [
+        "docs/theory/PHYSICS_ECONOMICS_TRAFFIC_READING_20260913.md"
+      ],
+      "entrypoints": [],
+      "configs": [],
+      "status_sources": [
+        "artifacts/summaries/physics_economics_traffic_20260913/additional_source_metadata.json"
+      ]
+    }
+  ]
+}

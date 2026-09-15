@@ -28,7 +28,7 @@ def main():
     for ax in axes:ax.grid(alpha=.2);ax.spines[['right','top']].set_visible(False)
     axes[0].legend(fontsize=7,loc='best')
     fig.suptitle('UrbanEV development comparison: three new seeds, one previously exposed window',fontsize=11)
-    destination=ROOT/'docs/research/sota/figures/reference_harm_stability.png';destination.parent.mkdir(exist_ok=True)
+    destination=ROOT/'docs/reports/figures/reference_harm_stability.png';destination.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(destination,dpi=220);plt.close(fig)
     print(destination)
 

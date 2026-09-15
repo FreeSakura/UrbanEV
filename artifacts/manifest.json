@@ -2792,6 +2792,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "configs/README.md",
+      "sha256": "3c5cbeb060549f8571e4c4ca9cc4deb65a1ebdf4bf07ce683ce1397a2332c9a3",
+      "bytes": 977,
+      "role": "paper_or_documentation",
+      "origin": "UrbanEV Forecast project",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "configs/research/ADAPTIVE_INVOCATION_CONTRACT_PREP_V1.json",
       "sha256": "47c431e024a10a4dd309f54d6ea62478be5f3a5b44544466ee073ab8a0eecd5e",
       "bytes": 2326,
@@ -3056,9 +3065,9 @@
       "path": "models/caper/IDENTITY.md",
       "sha256": "005740566efdd958f6b807705b55e9aa6506bc8686cf5b4526fc1e26f180a3bc",
       "bytes": 627,
-      "role": "models",
-      "origin": "UrbanEV evidence-audit project",
-      "license": "MIT",
+      "role": "paper_or_documentation",
+      "origin": "UrbanEV Forecast project",
+      "license": "CC-BY-4.0",
       "public_or_external": "public"
     },
     {
@@ -3272,9 +3281,9 @@
       "path": "models/paris/PROVENANCE.md",
       "sha256": "861a0a50b2a385b41d01acbd35a59948c64ab5b9ebb219cfb62fe6cd90017356",
       "bytes": 1513,
-      "role": "models",
-      "origin": "UrbanEV evidence-audit project",
-      "license": "MIT",
+      "role": "paper_or_documentation",
+      "origin": "UrbanEV Forecast project",
+      "license": "CC-BY-4.0",
       "public_or_external": "public"
     },
     {
@@ -3290,9 +3299,9 @@
       "path": "models/README.md",
       "sha256": "ca85ad5e84624ed1f1182d14c4e6c73784ab2823d17f6fa382179bb9b7935ccf",
       "bytes": 877,
-      "role": "models",
-      "origin": "UrbanEV evidence-audit project",
-      "license": "MIT",
+      "role": "paper_or_documentation",
+      "origin": "UrbanEV Forecast project",
+      "license": "CC-BY-4.0",
       "public_or_external": "public"
     },
     {

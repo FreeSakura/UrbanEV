@@ -16,10 +16,10 @@ This is the public, target-free companion to **From Configurations to Claims: An
 
 ## Research update — September 2026
 
-- [V3 report PDF](../../paper/research/UrbanEV_Theory_Feedback_V3.pdf) (9 pages), [Chinese theory and experiment report V3](../../docs/research/PAIRED_AUDIT_V3_REPORT.md): exact paired Brier bounds with shared missing observations; natural-mask development validation over 109,050 windows, with 2.93% interval tightening.
-- [Complete derivation](../../docs/research/DERIVATION_V3.md), [V1 theory](../../docs/research/THEORY_REPORT_V1.md), [V2 theory and experiment feedback](../../docs/research/THEORY_REPORT_V2.md).
+- [V3 report PDF](../../paper/research/UrbanEV_Theory_Feedback_V3.pdf) (9 pages), [Chinese theory and experiment report V3](../reports/audit/PAIRED_AUDIT_V3_REPORT.md): exact paired Brier bounds with shared missing observations; natural-mask development validation over 109,050 windows, with 2.93% interval tightening.
+- [Complete derivation](../theory/DERIVATION_V3.md), [V1 theory](../theory/THEORY_REPORT_V1.md), [V2 theory and experiment feedback](../theory/THEORY_REPORT_V2.md).
 - [Runnable evaluation script](../../scripts/research/run_paris_event_audit.py) and [aggregate receipt](../../artifacts/summaries/paired_audit_v3/summary.json). No raw observations or missingness masks are published.
-- [Public attribution and privacy scope](../../docs/PUBLIC_ATTRIBUTION.md). Historical commits and tags retain earlier attribution; use the current tree for the revised manuscripts.
+- [Public attribution and privacy scope](../PUBLIC_ATTRIBUTION.md). Historical commits and tags retain earlier attribution; use the current tree for the revised manuscripts.
 
 ## Evidence boundary
 

@@ -30,6 +30,6 @@ def main():
     axes[1].set(xlabel='Mean over four H: 2 x alignment A',ylabel='Mean over four H: correction energy B',title='MECH: fixed epoch40, no checkpoint selection')
     for ax in axes:ax.grid(alpha=.2);ax.spines[['right','top']].set_visible(False);ax.legend(fontsize=7,loc='best')
     fig.suptitle('Fixed-reference correction: different windows and purposes; no pooled performance',fontsize=11)
-    path=ROOT/'docs/research/sota/figures/fixed_reference_correction.png';path.parent.mkdir(exist_ok=True);fig.savefig(path,dpi=220);plt.close(fig);print(path)
+    path=ROOT/'docs/reports/figures/fixed_reference_correction.png';path.parent.mkdir(parents=True, exist_ok=True);fig.savefig(path,dpi=220);plt.close(fig);print(path)
 
 if __name__=='__main__':main()

@@ -1,0 +1,347 @@
+{
+  "schema_version": "urbanev-document-path-map/v1",
+  "source_commit": "5f38f7d151b58fd4f1dd8ab17981b5ee59659678",
+  "description": "Old GitHub paths resolve in source_commit; current locations are listed below. Frozen scientific manifests retain their historical paths and hashes.",
+  "moves": [
+    {
+      "from": "docs/RELEASE_NOTES_v0.9.1.md",
+      "to": "docs/history/RELEASE_NOTES_v0.9.1.md",
+      "source_sha256_lf": "b5c4411a100efdfcdeb9c59cc4e937d840d497589785a35c9c0a5de0ecebdfe4"
+    },
+    {
+      "from": "docs/REPRODUCIBILITY.md",
+      "to": "docs/guides/reproducibility.md",
+      "source_sha256_lf": "5bacacdf5b7bff183317ff23e5279b80e340b2eb914902fe9e00c37fd872ba89"
+    },
+    {
+      "from": "docs/research/DERIVATION_V3.md",
+      "to": "docs/theory/DERIVATION_V3.md",
+      "source_sha256_lf": "b9727e01a1155336abb89e16420e9afa8226d6aea32fdddd92a88e9d5aba5cb2"
+    },
+    {
+      "from": "docs/research/PAIRED_AUDIT_V3_REPORT.md",
+      "to": "docs/reports/audit/PAIRED_AUDIT_V3_REPORT.md",
+      "source_sha256_lf": "0015033abcf0d7cab5db42399c90494029412b44cff16b6ee0330ccbd445d6e6"
+    },
+    {
+      "from": "docs/research/THEORY_REPORT_V1.md",
+      "to": "docs/theory/THEORY_REPORT_V1.md",
+      "source_sha256_lf": "10f3bd75bc9f4c6c8c2a8b085d50ce81cdbaf34503a7b4f277d561eed3e92a68"
+    },
+    {
+      "from": "docs/research/THEORY_REPORT_V2.md",
+      "to": "docs/theory/THEORY_REPORT_V2.md",
+      "source_sha256_lf": "f711745d0359fe6a6cec750eac7c5e03d3a590ceeff287bebd1993e70b776d18"
+    },
+    {
+      "from": "docs/research/sota/ADAPTIVE_INVOCATION_REVIEW_20260914.md",
+      "to": "docs/reviews/ADAPTIVE_INVOCATION_REVIEW_20260914.md",
+      "source_sha256_lf": "57b3f8353fd4fcf0879747fccb30e262eb4b6fa05f13f178732736e9d86f2a83"
+    },
+    {
+      "from": "docs/research/sota/BASELINES.md",
+      "to": "docs/research/baselines.md",
+      "source_sha256_lf": "baf09099d03405987c2cab8ba2386ca94456c4e808e7793fc8894e8521de815d"
+    },
+    {
+      "from": "docs/research/sota/BENCHMARK_ALIGNMENT_REPORT_20260913.md",
+      "to": "docs/reports/benchmark/BENCHMARK_ALIGNMENT_REPORT_20260913.md",
+      "source_sha256_lf": "fee7323a761cd709e3cacf41a426edd9489b4bd040dcc88358e957df17d0d4e9"
+    },
+    {
+      "from": "docs/research/sota/COARSE_MEMORY_IDENTIFIABILITY_REPORT_20260913.md",
+      "to": "docs/reports/mechanisms/COARSE_MEMORY_IDENTIFIABILITY_REPORT_20260913.md",
+      "source_sha256_lf": "579866823d5900486edea294e5ac2dcac36a88d9fc028a1fa1ee397e87ac1329"
+    },
+    {
+      "from": "docs/research/sota/COARSE_MEMORY_THEORY_REPORT_20260913.md",
+      "to": "docs/theory/COARSE_MEMORY_THEORY_REPORT_20260913.md",
+      "source_sha256_lf": "0d1eb4306e13a49f412cc2390a3d45533045f2a70ae45b3626063b6415cc7d54"
+    },
+    {
+      "from": "docs/research/sota/COMPREHENSIVE_COMPARISON_REPORT_20260913.md",
+      "to": "docs/reports/benchmark/COMPREHENSIVE_COMPARISON_REPORT_20260913.md",
+      "source_sha256_lf": "8e0e5e1be5455473da9a1620443e97b1c3ddff1366f691ce5c897a61fc6a0b3a"
+    },
+    {
+      "from": "docs/research/sota/CONDITIONAL_OD_INTERACTION_REPORT_20260913.md",
+      "to": "docs/reports/forecasting/CONDITIONAL_OD_INTERACTION_REPORT_20260913.md",
+      "source_sha256_lf": "c8fae59e43d0f9d0f0ea4bcc7e83d7a6f36a8acf4c0b1d147602b8d2e3e61742"
+    },
+    {
+      "from": "docs/research/sota/CONTINUOUS_STEP_V2_CANDIDATE_REDUCTION.md",
+      "to": "docs/protocols/CONTINUOUS_STEP_V2_CANDIDATE_REDUCTION.md",
+      "source_sha256_lf": "09207a98d628bcdec443dc0797586ed79feb7b27907b05da0c260ce914ba23fe"
+    },
+    {
+      "from": "docs/research/sota/CONTINUOUS_STEP_V2_EXACT_REPAIR.md",
+      "to": "docs/protocols/CONTINUOUS_STEP_V2_EXACT_REPAIR.md",
+      "source_sha256_lf": "0213eac0a41dbdb72842f166ffc31e1f3999aa79bd4b5c074195bc04e088d457"
+    },
+    {
+      "from": "docs/research/sota/CONTINUOUS_STEP_V2_REGISTRATION.md",
+      "to": "docs/protocols/CONTINUOUS_STEP_V2_REGISTRATION.md",
+      "source_sha256_lf": "da6f968e81f2158a6411a9d2f27882d823250eb2a1c3c039d9cd06bf5fd423b4"
+    },
+    {
+      "from": "docs/research/sota/CONTINUOUS_STEP_V2_SOLVER_SPEC.md",
+      "to": "docs/protocols/CONTINUOUS_STEP_V2_SOLVER_SPEC.md",
+      "source_sha256_lf": "274da7729b0c860028ecdf67d041696cfab5c389b6cb8e180e0d76a74561411a"
+    },
+    {
+      "from": "docs/research/sota/CONTINUOUS_V2_CALIBRATION_2H_PLAN.md",
+      "to": "docs/protocols/CONTINUOUS_V2_CALIBRATION_2H_PLAN.md",
+      "source_sha256_lf": "6a17ffcba03bd32b9bb7563986102ab61fde8e9bac14d6542bd5d8027188295d"
+    },
+    {
+      "from": "docs/research/sota/CONTINUOUS_V2_CALIBRATION_2H_REPORT.md",
+      "to": "docs/reports/calibration/CONTINUOUS_V2_CALIBRATION_2H_REPORT.md",
+      "source_sha256_lf": "d6033a89f0727f1b971e2a0a04c5c637b421008ca819d6b0a373eeeea5eca8ab"
+    },
+    {
+      "from": "docs/research/sota/DUAL_DIRECTION_PILOT_REPORT.md",
+      "to": "docs/reports/information/DUAL_DIRECTION_PILOT_REPORT.md",
+      "source_sha256_lf": "b3ea2247d1d987a2556503dd5b9ddbc0deca3147514ba06364a4943eb2cc91a3"
+    },
+    {
+      "from": "docs/research/sota/DUAL_RISK_FINITE_STEP_PLAN_20260913.md",
+      "to": "docs/protocols/DUAL_RISK_FINITE_STEP_PLAN_20260913.md",
+      "source_sha256_lf": "4712d2c0b14ebb9cd2840428e760c3d20537e116da5479ec56be4c508d4ac061"
+    },
+    {
+      "from": "docs/research/sota/DUAL_RISK_FINITE_STEP_REPORT_20260913.md",
+      "to": "docs/reports/calibration/DUAL_RISK_FINITE_STEP_REPORT_20260913.md",
+      "source_sha256_lf": "2f1a111c0632133d1419238c31d876919cd8c70a514b3f55e1eb666709b53a6e"
+    },
+    {
+      "from": "docs/research/sota/DUAL_RISK_PROBE_REPORT_20260913.md",
+      "to": "docs/reports/calibration/DUAL_RISK_PROBE_REPORT_20260913.md",
+      "source_sha256_lf": "2a769432c563644715ad9e574b53254c9a368aa035dd54c13ff896e754d40795"
+    },
+    {
+      "from": "docs/research/sota/DURATION_LAG_REGULARIZATION_REPORT_20260913.md",
+      "to": "docs/reports/forecasting/DURATION_LAG_REGULARIZATION_REPORT_20260913.md",
+      "source_sha256_lf": "40214dd1a4fe944f1158d40a6497258c763d7e3b533cb20f6d3a22ec971f6453"
+    },
+    {
+      "from": "docs/research/sota/EXPERIMENT_PLAN.md",
+      "to": "docs/history/proposals/EXPERIMENT_PLAN.md",
+      "source_sha256_lf": "4354367f842697fe68d04e605c2529d41d855b9cd38c25f90064dd6a7d189b08"
+    },
+    {
+      "from": "docs/research/sota/FINAL_PROPOSAL.md",
+      "to": "docs/history/proposals/FINAL_PROPOSAL.md",
+      "source_sha256_lf": "b59c322adb516ee95141d1ae265cd0825ec9a2e5c35796c039b781f919a061d5"
+    },
+    {
+      "from": "docs/research/sota/FIXED_REFERENCE_CORRECTION_REPORT_20260913.md",
+      "to": "docs/reports/forecasting/FIXED_REFERENCE_CORRECTION_REPORT_20260913.md",
+      "source_sha256_lf": "7bcb6bc0e1d484e39d6e9b6b89aaf0e999471556e676518af62d6c6db84ed1af"
+    },
+    {
+      "from": "docs/research/sota/FM_CALIBRATION_REPORT.md",
+      "to": "docs/reports/calibration/FM_CALIBRATION_REPORT.md",
+      "source_sha256_lf": "b0d6ebd79c6a0c946ba7d33a028499e1c50c53a65133b04aa8675b33a4b227de"
+    },
+    {
+      "from": "docs/research/sota/FM_CALIBRATION_REPRODUCE.md",
+      "to": "docs/reports/calibration/FM_CALIBRATION_REPRODUCE.md",
+      "source_sha256_lf": "2d49d58a336529ea539551674d637cf5b8281c2d4f72c2377be7756a0827ebb5"
+    },
+    {
+      "from": "docs/research/sota/FM_CALIBRATION_THEORY_FEEDBACK.md",
+      "to": "docs/reports/calibration/FM_CALIBRATION_THEORY_FEEDBACK.md",
+      "source_sha256_lf": "1f55d1f947bc27be731636c0e3791bc44720b7f36186709e249076f5cf591cf0"
+    },
+    {
+      "from": "docs/research/sota/FORWARD_RESIDUAL_TRANSFER_REPORT_20260913.md",
+      "to": "docs/reports/forecasting/FORWARD_RESIDUAL_TRANSFER_REPORT_20260913.md",
+      "source_sha256_lf": "633768794066c2b216a81cd481fc2e62a101f9432561af202bc96f3ff8165e3c"
+    },
+    {
+      "from": "docs/research/sota/INFORMATION_EVIDENCE_MAP_20260913.md",
+      "to": "docs/reports/information/INFORMATION_EVIDENCE_MAP_20260913.md",
+      "source_sha256_lf": "c1714a643079cb2dd3d2dada77173aa94d0d118242089ab50930416003e87862"
+    },
+    {
+      "from": "docs/research/sota/INFORMATION_VALUE_AND_NEXT_ROUTE_20260913.md",
+      "to": "docs/reports/information/INFORMATION_VALUE_AND_NEXT_ROUTE_20260913.md",
+      "source_sha256_lf": "5c0a3f19e3c7777f23462acb0de22b81a934b47db4e55f20f43846721d81fed7"
+    },
+    {
+      "from": "docs/research/sota/INITIAL_PROPOSAL.md",
+      "to": "docs/history/proposals/INITIAL_PROPOSAL.md",
+      "source_sha256_lf": "039e512bd4d05408f68e6bdb0be9be0024c9d8abeb87302068b4bdd451d7d4fd"
+    },
+    {
+      "from": "docs/research/sota/JOURNAL_METHOD_REPORT_20260913.md",
+      "to": "docs/reports/mechanisms/JOURNAL_METHOD_REPORT_20260913.md",
+      "source_sha256_lf": "ccb383c7e87df6e9919a467eb11d6adcdb1df9d46b868130a81109aa681579b8"
+    },
+    {
+      "from": "docs/research/sota/JOURNAL_READING_NOTES_20260913.md",
+      "to": "docs/theory/JOURNAL_READING_NOTES_20260913.md",
+      "source_sha256_lf": "1d01c49013cbed04fa6436b44ea7ad78de0d964996e038c7105ee378a69842b7"
+    },
+    {
+      "from": "docs/research/sota/LONG_HISTORY_SOURCE_REPORT_20260913.md",
+      "to": "docs/reports/forecasting/LONG_HISTORY_SOURCE_REPORT_20260913.md",
+      "source_sha256_lf": "47ba9db1208dacae11e71d48c496f8107d9eee2c35cb1b916f17c1f7045e8cbf"
+    },
+    {
+      "from": "docs/research/sota/MATCHED_SIX_FOLD_REPORT_20260914.md",
+      "to": "docs/reports/benchmark/MATCHED_SIX_FOLD_REPORT_20260914.md",
+      "source_sha256_lf": "f6a496437860cfac9e36a2c075ff4955f85a35ca8cc546d3b5cfcb2d96aeef4b"
+    },
+    {
+      "from": "docs/research/sota/PHASE_CLOSEOUT_20260910.md",
+      "to": "docs/history/proposals/PHASE_CLOSEOUT_20260910.md",
+      "source_sha256_lf": "2f411c0fdb8b6b1170a6531467847ee6d0f48f555b9f2dd7e1881e1a930f6f86"
+    },
+    {
+      "from": "docs/research/sota/PHYSICS_ECONOMICS_TRAFFIC_READING_20260913.md",
+      "to": "docs/theory/PHYSICS_ECONOMICS_TRAFFIC_READING_20260913.md",
+      "source_sha256_lf": "9e8fefec062e2a5cbe15cfd49199216bfc58cd4ea506d0fd4bf39fb50f80c91e"
+    },
+    {
+      "from": "docs/research/sota/POINT_FORECAST_CONTRACT.md",
+      "to": "docs/theory/POINT_FORECAST_CONTRACT.md",
+      "source_sha256_lf": "813a56d8391ddbfc90c94104c4dd3209d112955bca5f716426314cf4f6240c6a"
+    },
+    {
+      "from": "docs/research/sota/PROBLEM_ANCHOR.md",
+      "to": "docs/history/proposals/PROBLEM_ANCHOR.md",
+      "source_sha256_lf": "97419edfd8b24b8b2124a3d9e3e23fdbcab86c9586274ecb0c2bf97061019cc7"
+    },
+    {
+      "from": "docs/research/sota/QUANTILE_MEAN_THEORY.md",
+      "to": "docs/theory/QUANTILE_MEAN_THEORY.md",
+      "source_sha256_lf": "afd49f086096cbd1d323c9051fe53b4edd5b4f912cf6b5bd2ed0bc4790fc0fef"
+    },
+    {
+      "from": "docs/research/sota/REFERENCE_HARM_STABILITY_REPORT_20260913.md",
+      "to": "docs/reports/forecasting/REFERENCE_HARM_STABILITY_REPORT_20260913.md",
+      "source_sha256_lf": "c332c33ecddd5ea5e9d35154045a7582d0250ae222c18a93b899df1f5408aa0b"
+    },
+    {
+      "from": "docs/research/sota/RESEARCH_DIRECTIONS_20260910.md",
+      "to": "docs/history/proposals/RESEARCH_DIRECTIONS_20260910.md",
+      "source_sha256_lf": "73cc2c0d45fb714285a7c1ed48beba743181908a9b55c2fa7dd2693f099bbd16"
+    },
+    {
+      "from": "docs/research/sota/RESEARCH_INDEX.md",
+      "to": "docs/research/README.md",
+      "source_sha256_lf": "2d1c549d93e8d627bdf6bc8f1bbbc668c7b92c575337ea82a7329bdc1aa8233d"
+    },
+    {
+      "from": "docs/research/sota/RESEARCH_ROADMAP.md",
+      "to": "docs/research/roadmap.md",
+      "source_sha256_lf": "c4aaaf893e2e0b5873c0fc87922efd7a3796b6d1e00380b6729cecd3aab3b7ce"
+    },
+    {
+      "from": "docs/research/sota/RESIDUAL_DERIVATION_PACKAGE.md",
+      "to": "docs/theory/RESIDUAL_DERIVATION_PACKAGE.md",
+      "source_sha256_lf": "5bb6723dbe1481c5285e23375bb21d3337613814dc1ba2cd3c93d71a1eef2ac5"
+    },
+    {
+      "from": "docs/research/sota/RESIDUAL_EXPERIMENT_PLAN.md",
+      "to": "docs/protocols/RESIDUAL_EXPERIMENT_PLAN.md",
+      "source_sha256_lf": "9db4cbea965fafa6c20ace4308a66fe3912ead8fe6208c5f482b2d482196938d"
+    },
+    {
+      "from": "docs/research/sota/RESIDUAL_INFORMATION_REPORT.md",
+      "to": "docs/reports/calibration/RESIDUAL_INFORMATION_REPORT.md",
+      "source_sha256_lf": "2b636409cb0f7d6fce2dcf169e8cb082512c865d54b4e90efbb2f4c15f0122e3"
+    },
+    {
+      "from": "docs/research/sota/REVIEW_SUMMARY.md",
+      "to": "docs/history/proposals/REVIEW_SUMMARY.md",
+      "source_sha256_lf": "24b7b1276ab2f7ddc4b0ae1cd9c343df39840a1bf34f70ae736d402febbe6902"
+    },
+    {
+      "from": "docs/research/sota/SHORT_STATE_RELAXATION_REPORT_20260913.md",
+      "to": "docs/reports/forecasting/SHORT_STATE_RELAXATION_REPORT_20260913.md",
+      "source_sha256_lf": "59c6a859d8693bb65c375dbc8d50c8c6e92ac12616e9630f34f629a2bfc65aa6"
+    },
+    {
+      "from": "docs/research/sota/SIGNAL_INFORMATION_THEORY.md",
+      "to": "docs/theory/SIGNAL_INFORMATION_THEORY.md",
+      "source_sha256_lf": "9640c08d0d0f2636bf6818792df45cefce00edcf549d421c4a3d5c7700a84480"
+    },
+    {
+      "from": "docs/research/sota/SIGNAL_REPLICATION_PLAN.md",
+      "to": "docs/protocols/SIGNAL_REPLICATION_PLAN.md",
+      "source_sha256_lf": "f30d75a10f5da3170e37d24de56112af31267a127c5c3904b367ee52bc07a342"
+    },
+    {
+      "from": "docs/research/sota/SIGNAL_REPLICATION_REPORT.md",
+      "to": "docs/reports/information/SIGNAL_REPLICATION_REPORT.md",
+      "source_sha256_lf": "e1a6bd8185dcc4985d60f37ae2d915eea9cd463b27fcba51fa38d1df3da089c6"
+    },
+    {
+      "from": "docs/research/sota/SOTA_COMPARISON_STANDARD.md",
+      "to": "docs/research/evaluation.md",
+      "source_sha256_lf": "696f1ba5a9ba5ec0af631882859fbec5f8fc60460cb38a100ecd84a550aa4988"
+    },
+    {
+      "from": "docs/research/sota/SOTA_GAP_ASSESSMENT_20260913.md",
+      "to": "docs/reviews/SOTA_GAP_ASSESSMENT_20260913.md",
+      "source_sha256_lf": "9abb353e103fcb50dc1e8ec358fd6caebd79598fa5ff90cfb63d341c74bf412f"
+    },
+    {
+      "from": "docs/research/sota/VOLUME_COMPOSITION_INCREMENT_PLAN_20260913.md",
+      "to": "docs/protocols/VOLUME_COMPOSITION_INCREMENT_PLAN_20260913.md",
+      "source_sha256_lf": "69be9e4bc2db5a327c69133d85795e7552f8689fcdf80aba54239fbbbd2d40e9"
+    },
+    {
+      "from": "docs/research/sota/VOLUME_COMPOSITION_INCREMENT_REPORT_20260913.md",
+      "to": "docs/reports/information/VOLUME_COMPOSITION_INCREMENT_REPORT_20260913.md",
+      "source_sha256_lf": "3e846221563dce52b9cad9712adc3078ac7cf45d0794c2711baa9932fcfa4bb6"
+    },
+    {
+      "from": "docs/research/sota/figures/coarse_memory_20260913.png",
+      "to": "docs/reports/figures/coarse_memory_20260913.png",
+      "source_sha256_lf": "9cdc2f1e15274c782398bd74d894087c02d04f08b03fa40466b2005fb8bd520a"
+    },
+    {
+      "from": "docs/research/sota/figures/coarse_memory_20260913.svg",
+      "to": "docs/reports/figures/coarse_memory_20260913.svg",
+      "source_sha256_lf": "b7de2d1211efc962cb1564768bd9c6433b067fff2cc22e30affcdbe1d5a4354f"
+    },
+    {
+      "from": "docs/research/sota/figures/comprehensive_development_comparison.png",
+      "to": "docs/reports/figures/comprehensive_development_comparison.png",
+      "source_sha256_lf": "59482331d0ac36630fbebe163162a7598b00aebd3363752305478f92ab71df6b"
+    },
+    {
+      "from": "docs/research/sota/figures/dual_risk_probe_20260913.png",
+      "to": "docs/reports/figures/dual_risk_probe_20260913.png",
+      "source_sha256_lf": "d412cfe461f44c3971ee9ee684ff92eefa9972962a2cecd22e6b68753bc36c3e"
+    },
+    {
+      "from": "docs/research/sota/figures/dual_risk_probe_20260913.svg",
+      "to": "docs/reports/figures/dual_risk_probe_20260913.svg",
+      "source_sha256_lf": "cd49f8f2c16a4b08402ff9ceb59556cfbe8725d556f5b3b70cafddcbed054b4f"
+    },
+    {
+      "from": "docs/research/sota/figures/fixed_reference_correction.png",
+      "to": "docs/reports/figures/fixed_reference_correction.png",
+      "source_sha256_lf": "b39becf231f8ae3f18c5e7406ae8cbfbcde10ad3d92d602444ef465516a23582"
+    },
+    {
+      "from": "docs/research/sota/figures/forward_residual_transfer.png",
+      "to": "docs/reports/figures/forward_residual_transfer.png",
+      "source_sha256_lf": "04fbbdf5e5e7c8418d302883a77f5abc8615f98e4cfcf0be9d452b03b1207e3a"
+    },
+    {
+      "from": "docs/research/sota/figures/reference_harm_stability.png",
+      "to": "docs/reports/figures/reference_harm_stability.png",
+      "source_sha256_lf": "7c3f18600d0c459389c2666a55cffe6d19337be6ae9e70844b55c0d901fb0d87"
+    },
+    {
+      "from": "docs/research/sota/next_protocol_requirements.md",
+      "to": "docs/protocols/next_protocol_requirements.md",
+      "source_sha256_lf": "45ae85442455cf2ffdd760ebc4fe4984c7bb63e72889eece6bde00a71aba1dca"
+    }
+  ]
+}

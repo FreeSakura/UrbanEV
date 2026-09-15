@@ -4,6 +4,7 @@ import re
 import shutil
 import subprocess
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[2]
 def esc(value):
@@ -83,20 +84,31 @@ def convert(text):
     return '\n\n'.join(out)
 
 
+def github_links(text, source):
+    """Resolve each Markdown source before combining relocated documents."""
+    def link(match):
+        label, href = match.groups()
+        parts = urlsplit(href)
+        if not parts.scheme and not parts.netloc:
+            target = (source.parent / parts.path).resolve() if parts.path else source.resolve()
+            relative = target.relative_to(ROOT).as_posix()
+            href = 'https://github.com/FreeSakura/UrbanEV/blob/main/' + relative
+            if parts.query:
+                href += '?' + parts.query
+            if parts.fragment:
+                href += '#' + parts.fragment
+        return '[' + label + '](' + href + ')'
+    return re.sub(r'\[([^\]]+)\]\(([^)]+)\)', link, text)
+
+
 def main():
     directory = ROOT / 'paper/research'
     directory.mkdir(parents=True, exist_ok=True)
-    source = ROOT / 'docs/research/PAIRED_AUDIT_V3_REPORT.md'
-    derivation = ROOT / 'docs/research/DERIVATION_V3.md'
-    body = source.read_text(encoding='utf-8') + '\n\n## 附录A. 完整证明\n\n' + derivation.read_text(encoding='utf-8')
-    # Resolve Markdown-relative public links from the report's source directory.
-    def link(match):
-        label, href = match.groups()
-        if not href.startswith(('https://', 'http://')):
-            relative = (source.parent / href).resolve().relative_to(ROOT).as_posix()
-            href = 'https://github.com/FreeSakura/UrbanEV/blob/main/' + relative
-        return '['+label+']('+href+')'
-    body = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', link, body)
+    source = ROOT / 'docs/reports/audit/PAIRED_AUDIT_V3_REPORT.md'
+    derivation = ROOT / 'docs/theory/DERIVATION_V3.md'
+    body = github_links(source.read_text(encoding='utf-8'), source)
+    body += '\n\n## 附录A. 完整证明\n\n'
+    body += github_links(derivation.read_text(encoding='utf-8'), derivation)
     fontset = 'windows' if os.name == 'nt' else 'fandol'
     preamble = r"""\documentclass[UTF8,11pt,a4paper,fontset=FONTSET]{ctexart}
 \usepackage{amsmath,amssymb,mathtools,booktabs,longtable,array,enumitem,xcolor,hyperref,fancyhdr,textcomp}
