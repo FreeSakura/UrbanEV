@@ -89,6 +89,11 @@ def csv_text(rows: list[dict], fields: list[str]) -> str:
     return stream.getvalue()
 
 
+def sorted_paths(paths):
+    """Use the same ordering on case-insensitive Windows and case-sensitive POSIX."""
+    return sorted(paths, key=lambda path: path.as_posix())
+
+
 def catalog_records(root: Path) -> list[dict]:
     catalog = read_json(root / "results/studies.json")
     if catalog.get("schema_version") != "urbanev-study-catalog/v1":
@@ -183,7 +188,7 @@ def generate(root: Path) -> dict[str, str]:
     outputs = {}
     inventory = []
     for study in studies:
-        for path in sorted((root / study["evidence_dir"]).rglob("*")):
+        for path in sorted_paths((root / study["evidence_dir"]).rglob("*")):
             if path.is_file():
                 data = normalized_bytes(path)
                 inventory.append({"study_id": study["id"], "path": path.relative_to(root).as_posix(),
@@ -236,7 +241,7 @@ def generate(root: Path) -> dict[str, str]:
         for nested, (child_heading, _) in FOLDER_INTROS.items():
             if Path(nested).parent.as_posix() == folder:
                 lines.append(f"- [{child_heading}]({relative_link(nested + '/README.md', source)})")
-        for path in sorted((root / folder).glob("*.md")):
+        for path in sorted_paths((root / folder).glob("*.md")):
             if path.name != "README.md":
                 lines.append(f"- [{title(path)}]({path.name})")
         outputs[source] = "\n".join(lines) + "\n"
@@ -266,7 +271,7 @@ def generate(root: Path) -> dict[str, str]:
              "不会因为运行资料构建器而被调用。", "", "[安装与复现](../docs/guides/reproducibility.md) · [架构](../docs/guides/architecture.md)", ""]
     for folder in ("scripts", "scripts/research"):
         lines += [f"## {folder}", "", "| 脚本 | 用途（源码说明） |", "|---|---|"]
-        for path in sorted((root / folder).glob("*.py")):
+        for path in sorted_paths((root / folder).glob("*.py")):
             description = ast.get_docstring(ast.parse(path.read_text(encoding="utf-8-sig"))) or "参见脚本内入口与对应研究配置。"
             description = description.splitlines()[0].replace("|", "／").replace("`", "")
             name = path.relative_to(root).as_posix()

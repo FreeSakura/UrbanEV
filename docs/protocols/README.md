@@ -12,7 +12,7 @@
 - [连续步长V2求解器：实现规格与未通过的验收](CONTINUOUS_STEP_V2_SOLVER_SPEC.md)
 - [一次H3/H12训练内部校准：限定授权与运行清单](CONTINUOUS_V2_CALIBRATION_2H_PLAN.md)
 - [下一阶段协议：双风险方向的有限步长开发检验](DUAL_RISK_FINITE_STEP_PLAN_20260913.md)
-- [下一协议的研究缺口与比较清单](next_protocol_requirements.md)
 - [残差信息实验：先发现可外推信号，再打开验证段](RESIDUAL_EXPERIMENT_PLAN.md)
 - [两条信息线索的固定复核方案](SIGNAL_REPLICATION_PLAN.md)
 - [唯一下一协议：电量在给定总时长后的动态增量检验](VOLUME_COMPOSITION_INCREMENT_PLAN_20260913.md)
+- [下一协议的研究缺口与比较清单](next_protocol_requirements.md)

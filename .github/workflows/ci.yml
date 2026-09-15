@@ -22,7 +22,7 @@ jobs:
           python scripts/repository.py build
           git diff --exit-code -- results docs scripts/README.md
       - name: Check patch whitespace
-        run: git diff --check
+        run: git show --format= --check HEAD
   forecasting-smoke:
     runs-on: ubuntu-latest
     steps:

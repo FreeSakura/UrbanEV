@@ -3,7 +3,7 @@ import csv
 import importlib.util
 import hashlib
 import json
-from pathlib import Path
+from pathlib import Path, PurePosixPath, PureWindowsPath
 
 import pytest
 
@@ -130,3 +130,10 @@ def test_manifest_check_detects_changed_and_missing_content(tmp_path):
     assert any("content mismatch" in error for error in repository.manifest_errors(tmp_path))
     (tmp_path / "README.md").unlink()
     assert any("missing" in error for error in repository.manifest_errors(tmp_path))
+
+
+def test_mixed_case_document_order_is_identical_across_platforms():
+    names = ["SIGNAL_PLAN.md", "next_protocol.md", "CONTINUOUS_PLAN.md", "README.md"]
+    windows = repository.sorted_paths(PureWindowsPath(name) for name in names)
+    posix = repository.sorted_paths(PurePosixPath(name) for name in names)
+    assert [path.as_posix() for path in windows] == [path.as_posix() for path in posix] == sorted(names)

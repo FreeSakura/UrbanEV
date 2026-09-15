@@ -39,8 +39,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "sha256": "c1d33a9f516fbcbe288cf9bc5ceb08207b001dc47b6c55e95bbf5657f077fa3c",
-      "bytes": 4408,
+      "sha256": "1e6ac2e900e2f33759c4a81759f2dbaaae654d449f46078f3e495a28c5398a62",
+      "bytes": 4423,
       "role": "github",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -3540,7 +3540,7 @@
     },
     {
       "path": "docs/protocols/README.md",
-      "sha256": "d04060c40c56a51b0f1a814b251a85903917b48bf1826615282b01eb27d68156",
+      "sha256": "166fe5f4ce6ae84d8033b4f95d778ad284c8a286a63a2c26801f377afbfc54e7",
       "bytes": 1189,
       "role": "paper_or_documentation",
       "origin": "UrbanEV Forecast project",
@@ -5232,8 +5232,8 @@
     },
     {
       "path": "scripts/repository.py",
-      "sha256": "f53ce5f3efcb6394e539ce33cea2d692541d8ee4c83474c70bfae8b832e5ab0b",
-      "bytes": 24427,
+      "sha256": "34ec0784e54e8b17c0c90c47040368f4778715b52e8af63768a6ff16494c4393",
+      "bytes": 24617,
       "role": "scripts",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
@@ -6510,8 +6510,8 @@
     },
     {
       "path": "tests/test_repository_maintenance.py",
-      "sha256": "59814174725c4641aa5c6ef1e4252ff46f692ab6f63fc14a8ef47461bbe931ef",
-      "bytes": 5163,
+      "sha256": "0370edaafdc025eb46f39898ddff9449b8f8d7b6c2a47147f4c0fa81cdd15d78",
+      "bytes": 5610,
       "role": "tests",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
