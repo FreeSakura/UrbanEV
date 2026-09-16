@@ -13,6 +13,7 @@ V1/V2/V3 是历史演进版本；主题推导和阅读记录各有假设与适�
 - [点预测输出契约：先核对泛函，再比较RMSE](POINT_FORECAST_CONTRACT.md)
 - [有界分位信息与平方损失适配](QUANTILE_MEAN_THEORY.md)
 - [时长增量残差：理论推导与实验约束](RESIDUAL_DERIVATION_PACKAGE.md)
+- [AP1：可识别性层次、冲突代价与通用算法定位](SHARED_MISSING_EVENTS_AP1_THEORY.md)
 - [共享缺测持续事件的压缩状态精确比较](SHARED_MISSING_EVENTS_COMPRESSION.md)
 - [从信息增量到可检验的预测贡献](SIGNAL_INFORMATION_THEORY.md)
 - [UrbanEV后续研究的统一理论报告](THEORY_REPORT_V1.md)

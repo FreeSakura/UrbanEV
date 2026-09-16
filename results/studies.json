@@ -770,6 +770,35 @@
         "artifacts/summaries/shared_missing_events_ap0/data_integrity.json",
         "artifacts/summaries/shared_missing_events_ap0/power_extension/experiment_summary.json"
       ]
+    },
+    {
+      "id": "shared_missing_events_ap1",
+      "title": "共享缺测评价层次与论文主张锁定",
+      "category": "shared_missing",
+      "evidence_kind": "development",
+      "summary": "通用DFA同构；两两LP获得全部实测新增判向。新年5周级+1站点年度判断仅在北京K72，高阶无额外判向；论文锁定为评价层次与适用边界。",
+      "evidence_dir": "artifacts/summaries/shared_missing_events_ap1",
+      "reports": [
+        "docs/reports/audit/SHARED_MISSING_EVENTS_AP1_REPORT.md",
+        "docs/research/SHARED_MISSING_EVENTS_AP1_CLAIMS_LOCK.md",
+        "docs/theory/SHARED_MISSING_EVENTS_AP1_THEORY.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_shared_missing_ap1.py",
+        "scripts/research/benchmark_shared_missing_ap1.py",
+        "scripts/research/verify_shared_missing_ap1_milp.py",
+        "scripts/research/explain_shared_missing_ap1.py",
+        "scripts/research/summarize_shared_missing_ap1.py"
+      ],
+      "configs": [
+        "configs/research/SHARED_MISSING_EVENTS_AP1_20260916.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/shared_missing_events_ap1/summary.json",
+        "artifacts/summaries/shared_missing_events_ap1/CLAIMS_LOCK.json",
+        "artifacts/summaries/shared_missing_events_ap1/new_execution.json",
+        "artifacts/summaries/shared_missing_events_ap1/milp_execution.json"
+      ]
     }
   ]
 }

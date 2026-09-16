@@ -34,6 +34,7 @@
 | [analyze_residual_clipping.py](research/analyze_residual_clipping.py) | Diagnostic of the derivative of clipped MAE; never tunes alpha. |
 | [analyze_residual_geometry.py](research/analyze_residual_geometry.py) | Post-fit identity diagnostics only; never changes model selection or gates. |
 | [analyze_shared_missing_p0.py](research/analyze_shared_missing_p0.py) | Summarize all pilot comparisons and examine the component sign criterion. |
+| [benchmark_shared_missing_ap1.py](research/benchmark_shared_missing_ap1.py) | Fair AP1 language/compiler/kernel benchmark with explicit cutoff records. |
 | [build_report.py](research/build_report.py) | Build the Chinese V3 report using XeLaTeX (ctex required). |
 | [cache_foundation.py](research/cache_foundation.py) | Generate PRIVATE train/validation quantile caches after a passing profile. |
 | [check_shared_missing_decisions.py](research/check_shared_missing_decisions.py) | Independently verify every natural decision change with binary linear programs. |
@@ -41,6 +42,7 @@
 | [dual_observation_pilot.py](research/dual_observation_pilot.py) | Duration-information and soft observation-operator pilot, CPU only. |
 | [dual_region_pilot.py](research/dual_region_pilot.py) | Registered K32 partition/swap pilot; all supervised selection is in training. |
 | [evaluate_point_heads.py](research/evaluate_point_heads.py) | Evaluate the frozen B2 point systems; write aggregates, keep parameters private. |
+| [explain_shared_missing_ap1.py](research/explain_shared_missing_ap1.py) | Classify endpoint conflict sizes without fitting or selecting any predictor. |
 | [extend_observation_optimization.py](research/extend_observation_optimization.py) | Post-hoc common-budget optimization diagnosis; original v1 remains unchanged. |
 | [extract_historical_comparison_summaries.py](research/extract_historical_comparison_summaries.py) | Extract original reported legacy metrics without reopening targets or predictions. |
 | [fetch_shared_missing_data.py](research/fetch_shared_missing_data.py) | Fetch the two public UCI archives for the shared-missing-events pilot. |
@@ -70,10 +72,12 @@
 | [run_long_history_source_ablation.py](research/run_long_history_source_ablation.py) | Eight fixed deterministic history ablations, stage-bounded real data access. |
 | [run_paris_event_audit.py](research/run_paris_event_audit.py) | Audit an explicitly supplied Paris DEVELOPMENT shard; export aggregates only. |
 | [run_reference_harm_stability.py](research/run_reference_harm_stability.py) | Frozen-base equal-parameter O-D interaction study on the registered CUDA device. |
+| [run_shared_missing_ap1.py](research/run_shared_missing_ap1.py) | Execute AP1: AP0 hierarchy replay, fixed old-data selection and new-year tests. |
 | [run_shared_missing_p0.py](research/run_shared_missing_p0.py) | A-P0: causal light predictors and exact comparisons on two public prefixes. |
 | [run_short_state_relaxation.py](research/run_short_state_relaxation.py) | Frozen short-state experiment: 8 neural runs, 2 ridge fits, no foundation calls. |
 | [run_volume_composition_increment.py](research/run_volume_composition_increment.py) | Execute one separately registered dynamic-volume information experiment. |
 | [score_full_benchmark.py](research/score_full_benchmark.py) | Score only a complete frozen prediction set; no fitting or model selection. |
+| [summarize_shared_missing_ap1.py](research/summarize_shared_missing_ap1.py) | Produce AP1 denominators, candidate decisions, concentration and morphology. |
 | [verify_benchmark_preparation.py](research/verify_benchmark_preparation.py) | Synthetic-only comparison preparation. Accepts source roots, never real data. |
 | [verify_calibration_2h_results.py](research/verify_calibration_2h_results.py) | Recompute published-score candidates from saved outputs; no refitting/selection. |
 | [verify_continuous_candidates.py](research/verify_continuous_candidates.py) | Synthetic candidate-reduction regression receipts; no research arrays loaded. |
@@ -82,4 +86,5 @@
 | [verify_continuous_v2_registration.py](research/verify_continuous_v2_registration.py) | Metadata-only V2 registration check. Never loads labels or scores predictions. |
 | [verify_dual_risk_finite_step_calibration.py](research/verify_dual_risk_finite_step_calibration.py) | Recompute existing calibration points from saved models; never fit or select. |
 | [verify_persistent_events.py](research/verify_persistent_events.py) | A-P0 exhaustive correctness and matched-kernel timing; no real data reads. |
+| [verify_shared_missing_ap1_milp.py](research/verify_shared_missing_ap1_milp.py) | Deterministic, outcome-stratified MILP checks, including negatives and cutoffs. |
 | [verify_volume_increment_scores.py](research/verify_volume_increment_scores.py) | Independent reductions of already registered points from archived directions. |

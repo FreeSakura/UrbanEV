@@ -36,13 +36,14 @@
 
 ## 所有研究与证据
 
-共登记 **40 个证据目录、320 个原公开文件**。类型只表示证据阶段，不代表方法成功。
+共登记 **41 个证据目录、360 个原公开文件**。类型只表示证据阶段，不代表方法成功。
 
 ### 共享缺测与精确比较
 
 | 研究 | 类型 | 已有认识与范围 |
 |---|---|---|
 | [共享缺测持续事件的精确配对比较](../docs/reports/audit/SHARED_MISSING_EVENTS_AP0_REPORT.md) · [证据](../artifacts/summaries/shared_missing_events_ap0) | 开发证据 | 首轮局部自然比较新增6个严格判定（3个为Logistic与GB）；整段新增0，功率180天补充新增0。压缩DP、穷举和独立MILP一致；新颖性仍待近邻算法对照。 |
+| [共享缺测评价层次与论文主张锁定](../docs/reports/audit/SHARED_MISSING_EVENTS_AP1_REPORT.md) · [证据](../artifacts/summaries/shared_missing_events_ap1) | 开发证据 | 通用DFA同构；两两LP获得全部实测新增判向。新年5周级+1站点年度判断仅在北京K72，高阶无额外判向；论文锁定为评价层次与适用边界。 |
 
 ### 基准与比较
 

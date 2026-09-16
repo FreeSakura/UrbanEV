@@ -1,5 +1,10 @@
 # UrbanEV Forecast
 
+## AP1 已完成：论文主张已收缩
+
+AP1 完成旧自然面板重算、通用DFA/两两LP/分层MILP对照及指定新年份评价。新增5个周级和1个站点年度判向均由两两LP取得；撤回独立算法首创及高阶优化额外模型选择价值。[完整结果与锁定主张](docs/reports/audit/SHARED_MISSING_EVENTS_AP1_REPORT.md)。保留AP2范围未使用。
+
+
 [![CI](https://github.com/FreeSakura/UrbanEV/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/FreeSakura/UrbanEV/actions/workflows/ci.yml)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Docs: CC BY 4.0](https://img.shields.io/badge/docs-CC_BY_4.0-green.svg)](licenses/CC-BY-4.0.txt)

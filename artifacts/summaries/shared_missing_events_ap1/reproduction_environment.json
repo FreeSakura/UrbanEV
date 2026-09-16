@@ -1,0 +1,24 @@
+{
+  "record_role": "Final reproduction source snapshot; analysis and compiler-stage instrumentation completed after initial scoring",
+  "base_commit": "65686b305b4633a4fea8c6c20050d99c24c7b16b",
+  "python": "3.10.8",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "numba": "0.65.1",
+    "matplotlib": "3.10.8"
+  },
+  "source_sha256_lf": {
+    "src/urbanev_audit/event_relaxations.py": "0b148825bd5b394031f16745740652b615aa6cbb777b564ce9b6ad3a9c0ce347",
+    "src/urbanev_audit/regular_event_baseline.py": "51c029004ce34a64ccd3a79ddc385da58aea665d75b4c86f35055a1253762760",
+    "src/urbanev_audit/event_comparison_ap1.py": "37304e587ab93be2d9d0c4e43edee3857159c2b0befeda31b4e7178084082ab8",
+    "scripts/research/benchmark_shared_missing_ap1.py": "48c7cbe122ae5491b71ae11ffab8e7cc8ea80161675690ef6912f23d069d01d8",
+    "scripts/research/explain_shared_missing_ap1.py": "cbfd97f03349ece592bd621eebe93133207ced88a03ebd7ec985c875af235899",
+    "scripts/research/run_shared_missing_ap1.py": "5ed6dc821f065396ed0052e4637ae0ebd624f7cb472faa4a9a7964544a6b0bdb",
+    "scripts/research/summarize_shared_missing_ap1.py": "7c023a6dfef0f18d4688fe01a71e3694334570acd0c9df3a7c6dc9c84ac39245",
+    "scripts/research/verify_shared_missing_ap1_milp.py": "e66fb528940e5e53f5c917f54136349daf7140194d60d6f08ff71fbe4d3bde97"
+  },
+  "protocol_sha256_lf": "0a84b79d5ca3585942029d816ce444bbe485dac73e9669501832e988b27d934b"
+}

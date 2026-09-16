@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "test_count": 34,
+  "tests": [
+    "tests/test_ap1_baselines.py",
+    "tests/test_persistent_events.py",
+    "tests/test_shared_missing_pilot.py",
+    "tests/test_repository_maintenance.py"
+  ],
+  "checks": [
+    "All pairwise implications versus completion enumeration",
+    "Compact interval LP versus explicit all-pairs LP",
+    "Generic DFA versus specialized automaton",
+    "Three-window higher-order counterexample",
+    "All terminal states legal",
+    "Full support for origin blocks",
+    "Near-zero outward enclosure",
+    "AP0 evidence unchanged"
+  ],
+  "full_old_forecast_suite_rerun": false,
+  "reason": "Only relevant mathematical, pilot and repository checks were needed; historical forecast code was unchanged"
+}
