@@ -8,4 +8,5 @@
 
 - [后续研究建议的现状核对与条件调用准备](ADAPTIVE_INVOCATION_REVIEW_20260914.md)
 - [基线登记：来源、复现与可比性](BASELINE_REVIEW_20260914.md)
+- [候选 A：最近邻方法及新颖性核查](SHARED_MISSING_EVENTS_LITERATURE_20260916.md)
 - [距离SOTA有多远：截至c2404cf的证据评估](SOTA_GAP_ASSESSMENT_20260913.md)

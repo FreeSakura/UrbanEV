@@ -1,0 +1,3 @@
+dataset,K,L,training_windows,positive_training_windows,features,constant_probability,fit_seconds
+household,60,5,128101,33939,30,0.26494305363652687,4.430406799991033
+household,180,5,127981,55303,30,0.43211989092301323,2.6524708999932045

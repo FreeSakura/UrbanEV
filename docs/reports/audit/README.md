@@ -7,3 +7,4 @@
 [项目状态](../../PROJECT_STATUS.md) · [结果总览](../../../results/README.md)
 
 - [UrbanEV 理论深化与实验反馈 V3](PAIRED_AUDIT_V3_REPORT.md)
+- [候选 A：共享缺测持续事件的首轮科研验证](SHARED_MISSING_EVENTS_AP0_REPORT.md)

@@ -1,0 +1,2 @@
+dataset,series,rows,start,end,missing,missing_rate,train_missing,evaluation_missing,negative_measurements,regular_grid
+household,household,259200,2006-12-16 17:24:00,2007-06-14 17:23:00,3772,0.014552469135802468,8,3763,0,True

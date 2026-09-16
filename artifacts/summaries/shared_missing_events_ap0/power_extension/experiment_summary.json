@@ -1,0 +1,42 @@
+{
+  "study_id": "shared_missing_events_ap0_power_extension",
+  "status": "COMPLETE",
+  "datasets": [
+    "household"
+  ],
+  "probability_predictors": 3,
+  "training_configurations": 2,
+  "fitted_classifiers": 4,
+  "reported_pair_panels": 78,
+  "wall_seconds": 12.465070699996431,
+  "cpu_seconds": 16.296875,
+  "python": "3.10.8",
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "config_sha256": "88267678831978551320b9c844afc276af96087a5a72b30ffe98ffb30f3db6c9",
+  "prediction_use": "fixed per panel; masked observations are removed before recomputing features",
+  "confidence_interval": false,
+  "threshold_or_model_selection_on_evaluation": false,
+  "full_station": {
+    "comparisons": 6,
+    "with_ambiguous_labels": 6,
+    "strictly_tighter": 6,
+    "new_strict_decisions": 0,
+    "median_relative_tightening_when_ambiguous": 0.003012024994275711
+  },
+  "fixed_panel": {
+    "comparisons": 54,
+    "with_ambiguous_labels": 18,
+    "strictly_tighter": 8,
+    "new_strict_decisions": 0,
+    "median_relative_tightening_when_ambiguous": 4.387313889298412e-14
+  },
+  "artificial": {
+    "comparisons": 18,
+    "with_ambiguous_labels": 18,
+    "strictly_tighter": 5,
+    "new_strict_decisions": 0,
+    "median_relative_tightening_when_ambiguous": 1.5523228175046798e-14
+  },
+  "artificial_truth_violations": 0
+}

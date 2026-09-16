@@ -113,6 +113,7 @@
 |---|---|
 | [UrbanEV 理论深化与实验反馈 V3](reports/audit/PAIRED_AUDIT_V3_REPORT.md) | md |
 | [配对事件审计](reports/audit/README.md) | md |
+| [候选 A：共享缺测持续事件的首轮科研验证](reports/audit/SHARED_MISSING_EVENTS_AP0_REPORT.md) | md |
 
 ## docs/reports/benchmark
 
@@ -186,6 +187,7 @@
 | [后续研究建议的现状核对与条件调用准备](reviews/ADAPTIVE_INVOCATION_REVIEW_20260914.md) | md |
 | [基线登记：来源、复现与可比性](reviews/BASELINE_REVIEW_20260914.md) | md |
 | [评审与来源快照](reviews/README.md) | md |
+| [候选 A：最近邻方法及新颖性核查](reviews/SHARED_MISSING_EVENTS_LITERATURE_20260916.md) | md |
 | [距离SOTA有多远：截至c2404cf的证据评估](reviews/SOTA_GAP_ASSESSMENT_20260913.md) | md |
 
 ## docs/theory
@@ -200,6 +202,7 @@
 | [有界分位信息与平方损失适配](theory/QUANTILE_MEAN_THEORY.md) | md |
 | [理论与推导](theory/README.md) | md |
 | [时长增量残差：理论推导与实验约束](theory/RESIDUAL_DERIVATION_PACKAGE.md) | md |
+| [共享缺测持续事件的压缩状态精确比较](theory/SHARED_MISSING_EVENTS_COMPRESSION.md) | md |
 | [从信息增量到可检验的预测贡献](theory/SIGNAL_INFORMATION_THEORY.md) | md |
 | [UrbanEV后续研究的统一理论报告](theory/THEORY_REPORT_V1.md) | md |
 | [理论深化与实验反馈：从路径信息到可审查的事件预测](theory/THEORY_REPORT_V2.md) | md |

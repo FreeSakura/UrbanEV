@@ -8,6 +8,10 @@
 
 本项目由 FreeSakura 维护，独立于 [UrbanEV 数据集官方项目](https://github.com/IntelligentSystemsLab/UrbanEV)。主要问题是：滞后观测和长历史带来多少预测信息，动态结构能否在同信息强基线之上产生可重复的收益？
 
+## 当前研究：共享缺测下的模型比较
+
+2026-09-16 已完成候选 A 的首轮验证：压缩动态规划、完整推导、两套真实数据及独立整数规划核对。局部自然面板出现6个新增胜负判定，整段与功率补充未产生新增判定。[研究报告](docs/reports/audit/SHARED_MISSING_EVENTS_AP0_REPORT.md) · [理论与实现](docs/theory/SHARED_MISSING_EVENTS_COMPRESSION.md)。旧六折不再是新方向的前置条件。
+
 ## 从这里开始
 
 | 你希望了解 | 入口 |

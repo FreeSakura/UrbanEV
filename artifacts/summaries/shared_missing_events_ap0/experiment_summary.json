@@ -1,0 +1,43 @@
+{
+  "study_id": "shared_missing_events_ap0",
+  "status": "COMPLETE",
+  "datasets": [
+    "beijing",
+    "household"
+  ],
+  "probability_predictors": 3,
+  "training_configurations": 4,
+  "fitted_classifiers": 8,
+  "reported_pair_panels": 1278,
+  "wall_seconds": 12.285545799997635,
+  "cpu_seconds": 16.5625,
+  "python": "3.10.8",
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "config_sha256": "270d7c6a11011fceeae8a96a4a4db89b6178cba74f782fcf98c41727ea65861d",
+  "prediction_use": "fixed per panel; masked observations are removed before recomputing features",
+  "confidence_interval": false,
+  "threshold_or_model_selection_on_evaluation": false,
+  "full_station": {
+    "comparisons": 78,
+    "with_ambiguous_labels": 42,
+    "strictly_tighter": 31,
+    "new_strict_decisions": 0,
+    "median_relative_tightening_when_ambiguous": 0.04383911222139123
+  },
+  "fixed_panel": {
+    "comparisons": 966,
+    "with_ambiguous_labels": 57,
+    "strictly_tighter": 33,
+    "new_strict_decisions": 6,
+    "median_relative_tightening_when_ambiguous": 0.02304585988918644
+  },
+  "artificial": {
+    "comparisons": 234,
+    "with_ambiguous_labels": 213,
+    "strictly_tighter": 182,
+    "new_strict_decisions": 8,
+    "median_relative_tightening_when_ambiguous": 0.11115263273027932
+  },
+  "artificial_truth_violations": 0
+}

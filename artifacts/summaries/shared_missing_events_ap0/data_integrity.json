@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "complete_official_archives": [
+    {
+      "file": "beijing_original.zip",
+      "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00501/PRSA2017_Data_20130301-20170228.zip",
+      "sha256": "d1b9261c54132f04c374f762f1e5e512af19f95c95fd6bfa1e8ac7e927e3b0b8",
+      "bytes": 7959991
+    },
+    {
+      "file": "household_original.zip",
+      "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00235/household_power_consumption.zip",
+      "sha256": "9f84b46ade8a2d8e1286ec4b2b6c2987a45a755c59f263be3b3b3d10dfbda3ff",
+      "bytes": 20640916
+    }
+  ],
+  "archive_crc_validation": "Both complete archives passed zipfile.testzip()",
+  "streamed_prefix_checks": [
+    {
+      "rows": 129600,
+      "sha256": "49a3bde7b6a87e50ef12c66775f418bdc10878022599472f2fe218080ff5dccd",
+      "matches_complete_official_archive": true
+    },
+    {
+      "rows": 259200,
+      "sha256": "5e267e39fb1a9d9aa9fbb1ce93c327703b48874b73164c928eade97ecd697feb",
+      "matches_complete_official_archive": true
+    }
+  ]
+}

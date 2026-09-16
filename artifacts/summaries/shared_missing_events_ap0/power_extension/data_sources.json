@@ -1,0 +1,13 @@
+[
+  {
+    "dataset": "household",
+    "uci_id": 235,
+    "prefix_sha256": "5e267e39fb1a9d9aa9fbb1ce93c327703b48874b73164c928eade97ecd697feb",
+    "prefix_bytes": 16569082,
+    "prefix_records": 259200,
+    "source_type": "Exact first records decoded from the official ZIP stream; not an imputed or generated dataset",
+    "download": "https://archive.ics.uci.edu/ml/machine-learning-databases/00235/household_power_consumption.zip",
+    "official_page": "https://archive.ics.uci.edu/dataset/235",
+    "license": "CC-BY-4.0"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "study_id": "shared_missing_events_ap0",
+  "created_date": "2026-09-16",
+  "purpose": "Exact paired loss bounds for overlapping persistent events with shared missing observations",
+  "authorization": "User requested execution of candidate A; A-P0 is the initial research stage",
+  "compute": {"device": "cpu", "threads": 2, "cpu_hour_budget": 6},
+  "data_access": "Download public UCI archives; numerical research uses the fixed development prefixes below",
+  "datasets": {
+    "beijing": {"uci_id": 501, "variable": "PM2.5", "unit": "microgram/m3", "prefix_rows_per_series": 8760, "train_end": 4380, "calibration_end": 6570, "threshold": 75.0, "windows": [24,72], "run_length": 3, "history": 168, "panel_length": 168, "artificial_max_length": 2048},
+    "household": {"uci_id": 235, "variable": "Global_active_power", "unit": "kW", "prefix_rows_per_series": 129600, "train_end": 64800, "calibration_end": 86400, "threshold": 3.0, "windows": [60,180], "run_length": 5, "history": 1440, "panel_length": 10080, "artificial_max_length": 4096}
+  },
+  "event": "At least L consecutive observed-time-grid high indicators (value >= threshold) within the next K records; not a legal warning or a claim about values between samples",
+  "predictors": {
+    "constant": "Laplace-smoothed training event frequency on unambiguous labels",
+    "logistic": {"C": 1.0, "solver": "lbfgs", "max_iter": 500},
+    "hist_gradient_boosting": {"max_iter": 100, "learning_rate": 0.05, "max_leaf_nodes": 15, "min_samples_leaf": 50, "l2_regularization": 1.0, "early_stopping": false}
+  },
+  "training": "One pooled model per dataset/window. Training targets must end before train_end; only logically identified labels are used. Calibration prefix is reserved and not used for selection in this pilot. No hyperparameter or threshold search.",
+  "features": "Only measurements strictly before each forecast origin; causal forward-fill plus training median initialization, lag/rolling summaries, missing indicators and known calendar/station indicators.",
+  "natural_evaluation": "Every complete future window in the fixed evaluation suffix; report all three model pairs, each station, and the pooled finite panel. Weekly non-overlapping panels are secondary descriptive comparisons, not independent trials.",
+  "artificial_evaluation": {"panel_selection": "Earliest longest naturally complete run in the evaluation suffix, truncated to artificial_max_length", "masks": ["iid_10", "iid_30", "blocks_10"], "seed": 20260916, "rules": "Hide raw measurements before recomputing causal features; freeze models. Original complete labels are used only to check bound containment, never to form predictions or choose pairs."},
+  "correctness": "Brute-force enumeration, old suffix DP and compressed DP agreement; edge K=1, L=1, L=K, all missing/observed, signed coefficients, same-sign equality, explicit decision-changing example",
+  "timing": {"T": 2048, "windows": [4,8,12,16,24,72,180], "L": 3, "missing_rate": 0.3, "repeats": 3, "old_suffix_max_window": 16, "exclude_jit_compile_from_kernel_timing": true},
+  "scope": "Finite-panel identification, not population confidence or a missing-value recovery claim. Novelty and real decision value are assessed separately. No UrbanEV/Paris training restart."
+}

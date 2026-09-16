@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "cases": 6,
+  "max_abs_error": 9.71445146547012e-17,
+  "wall_seconds": 0.6817252000037115,
+  "method": "Independent binary ILP with AND run variables and OR window-event variables; zero requested MIP gap",
+  "records": [
+    {
+      "dataset": "beijing",
+      "series": "Gucheng",
+      "K": 24,
+      "panel_start": 7914,
+      "model_A": "constant",
+      "model_B": "hist_gradient_boosting",
+      "missing_bits": 5,
+      "milp_lower": -0.04700214785992682,
+      "milp_upper": -0.025184361846655404,
+      "max_abs_error": 2.0816681711721685e-17,
+      "mip_gaps": [
+        0.0,
+        0.0
+      ],
+      "witness_sha256": [
+        "bc186d9926a682097dbe959661f8ce05949b8047b7ba5ac26fef28783e95060f",
+        "8ddd0bb5d30e73601434999da68441f71dbc55c1ac3569920ca28c928034fe70"
+      ]
+    },
+    {
+      "dataset": "beijing",
+      "series": "Gucheng",
+      "K": 24,
+      "panel_start": 7914,
+      "model_A": "logistic",
+      "model_B": "hist_gradient_boosting",
+      "missing_bits": 5,
+      "milp_lower": 0.0016957260625226813,
+      "milp_upper": 0.03298099237335571,
+      "max_abs_error": 8.131516293641283e-17,
+      "mip_gaps": [
+        0.0,
+        0.0
+      ],
+      "witness_sha256": [
+        "8ddd0bb5d30e73601434999da68441f71dbc55c1ac3569920ca28c928034fe70",
+        "f63588935e9c9e37216f6a7a6ecf483a36c19e05f820b8e3eb5b6e01e484ea29"
+      ]
+    },
+    {
+      "dataset": "beijing",
+      "series": "Shunyi",
+      "K": 24,
+      "panel_start": 7914,
+      "model_A": "logistic",
+      "model_B": "hist_gradient_boosting",
+      "missing_bits": 10,
+      "milp_lower": 0.0010313339441944515,
+      "milp_upper": 0.029179576370297108,
+      "max_abs_error": 5.160802341031001e-17,
+      "mip_gaps": [
+        0.0,
+        0.0
+      ],
+      "witness_sha256": [
+        "62f40397e240c1f190d6ae27fd72fb564ffebf3c3fad108d2e0df999d875189c",
+        "c88316228313c7f7519d424a0f6469ad128aec7705558d56fae29b02637d99e8"
+      ]
+    },
+    {
+      "dataset": "beijing",
+      "series": "Wanliu",
+      "K": 24,
+      "panel_start": 7914,
+      "model_A": "constant",
+      "model_B": "logistic",
+      "missing_bits": 5,
+      "milp_lower": -0.043187496097471696,
+      "milp_upper": -0.002471968711128772,
+      "max_abs_error": 9.71445146547012e-17,
+      "mip_gaps": [
+        0.0,
+        0.0
+      ],
+      "witness_sha256": [
+        "79abc58bf105940a0c2ef3fe3fe9d4354a1e0f18f88779cb12e5778fd664bac1",
+        "f2357815bb931a387734ada95e754f37efba8ecb263c71b9a7623042a2263185"
+      ]
+    },
+    {
+      "dataset": "beijing",
+      "series": "Wanliu",
+      "K": 24,
+      "panel_start": 7914,
+      "model_A": "constant",
+      "model_B": "hist_gradient_boosting",
+      "missing_bits": 5,
+      "milp_lower": -0.050503253054796325,
+      "milp_upper": -0.008755136178967969,
+      "max_abs_error": 6.938893903907228e-17,
+      "mip_gaps": [
+        0.0,
+        0.0
+      ],
+      "witness_sha256": [
+        "79abc58bf105940a0c2ef3fe3fe9d4354a1e0f18f88779cb12e5778fd664bac1",
+        "f2357815bb931a387734ada95e754f37efba8ecb263c71b9a7623042a2263185"
+      ]
+    },
+    {
+      "dataset": "beijing",
+      "series": "Wanliu",
+      "K": 24,
+      "panel_start": 7914,
+      "model_A": "logistic",
+      "model_B": "hist_gradient_boosting",
+      "missing_bits": 5,
+      "milp_lower": -0.007315756957324615,
+      "milp_upper": -0.006283167467839186,
+      "max_abs_error": 8.586881206085195e-17,
+      "mip_gaps": [
+        3.525006530055395e-16,
+        0.0
+      ],
+      "witness_sha256": [
+        "56e9ee08a35d652978ce2209139bdf0e4959ab90ede6c2475964a11278061949",
+        "f2357815bb931a387734ada95e754f37efba8ecb263c71b9a7623042a2263185"
+      ]
+    }
+  ]
+}

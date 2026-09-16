@@ -1,0 +1,11 @@
+{
+  "exhaustive_ternary_sequences_max_T": 5,
+  "exhaustive_cases": 4647,
+  "v3_differential_cases": 250,
+  "max_abs_error": 3.552713678800501e-15,
+  "timing_repeats": 3,
+  "jit_excluded_from_kernel_timings": true,
+  "wall_seconds": 2.7913228000106756,
+  "cpu_seconds": 2.515625,
+  "status": "PASS"
+}
