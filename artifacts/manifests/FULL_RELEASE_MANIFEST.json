@@ -3918,8 +3918,8 @@
     },
     {
       "path": "docs/guides/reproducibility.md",
-      "sha256": "7ce868cf32cc12d9d253b4f926ee4750a4366882aef4983124cfb83c57fab602",
-      "bytes": 4879,
+      "sha256": "7c5e009fec3e2d526b7061e74de4fa484c0333ac226fd53fa551644b90971f8e",
+      "bytes": 5164,
       "role": "paper_or_documentation",
       "origin": "UrbanEV Forecast project",
       "license": "CC-BY-4.0",
@@ -5754,8 +5754,8 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "45a66f9b7dc0cfefae43710bfea9deb1cde74683fe98dfa5c7093b9c16172fac",
-      "bytes": 1114,
+      "sha256": "f83856c6a406855056e5cc0402cf567ea41c555405cb9b41bdf938e2d010fdae",
+      "bytes": 1178,
       "role": "pyproject.toml",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",
