@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE",
+  "panels": 24,
+  "optimizations_pairs_attempted": 72,
+  "matched_pairs": 72,
+  "size_cutoffs": 15,
+  "solver_cutoffs_or_failures": 0,
+  "wall_seconds": 61.10157060000347,
+  "max_abs_error": 1.7763568394002505e-15
+}

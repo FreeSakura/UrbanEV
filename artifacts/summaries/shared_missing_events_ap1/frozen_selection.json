@@ -1,0 +1,30 @@
+[
+  {
+    "dataset": "beijing",
+    "K": 24,
+    "constant": 0.6718410267898323,
+    "validation_only_selection": true,
+    "new_year_scores_seen_before_selection": false
+  },
+  {
+    "dataset": "beijing",
+    "K": 72,
+    "constant": 0.9210606361171725,
+    "validation_only_selection": true,
+    "new_year_scores_seen_before_selection": false
+  },
+  {
+    "dataset": "household",
+    "K": 60,
+    "constant": 0.23762617049738538,
+    "validation_only_selection": true,
+    "new_year_scores_seen_before_selection": false
+  },
+  {
+    "dataset": "household",
+    "K": 180,
+    "constant": 0.39958823342613076,
+    "validation_only_selection": true,
+    "new_year_scores_seen_before_selection": false
+  }
+]

@@ -1,0 +1,13 @@
+dataset,K,mask,comparisons,independent_truth_violations,pairwise_truth_violations,joint_truth_violations,locf_wrong_directions,identified_wrong_directions,identified_evaluable,joint_abstentions
+beijing,24,blocks_10,36,0,0,0,0,0,36,9
+beijing,24,iid_10,36,0,0,0,0,0,36,1
+beijing,24,iid_30,36,0,0,0,2,1,36,17
+beijing,72,blocks_10,36,0,0,0,1,6,36,11
+beijing,72,iid_10,36,0,0,0,2,2,36,4
+beijing,72,iid_30,36,0,0,0,5,15,36,26
+household,60,blocks_10,3,0,0,0,0,0,3,1
+household,60,iid_10,3,0,0,0,0,0,3,0
+household,60,iid_30,3,0,0,0,0,0,3,1
+household,180,blocks_10,3,0,0,0,0,0,3,1
+household,180,iid_10,3,0,0,0,0,0,3,0
+household,180,iid_30,3,0,0,0,0,0,3,2

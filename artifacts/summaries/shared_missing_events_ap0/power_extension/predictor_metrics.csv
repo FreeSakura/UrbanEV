@@ -1,0 +1,7 @@
+dataset,series,K,model,identified_windows,brier_on_identified,mean_prediction
+household,household,60,constant,82483,0.1431772349720012,0.26494305363652687
+household,household,60,logistic,82483,0.09943989729980497,0.1371967766017758
+household,household,60,hist_gradient_boosting,82483,0.1127557244212004,0.19385313852564973
+household,household,180,constant,82176,0.22879086573706942,0.43211989092301295
+household,household,180,logistic,82176,0.17578678970910053,0.28599904877269056
+household,household,180,hist_gradient_boosting,82176,0.18779223065398598,0.3831746669174887

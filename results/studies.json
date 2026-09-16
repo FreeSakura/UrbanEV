@@ -1,6 +1,6 @@
 {
   "schema_version": "urbanev-study-catalog/v1",
-  "as_of": "2026-09-15",
+  "as_of": "2026-09-16",
   "source_commit": "5f38f7d151b58fd4f1dd8ab17981b5ee59659678",
   "scope": "Public repository evidence; evidence_kind describes the type of evidence, not a claim of method success or real-time execution status.",
   "studies": [
@@ -738,6 +738,66 @@
       "configs": [],
       "status_sources": [
         "artifacts/summaries/physics_economics_traffic_20260913/additional_source_metadata.json"
+      ]
+    },
+    {
+      "id": "shared_missing_events_ap0",
+      "title": "共享缺测持续事件的精确配对比较",
+      "category": "shared_missing",
+      "evidence_kind": "development",
+      "summary": "首轮局部自然比较新增6个严格判定（3个为Logistic与GB）；整段新增0，功率180天补充新增0。压缩DP、穷举和独立MILP一致；新颖性仍待近邻算法对照。",
+      "evidence_dir": "artifacts/summaries/shared_missing_events_ap0",
+      "reports": [
+        "docs/reports/audit/SHARED_MISSING_EVENTS_AP0_REPORT.md",
+        "docs/theory/SHARED_MISSING_EVENTS_COMPRESSION.md",
+        "docs/reviews/SHARED_MISSING_EVENTS_LITERATURE_20260916.md"
+      ],
+      "entrypoints": [
+        "scripts/research/fetch_shared_missing_data.py",
+        "scripts/research/verify_persistent_events.py",
+        "scripts/research/run_shared_missing_p0.py",
+        "scripts/research/check_shared_missing_decisions.py",
+        "scripts/research/analyze_shared_missing_p0.py"
+      ],
+      "configs": [
+        "configs/research/SHARED_MISSING_EVENTS_AP0_20260916.json",
+        "configs/research/SHARED_MISSING_EVENTS_AP0_POWER_EXTENSION_20260916.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/shared_missing_events_ap0/experiment_summary.json",
+        "artifacts/summaries/shared_missing_events_ap0/verification.json",
+        "artifacts/summaries/shared_missing_events_ap0/independent_milp_verification.json",
+        "artifacts/summaries/shared_missing_events_ap0/data_integrity.json",
+        "artifacts/summaries/shared_missing_events_ap0/power_extension/experiment_summary.json"
+      ]
+    },
+    {
+      "id": "shared_missing_events_ap1",
+      "title": "共享缺测评价层次与论文主张锁定",
+      "category": "shared_missing",
+      "evidence_kind": "development",
+      "summary": "通用DFA同构；两两LP获得全部实测新增判向。新年5周级+1站点年度判断仅在北京K72，高阶无额外判向；论文锁定为评价层次与适用边界。",
+      "evidence_dir": "artifacts/summaries/shared_missing_events_ap1",
+      "reports": [
+        "docs/reports/audit/SHARED_MISSING_EVENTS_AP1_REPORT.md",
+        "docs/research/SHARED_MISSING_EVENTS_AP1_CLAIMS_LOCK.md",
+        "docs/theory/SHARED_MISSING_EVENTS_AP1_THEORY.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_shared_missing_ap1.py",
+        "scripts/research/benchmark_shared_missing_ap1.py",
+        "scripts/research/verify_shared_missing_ap1_milp.py",
+        "scripts/research/explain_shared_missing_ap1.py",
+        "scripts/research/summarize_shared_missing_ap1.py"
+      ],
+      "configs": [
+        "configs/research/SHARED_MISSING_EVENTS_AP1_20260916.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/shared_missing_events_ap1/summary.json",
+        "artifacts/summaries/shared_missing_events_ap1/CLAIMS_LOCK.json",
+        "artifacts/summaries/shared_missing_events_ap1/new_execution.json",
+        "artifacts/summaries/shared_missing_events_ap1/milp_execution.json"
       ]
     }
   ]

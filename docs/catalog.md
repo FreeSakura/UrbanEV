@@ -96,6 +96,7 @@
 | [下一阶段协议：双风险方向的有限步长开发检验](protocols/DUAL_RISK_FINITE_STEP_PLAN_20260913.md) | md |
 | [阶段协议](protocols/README.md) | md |
 | [残差信息实验：先发现可外推信号，再打开验证段](protocols/RESIDUAL_EXPERIMENT_PLAN.md) | md |
+| [候选 A 首轮研究独立分析与 AP1 科研计划](protocols/SHARED_MISSING_EVENTS_AP1_PLAN_20260916.md) | md |
 | [两条信息线索的固定复核方案](protocols/SIGNAL_REPLICATION_PLAN.md) | md |
 | [唯一下一协议：电量在给定总时长后的动态增量检验](protocols/VOLUME_COMPOSITION_INCREMENT_PLAN_20260913.md) | md |
 | [下一协议的研究缺口与比较清单](protocols/next_protocol_requirements.md) | md |
@@ -113,6 +114,8 @@
 |---|---|
 | [UrbanEV 理论深化与实验反馈 V3](reports/audit/PAIRED_AUDIT_V3_REPORT.md) | md |
 | [配对事件审计](reports/audit/README.md) | md |
+| [候选 A：共享缺测持续事件的首轮科研验证](reports/audit/SHARED_MISSING_EVENTS_AP0_REPORT.md) | md |
+| [AP1 完整结果：低阶一致性解释了已观察到的新增判断](reports/audit/SHARED_MISSING_EVENTS_AP1_REPORT.md) | md |
 
 ## docs/reports/benchmark
 
@@ -175,8 +178,10 @@
 |---|---|
 | [V3 推导入口已迁移](research/DERIVATION_V3.md) | md |
 | [研究地图](research/README.md) | md |
+| [AP1 论文主张锁定 v1](research/SHARED_MISSING_EVENTS_AP1_CLAIMS_LOCK.md) | md |
 | [基线与来源登记](research/baselines.md) | md |
 | [评价合同与研究声明](research/evaluation.md) | md |
+| [Research findings](research/findings.md) | md |
 | [研究路线](research/roadmap.md) | md |
 
 ## docs/reviews
@@ -186,6 +191,7 @@
 | [后续研究建议的现状核对与条件调用准备](reviews/ADAPTIVE_INVOCATION_REVIEW_20260914.md) | md |
 | [基线登记：来源、复现与可比性](reviews/BASELINE_REVIEW_20260914.md) | md |
 | [评审与来源快照](reviews/README.md) | md |
+| [候选 A：最近邻方法及新颖性核查](reviews/SHARED_MISSING_EVENTS_LITERATURE_20260916.md) | md |
 | [距离SOTA有多远：截至c2404cf的证据评估](reviews/SOTA_GAP_ASSESSMENT_20260913.md) | md |
 
 ## docs/theory
@@ -200,6 +206,8 @@
 | [有界分位信息与平方损失适配](theory/QUANTILE_MEAN_THEORY.md) | md |
 | [理论与推导](theory/README.md) | md |
 | [时长增量残差：理论推导与实验约束](theory/RESIDUAL_DERIVATION_PACKAGE.md) | md |
+| [AP1：可识别性层次、冲突代价与通用算法定位](theory/SHARED_MISSING_EVENTS_AP1_THEORY.md) | md |
+| [共享缺测持续事件的压缩状态精确比较](theory/SHARED_MISSING_EVENTS_COMPRESSION.md) | md |
 | [从信息增量到可检验的预测贡献](theory/SIGNAL_INFORMATION_THEORY.md) | md |
 | [UrbanEV后续研究的统一理论报告](theory/THEORY_REPORT_V1.md) | md |
 | [理论深化与实验反馈：从路径信息到可审查的事件预测](theory/THEORY_REPORT_V2.md) | md |

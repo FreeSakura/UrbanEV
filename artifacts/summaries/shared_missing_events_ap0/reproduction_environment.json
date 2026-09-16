@@ -1,0 +1,25 @@
+{
+  "record_role": "Final reproduction source/environment snapshot; not a claim that later interpretation helpers were present before the first experiment",
+  "python": "3.10.8",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "numba": "0.65.1",
+    "matplotlib": "3.10.8",
+    "threadpoolctl": "3.6.0"
+  },
+  "declared_experiment_threads": 2,
+  "device": "CPU",
+  "base_git_commit": "2dd2f69d4d36dfaefca3ea06cec759d73f1ee582",
+  "sources_sha256_lf": {
+    "src/urbanev_audit/persistent_events.py": "42ce291b51ef8876c6f448bc714a955278ca2b98950986f208d628a1ab9a8108",
+    "scripts/research/run_shared_missing_p0.py": "f1616368f156c67df813173a77cb4f3b5d06bec65d798dadfa6c24fa3c231f60",
+    "scripts/research/verify_persistent_events.py": "9a3b3d23ff47ebc8d5daedfcd90c356dc4b2fe028113ee33c250cc180c259b18",
+    "scripts/research/check_shared_missing_decisions.py": "40902548fc0b4c1ac78f0150117f7b1497bf67c58b0fd468fe2e72d6d6aa129b",
+    "scripts/research/analyze_shared_missing_p0.py": "fd2476b80474bd37322307b2247fb7b7c87c7301f3305d4748faa26c8022f671"
+  },
+  "implementation_scope": "No changes to historical forecast training or existing numeric evidence"
+}

@@ -4,9 +4,21 @@
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Docs: CC BY 4.0](https://img.shields.io/badge/docs-CC_BY_4.0-green.svg)](licenses/CC-BY-4.0.txt)
 
-城市公共充电占用预测研究项目，围绕 **275 个区域的小时占用率**，提供预测模型、评价合同、实验报告、公开结果与历史审计论文。
+本仓库保存预测研究的代码、数学推导、实验协议和公开证据。当前研究**共享缺测下持续事件预测的模型比较**；此前围绕 **275 个区域的小时充电占用率**开展的 UrbanEV 预测研究及历史审计论文也在此维护。
 
-本项目由 FreeSakura 维护，独立于 [UrbanEV 数据集官方项目](https://github.com/IntelligentSystemsLab/UrbanEV)。主要问题是：滞后观测和长历史带来多少预测信息，动态结构能否在同信息强基线之上产生可重复的收益？
+本项目由 FreeSakura 维护，独立于 [UrbanEV 数据集官方项目](https://github.com/IntelligentSystemsLab/UrbanEV)。
+
+## 当前研究：共享缺测下的模型比较
+
+当重叠预警窗口共享缺失观测时，不同窗口的未知标签不能任意组合。研究比较独立标签界、两两一致性约束和完整轨迹优化，确定已有观测是否足以判定两个固定预测器的优劣。
+
+**AP0、AP1 已完成（2026-09-16）。** AP1 在指定的新年份评价了 4,176 个自然缺测模型对×面板：新增 5 个周级和 1 个站点年度判向，均由两两 LP 取得，且集中于北京 K=72 设置。完整轨迹优化可以进一步收紧部分界，但未增加判向；跨站全年汇总没有新增判向。通用 DFA 对照也不支持独立算法首创主张。
+
+- [AP1 完整报告](docs/reports/audit/SHARED_MISSING_EVENTS_AP1_REPORT.md) · [锁定论文主张](docs/research/SHARED_MISSING_EVENTS_AP1_CLAIMS_LOCK.md)
+- [AP1 理论与边界](docs/theory/SHARED_MISSING_EVENTS_AP1_THEORY.md) · [公开数值证据](artifacts/summaries/shared_missing_events_ap1)
+- [AP0 首轮报告](docs/reports/audit/SHARED_MISSING_EVENTS_AP0_REPORT.md) · [精确比较推导](docs/theory/SHARED_MISSING_EVENTS_COMPRESSION.md)
+
+当前支持的是有限面板上的可识别性与适用边界研究，尚未建立普遍模型选择收益或 JCR Q2 投稿成熟度。AP2 保留范围尚未使用；旧六折不是新方向的前置条件。
 
 ## 从这里开始
 
@@ -19,7 +31,7 @@
 | 阅读报告、理论和论文 | [文档中心](docs/README.md) · [完整资料目录](docs/catalog.md) |
 | 重现结果或继续开发 | [复现指南](docs/guides/reproducibility.md) · [贡献指南](CONTRIBUTING.md) |
 
-## 当前结果
+## 原 UrbanEV 预测研究结果
 
 已完成的统一**开发集比较**包含两种 ridge 和五种神经配置；在该比较的四个视野上，RIDGE_OD 的平均 RMSE 为 **0.111146795**，MAE 为 **0.068494595**，低于其余核心系统。数据来自一个已曝光的开发窗口，信息轨道和训练方式有差异，适用范围见[可重建结果表](results/README.md#开发集核心比较)。
 
@@ -32,7 +44,7 @@
 Python 3.10 或更高版本。在仓库根目录执行：
 
 ```bash
-python -m pip install -e ".[test]"
+python -m pip install -e ".[test,evidence]"
 python scripts/repository.py check
 python -m pytest
 ```
@@ -52,7 +64,7 @@ python -m urbanev_forecast smoke --model innovation_attention --epochs 2 --outpu
 ## 仓库结构
 
 ```text
-src/               预测与历史审计 Python 包
+src/               预测、共享缺测评价与历史审计 Python 包
 scripts/           实验、资料索引、论文构建与工件校验入口
 tests/             评价、模型、复现与仓库维护测试
 configs/           固定的协议、模型配置和环境记录

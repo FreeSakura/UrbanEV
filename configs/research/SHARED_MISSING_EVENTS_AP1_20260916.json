@@ -1,0 +1,137 @@
+{
+  "study_id": "shared_missing_events_ap1",
+  "created_date": "2026-09-16",
+  "plan": "docs/protocols/SHARED_MISSING_EVENTS_AP1_PLAN_20260916.md",
+  "datasets": {
+    "beijing": {
+      "uci_id": 501,
+      "variable": "PM2.5",
+      "unit": "microgram/m3",
+      "prefix_rows_per_series": 17520,
+      "train_end": 6600,
+      "calibration_end": 8760,
+      "selection_end": 8760,
+      "evaluation_start": "2014-03-01",
+      "evaluation_end": "2015-03-01",
+      "reserved_start": "2015-03-01",
+      "threshold": 75.0,
+      "windows": [
+        24,
+        72
+      ],
+      "run_length": 3,
+      "history": 168,
+      "panel_length": 168,
+      "artificial_max_length": 2048
+    },
+    "household": {
+      "uci_id": 235,
+      "variable": "Global_active_power",
+      "unit": "kW",
+      "prefix_rows_per_series": 809676,
+      "train_end": 194400,
+      "calibration_end": 282636,
+      "selection_end": 259200,
+      "evaluation_start": "2007-07-01",
+      "evaluation_end": "2008-07-01",
+      "reserved_start": "2008-07-01",
+      "threshold": 3.0,
+      "windows": [
+        60,
+        180
+      ],
+      "run_length": 5,
+      "history": 1440,
+      "panel_length": 10080,
+      "artificial_max_length": 4096
+    }
+  },
+  "predictors": {
+    "constant": "Laplace-smoothed frequency of identified training labels",
+    "logistic_C": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "logistic_fixed": {
+      "solver": "lbfgs",
+      "max_iter": 500
+    },
+    "hgb_max_leaf_nodes": [
+      7,
+      15,
+      31,
+      63
+    ],
+    "hgb_fixed": {
+      "max_iter": 100,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 50,
+      "l2_regularization": 1.0,
+      "early_stopping": false,
+      "random_state": 20260916
+    },
+    "selection": "Lowest Brier on the common identified old-validation labels; ties use first grid entry; no refit on validation; no selection using bounds or new-year data"
+  },
+  "panels": "Seven-day ORIGIN blocks from evaluation start, with P+K-1 underlying records for P scored origins; last partial origin block included. Annual bounds solved separately, never summed from weekly bounds.",
+  "baselines": [
+    "independent",
+    "all_pairwise_implication_LP",
+    "generic_regular_language_DFA_weighted_path",
+    "specialized_DP",
+    "generic_edge_path_on_specialized_graph",
+    "stratified_MILP",
+    "legacy_suffix_DP_where_feasible"
+  ],
+  "pairwise_method": "Derive all implications between ambiguous window labels from feasible run witnesses, independent of predictions and outcomes; solve the corresponding order-polytope LP with a compact interval graph",
+  "artificial": {
+    "selection": "Earliest longest naturally complete evaluation run, truncated by dataset limit",
+    "masks": [
+      "iid_10",
+      "iid_30",
+      "blocks_10"
+    ],
+    "seed": 20260916,
+    "point_estimators": [
+      "LOCF label imputation",
+      "identified labels only"
+    ],
+    "hidden_truth_use": "Only after predictions for containment and false-direction checks"
+  },
+  "benchmark": {
+    "T": [
+      2048,
+      32768
+    ],
+    "K": [
+      8,
+      16,
+      24,
+      72,
+      180
+    ],
+    "L": "unique 1,3,5,K and floor(K/2)",
+    "missing_layouts": [
+      "iid30",
+      "blocks30"
+    ],
+    "repeats": 3,
+    "compiler_timeout_seconds": 60,
+    "compiler_max_states": 100000,
+    "suffix_max_K": 16,
+    "jit_timing": "Separate from warm kernel; identical warm/cold policy for both graphs"
+  },
+  "milp_sampling": "For each study/dataset/K/scope/mask and combination of ambiguity, tightening and independent direction, pick lexicographically first panel ID before looking at MILP results; at most 24 panels; solve all 3 pairs per selected panel; 60 seconds per optimization, report cutoffs",
+  "numeric": {
+    "direction_tolerance": 1e-10,
+    "near_zero_threshold": 1e-08,
+    "near_zero": "Recompute DP on an integer grid with conservative error enclosure before strict sign decisions; no statistical-confidence interpretation"
+  },
+  "resources": {
+    "device": "CPU",
+    "threads": 2,
+    "machine_cpu_hours_budget": 16
+  },
+  "claim_selection": "Lock only claims supported by nearest-neighbor baselines, held-out-year natural results, candidate-set changes and explicit negative cases; no requirement to obtain positive results"
+}

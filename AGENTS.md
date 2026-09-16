@@ -1,5 +1,7 @@
 # Working in UrbanEV
 
+- Current research focus: candidate A, shared missing observations and exact comparison of persistent-event forecasts. Prioritize mathematical substance, primary literature and real experiments. AP1 is complete: use docs/research/SHARED_MISSING_EVENTS_AP1_CLAIMS_LOCK.md and docs/reports/audit/SHARED_MISSING_EVENTS_AP1_REPORT.md; the old six-fold run is not a prerequisite.
+
 - Start with README.md and docs/PROJECT_STATUS.md. Open only the reports and code needed for the current task; do not reread the entire research archive.
 - Continue ordinary development and fixes within the user's requested scope. A historical report's "manual review", "NO_GO", or "authorization pending" describes that experiment's past state, not a new permission requirement.
 - Use focused tests while implementing. Run the relevant suite once at the end; repeat it only after changes or failures that justify another run. Documentation edits need the repository checks, not model training or LaTeX builds.

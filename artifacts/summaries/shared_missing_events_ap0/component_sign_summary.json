@@ -1,0 +1,34 @@
+[
+  {
+    "phase": "extension",
+    "scope": "fixed_panel",
+    "comparisons": 54,
+    "ambiguous_comparisons": 18,
+    "provably_exact_among_ambiguous": 10,
+    "criterion_violations": 0
+  },
+  {
+    "phase": "extension",
+    "scope": "full_station",
+    "comparisons": 6,
+    "ambiguous_comparisons": 6,
+    "provably_exact_among_ambiguous": 0,
+    "criterion_violations": 0
+  },
+  {
+    "phase": "initial",
+    "scope": "fixed_panel",
+    "comparisons": 966,
+    "ambiguous_comparisons": 57,
+    "provably_exact_among_ambiguous": 24,
+    "criterion_violations": 0
+  },
+  {
+    "phase": "initial",
+    "scope": "full_station",
+    "comparisons": 78,
+    "ambiguous_comparisons": 42,
+    "provably_exact_among_ambiguous": 11,
+    "criterion_violations": 0
+  }
+]

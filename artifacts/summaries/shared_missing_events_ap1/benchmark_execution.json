@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE",
+  "kernel_cases": 150,
+  "compiler_cases": 25,
+  "wall_seconds": 67.05733840000175,
+  "cpu_seconds": 65.34375,
+  "first_call_or_disk_cache_load_seconds": {
+    "state_kernel": 1.0222228999919025,
+    "edge_kernel": 1.4711779999925056,
+    "suffix_kernel": 0.3052077000029385
+  },
+  "timing_policy": "Three warm kernel repetitions for every implementation; compiler construction separately cold per K/L; disk JIT caches may exist",
+  "memory_scope": "Explicit rolling DP and graph array bytes, not whole-process peak RSS",
+  "terminal_policy": "All final states legal; acceptance used only as per-step output cost"
+}

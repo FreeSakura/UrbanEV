@@ -71,3 +71,5 @@ python scripts/research/score_full_benchmark.py --help
 ## 论文重建
 
 LaTeX 和字体依赖见[论文说明](../../paper/README.md)。公开 PDF 已提供，阅读无需安装 TeX。重建后的 PDF 需要通过论文清单和字体检查；文档导航重构不会自动刷新历史论文数值。
+
+`test` 扩展固定使用 pypdf 6.16.2，与历史 PDF 的标准化文本哈希一致。pypdf 6.19.0 在同一份未改动的归档 PDF 上提取出不同文本，已在本地复现；因此升级提取器需要单独核对文本变化，不能用重新生成哈希来掩盖差异。

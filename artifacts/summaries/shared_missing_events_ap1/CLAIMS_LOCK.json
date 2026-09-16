@@ -1,0 +1,33 @@
+{
+  "study_id": "shared_missing_events_ap1",
+  "status": "CLAIMS_LOCKED_V1",
+  "claim_supported": "partial",
+  "thesis": "Hierarchy of consistency bounds and limited retrospective comparison value; no distinct generic algorithm or empirically indispensable higher-order selection claim",
+  "what_results_support": [
+    "Nested comparison hierarchy and weighted conflict decomposition",
+    "25 generic minimal DFAs isomorphic to specialized graphs",
+    "All AP0 and AP1 additional directions and candidate-set changes reproduced by pairwise LP",
+    "Five new origin-week and one station-year directions, limited to Beijing K72"
+  ],
+  "what_results_dont_support": [
+    "Novel general-purpose DP solver",
+    "Extra strict model-selection value from full trajectory over pairwise LP",
+    "Positive natural-data effect in Beijing K24 or power settings",
+    "Future deployment, population confidence or JCR Q2 readiness"
+  ],
+  "missing_evidence": [
+    "Independent originality assessment of evaluation contribution",
+    "Fixed reserved-year replication of the locked scope"
+  ],
+  "confidence": "high for recorded finite-panel comparisons; publication-level contribution remains unresolved",
+  "review_status": "pending Codex review; external Codex MCP unavailable; local author-side assessment",
+  "evidence": [
+    "summary.json",
+    "compiler_benchmark.csv",
+    "candidate_summary.csv",
+    "milp_execution.json",
+    "artificial_comparison.csv"
+  ],
+  "claims_document": "docs/research/SHARED_MISSING_EVENTS_AP1_CLAIMS_LOCK.md",
+  "ap2_data_used": false
+}

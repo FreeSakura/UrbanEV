@@ -1,0 +1,21 @@
+[
+  {
+    "dataset": "beijing",
+    "uci_id": 501,
+    "archive_sha256": "d1b9261c54132f04c374f762f1e5e512af19f95c95fd6bfa1e8ac7e927e3b0b8",
+    "archive_bytes": 7959991,
+    "official_page": "https://archive.ics.uci.edu/dataset/501",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "dataset": "household",
+    "uci_id": 235,
+    "prefix_sha256": "49a3bde7b6a87e50ef12c66775f418bdc10878022599472f2fe218080ff5dccd",
+    "prefix_bytes": 8367811,
+    "prefix_records": 129600,
+    "source_type": "Exact first records decoded from the official ZIP stream; not an imputed or generated dataset",
+    "download": "https://archive.ics.uci.edu/ml/machine-learning-databases/00235/household_power_consumption.zip",
+    "official_page": "https://archive.ics.uci.edu/dataset/235",
+    "license": "CC-BY-4.0"
+  }
+]

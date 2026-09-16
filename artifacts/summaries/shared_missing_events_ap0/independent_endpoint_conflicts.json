@@ -1,0 +1,146 @@
+[
+  {
+    "phase": "initial",
+    "dataset": "beijing",
+    "series": "Gucheng",
+    "K": 24,
+    "panel_start": 7914,
+    "model_A": "constant",
+    "model_B": "hist_gradient_boosting",
+    "endpoint": "upper",
+    "independent_endpoint_attainable": false,
+    "conflict_core": [
+      {
+        "window_start": 14,
+        "required_event": 1,
+        "coefficient": 0.1184298677599942
+      },
+      {
+        "window_start": 24,
+        "required_event": 0,
+        "coefficient": -0.6673706488548975
+      }
+    ],
+    "core_kind": "deletion-minimal, not necessarily minimum cardinality"
+  },
+  {
+    "phase": "initial",
+    "dataset": "beijing",
+    "series": "Gucheng",
+    "K": 24,
+    "panel_start": 7914,
+    "model_A": "logistic",
+    "model_B": "hist_gradient_boosting",
+    "endpoint": "lower",
+    "independent_endpoint_attainable": false,
+    "conflict_core": [
+      {
+        "window_start": 23,
+        "required_event": 1,
+        "coefficient": -0.0018359833972428907
+      },
+      {
+        "window_start": 24,
+        "required_event": 0,
+        "coefficient": 0.19008290135773753
+      }
+    ],
+    "core_kind": "deletion-minimal, not necessarily minimum cardinality"
+  },
+  {
+    "phase": "initial",
+    "dataset": "beijing",
+    "series": "Shunyi",
+    "K": 24,
+    "panel_start": 7914,
+    "model_A": "logistic",
+    "model_B": "hist_gradient_boosting",
+    "endpoint": "lower",
+    "independent_endpoint_attainable": false,
+    "conflict_core": [
+      {
+        "window_start": 19,
+        "required_event": 1,
+        "coefficient": -0.06369113960474826
+      },
+      {
+        "window_start": 25,
+        "required_event": 0,
+        "coefficient": 0.36560324684136
+      }
+    ],
+    "core_kind": "deletion-minimal, not necessarily minimum cardinality"
+  },
+  {
+    "phase": "initial",
+    "dataset": "beijing",
+    "series": "Wanliu",
+    "K": 24,
+    "panel_start": 7914,
+    "model_A": "constant",
+    "model_B": "logistic",
+    "endpoint": "upper",
+    "independent_endpoint_attainable": false,
+    "conflict_core": [
+      {
+        "window_start": 11,
+        "required_event": 1,
+        "coefficient": 0.2564882017152441
+      },
+      {
+        "window_start": 25,
+        "required_event": 0,
+        "coefficient": -0.58131105710385
+      }
+    ],
+    "core_kind": "deletion-minimal, not necessarily minimum cardinality"
+  },
+  {
+    "phase": "initial",
+    "dataset": "beijing",
+    "series": "Wanliu",
+    "K": 24,
+    "panel_start": 7914,
+    "model_A": "constant",
+    "model_B": "hist_gradient_boosting",
+    "endpoint": "upper",
+    "independent_endpoint_attainable": false,
+    "conflict_core": [
+      {
+        "window_start": 11,
+        "required_event": 1,
+        "coefficient": 0.40602726154735413
+      },
+      {
+        "window_start": 25,
+        "required_event": 0,
+        "coefficient": -0.5998134343470019
+      }
+    ],
+    "core_kind": "deletion-minimal, not necessarily minimum cardinality"
+  },
+  {
+    "phase": "initial",
+    "dataset": "beijing",
+    "series": "Wanliu",
+    "K": 24,
+    "panel_start": 7914,
+    "model_A": "logistic",
+    "model_B": "hist_gradient_boosting",
+    "endpoint": "upper",
+    "independent_endpoint_attainable": false,
+    "conflict_core": [
+      {
+        "window_start": 12,
+        "required_event": 1,
+        "coefficient": 0.19094518028129104
+      },
+      {
+        "window_start": 25,
+        "required_event": 0,
+        "coefficient": -0.018502377243151846
+      }
+    ],
+    "core_kind": "deletion-minimal, not necessarily minimum cardinality"
+  }
+]

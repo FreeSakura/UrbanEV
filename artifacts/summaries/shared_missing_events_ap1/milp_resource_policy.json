@@ -1,0 +1,8 @@
+{
+  "max_full_constraint_rows": 300000,
+  "max_full_variables": 50000,
+  "optimization_seconds": 60,
+  "large_panel_diagnostic_prefix_origins": 128,
+  "sample_panels": 24,
+  "selection": "First panel per predeclared result/missingness stratum, round-robin phase/dataset/K; all model pairs. Plan saved before any MILP solve."
+}
