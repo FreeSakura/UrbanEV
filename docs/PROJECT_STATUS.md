@@ -1,5 +1,9 @@
 # 项目状态
 
+## 2026-09-17：AP2 与结构解释已完成
+
+固定模型在原保留年份新增17周级+1站点年度判向，13个周级候选集合变化、10个新唯一最佳；1例高阶必要已由独立MILP核对。AP1/AP2全部295个剩余未定比较都有相反胜负见证。下一步是贡献定位与写稿。[AP2报告](reports/audit/SHARED_MISSING_EVENTS_AP2_REPORT.md) · [更新主张](research/SHARED_MISSING_EVENTS_AP2_CLAIMS.md)。以下AP1/AP0内容为各阶段历史记录。
+
 ## AP1 执行与主张锁定
 
 AP1 完成旧自然面板重算、通用DFA/两两LP/分层MILP对照及指定新年份评价。新增5个周级和1个站点年度判向均由两两LP取得；撤回独立算法首创及高阶优化额外模型选择价值。[完整结果与锁定主张](reports/audit/SHARED_MISSING_EVENTS_AP1_REPORT.md)。保留AP2范围未使用。

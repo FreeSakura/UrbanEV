@@ -1,0 +1,21 @@
+{
+  "phase": "AP1",
+  "comparisons": 4176,
+  "witness_endpoints": 1200,
+  "reasons": {
+    "NO_AMBIGUOUS_LABELS": 3576,
+    "INDEPENDENT_ALREADY_DIRECTED": 440,
+    "OBSERVATION_INFORMATION_INSUFFICIENT": 154,
+    "PAIRWISE_REQUIRED_FOR_DIRECTION": 6
+  },
+  "tightened_comparisons": 49,
+  "panel_structure": {
+    "STRUCTURALLY_EXACT": 1283,
+    "UNRESOLVED_BUDGET": 68,
+    "HIGHER_STRUCTURE": 41
+  },
+  "endpoint_status": {
+    "REALIZABLE_LP_OPTIMUM_NUMERIC": 1142,
+    "OBJECTIVE_GAP_NUMERIC": 58
+  }
+}

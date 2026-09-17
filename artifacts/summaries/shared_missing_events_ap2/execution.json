@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETE",
+  "new_fits": 0,
+  "config_sha256": "032542365185d330615c04b3cd6cfe3980262d752878ed03760f2d10635e2dab",
+  "wall_seconds": 55.62677210000038,
+  "cpu_seconds": 67.75,
+  "future_beyond_ap2_used": false
+}

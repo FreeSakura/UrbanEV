@@ -1,0 +1,9 @@
+{
+  "selection": "All new natural decisions; all pairs of higher-order-new panel; first undirected negative week per dataset/K. Saved before MILP.",
+  "status_counts": {
+    "OPTIMAL_MATCH": 21,
+    "DECLARED_SIZE_CUTOFF": 3
+  },
+  "max_abs_error": 1.1102230246251565e-16,
+  "wall_seconds": 7.854858900000181
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "relevant_tests": 37,
+  "scientific_tests": 21,
+  "repository_tests": 16,
+  "test_note": "Initial suite had one catalog coverage failure before new study registration; 21 scientific tests passed, all 16 repository tests passed after registration.",
+  "exhaustive_observation_K_L_cases": 4647,
+  "witnesses_replayed": 2820,
+  "MILP_pairs_optimal": 21,
+  "MILP_declared_size_cutoffs": 3,
+  "historical_AP0_AP1_evidence_unchanged": true
+}

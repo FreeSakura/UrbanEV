@@ -1,0 +1,83 @@
+{
+  "natural": {
+    "comparisons": 4176,
+    "ambiguous_comparisons": 810,
+    "independent_undirected": 159,
+    "pairwise_new": 17,
+    "joint_new": 18,
+    "higher_order_new": 1,
+    "joint_new_fraction_all": 0.004310344827586207,
+    "joint_new_fraction_independent_undirected": 0.11320754716981132,
+    "higher_order_tighter": 61
+  },
+  "weekly": {
+    "comparisons": 4098,
+    "ambiguous_comparisons": 732,
+    "independent_undirected": 154,
+    "pairwise_new": 16,
+    "joint_new": 17,
+    "higher_order_new": 1,
+    "joint_new_fraction_all": 0.004148365056124939,
+    "joint_new_fraction_independent_undirected": 0.11038961038961038,
+    "higher_order_tighter": 35
+  },
+  "annual": {
+    "comparisons": 78,
+    "ambiguous_comparisons": 78,
+    "independent_undirected": 5,
+    "pairwise_new": 1,
+    "joint_new": 1,
+    "higher_order_new": 0,
+    "joint_new_fraction_all": 0.01282051282051282,
+    "joint_new_fraction_independent_undirected": 0.2,
+    "higher_order_tighter": 26
+  },
+  "artificial": {
+    "comparisons": 234,
+    "ambiguous_comparisons": 219,
+    "independent_undirected": 69,
+    "pairwise_new": 12,
+    "joint_new": 12,
+    "higher_order_new": 0,
+    "joint_new_fraction_all": 0.05128205128205128,
+    "joint_new_fraction_independent_undirected": 0.17391304347826086,
+    "higher_order_tighter": 24
+  },
+  "candidate_changes": 13,
+  "new_unique_best": 10,
+  "higher_order_candidate_changes": 1,
+  "new_decision_time_clusters": 13,
+  "pooled_annual_new_directions": 0,
+  "artificial_by_method": {
+    "identified": {
+      "comparisons": 234,
+      "directed": 234,
+      "wrong_direction": 17,
+      "undirected": 0
+    },
+    "independent": {
+      "comparisons": 234,
+      "directed": 165,
+      "wrong_direction": 0,
+      "undirected": 69
+    },
+    "joint": {
+      "comparisons": 234,
+      "directed": 177,
+      "wrong_direction": 0,
+      "undirected": 57
+    },
+    "locf": {
+      "comparisons": 234,
+      "directed": 234,
+      "wrong_direction": 3,
+      "undirected": 0
+    },
+    "pairwise": {
+      "comparisons": 234,
+      "directed": 177,
+      "wrong_direction": 0,
+      "undirected": 57
+    }
+  }
+}

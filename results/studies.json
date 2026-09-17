@@ -799,6 +799,36 @@
         "artifacts/summaries/shared_missing_events_ap1/new_execution.json",
         "artifacts/summaries/shared_missing_events_ap1/milp_execution.json"
       ]
+    },
+    {
+      "id": "shared_missing_events_ap2",
+      "title": "共享缺测比较证书与固定年度复制",
+      "category": "shared_missing",
+      "evidence_kind": "development",
+      "summary": "AP1/AP2全部295个剩余未定比较有相反见证；AP2新增17周级+1年度判向，1个高阶必要案例；功率与全年跨站均零新增。",
+      "evidence_dir": "artifacts/summaries/shared_missing_events_ap2",
+      "reports": [
+        "docs/reports/audit/SHARED_MISSING_EVENTS_AP2_REPORT.md",
+        "docs/theory/SHARED_MISSING_EVENTS_AP2_CERTIFICATES.md",
+        "docs/research/SHARED_MISSING_EVENTS_AP2_CLAIMS.md",
+        "docs/research/SHARED_MISSING_EVENTS_AP2_METHOD_RESULTS_DRAFT.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_shared_missing_ap2.py",
+        "scripts/research/explain_shared_missing_ap2.py",
+        "scripts/research/verify_shared_missing_ap2.py",
+        "scripts/research/replay_shared_missing_witnesses.py",
+        "scripts/research/summarize_shared_missing_ap2.py"
+      ],
+      "configs": [
+        "configs/research/SHARED_MISSING_EVENTS_AP2_20260917.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/shared_missing_events_ap2/summary.json",
+        "artifacts/summaries/shared_missing_events_ap2/execution.json",
+        "artifacts/summaries/shared_missing_events_ap2/witness_replay.json",
+        "artifacts/summaries/shared_missing_events_ap2/decision_milp_summary.json"
+      ]
     }
   ]
 }

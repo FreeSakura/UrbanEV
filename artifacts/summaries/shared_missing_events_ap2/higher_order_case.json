@@ -1,0 +1,48 @@
+[
+  {
+    "dataset": "beijing",
+    "series": "Changping",
+    "K": 72,
+    "L": 3,
+    "origin_start": 22728,
+    "time_start": "2015-10-04 00:00:00",
+    "N": 168,
+    "model_A": "constant",
+    "model_B": "hist_gradient_boosting",
+    "missing_records": 153,
+    "support_records": 239,
+    "longest_missing_run": 153,
+    "independent": [
+      -0.0452950194180562,
+      0.0017365406379246
+    ],
+    "pairwise": [
+      -0.0449371883559173,
+      0.0017365406379446
+    ],
+    "joint": [
+      -0.0381157675990102,
+      -0.0005900870994381
+    ],
+    "endpoint": "upper",
+    "deletion_minimal_core": [
+      {
+        "origin_offset": 80,
+        "required_label": 0
+      },
+      {
+        "origin_offset": 145,
+        "required_label": 1
+      },
+      {
+        "origin_offset": 150,
+        "required_label": 0
+      }
+    ],
+    "minimum_cardinality_proved": true,
+    "all_pairs_feasible": true,
+    "three_window_run_cover": true,
+    "single_explanatory_cut_upper_numeric": 0.0014827685569966307,
+    "single_cut_is_posthoc_diagnostic": true
+  }
+]

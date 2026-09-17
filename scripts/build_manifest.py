@@ -18,7 +18,7 @@ ROOT_FILES = (
 )
 EVIDENCE_ROOTS = ("configs", "artifacts/summaries", "models")
 TEXT_SUFFIXES = {
-    ".csv", ".json", ".md", ".py", ".txt", ".tex", ".yml", ".yaml", ".toml", ".cff", ".bib",
+    ".csv", ".json", ".jsonl", ".md", ".py", ".txt", ".tex", ".yml", ".yaml", ".toml", ".cff", ".bib",
 }
 EXCLUDED_PARTS = {"editable", "__pycache__", ".pytest_cache", "build", "tmp"}
 EXCLUDED_FILES = {

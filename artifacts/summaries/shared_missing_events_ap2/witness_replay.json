@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "phase": "ap1",
+      "witnesses_replayed": 1200,
+      "all_observations_preserved": true,
+      "independent_cumulative_sum_labels_match": true,
+      "exact_rational_scores_match": true
+    },
+    {
+      "phase": "ap2",
+      "witnesses_replayed": 1620,
+      "all_observations_preserved": true,
+      "independent_cumulative_sum_labels_match": true,
+      "exact_rational_scores_match": true
+    }
+  ]
+}

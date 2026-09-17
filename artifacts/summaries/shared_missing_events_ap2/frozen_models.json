@@ -1,0 +1,29 @@
+{
+  "new_fits": 0,
+  "model_files": [
+    {
+      "dataset": "beijing",
+      "K": 24,
+      "file": "beijing_K24_models.joblib",
+      "sha256": "9c758ea3cf24d3f3b48933d0a3dbd2aa8687bc2d19d4b048c81e8da0e16e202a"
+    },
+    {
+      "dataset": "beijing",
+      "K": 72,
+      "file": "beijing_K72_models.joblib",
+      "sha256": "5979f20be28d0bdf69e9169087fd29fe0997153f5f455a26f22897ba2d538d8f"
+    },
+    {
+      "dataset": "household",
+      "K": 60,
+      "file": "household_K60_models.joblib",
+      "sha256": "cd189ba80bde2735213656a8e7c81dad86734f94d354b87543580b4e20161ace"
+    },
+    {
+      "dataset": "household",
+      "K": 180,
+      "file": "household_K180_models.joblib",
+      "sha256": "e789a59e5670e9247aa328365c02efd1cd6e0d457f6ddb3c3e9ffc282fcadd25"
+    }
+  ]
+}

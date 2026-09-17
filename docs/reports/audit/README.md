@@ -9,3 +9,4 @@
 - [UrbanEV 理论深化与实验反馈 V3](PAIRED_AUDIT_V3_REPORT.md)
 - [候选 A：共享缺测持续事件的首轮科研验证](SHARED_MISSING_EVENTS_AP0_REPORT.md)
 - [AP1 完整结果：低阶一致性解释了已观察到的新增判断](SHARED_MISSING_EVENTS_AP1_REPORT.md)
+- [AP2：结构解释与固定时间复制](SHARED_MISSING_EVENTS_AP2_REPORT.md)

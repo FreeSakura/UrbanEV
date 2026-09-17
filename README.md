@@ -12,13 +12,14 @@
 
 当重叠预警窗口共享缺失观测时，不同窗口的未知标签不能任意组合。研究比较独立标签界、两两一致性约束和完整轨迹优化，确定已有观测是否足以判定两个固定预测器的优劣。
 
-**AP0、AP1 已完成（2026-09-16）。** AP1 在指定的新年份评价了 4,176 个自然缺测模型对×面板：新增 5 个周级和 1 个站点年度判向，均由两两 LP 取得，且集中于北京 K=72 设置。完整轨迹优化可以进一步收紧部分界，但未增加判向；跨站全年汇总没有新增判向。通用 DFA 对照也不支持独立算法首创主张。
+**AP2 已完成（2026-09-17）。** 固定 AP1 模型、零新拟合，在预留年份评价 4,176 个自然比较：新增 17 个周级与 1 个站点年度判向；北京 K24 首次出现 5 个周级新增判断。1 个昌平 K72 案例确实需要高阶一致性，已用独立 MILP 核对。AP1/AP2 剩余的 154/141 个未定比较均有相反胜负的合法补全见证。功率与跨站全年聚合仍无新增判向。
 
-- [AP1 完整报告](docs/reports/audit/SHARED_MISSING_EVENTS_AP1_REPORT.md) · [锁定论文主张](docs/research/SHARED_MISSING_EVENTS_AP1_CLAIMS_LOCK.md)
+- [AP2 完整报告](docs/reports/audit/SHARED_MISSING_EVENTS_AP2_REPORT.md) · [最新主张与后续任务](docs/research/SHARED_MISSING_EVENTS_AP2_CLAIMS.md) · [方法/结果初稿](docs/research/SHARED_MISSING_EVENTS_AP2_METHOD_RESULTS_DRAFT.md)
+- [AP1 完整报告](docs/reports/audit/SHARED_MISSING_EVENTS_AP1_REPORT.md) · [AP1 历史主张](docs/research/SHARED_MISSING_EVENTS_AP1_CLAIMS_LOCK.md)
 - [AP1 理论与边界](docs/theory/SHARED_MISSING_EVENTS_AP1_THEORY.md) · [公开数值证据](artifacts/summaries/shared_missing_events_ap1)
 - [AP0 首轮报告](docs/reports/audit/SHARED_MISSING_EVENTS_AP0_REPORT.md) · [精确比较推导](docs/theory/SHARED_MISSING_EVENTS_COMPRESSION.md)
 
-当前支持的是有限面板上的可识别性与适用边界研究，尚未建立普遍模型选择收益或 JCR Q2 投稿成熟度。AP2 保留范围尚未使用；旧六折不是新方向的前置条件。
+当前支持有限面板的比较证书与适用边界研究，尚未建立普遍模型选择收益或 JCR Q2 投稿成熟度。下一步进行贡献核对与写稿，不自动追加年份、模型或阈值；旧六折不是新方向的前置条件。
 
 ## 从这里开始
 

@@ -43,6 +43,7 @@
 | [dual_region_pilot.py](research/dual_region_pilot.py) | Registered K32 partition/swap pilot; all supervised selection is in training. |
 | [evaluate_point_heads.py](research/evaluate_point_heads.py) | Evaluate the frozen B2 point systems; write aggregates, keep parameters private. |
 | [explain_shared_missing_ap1.py](research/explain_shared_missing_ap1.py) | Classify endpoint conflict sizes without fitting or selecting any predictor. |
+| [explain_shared_missing_ap2.py](research/explain_shared_missing_ap2.py) | Explain every natural comparison, with completion and structural witnesses. |
 | [extend_observation_optimization.py](research/extend_observation_optimization.py) | Post-hoc common-budget optimization diagnosis; original v1 remains unchanged. |
 | [extract_historical_comparison_summaries.py](research/extract_historical_comparison_summaries.py) | Extract original reported legacy metrics without reopening targets or predictions. |
 | [fetch_shared_missing_data.py](research/fetch_shared_missing_data.py) | Fetch the two public UCI archives for the shared-missing-events pilot. |
@@ -55,6 +56,7 @@
 | [probe_input_order.py](research/probe_input_order.py) | Target-free training-history input-order diagnostic, not accuracy evaluation. |
 | [profile_foundation.py](research/profile_foundation.py) | Profile one TRAINING origin before authorizing a development prediction cache. |
 | [record_continuous_objective_error.py](research/record_continuous_objective_error.py) | Decompose only the largest recorded synthetic objective discrepancy. |
+| [replay_shared_missing_witnesses.py](research/replay_shared_missing_witnesses.py) | Verify exported missing-bit assignments using a separate cumulative-sum labeler. |
 | [replicate_signals.py](research/replicate_signals.py) | Frozen fold-two replication; no test read or hyperparameter search. |
 | [residual_information.py](research/residual_information.py) | Rolling residual-information screen and conditionally admitted validation. |
 | [run_coarse_memory_identifiability.py](research/run_coarse_memory_identifiability.py) | Exact finite-sum synthetic mechanism check; never loads UrbanEV data. |
@@ -73,11 +75,13 @@
 | [run_paris_event_audit.py](research/run_paris_event_audit.py) | Audit an explicitly supplied Paris DEVELOPMENT shard; export aggregates only. |
 | [run_reference_harm_stability.py](research/run_reference_harm_stability.py) | Frozen-base equal-parameter O-D interaction study on the registered CUDA device. |
 | [run_shared_missing_ap1.py](research/run_shared_missing_ap1.py) | Execute AP1: AP0 hierarchy replay, fixed old-data selection and new-year tests. |
+| [run_shared_missing_ap2.py](research/run_shared_missing_ap2.py) | One fixed AP2 replication, loading AP1 selected models without fitting. |
 | [run_shared_missing_p0.py](research/run_shared_missing_p0.py) | A-P0: causal light predictors and exact comparisons on two public prefixes. |
 | [run_short_state_relaxation.py](research/run_short_state_relaxation.py) | Frozen short-state experiment: 8 neural runs, 2 ridge fits, no foundation calls. |
 | [run_volume_composition_increment.py](research/run_volume_composition_increment.py) | Execute one separately registered dynamic-volume information experiment. |
 | [score_full_benchmark.py](research/score_full_benchmark.py) | Score only a complete frozen prediction set; no fitting or model selection. |
 | [summarize_shared_missing_ap1.py](research/summarize_shared_missing_ap1.py) | Produce AP1 denominators, candidate decisions, concentration and morphology. |
+| [summarize_shared_missing_ap2.py](research/summarize_shared_missing_ap2.py) | AP2 complete denominators, information/structure diagnostics and case evidence. |
 | [verify_benchmark_preparation.py](research/verify_benchmark_preparation.py) | Synthetic-only comparison preparation. Accepts source roots, never real data. |
 | [verify_calibration_2h_results.py](research/verify_calibration_2h_results.py) | Recompute published-score candidates from saved outputs; no refitting/selection. |
 | [verify_continuous_candidates.py](research/verify_continuous_candidates.py) | Synthetic candidate-reduction regression receipts; no research arrays loaded. |
@@ -87,4 +91,5 @@
 | [verify_dual_risk_finite_step_calibration.py](research/verify_dual_risk_finite_step_calibration.py) | Recompute existing calibration points from saved models; never fit or select. |
 | [verify_persistent_events.py](research/verify_persistent_events.py) | A-P0 exhaustive correctness and matched-kernel timing; no real data reads. |
 | [verify_shared_missing_ap1_milp.py](research/verify_shared_missing_ap1_milp.py) | Deterministic, outcome-stratified MILP checks, including negatives and cutoffs. |
+| [verify_shared_missing_ap2.py](research/verify_shared_missing_ap2.py) | Independent MILP checks of new natural decisions and fixed negative controls. |
 | [verify_volume_increment_scores.py](research/verify_volume_increment_scores.py) | Independent reductions of already registered points from archived directions. |
