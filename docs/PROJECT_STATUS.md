@@ -1,5 +1,23 @@
 # 项目状态
 
+## 2026-09-18 贡献冻结并完成论文全稿
+
+当前状态为 **CONTRIBUTION FROZEN — COMPLETE MANUSCRIPT DRAFT**。英文正文、完整证明附录和中文摘要已形成[可编辑稿源与复现入口](../paper/persistent_events/README.md)。理论核心为A的尖锐输出像结构定理；B以经典并闭包/原子理论的几何推论定位，C保留为已有多面体机制的边界例。
+
+全量完整cover核对覆盖2,784自然面板、8,352比较：cover-LP与cover-ILP均匹配DP端点；昌平案例由完整cover-LP解释，不再称DP不可替代。[冻结贡献说明](reviews/PERSISTENT_EVENT_FROZEN_CONTRIBUTION_20260917.md)。原AP0/AP1/AP2证据保持原样，以下为阶段历史。
+
+## 2026-09-17：持续事件结构理论已形成证明包
+
+完成最小游程区间表示、至多两点覆盖约化、K≥2L−1的二元覆盖完整性及私人游程充要判据；另给短窗口反例和覆盖LP不精确的风险反例。既有470个模糊面板的事后诊断得到323个两两精确、147个不完整，全部消除旧预算未判定项。[理论报告](theory/PERSISTENT_EVENT_COVER_STRUCTURE_20260917.md) · [完整证明](../PROOF_PACKAGE.md)。本轮无新年份、拟合、预测或风险重评分；正确性与首次性分开判断。
+
+## 2026-09-17：贡献查新完成一轮系统核查
+
+已形成[查新报告](reviews/SHARED_TRACE_PAIRED_RISK_NOVELTY_20260917.md)、66条查询记录和20项近邻矩阵。未核实完整专门等价工作，但新发现 ICML 2024 的直接预测比较和2026 OnsetBounds共同起点配对界等强先例。当前只保留问题特定的结构化评价与实证定位，不把三类证书命名或查新未命中当作新通用理论成立。本轮无新实验。
+
+## 2026-09-17：AP2 与结构解释已完成
+
+固定模型在原保留年份新增17周级+1站点年度判向，13个周级候选集合变化、10个新唯一最佳；1例高阶必要已由独立MILP核对。AP1/AP2全部295个剩余未定比较都有相反胜负见证。下一步是贡献定位与写稿。[AP2报告](reports/audit/SHARED_MISSING_EVENTS_AP2_REPORT.md) · [更新主张](research/SHARED_MISSING_EVENTS_AP2_CLAIMS.md)。以下AP1/AP0内容为各阶段历史记录。
+
 ## AP1 执行与主张锁定
 
 AP1 完成旧自然面板重算、通用DFA/两两LP/分层MILP对照及指定新年份评价。新增5个周级和1个站点年度判向均由两两LP取得；撤回独立算法首创及高阶优化额外模型选择价值。[完整结果与锁定主张](reports/audit/SHARED_MISSING_EVENTS_AP1_REPORT.md)。保留AP2范围未使用。

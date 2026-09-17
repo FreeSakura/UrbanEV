@@ -1,0 +1,288 @@
+{
+  "date": "2026-09-17",
+  "queries": [
+    {
+      "batch": 1,
+      "q": "\"Weak Supervision Performance Evaluation via Partial Identification\""
+    },
+    {
+      "batch": 1,
+      "q": "\"Assumptions for Effective Monitoring of Real-Time Properties under Partial Observability\""
+    },
+    {
+      "batch": 1,
+      "q": "\"Runtime Verification of LTL on Lossy Traces\""
+    },
+    {
+      "batch": 1,
+      "q": "\"model comparison\" \"partial identification\" loss"
+    },
+    {
+      "batch": 2,
+      "q": "\"imprecise\" \"model comparison\" \"loss\" dominance"
+    },
+    {
+      "batch": 2,
+      "q": "\"performance evaluation\" \"imprecise labels\" classifiers"
+    },
+    {
+      "batch": 2,
+      "q": "\"robust model comparison\" \"missing\" data"
+    },
+    {
+      "batch": 2,
+      "q": "\"partial labels\" \"structured prediction\" evaluation risk bounds"
+    },
+    {
+      "batch": 3,
+      "q": "\"classifier comparison\" \"imprecise\" labels"
+    },
+    {
+      "batch": 3,
+      "q": "\"maximality\" \"lower expectation\" \"difference\" decisions"
+    },
+    {
+      "batch": 3,
+      "q": "\"evaluation\" \"uncertain labels\" \"bounds\" classifiers"
+    },
+    {
+      "batch": 3,
+      "q": "\"certain answers\" \"model evaluation\" incomplete data"
+    },
+    {
+      "batch": 4,
+      "q": "\"quantitative monitoring\" \"incomplete\" traces"
+    },
+    {
+      "batch": 4,
+      "q": "\"robustness\" \"interval\" \"partial signals\" temporal logic monitoring"
+    },
+    {
+      "batch": 4,
+      "q": "\"weighted automata\" \"missing\" \"evaluation\""
+    },
+    {
+      "batch": 4,
+      "q": "\"counterexample guided abstraction refinement\" spurious counterexamples Clarke 2000"
+    },
+    {
+      "batch": 5,
+      "q": "\"risk difference\" \"partial identification\" prediction evaluation 2025 2026"
+    },
+    {
+      "batch": 5,
+      "q": "\"missing labels\" \"evaluation\" site:openreview.net 2025 2026"
+    },
+    {
+      "batch": 5,
+      "q": "\"model evaluation\" \"missing labels\" site:arxiv.org 2026"
+    },
+    {
+      "batch": 5,
+      "q": "\"model comparison\" \"incomplete data\" \"possible worlds\""
+    },
+    {
+      "batch": 6,
+      "q": "\"A Framework for Reliable Deployment and Monitoring of AI Decision Systems Under Partial Observability\""
+    },
+    {
+      "batch": 6,
+      "q": "\"forecast comparison\" \"missing observations\" bounds"
+    },
+    {
+      "batch": 6,
+      "q": "\"overlapping\" \"event labels\" \"missing\" evaluation"
+    },
+    {
+      "batch": 6,
+      "q": "\"certain answers\" \"aggregate\" \"incomplete databases\" min max"
+    },
+    {
+      "batch": 7,
+      "q": "\"Efficient Approximation of Certain and Possible Answers for Ranking and Window Queries\""
+    },
+    {
+      "batch": 7,
+      "q": "\"Labeled Null Semantics for Incomplete Decision Tables\" "
+    },
+    {
+      "batch": 7,
+      "q": "\"prediction\" \"partial identification\" \"evaluation\" 2026 2025 bounds"
+    },
+    {
+      "batch": 7,
+      "q": "\"model comparison\" \"label uncertainty\" bounds certificates"
+    },
+    {
+      "batch": 8,
+      "q": "\"Sharp performance bounds\" \"early-warning\""
+    },
+    {
+      "batch": 8,
+      "q": "\"interval-uncertain event onset\""
+    },
+    {
+      "batch": 8,
+      "q": "\"early warning\" \"partial identification\" model evaluation bounds"
+    },
+    {
+      "batch": 8,
+      "q": "\"evidence-supported\" \"benchmark\" \"Gao\" 2026"
+    },
+    {
+      "batch": 9,
+      "q": "\"Sharp performance bounds for clinical early-warning systems\" "
+    },
+    {
+      "batch": 9,
+      "q": "\"OnsetBounds\" \"Gao\""
+    },
+    {
+      "batch": 9,
+      "q": "\"paired comparison\" \"interval\" \"event onset\""
+    },
+    {
+      "batch": 9,
+      "q": "\"shared\" \"trace\" \"risk\" \"certificate\" prediction"
+    },
+    {
+      "batch": 10,
+      "q": "\"paired-risk\" certificate"
+    },
+    {
+      "batch": 10,
+      "q": "\"sharp bounds\" \"predictive\" \"risk\" \"2026\""
+    },
+    {
+      "batch": 10,
+      "q": "\"model evaluation\" \"partial identification\" site:proceedings.mlr.press 2025 2026"
+    },
+    {
+      "batch": 10,
+      "q": "\"shared\" \"missing\" \"temporal\" \"evaluation\" \"bounds\""
+    },
+    {
+      "batch": 11,
+      "q": "\"Regret-based budgeted decision rules under severe uncertainty\""
+    },
+    {
+      "batch": 11,
+      "q": "\"missing labels\" evaluation bounds site:proceedings.neurips.cc/paper_files/paper/2025"
+    },
+    {
+      "batch": 11,
+      "q": "\"partial identification\" evaluation site:proceedings.mlr.press 2026"
+    },
+    {
+      "batch": 11,
+      "q": "\"model comparison\" \"partial\" site:arxiv.org/abs/260"
+    },
+    {
+      "batch": 12,
+      "q": "\"A Cost-Regular based Hybrid Column Generation Approach\" pdf Demassey"
+    },
+    {
+      "batch": 12,
+      "q": "\"Robust Online Monitoring of Signal Temporal Logic\" Deshmukh 2017"
+    },
+    {
+      "batch": 12,
+      "q": "\"Answering aggregate queries in data exchange\" Kolaitis 2008 pdf"
+    },
+    {
+      "batch": 12,
+      "q": "\"Manski\" \"partial identification\" \"prediction\" \"loss\""
+    },
+    {
+      "batch": 13,
+      "q": "\"shared-trace paired-risk certificate\""
+    },
+    {
+      "batch": 13,
+      "q": "\"paired\" \"risk\" \"certificate\" \"missing\" labels"
+    },
+    {
+      "batch": 13,
+      "q": "\"incomplete\" \"traces\" \"Brier\""
+    },
+    {
+      "batch": 14,
+      "q": "\"Does AI help humans make better decisions\" Imai authors 2025"
+    },
+    {
+      "batch": 14,
+      "q": "\"Labeled Null Semantics for Incomplete Decision Tables\" author 2026"
+    },
+    {
+      "batch": 14,
+      "q": "\"cost_regular\" site:docs.minizinc.dev"
+    },
+    {
+      "batch": 14,
+      "q": "\"model evaluation\" \"partial identification\" site:semanticscholar.org"
+    },
+    {
+      "batch": 15,
+      "q": "\"loss difference\" \"missing labels\" classifier bounds"
+    },
+    {
+      "batch": 15,
+      "q": "\"temporal logic\" \"model evaluation\" uncertainty bounds"
+    },
+    {
+      "batch": 15,
+      "q": "\"risk\" \"incomplete trace\" comparison"
+    },
+    {
+      "batch": 15,
+      "q": "\"partial identification\" site:proceedings.mlr.press/v267 OR site:proceedings.mlr.press/v272 OR site:openreview.net 2026 evaluation"
+    },
+    {
+      "batch": 16,
+      "q": "\"shared\" \"event\" \"evaluation\" \"partial identification\" 2026"
+    },
+    {
+      "batch": 16,
+      "q": "\"forecast\" \"ranking\" \"interval uncertainty\" paired"
+    },
+    {
+      "batch": 16,
+      "q": "\"overlapping labels\" \"partial identification\""
+    },
+    {
+      "batch": 17,
+      "q": "\"missing labels\" \"evaluation\" bounds",
+      "domains": [
+        "arxiv.org",
+        "openreview.net",
+        "proceedings.mlr.press"
+      ],
+      "recency": 183
+    },
+    {
+      "batch": 17,
+      "q": "\"partial identification\" \"model evaluation\"",
+      "domains": [
+        "arxiv.org",
+        "openreview.net",
+        "proceedings.mlr.press"
+      ],
+      "recency": 183
+    },
+    {
+      "batch": 17,
+      "q": "\"partial observability\" \"monitoring\" certificates",
+      "domains": [
+        "arxiv.org",
+        "link.springer.com"
+      ],
+      "recency": 183
+    },
+    {
+      "batch": 18,
+      "q": "\"Predictive Performance Comparison of Decision Policies Under Confounding\""
+    }
+  ],
+  "recorded_query_count": 66,
+  "note": "Initial exploratory queries preceded this systematic log; not all index hits are retained. Recency filters can return older documents; publication dates checked separately."
+}

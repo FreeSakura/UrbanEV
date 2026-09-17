@@ -799,6 +799,85 @@
         "artifacts/summaries/shared_missing_events_ap1/new_execution.json",
         "artifacts/summaries/shared_missing_events_ap1/milp_execution.json"
       ]
+    },
+    {
+      "id": "shared_missing_events_ap2",
+      "title": "共享缺测比较证书与固定年度复制",
+      "category": "shared_missing",
+      "evidence_kind": "development",
+      "summary": "AP1/AP2全部295个剩余未定比较有相反见证；AP2新增17周级+1年度判向，1个高阶必要案例；功率与全年跨站均零新增。",
+      "evidence_dir": "artifacts/summaries/shared_missing_events_ap2",
+      "reports": [
+        "docs/reports/audit/SHARED_MISSING_EVENTS_AP2_REPORT.md",
+        "docs/theory/SHARED_MISSING_EVENTS_AP2_CERTIFICATES.md",
+        "docs/research/SHARED_MISSING_EVENTS_AP2_CLAIMS.md",
+        "docs/research/SHARED_MISSING_EVENTS_AP2_METHOD_RESULTS_DRAFT.md"
+      ],
+      "entrypoints": [
+        "scripts/research/run_shared_missing_ap2.py",
+        "scripts/research/explain_shared_missing_ap2.py",
+        "scripts/research/verify_shared_missing_ap2.py",
+        "scripts/research/replay_shared_missing_witnesses.py",
+        "scripts/research/summarize_shared_missing_ap2.py"
+      ],
+      "configs": [
+        "configs/research/SHARED_MISSING_EVENTS_AP2_20260917.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/shared_missing_events_ap2/summary.json",
+        "artifacts/summaries/shared_missing_events_ap2/execution.json",
+        "artifacts/summaries/shared_missing_events_ap2/witness_replay.json",
+        "artifacts/summaries/shared_missing_events_ap2/decision_milp_summary.json"
+      ]
+    },
+    {
+      "id": "persistent_event_structure_20260917",
+      "title": "持续事件覆盖结构与两两充分性",
+      "category": "shared_missing",
+      "evidence_kind": "development",
+      "summary": "长窗口K≥2L−1的二元覆盖完整性与私人见证判据；冻结470模糊面板323精确/147不完整；构造反例表明覆盖LP仍不精确。",
+      "evidence_dir": "artifacts/summaries/persistent_event_structure_20260917",
+      "reports": [
+        "docs/theory/PERSISTENT_EVENT_COVER_STRUCTURE_20260917.md",
+        "PROOF_PACKAGE.md",
+        "docs/reviews/PERSISTENT_EVENT_STRUCTURE_PROOF_AUDIT_20260917.md"
+      ],
+      "entrypoints": [
+        "scripts/research/verify_persistent_event_structure.py",
+        "scripts/research/analyze_persistent_event_structure.py"
+      ],
+      "configs": [
+        "configs/research/PERSISTENT_EVENT_STRUCTURE_20260917.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/persistent_event_structure_20260917/verification.json",
+        "artifacts/summaries/persistent_event_structure_20260917/frozen_geometry_execution.json"
+      ]
+    },
+    {
+      "id": "persistent_event_complete_covers_20260917",
+      "title": "持续事件完整覆盖验证与完整稿",
+      "category": "shared_missing",
+      "evidence_kind": "development",
+      "summary": "冻结2784自然面板8352比较，完整cover LP及ILP均匹配DP；形成核心定理A、几何推论B及冻结实证的完整稿。",
+      "evidence_dir": "artifacts/summaries/persistent_event_complete_covers_20260917",
+      "reports": [
+        "docs/reviews/PERSISTENT_EVENT_FROZEN_CONTRIBUTION_20260917.md",
+        "paper/persistent_events/manuscript.md",
+        "paper/persistent_events/README.md"
+      ],
+      "entrypoints": [
+        "scripts/research/validate_persistent_event_covers.py",
+        "scripts/build_persistent_event_figures.py",
+        "scripts/build_persistent_event_manuscript.py"
+      ],
+      "configs": [
+        "configs/research/SHARED_MISSING_EVENTS_AP1_20260916.json",
+        "configs/research/SHARED_MISSING_EVENTS_AP2_20260917.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/persistent_event_complete_covers_20260917/STRUCTURE_VALIDATION.json"
+      ]
     }
   ]
 }

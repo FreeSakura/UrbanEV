@@ -2072,6 +2072,177 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/persistent_event_complete_covers_20260917/classical_counterexample_mapping.json",
+      "sha256": "9f5a6a17705bfa8cd990a61268d758d47759a42c1887eb652637cea5f12d6c01",
+      "bytes": 1599,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_complete_covers_20260917/comparison_results.csv",
+      "sha256": "8a1975b34447d4b5c27bf4d7a2757b6a4162d05410009b96b879bf5f6596b87b",
+      "bytes": 3181017,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_complete_covers_20260917/layer_decisions.csv",
+      "sha256": "764cb81b99de1244e079912320ef1e8f491db5e8052102c79b285c9c5616cf2c",
+      "bytes": 404,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_complete_covers_20260917/panel_results.csv",
+      "sha256": "e16a1c4d05ba02bafe07dc24011c8fec068e8865ac418fc85773d6302fdd813d",
+      "bytes": 263754,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_complete_covers_20260917/runtime_versions.json",
+      "sha256": "e909b89187edc105266f42bcd34240500e89f8891784134fa8d10f5fb656b3ec",
+      "bytes": 162,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_complete_covers_20260917/selfcheck.json",
+      "sha256": "a908890f463399a8c7be2a6de3ee7f693c3804866d0e173a37e1cf9970120f69",
+      "bytes": 493,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_complete_covers_20260917/STRUCTURE_VALIDATION.json",
+      "sha256": "b1f6128abc4bcee31bbe6f2c500c9715a44a69d99ef95ee426b5a253b7f582e5",
+      "bytes": 1180,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_structure_20260917/ambiguous_geometry_summary.csv",
+      "sha256": "028c83fc9151dad83a62fe4c3c535d0616e8b2821c54e7f768b5ddc9a1e1087d",
+      "bytes": 133,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_structure_20260917/cover_LP_counterexample.json",
+      "sha256": "c34e520818970efbd0f0047f2663026bb73791be3d164e8febdeef11e833e878",
+      "bytes": 1456,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_structure_20260917/essential_covers.csv",
+      "sha256": "21167b55318c1e95181cb9bac5cb3ae20a4ea9a9d48d6d83bcb5317234e38f84",
+      "bytes": 1971220,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_structure_20260917/frozen_geometry_execution.json",
+      "sha256": "97a08af5c52616ca0681dd175fe083aaaac4ec32807f82ead408cb392d015cb4",
+      "bytes": 348,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_structure_20260917/frozen_panel_geometry.csv",
+      "sha256": "7ac9b0409266d7c704df16af78ade6eecbf54ef3cb0672d6bb80c5e54f83c4c5",
+      "bytes": 242889,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_structure_20260917/geometry_and_cached_decisions.csv",
+      "sha256": "a4c84b913165eff7e93d30abf4703bb75977618201dd863eeb7f8263fe54dc29",
+      "bytes": 924711,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_structure_20260917/previous_certificate_crosscheck.csv",
+      "sha256": "8fe370ffbfc8f9c38bbc508434b3fe30d599fbed9560b0ed6d1b3e4156d72a30",
+      "bytes": 397,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_structure_20260917/reproduction_environment.json",
+      "sha256": "b7ac378d6320f2cc58cd5f0ade3022c6aa7970f023b4b579deded99f7e7687b1",
+      "bytes": 1006,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_structure_20260917/short_window_counterfamily.json",
+      "sha256": "094f99b4b1e88bc147ae457160e0998beebc18eb87eb9056e3c0446281808fae",
+      "bytes": 13729,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_structure_20260917/structure_objective_decision_summary.csv",
+      "sha256": "eae885cefd9f3cf0afc898be89f19f59d47cd8d001b03d0a7afc8d55abaf1d0b",
+      "bytes": 193,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_structure_20260917/validation.json",
+      "sha256": "35aef3eedf357861d031e170e23d2c840beb1465781acd89c1033b2465f20d03",
+      "bytes": 310,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_structure_20260917/verification.json",
+      "sha256": "8ca239aabd7d605b9e1a9181c628461aae04d0986bef3786c960608a367c6f38",
+      "bytes": 396,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/physics_economics_traffic_20260913/additional_source_metadata.json",
       "sha256": "4d7533216f4691e055612e82e99d4723ff058d320c0fbb4c0c5c13d6253acff5",
       "bytes": 5039,
@@ -2963,6 +3134,366 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ambiguous_panel_structure_summary.csv",
+      "sha256": "edc3b035fff01b94573e91d81e88878e1a29f1e270355a11f7a1a81c4e6689e9",
+      "bytes": 212,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap1_completion_witnesses.jsonl",
+      "sha256": "35cb874d966680b5803d908007d160ef979332695c610e270a4fcb4ef29bf5d4",
+      "bytes": 1017721,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap1_components.csv",
+      "sha256": "d9dc1d41f56ecea0f629f9647e6eb030b25d557983c966cae7d7c91be069e278",
+      "bytes": 32106,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap1_endpoint_witnesses.csv",
+      "sha256": "6d64f2157772aa90772b7c6c1fc0ee0f477ef617a06ab90c3e4bbb0e2da6b8de",
+      "bytes": 289552,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap1_explanation_execution.json",
+      "sha256": "7b819c2132070c7b9b4e0270a0e3a1605c85fb71be9adddf14bb5c757a5b0290",
+      "bytes": 92,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap1_explanation_summary.json",
+      "sha256": "b98ed9edcf71ce824aaa3078e8892db1fba6b79badf4557ba6437b1bd1fdc592",
+      "bytes": 507,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap1_explanations.csv",
+      "sha256": "01b19213894b8a38a618a2e95ce9ec99f5e7ae00bbb30c0a7c03c1afe48038c6",
+      "bytes": 1297246,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap1_higher_order_gaps.csv",
+      "sha256": "adcc350a6239ee64790bfb17bd52679198e2bc6a202099cb56d613d1b7eea434",
+      "bytes": 17318,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap1_panel_structure.csv",
+      "sha256": "811e2824577bbe4f1a38c6efb477001e430cad27c5fbe3b3e23dfff9451ee4d1",
+      "bytes": 99676,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap1_unreachable_patterns.jsonl",
+      "sha256": "780341dfb74ba37bf7bce7c9c1e3e6018afb09a62d9cac93c80c3ad12c503eae",
+      "bytes": 79461,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap2_completion_witnesses.jsonl",
+      "sha256": "9b1477a82a34532dc67c23fb8d014443be0bd880dfa45d61e12dc566d71401d9",
+      "bytes": 1828887,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap2_components.csv",
+      "sha256": "7f29869f18e32dd50b9549ef789c905f63dbaaabb050170285eee744c8b04e22",
+      "bytes": 44716,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap2_endpoint_witnesses.csv",
+      "sha256": "b127d40ee89c7f19cd63832456a326b95bab077f2691e36caef6c4384b7b4b29",
+      "bytes": 394629,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap2_explanation_execution.json",
+      "sha256": "419799ccf3905d9b584ed83022fbb7dc58c9b1b90b97d01635c12d78a018760f",
+      "bytes": 92,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap2_explanation_summary.json",
+      "sha256": "8bece6152d12d70ed56b6e8ad5ce3870431ad95d8104ae4b08a886f35b6cd7c6",
+      "bytes": 548,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap2_explanations.csv",
+      "sha256": "6312880380b71270a728941afabf5b4b05e0a3c4125eaf47a0bc7a131d2e5de5",
+      "bytes": 1300473,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap2_higher_order_gaps.csv",
+      "sha256": "d3a9e7d2cb9b6fa55f86fc6e17eae9f5893065f0e0895681aeadcb7833bae261",
+      "bytes": 20995,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap2_panel_structure.csv",
+      "sha256": "cf24a5a13a0e18408725d3963e2c62626350ae31cf82228b049c8df7706c024e",
+      "bytes": 99987,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/ap2_unreachable_patterns.jsonl",
+      "sha256": "a4be8dbe97bc079c73af994b752d1b9d86aea80624e44fbd39ede85cea38480c",
+      "bytes": 441673,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/artificial_direction_tradeoff.csv",
+      "sha256": "0ea33401547d3ad6262d4299a2b30f6c894ad4abadf81a2189ac8f6c69bf34e5",
+      "bytes": 2553,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/data_qualification.csv",
+      "sha256": "287084d8f835d162e2fb5fead9a43b83d496b8b5018c858b05436764ef4fb92b",
+      "bytes": 1461,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/data_sources.json",
+      "sha256": "73b33d7d68f6b70f91c8f4ff73d97739d980691f9c276d9f45bf37d61078244c",
+      "bytes": 536,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/decision_milp.csv",
+      "sha256": "0c9271c371ddb1ec18231b0a55f2aa7b50fef9e74613e74b3b7f72232cd0d9f8",
+      "bytes": 5377,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/decision_milp_plan.csv",
+      "sha256": "0e8ce4890ec23e97a006df551d3b10e544b17e5c0833fd4115fc5d584e1ce14c",
+      "bytes": 15025,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/decision_milp_summary.json",
+      "sha256": "cf465da01ebb554e57f54ff7b5e4bbc39a4709b60712e3b0a21674a41c9fd682",
+      "bytes": 311,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/execution.json",
+      "sha256": "4be2d9600fbc09ff80534c73039bb50cc3c2ea7b00e46c8984a6a0d55f6bc943",
+      "bytes": 227,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/frozen_models.json",
+      "sha256": "88fe2f8ca28a4cb6091d2da6038c99d6746ee962df67bb3b6b47a0b6a5390209",
+      "bytes": 781,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/higher_order_case.json",
+      "sha256": "9242f7866eba2e81402aa213d7e35cbf6a01a81c02a8b2d29ab77f34e007794a",
+      "bytes": 1066,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/new_candidate_changes.csv",
+      "sha256": "c0ffadf75f9492a2086b0b46ae18b82532eff1cecffc65a5de8ba6903a719f36",
+      "bytes": 3080,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/new_natural_decisions.csv",
+      "sha256": "e39607e5fc754d045da225c2a273b183bf75ca26fa5695310be41cf07e440c05",
+      "bytes": 11374,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/new_year_candidate_sets.csv",
+      "sha256": "04d59629749f86fa3b3e466e59e858e8573f6f860388b86d530073efd2528d6b",
+      "bytes": 323083,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/new_year_hierarchy.csv",
+      "sha256": "ab410e7ceafcda1db6a23e8f24f74b50856dfe6c862117f91cc57ab10d906c34",
+      "bytes": 2474589,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/pooled_annual_bounds.csv",
+      "sha256": "d801f79fad12e35f625809af32333918dd76576effbd26d7d2b6c2d1a34a2642",
+      "bytes": 2286,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/reproduction_environment.json",
+      "sha256": "6260c456c6ed73f81d5af5af0345f954985405ce1b45aac6015e42c4a46e77f6",
+      "bytes": 1323,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/scope_summary.csv",
+      "sha256": "a077a5c3070945d10303990d05fb1fffa2aeb6fbf111462c0438b8d824b35afd",
+      "bytes": 1487,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/skipped_artificial.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/summary.json",
+      "sha256": "0ed85875fc19462d318301234c1a4038d8d9f80c810a1f4de89d8a043acd8073",
+      "bytes": 2151,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/unique_best_advantages.csv",
+      "sha256": "24404db1b963758d969652a17a6a9b489b0e0809e3cca9a961b425e6372a78be",
+      "bytes": 1585,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/validation.json",
+      "sha256": "2a91a4d2aac2a66e07cf9902bb821e198caa9c975c2a80008b8f2c445b05de28",
+      "bytes": 460,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/shared_missing_events_ap2/witness_replay.json",
+      "sha256": "96c234c9c2649599eed349cb2d70f50c537c41af64abb1f003f4a6d9eb0c59fd",
+      "bytes": 458,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/short_state_relaxation_v1/development_scores.csv",
       "sha256": "975bdbf007cd35b70bf178d07a8d2a1f9016099b3e5dd686a34158aa151ed1c5",
       "bytes": 14247,
@@ -3512,6 +4043,15 @@
       "public_or_external": "public"
     },
     {
+      "path": "configs/research/PERSISTENT_EVENT_STRUCTURE_20260917.json",
+      "sha256": "83ce97ad4eb9f1ed63569543947dab50a00cab92c480a216361096638c4fc0b6",
+      "bytes": 1192,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
       "path": "configs/research/REFERENCE_HARM_STABILITY_V1.json",
       "sha256": "b070a58b6fd9a0f8f4403a22d2167d200287eb3a88c429703269d4d657150fa2",
       "bytes": 8751,
@@ -3596,6 +4136,15 @@
       "path": "configs/research/SHARED_MISSING_EVENTS_AP1_20260916.json",
       "sha256": "0a84b79d5ca3585942029d816ce444bbe485dac73e9669501832e988b27d934b",
       "bytes": 4314,
+      "role": "configs",
+      "origin": "UrbanEV evidence-audit project",
+      "license": "MIT",
+      "public_or_external": "public"
+    },
+    {
+      "path": "configs/research/SHARED_MISSING_EVENTS_AP2_20260917.json",
+      "sha256": "122a11d968514f1b7a5e9610faac4b1d5f7333bbcfe296495e768ccb4f313c02",
+      "bytes": 4714,
       "role": "configs",
       "origin": "UrbanEV evidence-audit project",
       "license": "MIT",

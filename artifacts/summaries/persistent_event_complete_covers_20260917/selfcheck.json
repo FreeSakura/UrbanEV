@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "layouts": 102,
+  "objectives": 156,
+  "integer_patterns": 390,
+  "counterexample": {
+    "K": 6,
+    "L": 3,
+    "T": 10,
+    "binary_patterns": 16,
+    "all_irreducible_two_covers": 10,
+    "LP_min_linear": -0.5,
+    "ILP_min_linear": 0.0,
+    "LP_min_Brier": -0.05,
+    "ILP_min_Brier": 0.05,
+    "LP_x": [
+      0.5,
+      1.0,
+      0.5,
+      1.0,
+      0.5
+    ],
+    "meaning": "Relaxation loses strict direction; it does not certify the opposite model."
+  }
+}

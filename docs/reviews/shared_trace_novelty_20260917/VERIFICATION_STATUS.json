@@ -1,0 +1,161 @@
+{
+  "helper_status": "WARN",
+  "reason_code": "verify_papers_unavailable",
+  "canonical_lookup": [
+    ".aris/tools/verify_papers.py",
+    "tools/verify_papers.py",
+    "ARIS_REPO/tools/verify_papers.py"
+  ],
+  "skill_tree_search": "No verify_papers.py found in installed skill roots",
+  "papers": [
+    {
+      "id": "S01",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_full_sections"
+    },
+    {
+      "id": "S02",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_full_sections"
+    },
+    {
+      "id": "S03",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_full_sections"
+    },
+    {
+      "id": "S04",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_sections_and_author_metadata"
+    },
+    {
+      "id": "S05",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_source_code"
+    },
+    {
+      "id": "S06",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_abstract_only"
+    },
+    {
+      "id": "S07",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_full_sections"
+    },
+    {
+      "id": "S08",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_full_sections"
+    },
+    {
+      "id": "S09",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_metadata_indexed_abstract_plus_official_implementation_docs"
+    },
+    {
+      "id": "S10",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_full_sections"
+    },
+    {
+      "id": "S11",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_full_sections"
+    },
+    {
+      "id": "S12",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_full_sections"
+    },
+    {
+      "id": "S13",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_full_sections"
+    },
+    {
+      "id": "S14",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_abstract_and_indexed_sections"
+    },
+    {
+      "id": "S15",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_publisher_sections_access_limited"
+    },
+    {
+      "id": "S16",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_publisher_sections_access_limited"
+    },
+    {
+      "id": "S17",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_full_sections"
+    },
+    {
+      "id": "S18",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_full_sections"
+    },
+    {
+      "id": "S19",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "prior_turn_primary_sections_current_access_failed"
+    },
+    {
+      "id": "S20",
+      "status": "unverified",
+      "method": "none",
+      "manual_primary_identity": "confirmed",
+      "read_level": "primary_abstract_only"
+    }
+  ],
+  "external_codex_review": "not_run_backend_unavailable",
+  "onsetbounds": {
+    "repository_created_at": "2026-08-23T17:04:10Z",
+    "pushed_at": "2026-08-24T07:16:49Z",
+    "inspected_commit": "724cb75d839e498b00bd2653f9e2c8a693ba1d6b",
+    "citation_release_date": "2026-08-24",
+    "manuscript_publication_status": "unverified",
+    "source_code_executed": false
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "dataset": "beijing",
+    "uci_id": 501,
+    "archive_sha256": "d1b9261c54132f04c374f762f1e5e512af19f95c95fd6bfa1e8ac7e927e3b0b8",
+    "archive_bytes": 7959991,
+    "official_page": "https://archive.ics.uci.edu/dataset/501",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "dataset": "household",
+    "uci_id": 235,
+    "archive_sha256": "9f84b46ade8a2d8e1286ec4b2b6c2987a45a755c59f263be3b3b3d10dfbda3ff",
+    "archive_bytes": 20640916,
+    "official_page": "https://archive.ics.uci.edu/dataset/235",
+    "license": "CC-BY-4.0"
+  }
+]

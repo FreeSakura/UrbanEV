@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE",
+  "wall_seconds_excluding_data_load": 4.207284799998888,
+  "panels": 2784,
+  "new_training": 0,
+  "new_prediction": 0,
+  "new_risk_scoring": 0,
+  "old_conclusive_structural_checks_agree": true,
+  "role": "Post-hoc structural interpretation of already exposed AP1/AP2 observations; not an independent confirmation study"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "relevant_tests": 42,
+  "exhaustive_verification": "verification.json",
+  "frozen_structural_crosscheck": "previous_certificate_crosscheck.csv",
+  "original_AP0_AP1_AP2_evidence_changed": false,
+  "formal_proof_assistant_used": false,
+  "external_independent_review_performed": false
+}

@@ -1,0 +1,5 @@
+phase,geometry_status,comparisons,objective_tighter,higher_order_new
+AP1,PAIRWISE_EXACT,366,0,0
+AP1,PAIRWISE_INSUFFICIENT,234,49,0
+AP2,PAIRWISE_EXACT,603,0,0
+AP2,PAIRWISE_INSUFFICIENT,207,61,1

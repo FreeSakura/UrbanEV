@@ -1,0 +1,27 @@
+{
+  "base_commit": "42094df5b513b7f5a761828332a867a5e6ca935d",
+  "plan_commits": [
+    "e6b7d74",
+    "570a1d6"
+  ],
+  "python": "3.10.8",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "numba": "0.65.1",
+    "matplotlib": "3.10.8"
+  },
+  "source_sha256_lf": {
+    "src/urbanev_audit/event_witnesses.py": "208171bba2381d2a1ef263a94bb042cd580f8872cb95b4f2c737e1902eab3d02",
+    "scripts/research/run_shared_missing_ap2.py": "2f3286e27166aaa2c98752a5d12079366d4c858579f23daf43b21ae8a32f6aba",
+    "scripts/research/explain_shared_missing_ap2.py": "1d240d5f2666f3837e21d5456a859226ec77f292f0fa8e3adaa48e7c1af977eb",
+    "scripts/research/verify_shared_missing_ap2.py": "ff7ca38221a66dd47c140f93610b721b62f4e8dba425503f87230c4d8c039d9c",
+    "scripts/research/replay_shared_missing_witnesses.py": "f9de929b934e098dcb8bafc3e47f0d4d023406f74fd6f8bc836bf9f9a43e7734",
+    "scripts/research/summarize_shared_missing_ap2.py": "5ff403c20d7982f7105b5c700b05ea621eb389c5aba9abd00c555031c2cbba57",
+    "configs/research/SHARED_MISSING_EVENTS_AP2_20260917.json": "122a11d968514f1b7a5e9610faac4b1d5f7333bbcfe296495e768ccb4f313c02",
+    "refine-logs/EXPERIMENT_PLAN.md": "a539304f145201872827805e117019c3c19ea985e3d9f6acddd3478917b8bdd9"
+  },
+  "retrained_models": 0
+}

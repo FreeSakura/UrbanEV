@@ -11,6 +11,8 @@
 | [Working in UrbanEV](../AGENTS.md) | md |
 | [Changelog](../CHANGELOG.md) | md |
 | [贡献指南](../CONTRIBUTING.md) | md |
+| [Research Output Manifest](../MANIFEST.md) | md |
+| [Persistent-event 标签覆盖结构：证明包](../PROOF_PACKAGE.md) | md |
 | [UrbanEV Forecast](../README.md) | md |
 | [Security and sensitive-artifact reporting](../SECURITY.md) | md |
 | [Third-party notices](../THIRD_PARTY_NOTICES.md) | md |
@@ -116,6 +118,7 @@
 | [配对事件审计](reports/audit/README.md) | md |
 | [候选 A：共享缺测持续事件的首轮科研验证](reports/audit/SHARED_MISSING_EVENTS_AP0_REPORT.md) | md |
 | [AP1 完整结果：低阶一致性解释了已观察到的新增判断](reports/audit/SHARED_MISSING_EVENTS_AP1_REPORT.md) | md |
+| [AP2：结构解释与固定时间复制](reports/audit/SHARED_MISSING_EVENTS_AP2_REPORT.md) | md |
 
 ## docs/reports/benchmark
 
@@ -179,6 +182,8 @@
 | [V3 推导入口已迁移](research/DERIVATION_V3.md) | md |
 | [研究地图](research/README.md) | md |
 | [AP1 论文主张锁定 v1](research/SHARED_MISSING_EVENTS_AP1_CLAIMS_LOCK.md) | md |
+| [AP2 主张更新与后续任务](research/SHARED_MISSING_EVENTS_AP2_CLAIMS.md) | md |
+| [Working draft: comparison certificates under shared missing observations](research/SHARED_MISSING_EVENTS_AP2_METHOD_RESULTS_DRAFT.md) | md |
 | [基线与来源登记](research/baselines.md) | md |
 | [评价合同与研究声明](research/evaluation.md) | md |
 | [Research findings](research/findings.md) | md |
@@ -190,8 +195,11 @@
 |---|---|
 | [后续研究建议的现状核对与条件调用准备](reviews/ADAPTIVE_INVOCATION_REVIEW_20260914.md) | md |
 | [基线登记：来源、复现与可比性](reviews/BASELINE_REVIEW_20260914.md) | md |
+| [Persistent event contribution frozen for manuscript development](reviews/PERSISTENT_EVENT_FROZEN_CONTRIBUTION_20260917.md) | md |
+| [持续事件结构证明：作者侧核查](reviews/PERSISTENT_EVENT_STRUCTURE_PROOF_AUDIT_20260917.md) | md |
 | [评审与来源快照](reviews/README.md) | md |
 | [候选 A：最近邻方法及新颖性核查](reviews/SHARED_MISSING_EVENTS_LITERATURE_20260916.md) | md |
+| [贡献查新：shared-trace paired-risk certificates](reviews/SHARED_TRACE_PAIRED_RISK_NOVELTY_20260917.md) | md |
 | [距离SOTA有多远：截至c2404cf的证据评估](reviews/SOTA_GAP_ASSESSMENT_20260913.md) | md |
 
 ## docs/theory
@@ -201,12 +209,14 @@
 | [UrbanEV 跨领域研究：从潜在过程重建转向可预测的聚合记忆](theory/COARSE_MEMORY_THEORY_REPORT_20260913.md) | md |
 | [共享缺失观测下的配对事件评价：精确界与单点核验](theory/DERIVATION_V3.md) | md |
 | [从权威期刊学习问题驱动的方法设计](theory/JOURNAL_READING_NOTES_20260913.md) | md |
+| [持续事件的覆盖结构与两两充分性](theory/PERSISTENT_EVENT_COVER_STRUCTURE_20260917.md) | md |
 | [物理学、经济学与交通调度：来源与迁移边界](theory/PHYSICS_ECONOMICS_TRAFFIC_READING_20260913.md) | md |
 | [点预测输出契约：先核对泛函，再比较RMSE](theory/POINT_FORECAST_CONTRACT.md) | md |
 | [有界分位信息与平方损失适配](theory/QUANTILE_MEAN_THEORY.md) | md |
 | [理论与推导](theory/README.md) | md |
 | [时长增量残差：理论推导与实验约束](theory/RESIDUAL_DERIVATION_PACKAGE.md) | md |
 | [AP1：可识别性层次、冲突代价与通用算法定位](theory/SHARED_MISSING_EVENTS_AP1_THEORY.md) | md |
+| [AP2：结构充分性与信息不足的证书](theory/SHARED_MISSING_EVENTS_AP2_CERTIFICATES.md) | md |
 | [共享缺测持续事件的压缩状态精确比较](theory/SHARED_MISSING_EVENTS_COMPRESSION.md) | md |
 | [从信息增量到可检验的预测贡献](theory/SIGNAL_INFORMATION_THEORY.md) | md |
 | [UrbanEV后续研究的统一理论报告](theory/THEORY_REPORT_V1.md) | md |
@@ -259,6 +269,22 @@
 | [fig03_stage_gain_gates](../paper/main/figures/fig03_stage_gain_gates.pdf) | pdf |
 | [fig04_accuracy_latency_frontier](../paper/main/figures/fig04_accuracy_latency_frontier.pdf) | pdf |
 | [fig05_audit_timeline](../paper/main/figures/fig05_audit_timeline.pdf) | pdf |
+
+## paper/persistent_events
+
+| 资料 | 格式 |
+|---|---|
+| [Manuscript evidence map](../paper/persistent_events/EVIDENCE_MAP.md) | md |
+| [Persistent event manuscript and reproduction](../paper/persistent_events/README.md) | md |
+| [Abstract](../paper/persistent_events/manuscript.md) | md |
+
+## paper/persistent_events/figures
+
+| 资料 | 格式 |
+|---|---|
+| [changping_intervals](../paper/persistent_events/figures/changping_intervals.pdf) | pdf |
+| [structural_regime](../paper/persistent_events/figures/structural_regime.pdf) | pdf |
+| [structure_to_decision](../paper/persistent_events/figures/structure_to_decision.pdf) | pdf |
 
 ## paper/research
 

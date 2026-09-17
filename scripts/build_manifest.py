@@ -14,11 +14,11 @@ PUBLIC_ROOTS = (
 ROOT_FILES = (
     ".gitattributes", ".gitignore", "AGENTS.md", "AUTHORS.yml", "CHANGELOG.md", "CITATION.cff", "CONTRIBUTING.md",
     "environment-gpu-cu121.yml", "LICENSE", "pyproject.toml", "README.md",
-    "requirements-cpu.txt", "SECURITY.md", "THIRD_PARTY_NOTICES.md",
+    "requirements-cpu.txt", "SECURITY.md", "THIRD_PARTY_NOTICES.md", "PROOF_PACKAGE.md",
 )
 EVIDENCE_ROOTS = ("configs", "artifacts/summaries", "models")
 TEXT_SUFFIXES = {
-    ".csv", ".json", ".md", ".py", ".txt", ".tex", ".yml", ".yaml", ".toml", ".cff", ".bib",
+    ".csv", ".json", ".jsonl", ".md", ".py", ".txt", ".tex", ".yml", ".yaml", ".toml", ".cff", ".bib",
 }
 EXCLUDED_PARTS = {"editable", "__pycache__", ".pytest_cache", "build", "tmp"}
 EXCLUDED_FILES = {
