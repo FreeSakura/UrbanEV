@@ -195,6 +195,7 @@
 |---|---|
 | [后续研究建议的现状核对与条件调用准备](reviews/ADAPTIVE_INVOCATION_REVIEW_20260914.md) | md |
 | [基线登记：来源、复现与可比性](reviews/BASELINE_REVIEW_20260914.md) | md |
+| [Persistent event contribution frozen for manuscript development](reviews/PERSISTENT_EVENT_FROZEN_CONTRIBUTION_20260917.md) | md |
 | [持续事件结构证明：作者侧核查](reviews/PERSISTENT_EVENT_STRUCTURE_PROOF_AUDIT_20260917.md) | md |
 | [评审与来源快照](reviews/README.md) | md |
 | [候选 A：最近邻方法及新颖性核查](reviews/SHARED_MISSING_EVENTS_LITERATURE_20260916.md) | md |
@@ -268,6 +269,22 @@
 | [fig03_stage_gain_gates](../paper/main/figures/fig03_stage_gain_gates.pdf) | pdf |
 | [fig04_accuracy_latency_frontier](../paper/main/figures/fig04_accuracy_latency_frontier.pdf) | pdf |
 | [fig05_audit_timeline](../paper/main/figures/fig05_audit_timeline.pdf) | pdf |
+
+## paper/persistent_events
+
+| 资料 | 格式 |
+|---|---|
+| [Manuscript evidence map](../paper/persistent_events/EVIDENCE_MAP.md) | md |
+| [Persistent event manuscript and reproduction](../paper/persistent_events/README.md) | md |
+| [Abstract](../paper/persistent_events/manuscript.md) | md |
+
+## paper/persistent_events/figures
+
+| 资料 | 格式 |
+|---|---|
+| [changping_intervals](../paper/persistent_events/figures/changping_intervals.pdf) | pdf |
+| [structural_regime](../paper/persistent_events/figures/structural_regime.pdf) | pdf |
+| [structure_to_decision](../paper/persistent_events/figures/structure_to_decision.pdf) | pdf |
 
 ## paper/research
 

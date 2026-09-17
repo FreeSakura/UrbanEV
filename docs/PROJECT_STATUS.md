@@ -1,5 +1,11 @@
 # 项目状态
 
+## 2026-09-18 贡献冻结并完成论文全稿
+
+当前状态为 **CONTRIBUTION FROZEN — COMPLETE MANUSCRIPT DRAFT**。英文正文、完整证明附录和中文摘要已形成[可编辑稿源与复现入口](../paper/persistent_events/README.md)。理论核心为A的尖锐输出像结构定理；B以经典并闭包/原子理论的几何推论定位，C保留为已有多面体机制的边界例。
+
+全量完整cover核对覆盖2,784自然面板、8,352比较：cover-LP与cover-ILP均匹配DP端点；昌平案例由完整cover-LP解释，不再称DP不可替代。[冻结贡献说明](reviews/PERSISTENT_EVENT_FROZEN_CONTRIBUTION_20260917.md)。原AP0/AP1/AP2证据保持原样，以下为阶段历史。
+
 ## 2026-09-17：持续事件结构理论已形成证明包
 
 完成最小游程区间表示、至多两点覆盖约化、K≥2L−1的二元覆盖完整性及私人游程充要判据；另给短窗口反例和覆盖LP不精确的风险反例。既有470个模糊面板的事后诊断得到323个两两精确、147个不完整，全部消除旧预算未判定项。[理论报告](theory/PERSISTENT_EVENT_COVER_STRUCTURE_20260917.md) · [完整证明](../PROOF_PACKAGE.md)。本轮无新年份、拟合、预测或风险重评分；正确性与首次性分开判断。

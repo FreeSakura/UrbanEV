@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETE",
+  "panels": 2784,
+  "comparisons": 8352,
+  "ambiguous_panels": 470,
+  "ambiguous_comparisons": 1410,
+  "all_cover_ILP_DP_max_error": 6.786238238021269e-15,
+  "cached_DP_independent_max_error": 3.247402347028583e-15,
+  "old_witness_hash_matches": 2820,
+  "input_files_unchanged": 60,
+  "seconds": 224.44591300000138,
+  "training_runs": 0,
+  "new_predictions": 0,
+  "analysis_role": "Post-hoc exhaustive frozen natural-panel diagnostic; not new independent data",
+  "cover_family": "All unary and two-point covers, generated to complete separation; redundant covers implied by unary and nonnegativity",
+  "solver_tolerances": {
+    "separation": 1e-09,
+    "LP_primal_dual": 1e-09,
+    "MIP_relative_gap": 0.0,
+    "direction": 1e-10
+  },
+  "gap_counts": {
+    "1e-10": {
+      "LP_DP_comparisons": 0,
+      "implication_DP_comparisons": 110
+    },
+    "1e-09": {
+      "LP_DP_comparisons": 0,
+      "implication_DP_comparisons": 110
+    },
+    "1e-08": {
+      "LP_DP_comparisons": 0,
+      "implication_DP_comparisons": 110
+    }
+  },
+  "LP_DP_direction_differences": 0,
+  "ILP_DP_direction_differences": 0,
+  "implication_DP_direction_differences": 1
+}

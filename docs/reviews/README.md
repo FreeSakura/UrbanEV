@@ -8,6 +8,7 @@
 
 - [后续研究建议的现状核对与条件调用准备](ADAPTIVE_INVOCATION_REVIEW_20260914.md)
 - [基线登记：来源、复现与可比性](BASELINE_REVIEW_20260914.md)
+- [Persistent event contribution frozen for manuscript development](PERSISTENT_EVENT_FROZEN_CONTRIBUTION_20260917.md)
 - [持续事件结构证明：作者侧核查](PERSISTENT_EVENT_STRUCTURE_PROOF_AUDIT_20260917.md)
 - [候选 A：最近邻方法及新颖性核查](SHARED_MISSING_EVENTS_LITERATURE_20260916.md)
 - [贡献查新：shared-trace paired-risk certificates](SHARED_TRACE_PAIRED_RISK_NOVELTY_20260917.md)

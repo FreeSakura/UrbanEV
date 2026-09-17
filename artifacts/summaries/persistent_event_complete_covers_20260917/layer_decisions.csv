@@ -1,0 +1,11 @@
+phase,layer,comparisons,A,B,unresolved,new_vs_independent
+AP1,independent,4176,1217,2799,160,0
+AP1,implication,4176,1221,2801,154,6
+AP1,cover_LP,4176,1221,2801,154,6
+AP1,cover_ILP,4176,1221,2801,154,6
+AP1,DP,4176,1221,2801,154,6
+AP2,independent,4176,1263,2754,159,0
+AP2,implication,4176,1270,2764,142,17
+AP2,cover_LP,4176,1271,2764,141,18
+AP2,cover_ILP,4176,1271,2764,141,18
+AP2,DP,4176,1271,2764,141,18

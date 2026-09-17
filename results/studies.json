@@ -853,6 +853,31 @@
         "artifacts/summaries/persistent_event_structure_20260917/verification.json",
         "artifacts/summaries/persistent_event_structure_20260917/frozen_geometry_execution.json"
       ]
+    },
+    {
+      "id": "persistent_event_complete_covers_20260917",
+      "title": "持续事件完整覆盖验证与完整稿",
+      "category": "shared_missing",
+      "evidence_kind": "development",
+      "summary": "冻结2784自然面板8352比较，完整cover LP及ILP均匹配DP；形成核心定理A、几何推论B及冻结实证的完整稿。",
+      "evidence_dir": "artifacts/summaries/persistent_event_complete_covers_20260917",
+      "reports": [
+        "docs/reviews/PERSISTENT_EVENT_FROZEN_CONTRIBUTION_20260917.md",
+        "paper/persistent_events/manuscript.md",
+        "paper/persistent_events/README.md"
+      ],
+      "entrypoints": [
+        "scripts/research/validate_persistent_event_covers.py",
+        "scripts/build_persistent_event_figures.py",
+        "scripts/build_persistent_event_manuscript.py"
+      ],
+      "configs": [
+        "configs/research/SHARED_MISSING_EVENTS_AP1_20260916.json",
+        "configs/research/SHARED_MISSING_EVENTS_AP2_20260917.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/persistent_event_complete_covers_20260917/STRUCTURE_VALIDATION.json"
+      ]
     }
   ]
 }

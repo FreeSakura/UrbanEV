@@ -1,0 +1,33 @@
+{
+  "structure": {
+    "ambiguous_panels": 470,
+    "exact_panels": 323,
+    "incomplete_panels": 147,
+    "exact_comparisons": 969,
+    "incomplete_comparisons": 441,
+    "endpoint_changes": 110,
+    "decision_changes": 1
+  },
+  "changping": {
+    "independent": [
+      -0.04529501941805628,
+      0.0017365406379246742
+    ],
+    "implication": [
+      -0.0449371883559173,
+      0.0017365406379446
+    ],
+    "cover_LP": [
+      -0.038115767599010274,
+      -0.0005900870994381439
+    ],
+    "cover_ILP": [
+      -0.038115767599010274,
+      -0.0005900870994380964
+    ],
+    "DP": [
+      -0.038115767599010274,
+      -0.0005900870994381439
+    ]
+  }
+}

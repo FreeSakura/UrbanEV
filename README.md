@@ -1,5 +1,7 @@
 # UrbanEV Forecast
 
+**完整论文工作稿已形成。** [英文正文、完整证明与中文摘要](paper/persistent_events/manuscript.md) · [Word构建与端到端复现](paper/persistent_events/README.md)。核心为尖锐结构定理A，B为有经典来源的几何推论；完整cover-LP和ILP已匹配全部8,352个冻结自然比较。以下AP2叙述保留阶段背景，昌平案例现在由完整cover-LP解释。
+
 [![CI](https://github.com/FreeSakura/UrbanEV/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/FreeSakura/UrbanEV/actions/workflows/ci.yml)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Docs: CC BY 4.0](https://img.shields.io/badge/docs-CC_BY_4.0-green.svg)](licenses/CC-BY-4.0.txt)

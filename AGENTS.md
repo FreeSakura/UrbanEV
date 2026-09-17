@@ -1,5 +1,7 @@
 # Working in UrbanEV
 
+- Manuscript stage: contribution frozen. Start with paper/persistent_events/README.md and manuscript.md. A is the core sharp output-image theorem; B is a geometric corollary with classical atom/union-family attribution. The complete cover LP and ILP match all 8,352 frozen natural risk objectives; this is not universal LP integrality. Preserve historical reports while using the current manuscript interpretation. Build Word/figures without starting scientific experiments.
+
 - Current research focus: candidate A, shared missing observations and persistent-event structure. The theory round is complete: read PROOF_PACKAGE.md and docs/theory/PERSISTENT_EVENT_COVER_STRUCTURE_20260917.md. Binary coverage completeness and the private-run pairwise-exactness criterion require K >= 2L-1; the cover LP need not be integral. Originality of these specific results is not independently established. Preserve AP0/AP1/AP2 evidence. No automatic AP3/model/threshold expansion or old six-fold restart.
 
 - Start with README.md and docs/PROJECT_STATUS.md. Open only the reports and code needed for the current task; do not reread the entire research archive.

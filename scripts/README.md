@@ -16,6 +16,8 @@
 | [build_model_source_manifest.py](build_model_source_manifest.py) | Create the file-level executed model-source manifest. |
 | [build_paper.py](build_paper.py) | Build one public paper variant and fail on unresolved references or overflow. |
 | [build_paper_manifest.py](build_paper_manifest.py) | Record deterministic text, metadata, page, font, and source hashes for paper PDFs. |
+| [build_persistent_event_figures.py](build_persistent_event_figures.py) | Build publication figures from committed summaries, without new experiments. |
+| [build_persistent_event_manuscript.py](build_persistent_event_manuscript.py) | Convert the complete Markdown manuscript to editable Word via Pandoc OMML. |
 | [build_release_asset_manifest.py](build_release_asset_manifest.py) | Build checksums and the tracked manifest for local Release assets. |
 | [ci_scope.py](ci_scope.py) | Select CI work from changed paths; docs do not need training or LaTeX. |
 | [compare_release_payloads.py](compare_release_payloads.py) | Prove that a packaging/schema revision did not change public numerical arrays. |
@@ -83,6 +85,7 @@
 | [score_full_benchmark.py](research/score_full_benchmark.py) | Score only a complete frozen prediction set; no fitting or model selection. |
 | [summarize_shared_missing_ap1.py](research/summarize_shared_missing_ap1.py) | Produce AP1 denominators, candidate decisions, concentration and morphology. |
 | [summarize_shared_missing_ap2.py](research/summarize_shared_missing_ap2.py) | AP2 complete denominators, information/structure diagnostics and case evidence. |
+| [validate_persistent_event_covers.py](research/validate_persistent_event_covers.py) | Frozen AP1/AP2 cover validation. No fitting or prediction generation. |
 | [verify_benchmark_preparation.py](research/verify_benchmark_preparation.py) | Synthetic-only comparison preparation. Accepts source roots, never real data. |
 | [verify_calibration_2h_results.py](research/verify_calibration_2h_results.py) | Recompute published-score candidates from saved outputs; no refitting/selection. |
 | [verify_continuous_candidates.py](research/verify_continuous_candidates.py) | Synthetic candidate-reduction regression receipts; no research arrays loaded. |

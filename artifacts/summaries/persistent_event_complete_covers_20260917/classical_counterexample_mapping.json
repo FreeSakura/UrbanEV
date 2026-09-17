@@ -1,0 +1,133 @@
+{
+  "status": "PASS",
+  "persistent_parameters": {
+    "T": 10,
+    "K": 6,
+    "L": 3
+  },
+  "LLM_parameters": {
+    "horizon": 5,
+    "min_up": 4,
+    "min_down": 1
+  },
+  "boundary_convention": "No restriction on initial up/down age; terminal run truncation permitted, as LLM eqs (3),(4).",
+  "same_binary_set": true,
+  "patterns": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "LLM_alternating_up_equation_5": "-y0+y1-y2+y3-y4 <= 0",
+  "our_separator": "y0-y1+y2-y3+y4 >= 0",
+  "assessment": "The separation inequality is the existing alternating-up inequality, not merely analogous. A Brier affine embedding does not create a new general polyhedral result.",
+  "source": "https://doi.org/10.1016/j.disopt.2003.12.001"
+}

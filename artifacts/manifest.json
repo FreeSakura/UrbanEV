@@ -2072,6 +2072,69 @@
       "public_or_external": "public"
     },
     {
+      "path": "artifacts/summaries/persistent_event_complete_covers_20260917/classical_counterexample_mapping.json",
+      "sha256": "9f5a6a17705bfa8cd990a61268d758d47759a42c1887eb652637cea5f12d6c01",
+      "bytes": 1599,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_complete_covers_20260917/comparison_results.csv",
+      "sha256": "8a1975b34447d4b5c27bf4d7a2757b6a4162d05410009b96b879bf5f6596b87b",
+      "bytes": 3181017,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_complete_covers_20260917/layer_decisions.csv",
+      "sha256": "764cb81b99de1244e079912320ef1e8f491db5e8052102c79b285c9c5616cf2c",
+      "bytes": 404,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_complete_covers_20260917/panel_results.csv",
+      "sha256": "e16a1c4d05ba02bafe07dc24011c8fec068e8865ac418fc85773d6302fdd813d",
+      "bytes": 263754,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_complete_covers_20260917/runtime_versions.json",
+      "sha256": "e909b89187edc105266f42bcd34240500e89f8891784134fa8d10f5fb656b3ec",
+      "bytes": 162,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_complete_covers_20260917/selfcheck.json",
+      "sha256": "a908890f463399a8c7be2a6de3ee7f693c3804866d0e173a37e1cf9970120f69",
+      "bytes": 493,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "artifacts/summaries/persistent_event_complete_covers_20260917/STRUCTURE_VALIDATION.json",
+      "sha256": "b1f6128abc4bcee31bbe6f2c500c9715a44a69d99ef95ee426b5a253b7f582e5",
+      "bytes": 1180,
+      "role": "evidence_summary",
+      "origin": "frozen project artifact; publicly sanitized",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
       "path": "artifacts/summaries/persistent_event_structure_20260917/ambiguous_geometry_summary.csv",
       "sha256": "028c83fc9151dad83a62fe4c3c535d0616e8b2821c54e7f768b5ddc9a1e1087d",
       "bytes": 133,

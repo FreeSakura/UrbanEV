@@ -36,7 +36,7 @@
 
 ## 所有研究与证据
 
-共登记 **43 个证据目录、412 个原公开文件**。类型只表示证据阶段，不代表方法成功。
+共登记 **44 个证据目录、419 个原公开文件**。类型只表示证据阶段，不代表方法成功。
 
 ### 共享缺测与精确比较
 
@@ -46,6 +46,7 @@
 | [共享缺测评价层次与论文主张锁定](../docs/reports/audit/SHARED_MISSING_EVENTS_AP1_REPORT.md) · [证据](../artifacts/summaries/shared_missing_events_ap1) | 开发证据 | 通用DFA同构；两两LP获得全部实测新增判向。新年5周级+1站点年度判断仅在北京K72，高阶无额外判向；论文锁定为评价层次与适用边界。 |
 | [共享缺测比较证书与固定年度复制](../docs/reports/audit/SHARED_MISSING_EVENTS_AP2_REPORT.md) · [证据](../artifacts/summaries/shared_missing_events_ap2) | 开发证据 | AP1/AP2全部295个剩余未定比较有相反见证；AP2新增17周级+1年度判向，1个高阶必要案例；功率与全年跨站均零新增。 |
 | [持续事件覆盖结构与两两充分性](../docs/theory/PERSISTENT_EVENT_COVER_STRUCTURE_20260917.md) · [证据](../artifacts/summaries/persistent_event_structure_20260917) | 开发证据 | 长窗口K≥2L−1的二元覆盖完整性与私人见证判据；冻结470模糊面板323精确/147不完整；构造反例表明覆盖LP仍不精确。 |
+| [持续事件完整覆盖验证与完整稿](../docs/reviews/PERSISTENT_EVENT_FROZEN_CONTRIBUTION_20260917.md) · [证据](../artifacts/summaries/persistent_event_complete_covers_20260917) | 开发证据 | 冻结2784自然面板8352比较，完整cover LP及ILP均匹配DP；形成核心定理A、几何推论B及冻结实证的完整稿。 |
 
 ### 基准与比较
 
