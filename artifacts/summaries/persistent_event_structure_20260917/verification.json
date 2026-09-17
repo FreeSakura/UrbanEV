@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "max_T": 6,
+  "ternary_observation_K_L_cases": 19956,
+  "long_regime_cases": 11550,
+  "arbitrary_subset_cover_tests": 46495,
+  "full_binary_label_inversion_tests": 140460,
+  "sharpness_family_cases": 66,
+  "LP_gap_verified": true,
+  "wall_seconds": 8.127372200000536,
+  "verification_role": "Constructed finite checks accompanying proofs; not new real-data experiments"
+}

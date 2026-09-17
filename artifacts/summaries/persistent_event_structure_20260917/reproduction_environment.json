@@ -1,0 +1,20 @@
+{
+  "base_commit": "2d53604",
+  "python": "3.10.8",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pandas": "2.3.3",
+    "numba": "0.65.1"
+  },
+  "source_sha256_lf": {
+    "PROOF_PACKAGE.md": "f7e97059d985445cde75de9dc0bcbbe4ea0b5b538117ecf4915e9ac5dcdc241c",
+    "src/urbanev_audit/event_cover_geometry.py": "258dcba47c31a082513ded784f7c3ed3a3880292eebcc0e99b952fa67486cdf0",
+    "scripts/research/verify_persistent_event_structure.py": "971c9e5b6ed0baf8bf02e6f671933803cb21ffadbc98115fcd9dcf0369fbc04c",
+    "scripts/research/analyze_persistent_event_structure.py": "72c368741fe38300851938fe94f0ab3faf3254a514ce5af7c2d77a8a52bc9327",
+    "tests/test_event_cover_geometry.py": "baf920dcefce4d7c43a4bd6aaf131140c19165fa86db64c279ffcb9952c76366",
+    "configs/research/PERSISTENT_EVENT_STRUCTURE_20260917.json": "83ce97ad4eb9f1ed63569543947dab50a00cab92c480a216361096638c4fc0b6"
+  },
+  "independent_external_proof_review": "not_performed",
+  "theorem_priority_claim": "not_established"
+}

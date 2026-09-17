@@ -31,6 +31,7 @@
 
 | 脚本 | 用途（源码说明） |
 |---|---|
+| [analyze_persistent_event_structure.py](research/analyze_persistent_event_structure.py) | Post-hoc geometry of frozen AP1/AP2 observations; no model fitting/scoring. |
 | [analyze_residual_clipping.py](research/analyze_residual_clipping.py) | Diagnostic of the derivative of clipped MAE; never tunes alpha. |
 | [analyze_residual_geometry.py](research/analyze_residual_geometry.py) | Post-fit identity diagnostics only; never changes model selection or gates. |
 | [analyze_shared_missing_p0.py](research/analyze_shared_missing_p0.py) | Summarize all pilot comparisons and examine the component sign criterion. |
@@ -89,6 +90,7 @@
 | [verify_continuous_step_synthetic.py](research/verify_continuous_step_synthetic.py) | Synthetic-only acceptance runner; stops on the first failed required random case. |
 | [verify_continuous_v2_registration.py](research/verify_continuous_v2_registration.py) | Metadata-only V2 registration check. Never loads labels or scores predictions. |
 | [verify_dual_risk_finite_step_calibration.py](research/verify_dual_risk_finite_step_calibration.py) | Recompute existing calibration points from saved models; never fit or select. |
+| [verify_persistent_event_structure.py](research/verify_persistent_event_structure.py) | Exhaustive constructed-case verification of the persistent-event proofs. |
 | [verify_persistent_events.py](research/verify_persistent_events.py) | A-P0 exhaustive correctness and matched-kernel timing; no real data reads. |
 | [verify_shared_missing_ap1_milp.py](research/verify_shared_missing_ap1_milp.py) | Deterministic, outcome-stratified MILP checks, including negatives and cutoffs. |
 | [verify_shared_missing_ap2.py](research/verify_shared_missing_ap2.py) | Independent MILP checks of new natural decisions and fixed negative controls. |

@@ -829,6 +829,30 @@
         "artifacts/summaries/shared_missing_events_ap2/witness_replay.json",
         "artifacts/summaries/shared_missing_events_ap2/decision_milp_summary.json"
       ]
+    },
+    {
+      "id": "persistent_event_structure_20260917",
+      "title": "持续事件覆盖结构与两两充分性",
+      "category": "shared_missing",
+      "evidence_kind": "development",
+      "summary": "长窗口K≥2L−1的二元覆盖完整性与私人见证判据；冻结470模糊面板323精确/147不完整；构造反例表明覆盖LP仍不精确。",
+      "evidence_dir": "artifacts/summaries/persistent_event_structure_20260917",
+      "reports": [
+        "docs/theory/PERSISTENT_EVENT_COVER_STRUCTURE_20260917.md",
+        "PROOF_PACKAGE.md",
+        "docs/reviews/PERSISTENT_EVENT_STRUCTURE_PROOF_AUDIT_20260917.md"
+      ],
+      "entrypoints": [
+        "scripts/research/verify_persistent_event_structure.py",
+        "scripts/research/analyze_persistent_event_structure.py"
+      ],
+      "configs": [
+        "configs/research/PERSISTENT_EVENT_STRUCTURE_20260917.json"
+      ],
+      "status_sources": [
+        "artifacts/summaries/persistent_event_structure_20260917/verification.json",
+        "artifacts/summaries/persistent_event_structure_20260917/frozen_geometry_execution.json"
+      ]
     }
   ]
 }

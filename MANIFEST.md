@@ -16,3 +16,6 @@
 | 2026-09-17 | novelty-check | docs/reviews/shared_trace_novelty_20260917/PRIOR_ART.json | review | 贡献查新及可复核记录 |
 | 2026-09-17 | novelty-check | docs/reviews/shared_trace_novelty_20260917/PRIOR_ART_MATRIX.csv | review | 贡献查新及可复核记录 |
 | 2026-09-17 | novelty-check | docs/reviews/shared_trace_novelty_20260917/VERIFICATION_STATUS.json | review | 贡献查新及可复核记录 |
+| 2026-09-17 | proof-writer | PROOF_PACKAGE.md | implementation | 持续事件结构证明与核查 |
+| 2026-09-17 | proof-writer | docs/theory/PERSISTENT_EVENT_COVER_STRUCTURE_20260917.md | implementation | 持续事件结构证明与核查 |
+| 2026-09-17 | proof-writer | docs/reviews/PERSISTENT_EVENT_STRUCTURE_PROOF_AUDIT_20260917.md | implementation | 持续事件结构证明与核查 |

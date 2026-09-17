@@ -12,6 +12,7 @@
 | [Changelog](../CHANGELOG.md) | md |
 | [贡献指南](../CONTRIBUTING.md) | md |
 | [Research Output Manifest](../MANIFEST.md) | md |
+| [Persistent-event 标签覆盖结构：证明包](../PROOF_PACKAGE.md) | md |
 | [UrbanEV Forecast](../README.md) | md |
 | [Security and sensitive-artifact reporting](../SECURITY.md) | md |
 | [Third-party notices](../THIRD_PARTY_NOTICES.md) | md |
@@ -194,6 +195,7 @@
 |---|---|
 | [后续研究建议的现状核对与条件调用准备](reviews/ADAPTIVE_INVOCATION_REVIEW_20260914.md) | md |
 | [基线登记：来源、复现与可比性](reviews/BASELINE_REVIEW_20260914.md) | md |
+| [持续事件结构证明：作者侧核查](reviews/PERSISTENT_EVENT_STRUCTURE_PROOF_AUDIT_20260917.md) | md |
 | [评审与来源快照](reviews/README.md) | md |
 | [候选 A：最近邻方法及新颖性核查](reviews/SHARED_MISSING_EVENTS_LITERATURE_20260916.md) | md |
 | [贡献查新：shared-trace paired-risk certificates](reviews/SHARED_TRACE_PAIRED_RISK_NOVELTY_20260917.md) | md |
@@ -206,6 +208,7 @@
 | [UrbanEV 跨领域研究：从潜在过程重建转向可预测的聚合记忆](theory/COARSE_MEMORY_THEORY_REPORT_20260913.md) | md |
 | [共享缺失观测下的配对事件评价：精确界与单点核验](theory/DERIVATION_V3.md) | md |
 | [从权威期刊学习问题驱动的方法设计](theory/JOURNAL_READING_NOTES_20260913.md) | md |
+| [持续事件的覆盖结构与两两充分性](theory/PERSISTENT_EVENT_COVER_STRUCTURE_20260917.md) | md |
 | [物理学、经济学与交通调度：来源与迁移边界](theory/PHYSICS_ECONOMICS_TRAFFIC_READING_20260913.md) | md |
 | [点预测输出契约：先核对泛函，再比较RMSE](theory/POINT_FORECAST_CONTRACT.md) | md |
 | [有界分位信息与平方损失适配](theory/QUANTILE_MEAN_THEORY.md) | md |

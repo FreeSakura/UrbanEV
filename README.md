@@ -14,6 +14,7 @@
 
 **AP2 已完成（2026-09-17）。** 固定 AP1 模型、零新拟合，在预留年份评价 4,176 个自然比较：新增 17 个周级与 1 个站点年度判向；北京 K24 首次出现 5 个周级新增判断。1 个昌平 K72 案例确实需要高阶一致性，已用独立 MILP 核对。AP1/AP2 剩余的 154/141 个未定比较均有相反胜负的合法补全见证。功率与跨站全年聚合仍无新增判向。
 
+- [最新结构理论](docs/theory/PERSISTENT_EVENT_COVER_STRUCTURE_20260917.md) · [完整证明包](PROOF_PACKAGE.md)：长窗口覆盖完整性、两两充分性几何条件，以及覆盖 LP 的边界。
 - [AP2 完整报告](docs/reports/audit/SHARED_MISSING_EVENTS_AP2_REPORT.md) · [最新主张与后续任务](docs/research/SHARED_MISSING_EVENTS_AP2_CLAIMS.md) · [方法/结果初稿](docs/research/SHARED_MISSING_EVENTS_AP2_METHOD_RESULTS_DRAFT.md)
 - [AP1 完整报告](docs/reports/audit/SHARED_MISSING_EVENTS_AP1_REPORT.md) · [AP1 历史主张](docs/research/SHARED_MISSING_EVENTS_AP1_CLAIMS_LOCK.md)
 - [AP1 理论与边界](docs/theory/SHARED_MISSING_EVENTS_AP1_THEORY.md) · [公开数值证据](artifacts/summaries/shared_missing_events_ap1)

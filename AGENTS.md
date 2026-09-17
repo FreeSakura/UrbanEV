@@ -1,6 +1,6 @@
 # Working in UrbanEV
 
-- Current research focus: candidate A, shared missing observations and comparison certificates. AP2 is complete: use docs/research/SHARED_MISSING_EVENTS_AP2_CLAIMS.md and docs/reports/audit/SHARED_MISSING_EVENTS_AP2_REPORT.md. The next work is contribution positioning and manuscript development, not automatic AP3/model/threshold expansion. Preserve AP1 claims as a historical snapshot; one AP2 natural case needs higher-order consistency. The old six-fold run is not a prerequisite.
+- Current research focus: candidate A, shared missing observations and persistent-event structure. The theory round is complete: read PROOF_PACKAGE.md and docs/theory/PERSISTENT_EVENT_COVER_STRUCTURE_20260917.md. Binary coverage completeness and the private-run pairwise-exactness criterion require K >= 2L-1; the cover LP need not be integral. Originality of these specific results is not independently established. Preserve AP0/AP1/AP2 evidence. No automatic AP3/model/threshold expansion or old six-fold restart.
 
 - Start with README.md and docs/PROJECT_STATUS.md. Open only the reports and code needed for the current task; do not reread the entire research archive.
 

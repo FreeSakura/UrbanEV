@@ -9,6 +9,7 @@ V1/V2/V3 是历史演进版本；主题推导和阅读记录各有假设与适�
 - [UrbanEV 跨领域研究：从潜在过程重建转向可预测的聚合记忆](COARSE_MEMORY_THEORY_REPORT_20260913.md)
 - [共享缺失观测下的配对事件评价：精确界与单点核验](DERIVATION_V3.md)
 - [从权威期刊学习问题驱动的方法设计](JOURNAL_READING_NOTES_20260913.md)
+- [持续事件的覆盖结构与两两充分性](PERSISTENT_EVENT_COVER_STRUCTURE_20260917.md)
 - [物理学、经济学与交通调度：来源与迁移边界](PHYSICS_ECONOMICS_TRAFFIC_READING_20260913.md)
 - [点预测输出契约：先核对泛函，再比较RMSE](POINT_FORECAST_CONTRACT.md)
 - [有界分位信息与平方损失适配](QUANTILE_MEAN_THEORY.md)

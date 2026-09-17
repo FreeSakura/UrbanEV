@@ -1,0 +1,42 @@
+{
+  "study_id": "persistent_event_structure_20260917",
+  "date": "2026-09-17",
+  "role": "Exploratory theoretical construction and post-hoc frozen-observation diagnosis, not AP3",
+  "assumptions": [
+    "binary free completion",
+    "fixed K and L",
+    "contiguous fully supported windows",
+    "no additional cross-bit constraints"
+  ],
+  "long_window_condition": "K >= 2*L - 1",
+  "verification": {
+    "exhaustive_max_T": 6,
+    "random_regression_seed": 104,
+    "random_regression_proposals": 120,
+    "counterfamily_max_L": 12
+  },
+  "frozen_diagnostics": {
+    "phases": [
+      "AP1",
+      "AP2"
+    ],
+    "mask": "natural",
+    "new_fits": 0,
+    "new_predictions": 0,
+    "new_risk_optimizations": 0
+  },
+  "claims": [
+    "minimal-witness interval representation",
+    "cover reduction to at most two other origins",
+    "long-window binary-cover completeness",
+    "private-run pairwise exactness criterion",
+    "sharpness of uniform K>=2L-1 guarantee",
+    "coverage LP can be nonintegral"
+  ],
+  "not_claimed": [
+    "general new automaton algorithm",
+    "continuous-cover-LP exactness",
+    "verified world-first theorem",
+    "new prospective empirical validation"
+  ]
+}
