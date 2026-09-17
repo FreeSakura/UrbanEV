@@ -3,6 +3,8 @@
 - Current research focus: candidate A, shared missing observations and comparison certificates. AP2 is complete: use docs/research/SHARED_MISSING_EVENTS_AP2_CLAIMS.md and docs/reports/audit/SHARED_MISSING_EVENTS_AP2_REPORT.md. The next work is contribution positioning and manuscript development, not automatic AP3/model/threshold expansion. Preserve AP1 claims as a historical snapshot; one AP2 natural case needs higher-order consistency. The old six-fold run is not a prerequisite.
 
 - Start with README.md and docs/PROJECT_STATUS.md. Open only the reports and code needed for the current task; do not reread the entire research archive.
+
+- The 2026-09-17 novelty review is docs/reviews/SHARED_TRACE_PAIRED_RISK_NOVELTY_20260917.md. Discuss Guerdan et al. (ICML 2024), public OnsetBounds (2026), maximality, Cost-Regular and CEGAR. No verified fully equivalent specialized study was found; this is not proof of a novel general certificate framework. The three certificate descriptions are neither mutually exclusive nor exhaustive.
 - Continue ordinary development and fixes within the user's requested scope. A historical report's "manual review", "NO_GO", or "authorization pending" describes that experiment's past state, not a new permission requirement.
 - Use focused tests while implementing. Run the relevant suite once at the end; repeat it only after changes or failures that justify another run. Documentation edits need the repository checks, not model training or LaTeX builds.
 - Keep explanations and tool output concise. Prefer the changed files, relevant failures and final results over full logs, repeated plans or duplicated reviews.

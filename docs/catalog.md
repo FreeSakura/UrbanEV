@@ -196,6 +196,7 @@
 | [基线登记：来源、复现与可比性](reviews/BASELINE_REVIEW_20260914.md) | md |
 | [评审与来源快照](reviews/README.md) | md |
 | [候选 A：最近邻方法及新颖性核查](reviews/SHARED_MISSING_EVENTS_LITERATURE_20260916.md) | md |
+| [贡献查新：shared-trace paired-risk certificates](reviews/SHARED_TRACE_PAIRED_RISK_NOVELTY_20260917.md) | md |
 | [距离SOTA有多远：截至c2404cf的证据评估](reviews/SOTA_GAP_ASSESSMENT_20260913.md) | md |
 
 ## docs/theory

@@ -11,3 +11,8 @@
 | 2026-09-17 | experiment-plan | docs/research/SHARED_MISSING_EVENTS_AP2_METHOD_RESULTS_DRAFT.md | implementation | AP2完成产物 |
 | 2026-09-17 | experiment-plan | refine-logs/EXPERIMENT_TRACKER_20260917_initial.md | implementation | AP2完成产物 |
 | 2026-09-17 | experiment-plan | refine-logs/EXPERIMENT_TRACKER_20260917_complete.md | implementation | AP2完成产物 |
+| 2026-09-17 | novelty-check | docs/reviews/SHARED_TRACE_PAIRED_RISK_NOVELTY_20260917.md | review | 贡献查新及可复核记录 |
+| 2026-09-17 | novelty-check | docs/reviews/shared_trace_novelty_20260917/SEARCH_LOG.json | review | 贡献查新及可复核记录 |
+| 2026-09-17 | novelty-check | docs/reviews/shared_trace_novelty_20260917/PRIOR_ART.json | review | 贡献查新及可复核记录 |
+| 2026-09-17 | novelty-check | docs/reviews/shared_trace_novelty_20260917/PRIOR_ART_MATRIX.csv | review | 贡献查新及可复核记录 |
+| 2026-09-17 | novelty-check | docs/reviews/shared_trace_novelty_20260917/VERIFICATION_STATUS.json | review | 贡献查新及可复核记录 |

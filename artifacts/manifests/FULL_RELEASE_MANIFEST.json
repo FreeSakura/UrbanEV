@@ -66,8 +66,8 @@
     },
     {
       "path": "AGENTS.md",
-      "sha256": "5f3f0a353e0e49a1f90a2a0b6ae059ab8d72ea3aa378a8350c30e6af4db001b6",
-      "bytes": 1879,
+      "sha256": "140fea4f14f620ac6403f8c12705683edde65c6f7257345e66153ef1ec484fc2",
+      "bytes": 2273,
       "role": "paper_or_documentation",
       "origin": "UrbanEV Forecast project",
       "license": "CC-BY-4.0",
@@ -4242,8 +4242,8 @@
     },
     {
       "path": "docs/catalog.md",
-      "sha256": "d8ff7b33e212435f6a567305ec9425357bce4f4b3de00a9eadd0137971021e90",
-      "bytes": 13350,
+      "sha256": "fe2da731a88e58e0b2414d382944dbd9690874ba39d5d952d14d04a3dc2d3905",
+      "bytes": 13468,
       "role": "paper_or_documentation",
       "origin": "UrbanEV Forecast project",
       "license": "CC-BY-4.0",
@@ -4458,8 +4458,8 @@
     },
     {
       "path": "docs/PROJECT_STATUS.md",
-      "sha256": "19ea70fa8d6c456557a47601341db2413f1dad76c5dfdf87c9ea76076efaa454",
-      "bytes": 4564,
+      "sha256": "13e1276d807ff0301687d1928bf1305c1fe7a76ddad542ce01dcc23c4191468a",
+      "bytes": 5031,
       "role": "paper_or_documentation",
       "origin": "UrbanEV Forecast project",
       "license": "CC-BY-4.0",
@@ -5106,8 +5106,8 @@
     },
     {
       "path": "docs/research/SHARED_MISSING_EVENTS_AP2_CLAIMS.md",
-      "sha256": "f62e07f9ac8afdda54b203096d7f8d7fcb11442408f51aaf61beae18ad27aaeb",
-      "bytes": 3359,
+      "sha256": "513cce88ba68aa5cae6970b03ba6b342b9df9a1ebf9491e893b7d81a10b2e650",
+      "bytes": 3775,
       "role": "paper_or_documentation",
       "origin": "UrbanEV Forecast project",
       "license": "CC-BY-4.0",
@@ -5142,8 +5142,8 @@
     },
     {
       "path": "docs/reviews/README.md",
-      "sha256": "937d878e7828d5646e22881d5c9df5e73bb442d62b5b141763c103500cdbc04f",
-      "bytes": 587,
+      "sha256": "2322a5d317f71f9a656aebdf8b7ef130344fe1b92c4277859d63abb96b420310",
+      "bytes": 690,
       "role": "paper_or_documentation",
       "origin": "UrbanEV Forecast project",
       "license": "CC-BY-4.0",
@@ -5153,6 +5153,51 @@
       "path": "docs/reviews/SHARED_MISSING_EVENTS_LITERATURE_20260916.md",
       "sha256": "b758a756ecf7c183cb3a2d6b0c7a5d8ee3c2bf5af3a7a283ea22598e796f3cda",
       "bytes": 3734,
+      "role": "paper_or_documentation",
+      "origin": "UrbanEV Forecast project",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "docs/reviews/shared_trace_novelty_20260917/PRIOR_ART.json",
+      "sha256": "c1503f23f78fde6c7bdd43004c9e710f523851236e5f3c344a50e787d9a9f002",
+      "bytes": 16967,
+      "role": "paper_or_documentation",
+      "origin": "UrbanEV Forecast project",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "docs/reviews/shared_trace_novelty_20260917/PRIOR_ART_MATRIX.csv",
+      "sha256": "3b7af1b052d56cfae23468779421591725aa01164cfa21e73fee57affded0b44",
+      "bytes": 10626,
+      "role": "paper_or_documentation",
+      "origin": "UrbanEV Forecast project",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "docs/reviews/shared_trace_novelty_20260917/SEARCH_LOG.json",
+      "sha256": "2bf43223f8ccea2f9d57b475834b8b407035e92ea9d138aba0080e1e2af8d336",
+      "bytes": 7601,
+      "role": "paper_or_documentation",
+      "origin": "UrbanEV Forecast project",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "docs/reviews/shared_trace_novelty_20260917/VERIFICATION_STATUS.json",
+      "sha256": "ef2d0d9770dbba18257f32bf950c7de4d45db389d81fbb20ed7c259ddfb9ba6f",
+      "bytes": 4340,
+      "role": "paper_or_documentation",
+      "origin": "UrbanEV Forecast project",
+      "license": "CC-BY-4.0",
+      "public_or_external": "public"
+    },
+    {
+      "path": "docs/reviews/SHARED_TRACE_PAIRED_RISK_NOVELTY_20260917.md",
+      "sha256": "4af3a79ffd92b2baba410bf15c81d022204f1edb025af40c8bc6af91ef5fba69",
+      "bytes": 19208,
       "role": "paper_or_documentation",
       "origin": "UrbanEV Forecast project",
       "license": "CC-BY-4.0",
