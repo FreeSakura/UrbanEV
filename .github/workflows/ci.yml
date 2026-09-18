@@ -19,6 +19,7 @@ jobs:
       tests: ${{ steps.scope.outputs.tests }}
       forecasting: ${{ steps.scope.outputs.forecasting }}
       papers: ${{ steps.scope.outputs.papers }}
+      manuscript: ${{ steps.scope.outputs.manuscript }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -97,4 +98,36 @@ jobs:
           TESTS: ${{ needs.changes.outputs.tests }}
           FORECASTING: ${{ needs.changes.outputs.forecasting }}
           PAPERS: ${{ needs.changes.outputs.papers }}
-        run: echo "tests=$TESTS forecasting=$FORECASTING papers=$PAPERS"
+          MANUSCRIPT: ${{ needs.changes.outputs.manuscript }}
+        run: echo "tests=$TESTS forecasting=$FORECASTING papers=$PAPERS manuscript=$MANUSCRIPT"
+
+  current-manuscript:
+    name: Current Word manuscript
+    needs: changes
+    if: needs.changes.outputs.manuscript == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: pip
+      - name: Install Word and figure tools
+        run: |
+          python -m pip install -e '.[manuscript]'
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y poppler-utils
+          curl -fsSL --retry 2 https://github.com/jgm/pandoc/releases/download/3.11/pandoc-3.11-linux-amd64.tar.gz -o "$RUNNER_TEMP/pandoc.tar.gz"
+          tar -xzf "$RUNNER_TEMP/pandoc.tar.gz" -C "$RUNNER_TEMP"
+      - name: Rebuild current figures and check frozen figure data
+        run: |
+          python scripts/build_persistent_event_figures.py --output "$RUNNER_TEMP/persistent-event/figures"
+          python -c "import json,os,pathlib; a=json.loads(pathlib.Path('paper/persistent_events/figures/figure_data.json').read_text()); b=json.loads((pathlib.Path(os.environ['RUNNER_TEMP'])/'persistent-event/figures/figure_data.json').read_text()); assert a==b, 'Figure data drift'"
+      - name: Build editable Word with native equations
+        run: |
+          python scripts/build_persistent_event_manuscript.py --pandoc "$RUNNER_TEMP/pandoc-3.11/bin/pandoc" --resource-root "$RUNNER_TEMP/persistent-event" --output "$RUNNER_TEMP/persistent-event/WORD_MANUSCRIPT.docx"
+          git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        with:
+          name: persistent-event-word-manuscript
+          path: ${{ runner.temp }}/persistent-event/WORD_MANUSCRIPT.docx

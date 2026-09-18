@@ -1,6 +1,18 @@
-# 论文、补充材料与理论 PDF
+# 当前论文与历史归档
 
-这里保存历史审计论文及后续理论报告。当前预测研究的结果和状态见[项目状态](../docs/PROJECT_STATUS.md)；本目录的审计主文不是新的预测方法 SOTA 论文。
+## 当前持续事件论文
+
+**Persistent Event Evaluation under Partial Observations — A Sharp Structural Regime for Overlapping Labels**
+
+- [可编辑 Word 全稿](persistent_events/WORD_MANUSCRIPT.docx)：英文正文、完整证明附录与中文摘要。
+- [Markdown 稿源](persistent_events/manuscript.md) · [图表与数据](persistent_events/figures) · [主张证据映射](persistent_events/EVIDENCE_MAP.md)。
+- [端到端复现与 Word 构建](persistent_events/README.md)：当前稿件使用 Pandoc 和原生 Word 公式，读取和编辑不需要 LaTeX。
+
+贡献已冻结为核心定理 A、具有经典来源的几何推论 B、冻结实证。当前稿件是匿名完整工作稿，尚无期刊发表信息。[当前状态](../docs/PROJECT_STATUS.md)
+
+## 历史审计论文与理论报告
+
+以下为原 UrbanEV 审计论文与阶段理论文件，沿用各自的结果和协议；不是当前持续事件论文的投稿主文。
 
 | 文件 | 角色 |
 |---|---|
@@ -12,7 +24,7 @@
 
 全部 PDF 和 Markdown 可从[完整资料目录](../docs/catalog.md)检索。`main/`、`supplement/`、`archive/` 保存 LaTeX 入口，`shared/` 保存共享正文、结果、图表和参考文献。`main_archive_original.tex` 保留原始入口，`main_archive.tex` 为明确标记的历史重建入口。
 
-## 重建
+## 历史 LaTeX 稿重建
 
 需要 Python 基础/测试依赖，以及 latexmk、LaTeX 扩展宏包和字体。CI 在 Ubuntu 安装 `latexmk texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra poppler-utils`。从仓库根目录运行：
 

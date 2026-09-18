@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "urbanev-forecast"
 version = "0.10.0"
-description = "Reproducible EV charging occupancy forecasting, evaluation contracts and research evidence"
+description = "Persistent-event structure and evaluation under partial observations, with archived UrbanEV research"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
@@ -14,7 +14,7 @@ dependencies = ["numpy>=1.24,<3", "pandas>=2.0,<3", "PyYAML>=6,<7", "tomli>=2,<3
 
 [project.urls]
 Repository = "https://github.com/FreeSakura/UrbanEV"
-Documentation = "https://github.com/FreeSakura/UrbanEV/blob/main/docs/README.md"
+Documentation = "https://github.com/FreeSakura/UrbanEV/tree/main/paper/persistent_events"
 Issues = "https://github.com/FreeSakura/UrbanEV/issues"
 
 [project.optional-dependencies]

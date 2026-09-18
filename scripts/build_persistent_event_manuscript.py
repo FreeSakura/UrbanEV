@@ -1,6 +1,6 @@
 """Convert the complete Markdown manuscript to editable Word via Pandoc OMML."""
 from pathlib import Path
-import argparse,subprocess,shutil,tempfile,json,zipfile,re
+import argparse,subprocess,shutil,tempfile,json,zipfile,re,os
 from copy import deepcopy
 from docx import Document
 from docx.shared import Inches,Pt,RGBColor
@@ -127,7 +127,9 @@ def polish(path):
     d.save(path)
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--pandoc',default=shutil.which('pandoc'));ap.add_argument('--output',type=Path,required=True);a=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--pandoc',default=shutil.which('pandoc'));ap.add_argument('--output',type=Path,required=True)
+    ap.add_argument('--resource-root',type=Path,default=PAPER,help='Parent of figures/ when building with temporary figures')
+    a=ap.parse_args()
     if not a.pandoc:ap.error('Install Pandoc or supply --pandoc')
     a.output.parent.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='persistent-word-') as tmp:
@@ -136,7 +138,8 @@ def main():
         ref=Path(tmp)/'reference.docx';reference(ref,base)
         source=Path(tmp)/'manuscript.md'
         source.write_text(re.sub(r'\\tag\{(\d+)\}',lambda m:r'\quad\text{('+m.group(1)+')}',(PAPER/'manuscript.md').read_text(encoding='utf-8')),encoding='utf-8')
-        cmd=[str(a.pandoc),str(source),'--from=markdown-implicit_figures','--standalone','--reference-doc='+str(ref),'--resource-path='+str(PAPER),'--output='+str(a.output)]
+        resource_path=os.pathsep.join([str(a.resource_root.resolve()),str(PAPER)])
+        cmd=[str(a.pandoc),str(source),'--from=markdown-implicit_figures','--standalone','--reference-doc='+str(ref),'--resource-path='+resource_path,'--output='+str(a.output)]
         r=subprocess.run(cmd,text=True,capture_output=True,check=True)
         if r.stderr:print(r.stderr)
         if 'Could not convert' in r.stderr:raise RuntimeError('Equation conversion failed; raw LaTeX is not an acceptable Word deliverable')

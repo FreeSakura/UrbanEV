@@ -1,15 +1,17 @@
 cff-version: 1.2.0
-message: "Cite this research software for new forecasting work. The historical audit-paper citation is in docs/history/AUDIT_CITATION.cff."
-title: "UrbanEV Forecast: Multivariate EV Charging Forecasting Research"
+message: "Cite this research software for persistent-event evaluation and its archived UrbanEV tools. The current manuscript is in paper/persistent_events; historical audit-paper metadata is in docs/history/AUDIT_CITATION.cff."
+title: "Persistent Event Evaluation and UrbanEV Research Archive"
 version: 0.10.0
 type: software
 authors:
   - name: FreeSakura
 repository-code: "https://github.com/FreeSakura/UrbanEV"
 license: MIT
-abstract: "Research tools, models and reproducible experiments targeting state-of-the-art multivariate forecasting of urban electric vehicle charging occupancy."
+abstract: "Reproducible research on feasible persistent-event label images under partial observations, geometric implication sufficiency and paired risk evaluation, with archived UrbanEV forecasting and audit studies."
 keywords:
-  - electric-vehicle charging
-  - multivariate forecasting
+  - persistent events
+  - partial observations
+  - robust evaluation
+  - Boolean relations
+  - reproducibility
   - time series
-  - machine learning

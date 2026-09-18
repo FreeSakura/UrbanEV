@@ -1,0 +1,5 @@
+phase,structure,panels,comparisons,endpoint_changes,direction_changes,cover_lp_gaps
+AP1,PAIRWISE_EXACT,122,366,0,0,0
+AP1,PAIRWISE_INSUFFICIENT,78,234,49,0,0
+AP2,PAIRWISE_EXACT,201,603,0,0,0
+AP2,PAIRWISE_INSUFFICIENT,69,207,61,1,0

@@ -54,6 +54,15 @@ python scripts/build_persistent_event_manuscript.py --output local-data/Persiste
 
 The figure builder needs Poppler (`pdftoppm`) on PATH for PDF-to-PNG conversion. The Word builder needs Pandoc on PATH, or pass `--pandoc /path/to/pandoc`. It uses native Word Office Math equations, editable text/tables, and a restrained manuscript style. Source figures and their data remain editable independently of the Word image objects. Manuscript formatting does not start data downloading or scientific experiments.
 
+For a preview that preserves all committed figures and the delivered Word file:
+
+```bash
+python scripts/build_persistent_event_figures.py --output local-data/manuscript-preview/figures
+python scripts/build_persistent_event_manuscript.py --resource-root local-data/manuscript-preview --output local-data/manuscript-preview/WORD_MANUSCRIPT.docx
+```
+
+The **Current Word manuscript** CI job uses the same temporary-output route, checks `figure_data.json` against the frozen copy, and makes the rebuilt Word document available as a workflow artifact. It does not invoke the archived LaTeX papers or neural forecasting smoke test unless those paths also change.
+
 ## Scope of claims
 
 The final natural cover-LP results match exact trajectory endpoints for every examined frozen objective. This is not a claim that the cover polytope is always integral. Panels overlap through label support and repeated model comparisons; counts are descriptive, not independent-trial confidence estimates. The code, proofs, and raw evidence roles are kept distinct. Source history contains earlier labels such as “higher-order required”; the current manuscript interprets the Changping case as insufficiency of unary implications resolved by the complete three-label cover family.

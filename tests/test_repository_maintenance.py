@@ -34,6 +34,63 @@ def test_public_result_aggregation_matches_frozen_summary():
     assert ridge["mae"] == pytest.approx(0.06849459515196628, abs=1e-12)
 
 
+@pytest.fixture
+def persistent_inputs():
+    folder = ROOT / repository.PERSISTENT
+    with (folder / "comparison_results.csv").open(newline="", encoding="utf-8-sig") as f:
+        comparisons = list(csv.DictReader(f))
+    with (folder / "panel_results.csv").open(newline="", encoding="utf-8-sig") as f:
+        panels = list(csv.DictReader(f))
+    return comparisons, panels, json.loads((folder / "STRUCTURE_VALIDATION.json").read_text())
+
+
+def test_current_structure_table_matches_frozen_full_coverage(persistent_inputs):
+    result = repository.aggregate_persistent_events(*persistent_inputs)
+    assert sum(x["panels"] for x in result) == 470
+    assert sum(x["comparisons"] for x in result) == 1410
+    assert sum(x["endpoint_changes"] for x in result) == 110
+    assert sum(x["direction_changes"] for x in result) == 1
+    assert sum(x["cover_lp_gaps"] for x in result) == 0
+    exact = [x for x in result if x["structure"] == "PAIRWISE_EXACT"]
+    assert sum(x["panels"] for x in exact) == 323
+    assert sum(x["comparisons"] for x in exact) == 969
+
+
+def test_persistent_duplicate_cannot_inflate_headline(persistent_inputs):
+    rows, panels, receipt = persistent_inputs
+    with pytest.raises(ValueError, match="Duplicate"):
+        repository.aggregate_persistent_events(rows + [rows[0]], panels, receipt)
+
+
+def test_persistent_missing_pair_cannot_shrink_denominator(persistent_inputs):
+    rows, panels, receipt = persistent_inputs
+    with pytest.raises(ValueError, match="pair coverage"):
+        repository.aggregate_persistent_events(rows[:-1], panels, receipt)
+
+
+def test_persistent_results_must_match_complete_receipt(persistent_inputs):
+    rows, panels, receipt = persistent_inputs
+    receipt["comparisons"] -= 1
+    with pytest.raises(ValueError, match="counts differ"):
+        repository.aggregate_persistent_events(rows, panels, receipt)
+
+
+def test_persistent_nonfinite_risks_are_rejected(persistent_inputs):
+    rows, panels, receipt = persistent_inputs
+    rows[0]["cover_LP_upper"] = "nan"
+    with pytest.raises(ValueError, match="Non-finite"):
+        repository.aggregate_persistent_events(rows, panels, receipt)
+
+
+def test_catalog_reads_manuscript_title_and_word_metadata(tmp_path):
+    source = tmp_path / "paper.md"
+    source.write_text("---\ntitle: Feasible Label Images\n---\n\n# Abstract\nBody", encoding="utf-8")
+    assert repository.title(source) == "Feasible Label Images"
+    word = ROOT / "paper/persistent_events/WORD_MANUSCRIPT.docx"
+    assert repository.title(word) == "Persistent Event Evaluation under Partial Observations"
+    assert "persistent_events/WORD_MANUSCRIPT.docx" in repository.generate(ROOT)["docs/catalog.md"]
+
+
 def test_partial_horizons_cannot_enter_macro(core_rows):
     rows = main_rows(core_rows)
     rows.pop(0)
