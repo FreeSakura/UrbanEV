@@ -1,5 +1,11 @@
 # 项目状态
 
+## 当前入口与维护范围
+
+从[当前Word全文](../paper/persistent_events/WORD_MANUSCRIPT.docx)、[稿件复现](../paper/persistent_events/README.md)及[自动汇总结果](../results/README.md)进入。首页、引用信息、快速开始和CI已按持续事件主线适配；旧实验配置、数值、稿件路径继续保留。
+
+当前维护不自动恢复原六折或追加AP3。以下日期段落为成果演进记录，其中“下一步”只描述当时阶段。
+
 ## 2026-09-18 贡献冻结并完成论文全稿
 
 当前状态为 **CONTRIBUTION FROZEN — COMPLETE MANUSCRIPT DRAFT**。英文正文、完整证明附录和中文摘要已形成[可编辑稿源与复现入口](../paper/persistent_events/README.md)。理论核心为A的尖锐输出像结构定理；B以经典并闭包/原子理论的几何推论定位，C保留为已有多面体机制的边界例。

@@ -20,6 +20,8 @@ from pathlib import Path
 import re
 from statistics import mean
 from urllib.parse import unquote, urlsplit
+import xml.etree.ElementTree as ET
+import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DIRS = (".github", "artifacts", "configs", "docs", "licenses", "models",
@@ -27,6 +29,8 @@ PUBLIC_DIRS = (".github", "artifacts", "configs", "docs", "licenses", "models",
 SKIP = {"__pycache__", ".pytest_cache", "build", "editable", "tmp"}
 TEXT = {".md", ".csv", ".json", ".jsonl", ".txt", ".py", ".yml", ".yaml", ".toml", ".tex", ".bib", ".cff"}
 CORE = "artifacts/summaries/comprehensive_development_comparison_v1/"
+PERSISTENT = "artifacts/summaries/persistent_event_complete_covers_20260917/"
+PANEL_KEYS = ("phase", "dataset", "series", "K", "L", "scope", "origin_start", "N")
 MODEL_ORDER = ("RIDGE_O", "RIDGE_OD", "OD_PRODUCT", "OD_SEPARABLE",
                "OD_CONCAT_MLP", "TIMEXER_LOCAL_OD", "TIMEXER_GLOBAL_O")
 SEEDS = {"20260915", "20260916", "20260917"}
@@ -45,7 +49,7 @@ FOLDER_INTROS = {
     "docs/reports/information": ("观测信息报告", "空间、时长、电量与字段可得性研究。特定模型失败不等于信息普遍无效。"),
     "docs/reports/mechanisms": ("机制与方法资料", "人工机制、理论来源及方法阅读，明确与真实预测证据的区别。"),
     "docs/reports/audit": ("配对事件审计", "历史开发数据上的事件界研究，与当前占用率预测分数分开。"),
-    "docs/theory": ("理论与推导", "V1/V2/V3 是历史演进版本；主题推导和阅读记录各有假设与适用范围。"),
+    "docs/theory": ("理论与推导", "当前主线为持续事件输出像的尖锐结构定理及其几何推论；V1/V2/V3 保留为历史演进记录。完整稿见 paper/persistent_events。"),
     "docs/protocols": ("阶段协议", "这里保留文字设计、登记与修订；机器配置仍位于 configs。旧阶段限制不覆盖后来正式合同。"),
     "docs/reviews": ("评审与来源快照", "评审记录适用于写作时的证据，后续结果不倒改原判断。"),
     "docs/history/proposals": ("历史方案", "初始、最终、实验计划等名称属于各自阶段；当前方案从项目状态与研究路线进入。"),
@@ -76,9 +80,23 @@ def relative_link(target: str, source: str) -> str:
 
 def title(path: Path) -> str:
     if path.suffix == ".md":
-        match = re.search(r"(?m)^# (.+)$", path.read_text(encoding="utf-8-sig"))
+        text = path.read_text(encoding="utf-8-sig")
+        front = re.match(r"(?s)\A---\n(.*?)\n---", text)
+        if front:
+            named = re.search(r"(?m)^title:\s*(.+)$", front[1])
+            if named:
+                return named[1].strip().strip("\"'").replace("|", "／")
+        match = re.search(r"(?m)^# (.+)$", text)
         if match:
             return match[1].strip().replace("|", "／")
+    if path.suffix == ".docx":
+        try:
+            with zipfile.ZipFile(path) as package:
+                name = ET.fromstring(package.read("docProps/core.xml")).find("{http://purl.org/dc/elements/1.1/}title")
+                if name is not None and name.text:
+                    return name.text.replace("|", "／")
+        except (OSError, KeyError, zipfile.BadZipFile, ET.ParseError):
+            pass
     return path.stem
 
 
@@ -183,9 +201,73 @@ def development_table(root: Path) -> list[dict]:
     return models
 
 
+def aggregate_persistent_events(rows, panels, receipt):
+    """Derive current headline counts from paired rows without rerunning models."""
+    if receipt.get("status") != "COMPLETE":
+        raise ValueError("Persistent-event receipt is not complete")
+    panel_index = {tuple(str(p[k]) for k in PANEL_KEYS): p for p in panels}
+    if len(panel_index) != len(panels):
+        raise ValueError("Duplicate persistent-event panel")
+    pairs = defaultdict(set)
+    groups = {}
+    for key, panel in panel_index.items():
+        if panel["geometry_status"] not in {"PAIRWISE_EXACT", "PAIRWISE_INSUFFICIENT"}:
+            raise ValueError("Unclassified persistent-event geometry")
+        if int(panel["ambiguous_labels"]) > 0:
+            group = panel["phase"], panel["geometry_status"]
+            record = groups.setdefault(group, dict(phase=group[0], structure=group[1], panels=0,
+                comparisons=0, endpoint_changes=0, direction_changes=0, cover_lp_gaps=0))
+            record["panels"] += 1
+    models = {"constant", "logistic", "hist_gradient_boosting"}
+    for row in rows:
+        key = tuple(str(row[k]) for k in PANEL_KEYS)
+        if key not in panel_index:
+            raise ValueError("Persistent-event comparison has no panel")
+        pair = tuple(sorted((row["model_A"], row["model_B"])))
+        if len(set(pair)) != 2 or not set(pair) <= models or pair in pairs[key]:
+            raise ValueError("Duplicate or invalid persistent-event model pair")
+        pairs[key].add(pair)
+        panel = panel_index[key]
+        if (int(row["ambiguous_labels"]) != int(panel["ambiguous_labels"])
+                or row["geometry_status"] != panel["geometry_status"]):
+            raise ValueError("Persistent-event geometry differs between panel and comparison")
+        values = [float(row[f"{layer}_{side}"]) for layer in ("implication", "cover_LP", "DP") for side in ("lower", "upper")]
+        if not all(math.isfinite(x) for x in values):
+            raise ValueError("Non-finite persistent-event endpoint")
+        if int(row["ambiguous_labels"]) > 0:
+            record = groups[row["phase"], row["geometry_status"]]
+            il, iu, cl, cu, dl, du = values
+            record["comparisons"] += 1
+            record["endpoint_changes"] += int((iu-il)-(du-dl) > 1e-10)
+            record["direction_changes"] += int(row["implication_direction"] == "UNRESOLVED" and row["DP_direction"] in {"A", "B"})
+            record["cover_lp_gaps"] += int((cu-cl)-(du-dl) > 1e-10)
+    if set(pairs) != set(panel_index) or any(len(x) != 3 for x in pairs.values()):
+        raise ValueError("Incomplete persistent-event pair coverage")
+    result = [groups[key] for key in sorted(groups)]
+    counts = {"panels":len(panels), "comparisons":len(rows),
+              "ambiguous_panels":sum(x["panels"] for x in result),
+              "ambiguous_comparisons":sum(x["comparisons"] for x in result)}
+    if any(counts[k] != receipt[k] for k in counts):
+        raise ValueError("Persistent-event counts differ from frozen receipt")
+    if (sum(x["endpoint_changes"] for x in result) != receipt["gap_counts"]["1e-10"]["implication_DP_comparisons"]
+            or sum(x["cover_lp_gaps"] for x in result) != receipt["gap_counts"]["1e-10"]["LP_DP_comparisons"]
+            or sum(x["direction_changes"] for x in result) != receipt["implication_DP_direction_differences"]):
+        raise ValueError("Persistent-event differences disagree with frozen receipt")
+    return result
+
+
+def persistent_event_table(root):
+    with (root/PERSISTENT/"comparison_results.csv").open(encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.DictReader(f))
+    with (root/PERSISTENT/"panel_results.csv").open(encoding="utf-8-sig", newline="") as f:
+        panels = list(csv.DictReader(f))
+    return aggregate_persistent_events(rows, panels, read_json(root/PERSISTENT/"STRUCTURE_VALIDATION.json"))
+
+
 def generate(root: Path) -> dict[str, str]:
     studies = catalog_records(root)
     models = development_table(root)
+    persistent = persistent_event_table(root)
     outputs = {}
     inventory = []
     for study in studies:
@@ -197,15 +279,31 @@ def generate(root: Path) -> dict[str, str]:
                                   "sha256_lf": hashlib.sha256(data).hexdigest()})
     outputs["results/inventory.csv"] = csv_text(inventory, ["study_id", "path", "format", "bytes_lf", "sha256_lf"])
     outputs["results/development-comparison.csv"] = csv_text(models, list(models[0]))
+    outputs["results/persistent-event-structure.csv"] = csv_text(persistent, list(persistent[0]))
     registration = read_json(root / "artifacts/summaries/urbanev_matched_six_fold_v1/registration.json")
     lines = ["# 结果总览", "", "<!-- Generated by scripts/repository.py; edit the sources, then build. -->", "",
-             "当前候选 A 已完成 AP2，见[研究报告](../docs/reports/audit/SHARED_MISSING_EVENTS_AP2_REPORT.md)与[更新主张](../docs/research/SHARED_MISSING_EVENTS_AP2_CLAIMS.md)；AP0/AP1 保留各阶段证据。下列开发集核心表属于原 UrbanEV 预测研究，两个评价对象分别报告。", "",
+             "当前主线是持续事件完整稿及冻结结构评价，见[Word与复现入口](../paper/persistent_events/README.md)和[贡献边界](../docs/reviews/PERSISTENT_EVENT_FROZEN_CONTRIBUTION_20260917.md)。历史预测与审计结果保留在后续章节。", "",
              "本页由原始公开汇总生成。不同窗口、训练协议及数据集分别解释；登记预算与合成检查不作为真实预测成绩。",
              "", "[综合报告](../docs/reports/PROJECT_REPORT.md) · [研究登记](studies.json) · [逐文件证据清单](inventory.csv) · [项目状态](../docs/PROJECT_STATUS.md)",
              "", "## 开发集核心比较", "",
              "范围：275 区域占用率，1392—1548 的 14 个已曝光开发原点，stride12；联合预测12步。"
              "主表固定 raw 末点，先平均 H3/H6/H9/H12，再平均种子。神经模型为三个种子，ridge 为一次确定性拟合。",
              "", "| 系统 | 实例数 | 四 H 平均 RMSE | 四 H 平均 MAE |", "|---|---:|---:|---:|"]
+    at = lines.index("## 开发集核心比较")
+    lines[at] = "### 开发集核心比较"
+    current = ["## 当前持续事件结构评价", "",
+               "完整范围为2,784个自然面板、8,352个模型比较；下表仅以470个含模糊标签面板及其1,410个比较为分母。",
+               "", "| 评价 | 几何类别 | 面板 | 比较 | 蕴含到DP端点差 | 额外判向 | cover-LP到DP端点差 |",
+               "|---|---|---:|---:|---:|---:|---:|"]
+    for row in persistent:
+        label = "一元蕴含精确" if row["structure"] == "PAIRWISE_EXACT" else "一元蕴含不完整"
+        current.append(f"| {row['phase']} | {label} | {row['panels']} | {row['comparisons']} | {row['endpoint_changes']} | {row['direction_changes']} | {row['cover_lp_gaps']} |")
+    current += ["", "端点差使用区间宽度差大于1e−10的原口径；计数从逐比较/面板CSV重建并与完整执行回执核对。"
+                "完整cover-LP对当前冻结目标数值精确，不推出其一般整数性；各比较不是独立重复。",
+                "", "[派生CSV](persistent-event-structure.csv) · [逐比较原表](../"+PERSISTENT+"comparison_results.csv) · "
+                "[原执行回执](../"+PERSISTENT+"STRUCTURE_VALIDATION.json) · [主张证据映射](../paper/persistent_events/EVIDENCE_MAP.md)", "",
+                "## 历史充电预测", ""]
+    lines[at:at] = current
     for row in models:
         lines.append(f"| {row['model']} | {row['instances']} | {row['rmse']:.9f} | {row['mae']:.9f} |")
     lines += ["", "这张表按方法类别排列。LOCAL-O、LOCAL-OD 与 GLOBAL-O 的输入信息不同，残差底座与直接预测的训练形式也不同；"
@@ -248,11 +346,11 @@ def generate(root: Path) -> dict[str, str]:
                 lines.append(f"- [{title(path)}]({path.name})")
         outputs[source] = "\n".join(lines) + "\n"
     # Inventory all readable documents, including generated landing pages.
-    document_paths = {p.relative_to(root).as_posix() for p in public_files(root) if p.suffix.lower() in {".md", ".pdf"}}
+    document_paths = {p.relative_to(root).as_posix() for p in public_files(root) if p.suffix.lower() in {".md", ".pdf", ".docx"}}
     document_paths.update(k for k in outputs if k.endswith(".md"))
     document_paths.update({"docs/catalog.md", "scripts/README.md"})
     lines = ["# 完整资料目录", "", "<!-- Generated by scripts/repository.py. -->", "",
-             "覆盖公开树中的全部 Markdown 与 PDF。结果文件的逐项索引另见[证据清单](../results/inventory.csv)。", ""]
+             "覆盖公开树中的 Markdown、PDF 和 Word。先读[当前论文](../paper/persistent_events/README.md)；结果文件另见[证据清单](../results/inventory.csv)。", ""]
     groups = defaultdict(list)
     for name in sorted(document_paths):
         groups[str(Path(name).parent).replace("\\", "/")].append(name)
@@ -271,6 +369,11 @@ def generate(root: Path) -> dict[str, str]:
     lines = ["# 脚本目录", "", "<!-- Generated by scripts/repository.py. -->", "",
              "全部命令从仓库根目录执行。以下按源码文档列出入口；实验脚本需要相应版本的配置、数据与环境，"
              "不会因为运行资料构建器而被调用。", "", "[安装与复现](../docs/guides/reproducibility.md) · [架构](../docs/guides/architecture.md)", ""]
+    lines += ["## 当前论文常用入口", "",
+              "- [完整cover验证](research/validate_persistent_event_covers.py)：小构造检查或读取已有缓存。",
+              "- [结构定理检查](research/verify_persistent_event_structure.py)：独立构造与短序列穷举。",
+              "- [图表生成](build_persistent_event_figures.py) · [Word构建](build_persistent_event_manuscript.py)：只读稿源和冻结汇总。",
+              "- [完整运行参数](../paper/persistent_events/README.md)。下面保留全部历史脚本入口。", ""]
     for folder in ("scripts", "scripts/research"):
         lines += [f"## {folder}", "", "| 脚本 | 用途（源码说明） |", "|---|---|"]
         for path in sorted_paths((root / folder).glob("*.py")):

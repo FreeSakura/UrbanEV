@@ -1,6 +1,6 @@
 """Build publication figures from committed summaries, without new experiments."""
 from pathlib import Path
-import csv,json
+import argparse,csv,json
 from reportlab.pdfgen import canvas
 from reportlab.lib.colors import HexColor,white,black
 from pdf2image import convert_from_path
@@ -80,6 +80,10 @@ def intervals(rows):
     finish(c,name);return data
 
 def main():
+    global OUT
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output',type=Path,default=OUT,help='Directory for generated figures; use a temporary directory in CI')
+    OUT=parser.parse_args().output
     OUT.mkdir(parents=True,exist_ok=True)
     path=ROOT/'artifacts/summaries/persistent_event_complete_covers_20260917/comparison_results.csv'
     with path.open(newline='',encoding='utf-8') as f:rows=list(csv.DictReader(f))

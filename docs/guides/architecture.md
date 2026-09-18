@@ -1,6 +1,22 @@
 # 代码架构与运行入口
 
-仓库采用 `src` 布局，包含预测研究包 `urbanev_forecast` 和历史证据审计包 `urbanev_audit`。实验协议、运行结果及面向读者的报告各有固定位置。
+仓库采用 `src` 布局。当前持续事件几何与评价在 `urbanev_audit` 中；它也保留历史审计模块。`urbanev_forecast` 保留原充电预测工程。包名与已有导入保持兼容，实验协议和冻结证据不因导航调整而迁移。
+
+## 当前论文的实现链
+
+| 环节 | 入口 |
+|---|---|
+| 最小游程区间和私人见证 | `src/urbanev_audit/event_cover_geometry.py` |
+| 全部一元蕴含LP | `src/urbanev_audit/event_relaxations.py` |
+| 轨迹精确端点 | `src/urbanev_audit/persistent_events.py` |
+| 补全见证与重放 | `src/urbanev_audit/event_witnesses.py` |
+| 完整cover LP/ILP与DP对照 | `scripts/research/validate_persistent_event_covers.py` |
+| 固定预测生成 | `scripts/research/run_shared_missing_ap1.py`、`run_shared_missing_ap2.py` |
+| 论文图表及Word | `scripts/build_persistent_event_figures.py`、`build_persistent_event_manuscript.py` |
+
+完整参数见[论文复现说明](../../paper/persistent_events/README.md)。这些入口不依赖旧六折执行。
+
+## 历史预测与共用维护模块
 
 | 层 | 位置 | 职责 |
 |---|---|---|

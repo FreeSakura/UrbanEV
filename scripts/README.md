@@ -6,6 +6,13 @@
 
 [安装与复现](../docs/guides/reproducibility.md) · [架构](../docs/guides/architecture.md)
 
+## 当前论文常用入口
+
+- [完整cover验证](research/validate_persistent_event_covers.py)：小构造检查或读取已有缓存。
+- [结构定理检查](research/verify_persistent_event_structure.py)：独立构造与短序列穷举。
+- [图表生成](build_persistent_event_figures.py) · [Word构建](build_persistent_event_manuscript.py)：只读稿源和冻结汇总。
+- [完整运行参数](../paper/persistent_events/README.md)。下面保留全部历史脚本入口。
+
 ## scripts
 
 | 脚本 | 用途（源码说明） |
@@ -19,7 +26,7 @@
 | [build_persistent_event_figures.py](build_persistent_event_figures.py) | Build publication figures from committed summaries, without new experiments. |
 | [build_persistent_event_manuscript.py](build_persistent_event_manuscript.py) | Convert the complete Markdown manuscript to editable Word via Pandoc OMML. |
 | [build_release_asset_manifest.py](build_release_asset_manifest.py) | Build checksums and the tracked manifest for local Release assets. |
-| [ci_scope.py](ci_scope.py) | Select CI work from changed paths; docs do not need training or LaTeX. |
+| [ci_scope.py](ci_scope.py) | Select documentation, event, current Word, and historical forecasting/TeX checks. |
 | [compare_release_payloads.py](compare_release_payloads.py) | Prove that a packaging/schema revision did not change public numerical arrays. |
 | [download_release_assets.py](download_release_assets.py) | Download and checksum the target-free GitHub Release assets. |
 | [export_public_artifacts.py](export_public_artifacts.py) | Export deterministic target-free packages using registered family whitelists. |

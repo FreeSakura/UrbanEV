@@ -1,6 +1,18 @@
 # 复现指南
 
-仓库级检查、已存预测重算和重新训练回答不同问题。选择所需层级，记录使用的 Git 提交、配置与输出目录。
+当前持续事件论文的复现入口见[完整说明](../../paper/persistent_events/README.md)。仓库级检查、已存预测重算和重新训练回答不同问题。选择所需层级，记录使用的 Git 提交、配置与输出目录。
+
+## 当前持续事件论文
+
+| 层级 | 输入 | 执行与边界 |
+|---|---|---|
+| 构造核对 | 代码与CPU依赖 | `validate_persistent_event_covers.py --selfcheck`；不下载数据或拟合 |
+| 冻结公开表重建 | 已提交CSV/JSON | `repository.py build`重建结构与决策表；图表脚本只读冻结汇总 |
+| 原缓存核验 | 同一UCI观测及原AP1/AP2概率缓存 | 使用 `--strict-frozen-hashes` 核对原预测身份 |
+| 新缓存复现 | UCI原始数据与固定选择配置 | AP1拟合、AP2复用；将新results与新缓存配套传给验证器，不冒称原数组哈希一致 |
+| 稿件重建 | 英文稿源及冻结图表 | Pandoc生成原生Word公式；独立于历史LaTeX论文 |
+
+具体命令、固定包版本和未公开缓存的生成步骤均在[当前论文复现说明](../../paper/persistent_events/README.md)。阅读已交付Word不需要安装构建工具。
 
 | 层级 | 输入 | 可验证的内容 |
 |---|---|---|
@@ -12,7 +24,7 @@
 ## 公开资料复核
 
 ```bash
-python -m pip install -e ".[test]"
+python -m pip install -e ".[test,evidence]"
 python scripts/repository.py check
 python -m pytest
 python scripts/repository.py verify-manifest
@@ -36,7 +48,7 @@ python scripts/repository.py check
 
 ## 合成工程验证
 
-参照[快速开始](quickstart.md)安装 CPU PyTorch 和 research 扩展，然后运行完整测试及 `smoke`。CI 按改动范围选择资料检查、预测测试或论文构建；同一次 CI 不重复运行测试套件。合成数据通过测试不意味着真实预测优势。
+当前事件构造验证使用[快速开始](quickstart.md)。旧预测工程的合成训练另见[历史预测指南](forecasting.md)，需要 CPU PyTorch 和 research 扩展。CI分别选择事件测试、当前Word稿构建、旧预测训练和历史LaTeX；合成数据通过测试不意味着真实预测优势。
 
 ## 历史审计结果重算
 
@@ -68,8 +80,10 @@ python scripts/research/score_full_benchmark.py --help
 
 这一高成本任务不属于安装测试，也不由资料重建自动触发。新的执行应明确其范围，并使用匹配的源提交；不得绕过代码身份、已完成任务或预测完整性检查。
 
-## 论文重建
+## 当前 Word 稿与历史 LaTeX 重建
 
-LaTeX 和字体依赖见[论文说明](../../paper/README.md)。公开 PDF 已提供，阅读无需安装 TeX。重建后的 PDF 需要通过论文清单和字体检查；文档导航重构不会自动刷新历史论文数值。
+当前Word稿使用 `scripts/build_persistent_event_manuscript.py`，图表使用 `scripts/build_persistent_event_figures.py`。可将图表写入新的 `--output` 目录，并用Word构建器的 `--resource-root` 指向含 `figures/` 的父目录，以免临时构建覆盖已交付文件。CI的“Current Word manuscript”检查会构建临时图表、核对图表数据并生成可下载Word工件。
+
+历史审计稿的LaTeX和字体依赖见[论文归档说明](../../paper/README.md#历史-latex-稿重建)。公开PDF可直接阅读。文档导航调整不重新计算历史结果。
 
 `test` 扩展固定使用 pypdf 6.16.2，与历史 PDF 的标准化文本哈希一致。pypdf 6.19.0 在同一份未改动的归档 PDF 上提取出不同文本，已在本地复现；因此升级提取器需要单独核对文本变化，不能用重新生成哈希来掩盖差异。
